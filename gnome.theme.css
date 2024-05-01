@@ -74,6 +74,28 @@
     var(--window_bg_color)
   ) !important;
 
+  --background-message-hover: var(--sidebar_bg_color) !important;
+  --background-mentioned: color-mix(
+    in srgb,
+    var(--warning_bg_color) 10%,
+    transparent
+  ) !important;
+  --background-mentioned-hover: color-mix(
+    in srgb,
+    var(--warning_bg_color) 20%,
+    transparent
+  ) !important;
+  --background-message-highlight: color-mix(
+    in srgb,
+    var(--accent_bg_color) 10%,
+    transparent
+  ) !important;
+  --background-message-highlight-hover: color-mix(
+    in srgb,
+    var(--accent_bg_color) 20%,
+    transparent
+  ) !important;
+
   --home-background: var(--window_bg_color) !important;
   --modal-background: var(--background-primary) !important;
   --modal-footer-background: transparent !important;
@@ -117,12 +139,10 @@
   --search-popout-option-fade: none !important;
   --search-popout-option-fade-hover: none !important;
 
+  /*
+   for i ( {1,2,3,4,5,6,7,8,9}{0,5} ) printf '--brand-experiment-%sa: var(--a) !important;\n' $i
+   */
   --brand-experiment: var(--accent_color) !important;
-  --brand-experiment-10a: color-mix(
-    in srgb,
-    var(--accent_color) 10%,
-    transparent
-  ) !important;
 
   --custom-standard-sidebar-view-sidebar-total-width: var(
     --sidebar-width
@@ -318,11 +338,11 @@ strong {
 }
 
 [class*="sectionDivider_"],
- #channels > ul > [role="button"], /* "Browser channels" */
- [class*="privateChannelsHeaderContainer_"], /* what is this used for ? */
- [aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)), /* Nitro */
- [aria-label="Open sticker picker"], /* No idea what icon, and it's pretty useless anyway */
- [href="https://support.discord.com"]
+  #channels > ul > [role="button"], /* "Browser channels" */
+  [class*="privateChannelsHeaderContainer_"], /* what is this used for ? */
+  [aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)), /* Nitro */
+  [aria-label="Open sticker picker"], /* No idea what icon, and it's pretty useless anyway */
+  [href="https://support.discord.com"]
 {
   display: none !important;
 }
@@ -361,9 +381,9 @@ strong {
 [href^="/channels/@me"] [class*="name_"],
 [class*="peopleListItem_"] [class*="username_"],
 [class*="peopleColumn_"] h2,
-[class*="eyebrow_"]:not(div),
 [class*="membersGroup_"] > span,
 [data-text-variant^="text-md"],
+[class*="eyebrow_"]:not([class*="numberBadge_"]),
 [class*="h1_"],
 [class*="h2_"],
 [class*="h3_"],
@@ -377,7 +397,7 @@ strong {
   letter-spacing: 0 !important;
 }
 
-[class*="eyebrow_"]:not(div),
+[class*="eyebrow_"]:not([class*="numberBadge_"]),
 [class*="h1_"],
 [class*="h2_"],
 [class*="h3_"],
@@ -394,20 +414,20 @@ strong {
 
 /* .title-1 */
 [class*="flexChild_"][direction^="vertical_"] > :first-child, /* TODO: Placeholder header seems to be larger */
- [class*="markup_"] :is(h1, h2, h3) *,
- [class*="embedProvider_"]>*,
- [data-text-variant^="heading-lg"],
- [data-text-variant^="heading-x"] {
+  [class*="markup_"] :is(h1, h2, h3) *,
+  [class*="embedProvider_"]>*,
+  [data-text-variant^="heading-lg"],
+  [data-text-variant^="heading-x"] {
   font-weight: 800 !important;
   font-size: 20px !important;
 }
 
 /* .title-2 */
 [class*="sidebar_"] h2,
- [class*="titleWrapper_"] > h1 > div, /* Special case for DMs */
- [class*="embedAuthor_"] *,
-   [class*="searchResultsWrap_"] [class*="channelNameText_"] > span,
- [data-text-variant^="heading-md"] {
+  [class*="titleWrapper_"] > h1 > div, /* Special case for DMs */
+  [class*="embedAuthor_"] *,
+    [class*="searchResultsWrap_"] [class*="channelNameText_"] > span,
+  [data-text-variant^="heading-md"] {
   font-weight: 800 !important;
   font-size: 15px !important;
 }
@@ -479,10 +499,10 @@ strong {
   transition: var(--backdrop_transition);
 
   /* TODO looks like shit
-   &:not(:hover) {
-     opacity: var(--dim-level-opacity) !important;
-   }
-   */
+    &:not(:hover) {
+      opacity: var(--dim-level-opacity) !important;
+    }
+    */
 }
 
 /** buttons **/
@@ -492,7 +512,7 @@ strong {
 [class*="mentionButton_"],
 [class*="barButtonAlt_"],
 [aria-roledescription="Open Thread Button"],
-[class*="button_"][class*="size" i] {
+[class*="button_"][class*="size" i]:not([class*="size32_"]) {
   --banner-bg: var(--window_bg_color);
   --percentage: 10%;
 
@@ -542,6 +562,10 @@ strong {
   * {
     font-weight: bold !important;
   }
+
+  svg {
+    display: none;
+  }
 }
 
 [role="button"][aria-haspopup] {
@@ -572,7 +596,8 @@ strong {
 [class*="close_"],
 [class*="closeIcon_"],
 [class*="closeButton_"],
-[class*="peopleColumn_"] > [class*="searchBar_"] [role="button"],
+:where([class*="searchBar_"], [class*="searchBox_"])
+  [role="button"][aria-hidden="true"]:not([class*="icon_"]),
 [class*="peopleListItem_"] [role="button"],
 [class*="toolbar_"] [role="button"],
 [class*="sidebar_"] [class*="headerButton_"],
@@ -630,11 +655,14 @@ strong {
   background-color: transparent !important;
 }
 
-[class*="peopleColumn_"] > [class*="searchBar_"] [role="button"],
-[class*="peopleListItem_"] [class*="searchBar_"] [role="button"] {
-  --icon-button-size: 16px;
+[class*="searchBar_"],
+[class*="searchBox_"] {
+  [role="button"][aria-hidden="true"]:not([class*="icon_"]) {
+    --icon-button-size: 16px;
 
-  background-color: transparent !important;
+    background-color: transparent !important;
+    margin-right: 9px;
+  }
 }
 
 [class*="winButtonClose_"],
@@ -704,9 +732,11 @@ strong {
 }
 
 /* */
-[class*="peopleColumn_"] > [class*="searchBar_"] [role="button"],
-[aria-label="Clear search"] {
-  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSJjb250ZXh0LWZpbGwiIHN0cm9rZT0iY29udGV4dC1zdHJva2UiIGZpbGwtb3BhY2l0eT0iY29udGV4dC1maWxsLW9wYWNpdHkiIHN0cm9rZS1vcGFjaXR5PSJjb250ZXh0LXN0cm9rZS1vcGFjaXR5Ij4KICAgICAgICA8cGF0aCBkPSJtIDEwLjgwNDY4OCAxMCBjIC0wLjgxMjUgMC4xNDQ1MzEgLTEuMTA1NDY5IDEuMTU2MjUgLTAuNSAxLjcxODc1IGwgMyAzIGMgMC45NTcwMzEgMC45Mzc1IDIuMzYzMjgxIC0wLjUgMS40MDYyNSAtMS40Mzc1IGwgLTMgLTMgYyAtMC4yMzgyODIgLTAuMjQyMTg4IC0wLjU3ODEyNiAtMC4zNDc2NTYgLTAuOTA2MjUgLTAuMjgxMjUgeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gNi41IDAgYyAtMy41NzgxMjUgMCAtNi41IDIuOTIxODc1IC02LjUgNi41IHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IHMgNi41IC0yLjkxNzk2OSA2LjUgLTYuNDk2MDk0IHMgLTIuOTIxODc1IC02LjUgLTYuNSAtNi41IHogbSAwIDIgYyAyLjQ5NjA5NCAwIDQuNSAyLjAwMzkwNiA0LjUgNC41IHMgLTIuMDAzOTA2IDQuNDk2MDk0IC00LjUgNC40OTYwOTQgcyAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMi4wMDM5MDYgLTQuNSA0LjUgLTQuNSB6IG0gMCAwIi8+CiAgICA8L2c+Cjwvc3ZnPg==");
+[class*="searchBar_"],
+[class*="searchBox_"] {
+  [role="button"] {
+    --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSJjb250ZXh0LWZpbGwiIHN0cm9rZT0iY29udGV4dC1zdHJva2UiIGZpbGwtb3BhY2l0eT0iY29udGV4dC1maWxsLW9wYWNpdHkiIHN0cm9rZS1vcGFjaXR5PSJjb250ZXh0LXN0cm9rZS1vcGFjaXR5Ij4KICAgICAgICA8cGF0aCBkPSJtIDEwLjgwNDY4OCAxMCBjIC0wLjgxMjUgMC4xNDQ1MzEgLTEuMTA1NDY5IDEuMTU2MjUgLTAuNSAxLjcxODc1IGwgMyAzIGMgMC45NTcwMzEgMC45Mzc1IDIuMzYzMjgxIC0wLjUgMS40MDYyNSAtMS40Mzc1IGwgLTMgLTMgYyAtMC4yMzgyODIgLTAuMjQyMTg4IC0wLjU3ODEyNiAtMC4zNDc2NTYgLTAuOTA2MjUgLTAuMjgxMjUgeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gNi41IDAgYyAtMy41NzgxMjUgMCAtNi41IDIuOTIxODc1IC02LjUgNi41IHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IHMgNi41IC0yLjkxNzk2OSA2LjUgLTYuNDk2MDk0IHMgLTIuOTIxODc1IC02LjUgLTYuNSAtNi41IHogbSAwIDIgYyAyLjQ5NjA5NCAwIDQuNSAyLjAwMzkwNiA0LjUgNC41IHMgLTIuMDAzOTA2IDQuNDk2MDk0IC00LjUgNC40OTYwOTQgcyAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMi4wMDM5MDYgLTQuNSA0LjUgLTQuNSB6IG0gMCAwIi8+CiAgICA8L2c+Cjwvc3ZnPg==");
+  }
 }
 /* preferences-system */
 [aria-label="User Settings"] {
@@ -952,9 +982,9 @@ strong {
 
 /** lists **/
 /*
-  * "list" role is used in many places, including ones I DO NOT FUCKING WANT
-  * "listitem" is not reliable, since there are "option" ones being used
-  */
+   * "list" role is used in many places, including ones I DO NOT FUCKING WANT
+   * "listitem" is not reliable, since there are "option" ones being used
+   */
 
 [class*="peopleList_"] {
   background-color: var(--card_bg_color);
@@ -973,7 +1003,7 @@ strong {
   height: unset !important;
 
   &:not(:last-child) {
-    border-bottom: 1px solid var(--background-modifier-accent) !important;
+    border-bottom: 1px solid var(--card_shade_color) !important;
   }
 
   &:hover {
@@ -1020,7 +1050,7 @@ strong {
     var(--window_bg_color)
   ) !important;
   font-size: 15px;
-  line-height: inherit;
+  line-height: 1.2;
   border: none;
   border-radius: var(--button_radius);
   padding: 8px 9px;
@@ -1058,11 +1088,24 @@ strong {
   }
 }
 
-[class*="searchBar_"][class*="container_"],
-[class*="searchBox_"][class*="container_"] {
-  input {
+[class*="searchBar_"],
+[class*="searchBox_"] {
+  &[class*="container_"],
+  &[class*="container_"] {
+    input {
+      font-size: 15px;
+      line-height: inherit;
+      padding: 0;
+      margin: 0;
+
+      height: inherit;
+    }
+  }
+
+  & > [class*="inner_"] {
     padding: 0;
-    margin: 0;
+
+    flex-direction: row-reverse;
   }
 }
 
@@ -1417,13 +1460,13 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 
   &[role="navigation"] [class*="titleWrapper_"], /* home title */
-   [class*="akaBadge_"],
-   [class*="nicknames_"],
-   [class*="children_"] > [class*="iconWrapper_"],
-   /* thread child channel */
-   [class*="children_"]:has(> svg) [role="button"],
-   [class*="caret_"],
-   [class*="divider_"] {
+    [class*="akaBadge_"],
+    [class*="nicknames_"],
+    [class*="children_"] > [class*="iconWrapper_"],
+    /* thread child channel */
+    [class*="children_"]:has(> svg) [role="button"],
+    [class*="caret_"],
+    [class*="divider_"] {
     display: none;
   }
 
@@ -1440,8 +1483,8 @@ section:is([class*="themed_"], [class*="transparent_"]) {
       flex-direction: column;
     }
 
-    /* VC fix */
-    & > :empty {
+    & > :empty, /* VC fix */
+     & > [class*="followButton_"] /* Channel news */ {
       display: none;
     }
 
@@ -1579,6 +1622,8 @@ section:is([class*="themed_"], [class*="transparent_"]) {
 
 [class*="searchResultsWrap_"] {
   border-left: 1px solid var(--secondary_sidebar_border_color);
+
+  z-index: 0;
 
   & > header {
     border-bottom: 1px solid var(--secondary_sidebar_border_color);
@@ -1934,6 +1979,11 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   border-radius: 6px;
 }
 
+[aria-label="Message Actions"][role="group"] > div {
+  box-shadow: var(--elevation-medium);
+  border-radius: var(--button_radius);
+}
+
 /* message input */
 [class*="chatContent_"] > form {
   --custom-channel-textarea-text-area-height: unset;
@@ -2156,23 +2206,20 @@ section:is([class*="themed_"], [class*="transparent_"]) {
 }
 
 /** banner **/
+[class*="chatHeaderBar_"],
 [class*="barBase_"] {
   --spacing: 6px;
 
-  opacity: 1;
   background-color: var(--banner-bg);
-  border-radius: 0;
-  box-shadow: none;
   padding: var(--spacing) !important;
-  margin: 0 !important;
-
-  left: 0;
-  right: 0;
-  height: unset;
-  min-height: unset;
 
   * {
+    font-size: 15px !important;
     font-weight: bold !important;
+  }
+
+  & > button {
+    --banner-bg: inherit !important;
   }
 
   svg {
@@ -2180,15 +2227,30 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 }
 
+[class*="chatHeaderBar_"] {
+  &::after {
+    display: none;
+  }
+}
+
+[class*="barBase_"] {
+  opacity: 1;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 !important;
+
+  left: 0;
+  right: 0;
+  height: unset;
+  min-height: unset;
+}
+
+[class*="chatHeaderBarText_"],
 [class*="barButtonBase_"] {
   text-align: center;
   color: var(--window_fg_color) !important;
 
   height: unset;
-}
-
-[class*="barButtonAlt_"] {
-  --banner-bg: inherit;
 }
 
 [class*="messagesWrapper_"]:has(> [class*="jumpToPresentBar_"]:nth-child(3)) {
@@ -2238,9 +2300,9 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 
   /*
-                       https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
-                       L70
-                       */
+                        https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
+                        L70
+                        */
   & > h2:first-child,
   & > :first-child > h2:first-child,
   & > div > :first-child [class*="h1_"],
@@ -2266,11 +2328,11 @@ section:is([class*="themed_"], [class*="transparent_"]) {
     padding: 0;
 
     /* TODO: doesn't work with app-region
-     position: fixed;
-     top: calc(var(--p) + 8px);
-     left: calc(var(--p) + var(--sidebar-width) + 19px);
-     z-index: 1000;
-   */
+      position: fixed;
+      top: calc(var(--p) + 8px);
+      left: calc(var(--p) + var(--sidebar-width) + 19px);
+      z-index: 1000;
+    */
   }
 }
 
@@ -2340,7 +2402,7 @@ nav[class*="sidebar"] {
 }
 
 [class*="contentRegion_"] [class*="children_"] > div:not([class], [style]), /* bruh */
-                   [class^="marginTop_"] {
+                    [class^="marginTop_"] {
   margin-top: 28px;
 }
 
@@ -2349,15 +2411,15 @@ nav[class*="sidebar"] {
 }
 
 .vc-addon-card,
- :is(
-   [class*="contentRegion_"] [class*="children_"],
-   [class*="children_"] > div:not([class]), /* bruh */
-   [class^="margin"]
- ) > :is(
-   [class^="flex_"],
-   [class*="container_"], /* Switch container */
-   [class*="settingsBackgroundFlashElement_"] /* ^ */
- ) {
+  :is(
+    [class*="contentRegion_"] [class*="children_"],
+    [class*="children_"] > div:not([class]), /* bruh */
+    [class^="margin"]
+  ) > :is(
+    [class^="flex_"],
+    [class*="container_"], /* Switch container */
+    [class*="settingsBackgroundFlashElement_"] /* ^ */
+  ) {
   background-color: var(--card_bg_color);
   border-radius: var(--card_radius) !important;
   box-shadow: var(--elevation-medium) !important;
@@ -2377,34 +2439,34 @@ nav[class*="sidebar"] {
   /* imagine the performance (like it matters) */
   /* there is also a very nasty shadow on the border, nothing I can do about that */
   /* it looks like shit, and I don't want to waste my time fighting discord's shitty layout
-   &&:nth-child(1 of [class*="container_"]) {
-     border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-     margin-bottom: 0 !important;
-   }
- 
-   &:not(:nth-child(1 of [class*="container_"])) {
-     border-radius: 0 !important;
-     margin: 0 !important;
-   }
- 
-   &&:is(:last-child, :has(+ :not([class*="container_"]))) {
-     border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-     margin-bottom: 16px !important;
-   }
- 
-   &&:last-child {
-     border-radius: var(--card_radius) !important;
-     margin-bottom: 16px !important;
-   }
-   */
+    &&:nth-child(1 of [class*="container_"]) {
+      border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+      margin-bottom: 0 !important;
+    }
+  
+    &:not(:nth-child(1 of [class*="container_"])) {
+      border-radius: 0 !important;
+      margin: 0 !important;
+    }
+  
+    &&:is(:last-child, :has(+ :not([class*="container_"]))) {
+      border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+      margin-bottom: 16px !important;
+    }
+  
+    &&:last-child {
+      border-radius: var(--card_radius) !important;
+      margin-bottom: 16px !important;
+    }
+    */
 }
 
 .vc-plugins-grid,
- [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style], /* Vencord plugin settings */
- [class*="connectContainer_"], /* Connections tab */
- [class*="cameraWrapper_"], /* Voice tab */
-           [class*="card_"],
-           [role="radiogroup"] {
+  [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style], /* Vencord plugin settings */
+  [class*="connectContainer_"], /* Connections tab */
+  [class*="cameraWrapper_"], /* Voice tab */
+            [class*="card_"],
+            [role="radiogroup"] {
   background-color: var(--card_bg_color) !important;
   border: none !important;
   border-radius: var(--card_radius) !important;
@@ -2412,15 +2474,15 @@ nav[class*="sidebar"] {
 }
 
 .vc-addon-card,
- [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
- [class*="card_"] {
+  [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
+  [class*="card_"] {
   border: none !important;
   padding: 10px 16px !important;
 }
 
 .vc-addon-card,
- [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
- [class^="margin"] > [class*="children_"] > [class*="container_"] {
+  [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
+  [class^="margin"] > [class*="children_"] > [class*="container_"] {
   border-bottom: 1px solid var(--card_shade_color) !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -2636,7 +2698,7 @@ nav[class*="sidebar"] {
 
     &[class*="horizontalReverse_"] {
       & > div > div > button:first-child, /* Vencord plugin settings */
-       & > button:last-child {
+        & > button:last-child {
         border-left: none !important;
       }
     }
@@ -2726,7 +2788,7 @@ nav[class*="sidebar"] {
   &:not([class*="root_"]) > [class*="header_"] {
     background-color: var(--background-primary);
     box-shadow: var(--elevation-low);
-    padding: 8px 6px;
+    padding: 6px;
 
     height: unset;
     min-height: unset;
@@ -2743,13 +2805,20 @@ nav[class*="sidebar"] {
 [class*="browser_"] {
   & > [class*="header_"] {
     box-shadow: var(--elevation-low);
+    gap: 6px;
 
     height: var(--headerbar-height);
     min-height: var(--headerbar-height);
 
     & > svg,
-    & > [class*="divider_"] {
+    & > h1,
+    & > [class*="divider_"],
+    & > [class*="spacer_"] {
       display: none;
+    }
+
+    & > button {
+      margin: 0;
     }
   }
 }
