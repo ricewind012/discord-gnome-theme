@@ -140,8 +140,8 @@
   --search-popout-option-fade-hover: none !important;
 
   /*
-   for i ( {1,2,3,4,5,6,7,8,9}{0,5} ) printf '--brand-experiment-%sa: var(--a) !important;\n' $i
-   */
+     for i ( {1,2,3,4,5,6,7,8,9}{0,5} ) printf '--brand-experiment-%sa: var(--a) !important;\n' $i
+     */
   --brand-experiment: var(--accent_color) !important;
 
   --custom-standard-sidebar-view-sidebar-total-width: var(
@@ -338,11 +338,11 @@ strong {
 }
 
 [class*="sectionDivider_"],
-  #channels > ul > [role="button"], /* "Browser channels" */
-  [class*="privateChannelsHeaderContainer_"], /* what is this used for ? */
-  [aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)), /* Nitro */
-  [aria-label="Open sticker picker"], /* No idea what icon, and it's pretty useless anyway */
-  [href="https://support.discord.com"]
+    #channels > ul > [role="button"], /* "Browser channels" */
+    [class*="privateChannelsHeaderContainer_"], /* what is this used for ? */
+    [aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)), /* Nitro */
+    [aria-label="Open sticker picker"], /* No idea what icon, and it's pretty useless anyway */
+    [href="https://support.discord.com"]
 {
   display: none !important;
 }
@@ -414,20 +414,20 @@ strong {
 
 /* .title-1 */
 [class*="flexChild_"][direction^="vertical_"] > :first-child, /* TODO: Placeholder header seems to be larger */
-  [class*="markup_"] :is(h1, h2, h3) *,
-  [class*="embedProvider_"]>*,
-  [data-text-variant^="heading-lg"],
-  [data-text-variant^="heading-x"] {
+    [class*="markup_"] :is(h1, h2, h3) *,
+    [class*="embedProvider_"]>*,
+    [data-text-variant^="heading-lg"],
+    [data-text-variant^="heading-x"] {
   font-weight: 800 !important;
   font-size: 20px !important;
 }
 
 /* .title-2 */
 [class*="sidebar_"] h2,
-  [class*="titleWrapper_"] > h1 > div, /* Special case for DMs */
-  [class*="embedAuthor_"] *,
-    [class*="searchResultsWrap_"] [class*="channelNameText_"] > span,
-  [data-text-variant^="heading-md"] {
+    [class*="titleWrapper_"] > h1 > div, /* Special case for DMs */
+    [class*="embedAuthor_"] *,
+      [class*="searchResultsWrap_"] [class*="channelNameText_"] > span,
+    [data-text-variant^="heading-md"] {
   font-weight: 800 !important;
   font-size: 15px !important;
 }
@@ -499,10 +499,10 @@ strong {
   transition: var(--backdrop_transition);
 
   /* TODO looks like shit
-    &:not(:hover) {
-      opacity: var(--dim-level-opacity) !important;
-    }
-    */
+      &:not(:hover) {
+        opacity: var(--dim-level-opacity) !important;
+      }
+      */
 }
 
 /** buttons **/
@@ -570,6 +570,10 @@ strong {
 
 [role="button"][aria-haspopup] {
   min-height: 34px !important;
+
+  [class*="videoControls_"] & {
+    --banner-bg: transparent;
+  }
 }
 
 [class*="searchResultsWrap_"] [class*="buttonsContainer_"] > div,
@@ -646,6 +650,26 @@ strong {
 
   & > * {
     display: none;
+  }
+}
+
+[class*="toolbar_"] {
+  [class*="liveQualityIndicator_"],
+  [class*="live_"] {
+    margin-bottom: 0 !important;
+  }
+
+  [class*="qualityIndicator_"] {
+    width: unset !important;
+    height: unset !important;
+
+    &::before {
+      display: none;
+    }
+
+    & > * {
+      display: initial !important;
+    }
   }
 }
 
@@ -773,7 +797,8 @@ strong {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PGcgZmlsbD0iIzIyMjIyMiI+PHBhdGggZD0ibSAxMSAxNSBjIDAuODI4MTI1IDAgMS41IC0wLjY3MTg3NSAxLjUgLTEuNSBzIC0wLjY3MTg3NSAtMS41IC0xLjUgLTEuNSBjIC0zLjg4MjgxMiAwIC03IC0zLjExNzE4OCAtNyAtNyBjIDAgLTAuODI4MTI1IC0wLjY3MTg3NSAtMS41IC0xLjUgLTEuNSBzIC0xLjUgMC42NzE4NzUgLTEuNSAxLjUgYyAwIDUuNTAzOTA2IDQuNDk2MDk0IDEwIDEwIDEwIHogbSAwIDAiLz48cGF0aCBkPSJtIDE1LjAwMzkwNiAxMSBjIDAgLTAuNTU0Njg4IC0wLjQ0NTMxMiAtMSAtMSAtMSBoIC00IGMgLTAuNTUwNzgxIDAgLTEgMC40NDUzMTIgLTEgMSB2IDEuNzEwOTM4IGwgMiAyLjI4OTA2MiBoIDEuNSBjIDEuMzgyODEzIDAgMi41IC0xLjEyMTA5NCAyLjUgLTIuNSB6IG0gMCAwIi8+PHBhdGggZD0ibSA1LjAwMzkwNiAxIGMgMC41NTQ2ODggMCAxIDAuNDQ1MzEyIDEgMSB2IDQgYyAwIDAuNTU0Njg4IC0wLjQ0NTMxMiAxIC0xIDEgaCAtMS43MTA5MzcgbCAtMi4yODkwNjMgLTIgdiAtMS41IGMgMCAtMS4zNzg5MDYgMS4xMjEwOTQgLTIuNSAyLjUgLTIuNSB6IG0gMCAwIi8+PC9nPjwvc3ZnPgo=");
 }
 /* camera-small */
-[aria-label^="Start Video Call"] {
+[class*="sidebar_"] > section [class*="actionButtons_"] > :first-child, /* I have no camera, can't see the other text */
+  [aria-label^="Start Video Call"] {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PGcgZmlsbD0iIzIyMjIyMiI+PHBhdGggZD0ibSAwLjY4MzU5NCA0IGggLTAuNjgzNTk0IHYgOSBoIDAuNjQ0NTMxIGwgNC4zNTU0NjkgLTQuNTM1MTU2IHogbSAwIDAiLz48cGF0aCBkPSJtIDcgMy4wMDM5MDYgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgNSBjIDAgMS42NDQ1MzIgMS4zNTU0NjkgMyAzIDMgaCA2IGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OCAzIC0zIHYgLTUgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgeiBtIDAgMiBoIDYgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgNSBjIDAgMC41NzQyMTkgLTAuNDI5Njg4IDEgLTEgMSBoIC02IGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI1NzgxIC0xIC0xIHYgLTUgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz48L2c+PC9zdmc+Cg==");
 }
 /* user-info */
@@ -785,6 +810,26 @@ strong {
 [aria-label="New Group DM"] {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDggMSBjIC0xLjY1NjI1IDAgLTMgMS4zNDM3NSAtMyAzIHMgMS4zNDM3NSAzIDMgMyBzIDMgLTEuMzQzNzUgMyAtMyBzIC0xLjM0Mzc1IC0zIC0zIC0zIHogbSAtMS41IDcgYyAtMi40OTIxODggMCAtNC41IDIuMDA3ODEyIC00LjUgNC41IHYgMC41IGMgMCAxLjEwOTM3NSAwLjg5MDYyNSAyIDIgMiBoIDYgdiAtMSBoIC0zIHYgLTQgaCAzIHYgLTEuOTcyNjU2IGMgLTAuMTY0MDYyIC0wLjAxOTUzMiAtMC4zMzIwMzEgLTAuMDI3MzQ0IC0wLjUgLTAuMDI3MzQ0IHogbSA0LjUgMCB2IDMgaCAtMyB2IDIgaCAzIHYgMyBoIDIgdiAtMyBoIDMgdiAtMiBoIC0zIHYgLTMgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K");
 }
+/* check-plain */
+[aria-label="Accept"] {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAxMy43NTM5MDYgNC42NTYyNSBjIDAuMTc1NzgyIC0wLjE5OTIxOSAwLjI2MTcxOSAtMC40NjA5MzggMC4yNDYwOTQgLTAuNzIyNjU2IGMgLTAuMDE5NTMxIC0wLjI2NTYyNSAtMC4xNDA2MjUgLTAuNTExNzE5IC0wLjMzOTg0NCAtMC42ODc1IGMgLTAuMTk5MjE4IC0wLjE3NTc4MiAtMC40NjA5MzcgLTAuMjY1NjI1IC0wLjcyNjU2MiAtMC4yNDYwOTQgYyAtMC4yNjU2MjUgMC4wMTU2MjUgLTAuNTExNzE5IDAuMTQwNjI1IC0wLjY4NzUgMC4zMzk4NDQgbCAtNi4yOTY4NzUgNy4xOTUzMTIgbCAtMi4yNDIxODggLTIuMjQ2MDk0IGMgLTAuMzkwNjI1IC0wLjM5MDYyNCAtMS4wMjM0MzcgLTAuMzkwNjI0IC0xLjQxNDA2MiAwIGMgLTAuMTg3NSAwLjE4NzUgLTAuMjkyOTY5IDAuNDQ1MzEzIC0wLjI5Mjk2OSAwLjcxMDkzOCBzIDAuMTA1NDY5IDAuNTE5NTMxIDAuMjkyOTY5IDAuNzA3MDMxIGwgMyAzIGMgMC4xOTUzMTIgMC4xOTUzMTMgMC40NjQ4NDMgMC4zMDA3ODEgMC43NDIxODcgMC4yOTI5NjkgYyAwLjI3NzM0NCAtMC4wMTE3MTkgMC41MzUxNTYgLTAuMTMyODEyIDAuNzE4NzUgLTAuMzQzNzUgeiBtIDAgMCIgZmlsbD0iIzIyMjIyMiIvPjwvc3ZnPgo=");
+}
+/* sound-wave */
+[class*="sidebar_"] [class*="connection_"] > [class*="flex_"] > :first-child {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IDIgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHYgMTAgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC0xMCBjIDAgLTAuNTU0Njg4IC0wLjQ0NTMxMiAtMSAtMSAtMSB6IG0gNiAyIGMgLTAuNTU0Njg4IDAgLTEgMC40NDUzMTIgLTEgMSB2IDYgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC02IGMgMCAtMC41NTQ2ODggLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSAtOSAxIGMgLTAuNTU0Njg4IDAgLTEgMC40NDUzMTIgLTEgMSB2IDQgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC00IGMgMCAtMC41NTQ2ODggLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSA2IDEgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHYgMiBjIDAgMC41NTQ2ODggMC40NDUzMTIgMSAxIDEgcyAxIC0wLjQ0NTMxMiAxIC0xIHYgLTIgYyAwIC0wLjU1NDY4OCAtMC40NDUzMTIgLTEgLTEgLTEgeiBtIC05IDEgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHMgMC40NDUzMTIgMSAxIDEgcyAxIC0wLjQ0NTMxMiAxIC0xIHMgLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K");
+}
+/* record-screen */
+[aria-label="Share Your Screen"] {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAyLjE3NTc4MSAwIGMgLTEuMjA3MDMxIDAgLTIuMTc1NzgxIDAuOTY4NzUgLTIuMTc1NzgxIDIuMTc1NzgxIHYgMi42NDg0MzggYyAwIDEuMjA3MDMxIDAuOTY4NzUgMi4xNzU3ODEgMi4xNzU3ODEgMi4xNzU3ODEgaCAzLjY0ODQzOCBjIDEuMjA3MDMxIDAgMi4xNzU3ODEgLTAuOTY4NzUgMi4xNzU3ODEgLTIuMTc1NzgxIHYgLTAuMzMyMDMxIGwgMS44NTE1NjIgMS4zNzg5MDYgYyAwLjIxNDg0NCAwLjE2MDE1NiAwLjUgMC4xODM1OTQgMC43MzgyODIgMC4wNjY0MDYgYyAwLjI0MjE4NyAtMC4xMjEwOTQgMC4zOTA2MjUgLTAuMzY3MTg4IDAuMzkwNjI1IC0wLjYzNjcxOSB2IC0zLjYwMTU2MiBjIDAuMDAzOTA2IC0wLjI2OTUzMSAtMC4xNDg0MzggLTAuNTE1NjI1IC0wLjM5MDYyNSAtMC42MzY3MTkgYyAtMC4yMzgyODIgLTAuMTIxMDk0IC0wLjUyNzM0NCAtMC4wOTc2NTYgLTAuNzQyMTg4IDAuMDYyNSBsIC0xLjg0NzY1NiAxLjM3NSB2IC0wLjMyNDIxOSBjIDAgLTEuMjA3MDMxIC0wLjk2ODc1IC0yLjE3NTc4MSAtMi4xNzU3ODEgLTIuMTc1NzgxIHogbSA2Ljg2NzE4OCA3IGMgLTAuNTc4MTI1IDAgLTEuMDQyOTY5IDAuNDQ1MzEyIC0xLjA0Mjk2OSAxIGggLTAuOTg4MjgxIGMgLTEuMTEzMjgxIDAgLTIuMDExNzE5IDAuODk4NDM4IC0yLjAxMTcxOSAyLjAxMTcxOSB2IDMuOTc2NTYyIGMgMCAxLjExMzI4MSAwLjg5ODQzOCAyLjAxMTcxOSAyLjAxMTcxOSAyLjAxMTcxOSBoIDYuOTc2NTYyIGMgMS4xMTMyODEgMCAyLjAxMTcxOSAtMC44OTg0MzggMi4wMTE3MTkgLTIuMDExNzE5IHYgLTMuOTc2NTYyIGMgMCAtMS4xMTMyODEgLTAuODk4NDM4IC0yLjAxMTcxOSAtMi4wMTE3MTkgLTIuMDExNzE5IGggLTAuOTg4MjgxIGMgMCAtMC41NTQ2ODggLTAuNDY0ODQ0IC0xIC0xLjA0Mjk2OSAtMSB6IG0gMS40NTcwMzEgMiBjIDEuMzc4OTA2IDAgMi41IDEuMTIxMDk0IDIuNSAyLjUgcyAtMS4xMjEwOTQgMi41IC0yLjUgMi41IHMgLTIuNSAtMS4xMjEwOTQgLTIuNSAtMi41IHMgMS4xMjEwOTQgLTIuNSAyLjUgLTIuNSB6IG0gMCAwIiBmaWxsPSIjMjIyMjIyIi8+PC9zdmc+Cg==");
+}
+/* emoji-activities */
+[aria-label="Start an Activity"] {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDggMCBjIC00LjQwNjI1IDAgLTggMy41OTM3NSAtOCA4IHMgMy41OTM3NSA4IDggOCBzIDggLTMuNTkzNzUgOCAtOCBzIC0zLjU5Mzc1IC04IC04IC04IHogbSAwIDIgYyAwLjAzOTA2MiAwIDAuMDc0MjE5IDAuMDAzOTA2IDAuMTEzMjgxIDAuMDA3ODEyIGMgLTAuMzM1OTM3IDEuNjQ4NDM4IDAuMTY3OTY5IDMuMzk0NTMyIDEuNDI5Njg4IDQuNjAxNTYzIGMgMS4yMDMxMjUgMS4xNTYyNSAyLjg3NSAxLjYwMTU2MyA0LjQ1MzEyNSAxLjI4NTE1NiBjIDAgMC4wMzUxNTcgMC4wMDM5MDYgMC4wNzAzMTMgMC4wMDM5MDYgMC4xMDU0NjkgYyAwIDMuMzI0MjE5IC0yLjY3NTc4MSA2IC02IDYgYyAtMC4wMzkwNjIgMCAtMC4wNzgxMjUgLTAuMDAzOTA2IC0wLjExMzI4MSAtMC4wMDc4MTIgYyAwLjMyMDMxMiAtMS41ODIwMzIgLTAuMTI4OTA3IC0zLjI1NzgxMyAtMS4yODEyNSAtNC40NjA5MzggYyAtMC43MjI2NTcgLTAuNzQ2MDk0IC0xLjYzNjcxOSAtMS4yMzQzNzUgLTIuNjA5Mzc1IC0xLjQyOTY4OCBjIC0wLjI0NjA5NCAtMC4wNTA3ODEgLTAuNDkyMTg4IC0wLjA4MjAzMSAtMC43NDIxODggLTAuMDkzNzUgYyAtMC40MTQwNjIgLTAuMDIzNDM3IC0wLjgzNTkzNyAwLjAxMTcxOSAtMS4yNDYwOTQgMC4wOTc2NTcgYyAtMC4wMDM5MDYgLTAuMDM1MTU3IC0wLjAwNzgxMiAtMC4wNzAzMTMgLTAuMDA3ODEyIC0wLjEwNTQ2OSBjIDAgLTMuMzI0MjE5IDIuNjc1NzgxIC02IDYgLTYgeiBtIDEuMTEzMjgxIDAuMTA1NDY5IGMgMi40Mjk2ODggMC40NTMxMjUgNC4zMzIwMzEgMi4zNTU0NjkgNC43ODEyNSA0Ljc4NTE1NiBjIC0xLjI4OTA2MiAwLjI5Njg3NSAtMi42NzE4NzUgLTAuMDUwNzgxIC0zLjY2MDE1NiAtMS4wMDM5MDYgYyAtMS4wMzUxNTYgLTAuOTg4MjgxIC0xLjQzMzU5NCAtMi40Mjk2ODggLTEuMTIxMDk0IC0zLjc4MTI1IHogbSAtNS45MDYyNSA2Ljg5ODQzNyBjIDAuOTkyMTg4IDAuMDUwNzgyIDEuOTUzMTI1IDAuNDcyNjU2IDIuNjc1NzgxIDEuMjIyNjU2IGMgMC45NDkyMTkgMC45ODgyODIgMS4zMDQ2ODggMi4zNzEwOTQgMS4wMDc4MTMgMy42Njc5NjkgYyAtMi40MzM1OTQgLTAuNDUzMTI1IC00LjMzNTkzNyAtMi4zNTU0NjkgLTQuNzg1MTU2IC00Ljc4OTA2MiBjIDAuMzYzMjgxIC0wLjA4MjAzMSAwLjczNDM3NSAtMC4xMjEwOTQgMS4xMDE1NjIgLTAuMTAxNTYzIHogbSAwIDAiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==");
+}
+/* bullhorn */
+[aria-label*="Soundboard"] {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAxMi45NzY1NjIgMCBjIC0wLjMyNDIxOCAwLjAwNzgxMjUgLTAuNjI1IDAuMTcxODc1IC0wLjgwODU5MyAwLjQ0NTMxMiBjIC0xLjQzMzU5NCAyLjE0MDYyNiAtNC45NzI2NTcgMy4yNjk1MzIgLTcuMTI1IDMuNTAzOTA3IGMgLTAuNDMzNTk0IDAuMDQyOTY5IC0xLjMzOTg0NCAwLjA1MDc4MSAtMS44OTQ1MzEgMC4wNTA3ODEgaCAtMS4xNDg0MzggYyAtMS4wOTM3NSAwIC0yIDAuOTA2MjUgLTIgMiB2IDMgYyAwIDEuMDkzNzUgMC45MDIzNDQgMiAxLjk5NjA5NCAyLjAwMzkwNiBsIDEuMTQ4NDM3IDAuMDAzOTA2IGMgMC4wNTQ2ODggMCAwLjEzNjcxOSAwLjAwMzkwNyAwLjE5NTMxMyAwLjAwMzkwNyBsIDAuNjc5Njg3IDMuMTk5MjE5IGMgMC4wNTg1OTQgMC4yNTc4MTIgMC4yMTQ4NDQgMC40ODQzNzQgMC40Mzc1IDAuNjI4OTA2IGMgMC4yMjI2NTcgMC4xNDQ1MzEgMC40OTIxODggMC4xOTUzMTIgMC43NSAwLjE0MDYyNSBjIDAuMjYxNzE5IC0wLjA1ODU5NCAwLjQ4ODI4MSAtMC4yMTQ4NDQgMC42MzI4MTMgLTAuNDM3NSBjIDAuMTQ0NTMxIC0wLjIyMjY1NyAwLjE5NTMxMiAtMC40OTIxODggMC4xNDA2MjUgLTAuNzUgbCAtMC41NzQyMTkgLTIuNjc5Njg4IGMgMi4xNzE4NzUgMC4zMDg1OTQgNS40MDYyNSAxLjQxNzk2OSA2Ljc2MTcxOSAzLjQ0NTMxMyBjIDAuMjQ2MDkzIDAuMzYzMjgxIDAuNzAzMTI1IDAuNTIzNDM3IDEuMTIxMDkzIDAuMzk4NDM3IGMgMC40MjE4NzYgLTAuMTI4OTA2IDAuNzEwOTM4IC0wLjUxNTYyNSAwLjcxMDkzOCAtMC45NTcwMzEgdiAtNC44NDM3NSBsIDEuNzM0Mzc1IC0wLjY5NTMxMiBjIDAuMTYwMTU2IC0wLjA2MjUgMC4yNjU2MjUgLTAuMjE4NzUgMC4yNjU2MjUgLTAuMzk0NTMyIHYgLTEuMTMyODEyIGMgMCAtMC4xNzE4NzUgLTAuMTA1NDY5IC0wLjMyODEyNSAtMC4yNjU2MjUgLTAuMzkwNjI1IGwgLTEuNzM0Mzc1IC0wLjY5NTMxMyB2IC00Ljg0NzY1NiBjIDAgLTAuNDQxNDA2IC0wLjI4OTA2MiAtMC44MjgxMjUgLTAuNzA3MDMxIC0wLjk1NzAzMTIgYyAtMC4xMDU0NjkgLTAuMDMxMjUgLTAuMjEwOTM4IC0wLjA0Njg3NTA1IC0wLjMxNjQwNyAtMC4wNDI5Njg4IHogbSAtMC45NzY1NjIgMy40NzY1NjIgdiA4LjA1NDY4OCBjIC0yLjEwNTQ2OSAtMS42MDE1NjIgLTQuODM1OTM4IC0yLjI1IC02Ljc0NjA5NCAtMi40NTcwMzEgYyAtMC4wNzgxMjUgLTAuMDA3ODEzIC0wLjE2Nzk2OCAtMC4wMTE3MTkgLTAuMjUzOTA2IC0wLjAxNTYyNSB2IC0zLjEwMTU2MyBjIDAuMDg1OTM4IC0wLjAwNzgxMiAwLjE3NTc4MSAtMC4wMTE3MTkgMC4yNTM5MDYgLTAuMDE5NTMxIGMgMS45MTAxNTYgLTAuMjA3MDMxIDQuNjQwNjI1IC0wLjg2MzI4MSA2Ljc0NjA5NCAtMi40NjA5MzggeiBtIC04IDIuNTE1NjI2IHYgMy4wMjM0MzcgYyAtMC4zMDg1OTQgLTAuMDAzOTA2IC0wLjYxMzI4MSAtMC4wMDM5MDYgLTAuODQzNzUgLTAuMDA3ODEzIGwgLTEuMTUyMzQ0IC0wLjAwMzkwNiBjIC0wLjAxNTYyNSAwIC0wLjAwMzkwNiAwLjAxMTcxOSAtMC4wMDM5MDYgLTAuMDAzOTA2IHYgLTMgaCAxLjE0ODQzOCBjIDAuMjM0Mzc0IDAgMC41NDI5NjggLTAuMDAzOTA2IDAuODUxNTYyIC0wLjAwNzgxMiB6IG0gMCAwIiBmaWxsPSIjMjIyMjIyIi8+PC9zdmc+Cg==");
+}
 /* mail-unread */
 [aria-label="Inbox"] {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSIjMmUzNDM2Ij4KICAgICAgICA8cGF0aCBkPSJtIDEuODAwNzgxIDMuMDE5NTMxIGMgLTAuMjU3ODEyIDAuMDUwNzgxIC0wLjQ4NDM3NSAwLjIwNzAzMSAtMC42MzI4MTIgMC40MjU3ODEgYyAtMC4zMDQ2ODggMC40NjA5MzggLTAuMTgzNTk0IDEuMDgyMDMyIDAuMjc3MzQzIDEuMzg2NzE5IGwgNS4xNjc5NjkgMy40NDUzMTMgYyAwLjgzNTkzOCAwLjU1ODU5NCAxLjkzNzUgMC41NTg1OTQgMi43NzM0MzggMCBsIDUuMTY3OTY5IC0zLjQ0NTMxMyBjIDAuNDYwOTM3IC0wLjMwNDY4NyAwLjU4MjAzMSAtMC45MjU3ODEgMC4yNzczNDMgLTEuMzg2NzE5IGMgLTAuMzA0Njg3IC0wLjQ2MDkzNyAtMC45MjU3ODEgLTAuNTgyMDMxIC0xLjM4NjcxOSAtMC4yNzczNDMgbCAtNS4xNjc5NjggMy40NDUzMTIgYyAtMC4xNzE4NzUgMC4xMTMyODEgLTAuMzgyODEzIDAuMTEzMjgxIC0wLjU1NDY4OCAwIGwgLTUuMTY3OTY4IC0zLjQ0NTMxMiBjIC0wLjIyMjY1NyAtMC4xNDg0MzggLTAuNDkyMTg4IC0wLjE5OTIxOSAtMC43NTM5MDcgLTAuMTQ4NDM4IHogbSAwIDAiLz4KICAgICAgICA8cGF0aCBkPSJtIDMgMiBjIC0xLjY0NDUzMSAwIC0zIDEuMzU1NDY5IC0zIDMgdiA2IGMgMCAxLjY0NDUzMSAxLjM1NTQ2OSAzIDMgMyBoIDEwIGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OSAzIC0zIHYgLTYgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgeiBtIDAgMiBoIDEwIGMgMC41NzAzMTIgMCAxIDAuNDI5Njg4IDEgMSB2IDYgYyAwIDAuNTcwMzEyIC0wLjQyOTY4OCAxIC0xIDEgaCAtMTAgYyAtMC41NzAzMTIgMCAtMSAtMC40Mjk2ODggLTEgLTEgdiAtNiBjIDAgLTAuNTcwMzEyIDAuNDI5Njg4IC0xIDEgLTEgeiBtIDAgMCIvPgogICAgPC9nPgo8L3N2Zz4K");
@@ -795,6 +840,8 @@ strong {
 }
 /* window-close */
 [class^="close"],
+[aria-label="Disconnect"],
+[aria-label="Ignore"],
 [aria-label^="Cancel"],
 :focus-within > div > [aria-label="Clear search"],
 [aria-label^="Close"] {
@@ -982,9 +1029,9 @@ strong {
 
 /** lists **/
 /*
-   * "list" role is used in many places, including ones I DO NOT FUCKING WANT
-   * "listitem" is not reliable, since there are "option" ones being used
-   */
+     * "list" role is used in many places, including ones I DO NOT FUCKING WANT
+     * "listitem" is not reliable, since there are "option" ones being used
+     */
 
 [class*="peopleList_"] {
   background-color: var(--card_bg_color);
@@ -1118,6 +1165,11 @@ button[aria-expanded],
 [role="button"][aria-haspopup] {
   svg {
     display: none;
+  }
+
+  /* vc */
+  & > [class*="flex_"] {
+    height: inherit;
   }
 }
 
@@ -1367,6 +1419,19 @@ div[class*="sidebar_"] {
       }
     }
 
+    [class*="rtcConnectionStatusLabel_"] {
+      width: unset !important;
+      height: unset !important;
+
+      &::before {
+        display: none;
+      }
+
+      & > * {
+        display: initial !important;
+      }
+    }
+
     [aria-label="Mute"],
     [aria-label="Deafen"] {
       display: none;
@@ -1460,13 +1525,13 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 
   &[role="navigation"] [class*="titleWrapper_"], /* home title */
-    [class*="akaBadge_"],
-    [class*="nicknames_"],
-    [class*="children_"] > [class*="iconWrapper_"],
-    /* thread child channel */
-    [class*="children_"]:has(> svg) [role="button"],
-    [class*="caret_"],
-    [class*="divider_"] {
+      [class*="akaBadge_"],
+      [class*="nicknames_"],
+      [class*="children_"] > [class*="iconWrapper_"],
+      /* thread child channel */
+      [class*="children_"]:has(> svg) [role="button"],
+      [class*="caret_"],
+      [class*="divider_"] {
     display: none;
   }
 
@@ -1484,7 +1549,7 @@ section:is([class*="themed_"], [class*="transparent_"]) {
     }
 
     & > :empty, /* VC fix */
-     & > [class*="followButton_"] /* Channel news */ {
+       & > [class*="followButton_"] /* Channel news */ {
       display: none;
     }
 
@@ -2300,9 +2365,9 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 
   /*
-                        https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
-                        L70
-                        */
+                          https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
+                          L70
+                          */
   & > h2:first-child,
   & > :first-child > h2:first-child,
   & > div > :first-child [class*="h1_"],
@@ -2328,11 +2393,11 @@ section:is([class*="themed_"], [class*="transparent_"]) {
     padding: 0;
 
     /* TODO: doesn't work with app-region
-      position: fixed;
-      top: calc(var(--p) + 8px);
-      left: calc(var(--p) + var(--sidebar-width) + 19px);
-      z-index: 1000;
-    */
+        position: fixed;
+        top: calc(var(--p) + 8px);
+        left: calc(var(--p) + var(--sidebar-width) + 19px);
+        z-index: 1000;
+      */
   }
 }
 
@@ -2402,7 +2467,7 @@ nav[class*="sidebar"] {
 }
 
 [class*="contentRegion_"] [class*="children_"] > div:not([class], [style]), /* bruh */
-                    [class^="marginTop_"] {
+                      [class^="marginTop_"] {
   margin-top: 28px;
 }
 
@@ -2411,15 +2476,15 @@ nav[class*="sidebar"] {
 }
 
 .vc-addon-card,
-  :is(
-    [class*="contentRegion_"] [class*="children_"],
-    [class*="children_"] > div:not([class]), /* bruh */
-    [class^="margin"]
-  ) > :is(
-    [class^="flex_"],
-    [class*="container_"], /* Switch container */
-    [class*="settingsBackgroundFlashElement_"] /* ^ */
-  ) {
+    :is(
+      [class*="contentRegion_"] [class*="children_"],
+      [class*="children_"] > div:not([class]), /* bruh */
+      [class^="margin"]
+    ) > :is(
+      [class^="flex_"],
+      [class*="container_"], /* Switch container */
+      [class*="settingsBackgroundFlashElement_"] /* ^ */
+    ) {
   background-color: var(--card_bg_color);
   border-radius: var(--card_radius) !important;
   box-shadow: var(--elevation-medium) !important;
@@ -2439,34 +2504,34 @@ nav[class*="sidebar"] {
   /* imagine the performance (like it matters) */
   /* there is also a very nasty shadow on the border, nothing I can do about that */
   /* it looks like shit, and I don't want to waste my time fighting discord's shitty layout
-    &&:nth-child(1 of [class*="container_"]) {
-      border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-      margin-bottom: 0 !important;
-    }
-  
-    &:not(:nth-child(1 of [class*="container_"])) {
-      border-radius: 0 !important;
-      margin: 0 !important;
-    }
-  
-    &&:is(:last-child, :has(+ :not([class*="container_"]))) {
-      border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-      margin-bottom: 16px !important;
-    }
-  
-    &&:last-child {
-      border-radius: var(--card_radius) !important;
-      margin-bottom: 16px !important;
-    }
-    */
+      &&:nth-child(1 of [class*="container_"]) {
+        border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+        margin-bottom: 0 !important;
+      }
+    
+      &:not(:nth-child(1 of [class*="container_"])) {
+        border-radius: 0 !important;
+        margin: 0 !important;
+      }
+    
+      &&:is(:last-child, :has(+ :not([class*="container_"]))) {
+        border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+        margin-bottom: 16px !important;
+      }
+    
+      &&:last-child {
+        border-radius: var(--card_radius) !important;
+        margin-bottom: 16px !important;
+      }
+      */
 }
 
 .vc-plugins-grid,
-  [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style], /* Vencord plugin settings */
-  [class*="connectContainer_"], /* Connections tab */
-  [class*="cameraWrapper_"], /* Voice tab */
-            [class*="card_"],
-            [role="radiogroup"] {
+    [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style], /* Vencord plugin settings */
+    [class*="connectContainer_"], /* Connections tab */
+    [class*="cameraWrapper_"], /* Voice tab */
+              [class*="card_"],
+              [role="radiogroup"] {
   background-color: var(--card_bg_color) !important;
   border: none !important;
   border-radius: var(--card_radius) !important;
@@ -2474,15 +2539,15 @@ nav[class*="sidebar"] {
 }
 
 .vc-addon-card,
-  [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
-  [class*="card_"] {
+    [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
+    [class*="card_"] {
   border: none !important;
   padding: 10px 16px !important;
 }
 
 .vc-addon-card,
-  [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
-  [class^="margin"] > [class*="children_"] > [class*="container_"] {
+    [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
+    [class^="margin"] > [class*="children_"] > [class*="container_"] {
   border-bottom: 1px solid var(--card_shade_color) !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -2698,7 +2763,7 @@ nav[class*="sidebar"] {
 
     &[class*="horizontalReverse_"] {
       & > div > div > button:first-child, /* Vencord plugin settings */
-        & > button:last-child {
+          & > button:last-child {
         border-left: none !important;
       }
     }
