@@ -140,8 +140,8 @@
   --search-popout-option-fade-hover: none !important;
 
   /*
-     for i ( {1,2,3,4,5,6,7,8,9}{0,5} ) printf '--brand-experiment-%sa: var(--a) !important;\n' $i
-     */
+      for i ( {1,2,3,4,5,6,7,8,9}{0,5} ) printf '--brand-experiment-%sa: var(--a) !important;\n' $i
+      */
   --brand-experiment: var(--accent_color) !important;
 
   --custom-standard-sidebar-view-sidebar-total-width: var(
@@ -189,6 +189,17 @@
     --focus_transition: none;
     --switch-transition: none;
   }
+}
+
+/* Nitro themes */
+.custom-theme-background {
+  --nitro-border: rgb(
+    var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)
+  );
+
+  --background-modifier-accent: var(--nitro-border) !important;
+  --secondary_sidebar_border_color: var(--nitro-border) !important;
+  --window_border_color: var(--nitro-border) !important;
 }
 
 .theme-light {
@@ -338,11 +349,11 @@ strong {
 }
 
 [class*="sectionDivider_"],
-    #channels > ul > [role="button"], /* "Browser channels" */
-    [class*="privateChannelsHeaderContainer_"], /* what is this used for ? */
-    [aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)), /* Nitro */
-    [aria-label="Open sticker picker"], /* No idea what icon, and it's pretty useless anyway */
-    [href="https://support.discord.com"]
+     #channels > ul > [role="button"], /* "Browser channels" */
+     [class*="privateChannelsHeaderContainer_"], /* what is this used for ? */
+     [aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)), /* Nitro */
+     [aria-label="Open sticker picker"], /* No idea what icon, and it's pretty useless anyway */
+     [href="https://support.discord.com"]
 {
   display: none !important;
 }
@@ -357,6 +368,8 @@ strong {
 }
 
 [class*="titleBar_"] {
+  background: none !important;
+
   position: fixed;
   top: 12px;
   right: 12px;
@@ -382,6 +395,7 @@ strong {
 [class*="peopleListItem_"] [class*="username_"],
 [class*="peopleColumn_"] h2,
 [class*="membersGroup_"] > span,
+[class*="themeTitle_"] > div,
 [data-text-variant^="text-md"],
 [class*="eyebrow_"]:not([class*="numberBadge_"]),
 [class*="h1_"],
@@ -414,20 +428,20 @@ strong {
 
 /* .title-1 */
 [class*="flexChild_"][direction^="vertical_"] > :first-child, /* TODO: Placeholder header seems to be larger */
-    [class*="markup_"] :is(h1, h2, h3) *,
-    [class*="embedProvider_"]>*,
-    [data-text-variant^="heading-lg"],
-    [data-text-variant^="heading-x"] {
+     [class*="markup_"] :is(h1, h2, h3) *,
+     [class*="embedProvider_"]>*,
+     [data-text-variant^="heading-lg"],
+     [data-text-variant^="heading-x"] {
   font-weight: 800 !important;
   font-size: 20px !important;
 }
 
 /* .title-2 */
 [class*="sidebar_"] h2,
-    [class*="titleWrapper_"] > h1 > div, /* Special case for DMs */
-    [class*="embedAuthor_"] *,
-      [class*="searchResultsWrap_"] [class*="channelNameText_"] > span,
-    [data-text-variant^="heading-md"] {
+     [class*="titleWrapper_"] > h1 > div, /* Special case for DMs */
+     [class*="embedAuthor_"] *,
+       [class*="searchResultsWrap_"] [class*="channelNameText_"] > span,
+     [data-text-variant^="heading-md"] {
   font-weight: 800 !important;
   font-size: 15px !important;
 }
@@ -499,10 +513,10 @@ strong {
   transition: var(--backdrop_transition);
 
   /* TODO looks like shit
-      &:not(:hover) {
-        opacity: var(--dim-level-opacity) !important;
-      }
-      */
+       &:not(:hover) {
+         opacity: var(--dim-level-opacity) !important;
+       }
+       */
 }
 
 /** buttons **/
@@ -798,7 +812,7 @@ strong {
 }
 /* camera-small */
 [class*="sidebar_"] > section [class*="actionButtons_"] > :first-child, /* I have no camera, can't see the other text */
-  [aria-label^="Start Video Call"] {
+   [aria-label^="Start Video Call"] {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PGcgZmlsbD0iIzIyMjIyMiI+PHBhdGggZD0ibSAwLjY4MzU5NCA0IGggLTAuNjgzNTk0IHYgOSBoIDAuNjQ0NTMxIGwgNC4zNTU0NjkgLTQuNTM1MTU2IHogbSAwIDAiLz48cGF0aCBkPSJtIDcgMy4wMDM5MDYgYyAtMS42NDQ1MzEgMCAtMyAxLjM1NTQ2OSAtMyAzIHYgNSBjIDAgMS42NDQ1MzIgMS4zNTU0NjkgMyAzIDMgaCA2IGMgMS42NDQ1MzEgMCAzIC0xLjM1NTQ2OCAzIC0zIHYgLTUgYyAwIC0xLjY0NDUzMSAtMS4zNTU0NjkgLTMgLTMgLTMgeiBtIDAgMiBoIDYgYyAwLjU3MDMxMiAwIDEgMC40Mjk2ODggMSAxIHYgNSBjIDAgMC41NzQyMTkgLTAuNDI5Njg4IDEgLTEgMSBoIC02IGMgLTAuNTcwMzEyIDAgLTEgLTAuNDI1NzgxIC0xIC0xIHYgLTUgYyAwIC0wLjU3MDMxMiAwLjQyOTY4OCAtMSAxIC0xIHogbSAwIDAiLz48L2c+PC9zdmc+Cg==");
 }
 /* user-info */
@@ -1029,9 +1043,9 @@ strong {
 
 /** lists **/
 /*
-     * "list" role is used in many places, including ones I DO NOT FUCKING WANT
-     * "listitem" is not reliable, since there are "option" ones being used
-     */
+      * "list" role is used in many places, including ones I DO NOT FUCKING WANT
+      * "listitem" is not reliable, since there are "option" ones being used
+      */
 
 [class*="peopleList_"] {
   background-color: var(--card_bg_color);
@@ -1374,11 +1388,11 @@ button[aria-expanded] {
 }
 
 /** content **/
-[class*="guilds_"] {
+[data-list-id="guildsnav"] {
   background-color: var(--sidebar_bg_color) !important;
   border-right: 1px solid var(--secondary_sidebar_border_color) !important;
 
-  [class*="scroller_"] {
+  & > [class*="scroller_"] {
     padding-top: 12px;
   }
 }
@@ -1395,19 +1409,30 @@ button[aria-expanded] {
 }
 
 div[class*="sidebar_"] {
-  background-color: var(--secondary_sidebar_bg_color) !important;
+  background: var(
+    --bg-overlay-app-frame,
+    var(--background-secondary-alt)
+  ) !important;
   border-right: 1px solid var(--secondary_sidebar_border_color) !important;
   border-radius: 0 !important;
 
   section {
     --spacing: 6px;
 
+    background: var(
+      --bg-overlay-app-frame,
+      var(--background-secondary-alt)
+    ) !important;
     border-top: 1px solid var(--secondary_sidebar_border_color);
 
     & > div {
       padding: 0;
 
       height: unset;
+
+      & > [class*="container_"] {
+        border: none;
+      }
     }
 
     button {
@@ -1525,13 +1550,13 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 
   &[role="navigation"] [class*="titleWrapper_"], /* home title */
-      [class*="akaBadge_"],
-      [class*="nicknames_"],
-      [class*="children_"] > [class*="iconWrapper_"],
-      /* thread child channel */
-      [class*="children_"]:has(> svg) [role="button"],
-      [class*="caret_"],
-      [class*="divider_"] {
+       [class*="akaBadge_"],
+       [class*="nicknames_"],
+       [class*="children_"] > [class*="iconWrapper_"],
+       /* thread child channel */
+       [class*="children_"]:has(> svg) [role="button"],
+       [class*="caret_"],
+       [class*="divider_"] {
     display: none;
   }
 
@@ -1549,7 +1574,7 @@ section:is([class*="themed_"], [class*="transparent_"]) {
     }
 
     & > :empty, /* VC fix */
-       & > [class*="followButton_"] /* Channel news */ {
+        & > [class*="followButton_"] /* Channel news */ {
       display: none;
     }
 
@@ -2071,7 +2096,7 @@ section:is([class*="themed_"], [class*="transparent_"]) {
 
   & > div {
     background-color: transparent;
-    border-radius: 0;
+    border-radius: inherit;
 
     & > div {
       padding: 0;
@@ -2365,9 +2390,9 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 
   /*
-                          https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
-                          L70
-                          */
+                           https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
+                           L70
+                           */
   & > h2:first-child,
   & > :first-child > h2:first-child,
   & > div > :first-child [class*="h1_"],
@@ -2393,11 +2418,11 @@ section:is([class*="themed_"], [class*="transparent_"]) {
     padding: 0;
 
     /* TODO: doesn't work with app-region
-        position: fixed;
-        top: calc(var(--p) + 8px);
-        left: calc(var(--p) + var(--sidebar-width) + 19px);
-        z-index: 1000;
-      */
+         position: fixed;
+         top: calc(var(--p) + 8px);
+         left: calc(var(--p) + var(--sidebar-width) + 19px);
+         z-index: 1000;
+       */
   }
 }
 
@@ -2467,7 +2492,7 @@ nav[class*="sidebar"] {
 }
 
 [class*="contentRegion_"] [class*="children_"] > div:not([class], [style]), /* bruh */
-                      [class^="marginTop_"] {
+                       [class^="marginTop_"] {
   margin-top: 28px;
 }
 
@@ -2476,15 +2501,15 @@ nav[class*="sidebar"] {
 }
 
 .vc-addon-card,
-    :is(
-      [class*="contentRegion_"] [class*="children_"],
-      [class*="children_"] > div:not([class]), /* bruh */
-      [class^="margin"]
-    ) > :is(
-      [class^="flex_"],
-      [class*="container_"], /* Switch container */
-      [class*="settingsBackgroundFlashElement_"] /* ^ */
-    ) {
+     :is(
+       [class*="contentRegion_"] [class*="children_"],
+       [class*="children_"] > div:not([class]), /* bruh */
+       [class^="margin"]
+     ) > :is(
+       [class^="flex_"],
+       [class*="container_"], /* Switch container */
+       [class*="settingsBackgroundFlashElement_"] /* ^ */
+     ) {
   background-color: var(--card_bg_color);
   border-radius: var(--card_radius) !important;
   box-shadow: var(--elevation-medium) !important;
@@ -2504,34 +2529,34 @@ nav[class*="sidebar"] {
   /* imagine the performance (like it matters) */
   /* there is also a very nasty shadow on the border, nothing I can do about that */
   /* it looks like shit, and I don't want to waste my time fighting discord's shitty layout
-      &&:nth-child(1 of [class*="container_"]) {
-        border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-        margin-bottom: 0 !important;
-      }
-    
-      &:not(:nth-child(1 of [class*="container_"])) {
-        border-radius: 0 !important;
-        margin: 0 !important;
-      }
-    
-      &&:is(:last-child, :has(+ :not([class*="container_"]))) {
-        border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-        margin-bottom: 16px !important;
-      }
-    
-      &&:last-child {
-        border-radius: var(--card_radius) !important;
-        margin-bottom: 16px !important;
-      }
-      */
+       &&:nth-child(1 of [class*="container_"]) {
+         border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+         margin-bottom: 0 !important;
+       }
+     
+       &:not(:nth-child(1 of [class*="container_"])) {
+         border-radius: 0 !important;
+         margin: 0 !important;
+       }
+     
+       &&:is(:last-child, :has(+ :not([class*="container_"]))) {
+         border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+         margin-bottom: 16px !important;
+       }
+     
+       &&:last-child {
+         border-radius: var(--card_radius) !important;
+         margin-bottom: 16px !important;
+       }
+       */
 }
 
 .vc-plugins-grid,
-    [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style], /* Vencord plugin settings */
-    [class*="connectContainer_"], /* Connections tab */
-    [class*="cameraWrapper_"], /* Voice tab */
-              [class*="card_"],
-              [role="radiogroup"] {
+     [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style], /* Vencord plugin settings */
+     [class*="connectContainer_"], /* Connections tab */
+     [class*="cameraWrapper_"], /* Voice tab */
+               [class*="card_"],
+               [role="radiogroup"] {
   background-color: var(--card_bg_color) !important;
   border: none !important;
   border-radius: var(--card_radius) !important;
@@ -2539,15 +2564,15 @@ nav[class*="sidebar"] {
 }
 
 .vc-addon-card,
-    [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
-    [class*="card_"] {
+     [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
+     [class*="card_"] {
   border: none !important;
   padding: 10px 16px !important;
 }
 
 .vc-addon-card,
-    [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
-    [class^="margin"] > [class*="children_"] > [class*="container_"] {
+     [role="dialog"] > [class*="root_"] > [class*="content_"] > .vc-m-bottom-16 > [style] > div, /* Vencord plugin settings */
+     [class^="margin"] > [class*="children_"] > [class*="container_"] {
   border-bottom: 1px solid var(--card_shade_color) !important;
   border-radius: 0 !important;
   box-shadow: none !important;
@@ -2612,6 +2637,36 @@ nav[class*="sidebar"] {
 
   &[aria-checked="false"] > div > :first-child {
     border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+  }
+}
+
+/* Nitro themes */
+[class*="presets_"] {
+  gap: 16px;
+
+  [role="radiogroup"]:has(> &) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  [class*="themeSelection_"] {
+    border-radius: 50% !important;
+
+    &[class*="lightIcon_"] {
+      background-color: #fafafa !important;
+    }
+
+    &[class*="darkIcon_"] {
+      background-color: #242424 !important;
+    }
+
+    & > div {
+      margin-top: 4px !important;
+    }
+
+    svg {
+      display: initial;
+    }
   }
 }
 
@@ -2763,7 +2818,7 @@ nav[class*="sidebar"] {
 
     &[class*="horizontalReverse_"] {
       & > div > div > button:first-child, /* Vencord plugin settings */
-          & > button:last-child {
+           & > button:last-child {
         border-left: none !important;
       }
     }
