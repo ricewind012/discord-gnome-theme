@@ -1,0 +1,92 @@
+[role="article"] {
+  [class*="headerText_"] {
+    margin-right: 0rem;
+  }
+
+  &[class*="compact_"] {
+    --custom-message-margin-compact-indent: calc(5.875rem);
+    --custom-message-reply-indent: 1.375rem;
+
+    i {
+      opacity: 1;
+
+      position: unset;
+      display: unset;
+    }
+
+    [class*="repliedMessage_"] {
+      --custom-message-reply-indent: 0rem;
+      --timestamp-width: calc(11ch - 1.5rem);
+
+      margin-left: 0;
+
+      & > span {
+        opacity: 1 !important;
+      }
+    }
+
+    [class*="replyBadge_"] {
+      margin-top: 0.1em;
+
+      width: 1em;
+      height: 1em;
+    }
+
+    [class*="avatar_"] {
+      margin-left: 0;
+
+      top: 0.15em;
+    }
+
+    [class*="timestamp_"] {
+      font-family: var(--font-code);
+
+      width: 11ch;
+    }
+  }
+}
+
+[class*="chatLayerWrapper_"] > [class*="container_"] {
+  border-radius: 0;
+}
+
+[class*="embed_"] {
+  border-left-width: 6px;
+  border-radius: 6px;
+
+  & > div > div {
+    padding: 12px 8px;
+
+    & > :first-child {
+      margin-top: 0;
+    }
+  }
+
+  [href] {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  [class*="embedProvider_"] {
+    margin-bottom: 4px;
+  }
+}
+
+[class*="embedDescription_"] {
+  font-size: 11pt;
+}
+
+[class*="embedMedia_"],
+[class*="embedVideo_"] {
+  margin-top: 6px !important;
+}
+
+[class*="embedMedia_"],
+[class*="oneByOneGridSingle_"] {
+  border-radius: 6px;
+}
+
+[aria-label="Message Actions"][role="group"] > div {
+  box-shadow: var(--elevation-medium);
+  border-radius: var(--button_radius);
+}

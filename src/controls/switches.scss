@@ -1,0 +1,52 @@
+[class*="labelRow_"] > [class*="control_"] > [class*="container_"] {
+  --percentage: 15.25%;
+  background-color: color-mix(
+    in srgb,
+    var(--window_fg_color) var(--percentage),
+    transparent
+  ) !important;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 4px color-mix(in srgb, black 20%, transparent);
+    margin: 2px;
+
+    transition: var(--switch-transition);
+  }
+
+  &:hover {
+    --percentage: 22.5%;
+  }
+
+  &:active {
+    --percentage: 8%;
+  }
+
+  &[class*="checked_"] {
+    background-color: var(--accent_bg_color) !important;
+
+    &::before {
+      margin-left: 18px;
+      transition: var(--switch-transition);
+    }
+
+    &:hover {
+      background-color: #4990e7 !important;
+    }
+
+    &:active {
+      background-color: #2a6ab6 !important;
+    }
+  }
+
+  [class*="slider_"] {
+    display: none;
+  }
+}

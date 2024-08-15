@@ -1,0 +1,61 @@
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) {
+  --text-muted: var(--window_fg_color);
+  border-radius: var(--window_radius);
+  box-shadow: var(--popover_shadow);
+  gap: 16px;
+  padding: var(--menu_margin);
+  display: flex;
+  flex-direction: column;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=header_] {
+  padding: 0 !important;
+  padding-bottom: 6px !important;
+  padding-left: 4px !important;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [aria-label="Clear Search History"] {
+  top: 4px;
+  right: 12px;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=group] {
+  padding: 0;
+  margin: 0;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=group]::before {
+  display: none;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=group] > * {
+  padding: 0;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] {
+  --spacing: 6px;
+  font-size: 15px;
+  border-radius: var(--button_radius);
+  margin: 0;
+  padding: 0 12px;
+  height: 32px;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=resultChannel_] {
+  width: 100%;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] strong,
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=displayedNick_] {
+  width: 50%;
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] strong {
+  margin-left: calc(20px + var(--spacing));
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=displayedNick_] {
+  margin: 0 var(--spacing);
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=searchResultChannelCategory_] {
+  opacity: 1;
+  text-transform: unset;
+  margin-left: var(--spacing);
+}
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=queryContainer_],
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [aria-label="Learn More"],
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=plusIcon_],
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=searchResultChannelIcon_],
+[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option]:is([class*=user_], :has(strong)) > [class*=filter_] {
+  display: none;
+}

@@ -1,0 +1,85 @@
+[class*="chatContent_"] > form {
+  --custom-channel-textarea-text-area-height: unset;
+
+  margin: 0;
+
+  &::before,
+  &::after {
+    display: none;
+  }
+}
+
+[class*="channelTextArea_"] {
+  background-color: color-mix(
+    in srgb,
+    var(--window_fg_color) 7.5%,
+    transparent
+  );
+  border-radius: 6px;
+
+  & > div {
+    background-color: transparent;
+    border-radius: inherit;
+
+    & > div {
+      padding: 0;
+    }
+  }
+
+  [class*="clipContainer_"] {
+    padding: 0;
+    margin: 0;
+  }
+
+  [class*="replyLabel_"] {
+    font-size: 15px !important;
+  }
+
+  [class*="textArea_"],
+  [class*="buttons_"] {
+    height: unset;
+    min-height: unset;
+  }
+
+  [class*="placeholder_"],
+  [role="textbox"] {
+    padding: 6px;
+  }
+
+  [class*="buttons_"] {
+    margin: 0 !important;
+
+    /* align to start for longer text */
+    & > div {
+      height: 100%;
+      align-items: start;
+    }
+  }
+
+  [class*="separator_"] {
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+[class*="channelTextAreaInner_"] > div > div {
+  min-height: unset !important;
+}
+
+[class*="textAreaThreadCreation_"] > div > [role="textbox"] {
+  border-radius: 6px 0 0 6px;
+}
+
+[class*="channelTextArea_"] [class*="attachButton_"] {
+  margin: 0 !important;
+
+  /* align with cozy mode avatars, à la discord */
+  width: calc(var(--icon-button-size) + 8px * 2) !important;
+
+  & > [class*="icon_"] {
+    padding: 4px 16px 0;
+  }
+}

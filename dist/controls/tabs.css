@@ -1,0 +1,55 @@
+[role=tablist] {
+  /* .navigation-sidebar > row */
+}
+[role=tablist] [role=tab] {
+  border: none !important;
+  border-radius: var(--button_radius);
+  transition: var(--backdrop_transition);
+}
+[role=tablist]:where([aria-orientation=horizontal],
+[aria-label="Expression Picker Categories"]) {
+  gap: 5px !important;
+}
+[role=tablist]:where([aria-orientation=horizontal],
+[aria-label="Expression Picker Categories"]) [role=tab] {
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px;
+  margin: 0;
+  /* user dialog */
+  height: unset;
+}
+[role=tablist]:where([aria-orientation=horizontal],
+[aria-label="Expression Picker Categories"]) [role=tab]:hover {
+  --percentage: var(--bg-hover-percentage);
+}
+[role=tablist]:where([aria-orientation=horizontal],
+[aria-label="Expression Picker Categories"]) [role=tab][aria-selected=true] {
+  --percentage: var(--bg-selected-percentage);
+}
+[role=tablist]:where([aria-orientation=horizontal],
+[aria-label="Expression Picker Categories"]) [role=tab]:active {
+  --percentage: var(--bg-active-percentage);
+}
+[role=tablist][aria-orientation=vertical] {
+  padding: var(--menu_margin) 0 !important;
+}
+[role=tablist][aria-orientation=vertical] [role=tab] {
+  line-height: 44px;
+  min-height: 36px;
+  padding: 0 14px;
+  margin: 0 var(--menu_margin) 2px;
+}
+nav[class*=sidebar_] [role=tablist][aria-orientation=vertical] [role=tab] {
+  display: flex;
+  align-items: center;
+}
+nav[class*=sidebar_] [role=tablist][aria-orientation=vertical] [role=tab]::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  mask: var(--icon);
+  background-color: currentColor;
+  margin-right: 12px;
+}

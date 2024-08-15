@@ -1,0 +1,305 @@
+.theme-light,
+.theme-dark {
+  /** libadwaita **/
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --backdrop_transition: 200ms ease-out;
+  --focus_transition: outline-color 200ms var(--ease-out-quad),
+    outline-width 200ms var(--ease-out-quad),
+    outline-offset 200ms var(--ease-out-quad);
+  --button_transition: background 200ms var(--ease-out-quad),
+    box-shadow 200ms var(--ease-out-quad);
+  --button_radius: 6px;
+  --card_radius: calc(var(--button_radius) + 6px);
+  --menu_radius: 6px;
+  --menu_margin: 6px;
+  --menu_padding: 12px;
+  --window_radius: calc(var(--button_radius) + 6px);
+  --popover_radius: var(--window_radius);
+  /** my **/
+  /* found in _colors.scss */
+  --osd_bg_color: rgba(0, 0, 0, 0.7);
+  --osd_fg_color: rgba(255, 255, 255, 0.9);
+  --banner-bg: color-mix(
+    in srgb,
+    var(--accent_bg_color) 30%,
+    var(--window_bg_color)
+  );
+  --switch-transition: 100ms;
+  --popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
+    0 2px 14px 3px color-mix(in srgb, black 5%, transparent);
+  --backdrop: color-mix(in srgb, black 25%, transparent);
+  --dim-level-opacity: 50%;
+  --headerbar-height: 46px;
+  --icon-button-size: 34px;
+  --close-button-size: 24px;
+  --close-button-pos: 12px;
+  --settings-dialog-size: 80%;
+  --sidebar-width: 263px;
+  --content-width: 575px;
+  --p: calc((100% - var(--settings-dialog-size)) / 2);
+  /** Discord vars **/
+  --background-primary: var(--window_bg_color) !important;
+  --background-secondary: var(--secondary_sidebar_bg_color) !important;
+  --background-secondary-alt: var(--secondary_sidebar_bg_color) !important;
+  --background-tertiary: var(--sidebar_bg_color) !important;
+  --background-floating: var(--popover_bg_color) !important;
+  --background-modifier-hover: color-mix(
+    in srgb,
+    currentColor var(--bg-hover-percentage),
+    transparent
+  ) !important;
+  --background-modifier-active: color-mix(
+    in srgb,
+    currentColor var(--bg-active-percentage),
+    transparent
+  ) !important;
+  --background-modifier-selected: color-mix(
+    in srgb,
+    currentColor var(--bg-selected-percentage),
+    transparent
+  ) !important;
+  --background-modifier-accent: color-mix(
+    in srgb,
+    var(--window_fg_color) var(--separator-percentage),
+    var(--window_bg_color)
+  ) !important;
+  --background-message-hover: var(--sidebar_bg_color) !important;
+  --background-mentioned: color-mix(
+    in srgb,
+    var(--warning_bg_color) 10%,
+    transparent
+  ) !important;
+  --background-mentioned-hover: color-mix(
+    in srgb,
+    var(--warning_bg_color) 20%,
+    transparent
+  ) !important;
+  --background-message-highlight: color-mix(
+    in srgb,
+    var(--accent_bg_color) 10%,
+    transparent
+  ) !important;
+  --background-message-highlight-hover: color-mix(
+    in srgb,
+    var(--accent_bg_color) 20%,
+    transparent
+  ) !important;
+  --home-background: var(--window_bg_color) !important;
+  --modal-background: var(--background-primary) !important;
+  --modal-footer-background: transparent !important;
+  --text-danger: var(--destructive_color) !important;
+  --text-link: var(--accent_color) !important;
+  --text-muted: var(--window_fg_muted) !important;
+  --text-normal: var(--window_fg_color) !important;
+  --text-positive: var(--success_color) !important;
+  --text-primary: var(--window_fg_color) !important;
+  --text-secondary: var(--window_fg_muted) !important;
+  --text-warning: var(--warning_color) !important;
+  --header-primary: var(--window_fg_color) !important;
+  --header-secondary: var(--window_fg_color) !important;
+  --header-muted: var(--window_fg_color) !important;
+  --interactive-normal: var(--window_fg_color) !important;
+  --interactive-active: var(--window_fg_color) !important;
+  --interactive-hover: var(--window_fg_color) !important;
+  --interactive-muted: var(--window_fg_muted) !important;
+  --channel-text-area-placeholder: var(--text-muted) !important;
+  --channel-icon: var(--text-muted) !important;
+  --channels-default: var(--window_fg_color) !important;
+  --embed-title: var(--window_fg_color) !important;
+  --status-danger: var(--destructive_color) !important;
+  --status-dnd: var(--destructive_color) !important;
+  --status-idle: var(--warning_color) !important;
+  --status-offline: var(--text-muted) !important;
+  --status-online: var(--success_color) !important;
+  --status-positive: var(--success_color) !important;
+  --status-positive-background: var(--success_color) !important;
+  --status-positive-text: var(--window_fg_color) !important;
+  --status-speaking: var(--success_color) !important;
+  --status-warning: var(--warning_color) !important;
+  --status-warning-background: var(--warning_bg_color) !important;
+  --status-warning-text: var(--warning_fg_color) !important;
+  --search-popout-option-fade: none !important;
+  --search-popout-option-fade-hover: none !important;
+  --brand-experiment: var(--accent_color) !important;
+  --custom-standard-sidebar-view-sidebar-total-width: var(
+    --sidebar-width
+  ) !important;
+  --custom-margin-margin-x-small: 16px !important;
+  --custom-margin-margin-small: 16px !important;
+  --custom-margin-margin-medium: 16px !important;
+  --custom-margin-margin-large: 16px !important;
+  --custom-margin-margin-x-large: 16px !important;
+  --elevation-stroke: 0 0 0 1px var(--window_border_color) !important;
+  --elevation-low: 0 1px
+      color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
+    0 2px 4px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent) !important;
+  --elevation-medium: 0 0 0 1px color-mix(in srgb, black 3%, transparent),
+    0 1px 3px 1px color-mix(in srgb, black 7%, transparent),
+    0 2px 6px 2px color-mix(in srgb, black 3%, transparent) !important;
+  --elevation-high: 0 1px 3px 3px transparent,
+    0 2px 8px 2px color-mix(in srgb, black 13%, transparent),
+    0 3px 20px 10px color-mix(in srgb, black 9%, transparent),
+    0 6px 32px 16px color-mix(in srgb, black 4%, transparent),
+    0 0 0 1px color-mix(in srgb, black 5%, transparent) !important;
+  --legacy-elevation-low: var(--elevation-low) !important;
+  --legacy-elevation-high: var(--elevation-high) !important;
+  --legacy-elevation-border: var(--elevation-stroke) !important;
+  --radius-xs: 6px !important;
+  --radius-sm: 6px !important;
+  --radius-md: 12px !important;
+  --radius-lg: 12px !important;
+  --radius-xl: 18px !important;
+  --radius-xxl: 18px !important;
+  --font-primary: "Cantarell", sans-serif !important;
+  --font-display: "Cantarell", sans-serif !important;
+  --font-headline: "Cantarell", sans-serif !important;
+  --font-code: "Source Code Pro", monospace !important;
+}
+@media (prefers-reduced-motion) {
+  .theme-light,
+  .theme-dark {
+    --backdrop_transition: none;
+    --button_transition: none;
+    --focus_transition: none;
+    --switch-transition: none;
+  }
+}
+
+/* Nitro themes */
+.custom-theme-background {
+  --nitro-border: rgb(
+    var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)
+  );
+  --background-modifier-accent: var(--nitro-border) !important;
+  --secondary_sidebar_border_color: var(--nitro-border) !important;
+  --window_border_color: var(--nitro-border) !important;
+}
+
+.theme-light {
+  --accent_color: #1c71d8;
+  --accent_bg_color: #3584e4;
+  --accent_fg_color: #ffffff;
+  --destructive_color: #c01c28;
+  --destructive_bg_color: #e01b24;
+  --destructive_fg_color: #ffffff;
+  --success_color: #1b8553;
+  --success_bg_color: #2ec27e;
+  --success_fg_color: #ffffff;
+  --warning_color: #9c6e03;
+  --warning_bg_color: #e5a50a;
+  --warning_fg_color: rgba(0, 0, 0, 0.8);
+  --error_color: #c01c28;
+  --error_bg_color: #e01b24;
+  --error_fg_color: #ffffff;
+  --window_bg_color: #fafafa;
+  --window_fg_color: #2e2e2e;
+  --view_bg_color: #ffffff;
+  --view_fg_color: rgba(0, 0, 0, 0.8);
+  --headerbar_bg_color: #ffffff;
+  --headerbar_fg_color: rgba(0, 0, 0, 0.8);
+  --headerbar_border_color: rgba(0, 0, 0, 0.8);
+  --headerbar_backdrop_color: #fafafa;
+  --headerbar_shade_color: rgba(0, 0, 0, 0.12);
+  --headerbar_darker_shade_color: rgba(0, 0, 0, 0.12);
+  --sidebar_bg_color: #ebebeb;
+  --sidebar_fg_color: rgba(0, 0, 0, 0.8);
+  --sidebar_backdrop_color: #f2f2f2;
+  --sidebar_border_color: rgba(0, 0, 0, 0.07);
+  --sidebar_shade_color: rgba(0, 0, 0, 0.07);
+  --secondary_sidebar_bg_color: #f3f3f3;
+  --secondary_sidebar_fg_color: rgba(0, 0, 0, 0.8);
+  --secondary_sidebar_backdrop_color: #f6f6f6;
+  --secondary_sidebar_border_color: rgba(0, 0, 0, 0.07);
+  --secondary_sidebar_shade_color: rgba(0, 0, 0, 0.07);
+  --card_bg_color: #ffffff;
+  --card_fg_color: rgba(0, 0, 0, 0.8);
+  --card_shade_color: rgba(0, 0, 0, 0.07);
+  --thumbnail_bg_color: #ffffff;
+  --thumbnail_fg_color: rgba(0, 0, 0, 0.8);
+  --dialog_bg_color: #fafafa;
+  --dialog_fg_color: rgba(0, 0, 0, 0.8);
+  --popover_bg_color: #ffffff;
+  --popover_fg_color: rgba(0, 0, 0, 0.8);
+  --popover_shade_color: rgba(0, 0, 0, 0.07);
+}
+
+.theme-dark {
+  --accent_color: #78aeed;
+  --accent_bg_color: #3584e4;
+  --accent_fg_color: #ffffff;
+  --destructive_color: #ff7b63;
+  --destructive_bg_color: #c01c28;
+  --destructive_fg_color: #ffffff;
+  --success_color: #8ff0a4;
+  --success_bg_color: #26a269;
+  --success_fg_color: #ffffff;
+  --warning_color: #f8e45c;
+  --warning_bg_color: #cd9309;
+  --warning_fg_color: rgba(0, 0, 0, 0.8);
+  --error_color: #ff7b63;
+  --error_bg_color: #c01c28;
+  --error_fg_color: #ffffff;
+  --window_bg_color: #242424;
+  --window_fg_color: #ffffff;
+  --view_bg_color: #1e1e1e;
+  --view_fg_color: #ffffff;
+  --headerbar_bg_color: #303030;
+  --headerbar_fg_color: #ffffff;
+  --headerbar_border_color: #ffffff;
+  --headerbar_backdrop_color: #242424;
+  --headerbar_shade_color: rgba(0, 0, 0, 0.36);
+  --headerbar_darker_shade_color: rgba(0, 0, 0, 0.9);
+  --sidebar_bg_color: #303030;
+  --sidebar_fg_color: #ffffff;
+  --sidebar_backdrop_color: #2a2a2a;
+  --sidebar_border_color: rgba(0, 0, 0, 0.36);
+  --sidebar_shade_color: rgba(0, 0, 0, 0.25);
+  --secondary_sidebar_bg_color: #2a2a2a;
+  --secondary_sidebar_fg_color: #ffffff;
+  --secondary_sidebar_backdrop_color: #272727;
+  --secondary_sidebar_border_color: rgba(0, 0, 0, 0.36);
+  --secondary_sidebar_shade_color: rgba(0, 0, 0, 0.25);
+  --card_bg_color: rgba(255, 255, 255, 0.08);
+  --card_fg_color: #ffffff;
+  --card_shade_color: rgba(0, 0, 0, 0.36);
+  --thumbnail_bg_color: #383838;
+  --thumbnail_fg_color: #ffffff;
+  --dialog_bg_color: #383838;
+  --dialog_fg_color: #ffffff;
+  --popover_bg_color: #383838;
+  --popover_fg_color: #ffffff;
+  --popover_shade_color: rgba(0, 0, 0, 0.25);
+}
+
+/* my colors, cuz idk what these colors are */
+.theme-light {
+  --bg-selected-percentage: 7.5%;
+  --bg-active-percentage: 13.75%;
+  --bg-hover-percentage: 4.75%;
+  --separator-percentage: 21.75%;
+  --window_border_color: #d4d4d4;
+  --window_fg_muted: #909090;
+  --selection-bg: #b4cce9;
+  --card_bg_hover_color: #f9f9f9;
+  --card_bg_active_color: #efefef;
+}
+
+.theme-dark {
+  --bg-selected-percentage: 7.5%;
+  --bg-active-percentage: 13.75%;
+  --bg-hover-percentage: 4.75%;
+  --separator-percentage: 13.25%;
+  --window_border_color: #333;
+  --window_fg_muted: #959595;
+  --selection-bg: #344c69;
+  --card_bg_hover_color: color-mix(
+    in srgb,
+    var(--window_fg_color) 11%,
+    transparent
+  );
+  --card_bg_active_color: color-mix(
+    in srgb,
+    var(--window_fg_color) 15.5%,
+    transparent
+  );
+}

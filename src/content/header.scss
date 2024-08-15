@@ -1,0 +1,206 @@
+section:is([class*="themed_"], [class*="transparent_"]) {
+  --spacing: 6px;
+
+  padding: 0;
+
+  min-height: unset;
+
+  & > div {
+    padding-right: calc(var(--icon-button-size) + var(--spacing));
+    align-items: center;
+  }
+
+  /* home */
+  &:not([role="navigation"]) > div {
+    margin-left: calc(var(--icon-button-size) + var(--spacing) * 2);
+
+    /* Button that shows the channel description */
+    &:has(> :first-child > [class*="topic_"]) {
+      margin-right: calc(var(--icon-button-size) + var(--spacing));
+
+      & > :first-child > [class*="topic_"] {
+        &::before,
+        &::after {
+          content: "";
+
+          position: fixed;
+          top: calc(var(--spacing) + 1px);
+          right: calc(var(--close-button-pos) + var(--icon-button-size));
+          width: var(--icon-button-size);
+          height: var(--icon-button-size);
+        }
+
+        &::before {
+          background-color: var(--window_fg_color);
+          mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IDAgYyAtNC40MTAxNTYgMCAtOCAzLjU4OTg0NCAtOCA4IHMgMy41ODk4NDQgOCA4IDggcyA4IC0zLjU4OTg0NCA4IC04IHMgLTMuNTg5ODQ0IC04IC04IC04IHogbSAwIDIgYyAzLjMzMjAzMSAwIDYgMi42Njc5NjkgNiA2IHMgLTIuNjY3OTY5IDYgLTYgNiBzIC02IC0yLjY2Nzk2OSAtNiAtNiBzIDIuNjY3OTY5IC02IDYgLTYgeiBtIDAgMS44NzUgYyAtMC42MjEwOTQgMCAtMS4xMjUgMC41MDM5MDYgLTEuMTI1IDEuMTI1IHMgMC41MDM5MDYgMS4xMjUgMS4xMjUgMS4xMjUgcyAxLjEyNSAtMC41MDM5MDYgMS4xMjUgLTEuMTI1IHMgLTAuNTAzOTA2IC0xLjEyNSAtMS4xMjUgLTEuMTI1IHogbSAtMS41MjM0MzggMy4xMjUgYyAtMC4yNjU2MjQgMC4wMTE3MTkgLTAuNDc2NTYyIDAuMjMwNDY5IC0wLjQ3NjU2MiAwLjUgYyAwIDAuMjc3MzQ0IDAuMjIyNjU2IDAuNSAwLjUgMC41IGggMC41IHYgMyBoIC0wLjUgYyAtMC4yNzczNDQgMCAtMC41IDAuMjIyNjU2IC0wLjUgMC41IHMgMC4yMjI2NTYgMC41IDAuNSAwLjUgaCAzIGMgMC4yNzczNDQgMCAwLjUgLTAuMjIyNjU2IDAuNSAtMC41IHMgLTAuMjIyNjU2IC0wLjUgLTAuNSAtMC41IGggLTAuNSB2IC00IGggLTIuNSBjIC0wLjAwNzgxMiAwIC0wLjAxNTYyNSAwIC0wLjAyMzQzOCAwIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K");
+          mask-repeat: no-repeat;
+          mask-position: center;
+        }
+
+        &::after {
+          background-color: color-mix(
+            in srgb,
+            var(--window_fg_color) var(--percentage),
+            transparent
+          ) !important;
+          border-radius: 6px;
+
+          transition: var(--backdrop_transition) !important;
+        }
+
+        &:hover {
+          /* *exact* #404040 for dark theme */
+          --percentage: 12.75% !important;
+        }
+
+        &:active {
+          /* *exact* #616161 for dark theme */
+          --percentage: 27.75% !important;
+        }
+      }
+    }
+  }
+
+  // 1. Home title
+  // 5. Thread child channel
+  &[role="navigation"] [class*="titleWrapper_"],
+  [class*="akaBadge_"],
+  [class*="nicknames_"],
+  [class*="children_"] > [class*="iconWrapper_"],
+  [class*="children_"]:has(> svg) [role="button"],
+  [class*="caret_"],
+  [class*="divider_"] {
+    display: none;
+  }
+
+  [class*="children_"] {
+    padding: 4px var(--spacing);
+
+    min-height: var(--headerbar-height);
+    display: flex;
+    justify-content: center;
+
+    app-region: drag;
+
+    &:not(:has([class*="avatar_"])) {
+      flex-direction: column;
+    }
+
+    // 1. VC fix
+    // 2. Channel news
+    & > :empty,
+    & > [class*="followButton_"] {
+      display: none;
+    }
+
+    /* Group chat */
+    & > [class*="container_"] {
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      & > div {
+        padding: 0;
+        margin: 0;
+
+        & > div > div {
+          display: none !important;
+        }
+
+        input {
+          opacity: 1 !important;
+          box-shadow: none !important;
+          padding-block: 7px !important;
+
+          position: relative !important;
+        }
+      }
+    }
+  }
+
+  [class*="titleWrapper_"],
+  [class*="topic_"] {
+    margin: 0;
+  }
+
+  /* wtf ? */
+  [class*="topic_"] {
+    text-align: center;
+
+    width: -webkit-fill-available;
+  }
+
+  [class*="avatar_"] {
+    margin-left: 0;
+    margin-right: 6px;
+  }
+}
+
+// Search
+[class*="toolbar_"] > [class*="search_"] {
+  margin: 0 var(--spacing);
+
+  position: absolute;
+  left: 0;
+
+  & > div {
+    &:not(:focus-within) > div {
+      background-color: transparent;
+
+      &,
+      & > [role="button"] {
+        width: var(--icon-button-size) !important;
+      }
+    }
+
+    [role="button"] {
+      border-radius: 0 !important;
+    }
+
+    & > div {
+      padding: 0;
+      border-radius: var(--button_radius) !important;
+
+      height: var(--icon-button-size);
+      flex-direction: row-reverse;
+
+      transition: var(--backdrop_transition);
+
+      & > [role="button"] {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .DraftEditor-root {
+    padding: 7px 0;
+  }
+}
+
+/* position: fixed & top: 0 doesn't actually bring it to the top, wtf ??? */
+[class*="peopleColumn_"] > [class*="searchBar_"] {
+  border-radius: var(--button_radius);
+
+  & > div {
+    padding: 0;
+
+    flex-direction: row-reverse;
+  }
+}
+
+[class*="privateChannels_"] {
+  & > [class*="searchBar_"] {
+    padding: 0 6px;
+
+    height: var(--headerbar-height);
+
+    & > button {
+      --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8ZyBmaWxsPSJjb250ZXh0LWZpbGwiIHN0cm9rZT0iY29udGV4dC1zdHJva2UiIGZpbGwtb3BhY2l0eT0iY29udGV4dC1maWxsLW9wYWNpdHkiIHN0cm9rZS1vcGFjaXR5PSJjb250ZXh0LXN0cm9rZS1vcGFjaXR5Ij4KICAgICAgICA8cGF0aCBkPSJtIDEwLjgwNDY4OCAxMCBjIC0wLjgxMjUgMC4xNDQ1MzEgLTEuMTA1NDY5IDEuMTU2MjUgLTAuNSAxLjcxODc1IGwgMyAzIGMgMC45NTcwMzEgMC45Mzc1IDIuMzYzMjgxIC0wLjUgMS40MDYyNSAtMS40Mzc1IGwgLTMgLTMgYyAtMC4yMzgyODIgLTAuMjQyMTg4IC0wLjU3ODEyNiAtMC4zNDc2NTYgLTAuOTA2MjUgLTAuMjgxMjUgeiBtIDAgMCIvPgogICAgICAgIDxwYXRoIGQ9Im0gNi41IDAgYyAtMy41NzgxMjUgMCAtNi41IDIuOTIxODc1IC02LjUgNi41IHMgMi45MjE4NzUgNi40OTYwOTQgNi41IDYuNDk2MDk0IHMgNi41IC0yLjkxNzk2OSA2LjUgLTYuNDk2MDk0IHMgLTIuOTIxODc1IC02LjUgLTYuNSAtNi41IHogbSAwIDIgYyAyLjQ5NjA5NCAwIDQuNSAyLjAwMzkwNiA0LjUgNC41IHMgLTIuMDAzOTA2IDQuNDk2MDk0IC00LjUgNC40OTYwOTQgcyAtNC41IC0yIC00LjUgLTQuNDk2MDk0IHMgMi4wMDM5MDYgLTQuNSA0LjUgLTQuNSB6IG0gMCAwIi8+CiAgICA8L2c+Cjwvc3ZnPg==");
+      font-size: 0;
+    }
+  }
+
+  [role="listitem"] {
+    border-radius: var(--button_radius);
+    padding: 0;
+  }
+}

@@ -1,0 +1,77 @@
+[id^="popout_"] > [role="listbox"][style="width: 320px;"]:not(:empty) {
+  --text-muted: var(--window_fg_color);
+
+  border-radius: var(--window_radius);
+  box-shadow: var(--popover_shadow);
+  gap: 16px;
+  padding: var(--menu_margin);
+
+  display: flex;
+  flex-direction: column;
+
+  [class*="header_"] {
+    padding: 0 !important;
+    padding-bottom: 6px !important;
+    padding-left: 4px !important;
+  }
+
+  [aria-label="Clear Search History"] {
+    top: 4px;
+    right: 12px;
+  }
+
+  [role="group"] {
+    padding: 0;
+    margin: 0;
+
+    &::before {
+      display: none;
+    }
+
+    & > * {
+      padding: 0;
+    }
+  }
+
+  [role="option"] {
+    --spacing: 6px;
+
+    font-size: 15px;
+    border-radius: var(--button_radius);
+    margin: 0;
+    padding: 0 12px;
+
+    height: 32px;
+
+    [class*="resultChannel_"] {
+      width: 100%;
+    }
+
+    strong,
+    [class*="displayedNick_"] {
+      width: 50%;
+    }
+
+    strong {
+      margin-left: calc(20px + var(--spacing));
+    }
+
+    [class*="displayedNick_"] {
+      margin: 0 var(--spacing);
+    }
+
+    [class*="searchResultChannelCategory_"] {
+      opacity: 1;
+      text-transform: unset;
+      margin-left: var(--spacing);
+    }
+  }
+
+  [class*="queryContainer_"],
+  [aria-label="Learn More"],
+  [class*="plusIcon_"],
+  [class*="searchResultChannelIcon_"],
+  [role="option"]:is([class*="user_"], :has(strong)) > [class*="filter_"] {
+    display: none;
+  }
+}

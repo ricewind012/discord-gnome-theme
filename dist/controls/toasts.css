@@ -1,0 +1,91 @@
+[class*=attachedBars_] {
+  --spacing: 6px;
+}
+[class*=attachedBars_] [class*=replyBar_] {
+  background-color: inherit;
+  gap: var(--spacing);
+  padding: var(--spacing);
+}
+[class*=attachedBars_] [data-text-variant] {
+  color: inherit !important;
+  font-weight: bold !important;
+}
+[class*=attachedBars_] [class*=replyLabel_] {
+  margin-left: var(--spacing);
+}
+[class*=attachedBars_] [class*=mentionButton_] {
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  box-sizing: border-box;
+}
+[class*=attachedBars_] [class*=mentionButton_] svg {
+  display: initial !important;
+}
+[class*=attachedBars_] [class*=threadSuggestionBar_],
+[class*=attachedBars_] [class*=separator_] {
+  display: none;
+}
+[class*=attachedBars_] [class*=closeButton_] {
+  margin-left: var(--spacing);
+}
+
+[class*=autocomplete_] {
+  --background-modifier-accent: color-mix(
+    in srgb,
+    var(--window_fg_color) 20%,
+    transparent
+  );
+  background-color: var(--background-floating) !important;
+  border: 1px solid color-mix(in srgb, black 14%, transparent);
+  border-radius: var(--popover_radius) !important;
+  box-shadow: var(--popover_shadow);
+  /* [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using */
+  /** commands **/
+}
+[class*=autocomplete_] [role=listbox]:not([style*=inset]) {
+  padding: 8px;
+}
+[class*=autocomplete_] [data-list-item-id^=channel-autocomplete_] {
+  padding: 0;
+}
+[class*=autocomplete_] [data-list-item-id^=channel-autocomplete_] > [class*=base_] {
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  line-height: inherit;
+  padding: 6px 12px;
+}
+[class*=autocomplete_] [data-list-item-id^=channel-autocomplete_] > [class*=base_]:hover {
+  --percentage: 10%;
+}
+[class*=autocomplete_] [data-list-item-id^=channel-autocomplete_] > [class*=base_]:active {
+  --percentage: 18.5%;
+}
+[class*=autocomplete_] [class*=base_] {
+  border-radius: var(--menu_radius);
+  padding: 0;
+}
+[class*=autocomplete_] [class*=contentTitle_] {
+  padding-top: 0;
+  padding-bottom: 6px;
+}
+[class*=autocomplete_] [class*=divider_] {
+  padding: var(--menu_margin) 0;
+}
+[class*=autocomplete_] [class*=rail_] {
+  border-right: 1px solid var(--sidebar_border_color);
+}
+
+[class*=autocompleteRowContent_] {
+  gap: 8px;
+}
+[class*=autocompleteRowContent_] > * {
+  margin: 0;
+  text-align: start;
+}
+
+[class*=autocompleteRowContentPrimary_],
+[class*=autocompleteRowContentSecondary_] {
+  width: 50%;
+}
+
+[class*=autocompleteRowContentPrimary_]:first-child {
+  margin-left: 32px;
+}

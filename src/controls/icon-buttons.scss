@@ -1,0 +1,159 @@
+[href="/channels/@me"] > div > :first-child,
+[class*="winButtonClose_"],
+[class*="close_"],
+[class*="closeIcon_"],
+[class*="closeButton_"],
+:where([class*="searchBar_"], [class*="searchBox_"])
+  [role="button"][aria-hidden="true"]:not([class*="icon_"]),
+[class*="peopleListItem_"] [role="button"],
+[class*="toolbar_"] [role="button"],
+[class*="sidebar_"] [class*="headerButton_"],
+[class*="sidebar_"] [aria-label="User area"] :where([role="button"], button),
+[class*="privateChannels_"] [class*="searchBarComponent_"],
+[class*="channelTextArea_"] button {
+  background-color: color-mix(
+    in srgb,
+    currentColor var(--percentage),
+    transparent
+  ) !important;
+  border-radius: var(--button_radius) !important;
+
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+
+  transition: var(--backdrop_transition) !important;
+
+  &:hover {
+    /* *exact* #404040 for dark theme */
+    --percentage: 12.75% !important;
+  }
+
+  &:active {
+    /* *exact* #616161 for dark theme */
+    --percentage: 27.75% !important;
+  }
+
+  &:disabled {
+    --percentage: 0% !important;
+    opacity: var(--dim-level-opacity) !important;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    mask: var(--icon);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: var(--window_fg_color);
+  }
+
+  & > * {
+    display: none;
+  }
+}
+
+[class*="toolbar_"] {
+  [class*="liveQualityIndicator_"],
+  [class*="live_"] {
+    margin-bottom: 0 !important;
+  }
+
+  [class*="qualityIndicator_"] {
+    width: unset !important;
+    height: unset !important;
+
+    &::before {
+      display: none;
+    }
+
+    & > * {
+      display: initial !important;
+    }
+  }
+}
+
+[href="/channels/@me"] > div > :first-child {
+  --icon-button-size: 32px;
+
+  background-color: transparent !important;
+}
+
+[class*="searchBar_"],
+[class*="searchBox_"] {
+  [role="button"][aria-hidden="true"]:not([class*="icon_"]) {
+    --icon-button-size: 16px;
+
+    background-color: transparent !important;
+    margin-right: 9px;
+  }
+}
+
+[class*="winButtonClose_"],
+[class*="close_"],
+[class*="closeIcon_"],
+[class*="closeButton_"] {
+  --percentage: 7.5%;
+
+  background-color: color-mix(
+    in srgb,
+    var(--window_fg_color) var(--percentage),
+    transparent
+  ) !important;
+  border: none !important;
+  border-radius: 100% !important;
+  padding: 0 !important;
+
+  width: var(--close-button-size) !important;
+  height: var(--close-button-size) !important;
+
+  transition: var(--backdrop_transition);
+  transform: none !important;
+}
+
+/* dialog */
+[class*="close_"] {
+  opacity: 1;
+
+  position: absolute !important;
+  top: var(--close-button-pos);
+  right: var(--close-button-pos);
+}
+
+/* settings */
+[class*="tools_"] {
+  position: fixed;
+  top: calc(var(--p) + var(--close-button-pos));
+  right: calc(var(--p) + var(--close-button-pos));
+}
+
+[class*="closeButton_"] {
+  opacity: 1;
+
+  flex: 0 0 var(--close-button-size);
+
+  /* align with the other child element */
+  [aria-label="Private channels"] & {
+    margin-right: 8px;
+  }
+}
+
+[class*="toolbar_"] {
+  gap: 6px;
+  padding: 6px;
+
+  & > button {
+    margin: 0;
+  }
+
+  [role="button"] {
+    margin: 0;
+  }
+}
+
+[class*="channelTextArea_"] button {
+  border-radius: 0 !important;
+}

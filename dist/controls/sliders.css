@@ -1,0 +1,40 @@
+[role=slider] {
+  /* the grabber is different with exact values, but i don't care fuck you */
+}
+[role=slider] [class*=track_] {
+  top: 32px;
+}
+[role=slider] [class*=bar_] {
+  border-radius: 16px;
+  height: 4px;
+}
+[role=slider] [class*=barFill_] {
+  background-color: var(--accent_bg_color);
+}
+[role=slider] [class*=grabber_] {
+  /* close enough on dark theme, don't bother */
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: -10px;
+  top: -11px;
+  width: 20px;
+  height: 20px;
+}
+[role=slider] [class*=mark_] {
+  flex-direction: column-reverse;
+}
+[role=slider] [class*=mark_] > * {
+  color: var(--text-muted);
+  font-size: 15px;
+}
+[role=slider] [class*=markDash_] {
+  background-color: currentColor;
+  width: 1px;
+  height: 6px;
+}
+[role=slider] [class*=markValue_] {
+  margin-top: 2px;
+  margin-bottom: 0;
+}

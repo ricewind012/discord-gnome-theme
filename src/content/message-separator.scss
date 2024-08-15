@@ -1,0 +1,35 @@
+#---new-messages-bar {
+  --separator-spacing: 0px;
+
+  margin-inline: 16px;
+  margin-block: calc(8px + var(--separator-spacing));
+
+  .group-spacing-4 & {
+    --separator-spacing: 4px;
+  }
+
+  .group-spacing-8 & {
+    --separator-spacing: 8px;
+  }
+
+  .group-spacing-16 & {
+    --separator-spacing: 16px;
+  }
+
+  .group-spacing-24 & {
+    --background-tertiary-separator-spacing: 24px;
+  }
+
+  &::before {
+    content: "NEW MESSAGES";
+
+    background-color: var(--background-primary);
+    color: var(--status-danger);
+    font-weight: bold;
+    padding: 0 4px;
+  }
+
+  & > span {
+    display: none;
+  }
+}
