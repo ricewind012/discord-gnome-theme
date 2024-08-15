@@ -1,10 +1,9 @@
 {
 	"type": "module",
 	"scripts": {
-		"build": "npx sass src:dist"
+		"build": "node build.js"
 	},
 	"dependencies": {
-		"node-sass-glob-importer": "^5.3.3",
 		"sass": "^1.77.8"
 	}
 }
