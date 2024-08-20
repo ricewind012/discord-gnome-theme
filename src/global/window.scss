@@ -1,0 +1,21 @@
+#app-mount {
+  color: var(--window_fg_color);
+  border: 1px solid var(--window_border_color);
+  border-radius: var(--window_radius);
+
+  width: calc(100% - 2px) !important;
+  height: calc(100% - 2px) !important;
+}
+
+[class*="titleBar_"] {
+  background: none !important;
+
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  height: unset;
+
+  & > :not([class*="winButtonClose_"]) {
+    display: none;
+  }
+}

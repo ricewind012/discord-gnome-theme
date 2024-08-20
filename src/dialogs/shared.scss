@@ -1,0 +1,217 @@
+[class*="backdrop_"] {
+  background-color: var(--backdrop) !important;
+}
+
+[role="dialog"] > [class*="root_"] {
+  border-radius: var(--window_radius);
+  gap: 12px;
+
+  & > [class*="header_"] {
+    padding: 22px;
+    padding-bottom: 0;
+
+    justify-content: center;
+
+    /* Vencord plugin settings */
+    & > [data-text-variant] {
+      text-align: center;
+    }
+  }
+
+  & > [class*="content_"] {
+    text-align: center;
+    padding: 0 24px !important;
+  }
+
+  [class*="footer_"] {
+    --background-modifier-accent: color-mix(
+      in srgb,
+      currentColor 15%,
+      transparent
+    );
+
+    box-shadow: none;
+    border-top: 1px solid var(--background-modifier-accent);
+    border-radius: 0 0 var(--window_radius) var(--window_radius);
+    padding: 0;
+
+    * {
+      flex-grow: 1;
+    }
+
+    button[class] {
+      --bg-percentage: 0%;
+      --border-percentage: 25%;
+
+      background-color: color-mix(
+        in srgb,
+        currentColor var(--bg-percentage),
+        transparent
+      ) !important;
+      color: var(--window_fg_color) !important;
+      border-left: 1px solid
+        color-mix(in srgb, currentColor var(--border-percentage), transparent) !important;
+      border-radius: 0 !important;
+      margin: 0 !important;
+
+      height: 44px !important;
+
+      &:hover {
+        --bg-percentage: 10%;
+      }
+
+      &:active {
+        --bg-percentage: 20%;
+        --border-percentage: 50%;
+      }
+
+      &[class*="colorBrand_"] {
+        color: var(--accent_color) !important;
+      }
+
+      &[class*="colorRed_"] {
+        color: var(--destructive_color) !important;
+      }
+
+      & > div {
+        background: none !important;
+        font-weight: 700 !important;
+        font-size: 15px !important;
+        text-transform: none !important;
+        letter-spacing: 0 !important;
+
+        justify-content: center;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+
+    &[class*="horizontalReverse_"] {
+      /* Vencord plugin settings */
+      & > div > div > button:first-child,
+      & > button:last-child {
+        border-left: none !important;
+      }
+    }
+  }
+
+  /* Vencord plugin settings */
+  &.vc-text-selectable {
+    gap: 0;
+
+    & > [class*="header_"] {
+      box-shadow: var(--elevation-low);
+      padding: 0 calc(6px + var(--close-button-pos) + var(--close-button-size));
+
+      height: var(--headerbar-height);
+    }
+
+    & > [class*="content_"] {
+      text-align: start;
+      padding-top: 24px !important;
+    }
+
+    & > [class*="footer_"] > div > div {
+      gap: 0 !important;
+      margin: 0 !important;
+    }
+  }
+}
+
+/* little tweaks */
+[class*="quickswitcher_"] {
+  background-color: var(--background-primary);
+  border-radius: var(--window_radius);
+  box-shadow: var(--elevation-stroke), var(--elevation-high);
+}
+
+[class*="recentMentionsPopout_"] {
+  [class*="expandedInboxHeader_"],
+  [class*="channelHeader_"] {
+    display: none;
+  }
+}
+
+[class*="messagesPopout_"] {
+  padding: 0 !important;
+
+  [role="list"] {
+    background-color: var(--card_bg_color);
+    border-radius: var(--card_radius);
+    box-shadow: var(--elevation-medium) !important;
+    margin: 22px 28px;
+
+    overflow: hidden !important;
+
+    & > div {
+      border: none;
+      padding: 0;
+      margin: 0;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--card_shade_color);
+        border-radius: 0;
+      }
+    }
+  }
+
+  [class*="messageContainer_"] {
+    background-color: transparent;
+    padding: 8px 0;
+    margin: 0;
+  }
+
+  [class*="jumpButton_"] {
+    top: 8px;
+    right: 8px;
+
+    & > div {
+      color: inherit !important;
+      font-size: inherit !important;
+    }
+  }
+}
+
+[role="dialog"] > div {
+  background-color: var(--background-primary);
+  border-radius: var(--window_radius);
+
+  &:not([class*="root_"]) > [class*="header_"] {
+    background-color: var(--background-primary);
+    box-shadow: var(--elevation-low);
+    padding: 6px;
+
+    height: unset;
+    min-height: unset;
+    z-index: 1;
+  }
+
+  /* Image carousel arrows */
+  [class*="arrowContainer_"] {
+    color: var(--window_fg_color);
+  }
+}
+
+/* threads */
+[class*="browser_"] {
+  & > [class*="header_"] {
+    box-shadow: var(--elevation-low);
+    gap: 6px;
+
+    height: var(--headerbar-height);
+    min-height: var(--headerbar-height);
+
+    & > svg,
+    & > h1,
+    & > [class*="divider_"],
+    & > [class*="spacer_"] {
+      display: none;
+    }
+
+    & > button {
+      margin: 0;
+    }
+  }
+}

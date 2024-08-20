@@ -1,0 +1,27 @@
+#add_friend-tab {
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  & > header {
+    border: none;
+
+    & > h2,
+    [class*="description_"] {
+      display: none;
+    }
+  }
+
+  & > div {
+    flex-grow: 0;
+  }
+}
+
+[class*="addFriendInputWrapper_"] {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+}
+
+[class*="addFriendInput_"] > input {
+  letter-spacing: 0;
+}

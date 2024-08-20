@@ -1,0 +1,179 @@
+[href="/channels/@me"] > div > :first-child,
+[class*=winButtonClose_],
+[class*=close_],
+[class*=closeIcon_],
+[class*=closeButton_],
+:where([class*=searchBar_], [class*=searchBox_]) [role=button][aria-hidden=true]:not([class*=icon_]),
+[class*=peopleListItem_] [role=button],
+[class*=toolbar_] [role=button],
+[class*=sidebar_] [class*=headerButton_],
+[class*=sidebar_] [aria-label="User area"] :where([role=button], button),
+[class*=privateChannels_] [class*=searchBarComponent_],
+[class*=channelTextArea_] button {
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+}
+[href="/channels/@me"] > div > :first-child:hover,
+[class*=winButtonClose_]:hover,
+[class*=close_]:hover,
+[class*=closeIcon_]:hover,
+[class*=closeButton_]:hover,
+:where([class*=searchBar_], [class*=searchBox_]) [role=button][aria-hidden=true]:not([class*=icon_]):hover,
+[class*=peopleListItem_] [role=button]:hover,
+[class*=toolbar_] [role=button]:hover,
+[class*=sidebar_] [class*=headerButton_]:hover,
+[class*=sidebar_] [aria-label="User area"] :where([role=button], button):hover,
+[class*=privateChannels_] [class*=searchBarComponent_]:hover,
+[class*=channelTextArea_] button:hover {
+  /* *exact* #404040 for dark theme */
+  --percentage: 12.75% !important;
+}
+[href="/channels/@me"] > div > :first-child:active,
+[class*=winButtonClose_]:active,
+[class*=close_]:active,
+[class*=closeIcon_]:active,
+[class*=closeButton_]:active,
+:where([class*=searchBar_], [class*=searchBox_]) [role=button][aria-hidden=true]:not([class*=icon_]):active,
+[class*=peopleListItem_] [role=button]:active,
+[class*=toolbar_] [role=button]:active,
+[class*=sidebar_] [class*=headerButton_]:active,
+[class*=sidebar_] [aria-label="User area"] :where([role=button], button):active,
+[class*=privateChannels_] [class*=searchBarComponent_]:active,
+[class*=channelTextArea_] button:active {
+  /* *exact* #616161 for dark theme */
+  --percentage: 27.75% !important;
+}
+[href="/channels/@me"] > div > :first-child:disabled,
+[class*=winButtonClose_]:disabled,
+[class*=close_]:disabled,
+[class*=closeIcon_]:disabled,
+[class*=closeButton_]:disabled,
+:where([class*=searchBar_], [class*=searchBox_]) [role=button][aria-hidden=true]:not([class*=icon_]):disabled,
+[class*=peopleListItem_] [role=button]:disabled,
+[class*=toolbar_] [role=button]:disabled,
+[class*=sidebar_] [class*=headerButton_]:disabled,
+[class*=sidebar_] [aria-label="User area"] :where([role=button], button):disabled,
+[class*=privateChannels_] [class*=searchBarComponent_]:disabled,
+[class*=channelTextArea_] button:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+[href="/channels/@me"] > div > :first-child::before,
+[class*=winButtonClose_]::before,
+[class*=close_]::before,
+[class*=closeIcon_]::before,
+[class*=closeButton_]::before,
+:where([class*=searchBar_], [class*=searchBox_]) [role=button][aria-hidden=true]:not([class*=icon_])::before,
+[class*=peopleListItem_] [role=button]::before,
+[class*=toolbar_] [role=button]::before,
+[class*=sidebar_] [class*=headerButton_]::before,
+[class*=sidebar_] [aria-label="User area"] :where([role=button], button)::before,
+[class*=privateChannels_] [class*=searchBarComponent_]::before,
+[class*=channelTextArea_] button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  mask: var(--icon);
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: var(--window_fg_color);
+}
+[href="/channels/@me"] > div > :first-child > *,
+[class*=winButtonClose_] > *,
+[class*=close_] > *,
+[class*=closeIcon_] > *,
+[class*=closeButton_] > *,
+:where([class*=searchBar_], [class*=searchBox_]) [role=button][aria-hidden=true]:not([class*=icon_]) > *,
+[class*=peopleListItem_] [role=button] > *,
+[class*=toolbar_] [role=button] > *,
+[class*=sidebar_] [class*=headerButton_] > *,
+[class*=sidebar_] [aria-label="User area"] :where([role=button], button) > *,
+[class*=privateChannels_] [class*=searchBarComponent_] > *,
+[class*=channelTextArea_] button > * {
+  display: none;
+}
+
+[class*=toolbar_] [class*=liveQualityIndicator_],
+[class*=toolbar_] [class*=live_] {
+  margin-bottom: 0 !important;
+}
+[class*=toolbar_] [class*=qualityIndicator_] {
+  width: unset !important;
+  height: unset !important;
+}
+[class*=toolbar_] [class*=qualityIndicator_]::before {
+  display: none;
+}
+[class*=toolbar_] [class*=qualityIndicator_] > * {
+  display: initial !important;
+}
+
+[href="/channels/@me"] > div > :first-child {
+  --icon-button-size: 32px;
+  background-color: transparent !important;
+}
+
+[class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) {
+  --icon-button-size: 16px;
+  background-color: transparent !important;
+  margin-right: 9px;
+}
+
+[class*=winButtonClose_],
+[class*=close_],
+[class*=closeIcon_],
+[class*=closeButton_] {
+  --percentage: 7.5%;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  border: none !important;
+  border-radius: 100% !important;
+  padding: 0 !important;
+  width: var(--close-button-size) !important;
+  height: var(--close-button-size) !important;
+  transition: var(--backdrop_transition);
+  transform: none !important;
+}
+
+/* dialog */
+[class*=close_] {
+  opacity: 1;
+  position: absolute !important;
+  top: var(--close-button-pos);
+  right: var(--close-button-pos);
+}
+
+/* settings */
+[class*=tools_] {
+  position: fixed;
+  top: calc(var(--p) + var(--close-button-pos));
+  right: calc(var(--p) + var(--close-button-pos));
+}
+
+[class*=closeButton_] {
+  opacity: 1;
+  flex: 0 0 var(--close-button-size);
+  /* align with the other child element */
+}
+[aria-label="Private channels"] [class*=closeButton_] {
+  margin-right: 8px;
+}
+
+[class*=toolbar_] {
+  gap: 6px;
+  padding: 6px;
+}
+[class*=toolbar_] > button {
+  margin: 0;
+}
+[class*=toolbar_] [role=button] {
+  margin: 0;
+}
+
+[class*=channelTextArea_] button {
+  border-radius: 0 !important;
+}

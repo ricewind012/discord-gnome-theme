@@ -1,0 +1,21 @@
+* {
+  font-weight: 500 !important;
+  scrollbar-width: none !important;
+}
+
+strong {
+  font-weight: 700 !important;
+}
+
+::selection {
+  background-color: var(--selection-bg) !important;
+}
+
+[class*=sectionDivider_],
+#channels > ul > [role=button],
+[class*=privateChannelsHeaderContainer_],
+[aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)),
+[aria-label="Open sticker picker"],
+[href="https://support.discord.com"] {
+  display: none !important;
+}

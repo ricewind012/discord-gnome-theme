@@ -1,0 +1,290 @@
+[class*=standardSidebarView_] {
+  top: 0 !important;
+}
+
+[class*=contentRegion_] {
+  margin-top: 46px;
+}
+
+[class*=contentColumn_] {
+  padding: 22px 28px;
+  margin: auto;
+  max-width: var(--content-width);
+  /*
+     https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
+     L70
+   */
+}
+[class*=contentColumn_]::before {
+  content: "";
+  position: fixed;
+  inset: var(--p);
+  height: var(--headerbar-height);
+  box-shadow: var(--elevation-low);
+  z-index: 1;
+}
+[class*=contentColumn_] > h2:first-child, [class*=contentColumn_] > :first-child > h2:first-child, [class*=contentColumn_] > div > :first-child [class*=h1_], [class*=contentColumn_] > div > :first-child [class*=sectionTitle_] > * {
+  --pad: 11px;
+  text-align: center;
+  padding: var(--pad);
+  position: fixed;
+  top: var(--p);
+  left: calc(var(--p) + var(--sidebar-width) + var(--pad));
+  width: calc(100% - var(--p) * 2 - var(--sidebar-width) - var(--close-button-size) - var(--pad) * 2);
+  z-index: 999;
+  app-region: drag;
+}
+[class*=contentColumn_] [role=tablist][aria-orientation=horizontal] {
+  border: none !important;
+  padding: 0;
+}
+
+[class*=contentPanel_] {
+  position: initial;
+}
+
+[class*=toolsContainer_] {
+  position: absolute;
+  z-index: 999;
+}
+
+[class*=keybind_] {
+  display: none;
+}
+
+[class*=sidebarRegion_] {
+  margin-top: var(--headerbar-height);
+  flex: unset;
+}
+[class*=sidebarRegion_]::before {
+  content: "Settings";
+  position: fixed;
+  top: calc(var(--p) + 1px);
+  left: calc(var(--p) + 1px);
+  width: var(--sidebar-width);
+  height: var(--headerbar-height);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-secondary);
+  color: var(--window_fg_color);
+  border-top-left-radius: var(--window_radius);
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  text-transform: none !important;
+  text-align: center;
+  border-right: 1px solid var(--background-modifier-accent);
+  app-region: drag;
+}
+
+[class*=sidebarRegion_] {
+  border-right: 1px solid var(--background-modifier-accent);
+}
+
+/* .navigation-sidebar */
+nav[class*=sidebar] {
+  padding: 0;
+}
+nav[class*=sidebar] [class*=header_] {
+  display: none;
+}
+nav[class*=sidebar] [class*=separator_] {
+  margin: var(--menu_margin);
+}
+
+[class*=contentRegion_] [class*=divider_] {
+  display: none;
+}
+
+/* bruh */
+[class*=contentRegion_] [class*=children_] > div:not([class], [style]),
+[class^=marginTop_] {
+  margin-top: 28px;
+}
+
+[class^=marginBottom_] {
+  margin-bottom: 28px;
+}
+
+.vc-addon-card,
+:is([class*=contentRegion_] [class*=children_],
+[class*=children_] > div:not([class]),
+[class^=margin]) > :is([class^=flex_],
+[class*=container_],
+[class*=settingsBackgroundFlashElement_]) {
+  background-color: var(--card_bg_color);
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px;
+  margin: 16px 0;
+  transition: var(--backdrop_transition);
+}
+.vc-addon-card:hover,
+:is([class*=contentRegion_] [class*=children_],
+[class*=children_] > div:not([class]),
+[class^=margin]) > :is([class^=flex_],
+[class*=container_],
+[class*=settingsBackgroundFlashElement_]):hover {
+  background-color: var(--card_bg_hover_color);
+}
+.vc-addon-card:active,
+:is([class*=contentRegion_] [class*=children_],
+[class*=children_] > div:not([class]),
+[class^=margin]) > :is([class^=flex_],
+[class*=container_],
+[class*=settingsBackgroundFlashElement_]):active {
+  background-color: var(--card_bg_active_color);
+}
+
+.vc-plugins-grid,
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style],
+[class*=connectContainer_],
+[class*=cameraWrapper_],
+[class*=card_],
+[role=radiogroup] {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+}
+
+.vc-addon-card,
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
+[class*=card_] {
+  border: none !important;
+  padding: 10px 16px !important;
+}
+
+.vc-addon-card,
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
+[class^=margin] > [class*=children_] > [class*=container_] {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+.vc-addon-card:first-child,
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-child,
+[class^=margin] > [class*=children_] > [class*=container_]:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.vc-addon-card:last-child,
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-child,
+[class^=margin] > [class*=children_] > [class*=container_]:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+
+[role=radio] {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--card_shade_color);
+  border-radius: 0;
+  margin: 0;
+  transition: var(--backdrop_transition) !important;
+}
+[role=radio]:hover {
+  background-color: var(--card_bg_hover_color) !important;
+}
+[role=radio]:active {
+  background-color: var(--card_bg_active_color) !important;
+}
+[role=radio]:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+[role=radio]:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+[role=radio] > div {
+  border: none !important;
+  gap: 16px !important;
+  padding: 16px !important;
+}
+[role=radio] > div > :first-child {
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+}
+[role=radio] svg {
+  display: none;
+}
+[role=radio][aria-checked=true] > div > :first-child {
+  background-color: #fff;
+  border: 7px solid var(--accent_bg_color);
+}
+[role=radio][aria-checked=false] > div > :first-child {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+}
+
+/* Nitro themes */
+[class*=presets_] {
+  gap: 16px;
+}
+[role=radiogroup]:has(> [class*=presets_]) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+[class*=presets_] [class*=themeSelection_] {
+  border-radius: 50% !important;
+}
+[class*=presets_] [class*=themeSelection_][class*=lightIcon_] {
+  background-color: #fafafa !important;
+}
+[class*=presets_] [class*=themeSelection_][class*=darkIcon_] {
+  background-color: #242424 !important;
+}
+[class*=presets_] [class*=themeSelection_] > div {
+  margin-top: 4px !important;
+}
+[class*=presets_] [class*=themeSelection_] > div > svg {
+  border: none !important;
+}
+[class*=presets_] [class*=themeSelection_] svg {
+  display: initial;
+}
+
+/* Vencord plugin settings */
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] {
+  gap: 0 !important;
+  padding: 0 !important;
+}
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div > div {
+  margin: 0 !important;
+}
+
+[class*=layers_] > div {
+  opacity: 1 !important;
+}
+[class*=layers_] > div[aria-hidden=true] {
+  pointer-events: none;
+  transform: none !important;
+}
+[class*=layers_] > div[aria-hidden=true]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: var(--backdrop);
+  z-index: 101;
+}
+[class*=layers_] > :not(:only-child):last-child {
+  box-shadow: var(--elevation-high);
+  border-radius: var(--window_radius);
+  inset: var(--p);
+}
+[class*=layers_] > :not(:only-child):last-child > div {
+  top: 0;
+}
+
+.vc-plugins-grid {
+  gap: 0 !important;
+  grid-template-columns: 1fr !important;
+}
+
+.vc-addon-card:hover {
+  transform: unset !important;
+}
+
+.vc-addon-note {
+  height: unset !important;
+}

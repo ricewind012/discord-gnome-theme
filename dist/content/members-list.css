@@ -1,0 +1,3 @@
+[class*=membersWrap_] {
+  border-left: 1px solid var(--secondary_sidebar_border_color) !important;
+}

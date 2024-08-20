@@ -1,0 +1,119 @@
+[class*="attachedBars_"] {
+  --spacing: 6px;
+
+  [class*="replyBar_"] {
+    background-color: inherit;
+    gap: var(--spacing);
+    padding: var(--spacing);
+  }
+
+  [data-text-variant] {
+    color: inherit !important;
+    font-weight: bold !important;
+  }
+
+  [class*="replyLabel_"] {
+    margin-left: var(--spacing);
+  }
+
+  [class*="mentionButton_"] {
+    background-color: color-mix(
+      in srgb,
+      var(--window_fg_color) var(--percentage),
+      transparent
+    ) !important;
+    box-sizing: border-box;
+
+    svg {
+      display: initial !important;
+    }
+  }
+
+  [class*="threadSuggestionBar_"],
+  [class*="separator_"] {
+    display: none;
+  }
+
+  [class*="closeButton_"] {
+    margin-left: var(--spacing);
+  }
+}
+
+[class*="autocomplete_"] {
+  --background-modifier-accent: color-mix(
+    in srgb,
+    var(--window_fg_color) 20%,
+    transparent
+  );
+  background-color: var(--background-floating) !important;
+  border: 1px solid color-mix(in srgb, black 14%, transparent);
+  border-radius: var(--popover_radius) !important;
+  box-shadow: var(--popover_shadow);
+
+  /* [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using */
+  [role="listbox"]:not([style*="inset"]) {
+    padding: 8px;
+  }
+
+  [data-list-item-id^="channel-autocomplete_"] {
+    padding: 0;
+
+    & > [class*="base_"] {
+      background-color: color-mix(
+        in srgb,
+        var(--window_fg_color) var(--percentage),
+        transparent
+      ) !important;
+      line-height: inherit;
+      padding: 6px 12px;
+
+      &:hover {
+        --percentage: 10%;
+      }
+
+      &:active {
+        --percentage: 18.5%;
+      }
+    }
+  }
+
+  [class*="base_"] {
+    border-radius: var(--menu_radius);
+    padding: 0;
+  }
+
+  [class*="contentTitle_"] {
+    padding-top: 0;
+    padding-bottom: 6px;
+  }
+
+  [class*="divider_"] {
+    padding: var(--menu_margin) 0;
+  }
+
+  /** commands **/
+  [class*="rail_"] {
+    border-right: 1px solid var(--sidebar_border_color);
+  }
+}
+
+[class*="autocompleteRowContent_"] {
+  gap: 8px;
+
+  & > * {
+    margin: 0;
+
+    text-align: start;
+  }
+}
+
+[class*="autocompleteRowContentPrimary_"],
+[class*="autocompleteRowContentSecondary_"] {
+  width: 50%;
+}
+
+[class*="autocompleteRowContentPrimary_"] {
+  &:first-child {
+    margin-left: 32px;
+  }
+}

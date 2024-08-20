@@ -1,0 +1,9 @@
+{
+	"type": "module",
+	"scripts": {
+		"build": "node build.js"
+	},
+	"dependencies": {
+		"sass": "^1.77.8"
+	}
+}

@@ -1,0 +1,37 @@
+[class*=labelRow_] > [class*=control_] > [class*=container_] {
+  --percentage: 15.25%;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_]::before {
+  content: "";
+  position: absolute;
+  min-width: 20px;
+  min-height: 20px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px color-mix(in srgb, black 20%, transparent);
+  margin: 2px;
+  transition: var(--switch-transition);
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_]:hover {
+  --percentage: 22.5%;
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_]:active {
+  --percentage: 8%;
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_] {
+  background-color: var(--accent_bg_color) !important;
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_]::before {
+  margin-left: 18px;
+  transition: var(--switch-transition);
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_]:hover {
+  background-color: #4990e7 !important;
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_]:active {
+  background-color: #2a6ab6 !important;
+}
+[class*=labelRow_] > [class*=control_] > [class*=container_] [class*=slider_] {
+  display: none;
+}

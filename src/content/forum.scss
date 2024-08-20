@@ -1,0 +1,77 @@
+[data-list-id^="forum-channel-list"] > [role="list"] {
+  --custom-forum-post-form-horizontal-padding: 0px;
+  padding: 0;
+
+  & > [data-list-item-id$="forum-channel-header"] {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-bottom: 16px;
+
+    & > div {
+      border: none !important;
+    }
+  }
+
+  [class*="titleContainer_"] {
+    gap: 10px;
+
+    & > [role="button"] {
+      background-color: color-mix(
+        in srgb,
+        currentColor var(--percentage),
+        transparent
+      ) !important;
+      border-radius: 50% !important;
+      margin: 0;
+
+      position: relative !important;
+      width: var(--icon-button-size) !important;
+      height: var(--icon-button-size) !important;
+
+      transition: var(--backdrop_transition) !important;
+      order: 1;
+
+      &:hover {
+        /* *exact* #404040 for dark theme */
+        --percentage: 12.75% !important;
+      }
+
+      &:active {
+        /* *exact* #616161 for dark theme */
+        --percentage: 27.75% !important;
+      }
+    }
+  }
+
+  [class*="tagsContainer_"] {
+    padding: 0;
+  }
+
+  [class*="prefixElement_"] {
+    display: none;
+  }
+
+  [data-item-role="item"] {
+    &:not(:first-of-type, :last-of-type) {
+      border-bottom: 1px solid var(--card_shade_color);
+      border-radius: 0 !important;
+    }
+
+    &:first-of-type {
+      border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+    }
+
+    &:last-of-type {
+      border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+    }
+
+    & > div {
+      transform: unset;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+    }
+  }
+}
