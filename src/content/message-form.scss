@@ -9,6 +9,10 @@
   }
 }
 
+[class*="channelAppLauncher_"] {
+  display: none;
+}
+
 [class*="channelTextArea_"] {
   background-color: color-mix(
     in srgb,
