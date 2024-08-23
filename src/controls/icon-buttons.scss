@@ -1,59 +1,10 @@
-[href="/channels/@me"] > div > :first-child,
-[class*="winButtonClose_"],
-[class*="close_"],
-[class*="closeIcon_"],
-[class*="closeButton_"],
-:where([class*="searchBar_"], [class*="searchBox_"])
-  [role="button"][aria-hidden="true"]:not([class*="icon_"]),
+@use "../mixins";
+
 [class*="peopleListItem_"] [role="button"],
-[class*="toolbar_"] [role="button"],
 [class*="sidebar_"] [class*="headerButton_"],
 [class*="sidebar_"] [aria-label="User area"] :where([role="button"], button),
-[class*="privateChannels_"] [class*="searchBarComponent_"],
-[class*="channelTextArea_"] button {
-  background-color: color-mix(
-    in srgb,
-    currentColor var(--percentage),
-    transparent
-  ) !important;
-  border-radius: var(--button_radius) !important;
-
-  position: relative !important;
-  width: var(--icon-button-size) !important;
-  height: var(--icon-button-size) !important;
-
-  transition: var(--backdrop_transition) !important;
-
-  &:hover {
-    /* *exact* #404040 for dark theme */
-    --percentage: 12.75% !important;
-  }
-
-  &:active {
-    /* *exact* #616161 for dark theme */
-    --percentage: 27.75% !important;
-  }
-
-  &:disabled {
-    --percentage: 0% !important;
-    opacity: var(--dim-level-opacity) !important;
-  }
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    mask: var(--icon);
-    mask-repeat: no-repeat;
-    mask-position: center;
-    background-color: var(--window_fg_color);
-  }
-
-  & > * {
-    display: none;
-  }
+[class*="privateChannels_"] [class*="searchBarComponent_"] {
+  @extend %icon-button;
 }
 
 [class*="toolbar_"] {
@@ -74,10 +25,16 @@
       display: initial !important;
     }
   }
+
+  [role="button"] {
+    @extend %icon-button;
+  }
 }
 
 [href="/channels/@me"] > div > :first-child {
   --icon-button-size: 32px;
+
+  @extend %icon-button;
 
   background-color: transparent !important;
 }
@@ -86,6 +43,8 @@
 [class*="searchBox_"] {
   [role="button"][aria-hidden="true"]:not([class*="icon_"]) {
     --icon-button-size: 16px;
+
+    @extend %icon-button;
 
     background-color: transparent !important;
     margin-right: 9px;
@@ -97,6 +56,8 @@
 [class*="closeIcon_"],
 [class*="closeButton_"] {
   --percentage: 7.5%;
+
+  @extend %icon-button;
 
   background-color: color-mix(
     in srgb,
@@ -110,7 +71,6 @@
   width: var(--close-button-size) !important;
   height: var(--close-button-size) !important;
 
-  transition: var(--backdrop_transition);
   transform: none !important;
 }
 
@@ -150,10 +110,14 @@
   }
 
   [role="button"] {
+    @extend %icon-button;
+
     margin: 0;
   }
 }
 
 [class*="channelTextArea_"] button {
+  @extend %icon-button;
+
   border-radius: 0 !important;
 }

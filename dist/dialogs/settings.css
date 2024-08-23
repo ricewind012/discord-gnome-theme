@@ -1,3 +1,68 @@
+.vc-plugins-grid,
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style],
+[class*=connectContainer_],
+[class*=cameraWrapper_],
+[role=radiogroup] {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  transition: var(--backdrop_transition) !important;
+}
+
+.vc-addon-card,
+:is([class*=contentRegion_] [class*=children_],
+[class*=children_] > div:not([class]),
+[class^=margin]) > :is([class^=flex_],
+[class*=container_],
+[class*=settingsBackgroundFlashElement_]), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
+[class^=margin] > [class*=children_] > [class*=container_], [role=radio] {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  margin: 16px 0 !important;
+  transition: var(--backdrop_transition) !important;
+}
+.vc-addon-card:hover,
+:is([class*=contentRegion_] [class*=children_],
+[class*=children_] > div:not([class]),
+[class^=margin]) > :hover:is([class^=flex_],
+[class*=container_],
+[class*=settingsBackgroundFlashElement_]), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:hover,
+[class^=margin] > [class*=children_] > [class*=container_]:hover, [role=radio]:hover {
+  background-color: var(--card_bg_hover_color) !important;
+}
+.vc-addon-card:active,
+:is([class*=contentRegion_] [class*=children_],
+[class*=children_] > div:not([class]),
+[class^=margin]) > :active:is([class^=flex_],
+[class*=container_],
+[class*=settingsBackgroundFlashElement_]), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:active,
+[class^=margin] > [class*=children_] > [class*=container_]:active, [role=radio]:active {
+  background-color: var(--card_bg_active_color) !important;
+}
+
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
+[class^=margin] > [class*=children_] > [class*=container_], [role=radio] {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+}
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-child,
+[class^=margin] > [class*=children_] > [class*=container_]:first-child, [role=radio]:first-child, [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-of-type,
+[class^=margin] > [class*=children_] > [class*=container_]:first-of-type, [role=radio]:first-of-type {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-child,
+[class^=margin] > [class*=children_] > [class*=container_]:last-child, [role=radio]:last-child, [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-of-type,
+[class^=margin] > [class*=children_] > [class*=container_]:last-of-type, [role=radio]:last-of-type {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:only-of-type,
+[class^=margin] > [class*=children_] > [class*=container_]:only-of-type, [role=radio]:only-of-type {
+  border-radius: var(--card_radius) !important;
+}
+
 [class*=standardSidebarView_] {
   top: 0 !important;
 }
@@ -53,6 +118,7 @@
 }
 
 [class*=sidebarRegion_] {
+  border-right: 1px solid var(--background-modifier-accent);
   margin-top: var(--headerbar-height);
   flex: unset;
 }
@@ -76,10 +142,6 @@
   text-align: center;
   border-right: 1px solid var(--background-modifier-accent);
   app-region: drag;
-}
-
-[class*=sidebarRegion_] {
-  border-right: 1px solid var(--background-modifier-accent);
 }
 
 /* .navigation-sidebar */
@@ -107,99 +169,31 @@ nav[class*=sidebar] [class*=separator_] {
   margin-bottom: 28px;
 }
 
-.vc-addon-card,
-:is([class*=contentRegion_] [class*=children_],
-[class*=children_] > div:not([class]),
-[class^=margin]) > :is([class^=flex_],
-[class*=container_],
-[class*=settingsBackgroundFlashElement_]) {
-  background-color: var(--card_bg_color);
-  border-radius: var(--card_radius) !important;
-  box-shadow: var(--elevation-medium) !important;
-  padding: 10px 16px;
-  margin: 16px 0;
-  transition: var(--backdrop_transition);
-}
-.vc-addon-card:hover,
-:is([class*=contentRegion_] [class*=children_],
-[class*=children_] > div:not([class]),
-[class^=margin]) > :is([class^=flex_],
-[class*=container_],
-[class*=settingsBackgroundFlashElement_]):hover {
-  background-color: var(--card_bg_hover_color);
-}
-.vc-addon-card:active,
-:is([class*=contentRegion_] [class*=children_],
-[class*=children_] > div:not([class]),
-[class^=margin]) > :is([class^=flex_],
-[class*=container_],
-[class*=settingsBackgroundFlashElement_]):active {
-  background-color: var(--card_bg_active_color);
-}
-
 .vc-plugins-grid,
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style],
 [class*=connectContainer_],
 [class*=cameraWrapper_],
-[class*=card_],
 [role=radiogroup] {
-  background-color: var(--card_bg_color) !important;
   border: none !important;
-  border-radius: var(--card_radius) !important;
-  box-shadow: var(--elevation-medium) !important;
 }
 
 .vc-addon-card,
-[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
-[class*=card_] {
+[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div {
   border: none !important;
-  padding: 10px 16px !important;
-}
-
-.vc-addon-card,
-[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
-[class^=margin] > [class*=children_] > [class*=container_] {
-  border-bottom: 1px solid var(--card_shade_color) !important;
-  border-radius: 0 !important;
   box-shadow: none !important;
+  padding: 10px 16px !important;
   margin: 0 !important;
-}
-.vc-addon-card:first-child,
-[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-child,
-[class^=margin] > [class*=children_] > [class*=container_]:first-child {
-  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-}
-.vc-addon-card:last-child,
-[role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-child,
-[class^=margin] > [class*=children_] > [class*=container_]:last-child {
-  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-  border: none !important;
 }
 
 [role=radio] {
-  background-color: transparent !important;
-  border-bottom: 1px solid var(--card_shade_color);
-  border-radius: 0;
-  margin: 0;
-  transition: var(--backdrop_transition) !important;
-}
-[role=radio]:hover {
-  background-color: var(--card_bg_hover_color) !important;
-}
-[role=radio]:active {
-  background-color: var(--card_bg_active_color) !important;
-}
-[role=radio]:first-child {
-  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-}
-[role=radio]:last-child {
-  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-  border: none !important;
+  box-shadow: none !important;
+  padding: 16px !important;
+  margin: 0 !important;
 }
 [role=radio] > div {
   border: none !important;
   gap: 16px !important;
-  padding: 16px !important;
+  padding: 0 !important;
 }
 [role=radio] > div > :first-child {
   border-radius: 50%;

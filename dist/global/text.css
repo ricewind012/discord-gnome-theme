@@ -1,33 +1,30 @@
-/** headers **/
-[data-text-variant] {
-  text-transform: none !important;
-}
-
-/* .title-3 in _labels */
 [class*=username_],
 [class*=displayedNick_],
 [class*=activityName_],
-[class*=panelTitleContainer_] > div,
 [class*=privateChannels_]::before,
 [href^="/channels/@me"] [class*=name_],
 [class*=peopleListItem_] [class*=username_],
 [class*=peopleColumn_] h2,
-[class*=membersGroup_] > span,
 [class*=themeTitle_] > div,
-[data-text-variant^=text-md],
-[class*=eyebrow_]:not([class*=numberBadge_]),
+[data-text-variant^=text-md], [class*=eyebrow_]:not([class*=numberBadge_]),
 [class*=h1_],
 [class*=h2_],
 [class*=h3_],
 [class*=h4_],
 [class*=h5_],
-[class*=h6_] {
+[class*=h6_], [class*=panelTitleContainer_] > div, [class*=membersGroup_] > span {
   font-weight: 700 !important;
   font-size: 15px !important;
   text-transform: none !important;
   letter-spacing: 0 !important;
 }
 
+/** headers **/
+[data-text-variant] {
+  text-transform: none !important;
+}
+
+/* .title-3 in _labels */
 [class*=eyebrow_]:not([class*=numberBadge_]),
 [class*=h1_],
 [class*=h2_],
@@ -38,11 +35,13 @@
   margin-bottom: 16px !important;
 }
 
-[class*=panelTitleContainer_] > div,
-[class*=membersGroup_] {
+[class*=panelTitleContainer_] > div {
   color: var(--window_fg_color) !important;
 }
 
+[class*=membersGroup_] {
+  color: var(--window_fg_color) !important;
+}
 /* .title-1 */
 /* TODO: Placeholder header seems to be larger */
 [class*=flexChild_][direction^=vertical_] > :first-child,

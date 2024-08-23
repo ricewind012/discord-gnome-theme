@@ -1,3 +1,5 @@
+@use "../mixins";
+
 [class*="backdrop_"] {
   background-color: var(--backdrop) !important;
 }
@@ -138,10 +140,9 @@
   padding: 0 !important;
 
   [role="list"] {
-    background-color: var(--card_bg_color);
-    border-radius: var(--card_radius);
-    box-shadow: var(--elevation-medium) !important;
-    margin: 22px 28px;
+    @extend %cards-container;
+
+    margin: 22px 28px !important;
 
     overflow: hidden !important;
 

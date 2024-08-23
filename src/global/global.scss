@@ -1,3 +1,5 @@
+@use "../mixins";
+
 * {
   font-weight: 500 !important;
   scrollbar-width: none !important;
@@ -23,4 +25,10 @@ strong {
 [href="https://support.discord.com"]
 {
   display: none !important;
+}
+
+[class*="card_"] {
+  @extend %card-with-actual-border-radiuses;
+
+  margin: 0 !important;
 }

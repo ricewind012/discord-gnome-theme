@@ -1,20 +1,16 @@
-[class*=chatHeaderBar_],
-[class*=barBase_] {
+[class*=chatHeaderBar_], [class*=barBase_] {
   --spacing: 6px;
   background-color: var(--banner-bg);
   padding: var(--spacing) !important;
 }
-[class*=chatHeaderBar_] *,
-[class*=barBase_] * {
+[class*=chatHeaderBar_] *, [class*=barBase_] * {
   font-size: 15px !important;
   font-weight: bold !important;
 }
-[class*=chatHeaderBar_] > button,
-[class*=barBase_] > button {
+[class*=chatHeaderBar_] > button, [class*=barBase_] > button {
   --banner-bg: inherit !important;
 }
-[class*=chatHeaderBar_] svg,
-[class*=barBase_] svg {
+[class*=chatHeaderBar_] svg, [class*=barBase_] svg {
   display: none;
 }
 

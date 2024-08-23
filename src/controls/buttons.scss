@@ -1,36 +1,7 @@
-[role="button"][aria-haspopup],
-[class*="searchResultsWrap_"] [class*="buttonsContainer_"] > div,
-[class*="jumpButton_"],
-[class*="mentionButton_"],
-[class*="barButtonAlt_"],
-[aria-roledescription="Open Thread Button"],
+@use "../mixins";
+
 [class*="button_"][class*="size" i]:not([class*="size32_"]) {
-  --banner-bg: var(--window_bg_color);
-  --percentage: 10%;
-
-  background-color: color-mix(
-    in srgb,
-    currentColor var(--percentage),
-    var(--banner-bg)
-  ) !important;
-  color: var(--window_fg_color) !important;
-  padding: 5px 10px;
-  border: none !important;
-  border-radius: var(--button_radius);
-
-  min-width: 16px !important;
-  min-height: 24px !important;
-  height: 34px;
-
-  transition: var(--backdrop_transition);
-
-  &:hover {
-    --percentage: 15%;
-  }
-
-  &:active {
-    --percentage: 30%;
-  }
+  @extend %button;
 
   &[class*="disabled_"] {
     opacity: var(--dim-level-opacity);
@@ -50,17 +21,16 @@
     --banner-bg: var(--success_bg_color) !important;
     color: var(--success_fg_color) !important;
   }
+}
 
-  * {
-    font-weight: bold !important;
-  }
-
-  svg {
-    display: none;
-  }
+[class*="mentionButton_"],
+[class*="barButtonAlt_"] {
+  @extend %button;
 }
 
 [role="button"][aria-haspopup] {
+  @extend %button;
+
   min-height: 34px !important;
 
   [class*="videoControls_"] & {
@@ -68,17 +38,24 @@
   }
 }
 
-[class*="searchResultsWrap_"] [class*="buttonsContainer_"] > div,
 [class*="jumpButton_"] {
+  @extend %button;
+
   height: unset !important;
 }
 
 [class*="searchResultsWrap_"] [class*="buttonsContainer_"] > div {
+  @extend %button;
+
   font-size: 15px;
   font-weight: bold !important;
+
+  height: unset !important;
 }
 
 [aria-roledescription="Open Thread Button"] {
+  @extend %button;
+
   height: unset !important;
 
   [class*="cta_"] {

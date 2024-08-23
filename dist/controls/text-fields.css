@@ -1,9 +1,26 @@
-[class*=searchBar_][class*=container_],
-[class*=searchBox_][class*=container_],
+[role=textbox], [class*=textarea_],
+[class*=quickswitcher_] > input,
+[class*=channelName_] > div > input, [class*=searchBar_][class*=container_],
+[class*=searchBox_][class*=container_], [class*=inputWrapper_] input,
+[class*=inputWrapper_] textarea {
+  outline: 0 solid transparent !important;
+  outline-offset: 2px !important;
+  transition: var(--focus_transition) !important;
+}
+[role=textbox]:is(:focus, :focus-within), [class*=textarea_]:is(:focus, :focus-within),
+[class*=quickswitcher_] > input:is(:focus, :focus-within),
+[class*=channelName_] > div > input:is(:focus, :focus-within), [class*=searchBar_][class*=container_]:is(:focus, :focus-within),
+[class*=searchBox_][class*=container_]:is(:focus, :focus-within), [class*=inputWrapper_] input:is(:focus, :focus-within),
+[class*=inputWrapper_] textarea:is(:focus, :focus-within) {
+  outline: 2px solid color-mix(in srgb, var(--accent_bg_color) 50%, transparent) !important;
+  outline-offset: -2px !important;
+}
+
 [class*=textarea_],
 [class*=quickswitcher_] > input,
-[class*=channelName_] > div > input,
-[class*=inputWrapper_] :is(input, textarea)[class] {
+[class*=channelName_] > div > input, [class*=searchBar_][class*=container_],
+[class*=searchBox_][class*=container_], [class*=inputWrapper_] input,
+[class*=inputWrapper_] textarea {
   --percentage: 10%;
   background-color: color-mix(in srgb, currentColor var(--percentage), var(--window_bg_color)) !important;
   font-size: 15px;
@@ -14,45 +31,21 @@
   margin: 0 !important;
   height: unset;
 }
-[class*=searchBar_][class*=container_]:disabled,
-[class*=searchBox_][class*=container_]:disabled,
 [class*=textarea_]:disabled,
 [class*=quickswitcher_] > input:disabled,
-[class*=channelName_] > div > input:disabled,
-[class*=inputWrapper_] :is(input, textarea)[class]:disabled {
+[class*=channelName_] > div > input:disabled, [class*=searchBar_][class*=container_]:disabled,
+[class*=searchBox_][class*=container_]:disabled, [class*=inputWrapper_] input:disabled,
+[class*=inputWrapper_] textarea:disabled {
   opacity: var(--dim-level-opacity);
 }
-[class*=searchBar_][class*=container_]::placeholder,
-[class*=searchBox_][class*=container_]::placeholder,
 [class*=textarea_]::placeholder,
 [class*=quickswitcher_] > input::placeholder,
-[class*=channelName_] > div > input::placeholder,
-[class*=inputWrapper_] :is(input, textarea)[class]::placeholder {
+[class*=channelName_] > div > input::placeholder, [class*=searchBar_][class*=container_]::placeholder,
+[class*=searchBox_][class*=container_]::placeholder, [class*=inputWrapper_] input::placeholder,
+[class*=inputWrapper_] textarea::placeholder {
   color: var(--text-muted);
   font-size: inherit;
   font-weight: inherit;
-}
-
-[class*=searchBar_][class*=container_],
-[class*=searchBox_][class*=container_],
-[class*=textarea_],
-[class*=quickswitcher_] > input,
-[class*=channelName_] > div > input,
-[class*=inputWrapper_] :is(input, textarea),
-[role=textbox] {
-  outline: 0 solid transparent !important;
-  outline-offset: 2px !important;
-  transition: var(--focus_transition) !important;
-}
-[class*=searchBar_][class*=container_]:is(:focus, :focus-within),
-[class*=searchBox_][class*=container_]:is(:focus, :focus-within),
-[class*=textarea_]:is(:focus, :focus-within),
-[class*=quickswitcher_] > input:is(:focus, :focus-within),
-[class*=channelName_] > div > input:is(:focus, :focus-within),
-[class*=inputWrapper_] :is(input, textarea):is(:focus, :focus-within),
-[role=textbox]:is(:focus, :focus-within) {
-  outline: 2px solid color-mix(in srgb, var(--accent_bg_color) 50%, transparent) !important;
-  outline-offset: -2px !important;
 }
 
 [class*=searchBar_][class*=container_] input, [class*=searchBar_][class*=container_] input,

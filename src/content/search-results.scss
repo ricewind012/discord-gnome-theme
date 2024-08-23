@@ -1,3 +1,5 @@
+@use "../mixins";
+
 [class*="searchResultsWrap_"] {
   border-left: 1px solid var(--secondary_sidebar_border_color);
 
@@ -21,8 +23,6 @@
   [role="group"] {
     --offset: calc(15px * 1.25 + 4px);
 
-    border-radius: var(--card_radius);
-    box-shadow: var(--elevation-medium);
     margin-bottom: calc(var(--offset) + 24px);
 
     position: relative;
@@ -36,23 +36,16 @@
   }
 
   [role="listitem"] {
+    @extend %card-with-actual-border-radiuses;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
     overflow: hidden;
-
-    &:not(:only-of-type, :last-of-type) {
-      border-bottom: 1px solid var(--card_shade_color);
-    }
-
-    &:first-of-type {
-      border-radius: var(--card_radius) var(--card_radius) 0 0;
-    }
-
-    &:last-of-type > [class*="searchResult_"] {
-      border-radius: 0 0 var(--card_radius) var(--card_radius);
-    }
   }
 
   [class*="searchResult_"] {
-    background-color: var(--card_bg_color);
+    background-color: transparent;
     border-radius: 0;
     margin: 0;
   }

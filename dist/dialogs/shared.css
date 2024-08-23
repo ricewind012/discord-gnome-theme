@@ -1,3 +1,10 @@
+[class*=messagesPopout_] [role=list] {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  transition: var(--backdrop_transition) !important;
+}
+
 [class*=backdrop_] {
   background-color: var(--backdrop) !important;
 }
@@ -107,10 +114,7 @@
   padding: 0 !important;
 }
 [class*=messagesPopout_] [role=list] {
-  background-color: var(--card_bg_color);
-  border-radius: var(--card_radius);
-  box-shadow: var(--elevation-medium) !important;
-  margin: 22px 28px;
+  margin: 22px 28px !important;
   overflow: hidden !important;
 }
 [class*=messagesPopout_] [role=list] > div {

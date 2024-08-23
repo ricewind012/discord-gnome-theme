@@ -38,16 +38,6 @@
 [data-list-id^=forum-channel-list] > [role=list] [class*=prefixElement_] {
   display: none;
 }
-[data-list-id^=forum-channel-list] > [role=list] [data-item-role=item]:not(:first-of-type, :last-of-type) {
-  border-bottom: 1px solid var(--card_shade_color);
-  border-radius: 0 !important;
-}
-[data-list-id^=forum-channel-list] > [role=list] [data-item-role=item]:first-of-type {
-  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-}
-[data-list-id^=forum-channel-list] > [role=list] [data-item-role=item]:last-of-type {
-  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-}
 [data-list-id^=forum-channel-list] > [role=list] [data-item-role=item] > div {
   transform: unset;
   background-color: transparent;

@@ -1,3 +1,5 @@
+@use "../mixins";
+
 [class*="standardSidebarView_"] {
   top: 0 !important;
 }
@@ -65,6 +67,7 @@
 }
 
 [class*="sidebarRegion_"] {
+  border-right: 1px solid var(--background-modifier-accent);
   margin-top: var(--headerbar-height);
 
   flex: unset;
@@ -93,10 +96,6 @@
 
     app-region: drag;
   }
-}
-
-[class*="sidebarRegion_"] {
-  border-right: 1px solid var(--background-modifier-accent);
 }
 
 /* .navigation-sidebar */
@@ -139,21 +138,7 @@ nav[class*="sidebar"] {
   /* ^ */
   [class*="settingsBackgroundFlashElement_"]
 ) {
-  background-color: var(--card_bg_color);
-  border-radius: var(--card_radius) !important;
-  box-shadow: var(--elevation-medium) !important;
-  padding: 10px 16px;
-  margin: 16px 0;
-
-  transition: var(--backdrop_transition);
-
-  &:hover {
-    background-color: var(--card_bg_hover_color);
-  }
-
-  &:active {
-    background-color: var(--card_bg_active_color);
-  }
+  @extend %card;
 }
 
 // 2. Vencord plugin settings
@@ -167,12 +152,10 @@ nav[class*="sidebar"] {
   > [style],
 [class*="connectContainer_"],
 [class*="cameraWrapper_"],
-[class*="card_"],
 [role="radiogroup"] {
-  background-color: var(--card_bg_color) !important;
+  @extend %cards-container;
+
   border: none !important;
-  border-radius: var(--card_radius) !important;
-  box-shadow: var(--elevation-medium) !important;
 }
 
 // 2. Vencord plugin settings
@@ -182,14 +165,14 @@ nav[class*="sidebar"] {
   > [class*="content_"]
   > .vc-m-bottom-16
   > [style]
-  > div,
-[class*="card_"] {
+  > div {
   border: none !important;
+  box-shadow: none !important;
   padding: 10px 16px !important;
+  margin: 0 !important;
 }
 
-// 2. Vencord plugin settings
-.vc-addon-card,
+// 1. Vencord plugin settings
 [role="dialog"]
   > [class*="root_"]
   > [class*="content_"]
@@ -197,51 +180,21 @@ nav[class*="sidebar"] {
   > [style]
   > div,
 [class^="margin"] > [class*="children_"] > [class*="container_"] {
-  border-bottom: 1px solid var(--card_shade_color) !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  margin: 0 !important;
-
-  &:first-child {
-    border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-  }
-
-  &:last-child {
-    border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-    border: none !important;
-  }
+  @extend %card-with-actual-border-radiuses;
 }
 
 // TODO: move to controls/radio
 [role="radio"] {
-  background-color: transparent !important;
-  border-bottom: 1px solid var(--card_shade_color);
-  border-radius: 0;
-  margin: 0;
+  @extend %card-with-actual-border-radiuses;
 
-  transition: var(--backdrop_transition) !important;
-
-  &:hover {
-    background-color: var(--card_bg_hover_color) !important;
-  }
-
-  &:active {
-    background-color: var(--card_bg_active_color) !important;
-  }
-
-  &:first-child {
-    border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-  }
-
-  &:last-child {
-    border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-    border: none !important;
-  }
+  box-shadow: none !important;
+  padding: 16px !important;
+  margin: 0 !important;
 
   & > div {
     border: none !important;
     gap: 16px !important;
-    padding: 16px !important;
+    padding: 0 !important;
 
     & > :first-child {
       border-radius: 50%;

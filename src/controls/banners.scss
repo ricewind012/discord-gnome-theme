@@ -1,31 +1,16 @@
-[class*="chatHeaderBar_"],
-[class*="barBase_"] {
-  --spacing: 6px;
-
-  background-color: var(--banner-bg);
-  padding: var(--spacing) !important;
-
-  * {
-    font-size: 15px !important;
-    font-weight: bold !important;
-  }
-
-  & > button {
-    --banner-bg: inherit !important;
-  }
-
-  svg {
-    display: none;
-  }
-}
+@use "../mixins";
 
 [class*="chatHeaderBar_"] {
+  @extend %banner;
+
   &::after {
     display: none;
   }
 }
 
 [class*="barBase_"] {
+  @extend %banner;
+
   opacity: 1;
   border-radius: 0;
   box-shadow: none;

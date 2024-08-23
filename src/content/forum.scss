@@ -53,19 +53,6 @@
   }
 
   [data-item-role="item"] {
-    &:not(:first-of-type, :last-of-type) {
-      border-bottom: 1px solid var(--card_shade_color);
-      border-radius: 0 !important;
-    }
-
-    &:first-of-type {
-      border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
-    }
-
-    &:last-of-type {
-      border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-    }
-
     & > div {
       transform: unset;
       background-color: transparent;

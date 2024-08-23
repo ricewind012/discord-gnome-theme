@@ -1,3 +1,5 @@
+@use "../mixins";
+
 /** headers **/
 [data-text-variant] {
   text-transform: none !important;
@@ -7,26 +9,13 @@
 [class*="username_"],
 [class*="displayedNick_"],
 [class*="activityName_"],
-[class*="panelTitleContainer_"] > div,
 [class*="privateChannels_"]::before,
 [href^="/channels/@me"] [class*="name_"],
 [class*="peopleListItem_"] [class*="username_"],
 [class*="peopleColumn_"] h2,
-[class*="membersGroup_"] > span,
 [class*="themeTitle_"] > div,
-[data-text-variant^="text-md"],
-[class*="eyebrow_"]:not([class*="numberBadge_"]),
-[class*="h1_"],
-[class*="h2_"],
-[class*="h3_"],
-[class*="h4_"],
-[class*="h5_"],
-[class*="h6_"] {
-  font-weight: 700 !important;
-  font-size: 15px !important;
-
-  text-transform: none !important;
-  letter-spacing: 0 !important;
+[data-text-variant^="text-md"] {
+  @extend %title-3;
 }
 
 [class*="eyebrow_"]:not([class*="numberBadge_"]),
@@ -36,12 +25,23 @@
 [class*="h4_"],
 [class*="h5_"],
 [class*="h6_"] {
+  @extend %title-3;
+
   margin-bottom: 16px !important;
 }
 
-[class*="panelTitleContainer_"] > div,
+[class*="panelTitleContainer_"] > div {
+  @extend %title-3;
+
+  color: var(--window_fg_color) !important;
+}
+
 [class*="membersGroup_"] {
   color: var(--window_fg_color) !important;
+
+  & > span {
+    @extend %title-3;
+  }
 }
 
 /* .title-1 */

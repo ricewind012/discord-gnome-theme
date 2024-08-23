@@ -1,41 +1,22 @@
+@use "../mixins";
+
+[class*="peopleList_"] {
+  @extend %cards-container;
+
+  overflow: auto !important;
+}
+
 /*
  * "list" role is used in many places, including ones I DO NOT FUCKING WANT
  * "listitem" is not reliable, since there are "option" ones being used
  */
-[class*="peopleList_"] {
-  background-color: var(--card_bg_color);
-  border-radius: var(--card_radius) !important;
-  box-shadow: var(--elevation-medium) !important;
-
-  transition: var(--backdrop_transition);
-}
-
 [class*="peopleListItem_"] {
-  border-radius: 0 !important;
-  border: none !important;
-  padding: 10px 16px !important;
+  @extend %card-with-actual-border-radiuses;
+
+  box-shadow: none !important;
+  border-top: none !important;
   margin: 0 !important;
 
-  height: unset !important;
-
-  &:not(:last-child) {
-    border-bottom: 1px solid var(--card_shade_color) !important;
-  }
-
-  &:hover {
-    background-color: var(--card_bg_hover_color);
-  }
-
-  &:active {
-    background-color: var(--card_bg_active_color);
-  }
-}
-
-[class*="peopleList_"] {
-  overflow: auto !important;
-}
-
-[class*="peopleListItem_"] {
   [class*="userInfo_"] {
     align-items: center;
   }

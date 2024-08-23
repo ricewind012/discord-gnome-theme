@@ -1,0 +1,200 @@
+%banner {
+  --spacing: 6px;
+
+  background-color: var(--banner-bg);
+  padding: var(--spacing) !important;
+
+  * {
+    font-size: 15px !important;
+    font-weight: bold !important;
+  }
+
+  & > button {
+    --banner-bg: inherit !important;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+%button {
+  --banner-bg: var(--window_bg_color);
+  --percentage: 10%;
+
+  background-color: color-mix(
+    in srgb,
+    currentColor var(--percentage),
+    var(--banner-bg)
+  ) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px;
+  border: none !important;
+  border-radius: var(--button_radius);
+
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px;
+
+  transition: var(--backdrop_transition);
+
+  &:hover {
+    --percentage: 15%;
+  }
+
+  &:active {
+    --percentage: 30%;
+  }
+
+  * {
+    font-weight: bold !important;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+%cards-container {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+
+  transition: var(--backdrop_transition) !important;
+}
+
+%card {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  margin: 16px 0 !important;
+
+  transition: var(--backdrop_transition) !important;
+
+  &:hover {
+    background-color: var(--card_bg_hover_color) !important;
+  }
+
+  &:active {
+    background-color: var(--card_bg_active_color) !important;
+  }
+}
+
+%card-with-actual-border-radiuses {
+  @extend %card;
+
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+
+  &:first-child,
+  &:first-of-type {
+    border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+  }
+
+  &:last-child,
+  &:last-of-type {
+    border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+    border: none !important;
+  }
+
+  &:only-of-type {
+    border-radius: var(--card_radius) !important;
+  }
+}
+
+%icon-button {
+  background-color: color-mix(
+    in srgb,
+    currentColor var(--percentage),
+    transparent
+  ) !important;
+  border-radius: var(--button_radius) !important;
+
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+
+  transition: var(--backdrop_transition) !important;
+
+  &:hover {
+    /* *exact* #404040 for dark theme */
+    --percentage: 12.75% !important;
+  }
+
+  &:active {
+    /* *exact* #616161 for dark theme */
+    --percentage: 27.75% !important;
+  }
+
+  &:disabled {
+    --percentage: 0% !important;
+    opacity: var(--dim-level-opacity) !important;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    mask: var(--icon);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: var(--window_fg_color);
+  }
+
+  & > * {
+    display: none;
+  }
+}
+
+%text-field-focus {
+  outline: 0 solid transparent !important;
+  outline-offset: 2px !important;
+
+  transition: var(--focus_transition) !important;
+
+  &:is(:focus, :focus-within) {
+    outline: 2px solid
+      color-mix(in srgb, var(--accent_bg_color) 50%, transparent) !important;
+    outline-offset: -2px !important;
+  }
+}
+
+%text-field {
+  @extend %text-field-focus;
+
+  --percentage: 10%;
+
+  background-color: color-mix(
+    in srgb,
+    currentColor var(--percentage),
+    var(--window_bg_color)
+  ) !important;
+  font-size: 15px;
+  line-height: 1.2;
+  border: none;
+  border-radius: var(--button_radius);
+  padding: 8px 9px;
+  margin: 0 !important;
+
+  height: unset;
+
+  &:disabled {
+    opacity: var(--dim-level-opacity);
+  }
+
+  &::placeholder {
+    color: var(--text-muted);
+    font-size: inherit;
+    font-weight: inherit;
+  }
+}
+
+%title-3 {
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
