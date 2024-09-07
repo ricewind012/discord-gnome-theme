@@ -30,7 +30,7 @@
   display: none;
 }
 [class*=sidebar_] [class*=headerButton_] {
-  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PGcgZmlsbD0iIzIyMjIyMiI+PHBhdGggZD0ibSAxIDIgaCAxNCB2IDIgaCAtMTQgeiBtIDAgMCIvPjxwYXRoIGQ9Im0gMSA3IGggMTQgdiAyIGggLTE0IHogbSAwIDAiLz48cGF0aCBkPSJtIDEgMTIgaCAxNCB2IDIgaCAtMTQgeiBtIDAgMCIvPjwvZz48L3N2Zz4K");
+  --icon: svg("menu");
   flex-shrink: 0;
   pointer-events: all;
 }
