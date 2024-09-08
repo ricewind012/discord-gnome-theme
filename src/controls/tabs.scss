@@ -49,7 +49,8 @@
       padding: 0 14px;
       margin: 0 var(--menu_margin) 2px;
 
-      nav[class*="sidebar_"] & {
+      // Settings
+      .sidebar_c25c6d & {
         display: flex;
         align-items: center;
 

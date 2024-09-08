@@ -6,13 +6,13 @@
   height: calc(100% - 2px) !important;
 }
 
-[class*=titleBar_] {
+.titleBar_a934d8 {
   background: none !important;
   position: fixed;
   top: 12px;
   right: 12px;
   height: unset;
 }
-[class*=titleBar_] > :not([class*=winButtonClose_]) {
+.titleBar_a934d8 > :not(.winButtonClose_a934d8) {
   display: none;
 }

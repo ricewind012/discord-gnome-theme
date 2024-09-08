@@ -1,4 +1,4 @@
-[class*="chatContent_"] > form {
+.form_a7d72e {
   --custom-channel-textarea-text-area-height: unset;
 
   margin: 0;
@@ -9,11 +9,11 @@
   }
 }
 
-[class*="channelAppLauncher_"] {
+.channelAppLauncher_df39bd {
   display: none;
 }
 
-[class*="channelTextArea_"] {
+.channelTextArea_a7d72e {
   background-color: color-mix(
     in srgb,
     var(--window_fg_color) 7.5%,
@@ -30,27 +30,36 @@
     }
   }
 
-  [class*="clipContainer_"] {
+  .attachButton_d0696b {
+    --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IC0wLjAzMTI1IGMgLTQuNDAyMzQ0IDAgLTggMy41OTc2NTYgLTggOCBzIDMuNTk3NjU2IDggOCA4IHMgOCAtMy41OTc2NTYgOCAtOCBzIC0zLjU5NzY1NiAtOCAtOCAtOCB6IG0gMCAxLjk4MDQ2OSBjIDMuMzM5ODQ0IDAgNi4wMTU2MjUgMi42Nzk2ODcgNi4wMTU2MjUgNi4wMTk1MzEgcyAtMi42NzU3ODEgNi4wMTk1MzEgLTYuMDE1NjI1IDYuMDE5NTMxIHMgLTYuMDE5NTMxIC0yLjY3OTY4NyAtNi4wMTk1MzEgLTYuMDE5NTMxIHMgMi42Nzk2ODcgLTYuMDE5NTMxIDYuMDE5NTMxIC02LjAxOTUzMSB6IG0gLTEgMi4wNTA3ODEgdiAzIGggLTMgdiAyIGggMyB2IDMgaCAyIHYgLTMgaCAzIHYgLTIgaCAtMyB2IC0zIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K");
+
+    margin: 0 !important;
+
+    /* align with cozy mode avatars, à la discord */
+    width: calc(var(--icon-button-size) + 8px * 2) !important;
+  }
+
+  .clipContainer_b11c5e {
     padding: 0;
     margin: 0;
   }
 
-  [class*="replyLabel_"] {
+  .replyLabel_b11c5e {
     font-size: 15px !important;
   }
 
-  [class*="textArea_"],
-  [class*="buttons_"] {
+  .textArea_d0696b,
+  .buttons_d0696b {
     height: unset;
     min-height: unset;
   }
 
-  [class*="placeholder_"],
+  .placeholder_a552a6,
   [role="textbox"] {
     padding: 6px;
   }
 
-  [class*="buttons_"] {
+  .buttons_d0696b {
     margin: 0 !important;
 
     /* align to start for longer text */
@@ -60,7 +69,7 @@
     }
   }
 
-  [class*="separator_"] {
+  .separator_a06035 {
     margin: 0;
 
     &::before {
@@ -69,23 +78,10 @@
   }
 }
 
-[class*="channelTextAreaInner_"] > div > div {
+.channelTextAreaInner_fb4810 > div > div {
   min-height: unset !important;
 }
 
-[class*="textAreaThreadCreation_"] > div > [role="textbox"] {
+.textAreaThreadCreation_d0696b [role="textbox"] {
   border-radius: 6px 0 0 6px;
-}
-
-[class*="channelTextArea_"] [class*="attachButton_"] {
-  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IC0wLjAzMTI1IGMgLTQuNDAyMzQ0IDAgLTggMy41OTc2NTYgLTggOCBzIDMuNTk3NjU2IDggOCA4IHMgOCAtMy41OTc2NTYgOCAtOCBzIC0zLjU5NzY1NiAtOCAtOCAtOCB6IG0gMCAxLjk4MDQ2OSBjIDMuMzM5ODQ0IDAgNi4wMTU2MjUgMi42Nzk2ODcgNi4wMTU2MjUgNi4wMTk1MzEgcyAtMi42NzU3ODEgNi4wMTk1MzEgLTYuMDE1NjI1IDYuMDE5NTMxIHMgLTYuMDE5NTMxIC0yLjY3OTY4NyAtNi4wMTk1MzEgLTYuMDE5NTMxIHMgMi42Nzk2ODcgLTYuMDE5NTMxIDYuMDE5NTMxIC02LjAxOTUzMSB6IG0gLTEgMi4wNTA3ODEgdiAzIGggLTMgdiAyIGggMyB2IDMgaCAyIHYgLTMgaCAzIHYgLTIgaCAtMyB2IC0zIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K");
-
-  margin: 0 !important;
-
-  /* align with cozy mode avatars, à la discord */
-  width: calc(var(--icon-button-size) + 8px * 2) !important;
-
-  & > [class*="icon_"] {
-    padding: 4px 16px 0;
-  }
 }

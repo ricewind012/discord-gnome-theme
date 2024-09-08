@@ -1,6 +1,6 @@
 [role=textbox], [class*=textarea_],
-[class*=quickswitcher_] > input,
-[class*=channelName_] > div > input, [class*=searchBar_][class*=container_],
+.quickswitcher_f4e139 > input,
+.channelName_f0fccd > div > input, [class*=searchBar_][class*=container_],
 [class*=searchBox_][class*=container_], [class*=inputWrapper_] input,
 [class*=inputWrapper_] textarea {
   outline: 0 solid transparent !important;
@@ -8,8 +8,8 @@
   transition: var(--focus_transition) !important;
 }
 [role=textbox]:is(:focus, :focus-within), [class*=textarea_]:is(:focus, :focus-within),
-[class*=quickswitcher_] > input:is(:focus, :focus-within),
-[class*=channelName_] > div > input:is(:focus, :focus-within), [class*=searchBar_][class*=container_]:is(:focus, :focus-within),
+.quickswitcher_f4e139 > input:is(:focus, :focus-within),
+.channelName_f0fccd > div > input:is(:focus, :focus-within), [class*=searchBar_][class*=container_]:is(:focus, :focus-within),
 [class*=searchBox_][class*=container_]:is(:focus, :focus-within), [class*=inputWrapper_] input:is(:focus, :focus-within),
 [class*=inputWrapper_] textarea:is(:focus, :focus-within) {
   outline: 2px solid color-mix(in srgb, var(--accent_bg_color) 50%, transparent) !important;
@@ -17,8 +17,8 @@
 }
 
 [class*=textarea_],
-[class*=quickswitcher_] > input,
-[class*=channelName_] > div > input, [class*=searchBar_][class*=container_],
+.quickswitcher_f4e139 > input,
+.channelName_f0fccd > div > input, [class*=searchBar_][class*=container_],
 [class*=searchBox_][class*=container_], [class*=inputWrapper_] input,
 [class*=inputWrapper_] textarea {
   --percentage: 10%;
@@ -32,15 +32,15 @@
   height: unset;
 }
 [class*=textarea_]:disabled,
-[class*=quickswitcher_] > input:disabled,
-[class*=channelName_] > div > input:disabled, [class*=searchBar_][class*=container_]:disabled,
+.quickswitcher_f4e139 > input:disabled,
+.channelName_f0fccd > div > input:disabled, [class*=searchBar_][class*=container_]:disabled,
 [class*=searchBox_][class*=container_]:disabled, [class*=inputWrapper_] input:disabled,
 [class*=inputWrapper_] textarea:disabled {
   opacity: var(--dim-level-opacity);
 }
 [class*=textarea_]::placeholder,
-[class*=quickswitcher_] > input::placeholder,
-[class*=channelName_] > div > input::placeholder, [class*=searchBar_][class*=container_]::placeholder,
+.quickswitcher_f4e139 > input::placeholder,
+.channelName_f0fccd > div > input::placeholder, [class*=searchBar_][class*=container_]::placeholder,
 [class*=searchBox_][class*=container_]::placeholder, [class*=inputWrapper_] input::placeholder,
 [class*=inputWrapper_] textarea::placeholder {
   color: var(--text-muted);
@@ -48,8 +48,7 @@
   font-weight: inherit;
 }
 
-[class*=searchBar_][class*=container_] input, [class*=searchBar_][class*=container_] input,
-[class*=searchBox_][class*=container_] input,
+[class*=searchBar_][class*=container_] input,
 [class*=searchBox_][class*=container_] input {
   font-size: 15px;
   line-height: inherit;

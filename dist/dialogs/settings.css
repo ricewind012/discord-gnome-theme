@@ -1,7 +1,7 @@
 .vc-plugins-grid,
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style],
-[class*=connectContainer_],
-[class*=cameraWrapper_],
+.connectContainer_e2a436,
+.cameraWrapper_ff1ac9,
 [role=radiogroup] {
   background-color: var(--card_bg_color) !important;
   border-radius: var(--card_radius) !important;
@@ -10,11 +10,11 @@
 }
 
 .vc-addon-card,
-:is([class*=contentRegion_] [class*=children_],
+:is(.contentRegion_c25c6d [class*=children_],
 [class*=children_] > div:not([class]),
 [class^=margin]) > :is([class^=flex_],
-[class*=container_],
-[class*=settingsBackgroundFlashElement_]), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
+.container_ed1d57,
+.settingsBackgroundFlashElement_fd41ea), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
 [class^=margin] > [class*=children_] > [class*=container_], [role=radio] {
   background-color: var(--card_bg_color) !important;
   border-radius: var(--card_radius) !important;
@@ -24,20 +24,20 @@
   transition: var(--backdrop_transition) !important;
 }
 .vc-addon-card:hover,
-:is([class*=contentRegion_] [class*=children_],
+:is(.contentRegion_c25c6d [class*=children_],
 [class*=children_] > div:not([class]),
 [class^=margin]) > :hover:is([class^=flex_],
-[class*=container_],
-[class*=settingsBackgroundFlashElement_]), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:hover,
+.container_ed1d57,
+.settingsBackgroundFlashElement_fd41ea), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:hover,
 [class^=margin] > [class*=children_] > [class*=container_]:hover, [role=radio]:hover {
   background-color: var(--card_bg_hover_color) !important;
 }
 .vc-addon-card:active,
-:is([class*=contentRegion_] [class*=children_],
+:is(.contentRegion_c25c6d [class*=children_],
 [class*=children_] > div:not([class]),
 [class^=margin]) > :active:is([class^=flex_],
-[class*=container_],
-[class*=settingsBackgroundFlashElement_]), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:active,
+.container_ed1d57,
+.settingsBackgroundFlashElement_fd41ea), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:active,
 [class^=margin] > [class*=children_] > [class*=container_]:active, [role=radio]:active {
   background-color: var(--card_bg_active_color) !important;
 }
@@ -63,15 +63,15 @@
   border-radius: var(--card_radius) !important;
 }
 
-[class*=standardSidebarView_] {
+.standardSidebarView_c25c6d {
   top: 0 !important;
 }
 
-[class*=contentRegion_] {
+.contentRegion_c25c6d {
   margin-top: 46px;
 }
 
-[class*=contentColumn_] {
+.contentColumn_c25c6d {
   padding: 22px 28px;
   margin: auto;
   max-width: var(--content-width);
@@ -80,7 +80,7 @@
      L70
    */
 }
-[class*=contentColumn_]::before {
+.contentColumn_c25c6d::before {
   content: "";
   position: fixed;
   inset: var(--p);
@@ -88,7 +88,7 @@
   box-shadow: var(--elevation-low);
   z-index: 1;
 }
-[class*=contentColumn_] > h2:first-child, [class*=contentColumn_] > :first-child > h2:first-child, [class*=contentColumn_] > div > :first-child [class*=h1_], [class*=contentColumn_] > div > :first-child [class*=sectionTitle_] > * {
+.contentColumn_c25c6d > h2:first-child, .contentColumn_c25c6d > :first-child > h2:first-child, .contentColumn_c25c6d > div > :first-child [class*=h1_], .contentColumn_c25c6d > div > :first-child [class*=sectionTitle_] > * {
   --pad: 11px;
   text-align: center;
   padding: var(--pad);
@@ -99,7 +99,7 @@
   z-index: 999;
   app-region: drag;
 }
-[class*=contentColumn_] [role=tablist][aria-orientation=horizontal] {
+.contentColumn_c25c6d [role=tablist][aria-orientation=horizontal] {
   border: none !important;
   padding: 0;
 }
@@ -108,21 +108,21 @@
   position: initial;
 }
 
-[class*=toolsContainer_] {
+.toolsContainer_c25c6d {
   position: absolute;
   z-index: 999;
 }
 
-[class*=keybind_] {
+.keybind_df5532 {
   display: none;
 }
 
-[class*=sidebarRegion_] {
+.sidebarRegion_c25c6d {
   border-right: 1px solid var(--background-modifier-accent);
   margin-top: var(--headerbar-height);
   flex: unset;
 }
-[class*=sidebarRegion_]::before {
+.sidebarRegion_c25c6d::before {
   content: "Settings";
   position: fixed;
   top: calc(var(--p) + 1px);
@@ -145,22 +145,22 @@
 }
 
 /* .navigation-sidebar */
-nav[class*=sidebar] {
+.sidebar_c25c6d {
   padding: 0;
 }
-nav[class*=sidebar] [class*=header_] {
+.sidebar_c25c6d .header_a0 {
   display: none;
 }
-nav[class*=sidebar] [class*=separator_] {
+.sidebar_c25c6d .separator_a0 {
   margin: var(--menu_margin);
 }
 
-[class*=contentRegion_] [class*=divider_] {
+.contentRegion_c25c6d .divider_b03b7f {
   display: none;
 }
 
 /* bruh */
-[class*=contentRegion_] [class*=children_] > div:not([class], [style]),
+.contentRegion_c25c6d [class*=children_] > div:not([class], [style]),
 [class^=marginTop_] {
   margin-top: 28px;
 }
@@ -171,8 +171,8 @@ nav[class*=sidebar] [class*=separator_] {
 
 .vc-plugins-grid,
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style],
-[class*=connectContainer_],
-[class*=cameraWrapper_],
+.connectContainer_e2a436,
+.cameraWrapper_ff1ac9,
 [role=radiogroup] {
   border: none !important;
 }
@@ -219,22 +219,22 @@ nav[class*=sidebar] [class*=separator_] {
   background-color: transparent !important;
   box-shadow: none !important;
 }
-[class*=presets_] [class*=themeSelection_] {
+[class*=presets_] .themeSelection_cb7c27 {
   border-radius: 50% !important;
 }
-[class*=presets_] [class*=themeSelection_][class*=lightIcon_] {
+[class*=presets_] .themeSelection_cb7c27.lightIcon_cb7c27 {
   background-color: #fafafa !important;
 }
-[class*=presets_] [class*=themeSelection_][class*=darkIcon_] {
+[class*=presets_] .themeSelection_cb7c27.darkIcon_cb7c27 {
   background-color: #242424 !important;
 }
-[class*=presets_] [class*=themeSelection_] > div {
+[class*=presets_] .themeSelection_cb7c27 > div {
   margin-top: 4px !important;
 }
-[class*=presets_] [class*=themeSelection_] > div > svg {
+[class*=presets_] .themeSelection_cb7c27 > div > svg {
   border: none !important;
 }
-[class*=presets_] [class*=themeSelection_] svg {
+[class*=presets_] .themeSelection_cb7c27 svg {
   display: initial;
 }
 
@@ -247,26 +247,26 @@ nav[class*=sidebar] [class*=separator_] {
   margin: 0 !important;
 }
 
-[class*=layers_] > div {
+.layers_d4b6c5 > .layer_d4b6c5 {
   opacity: 1 !important;
 }
-[class*=layers_] > div[aria-hidden=true] {
+.layers_d4b6c5 > .layer_d4b6c5[aria-hidden=true] {
   pointer-events: none;
   transform: none !important;
 }
-[class*=layers_] > div[aria-hidden=true]::before {
+.layers_d4b6c5 > .layer_d4b6c5[aria-hidden=true]::before {
   content: "";
   position: fixed;
   inset: 0;
   background-color: var(--backdrop);
   z-index: 101;
 }
-[class*=layers_] > :not(:only-child):last-child {
+.layers_d4b6c5 > :not(:only-child):last-child {
   box-shadow: var(--elevation-high);
   border-radius: var(--window_radius);
   inset: var(--p);
 }
-[class*=layers_] > :not(:only-child):last-child > div {
+.layers_d4b6c5 > :not(:only-child):last-child > div {
   top: 0;
 }
 

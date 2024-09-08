@@ -20,7 +20,7 @@
   margin: 0;
   min-height: 32px;
 }
-[role=menu] [role^=menuitem][class*=focused_] {
+[role=menu] [role^=menuitem].focused_d90b3d {
   --percentage: 10%;
 }
 [role=menu] [role^=menuitem]:active {
@@ -33,6 +33,6 @@
   color: var(--window_fg_muted);
 }
 
-[class*=customItem_] {
+.customItem_d90b3d {
   padding: 0 !important;
 }

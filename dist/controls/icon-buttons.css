@@ -1,11 +1,11 @@
-[class*=peopleListItem_] [role=button],
-[class*=sidebar_] [class*=headerButton_],
-[class*=sidebar_] [aria-label="User area"] :where([role=button], button),
-[class*=privateChannels_] [class*=searchBarComponent_], [class*=toolbar_] [role=button], [href="/channels/@me"] > div > :first-child, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
-[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]), [class*=winButtonClose_],
+.peopleListItem_d51464 [role=button],
+.sidebar_a4d4d9 .headerButton_fd6364,
+.panels_a4d4d9 :where([role=button], button),
+.privateChannels_f0963d .searchBarComponent_f0963d, .toolbar_fc4f04 [role=button], [href="/channels/@me"] .avatar_ec8679, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]), .winButtonClose_a934d8,
 [class*=close_],
 [class*=closeIcon_],
-[class*=closeButton_], [class*=channelTextArea_] button {
+[class*=closeButton_], .channelTextArea_a7d72e button {
   background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
   border-radius: var(--button_radius) !important;
   position: relative !important;
@@ -13,47 +13,47 @@
   height: var(--icon-button-size) !important;
   transition: var(--backdrop_transition) !important;
 }
-[class*=peopleListItem_] [role=button]:hover,
-[class*=sidebar_] [class*=headerButton_]:hover,
-[class*=sidebar_] [aria-label="User area"] :hover:where([role=button], button),
-[class*=privateChannels_] [class*=searchBarComponent_]:hover, [class*=toolbar_] [role=button]:hover, [href="/channels/@me"] > div > :hover:first-child, [class*=searchBar_] [role=button][aria-hidden=true]:hover:not([class*=icon_]),
-[class*=searchBox_] [role=button][aria-hidden=true]:hover:not([class*=icon_]), [class*=winButtonClose_]:hover,
+.peopleListItem_d51464 [role=button]:hover,
+.sidebar_a4d4d9 .headerButton_fd6364:hover,
+.panels_a4d4d9 :hover:where([role=button], button),
+.privateChannels_f0963d .searchBarComponent_f0963d:hover, .toolbar_fc4f04 [role=button]:hover, [href="/channels/@me"] .avatar_ec8679:hover, [class*=searchBar_] [role=button][aria-hidden=true]:hover:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:hover:not([class*=icon_]), .winButtonClose_a934d8:hover,
 [class*=close_]:hover,
 [class*=closeIcon_]:hover,
-[class*=closeButton_]:hover, [class*=channelTextArea_] button:hover {
+[class*=closeButton_]:hover, .channelTextArea_a7d72e button:hover {
   /* *exact* #404040 for dark theme */
   --percentage: 12.75% !important;
 }
-[class*=peopleListItem_] [role=button]:active,
-[class*=sidebar_] [class*=headerButton_]:active,
-[class*=sidebar_] [aria-label="User area"] :active:where([role=button], button),
-[class*=privateChannels_] [class*=searchBarComponent_]:active, [class*=toolbar_] [role=button]:active, [href="/channels/@me"] > div > :active:first-child, [class*=searchBar_] [role=button][aria-hidden=true]:active:not([class*=icon_]),
-[class*=searchBox_] [role=button][aria-hidden=true]:active:not([class*=icon_]), [class*=winButtonClose_]:active,
+.peopleListItem_d51464 [role=button]:active,
+.sidebar_a4d4d9 .headerButton_fd6364:active,
+.panels_a4d4d9 :active:where([role=button], button),
+.privateChannels_f0963d .searchBarComponent_f0963d:active, .toolbar_fc4f04 [role=button]:active, [href="/channels/@me"] .avatar_ec8679:active, [class*=searchBar_] [role=button][aria-hidden=true]:active:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:active:not([class*=icon_]), .winButtonClose_a934d8:active,
 [class*=close_]:active,
 [class*=closeIcon_]:active,
-[class*=closeButton_]:active, [class*=channelTextArea_] button:active {
+[class*=closeButton_]:active, .channelTextArea_a7d72e button:active {
   /* *exact* #616161 for dark theme */
   --percentage: 27.75% !important;
 }
-[class*=peopleListItem_] [role=button]:disabled,
-[class*=sidebar_] [class*=headerButton_]:disabled,
-[class*=sidebar_] [aria-label="User area"] :disabled:where([role=button], button),
-[class*=privateChannels_] [class*=searchBarComponent_]:disabled, [class*=toolbar_] [role=button]:disabled, [href="/channels/@me"] > div > :disabled:first-child, [class*=searchBar_] [role=button][aria-hidden=true]:disabled:not([class*=icon_]),
-[class*=searchBox_] [role=button][aria-hidden=true]:disabled:not([class*=icon_]), [class*=winButtonClose_]:disabled,
+.peopleListItem_d51464 [role=button]:disabled,
+.sidebar_a4d4d9 .headerButton_fd6364:disabled,
+.panels_a4d4d9 :disabled:where([role=button], button),
+.privateChannels_f0963d .searchBarComponent_f0963d:disabled, .toolbar_fc4f04 [role=button]:disabled, [href="/channels/@me"] .avatar_ec8679:disabled, [class*=searchBar_] [role=button][aria-hidden=true]:disabled:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:disabled:not([class*=icon_]), .winButtonClose_a934d8:disabled,
 [class*=close_]:disabled,
 [class*=closeIcon_]:disabled,
-[class*=closeButton_]:disabled, [class*=channelTextArea_] button:disabled {
+[class*=closeButton_]:disabled, .channelTextArea_a7d72e button:disabled {
   --percentage: 0% !important;
   opacity: var(--dim-level-opacity) !important;
 }
-[class*=peopleListItem_] [role=button]::before,
-[class*=sidebar_] [class*=headerButton_]::before,
-[class*=sidebar_] [aria-label="User area"] :where([role=button], button)::before,
-[class*=privateChannels_] [class*=searchBarComponent_]::before, [class*=toolbar_] [role=button]::before, [href="/channels/@me"] > div > :first-child::before, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_])::before,
-[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_])::before, [class*=winButtonClose_]::before,
+.peopleListItem_d51464 [role=button]::before,
+.sidebar_a4d4d9 .headerButton_fd6364::before,
+.panels_a4d4d9 :where([role=button], button)::before,
+.privateChannels_f0963d .searchBarComponent_f0963d::before, .toolbar_fc4f04 [role=button]::before, [href="/channels/@me"] .avatar_ec8679::before, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_])::before,
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_])::before, .winButtonClose_a934d8::before,
 [class*=close_]::before,
 [class*=closeIcon_]::before,
-[class*=closeButton_]::before, [class*=channelTextArea_] button::before {
+[class*=closeButton_]::before, .channelTextArea_a7d72e button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -62,32 +62,32 @@
   mask-position: center;
   background-color: var(--window_fg_color);
 }
-[class*=peopleListItem_] [role=button] > *,
-[class*=sidebar_] [class*=headerButton_] > *,
-[class*=sidebar_] [aria-label="User area"] :where([role=button], button) > *,
-[class*=privateChannels_] [class*=searchBarComponent_] > *, [class*=toolbar_] [role=button] > *, [href="/channels/@me"] > div > :first-child > *, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]) > *,
-[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) > *, [class*=winButtonClose_] > *,
+.peopleListItem_d51464 [role=button] > *,
+.sidebar_a4d4d9 .headerButton_fd6364 > *,
+.panels_a4d4d9 :where([role=button], button) > *,
+.privateChannels_f0963d .searchBarComponent_f0963d > *, .toolbar_fc4f04 [role=button] > *, [href="/channels/@me"] .avatar_ec8679 > *, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]) > *,
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) > *, .winButtonClose_a934d8 > *,
 [class*=close_] > *,
 [class*=closeIcon_] > *,
-[class*=closeButton_] > *, [class*=channelTextArea_] button > * {
+[class*=closeButton_] > *, .channelTextArea_a7d72e button > * {
   display: none;
 }
 
-[class*=toolbar_] [class*=liveQualityIndicator_],
-[class*=toolbar_] [class*=live_] {
+.toolbar_fc4f04 [class*=liveQualityIndicator_],
+.toolbar_fc4f04 [class*=live_] {
   margin-bottom: 0 !important;
 }
-[class*=toolbar_] [class*=qualityIndicator_] {
+.toolbar_fc4f04 [class*=qualityIndicator_] {
   width: unset !important;
   height: unset !important;
 }
-[class*=toolbar_] [class*=qualityIndicator_]::before {
+.toolbar_fc4f04 [class*=qualityIndicator_]::before {
   display: none;
 }
-[class*=toolbar_] [class*=qualityIndicator_] > * {
+.toolbar_fc4f04 [class*=qualityIndicator_] > * {
   display: initial !important;
 }
-[href="/channels/@me"] > div > :first-child {
+[href="/channels/@me"] .avatar_ec8679 {
   --icon-button-size: 32px;
   background-color: transparent !important;
 }
@@ -99,7 +99,7 @@
   margin-right: 9px;
 }
 
-[class*=winButtonClose_],
+.winButtonClose_a934d8,
 [class*=close_],
 [class*=closeIcon_],
 [class*=closeButton_] {
@@ -122,7 +122,7 @@
 }
 
 /* settings */
-[class*=tools_] {
+.tools_c25c6d {
   position: fixed;
   top: calc(var(--p) + var(--close-button-pos));
   right: calc(var(--p) + var(--close-button-pos));
@@ -137,17 +137,17 @@
   margin-right: 8px;
 }
 
-[class*=toolbar_] {
+.toolbar_fc4f04 {
   gap: 6px;
   padding: 6px;
 }
-[class*=toolbar_] > button {
+.toolbar_fc4f04 > button {
   margin: 0;
 }
-[class*=toolbar_] [role=button] {
+.toolbar_fc4f04 [role=button] {
   margin: 0;
 }
 
-[class*=channelTextArea_] button {
+.channelTextArea_a7d72e button {
   border-radius: 0 !important;
 }

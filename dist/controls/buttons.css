@@ -1,5 +1,5 @@
-[class*=button_][class*=size i]:not([class*=size32_]), [class*=mentionButton_],
-[class*=barButtonAlt_], [role=button][aria-haspopup], [class*=jumpButton_], [class*=searchResultsWrap_] [class*=buttonsContainer_] > div, [aria-roledescription="Open Thread Button"] {
+[class*=button_][class*=size i]:not([class*=size32_]), .mentionButton_b11c5e,
+.barButtonAlt_cf58b5, [role=button][aria-haspopup], .jumpButton_ac3dc2, .searchResultsWrap_c2b47d .button_ddc613, [aria-roledescription="Open Thread Button"] {
   --banner-bg: var(--window_bg_color);
   --percentage: 10%;
   background-color: color-mix(in srgb, currentColor var(--percentage), var(--banner-bg)) !important;
@@ -12,35 +12,35 @@
   height: 34px;
   transition: var(--backdrop_transition);
 }
-[class*=button_][class*=size i]:hover:not([class*=size32_]), [class*=mentionButton_]:hover,
-[class*=barButtonAlt_]:hover, [role=button][aria-haspopup]:hover, [class*=jumpButton_]:hover, [class*=searchResultsWrap_] [class*=buttonsContainer_] > div:hover, [aria-roledescription="Open Thread Button"]:hover {
+[class*=button_][class*=size i]:hover:not([class*=size32_]), .mentionButton_b11c5e:hover,
+.barButtonAlt_cf58b5:hover, [role=button][aria-haspopup]:hover, .jumpButton_ac3dc2:hover, .searchResultsWrap_c2b47d .button_ddc613:hover, [aria-roledescription="Open Thread Button"]:hover {
   --percentage: 15%;
 }
-[class*=button_][class*=size i]:active:not([class*=size32_]), [class*=mentionButton_]:active,
-[class*=barButtonAlt_]:active, [role=button][aria-haspopup]:active, [class*=jumpButton_]:active, [class*=searchResultsWrap_] [class*=buttonsContainer_] > div:active, [aria-roledescription="Open Thread Button"]:active {
+[class*=button_][class*=size i]:active:not([class*=size32_]), .mentionButton_b11c5e:active,
+.barButtonAlt_cf58b5:active, [role=button][aria-haspopup]:active, .jumpButton_ac3dc2:active, .searchResultsWrap_c2b47d .button_ddc613:active, [aria-roledescription="Open Thread Button"]:active {
   --percentage: 30%;
 }
-[class*=button_][class*=size i]:not([class*=size32_]) *, [class*=mentionButton_] *,
-[class*=barButtonAlt_] *, [role=button][aria-haspopup] *, [class*=jumpButton_] *, [class*=searchResultsWrap_] [class*=buttonsContainer_] > div *, [aria-roledescription="Open Thread Button"] * {
+[class*=button_][class*=size i]:not([class*=size32_]) *, .mentionButton_b11c5e *,
+.barButtonAlt_cf58b5 *, [role=button][aria-haspopup] *, .jumpButton_ac3dc2 *, .searchResultsWrap_c2b47d .button_ddc613 *, [aria-roledescription="Open Thread Button"] * {
   font-weight: bold !important;
 }
-[class*=button_][class*=size i]:not([class*=size32_]) svg, [class*=mentionButton_] svg,
-[class*=barButtonAlt_] svg, [role=button][aria-haspopup] svg, [class*=jumpButton_] svg, [class*=searchResultsWrap_] [class*=buttonsContainer_] > div svg, [aria-roledescription="Open Thread Button"] svg {
+[class*=button_][class*=size i]:not([class*=size32_]) svg, .mentionButton_b11c5e svg,
+.barButtonAlt_cf58b5 svg, [role=button][aria-haspopup] svg, .jumpButton_ac3dc2 svg, .searchResultsWrap_c2b47d .button_ddc613 svg, [aria-roledescription="Open Thread Button"] svg {
   display: none;
 }
 
 [class*=button_][class*=size i]:not([class*=size32_])[class*=disabled_] {
   opacity: var(--dim-level-opacity);
 }
-[class*=button_][class*=size i]:not([class*=size32_])[class*=colorPrimary_] {
+[class*=button_][class*=size i]:not([class*=size32_]).colorPrimary_dd4f85 {
   --banner-bg: var(--accent_color) !important;
   color: var(--accent_fg_color) !important;
 }
-[class*=button_][class*=size i]:not([class*=size32_])[class*=colorRed_] {
+[class*=button_][class*=size i]:not([class*=size32_]).colorRed_dd4f85 {
   --banner-bg: var(--destructive_bg_color) !important;
   color: var(--destructive_fg_color) !important;
 }
-[class*=button_][class*=size i]:not([class*=size32_])[class*=colorGreen_] {
+[class*=button_][class*=size i]:not([class*=size32_]).colorGreen_dd4f85 {
   --banner-bg: var(--success_bg_color) !important;
   color: var(--success_fg_color) !important;
 }
@@ -48,15 +48,15 @@
 [role=button][aria-haspopup] {
   min-height: 34px !important;
 }
-[class*=videoControls_] [role=button][aria-haspopup] {
+.videoControls_f72aac [role=button][aria-haspopup] {
   --banner-bg: transparent;
 }
 
-[class*=jumpButton_] {
+.jumpButton_ac3dc2 {
   height: unset !important;
 }
 
-[class*=searchResultsWrap_] [class*=buttonsContainer_] > div {
+.searchResultsWrap_c2b47d .button_ddc613 {
   font-size: 15px;
   font-weight: bold !important;
   height: unset !important;
@@ -65,6 +65,6 @@
 [aria-roledescription="Open Thread Button"] {
   height: unset !important;
 }
-[aria-roledescription="Open Thread Button"] [class*=cta_] {
+[aria-roledescription="Open Thread Button"] .cta_c15230 {
   text-decoration: none !important;
 }

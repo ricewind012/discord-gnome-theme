@@ -1,24 +1,24 @@
-[class*=chatHeaderBar_], [class*=barBase_] {
+.chatHeaderBar_efb691, .barBase_cf58b5 {
   --spacing: 6px;
   background-color: var(--banner-bg);
   padding: var(--spacing) !important;
 }
-[class*=chatHeaderBar_] *, [class*=barBase_] * {
+.chatHeaderBar_efb691 *, .barBase_cf58b5 * {
   font-size: 15px !important;
   font-weight: bold !important;
 }
-[class*=chatHeaderBar_] > button, [class*=barBase_] > button {
+.chatHeaderBar_efb691 > button, .barBase_cf58b5 > button {
   --banner-bg: inherit !important;
 }
-[class*=chatHeaderBar_] svg, [class*=barBase_] svg {
+.chatHeaderBar_efb691 svg, .barBase_cf58b5 svg {
   display: none;
 }
 
-[class*=chatHeaderBar_]::after {
+.chatHeaderBar_efb691::after {
   display: none;
 }
 
-[class*=barBase_] {
+.barBase_cf58b5 {
   opacity: 1;
   border-radius: 0;
   box-shadow: none;
@@ -29,26 +29,26 @@
   min-height: unset;
 }
 
-[class*=chatHeaderBarText_],
-[class*=barButtonBase_] {
+.chatHeaderBarText_efb691,
+.barButtonBase_cf58b5 {
   text-align: center;
   color: var(--window_fg_color) !important;
   height: unset;
 }
 
-[class*=messagesWrapper_]:has(> [class*=jumpToPresentBar_]:nth-child(3)) [aria-label="Jump to last unread message"] {
+.messagesWrapper_e2e187:has(> .jumpToPresentBar_cf58b5:nth-child(3)) [aria-label="Jump to last unread message"] {
   margin-left: 127px;
 }
-[class*=messagesWrapper_]:has(> [class*=jumpToPresentBar_]:nth-child(3)) > [class*=jumpToPresentBar_] {
+.messagesWrapper_e2e187:has(> .jumpToPresentBar_cf58b5:nth-child(3)) > .jumpToPresentBar_cf58b5 {
   top: 5000px !important;
 }
-[class*=messagesWrapper_]:has(> [class*=jumpToPresentBar_]:nth-child(3)) > [class*=jumpToPresentBar_] > [class*=barButtonAlt_] {
+.messagesWrapper_e2e187:has(> .jumpToPresentBar_cf58b5:nth-child(3)) > .jumpToPresentBar_cf58b5 > .barButtonAlt_cf58b5 {
   position: absolute;
   top: calc(-5000px + var(--spacing));
 }
 
 /* no top bar */
-[class*=messagesWrapper_] > [class*=jumpToPresentBar_]:nth-child(2) {
+.messagesWrapper_e2e187 > .jumpToPresentBar_cf58b5:nth-child(2) {
   top: 0;
   bottom: initial;
   flex-direction: row-reverse;

@@ -40,11 +40,11 @@
   padding: 0 14px;
   margin: 0 var(--menu_margin) 2px;
 }
-nav[class*=sidebar_] [role=tablist][aria-orientation=vertical] [role=tab] {
+.sidebar_c25c6d [role=tablist][aria-orientation=vertical] [role=tab] {
   display: flex;
   align-items: center;
 }
-nav[class*=sidebar_] [role=tablist][aria-orientation=vertical] [role=tab]::before {
+.sidebar_c25c6d [role=tablist][aria-orientation=vertical] [role=tab]::before {
   content: "";
   width: 16px;
   height: 16px;

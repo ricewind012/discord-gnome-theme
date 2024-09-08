@@ -5,29 +5,29 @@
   transition: var(--backdrop_transition) !important;
 }
 
-[class*=backdrop_] {
+.backdrop_e4f2ae {
   background-color: var(--backdrop) !important;
 }
 
-[role=dialog] > [class*=root_] {
+.root_f9a4c9 {
   border-radius: var(--window_radius);
   gap: 12px;
   /* Vencord plugin settings */
 }
-[role=dialog] > [class*=root_] > [class*=header_] {
+.root_f9a4c9 .header_f9a4c9 {
   padding: 22px;
   padding-bottom: 0;
   justify-content: center;
   /* Vencord plugin settings */
 }
-[role=dialog] > [class*=root_] > [class*=header_] > [data-text-variant] {
+.root_f9a4c9 .header_f9a4c9 > [data-text-variant] {
   text-align: center;
 }
-[role=dialog] > [class*=root_] > [class*=content_] {
+.root_f9a4c9 .content_f9a4c9 {
   text-align: center;
   padding: 0 24px !important;
 }
-[role=dialog] > [class*=root_] [class*=footer_] {
+.root_f9a4c9 .footer_f9a4c9 {
   --background-modifier-accent: color-mix(
     in srgb,
     currentColor 15%,
@@ -38,10 +38,10 @@
   border-radius: 0 0 var(--window_radius) var(--window_radius);
   padding: 0;
 }
-[role=dialog] > [class*=root_] [class*=footer_] * {
+.root_f9a4c9 .footer_f9a4c9 * {
   flex-grow: 1;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class] {
+.root_f9a4c9 .footer_f9a4c9 button[class] {
   --bg-percentage: 0%;
   --border-percentage: 25%;
   background-color: color-mix(in srgb, currentColor var(--bg-percentage), transparent) !important;
@@ -51,20 +51,20 @@
   margin: 0 !important;
   height: 44px !important;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class]:hover {
+.root_f9a4c9 .footer_f9a4c9 button[class]:hover {
   --bg-percentage: 10%;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class]:active {
+.root_f9a4c9 .footer_f9a4c9 button[class]:active {
   --bg-percentage: 20%;
   --border-percentage: 50%;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class][class*=colorBrand_] {
+.root_f9a4c9 .footer_f9a4c9 button[class].colorBrand_dd4f85 {
   color: var(--accent_color) !important;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class][class*=colorRed_] {
+.root_f9a4c9 .footer_f9a4c9 button[class].colorRed_dd4f85 {
   color: var(--destructive_color) !important;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class] > div {
+.root_f9a4c9 .footer_f9a4c9 button[class] > div {
   background: none !important;
   font-weight: 700 !important;
   font-size: 15px !important;
@@ -72,41 +72,41 @@
   letter-spacing: 0 !important;
   justify-content: center;
 }
-[role=dialog] > [class*=root_] [class*=footer_] button[class] svg {
+.root_f9a4c9 .footer_f9a4c9 button[class] svg {
   display: none;
 }
-[role=dialog] > [class*=root_] [class*=footer_][class*=horizontalReverse_] {
+.root_f9a4c9 .footer_f9a4c9.horizontalReverse_dc333f {
   /* Vencord plugin settings */
 }
-[role=dialog] > [class*=root_] [class*=footer_][class*=horizontalReverse_] > div > div > button:first-child, [role=dialog] > [class*=root_] [class*=footer_][class*=horizontalReverse_] > button:last-child {
+.root_f9a4c9 .footer_f9a4c9.horizontalReverse_dc333f > div > div > button:first-child, .root_f9a4c9 .footer_f9a4c9.horizontalReverse_dc333f > button:last-child {
   border-left: none !important;
 }
-[role=dialog] > [class*=root_].vc-text-selectable {
+.root_f9a4c9.vc-text-selectable {
   gap: 0;
 }
-[role=dialog] > [class*=root_].vc-text-selectable > [class*=header_] {
+.root_f9a4c9.vc-text-selectable > [class*=header_] {
   box-shadow: var(--elevation-low);
   padding: 0 calc(6px + var(--close-button-pos) + var(--close-button-size));
   height: var(--headerbar-height);
 }
-[role=dialog] > [class*=root_].vc-text-selectable > [class*=content_] {
+.root_f9a4c9.vc-text-selectable > [class*=content_] {
   text-align: start;
   padding-top: 24px !important;
 }
-[role=dialog] > [class*=root_].vc-text-selectable > [class*=footer_] > div > div {
+.root_f9a4c9.vc-text-selectable > [class*=footer_] > div > div {
   gap: 0 !important;
   margin: 0 !important;
 }
 
 /* little tweaks */
-[class*=quickswitcher_] {
+.quickswitcher_f4e139 {
   background-color: var(--background-primary);
   border-radius: var(--window_radius);
   box-shadow: var(--elevation-stroke), var(--elevation-high);
 }
 
-[class*=recentMentionsPopout_] [class*=expandedInboxHeader_],
-[class*=recentMentionsPopout_] [class*=channelHeader_] {
+.recentMentionsPopout_ddb5b4 .expandedInboxHeader_f0cd33,
+.recentMentionsPopout_ddb5b4 [class*=channelHeader_] {
   display: none;
 }
 

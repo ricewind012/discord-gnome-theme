@@ -1,19 +1,19 @@
+[data-list-item-id$="forum-channel-header"] {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: 16px;
+
+  & > div {
+    border: none !important;
+  }
+}
+
 [data-list-id^="forum-channel-list"] > [role="list"] {
   --custom-forum-post-form-horizontal-padding: 0px;
   padding: 0;
 
-  & > [data-list-item-id$="forum-channel-header"] {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    margin-bottom: 16px;
-
-    & > div {
-      border: none !important;
-    }
-  }
-
-  [class*="titleContainer_"] {
+  .titleContainer_c1668f {
     gap: 10px;
 
     & > [role="button"] {
@@ -44,11 +44,11 @@
     }
   }
 
-  [class*="tagsContainer_"] {
+  .tagsContainer_a6d69a {
     padding: 0;
   }
 
-  [class*="prefixElement_"] {
+  .prefixElement_c1668f {
     display: none;
   }
 
