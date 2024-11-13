@@ -1,20 +1,21 @@
-[data-list-id^=forum-channel-list] > [role=list] {
-  --custom-forum-post-form-horizontal-padding: 0px;
-  padding: 0;
-}
-[data-list-id^=forum-channel-list] > [role=list] > [data-list-item-id$=forum-channel-header] {
+[data-list-item-id$=forum-channel-header] {
   background-color: transparent !important;
   box-shadow: none !important;
   padding: 0 !important;
   margin-bottom: 16px;
 }
-[data-list-id^=forum-channel-list] > [role=list] > [data-list-item-id$=forum-channel-header] > div {
+[data-list-item-id$=forum-channel-header] > div {
   border: none !important;
 }
-[data-list-id^=forum-channel-list] > [role=list] [class*=titleContainer_] {
+
+[data-list-id^=forum-channel-list] > [role=list] {
+  --custom-forum-post-form-horizontal-padding: 0px;
+  padding: 0;
+}
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_c1668f {
   gap: 10px;
 }
-[data-list-id^=forum-channel-list] > [role=list] [class*=titleContainer_] > [role=button] {
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_c1668f > [role=button] {
   background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
   border-radius: 50% !important;
   margin: 0;
@@ -24,18 +25,18 @@
   transition: var(--backdrop_transition) !important;
   order: 1;
 }
-[data-list-id^=forum-channel-list] > [role=list] [class*=titleContainer_] > [role=button]:hover {
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_c1668f > [role=button]:hover {
   /* *exact* #404040 for dark theme */
   --percentage: 12.75% !important;
 }
-[data-list-id^=forum-channel-list] > [role=list] [class*=titleContainer_] > [role=button]:active {
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_c1668f > [role=button]:active {
   /* *exact* #616161 for dark theme */
   --percentage: 27.75% !important;
 }
-[data-list-id^=forum-channel-list] > [role=list] [class*=tagsContainer_] {
+[data-list-id^=forum-channel-list] > [role=list] .tagsContainer_a6d69a {
   padding: 0;
 }
-[data-list-id^=forum-channel-list] > [role=list] [class*=prefixElement_] {
+[data-list-id^=forum-channel-list] > [role=list] .prefixElement_c1668f {
   display: none;
 }
 [data-list-id^=forum-channel-list] > [role=list] [data-item-role=item] > div {

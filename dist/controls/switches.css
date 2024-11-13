@@ -1,8 +1,8 @@
-[class*=labelRow_] > [class*=control_] > [class*=container_] {
+.container_cebd1c {
   --percentage: 15.25%;
   background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_]::before {
+.container_cebd1c::before {
   content: "";
   position: absolute;
   min-width: 20px;
@@ -13,25 +13,25 @@
   margin: 2px;
   transition: var(--switch-transition);
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_]:hover {
+.container_cebd1c:hover {
   --percentage: 22.5%;
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_]:active {
+.container_cebd1c:active {
   --percentage: 8%;
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_] {
+.container_cebd1c.checked_cebd1c {
   background-color: var(--accent_bg_color) !important;
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_]::before {
+.container_cebd1c.checked_cebd1c::before {
   margin-left: 18px;
   transition: var(--switch-transition);
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_]:hover {
+.container_cebd1c.checked_cebd1c:hover {
   background-color: #4990e7 !important;
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_][class*=checked_]:active {
+.container_cebd1c.checked_cebd1c:active {
   background-color: #2a6ab6 !important;
 }
-[class*=labelRow_] > [class*=control_] > [class*=container_] [class*=slider_] {
+.container_cebd1c .slider_cebd1c {
   display: none;
 }

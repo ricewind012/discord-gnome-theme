@@ -1,74 +1,71 @@
-[role=article] [class*=headerText_] {
+.message_d5deea .headerText_f9f2ca {
   margin-right: 0rem;
 }
-[role=article][class*=compact_] {
+.message_d5deea.compact_f9f2ca {
   --custom-message-margin-compact-indent: calc(5.875rem);
   --custom-message-reply-indent: 1.375rem;
 }
-[role=article][class*=compact_] i {
+.message_d5deea.compact_f9f2ca i {
   opacity: 1;
   position: unset;
   display: unset;
 }
-[role=article][class*=compact_] [class*=repliedMessage_] {
+.message_d5deea.compact_f9f2ca .repliedMessage_f9f2ca {
   --custom-message-reply-indent: 0rem;
   --timestamp-width: calc(11ch - 1.5rem);
   margin-left: 0;
 }
-[role=article][class*=compact_] [class*=repliedMessage_] > span {
+.message_d5deea.compact_f9f2ca .repliedMessage_f9f2ca > span {
   opacity: 1 !important;
 }
-[role=article][class*=compact_] [class*=replyBadge_] {
+.message_d5deea.compact_f9f2ca .replyBadge_f9f2ca {
   margin-top: 0.1em;
   width: 1em;
   height: 1em;
 }
-[role=article][class*=compact_] [class*=avatar_] {
+.message_d5deea.compact_f9f2ca .avatar_f9f2ca {
   margin-left: 0;
   top: 0.15em;
 }
-[role=article][class*=compact_] [class*=timestamp_] {
+.message_d5deea.compact_f9f2ca .timestamp_f9f2ca {
   font-family: var(--font-code);
   width: 11ch;
 }
 
-[class*=chatLayerWrapper_] > [class*=container_] {
+.chatLayerWrapper_d1c246 > .container_d1c246 {
   border-radius: 0;
 }
 
-[class*=embed_] {
+.embed_b0068a {
   border-left-width: 6px;
   border-radius: 6px;
 }
-[class*=embed_] > div > div {
+.embed_b0068a .grid_b0068a {
   padding: 12px 8px;
 }
-[class*=embed_] > div > div > :first-child {
-  margin-top: 0;
-}
-[class*=embed_] [href] {
+.embed_b0068a [href] {
   color: inherit !important;
   text-decoration: none !important;
 }
-[class*=embed_] [class*=embedProvider_] {
+
+.embedProvider_b0068a {
   margin-bottom: 4px;
 }
 
-[class*=embedDescription_] {
+.embedDescription_b0068a {
   font-size: 11pt;
 }
 
-[class*=embedMedia_],
-[class*=embedVideo_] {
+.embedMedia_b0068a,
+.embedVideo_b0068a {
   margin-top: 6px !important;
 }
 
-[class*=embedMedia_],
-[class*=oneByOneGridSingle_] {
+.embedMedia_b0068a {
   border-radius: 6px;
 }
 
-[aria-label="Message Actions"][role=group] > div {
+.buttonsInner_d5deea {
   box-shadow: var(--elevation-medium);
   border-radius: var(--button_radius);
 }

@@ -1,4 +1,4 @@
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) {
+.container_eedf95:not(:empty) {
   --text-muted: var(--window_fg_color);
   border-radius: var(--window_radius);
   box-shadow: var(--popover_shadow);
@@ -7,26 +7,26 @@
   display: flex;
   flex-direction: column;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=header_] {
+.container_eedf95:not(:empty) .header_b0286e {
   padding: 0 !important;
   padding-bottom: 6px !important;
   padding-left: 4px !important;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [aria-label="Clear Search History"] {
+.container_eedf95:not(:empty) .searchClearHistory_b0286e {
   top: 4px;
   right: 12px;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=group] {
+.container_eedf95:not(:empty) [role=group] {
   padding: 0;
   margin: 0;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=group]::before {
+.container_eedf95:not(:empty) [role=group]::before {
   display: none;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=group] > * {
+.container_eedf95:not(:empty) [role=group] > * {
   padding: 0;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] {
+.container_eedf95:not(:empty) [role=option] {
   --spacing: 6px;
   font-size: 15px;
   border-radius: var(--button_radius);
@@ -34,28 +34,28 @@
   padding: 0 12px;
   height: 32px;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=resultChannel_] {
+.container_eedf95:not(:empty) [role=option] .resultChannel_b0286e {
   width: 100%;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] strong,
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=displayedNick_] {
+.container_eedf95:not(:empty) [role=option] strong,
+.container_eedf95:not(:empty) [role=option] .displayedNick_b0286e {
   width: 50%;
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] strong {
+.container_eedf95:not(:empty) [role=option] strong {
   margin-left: calc(20px + var(--spacing));
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=displayedNick_] {
+.container_eedf95:not(:empty) [role=option] .displayedNick_b0286e {
   margin: 0 var(--spacing);
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option] [class*=searchResultChannelCategory_] {
+.container_eedf95:not(:empty) [role=option] .searchResultChannelCategory_b0286e {
   opacity: 1;
   text-transform: unset;
   margin-left: var(--spacing);
 }
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=queryContainer_],
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [aria-label="Learn More"],
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=plusIcon_],
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [class*=searchResultChannelIcon_],
-[id^=popout_] > [role=listbox][style="width: 320px;"]:not(:empty) [role=option]:is([class*=user_], :has(strong)) > [class*=filter_] {
+.container_eedf95:not(:empty) .queryContainer_eedf95,
+.container_eedf95:not(:empty) .searchLearnMore_b0286e,
+.container_eedf95:not(:empty) .plusIcon_b0286e,
+.container_eedf95:not(:empty) .searchResultChannelIcon_b0286e,
+.container_eedf95:not(:empty) [role=option]:is(.user_b0286e, :has(strong)) > .filter_b0286e {
   display: none;
 }

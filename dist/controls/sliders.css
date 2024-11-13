@@ -1,17 +1,17 @@
 [role=slider] {
   /* the grabber is different with exact values, but i don't care fuck you */
 }
-[role=slider] [class*=track_] {
+[role=slider] .track_c7a159 {
   top: 32px;
 }
-[role=slider] [class*=bar_] {
+[role=slider] .bar_c7a159 {
   border-radius: 16px;
   height: 4px;
 }
-[role=slider] [class*=barFill_] {
+[role=slider] .barFill_c7a159 {
   background-color: var(--accent_bg_color);
 }
-[role=slider] [class*=grabber_] {
+[role=slider] .grabber_c7a159 {
   /* close enough on dark theme, don't bother */
   background-color: #fff;
   border: none;
@@ -22,19 +22,19 @@
   width: 20px;
   height: 20px;
 }
-[role=slider] [class*=mark_] {
+[role=slider] .mark_c7a159 {
   flex-direction: column-reverse;
 }
-[role=slider] [class*=mark_] > * {
+[role=slider] .mark_c7a159 > * {
   color: var(--text-muted);
   font-size: 15px;
 }
-[role=slider] [class*=markDash_] {
+[role=slider] .markDash_c7a159 {
   background-color: currentColor;
   width: 1px;
   height: 6px;
 }
-[role=slider] [class*=markValue_] {
+[role=slider] .markValue_c7a159 {
   margin-top: 2px;
   margin-bottom: 0;
 }

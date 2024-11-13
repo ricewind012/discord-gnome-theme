@@ -5,14 +5,13 @@
 }
 
 [class*="textarea_"],
-[class*="quickswitcher_"] > input,
-[class*="channelName_"] > div > input {
+.quickswitcher_f4e139 > input,
+.channelName_f0fccd > div > input {
   @extend %text-field;
 }
 
 [class*="searchBar_"],
 [class*="searchBox_"] {
-  &[class*="container_"],
   &[class*="container_"] {
     @extend %text-field;
 

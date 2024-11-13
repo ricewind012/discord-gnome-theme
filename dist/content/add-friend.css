@@ -6,19 +6,19 @@
   border: none;
 }
 #add_friend-tab > header > h2,
-#add_friend-tab > header [class*=description_] {
+#add_friend-tab > header .description_b89ec7 {
   display: none;
 }
 #add_friend-tab > div {
   flex-grow: 0;
 }
 
-[class*=addFriendInputWrapper_] {
+.addFriendInputWrapper_de812f {
   background-color: transparent;
   border: none;
   margin: 0;
 }
 
-[class*=addFriendInput_] > input {
+.addFriendInput_de812f > input {
   letter-spacing: 0;
 }

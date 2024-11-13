@@ -1,18 +1,24 @@
 @use "../mixins";
 
-[class*="searchResultsWrap_"] {
+.searchHeader_b7c924 {
+  border-bottom: 1px solid var(--secondary_sidebar_border_color);
+  padding: 6px;
+
+  height: unset;
+}
+
+.searchResult_ddc613 {
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0;
+}
+
+.searchResultsWrap_c2b47d {
   border-left: 1px solid var(--secondary_sidebar_border_color);
 
   z-index: 0;
 
-  & > header {
-    border-bottom: 1px solid var(--secondary_sidebar_border_color);
-    padding: 6px;
-
-    height: unset;
-  }
-
-  [class*="channelNameContainer_"] {
+  .channelNameContainer_a9e225 {
     margin-bottom: 16px;
 
     & > svg {
@@ -42,11 +48,5 @@
     margin: 0 !important;
 
     overflow: hidden;
-  }
-
-  [class*="searchResult_"] {
-    background-color: transparent;
-    border-radius: 0;
-    margin: 0;
   }
 }

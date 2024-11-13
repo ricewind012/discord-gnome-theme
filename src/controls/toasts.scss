@@ -1,7 +1,7 @@
-[class*="attachedBars_"] {
+.attachedBars_d0696b {
   --spacing: 6px;
 
-  [class*="replyBar_"] {
+  .replyBar_b11c5e {
     background-color: inherit;
     gap: var(--spacing);
     padding: var(--spacing);
@@ -12,11 +12,11 @@
     font-weight: bold !important;
   }
 
-  [class*="replyLabel_"] {
+  .replyLabel_b11c5e {
     margin-left: var(--spacing);
   }
 
-  [class*="mentionButton_"] {
+  .mentionButton_b11c5e {
     background-color: color-mix(
       in srgb,
       var(--window_fg_color) var(--percentage),
@@ -29,17 +29,17 @@
     }
   }
 
-  [class*="threadSuggestionBar_"],
-  [class*="separator_"] {
+  .threadSuggestionBar_b11c5e,
+  .separator_b11c5e {
     display: none;
   }
 
-  [class*="closeButton_"] {
+  .closeButton_cb4d21 {
     margin-left: var(--spacing);
   }
 }
 
-[class*="autocomplete_"] {
+.autocomplete_bcc24e {
   --background-modifier-accent: color-mix(
     in srgb,
     var(--window_fg_color) 20%,
@@ -55,10 +55,10 @@
     padding: 8px;
   }
 
-  [data-list-item-id^="channel-autocomplete_"] {
+  .autocompleteRow_bcc24e {
     padding: 0;
 
-    & > [class*="base_"] {
+    & > .base_bcc24e {
       background-color: color-mix(
         in srgb,
         var(--window_fg_color) var(--percentage),
@@ -77,27 +77,27 @@
     }
   }
 
-  [class*="base_"] {
+  .base_bcc24e {
     border-radius: var(--menu_radius);
     padding: 0;
   }
 
-  [class*="contentTitle_"] {
+  .contentTitle_bcc24e {
     padding-top: 0;
     padding-bottom: 6px;
   }
 
-  [class*="divider_"] {
+  .divider_bcc24e {
     padding: var(--menu_margin) 0;
   }
 
   /** commands **/
-  [class*="rail_"] {
+  .rail_fe2299 {
     border-right: 1px solid var(--sidebar_border_color);
   }
 }
 
-[class*="autocompleteRowContent_"] {
+.autocompleteRowContent_bcc24e {
   gap: 8px;
 
   & > * {
@@ -107,12 +107,12 @@
   }
 }
 
-[class*="autocompleteRowContentPrimary_"],
-[class*="autocompleteRowContentSecondary_"] {
+.autocompleteRowContentPrimary_bcc24e,
+.autocompleteRowContentSecondary_bcc24e {
   width: 50%;
 }
 
-[class*="autocompleteRowContentPrimary_"] {
+.autocompleteRowContentPrimary_bcc24e {
   &:first-child {
     margin-left: 32px;
   }

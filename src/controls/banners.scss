@@ -1,6 +1,6 @@
 @use "../mixins";
 
-[class*="chatHeaderBar_"] {
+.chatHeaderBar_efb691 {
   @extend %banner;
 
   &::after {
@@ -8,7 +8,7 @@
   }
 }
 
-[class*="barBase_"] {
+.barBase_cf58b5 {
   @extend %banner;
 
   opacity: 1;
@@ -22,23 +22,23 @@
   min-height: unset;
 }
 
-[class*="chatHeaderBarText_"],
-[class*="barButtonBase_"] {
+.chatHeaderBarText_efb691,
+.barButtonBase_cf58b5 {
   text-align: center;
   color: var(--window_fg_color) !important;
 
   height: unset;
 }
 
-[class*="messagesWrapper_"]:has(> [class*="jumpToPresentBar_"]:nth-child(3)) {
+.messagesWrapper_e2e187:has(> .jumpToPresentBar_cf58b5:nth-child(3)) {
   [aria-label="Jump to last unread message"] {
     margin-left: 127px;
   }
 
-  & > [class*="jumpToPresentBar_"] {
+  & > .jumpToPresentBar_cf58b5 {
     top: 5000px !important;
 
-    & > [class*="barButtonAlt_"] {
+    & > .barButtonAlt_cf58b5 {
       position: absolute;
       top: calc(-5000px + var(--spacing));
     }
@@ -46,7 +46,7 @@
 }
 
 /* no top bar */
-[class*="messagesWrapper_"] > [class*="jumpToPresentBar_"]:nth-child(2) {
+.messagesWrapper_e2e187 > .jumpToPresentBar_cf58b5:nth-child(2) {
   top: 0;
   bottom: initial;
   flex-direction: row-reverse;
