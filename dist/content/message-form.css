@@ -7,6 +7,7 @@
   display: none;
 }
 
+[aria-label="Send a gift"],
 .channelAppLauncher_df39bd {
   display: none;
 }
@@ -22,7 +23,7 @@
 .channelTextArea_a7d72e > div > div {
   padding: 0;
 }
-.channelTextArea_a7d72e .attachButton_d0696b {
+.channelTextArea_a7d72e .attachButton_f298d4 {
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IC0wLjAzMTI1IGMgLTQuNDAyMzQ0IDAgLTggMy41OTc2NTYgLTggOCBzIDMuNTk3NjU2IDggOCA4IHMgOCAtMy41OTc2NTYgOCAtOCBzIC0zLjU5NzY1NiAtOCAtOCAtOCB6IG0gMCAxLjk4MDQ2OSBjIDMuMzM5ODQ0IDAgNi4wMTU2MjUgMi42Nzk2ODcgNi4wMTU2MjUgNi4wMTk1MzEgcyAtMi42NzU3ODEgNi4wMTk1MzEgLTYuMDE1NjI1IDYuMDE5NTMxIHMgLTYuMDE5NTMxIC0yLjY3OTY4NyAtNi4wMTk1MzEgLTYuMDE5NTMxIHMgMi42Nzk2ODcgLTYuMDE5NTMxIDYuMDE5NTMxIC02LjAxOTUzMSB6IG0gLTEgMi4wNTA3ODEgdiAzIGggLTMgdiAyIGggMyB2IDMgaCAyIHYgLTMgaCAzIHYgLTIgaCAtMyB2IC0zIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K");
   margin: 0 !important;
   /* align with cozy mode avatars, à la discord */
@@ -35,8 +36,8 @@
 .channelTextArea_a7d72e .replyLabel_b11c5e {
   font-size: 15px !important;
 }
-.channelTextArea_a7d72e .textArea_d0696b,
-.channelTextArea_a7d72e .buttons_d0696b {
+.channelTextArea_a7d72e .textArea_bdf0de,
+.channelTextArea_a7d72e .buttons_bdf0de {
   height: unset;
   min-height: unset;
 }
@@ -44,11 +45,11 @@
 .channelTextArea_a7d72e [role=textbox] {
   padding: 6px;
 }
-.channelTextArea_a7d72e .buttons_d0696b {
+.channelTextArea_a7d72e .buttons_bdf0de {
   margin: 0 !important;
   /* align to start for longer text */
 }
-.channelTextArea_a7d72e .buttons_d0696b > div {
+.channelTextArea_a7d72e .buttons_bdf0de > div {
   height: 100%;
   align-items: start;
 }
@@ -63,6 +64,6 @@
   min-height: unset !important;
 }
 
-.textAreaThreadCreation_d0696b [role=textbox] {
+.textAreaThreadCreation_bdf0de [role=textbox] {
   border-radius: 6px 0 0 6px;
 }
