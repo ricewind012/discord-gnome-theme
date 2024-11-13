@@ -43,7 +43,8 @@
 .container_fc4f04 .akaBadge_d6c26f,
 .container_fc4f04 .nicknames_d6c26f,
 .container_fc4f04 .children_fc4f04 > .iconWrapper_fc4f04,
-.container_fc4f04 .children_fc4f04:has(> svg) [role=button],
+.container_fc4f04 .children_fc4f04 > .caret_fc4f04,
+.container_fc4f04 .children_fc4f04:has(> .caret_fc4f04) [role=button],
 .container_fc4f04 .divider_fc4f04 {
   display: none;
 }

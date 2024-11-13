@@ -164,6 +164,11 @@
   --legacy-elevation-high: var(--elevation-high) !important;
   --legacy-elevation-border: var(--elevation-stroke) !important;
 
+  --shadow-border: var(--elevation-stroke) !important;
+  --shadow-ledge: var(--elevation-low) !important;
+  --shadow-medium: var(--elevation-medium) !important;
+  --shadow-high: var(--elevation-high) !important;
+
   --radius-xs: 6px !important;
   --radius-sm: 6px !important;
   --radius-md: 12px !important;

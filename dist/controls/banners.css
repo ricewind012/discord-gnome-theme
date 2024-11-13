@@ -25,6 +25,7 @@
   margin: 0 !important;
   left: 0;
   right: 0;
+  z-index: 3;
   height: unset;
   min-height: unset;
 }
