@@ -133,7 +133,7 @@
   flex: 0 0 var(--close-button-size);
   /* align with the other child element */
 }
-[aria-label="Private channels"] [class*=closeButton_] {
+.privateChannels_f0963d [class*=closeButton_] {
   margin-right: 8px;
 }
 

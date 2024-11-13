@@ -6,10 +6,7 @@
     transition: var(--backdrop_transition);
   }
 
-  &:where(
-      [aria-orientation="horizontal"],
-      [aria-label="Expression Picker Categories"]
-    ) {
+  &:where([aria-orientation="horizontal"], .navList_af5dbb) {
     gap: 5px !important;
 
     [role="tab"] {

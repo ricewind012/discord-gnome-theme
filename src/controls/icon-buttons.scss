@@ -96,7 +96,7 @@
   flex: 0 0 var(--close-button-size);
 
   /* align with the other child element */
-  [aria-label="Private channels"] & {
+  .privateChannels_f0963d & {
     margin-right: 8px;
   }
 }
