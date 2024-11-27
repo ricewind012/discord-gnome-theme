@@ -2,10 +2,10 @@
   background-color: var(--sidebar_bg_color) !important;
   border-right: 1px solid var(--secondary_sidebar_border_color) !important;
 }
-[data-list-id=guildsnav] > .scroller_fea3ef {
+[data-list-id=guildsnav] .scroller_fea3ef {
   padding-top: 12px;
 }
-[data-list-id=guildsnav] > .footer_aa1bff {
+[data-list-id=guildsnav] .footer_d71945 {
   display: none;
 }
 
