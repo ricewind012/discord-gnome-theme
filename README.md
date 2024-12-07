@@ -11,6 +11,7 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 ### Optional additions
 
 1. Colorful placeholder icons: https://github.com/NYRI4/Discolored
+2. Remove Nitro references: https://github.com/CroissantDuNord/discord-adblock
 
 ## TODO
 
