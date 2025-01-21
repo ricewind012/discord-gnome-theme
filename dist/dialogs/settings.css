@@ -15,7 +15,7 @@
 [class^=margin]) > :is([class^=flex_],
 .container_ed1d57,
 .settingsBackgroundFlashElement_fd41ea), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
-[class^=margin] > [class*=children_] > [class*=container_], [role=radio] {
+[class^=margin] > [class*=children_] > [class*=container_] {
   background-color: var(--card_bg_color) !important;
   border-radius: var(--card_radius) !important;
   box-shadow: var(--elevation-medium) !important;
@@ -29,7 +29,7 @@
 [class^=margin]) > :hover:is([class^=flex_],
 .container_ed1d57,
 .settingsBackgroundFlashElement_fd41ea), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:hover,
-[class^=margin] > [class*=children_] > [class*=container_]:hover, [role=radio]:hover {
+[class^=margin] > [class*=children_] > [class*=container_]:hover {
   background-color: var(--card_bg_hover_color) !important;
 }
 .vc-addon-card:active,
@@ -38,28 +38,28 @@
 [class^=margin]) > :active:is([class^=flex_],
 .container_ed1d57,
 .settingsBackgroundFlashElement_fd41ea), [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:active,
-[class^=margin] > [class*=children_] > [class*=container_]:active, [role=radio]:active {
+[class^=margin] > [class*=children_] > [class*=container_]:active {
   background-color: var(--card_bg_active_color) !important;
 }
 
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div,
-[class^=margin] > [class*=children_] > [class*=container_], [role=radio] {
+[class^=margin] > [class*=children_] > [class*=container_] {
   border-bottom: 1px solid var(--card_shade_color) !important;
   border-radius: 0 !important;
 }
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-child,
-[class^=margin] > [class*=children_] > [class*=container_]:first-child, [role=radio]:first-child, [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-of-type,
-[class^=margin] > [class*=children_] > [class*=container_]:first-of-type, [role=radio]:first-of-type {
+[class^=margin] > [class*=children_] > [class*=container_]:first-child, [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:first-of-type,
+[class^=margin] > [class*=children_] > [class*=container_]:first-of-type {
   border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
 }
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-child,
-[class^=margin] > [class*=children_] > [class*=container_]:last-child, [role=radio]:last-child, [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-of-type,
-[class^=margin] > [class*=children_] > [class*=container_]:last-of-type, [role=radio]:last-of-type {
+[class^=margin] > [class*=children_] > [class*=container_]:last-child, [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:last-of-type,
+[class^=margin] > [class*=children_] > [class*=container_]:last-of-type {
   border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
   border: none !important;
 }
 [role=dialog] > [class*=root_] > [class*=content_] > .vc-m-bottom-16 > [style] > div:only-of-type,
-[class^=margin] > [class*=children_] > [class*=container_]:only-of-type, [role=radio]:only-of-type {
+[class^=margin] > [class*=children_] > [class*=container_]:only-of-type {
   border-radius: var(--card_radius) !important;
 }
 
@@ -183,32 +183,6 @@
   box-shadow: none !important;
   padding: 10px 16px !important;
   margin: 0 !important;
-}
-
-[role=radio] {
-  box-shadow: none !important;
-  padding: 16px !important;
-  margin: 0 !important;
-}
-[role=radio] > div {
-  border: none !important;
-  gap: 16px !important;
-  padding: 0 !important;
-}
-[role=radio] > div > :first-child {
-  border-radius: 50%;
-  width: 22px;
-  height: 22px;
-}
-[role=radio] svg {
-  display: none;
-}
-[role=radio][aria-checked=true] > div > :first-child {
-  background-color: #fff;
-  border: 7px solid var(--accent_bg_color);
-}
-[role=radio][aria-checked=false] > div > :first-child {
-  border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
 }
 
 /* Nitro themes */
