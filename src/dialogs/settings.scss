@@ -185,7 +185,7 @@
 
 /* Nitro themes */
 [class*="presets_"] {
-  gap: 16px;
+  gap: var(--spacing-2x);
 
   [role="radiogroup"]:has(> &) {
     background-color: transparent !important;

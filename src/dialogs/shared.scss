@@ -105,7 +105,10 @@
 
     & > [class*="header_"] {
       box-shadow: var(--elevation-low);
-      padding: 0 calc(6px + var(--close-button-pos) + var(--close-button-size));
+      padding: 0
+        calc(
+          var(--spacing) + var(--close-button-pos) + var(--close-button-size)
+        );
 
       height: var(--headerbar-height);
     }
@@ -182,7 +185,7 @@
   &:not([class*="root_"]) > [class*="header_"] {
     background-color: var(--background-primary);
     box-shadow: var(--elevation-low);
-    padding: 6px;
+    padding: var(--spacing);
 
     height: unset;
     min-height: unset;
@@ -199,7 +202,7 @@
 [class*="browser_"] {
   & > [class*="header_"] {
     box-shadow: var(--elevation-low);
-    gap: 6px;
+    gap: var(--spacing);
 
     height: var(--headerbar-height);
     min-height: var(--headerbar-height);

@@ -20,7 +20,7 @@
     var(--window_fg_color) 7.5%,
     transparent
   );
-  border-radius: 6px;
+  border-radius: var(--radius-xs);
 
   & > div {
     background-color: transparent;
@@ -57,7 +57,7 @@
 
   .placeholder_a552a6,
   [role="textbox"] {
-    padding: 6px;
+    padding: var(--spacing);
   }
 
   .buttons_bdf0de {
@@ -84,5 +84,5 @@
 }
 
 .textAreaThreadCreation_bdf0de [role="textbox"] {
-  border-radius: 6px 0 0 6px;
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
 }

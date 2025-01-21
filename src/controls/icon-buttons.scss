@@ -42,7 +42,7 @@
 [class*="searchBar_"],
 [class*="searchBox_"] {
   [role="button"][aria-hidden="true"]:not([class*="icon_"]) {
-    --icon-button-size: 16px;
+    --icon-button-size: var(--icon_size);
 
     @extend %icon-button;
 
@@ -102,8 +102,8 @@
 }
 
 .toolbar_fc4f04 {
-  gap: 6px;
-  padding: 6px;
+  gap: var(--spacing);
+  padding: var(--spacing);
 
   & > button {
     margin: 0;

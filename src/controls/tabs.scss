@@ -54,8 +54,8 @@
         &::before {
           content: "";
 
-          width: 16px;
-          height: 16px;
+          width: var(--icon_size);
+          height: var(--icon_size);
           display: inline-block;
 
           mask: var(--icon);

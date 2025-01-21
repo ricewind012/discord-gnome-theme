@@ -1,13 +1,11 @@
 .container_fc4f04 {
-  --spacing: 6px;
-
   padding: 0;
 
   min-height: unset;
 
   /* home */
   &:not([role="navigation"]) > div {
-    margin-left: calc(var(--icon-button-size) + var(--spacing) * 2);
+    margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
 
     /* Button that shows the channel description */
     &:has(.topic_bf3bbb) {
@@ -38,7 +36,7 @@
             var(--window_fg_color) var(--percentage),
             transparent
           ) !important;
-          border-radius: 6px;
+          border-radius: var(--radius-xs);
 
           transition: var(--backdrop_transition) !important;
         }
@@ -126,7 +124,7 @@
 
   .avatar_a7d72e {
     margin-left: 0;
-    margin-right: 6px;
+    margin-right: var(--spacing);
   }
 }
 
@@ -189,7 +187,7 @@
 
 .privateChannels_f0963d {
   & > .searchBar_f0963d {
-    padding: 0 6px;
+    padding: 0 var(--spacing);
 
     height: var(--headerbar-height);
 

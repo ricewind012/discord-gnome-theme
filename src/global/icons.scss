@@ -122,8 +122,8 @@
     & > div::before {
       content: "";
 
-      width: 16px;
-      height: 16px;
+      width: var(--icon_size);
+      height: var(--icon_size);
 
       background-color: currentColor;
       mask: var(--icon);

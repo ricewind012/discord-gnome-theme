@@ -1,6 +1,5 @@
 .theme-light,
 .theme-dark {
-  /** libadwaita **/
   --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
   --backdrop_transition: 200ms ease-out;
   --focus_transition: outline-color 200ms var(--ease-out-quad),
@@ -16,6 +15,11 @@
   --window_radius: calc(var(--button_radius) + 6px);
   --popover_radius: var(--window_radius);
   /** my **/
+  --base_unit: 6px;
+  --icon_size: 16px;
+  --spacing-05x: calc(var(--base-unit) / 2);
+  --spacing: var(--base_unit);
+  --spacing-2x: calc(var(--base-unit) * 2);
   /* found in _colors.scss */
   --osd_bg_color: rgba(0, 0, 0, 0.7);
   --osd_fg_color: rgba(255, 255, 255, 0.9);
@@ -37,7 +41,19 @@
   --sidebar-width: 263px;
   --content-width: 575px;
   --p: calc((100% - var(--settings-dialog-size)) / 2);
-  /** Discord vars **/
+}
+@media (prefers-reduced-motion) {
+  .theme-light,
+  .theme-dark {
+    --backdrop_transition: none;
+    --button_transition: none;
+    --focus_transition: none;
+    --switch-transition: none;
+  }
+}
+
+.theme-light,
+.theme-dark {
   --background-primary: var(--window_bg_color) !important;
   --background-secondary: var(--secondary_sidebar_bg_color) !important;
   --background-secondary-alt: var(--secondary_sidebar_bg_color) !important;
@@ -148,25 +164,16 @@
   --shadow-ledge: var(--elevation-low) !important;
   --shadow-medium: var(--elevation-medium) !important;
   --shadow-high: var(--elevation-high) !important;
-  --radius-xs: 6px !important;
-  --radius-sm: 6px !important;
-  --radius-md: 12px !important;
-  --radius-lg: 12px !important;
-  --radius-xl: 18px !important;
-  --radius-xxl: 18px !important;
+  --radius-xs: var(--base-unit) !important;
+  --radius-sm: var(--base-unit) !important;
+  --radius-md: calc(var(--base-unit) * 2) !important;
+  --radius-lg: calc(var(--base-unit) * 2) !important;
+  --radius-xl: calc(var(--base-unit) * 3) !important;
+  --radius-xxl: calc(var(--base-unit) * 3) !important;
   --font-primary: "Cantarell", sans-serif !important;
   --font-display: "Cantarell", sans-serif !important;
   --font-headline: "Cantarell", sans-serif !important;
   --font-code: "Source Code Pro", monospace !important;
-}
-@media (prefers-reduced-motion) {
-  .theme-light,
-  .theme-dark {
-    --backdrop_transition: none;
-    --button_transition: none;
-    --focus_transition: none;
-    --switch-transition: none;
-  }
 }
 
 /* Nitro themes */

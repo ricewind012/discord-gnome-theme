@@ -2,14 +2,14 @@
   --text-muted: var(--window_fg_color);
   border-radius: var(--window_radius);
   box-shadow: var(--popover_shadow);
-  gap: 16px;
+  gap: var(--spacing-3x);
   padding: var(--menu_margin);
   display: flex;
   flex-direction: column;
 }
 .container_eedf95:not(:empty) .header_b0286e {
   padding: 0 !important;
-  padding-bottom: 6px !important;
+  padding-bottom: var(--spacing) !important;
   padding-left: 4px !important;
 }
 .container_eedf95:not(:empty) .searchClearHistory_b0286e {
@@ -27,11 +27,10 @@
   padding: 0;
 }
 .container_eedf95:not(:empty) [role=option] {
-  --spacing: 6px;
   font-size: 15px;
   border-radius: var(--button_radius);
   margin: 0;
-  padding: 0 12px;
+  padding: 0 var(--spacing-2x);
   height: 32px;
 }
 .container_eedf95:not(:empty) [role=option] .resultChannel_b0286e {

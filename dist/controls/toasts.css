@@ -1,6 +1,3 @@
-.attachedBars_d0696b {
-  --spacing: 6px;
-}
 .attachedBars_d0696b .replyBar_b11c5e {
   background-color: inherit;
   gap: var(--spacing);
@@ -50,7 +47,7 @@
 .autocomplete_bcc24e .autocompleteRow_bcc24e > .base_bcc24e {
   background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
   line-height: inherit;
-  padding: 6px 12px;
+  padding: var(--spacing) var(--spacing-2x);
 }
 .autocomplete_bcc24e .autocompleteRow_bcc24e > .base_bcc24e:hover {
   --percentage: 10%;
@@ -64,7 +61,7 @@
 }
 .autocomplete_bcc24e .contentTitle_bcc24e {
   padding-top: 0;
-  padding-bottom: 6px;
+  padding-bottom: var(--spacing);
 }
 .autocomplete_bcc24e .divider_bcc24e {
   padding: var(--menu_margin) 0;

@@ -1,6 +1,4 @@
 .attachedBars_d0696b {
-  --spacing: 6px;
-
   .replyBar_b11c5e {
     background-color: inherit;
     gap: var(--spacing);
@@ -65,7 +63,7 @@
         transparent
       ) !important;
       line-height: inherit;
-      padding: 6px 12px;
+      padding: var(--spacing) var(--spacing-2x);
 
       &:hover {
         --percentage: 10%;
@@ -84,7 +82,7 @@
 
   .contentTitle_bcc24e {
     padding-top: 0;
-    padding-bottom: 6px;
+    padding-bottom: var(--spacing);
   }
 
   .divider_bcc24e {

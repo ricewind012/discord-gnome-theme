@@ -2,14 +2,14 @@
   content: "";
   position: absolute;
   inset: 0;
-  right: calc(var(--icon-button-size) + 6px);
+  right: calc(var(--icon-button-size) + var(--spacing));
   height: var(--headerbar-height);
   z-index: 999;
   app-region: drag;
 }
 .sidebar_a4d4d9 > nav.privateChannels_f0963d::before {
   content: attr(aria-label);
-  inset: 0 calc(var(--icon-button-size) + 6px);
+  inset: 0 calc(var(--icon-button-size) + var(--spacing));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
 }
 .sidebar_a4d4d9 header {
   background-color: transparent !important;
-  padding: 11px 6px;
+  padding: calc(var(--spacing-2x) - 1px) var(--spacing);
 }
 .sidebar_a4d4d9 [class*=guildIcon],
 .sidebar_a4d4d9 .headerChildren_fd6364 {
@@ -42,7 +42,6 @@ div.sidebar_a4d4d9 {
 }
 
 .panels_a4d4d9 {
-  --spacing: 6px;
   background: var(--bg-overlay-app-frame, var(--background-secondary-alt)) !important;
   border-top: 1px solid var(--secondary_sidebar_border_color);
 }

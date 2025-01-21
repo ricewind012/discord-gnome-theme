@@ -3,11 +3,11 @@
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: var(--popover_radius);
   box-shadow: var(--popover_shadow);
-  padding: 6px !important;
-  margin-top: 6px;
+  padding: var(--spacing) !important;
+  margin-top: var(--spacing);
 
   & > [role="option"] {
-    border-radius: 6px;
+    border-radius: var(--radius-xs);
   }
 
   .selectedIcon_f6639d {

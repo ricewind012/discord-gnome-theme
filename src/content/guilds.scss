@@ -14,6 +14,6 @@
 .guildSeparator_d0c57e {
   background-color: var(--sidebar_border_color);
 
-  width: calc(100% - 6px * 2);
+  width: calc(100% - var(--spacing) * 2);
   height: 1px;
 }

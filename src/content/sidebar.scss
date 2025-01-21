@@ -5,7 +5,7 @@
 
       position: absolute;
       inset: 0;
-      right: calc(var(--icon-button-size) + 6px);
+      right: calc(var(--icon-button-size) + var(--spacing));
       height: var(--headerbar-height);
       z-index: 999;
 
@@ -15,7 +15,7 @@
     &.privateChannels_f0963d::before {
       content: attr(aria-label);
 
-      inset: 0 calc(var(--icon-button-size) + 6px);
+      inset: 0 calc(var(--icon-button-size) + var(--spacing));
       display: flex;
       align-items: center;
       justify-content: center;
@@ -34,7 +34,7 @@
 
   header {
     background-color: transparent !important;
-    padding: 11px 6px;
+    padding: calc(var(--spacing-2x) - 1px) var(--spacing);
   }
 
   [class*="guildIcon"],
@@ -61,8 +61,6 @@ div.sidebar_a4d4d9 {
 }
 
 .panels_a4d4d9 {
-  --spacing: 6px;
-
   background: var(
     --bg-overlay-app-frame,
     var(--background-secondary-alt)

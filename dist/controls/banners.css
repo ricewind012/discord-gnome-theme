@@ -1,5 +1,4 @@
 .chatHeaderBar_efb691, .barBase_cf58b5 {
-  --spacing: 6px;
   background-color: var(--banner-bg);
   padding: var(--spacing) !important;
 }

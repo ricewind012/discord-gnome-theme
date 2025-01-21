@@ -1,12 +1,11 @@
 .container_fc4f04 {
-  --spacing: 6px;
   padding: 0;
   min-height: unset;
   /* home */
   /* wtf ? */
 }
 .container_fc4f04:not([role=navigation]) > div {
-  margin-left: calc(var(--icon-button-size) + var(--spacing) * 2);
+  margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
   /* Button that shows the channel description */
 }
 .container_fc4f04:not([role=navigation]) > div:has(.topic_bf3bbb) {
@@ -28,7 +27,7 @@
 }
 .container_fc4f04:not([role=navigation]) > div:has(.topic_bf3bbb) .topic_bf3bbb::after {
   background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
-  border-radius: 6px;
+  border-radius: var(--radius-xs);
   transition: var(--backdrop_transition) !important;
 }
 .container_fc4f04:not([role=navigation]) > div:has(.topic_bf3bbb) .topic_bf3bbb:hover {
@@ -89,7 +88,7 @@
 }
 .container_fc4f04 .avatar_a7d72e {
   margin-left: 0;
-  margin-right: 6px;
+  margin-right: var(--spacing);
 }
 
 .upperContainer_fc4f04 {
@@ -135,7 +134,7 @@
 }
 
 .privateChannels_f0963d > .searchBar_f0963d {
-  padding: 0 6px;
+  padding: 0 var(--spacing);
   height: var(--headerbar-height);
 }
 .privateChannels_f0963d > .searchBar_f0963d > button {

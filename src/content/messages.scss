@@ -51,8 +51,8 @@
 }
 
 .embed_b0068a {
-  border-left-width: 6px;
-  border-radius: 6px;
+  border-left-width: var(--radius-xs);
+  border-radius: var(--radius-xs);
 
   .grid_b0068a {
     padding: 12px 8px;
@@ -74,11 +74,11 @@
 
 .embedMedia_b0068a,
 .embedVideo_b0068a {
-  margin-top: 6px !important;
+  margin-top: var(--spacing) !important;
 }
 
 .embedMedia_b0068a {
-  border-radius: 6px;
+  border-radius: var(--radius-xs);
 }
 
 .buttonsInner_d5deea {

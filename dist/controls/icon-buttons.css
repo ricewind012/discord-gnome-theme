@@ -94,7 +94,7 @@
 
 [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
 [class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) {
-  --icon-button-size: 16px;
+  --icon-button-size: var(--icon_size);
   background-color: transparent !important;
   margin-right: 9px;
 }
@@ -138,8 +138,8 @@
 }
 
 .toolbar_fc4f04 {
-  gap: 6px;
-  padding: 6px;
+  gap: var(--spacing);
+  padding: var(--spacing);
 }
 .toolbar_fc4f04 > button {
   margin: 0;
