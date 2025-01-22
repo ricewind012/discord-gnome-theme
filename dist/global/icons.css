@@ -124,8 +124,8 @@
 @media (min-width: 1050px) {
   [role=tablist][aria-label=Friends] > div::before {
     content: "";
-    width: var(--icon_size);
-    height: var(--icon_size);
+    width: var(--icon-size);
+    height: var(--icon-size);
     background-color: currentColor;
     mask: var(--icon);
     margin-right: 7px;

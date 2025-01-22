@@ -94,7 +94,7 @@
 
 [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
 [class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) {
-  --icon-button-size: var(--icon_size);
+  --icon-button-size: var(--icon-size);
   background-color: transparent !important;
   margin-right: 9px;
 }

@@ -7,6 +7,11 @@
     outline-offset 200ms var(--ease-out-quad);
   --button_transition: background 200ms var(--ease-out-quad),
     box-shadow 200ms var(--ease-out-quad);
+  --popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
+    0 2px 14px 3px color-mix(in srgb, black 5%, transparent);
+  /* found in _colors.scss */
+  --osd_bg_color: rgba(0, 0, 0, 0.7);
+  --osd_fg_color: rgba(255, 255, 255, 0.9);
   --button_radius: 6px;
   --card_radius: calc(var(--button_radius) + 6px);
   --menu_radius: 6px;
@@ -15,22 +20,17 @@
   --window_radius: calc(var(--button_radius) + 6px);
   --popover_radius: var(--window_radius);
   /** my **/
-  --base_unit: 6px;
-  --icon_size: 16px;
+  --base-unit: 6px;
+  --icon-size: 16px;
   --spacing-05x: calc(var(--base-unit) / 2);
-  --spacing: var(--base_unit);
+  --spacing: var(--base-unit);
   --spacing-2x: calc(var(--base-unit) * 2);
-  /* found in _colors.scss */
-  --osd_bg_color: rgba(0, 0, 0, 0.7);
-  --osd_fg_color: rgba(255, 255, 255, 0.9);
   --banner-bg: color-mix(
     in srgb,
     var(--accent_bg_color) 30%,
     var(--window_bg_color)
   );
   --switch-transition: 100ms;
-  --popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
-    0 2px 14px 3px color-mix(in srgb, black 5%, transparent);
   --backdrop: color-mix(in srgb, black 25%, transparent);
   --dim-level-opacity: 50%;
   --headerbar-height: 46px;

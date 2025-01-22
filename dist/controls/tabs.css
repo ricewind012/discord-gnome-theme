@@ -41,8 +41,8 @@
 }
 .sidebar_c25c6d [role=tablist][aria-orientation=vertical] [role=tab]::before {
   content: "";
-  width: var(--icon_size);
-  height: var(--icon_size);
+  width: var(--icon-size);
+  height: var(--icon-size);
   display: inline-block;
   mask: var(--icon);
   background-color: currentColor;

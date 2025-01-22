@@ -42,7 +42,7 @@
 [class*="searchBar_"],
 [class*="searchBox_"] {
   [role="button"][aria-hidden="true"]:not([class*="icon_"]) {
-    --icon-button-size: var(--icon_size);
+    --icon-button-size: var(--icon-size);
 
     @extend %icon-button;
 
