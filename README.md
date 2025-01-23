@@ -28,6 +28,6 @@ Copy `https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/g
 
 ## Preview
 
-![first](./img/Screenshot%20from%202024-04-27%2011-55-58.png)
-![cozy second](./img/Screenshot%20from%202024-04-27%2012-31-42.png)
-![third](./img/Screenshot%20from%202024-04-27%2012-24-16.png)
+![first](./assets/preview/Screenshot%20from%202024-04-27%2011-55-58.png)
+![cozy second](./assets/preview/Screenshot%20from%202024-04-27%2012-31-42.png)
+![third](./assets/preview/Screenshot%20from%202024-04-27%2012-24-16.png)
