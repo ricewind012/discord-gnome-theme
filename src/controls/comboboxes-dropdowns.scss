@@ -14,7 +14,7 @@ button[aria-expanded],
 button[aria-expanded] > div::after,
 [role="button"][aria-haspopup] .icons_f6639d {
   background-color: currentColor;
-  mask: svg("pan-down");
+  mask: icon("pan-down");
 
   width: var(--icon-size);
   height: var(--icon-size);
