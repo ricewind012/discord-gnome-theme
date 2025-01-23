@@ -6,10 +6,7 @@
     transition: var(--backdrop_transition);
   }
 
-  &:where(
-      [aria-orientation="horizontal"],
-      [aria-label="Expression Picker Categories"]
-    ) {
+  &:where([aria-orientation="horizontal"], .navList_af5dbb) {
     gap: 5px !important;
 
     [role="tab"] {
@@ -49,15 +46,16 @@
       padding: 0 14px;
       margin: 0 var(--menu_margin) 2px;
 
-      nav[class*="sidebar_"] & {
+      // Settings
+      .sidebar_c25c6d & {
         display: flex;
         align-items: center;
 
         &::before {
           content: "";
 
-          width: 16px;
-          height: 16px;
+          width: var(--icon-size);
+          height: var(--icon-size);
           display: inline-block;
 
           mask: var(--icon);

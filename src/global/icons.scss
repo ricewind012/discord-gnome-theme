@@ -39,8 +39,14 @@
   --icon: svg("phone-right-facing");
 }
 
+<<<<<<< HEAD
 [class*="sidebar_"] > section [class*="actionButtons_"] > :first-child,
 /* "I have no camera, can't see the other text" */
+=======
+/* camera-small */
+.actionButtons_adcaac > :first-child,
+/* I have no camera, can't see the other text */
+>>>>>>> master
 [aria-label^="Start Video Call"] {
   --icon: svg("camera-small");
 }
@@ -58,8 +64,14 @@
   --icon: svg("check-plain");
 }
 
+<<<<<<< HEAD
 [class*="sidebar_"] [class*="connection_"] > [class*="flex_"] > :first-child {
   --icon: svg("sound-wave");
+=======
+/* sound-wave */
+.rtcConnectionStatus_c02c63 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IDIgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHYgMTAgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC0xMCBjIDAgLTAuNTU0Njg4IC0wLjQ0NTMxMiAtMSAtMSAtMSB6IG0gNiAyIGMgLTAuNTU0Njg4IDAgLTEgMC40NDUzMTIgLTEgMSB2IDYgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC02IGMgMCAtMC41NTQ2ODggLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSAtOSAxIGMgLTAuNTU0Njg4IDAgLTEgMC40NDUzMTIgLTEgMSB2IDQgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC00IGMgMCAtMC41NTQ2ODggLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSA2IDEgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHYgMiBjIDAgMC41NTQ2ODggMC40NDUzMTIgMSAxIDEgcyAxIC0wLjQ0NTMxMiAxIC0xIHYgLTIgYyAwIC0wLjU1NDY4OCAtMC40NDUzMTIgLTEgLTEgLTEgeiBtIC05IDEgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHMgMC40NDUzMTIgMSAxIDEgcyAxIC0wLjQ0NTMxMiAxIC0xIHMgLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K");
+>>>>>>> master
 }
 
 [aria-label="Share Your Screen"] {
@@ -102,8 +114,8 @@
     & > div::before {
       content: "";
 
-      width: 16px;
-      height: 16px;
+      width: var(--icon-size);
+      height: var(--icon-size);
 
       background-color: currentColor;
       mask: var(--icon);

@@ -1,14 +1,14 @@
 @use "../mixins";
 
-[class*="standardSidebarView_"] {
+.standardSidebarView_c25c6d {
   top: 0 !important;
 }
 
-[class*="contentRegion_"] {
+.contentRegion_c25c6d {
   margin-top: 46px;
 }
 
-[class*="contentColumn_"] {
+.contentColumn_c25c6d {
   padding: 22px 28px;
   margin: auto;
 
@@ -57,16 +57,16 @@
   position: initial;
 }
 
-[class*="toolsContainer_"] {
+.toolsContainer_c25c6d {
   position: absolute;
   z-index: 999;
 }
 
-[class*="keybind_"] {
+.keybind_df5532 {
   display: none;
 }
 
-[class*="sidebarRegion_"] {
+.sidebarRegion_c25c6d {
   border-right: 1px solid var(--background-modifier-accent);
   margin-top: var(--headerbar-height);
 
@@ -99,24 +99,24 @@
 }
 
 /* .navigation-sidebar */
-nav[class*="sidebar"] {
+.sidebar_c25c6d {
   padding: 0;
 
-  [class*="header_"] {
+  .header_a0 {
     display: none;
   }
 
-  [class*="separator_"] {
+  .separator_a0 {
     margin: var(--menu_margin);
   }
 }
 
-[class*="contentRegion_"] [class*="divider_"] {
+.contentRegion_c25c6d .divider_b03b7f {
   display: none;
 }
 
 /* bruh */
-[class*="contentRegion_"] [class*="children_"] > div:not([class], [style]),
+.contentRegion_c25c6d [class*="children_"] > div:not([class], [style]),
 [class^="marginTop_"] {
   margin-top: 28px;
 }
@@ -127,16 +127,16 @@ nav[class*="sidebar"] {
 
 .vc-addon-card,
 :is(
-  [class*="contentRegion_"] [class*="children_"],
+  .contentRegion_c25c6d [class*="children_"],
   [class*="children_"] > div:not([class]),
   /* bruh */
   [class^="margin"]
 ) > :is(
   [class^="flex_"],
   /* Switch container */
-  [class*="container_"],
+  .container_ed1d57,
   /* ^ */
-  [class*="settingsBackgroundFlashElement_"]
+  .settingsBackgroundFlashElement_fd41ea
 ) {
   @extend %card;
 }
@@ -150,8 +150,8 @@ nav[class*="sidebar"] {
   > [class*="content_"]
   > .vc-m-bottom-16
   > [style],
-[class*="connectContainer_"],
-[class*="cameraWrapper_"],
+.connectContainer_e2a436,
+.cameraWrapper_ff1ac9,
 [role="radiogroup"] {
   @extend %cards-container;
 
@@ -183,58 +183,23 @@ nav[class*="sidebar"] {
   @extend %card-with-actual-border-radiuses;
 }
 
-// TODO: move to controls/radio
-[role="radio"] {
-  @extend %card-with-actual-border-radiuses;
-
-  box-shadow: none !important;
-  padding: 16px !important;
-  margin: 0 !important;
-
-  & > div {
-    border: none !important;
-    gap: 16px !important;
-    padding: 0 !important;
-
-    & > :first-child {
-      border-radius: 50%;
-
-      width: 22px;
-      height: 22px;
-    }
-  }
-
-  svg {
-    display: none;
-  }
-
-  &[aria-checked="true"] > div > :first-child {
-    background-color: #fff;
-    border: 7px solid var(--accent_bg_color);
-  }
-
-  &[aria-checked="false"] > div > :first-child {
-    border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
-  }
-}
-
 /* Nitro themes */
 [class*="presets_"] {
-  gap: 16px;
+  gap: var(--spacing-2x);
 
   [role="radiogroup"]:has(> &) {
     background-color: transparent !important;
     box-shadow: none !important;
   }
 
-  [class*="themeSelection_"] {
+  .themeSelection_cb7c27 {
     border-radius: 50% !important;
 
-    &[class*="lightIcon_"] {
+    &.lightIcon_cb7c27 {
       background-color: #fafafa !important;
     }
 
-    &[class*="darkIcon_"] {
+    &.darkIcon_cb7c27 {
       background-color: #242424 !important;
     }
 
@@ -266,8 +231,8 @@ nav[class*="sidebar"] {
   }
 }
 
-[class*="layers_"] {
-  & > div {
+.layers_d4b6c5 {
+  & > .layer_d4b6c5 {
     opacity: 1 !important;
 
     &[aria-hidden="true"] {

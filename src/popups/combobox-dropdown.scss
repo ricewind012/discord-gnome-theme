@@ -1,16 +1,16 @@
-[class*="popout_"][role="listbox"] {
+.popout_f6639d[role="listbox"] {
   background-color: var(--popover_bg_color);
   border: 1px solid rgba(0, 0, 0, 0.14);
   border-radius: var(--popover_radius);
   box-shadow: var(--popover_shadow);
-  padding: 6px !important;
-  margin-top: 6px;
+  padding: var(--spacing) !important;
+  margin-top: var(--spacing);
 
   & > [role="option"] {
-    border-radius: 6px;
+    border-radius: var(--radius-xs);
   }
 
-  [class*="selectedIcon_"] {
+  .selectedIcon_f6639d {
     display: none;
   }
 }

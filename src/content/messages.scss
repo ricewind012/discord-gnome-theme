@@ -1,9 +1,9 @@
-[role="article"] {
-  [class*="headerText_"] {
+.message_d5deea {
+  .headerText_f9f2ca {
     margin-right: 0rem;
   }
 
-  &[class*="compact_"] {
+  &.compact_f9f2ca {
     --custom-message-margin-compact-indent: calc(5.875rem);
     --custom-message-reply-indent: 1.375rem;
 
@@ -14,7 +14,7 @@
       display: unset;
     }
 
-    [class*="repliedMessage_"] {
+    .repliedMessage_f9f2ca {
       --custom-message-reply-indent: 0rem;
       --timestamp-width: calc(11ch - 1.5rem);
 
@@ -25,20 +25,20 @@
       }
     }
 
-    [class*="replyBadge_"] {
+    .replyBadge_f9f2ca {
       margin-top: 0.1em;
 
       width: 1em;
       height: 1em;
     }
 
-    [class*="avatar_"] {
+    .avatar_f9f2ca {
       margin-left: 0;
 
       top: 0.15em;
     }
 
-    [class*="timestamp_"] {
+    .timestamp_f9f2ca {
       font-family: var(--font-code);
 
       width: 11ch;
@@ -46,47 +46,42 @@
   }
 }
 
-[class*="chatLayerWrapper_"] > [class*="container_"] {
+.chatLayerWrapper_d1c246 > .container_d1c246 {
   border-radius: 0;
 }
 
-[class*="embed_"] {
-  border-left-width: 6px;
-  border-radius: 6px;
+.embed_b0068a {
+  border-left-width: var(--radius-xs);
+  border-radius: var(--radius-xs);
 
-  & > div > div {
+  .grid_b0068a {
     padding: 12px 8px;
-
-    & > :first-child {
-      margin-top: 0;
-    }
   }
 
   [href] {
     color: inherit !important;
     text-decoration: none !important;
   }
-
-  [class*="embedProvider_"] {
-    margin-bottom: 4px;
-  }
 }
 
-[class*="embedDescription_"] {
+.embedProvider_b0068a {
+  margin-bottom: 4px;
+}
+
+.embedDescription_b0068a {
   font-size: 11pt;
 }
 
-[class*="embedMedia_"],
-[class*="embedVideo_"] {
-  margin-top: 6px !important;
+.embedMedia_b0068a,
+.embedVideo_b0068a {
+  margin-top: var(--spacing) !important;
 }
 
-[class*="embedMedia_"],
-[class*="oneByOneGridSingle_"] {
-  border-radius: 6px;
+.embedMedia_b0068a {
+  border-radius: var(--radius-xs);
 }
 
-[aria-label="Message Actions"][role="group"] > div {
+.buttonsInner_d5deea {
   box-shadow: var(--elevation-medium);
   border-radius: var(--button_radius);
 }

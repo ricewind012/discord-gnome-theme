@@ -1,24 +1,17 @@
-section:is([class*="themed_"], [class*="transparent_"]) {
-  --spacing: 6px;
-
+.container_fc4f04 {
   padding: 0;
 
   min-height: unset;
 
-  & > div {
-    padding-right: calc(var(--icon-button-size) + var(--spacing));
-    align-items: center;
-  }
-
   /* home */
   &:not([role="navigation"]) > div {
-    margin-left: calc(var(--icon-button-size) + var(--spacing) * 2);
+    margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
 
     /* Button that shows the channel description */
-    &:has(> :first-child > [class*="topic_"]) {
+    &:has(.topic_bf3bbb) {
       margin-right: calc(var(--icon-button-size) + var(--spacing));
 
-      & > :first-child > [class*="topic_"] {
+      .topic_bf3bbb {
         &::before,
         &::after {
           content: "";
@@ -43,7 +36,7 @@ section:is([class*="themed_"], [class*="transparent_"]) {
             var(--window_fg_color) var(--percentage),
             transparent
           ) !important;
-          border-radius: 6px;
+          border-radius: var(--radius-xs);
 
           transition: var(--backdrop_transition) !important;
         }
@@ -63,17 +56,17 @@ section:is([class*="themed_"], [class*="transparent_"]) {
 
   // 1. Home title
   // 5. Thread child channel
-  &[role="navigation"] [class*="titleWrapper_"],
-  [class*="akaBadge_"],
-  [class*="nicknames_"],
-  [class*="children_"] > [class*="iconWrapper_"],
-  [class*="children_"]:has(> svg) [role="button"],
-  [class*="caret_"],
-  [class*="divider_"] {
+  &[role="navigation"] .titleWrapper_fc4f04,
+  .akaBadge_d6c26f,
+  .nicknames_d6c26f,
+  .children_fc4f04 > .iconWrapper_fc4f04,
+  .children_fc4f04 > .caret_fc4f04,
+  .children_fc4f04:has(> .caret_fc4f04) [role="button"],
+  .divider_fc4f04 {
     display: none;
   }
 
-  [class*="children_"] {
+  .children_fc4f04 {
     padding: 4px var(--spacing);
 
     min-height: var(--headerbar-height);
@@ -82,61 +75,66 @@ section:is([class*="themed_"], [class*="transparent_"]) {
 
     app-region: drag;
 
-    &:not(:has([class*="avatar_"])) {
+    &:not(:has(.avatar_a7d72e)) {
       flex-direction: column;
     }
 
     // 1. VC fix
     // 2. Channel news
     & > :empty,
-    & > [class*="followButton_"] {
+    & > .followButton_a7d72e {
       display: none;
     }
 
     /* Group chat */
-    & > [class*="container_"] {
+    & > .container_f0fccd {
       flex-grow: 0;
       flex-shrink: 0;
 
-      & > div {
-        padding: 0;
-        margin: 0;
+      div.input_f8b740 {
+        display: none !important;
+      }
+    }
 
-        & > div > div {
-          display: none !important;
-        }
+    .channelName_f0fccd {
+      padding: 0;
+      margin: 0;
 
-        input {
-          opacity: 1 !important;
-          box-shadow: none !important;
-          padding-block: 7px !important;
+      input {
+        opacity: 1 !important;
+        box-shadow: none !important;
+        padding-block: 7px !important;
 
-          position: relative !important;
-        }
+        position: relative !important;
       }
     }
   }
 
-  [class*="titleWrapper_"],
-  [class*="topic_"] {
+  .titleWrapper_fc4f04,
+  .topic_bf3bbb {
     margin: 0;
   }
 
   /* wtf ? */
-  [class*="topic_"] {
+  .topic_bf3bbb {
     text-align: center;
 
     width: -webkit-fill-available;
   }
 
-  [class*="avatar_"] {
+  .avatar_a7d72e {
     margin-left: 0;
-    margin-right: 6px;
+    margin-right: var(--spacing);
   }
 }
 
+.upperContainer_fc4f04 {
+  padding-right: calc(var(--icon-button-size) + var(--spacing));
+  align-items: center;
+}
+
 // Search
-[class*="toolbar_"] > [class*="search_"] {
+.toolbar_fc4f04 > .search_ff5f90 {
   margin: 0 var(--spacing);
 
   position: absolute;
@@ -177,7 +175,7 @@ section:is([class*="themed_"], [class*="transparent_"]) {
 }
 
 /* position: fixed & top: 0 doesn't actually bring it to the top, wtf ??? */
-[class*="peopleColumn_"] > [class*="searchBar_"] {
+.peopleColumn_c2739c > .searchBar_e0840f {
   border-radius: var(--button_radius);
 
   & > div {
@@ -187,9 +185,9 @@ section:is([class*="themed_"], [class*="transparent_"]) {
   }
 }
 
-[class*="privateChannels_"] {
-  & > [class*="searchBar_"] {
-    padding: 0 6px;
+.privateChannels_f0963d {
+  & > .searchBar_f0963d {
+    padding: 0 var(--spacing);
 
     height: var(--headerbar-height);
 

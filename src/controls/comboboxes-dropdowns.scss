@@ -1,3 +1,4 @@
+// TODO: mixin
 button[aria-expanded],
 [role="button"][aria-haspopup] {
   svg {
@@ -11,12 +12,12 @@ button[aria-expanded],
 }
 
 button[aria-expanded] > div::after,
-[role="button"][aria-haspopup] [class*="icons_"] {
+[role="button"][aria-haspopup] .icons_f6639d {
   background-color: currentColor;
   mask: svg("pan-down");
 
-  width: 16px;
-  height: 16px;
+  width: var(--icon-size);
+  height: var(--icon-size);
 }
 
 button[aria-expanded] {

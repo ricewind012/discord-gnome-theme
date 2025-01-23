@@ -11,11 +11,16 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 ### Optional additions
 
 1. Colorful placeholder icons: https://github.com/NYRI4/Discolored
+2. Remove Nitro references: https://github.com/CroissantDuNord/discord-adblock
 
-## Caveats
+## TODO
 
-- No scrollbars - Chrome now accepts [scrollbar-width](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width) for whatever reason
-- Only Vencord supported - See [requirements](#requirements)
+- Rewrite
+- Scrollbars
+- SSD support
+- Fix message form
+- Old messages banner -> toast
+- Update dialogs to newer libadwaita
 
 ## Installation
 

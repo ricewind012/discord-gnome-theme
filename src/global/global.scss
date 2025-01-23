@@ -17,10 +17,10 @@ strong {
 // 3. what is this used for ?
 // 4. Nitro
 // 5. No idea what icon, and it's pretty useless anyway
-[class*="sectionDivider_"],
-#channels > ul> [role="button"],
-[class*="privateChannelsHeaderContainer_"],
-[aria-label="Direct Messages"] > :is(:nth-child(3), :nth-child(4)),
+.sectionDivider_c43953,
+#channels > ul > [role="button"],
+.privateChannelsHeaderContainer_c47fa9,
+.privateChannels_f0963d ul > :is(:nth-child(3), :nth-child(4)),
 [aria-label="Open sticker picker"],
 [href="https://support.discord.com"]
 {

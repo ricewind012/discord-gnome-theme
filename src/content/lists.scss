@@ -1,6 +1,6 @@
 @use "../mixins";
 
-[class*="peopleList_"] {
+.peopleList_e0840f {
   @extend %cards-container;
 
   overflow: auto !important;
@@ -10,19 +10,19 @@
  * "list" role is used in many places, including ones I DO NOT FUCKING WANT
  * "listitem" is not reliable, since there are "option" ones being used
  */
-[class*="peopleListItem_"] {
+.peopleListItem_d51464 {
   @extend %card-with-actual-border-radiuses;
 
   box-shadow: none !important;
   border-top: none !important;
   margin: 0 !important;
 
-  [class*="userInfo_"] {
+  .userInfo_f3939d {
     align-items: center;
   }
 }
 
-[class*="peopleColumn_"] {
+.peopleColumn_c2739c {
   gap: 16px;
   padding: 16px;
 

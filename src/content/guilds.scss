@@ -2,14 +2,18 @@
   background-color: var(--sidebar_bg_color) !important;
   border-right: 1px solid var(--secondary_sidebar_border_color) !important;
 
-  & > [class*="scroller_"] {
+  .scroller_fea3ef {
     padding-top: 12px;
+  }
+
+  .footer_d71945 {
+    display: none;
   }
 }
 
-[class*="guildSeparator_"] {
+.guildSeparator_d0c57e {
   background-color: var(--sidebar_border_color);
 
-  width: calc(100% - 6px * 2);
+  width: calc(100% - var(--spacing) * 2);
   height: 1px;
 }
