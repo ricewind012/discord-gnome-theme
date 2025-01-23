@@ -9,7 +9,7 @@ const allFiles = fs.readdirSync(SRC_DIR, { recursive: true });
 const files = allFiles.filter((e) => e.endsWith(".scss"));
 const dirs = allFiles.filter((e) => !e.endsWith(".scss"));
 
-fs.rmSync(DIST_DIR, { recursive: true });
+fs.rmSync(DIST_DIR, { force: true, recursive: true });
 for (const dir of dirs) {
 	fs.mkdirSync(path.join(DIST_DIR, dir), { recursive: true });
 }
