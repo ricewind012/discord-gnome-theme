@@ -141,15 +141,8 @@
   @extend %card;
 }
 
-// 2. Vencord plugin settings
-// 3. Connections tab
-// 4. Voice tab
-.vc-plugins-grid,
-[role="dialog"]
-  > [class*="root_"]
-  > [class*="content_"]
-  > .vc-m-bottom-16
-  > [style],
+// 1. Connections tab
+// 2. Voice tab
 .connectContainer_e2a436,
 .cameraWrapper_ff1ac9,
 [role="radiogroup"] {
@@ -158,27 +151,6 @@
   border: none !important;
 }
 
-// 2. Vencord plugin settings
-.vc-addon-card,
-[role="dialog"]
-  > [class*="root_"]
-  > [class*="content_"]
-  > .vc-m-bottom-16
-  > [style]
-  > div {
-  border: none !important;
-  box-shadow: none !important;
-  padding: 10px 16px !important;
-  margin: 0 !important;
-}
-
-// 1. Vencord plugin settings
-[role="dialog"]
-  > [class*="root_"]
-  > [class*="content_"]
-  > .vc-m-bottom-16
-  > [style]
-  > div,
 [class^="margin"] > [class*="children_"] > [class*="container_"] {
   @extend %card-with-actual-border-radiuses;
 }
@@ -217,20 +189,6 @@
   }
 }
 
-/* Vencord plugin settings */
-[role="dialog"]
-  > [class*="root_"]
-  > [class*="content_"]
-  > .vc-m-bottom-16
-  > [style] {
-  gap: 0 !important;
-  padding: 0 !important;
-
-  & > div > div {
-    margin: 0 !important;
-  }
-}
-
 .layers_d4b6c5 {
   & > .layer_d4b6c5 {
     opacity: 1 !important;
@@ -261,18 +219,4 @@
       top: 0;
     }
   }
-}
-
-.vc-plugins-grid {
-  gap: 0 !important;
-
-  grid-template-columns: 1fr !important;
-}
-
-.vc-addon-card:hover {
-  transform: unset !important;
-}
-
-.vc-addon-note {
-  height: unset !important;
 }

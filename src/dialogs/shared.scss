@@ -13,11 +13,6 @@
     padding-bottom: 0;
 
     justify-content: center;
-
-    /* Vencord plugin settings */
-    & > [data-text-variant] {
-      text-align: center;
-    }
   }
 
   .content_f9a4c9 {
@@ -88,39 +83,6 @@
       svg {
         display: none;
       }
-    }
-
-    &.horizontalReverse_dc333f {
-      /* Vencord plugin settings */
-      & > div > div > button:first-child,
-      & > button:last-child {
-        border-left: none !important;
-      }
-    }
-  }
-
-  /* Vencord plugin settings */
-  &.vc-text-selectable {
-    gap: 0;
-
-    & > [class*="header_"] {
-      box-shadow: var(--elevation-low);
-      padding: 0
-        calc(
-          var(--spacing) + var(--close-button-pos) + var(--close-button-size)
-        );
-
-      height: var(--headerbar-height);
-    }
-
-    & > [class*="content_"] {
-      text-align: start;
-      padding-top: 24px !important;
-    }
-
-    & > [class*="footer_"] > div > div {
-      gap: 0 !important;
-      margin: 0 !important;
     }
   }
 }
