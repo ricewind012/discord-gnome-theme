@@ -1,0 +1,12 @@
+.browser_f542fc > .header_e664f3 {
+	& > svg,
+	& > h1,
+	& > [class*="divider_"],
+	& > [class*="spacer_"] {
+		display: none;
+	}
+
+	& > button {
+		margin: 0;
+	}
+}

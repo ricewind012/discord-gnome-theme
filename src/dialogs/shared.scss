@@ -87,59 +87,6 @@
 	}
 }
 
-/* little tweaks */
-.quickswitcher_f4e139 {
-	background-color: var(--background-primary);
-	border-radius: var(--window_radius);
-	box-shadow: var(--elevation-stroke), var(--elevation-high);
-}
-
-.recentMentionsPopout_ddb5b4 {
-	.expandedInboxHeader_f0cd33,
-	[class*="channelHeader_"] {
-		display: none;
-	}
-}
-
-[class*="messagesPopout_"] {
-	padding: 0 !important;
-
-	[role="list"] {
-		@extend %cards-container;
-
-		margin: 22px 28px !important;
-
-		overflow: hidden !important;
-
-		& > div {
-			border: none;
-			padding: 0;
-			margin: 0;
-
-			&:not(:last-child) {
-				border-bottom: 1px solid var(--card_shade_color);
-				border-radius: 0;
-			}
-		}
-	}
-
-	[class*="messageContainer_"] {
-		background-color: transparent;
-		padding: 8px 0;
-		margin: 0;
-	}
-
-	[class*="jumpButton_"] {
-		top: 8px;
-		right: 8px;
-
-		& > div {
-			color: inherit !important;
-			font-size: inherit !important;
-		}
-	}
-}
-
 [role="dialog"] > div {
 	background-color: var(--background-primary);
 	border-radius: var(--window_radius);
@@ -147,6 +94,7 @@
 	&:not([class*="root_"]) > [class*="header_"] {
 		background-color: var(--background-primary);
 		box-shadow: var(--elevation-low);
+		gap: var(--spacing);
 		padding: var(--spacing);
 
 		height: unset;
@@ -157,27 +105,5 @@
 	/* Image carousel arrows */
 	[class*="arrowContainer_"] {
 		color: var(--window_fg_color);
-	}
-}
-
-/* threads */
-[class*="browser_"] {
-	& > [class*="header_"] {
-		box-shadow: var(--elevation-low);
-		gap: var(--spacing);
-
-		height: var(--headerbar-height);
-		min-height: var(--headerbar-height);
-
-		& > svg,
-		& > h1,
-		& > [class*="divider_"],
-		& > [class*="spacer_"] {
-			display: none;
-		}
-
-		& > button {
-			margin: 0;
-		}
 	}
 }

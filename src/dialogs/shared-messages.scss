@@ -1,0 +1,47 @@
+@use "../mixins";
+
+.recentMentionsPopout_ddb5b4 {
+	.expandedInboxHeader_f0cd33,
+	[class*="channelHeader_"] {
+		display: none;
+	}
+}
+
+[class*="messagesPopout_"] {
+	padding: 0 !important;
+
+	[role="list"] {
+		@extend %cards-container;
+
+		margin: 22px 28px !important;
+
+		overflow: hidden !important;
+
+		& > div {
+			border: none;
+			padding: 0;
+			margin: 0;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid var(--card_shade_color);
+				border-radius: 0;
+			}
+		}
+	}
+
+	[class*="messageContainer_"] {
+		background-color: transparent;
+		padding: 8px 0;
+		margin: 0;
+	}
+
+	[class*="jumpButton_"] {
+		top: 8px;
+		right: 8px;
+
+		& > div {
+			color: inherit !important;
+			font-size: inherit !important;
+		}
+	}
+}
