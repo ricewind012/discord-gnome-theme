@@ -30,6 +30,11 @@
   --icon: icon("view-list");
 }
 
+// TODO: experiment
+[aria-label="Bookmarks"] {
+  --icon: icon("user-bookmarks");
+}
+
 [href="/channels/@me"] > div > div,
 [aria-label$="Member List"] {
   --icon: icon("org.gnome.Settings-users");
@@ -58,7 +63,7 @@
   --icon: icon("check-plain");
 }
 
-.rtcConnectionStatus_c02c63 {
+.voiceButtonsContainer_adcaac > :first-child {
   --icon: icon("sound-wave");
 }
 
@@ -66,8 +71,16 @@
   --icon: icon("record-screen");
 }
 
-[aria-label="Start an Activity"] {
+[aria-label="Start An Activity"] {
   --icon: icon("emoji-activities");
+}
+
+[aria-label="Stop Streaming"] {
+  --icon: icon("stop");
+}
+
+[aria-label="Leave Activity"] {
+  --icon: icon("log-out");
 }
 
 [aria-label*="Soundboard"] {
@@ -152,6 +165,7 @@
   --icon: icon("person");
 }
 
+[aria-label="Edit custom status"],
 [data-tab-id="Profile Customization"] {
   --icon: icon("edit");
 }

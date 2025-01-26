@@ -126,6 +126,11 @@
     margin-left: 0;
     margin-right: var(--spacing);
   }
+
+  // Experiments vencord plugin
+  [aria-label="Help"] {
+    --icon: icon("menu");
+  }
 }
 
 .upperContainer_fc4f04 {
