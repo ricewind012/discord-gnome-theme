@@ -3,6 +3,9 @@
 	"scripts": {
 		"build": "rm -rf dist && mkdir -p dist && npx postcss --verbose src --base src --dir dist --ext css"
 	},
+	"devDependencies": {
+		"prettier": "^3.4.2"
+	},
 	"dependencies": {
 		"@csstools/postcss-sass": "^5.1.1",
 		"postcss-cli": "^11.0.0",

@@ -1,52 +1,52 @@
 @use "../mixins";
 
 .searchHeader_b7c924 {
-  border-bottom: 1px solid var(--secondary_sidebar_border_color);
-  padding: var(--spacing);
+	border-bottom: 1px solid var(--secondary_sidebar_border_color);
+	padding: var(--spacing);
 
-  height: unset;
+	height: unset;
 }
 
 .searchResult_ddc613 {
-  background-color: transparent;
-  border-radius: 0;
-  margin: 0;
+	background-color: transparent;
+	border-radius: 0;
+	margin: 0;
 }
 
 .searchResultsWrap_c2b47d {
-  border-left: 1px solid var(--secondary_sidebar_border_color);
+	border-left: 1px solid var(--secondary_sidebar_border_color);
 
-  z-index: 0;
+	z-index: 0;
 
-  .channelNameContainer_a9e225 {
-    margin-bottom: 16px;
+	.channelNameContainer_a9e225 {
+		margin-bottom: 16px;
 
-    & > svg {
-      display: none;
-    }
-  }
+		& > svg {
+			display: none;
+		}
+	}
 
-  [role="group"] {
-    --offset: calc(15px * 1.25 + 4px);
+	[role="group"] {
+		--offset: calc(15px * 1.25 + 4px);
 
-    margin-bottom: calc(var(--offset) + 24px);
+		margin-bottom: calc(var(--offset) + 24px);
 
-    position: relative;
-    top: var(--offset);
+		position: relative;
+		top: var(--offset);
 
-    /* header */
-    & > :first-child {
-      position: absolute;
-      top: calc(var(--offset) * -1);
-    }
-  }
+		/* header */
+		& > :first-child {
+			position: absolute;
+			top: calc(var(--offset) * -1);
+		}
+	}
 
-  [role="listitem"] {
-    @extend %card-with-actual-border-radiuses;
+	[role="listitem"] {
+		@extend %card-with-actual-border-radiuses;
 
-    padding: 0 !important;
-    margin: 0 !important;
+		padding: 0 !important;
+		margin: 0 !important;
 
-    overflow: hidden;
-  }
+		overflow: hidden;
+	}
 }

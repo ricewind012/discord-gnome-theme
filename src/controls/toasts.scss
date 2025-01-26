@@ -1,117 +1,117 @@
 .attachedBars_d0696b {
-  .replyBar_b11c5e {
-    background-color: inherit;
-    gap: var(--spacing);
-    padding: var(--spacing);
-  }
+	.replyBar_b11c5e {
+		background-color: inherit;
+		gap: var(--spacing);
+		padding: var(--spacing);
+	}
 
-  [data-text-variant] {
-    color: inherit !important;
-    font-weight: bold !important;
-  }
+	[data-text-variant] {
+		color: inherit !important;
+		font-weight: bold !important;
+	}
 
-  .replyLabel_b11c5e {
-    margin-left: var(--spacing);
-  }
+	.replyLabel_b11c5e {
+		margin-left: var(--spacing);
+	}
 
-  .mentionButton_b11c5e {
-    background-color: color-mix(
-      in srgb,
-      var(--window_fg_color) var(--percentage),
-      transparent
-    ) !important;
-    box-sizing: border-box;
+	.mentionButton_b11c5e {
+		background-color: color-mix(
+			in srgb,
+			var(--window_fg_color) var(--percentage),
+			transparent
+		) !important;
+		box-sizing: border-box;
 
-    svg {
-      display: initial !important;
-    }
-  }
+		svg {
+			display: initial !important;
+		}
+	}
 
-  .threadSuggestionBar_b11c5e,
-  .separator_b11c5e {
-    display: none;
-  }
+	.threadSuggestionBar_b11c5e,
+	.separator_b11c5e {
+		display: none;
+	}
 
-  .closeButton_cb4d21 {
-    margin-left: var(--spacing);
-  }
+	.closeButton_cb4d21 {
+		margin-left: var(--spacing);
+	}
 }
 
 .autocomplete_bcc24e {
-  --background-modifier-accent: color-mix(
-    in srgb,
-    var(--window_fg_color) 20%,
-    transparent
-  );
-  background-color: var(--background-floating) !important;
-  border: 1px solid color-mix(in srgb, black 14%, transparent);
-  border-radius: var(--popover_radius) !important;
-  box-shadow: var(--popover_shadow);
+	--background-modifier-accent: color-mix(
+		in srgb,
+		var(--window_fg_color) 20%,
+		transparent
+	);
+	background-color: var(--background-floating) !important;
+	border: 1px solid color-mix(in srgb, black 14%, transparent);
+	border-radius: var(--popover_radius) !important;
+	box-shadow: var(--popover_shadow);
 
-  /* [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using */
-  [role="listbox"]:not([style*="inset"]) {
-    padding: 8px;
-  }
+	/* [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using */
+	[role="listbox"]:not([style*="inset"]) {
+		padding: 8px;
+	}
 
-  .autocompleteRow_bcc24e {
-    padding: 0;
+	.autocompleteRow_bcc24e {
+		padding: 0;
 
-    & > .base_bcc24e {
-      background-color: color-mix(
-        in srgb,
-        var(--window_fg_color) var(--percentage),
-        transparent
-      ) !important;
-      line-height: inherit;
-      padding: var(--spacing) var(--spacing-2x);
+		& > .base_bcc24e {
+			background-color: color-mix(
+				in srgb,
+				var(--window_fg_color) var(--percentage),
+				transparent
+			) !important;
+			line-height: inherit;
+			padding: var(--spacing) var(--spacing-2x);
 
-      &:hover {
-        --percentage: 10%;
-      }
+			&:hover {
+				--percentage: 10%;
+			}
 
-      &:active {
-        --percentage: 18.5%;
-      }
-    }
-  }
+			&:active {
+				--percentage: 18.5%;
+			}
+		}
+	}
 
-  .base_bcc24e {
-    border-radius: var(--menu_radius);
-    padding: 0;
-  }
+	.base_bcc24e {
+		border-radius: var(--menu_radius);
+		padding: 0;
+	}
 
-  .contentTitle_bcc24e {
-    padding-top: 0;
-    padding-bottom: var(--spacing);
-  }
+	.contentTitle_bcc24e {
+		padding-top: 0;
+		padding-bottom: var(--spacing);
+	}
 
-  .divider_bcc24e {
-    padding: var(--menu_margin) 0;
-  }
+	.divider_bcc24e {
+		padding: var(--menu_margin) 0;
+	}
 
-  /** commands **/
-  .rail_fe2299 {
-    border-right: 1px solid var(--sidebar_border_color);
-  }
+	/** commands **/
+	.rail_fe2299 {
+		border-right: 1px solid var(--sidebar_border_color);
+	}
 }
 
 .autocompleteRowContent_bcc24e {
-  gap: 8px;
+	gap: 8px;
 
-  & > * {
-    margin: 0;
+	& > * {
+		margin: 0;
 
-    text-align: start;
-  }
+		text-align: start;
+	}
 }
 
 .autocompleteRowContentPrimary_bcc24e,
 .autocompleteRowContentSecondary_bcc24e {
-  width: 50%;
+	width: 50%;
 }
 
 .autocompleteRowContentPrimary_bcc24e {
-  &:first-child {
-    margin-left: 32px;
-  }
+	&:first-child {
+		margin-left: 32px;
+	}
 }

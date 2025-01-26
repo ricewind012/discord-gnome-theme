@@ -1,35 +1,35 @@
 @use "../mixins";
 
 [role="radio"] {
-  @extend %card-with-actual-border-radiuses;
+	@extend %card-with-actual-border-radiuses;
 
-  box-shadow: none !important;
-  padding: 16px !important;
-  margin: 0 !important;
+	box-shadow: none !important;
+	padding: 16px !important;
+	margin: 0 !important;
 
-  & > div {
-    border: none !important;
-    gap: 16px !important;
-    padding: 0 !important;
+	& > div {
+		border: none !important;
+		gap: 16px !important;
+		padding: 0 !important;
 
-    & > :first-child {
-      border-radius: 50%;
+		& > :first-child {
+			border-radius: 50%;
 
-      width: 22px;
-      height: 22px;
-    }
-  }
+			width: 22px;
+			height: 22px;
+		}
+	}
 
-  svg {
-    display: none;
-  }
+	svg {
+		display: none;
+	}
 
-  &[aria-checked="true"] > div > :first-child {
-    background-color: #fff;
-    border: 7px solid var(--accent_bg_color);
-  }
+	&[aria-checked="true"] > div > :first-child {
+		background-color: #fff;
+		border: 7px solid var(--accent_bg_color);
+	}
 
-  &[aria-checked="false"] > div > :first-child {
-    border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
-  }
+	&[aria-checked="false"] > div > :first-child {
+		border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+	}
 }

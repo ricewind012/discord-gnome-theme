@@ -1,64 +1,64 @@
 [data-list-item-id$="forum-channel-header"] {
-  background-color: transparent !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin-bottom: 16px;
+	background-color: transparent !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin-bottom: 16px;
 
-  & > div {
-    border: none !important;
-  }
+	& > div {
+		border: none !important;
+	}
 }
 
 [data-list-id^="forum-channel-list"] > [role="list"] {
-  --custom-forum-post-form-horizontal-padding: 0px;
-  padding: 0;
+	--custom-forum-post-form-horizontal-padding: 0px;
+	padding: 0;
 
-  .titleContainer_c1668f {
-    gap: 10px;
+	.titleContainer_c1668f {
+		gap: 10px;
 
-    & > [role="button"] {
-      background-color: color-mix(
-        in srgb,
-        currentColor var(--percentage),
-        transparent
-      ) !important;
-      border-radius: 50% !important;
-      margin: 0;
+		& > [role="button"] {
+			background-color: color-mix(
+				in srgb,
+				currentColor var(--percentage),
+				transparent
+			) !important;
+			border-radius: 50% !important;
+			margin: 0;
 
-      position: relative !important;
-      width: var(--icon-button-size) !important;
-      height: var(--icon-button-size) !important;
+			position: relative !important;
+			width: var(--icon-button-size) !important;
+			height: var(--icon-button-size) !important;
 
-      transition: var(--backdrop_transition) !important;
-      order: 1;
+			transition: var(--backdrop_transition) !important;
+			order: 1;
 
-      &:hover {
-        /* *exact* #404040 for dark theme */
-        --percentage: 12.75% !important;
-      }
+			&:hover {
+				/* *exact* #404040 for dark theme */
+				--percentage: 12.75% !important;
+			}
 
-      &:active {
-        /* *exact* #616161 for dark theme */
-        --percentage: 27.75% !important;
-      }
-    }
-  }
+			&:active {
+				/* *exact* #616161 for dark theme */
+				--percentage: 27.75% !important;
+			}
+		}
+	}
 
-  .tagsContainer_a6d69a {
-    padding: 0;
-  }
+	.tagsContainer_a6d69a {
+		padding: 0;
+	}
 
-  .prefixElement_c1668f {
-    display: none;
-  }
+	.prefixElement_c1668f {
+		display: none;
+	}
 
-  [data-item-role="item"] {
-    & > div {
-      transform: unset;
-      background-color: transparent;
-      border: none;
-      box-shadow: none;
-      padding: 0;
-    }
-  }
+	[data-item-role="item"] {
+		& > div {
+			transform: unset;
+			background-color: transparent;
+			border: none;
+			box-shadow: none;
+			padding: 0;
+		}
+	}
 }

@@ -1,52 +1,52 @@
 .container_cebd1c {
-  --percentage: 15.25%;
-  background-color: color-mix(
-    in srgb,
-    var(--window_fg_color) var(--percentage),
-    transparent
-  ) !important;
+	--percentage: 15.25%;
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--percentage),
+		transparent
+	) !important;
 
-  &::before {
-    content: "";
+	&::before {
+		content: "";
 
-    position: absolute;
-    min-width: 20px;
-    min-height: 20px;
+		position: absolute;
+		min-width: 20px;
+		min-height: 20px;
 
-    background-color: #fff;
-    border-radius: 14px;
-    box-shadow: 0 2px 4px color-mix(in srgb, black 20%, transparent);
-    margin: 2px;
+		background-color: #fff;
+		border-radius: 14px;
+		box-shadow: 0 2px 4px color-mix(in srgb, black 20%, transparent);
+		margin: 2px;
 
-    transition: var(--switch-transition);
-  }
+		transition: var(--switch-transition);
+	}
 
-  &:hover {
-    --percentage: 22.5%;
-  }
+	&:hover {
+		--percentage: 22.5%;
+	}
 
-  &:active {
-    --percentage: 8%;
-  }
+	&:active {
+		--percentage: 8%;
+	}
 
-  &.checked_cebd1c {
-    background-color: var(--accent_bg_color) !important;
+	&.checked_cebd1c {
+		background-color: var(--accent_bg_color) !important;
 
-    &::before {
-      margin-left: 18px;
-      transition: var(--switch-transition);
-    }
+		&::before {
+			margin-left: 18px;
+			transition: var(--switch-transition);
+		}
 
-    &:hover {
-      background-color: #4990e7 !important;
-    }
+		&:hover {
+			background-color: #4990e7 !important;
+		}
 
-    &:active {
-      background-color: #2a6ab6 !important;
-    }
-  }
+		&:active {
+			background-color: #2a6ab6 !important;
+		}
+	}
 
-  .slider_cebd1c {
-    display: none;
-  }
+	.slider_cebd1c {
+		display: none;
+	}
 }

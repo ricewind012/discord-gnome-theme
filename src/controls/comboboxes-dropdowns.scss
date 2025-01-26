@@ -1,34 +1,34 @@
 // TODO: mixin
 button[aria-expanded],
 [role="button"][aria-haspopup] {
-  svg {
-    display: none;
-  }
+	svg {
+		display: none;
+	}
 
-  /* vc */
-  & > [class*="flex_"] {
-    height: inherit;
-  }
+	/* vc */
+	& > [class*="flex_"] {
+		height: inherit;
+	}
 }
 
 button[aria-expanded] > div::after,
 [role="button"][aria-haspopup] .icons_f6639d {
-  background-color: currentColor;
-  mask: icon("pan-down");
+	background-color: currentColor;
+	mask: icon("pan-down");
 
-  width: var(--icon-size);
-  height: var(--icon-size);
+	width: var(--icon-size);
+	height: var(--icon-size);
 }
 
 button[aria-expanded] {
-  & > div::after {
-    content: "";
-  }
+	& > div::after {
+		content: "";
+	}
 
-  [data-text-variant] {
-    color: inherit !important;
-    font-size: inherit !important;
-    margin-left: 0;
-    margin-right: 8px;
-  }
+	[data-text-variant] {
+		color: inherit !important;
+		font-size: inherit !important;
+		margin-left: 0;
+		margin-right: 8px;
+	}
 }

@@ -1,68 +1,68 @@
 [role="tablist"] {
-  [role="tab"] {
-    border: none !important;
-    border-radius: var(--button_radius);
+	[role="tab"] {
+		border: none !important;
+		border-radius: var(--button_radius);
 
-    transition: var(--backdrop_transition);
-  }
+		transition: var(--backdrop_transition);
+	}
 
-  &:where([aria-orientation="horizontal"], .navList_af5dbb) {
-    gap: 5px !important;
+	&:where([aria-orientation="horizontal"], .navList_af5dbb) {
+		gap: 5px !important;
 
-    [role="tab"] {
-      background-color: color-mix(
-        in srgb,
-        currentColor var(--percentage),
-        transparent
-      ) !important;
-      color: var(--window_fg_color) !important;
-      padding: 5px 10px;
-      margin: 0;
+		[role="tab"] {
+			background-color: color-mix(
+				in srgb,
+				currentColor var(--percentage),
+				transparent
+			) !important;
+			color: var(--window_fg_color) !important;
+			padding: 5px 10px;
+			margin: 0;
 
-      /* user dialog */
-      height: unset;
+			/* user dialog */
+			height: unset;
 
-      &:hover {
-        --percentage: var(--bg-hover-percentage);
-      }
+			&:hover {
+				--percentage: var(--bg-hover-percentage);
+			}
 
-      &[aria-selected="true"] {
-        --percentage: var(--bg-selected-percentage);
-      }
+			&[aria-selected="true"] {
+				--percentage: var(--bg-selected-percentage);
+			}
 
-      &:active {
-        --percentage: var(--bg-active-percentage);
-      }
-    }
-  }
+			&:active {
+				--percentage: var(--bg-active-percentage);
+			}
+		}
+	}
 
-  /* .navigation-sidebar > row */
-  &[aria-orientation="vertical"] {
-    padding: var(--menu_margin) 0 !important;
+	/* .navigation-sidebar > row */
+	&[aria-orientation="vertical"] {
+		padding: var(--menu_margin) 0 !important;
 
-    [role="tab"] {
-      line-height: 44px;
-      min-height: 36px;
-      padding: 0 14px;
-      margin: 0 var(--menu_margin) 2px;
+		[role="tab"] {
+			line-height: 44px;
+			min-height: 36px;
+			padding: 0 14px;
+			margin: 0 var(--menu_margin) 2px;
 
-      // Settings
-      .sidebar_c25c6d & {
-        display: flex;
-        align-items: center;
+			// Settings
+			.sidebar_c25c6d & {
+				display: flex;
+				align-items: center;
 
-        &::before {
-          content: "";
+				&::before {
+					content: "";
 
-          width: var(--icon-size);
-          height: var(--icon-size);
-          display: inline-block;
+					width: var(--icon-size);
+					height: var(--icon-size);
+					display: inline-block;
 
-          mask: var(--icon);
-          background-color: currentColor;
-          margin-right: 12px;
-        }
-      }
-    }
-  }
+					mask: var(--icon);
+					background-color: currentColor;
+					margin-right: 12px;
+				}
+			}
+		}
+	}
 }

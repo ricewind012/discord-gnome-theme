@@ -1,9 +1,9 @@
 @use "../mixins";
 
 .peopleList_e0840f {
-  @extend %cards-container;
+	@extend %cards-container;
 
-  overflow: auto !important;
+	overflow: auto !important;
 }
 
 /*
@@ -11,23 +11,23 @@
  * "listitem" is not reliable, since there are "option" ones being used
  */
 .peopleListItem_d51464 {
-  @extend %card-with-actual-border-radiuses;
+	@extend %card-with-actual-border-radiuses;
 
-  box-shadow: none !important;
-  border-top: none !important;
-  margin: 0 !important;
+	box-shadow: none !important;
+	border-top: none !important;
+	margin: 0 !important;
 
-  .userInfo_f3939d {
-    align-items: center;
-  }
+	.userInfo_f3939d {
+		align-items: center;
+	}
 }
 
 .peopleColumn_c2739c {
-  gap: 16px;
-  padding: 16px;
+	gap: 16px;
+	padding: 16px;
 
-  & > *,
-  h2 {
-    margin: 0;
-  }
+	& > *,
+	h2 {
+		margin: 0;
+	}
 }

@@ -1,84 +1,84 @@
 @use "../mixins";
 
 .root_f9a4c9.vc-text-selectable {
-  gap: 0;
+	gap: 0;
 
-  & > .header_f9a4c9 {
-    box-shadow: var(--elevation-low);
-    padding: 0
-      calc(var(--spacing) + var(--close-button-pos) + var(--close-button-size));
+	& > .header_f9a4c9 {
+		box-shadow: var(--elevation-low);
+		padding: 0
+			calc(var(--spacing) + var(--close-button-pos) + var(--close-button-size));
 
-    height: var(--headerbar-height);
-  }
+		height: var(--headerbar-height);
+	}
 
-  & > .content_f9a4c9 {
-    text-align: start;
-    padding-top: 24px !important;
+	& > .content_f9a4c9 {
+		text-align: start;
+		padding-top: 24px !important;
 
-    & > .vc-m-bottom-16 > div {
-      @extend %cards-container;
+		& > .vc-m-bottom-16 > div {
+			@extend %cards-container;
 
-      gap: 0 !important;
-      padding: 0 !important;
+			gap: 0 !important;
+			padding: 0 !important;
 
-      & > div {
-        @extend %card-with-actual-border-radiuses;
+			& > div {
+				@extend %card-with-actual-border-radiuses;
 
-        border: none !important;
-        box-shadow: none !important;
-        padding: 10px 16px !important;
-        margin: 0 !important;
+				border: none !important;
+				box-shadow: none !important;
+				padding: 10px 16px !important;
+				margin: 0 !important;
 
-        & > div {
-          margin: 0 !important;
-        }
-      }
-    }
-  }
+				& > div {
+					margin: 0 !important;
+				}
+			}
+		}
+	}
 
-  & > .footer_f9a4c9 {
-    &.horizontalReverse_dc333f {
-      & > div > div > button:first-child,
-      & > button:last-child {
-        border-left: none !important;
-      }
-    }
+	& > .footer_f9a4c9 {
+		&.horizontalReverse_dc333f {
+			& > div > div > button:first-child,
+			& > button:last-child {
+				border-left: none !important;
+			}
+		}
 
-    & > div > div {
-      gap: 0 !important;
-      margin: 0 !important;
-    }
-  }
+		& > div > div {
+			gap: 0 !important;
+			margin: 0 !important;
+		}
+	}
 
-  .header_f9a4c9 {
-    & > [data-text-variant] {
-      text-align: center;
-    }
-  }
+	.header_f9a4c9 {
+		& > [data-text-variant] {
+			text-align: center;
+		}
+	}
 }
 
 .vc-addon-card {
-  @extend %card;
+	@extend %card;
 
-  border: none !important;
-  box-shadow: none !important;
-  padding: 10px 16px !important;
-  margin: 0 !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 10px 16px !important;
+	margin: 0 !important;
 
-  &:hover {
-    transform: unset !important;
-  }
+	&:hover {
+		transform: unset !important;
+	}
 }
 
 .vc-addon-note {
-  height: unset !important;
+	height: unset !important;
 }
 
 .vc-plugins-grid {
-  @extend %cards-container;
+	@extend %cards-container;
 
-  gap: 0 !important;
-  border: none !important;
+	gap: 0 !important;
+	border: none !important;
 
-  grid-template-columns: 1fr !important;
+	grid-template-columns: 1fr !important;
 }

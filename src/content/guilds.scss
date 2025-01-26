@@ -1,19 +1,19 @@
 [data-list-id="guildsnav"] {
-  background-color: var(--sidebar_bg_color) !important;
-  border-right: 1px solid var(--secondary_sidebar_border_color) !important;
+	background-color: var(--sidebar_bg_color) !important;
+	border-right: 1px solid var(--secondary_sidebar_border_color) !important;
 
-  .scroller_fea3ef {
-    padding-top: 12px;
-  }
+	.scroller_fea3ef {
+		padding-top: 12px;
+	}
 
-  .footer_d71945 {
-    display: none;
-  }
+	.footer_d71945 {
+		display: none;
+	}
 }
 
 .guildSeparator_d0c57e {
-  background-color: var(--sidebar_border_color);
+	background-color: var(--sidebar_border_color);
 
-  width: calc(100% - var(--spacing) * 2);
-  height: 1px;
+	width: calc(100% - var(--spacing) * 2);
+	height: 1px;
 }

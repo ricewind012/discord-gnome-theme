@@ -1,50 +1,52 @@
 [role="slider"] {
-  .track_c7a159 {
-    top: 32px;
-  }
+	.track_c7a159 {
+		top: 32px;
+	}
 
-  .bar_c7a159 {
-    border-radius: 16px;
+	.bar_c7a159 {
+		border-radius: 16px;
 
-    height: 4px;
-  }
+		height: 4px;
+	}
 
-  .barFill_c7a159 {
-    background-color: var(--accent_bg_color);
-  }
+	.barFill_c7a159 {
+		background-color: var(--accent_bg_color);
+	}
 
-  /* the grabber is different with exact values, but i don't care fuck you */
-  .grabber_c7a159 {
-    /* close enough on dark theme, don't bother */
-    background-color: #fff;
-    border: none;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin-left: -10px;
+	/* the grabber is different with exact values, but i don't care fuck you */
+	.grabber_c7a159 {
+		/* close enough on dark theme, don't bother */
+		background-color: #fff;
+		border: none;
+		border-radius: 50%;
+		box-shadow:
+			0 0 0 1px rgba(0, 0, 0, 0.1),
+			0 2px 4px rgba(0, 0, 0, 0.2);
+		margin-left: -10px;
 
-    top: -11px;
-    width: 20px;
-    height: 20px;
-  }
+		top: -11px;
+		width: 20px;
+		height: 20px;
+	}
 
-  .mark_c7a159 {
-    flex-direction: column-reverse;
+	.mark_c7a159 {
+		flex-direction: column-reverse;
 
-    & > * {
-      color: var(--text-muted);
-      font-size: 15px;
-    }
-  }
+		& > * {
+			color: var(--text-muted);
+			font-size: 15px;
+		}
+	}
 
-  .markDash_c7a159 {
-    background-color: currentColor;
+	.markDash_c7a159 {
+		background-color: currentColor;
 
-    width: 1px;
-    height: 6px;
-  }
+		width: 1px;
+		height: 6px;
+	}
 
-  .markValue_c7a159 {
-    margin-top: 2px;
-    margin-bottom: 0;
-  }
+	.markValue_c7a159 {
+		margin-top: 2px;
+		margin-bottom: 0;
+	}
 }

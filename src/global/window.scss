@@ -1,21 +1,21 @@
 #app-mount {
-  color: var(--window_fg_color);
-  border: 1px solid var(--window_border_color);
-  border-radius: var(--window_radius);
+	color: var(--window_fg_color);
+	border: 1px solid var(--window_border_color);
+	border-radius: var(--window_radius);
 
-  width: calc(100% - 2px) !important;
-  height: calc(100% - 2px) !important;
+	width: calc(100% - 2px) !important;
+	height: calc(100% - 2px) !important;
 }
 
 .titleBar_a934d8 {
-  background: none !important;
+	background: none !important;
 
-  position: fixed;
-  top: 12px;
-  right: 12px;
-  height: unset;
+	position: fixed;
+	top: 12px;
+	right: 12px;
+	height: unset;
 
-  & > :not(.winButtonClose_a934d8) {
-    display: none;
-  }
+	& > :not(.winButtonClose_a934d8) {
+		display: none;
+	}
 }

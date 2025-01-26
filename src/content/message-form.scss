@@ -1,88 +1,88 @@
 .form_a7d72e {
-  --custom-channel-textarea-text-area-height: unset;
+	--custom-channel-textarea-text-area-height: unset;
 
-  margin: 0;
+	margin: 0;
 
-  &::before,
-  &::after {
-    display: none;
-  }
+	&::before,
+	&::after {
+		display: none;
+	}
 }
 
 [aria-label="Send a gift"],
 .channelAppLauncher_df39bd {
-  display: none;
+	display: none;
 }
 
 .channelTextArea_a7d72e {
-  background-color: color-mix(
-    in srgb,
-    var(--window_fg_color) 7.5%,
-    transparent
-  );
-  border-radius: var(--radius-xs);
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) 7.5%,
+		transparent
+	);
+	border-radius: var(--radius-xs);
 
-  & > div {
-    background-color: transparent;
-    border-radius: inherit;
+	& > div {
+		background-color: transparent;
+		border-radius: inherit;
 
-    & > div {
-      padding: 0;
-    }
-  }
+		& > div {
+			padding: 0;
+		}
+	}
 
-  .attachButton_f298d4 {
-    --icon: icon("plus-circle-outline");
+	.attachButton_f298d4 {
+		--icon: icon("plus-circle-outline");
 
-    margin: 0 !important;
+		margin: 0 !important;
 
-    /* align with cozy mode avatars, à la discord */
-    width: calc(var(--icon-button-size) + 8px * 2) !important;
-  }
+		/* align with cozy mode avatars, à la discord */
+		width: calc(var(--icon-button-size) + 8px * 2) !important;
+	}
 
-  .clipContainer_b11c5e {
-    padding: 0;
-    margin: 0;
-  }
+	.clipContainer_b11c5e {
+		padding: 0;
+		margin: 0;
+	}
 
-  .replyLabel_b11c5e {
-    font-size: 15px !important;
-  }
+	.replyLabel_b11c5e {
+		font-size: 15px !important;
+	}
 
-  .textArea_bdf0de,
-  .buttons_bdf0de {
-    height: unset;
-    min-height: unset;
-  }
+	.textArea_bdf0de,
+	.buttons_bdf0de {
+		height: unset;
+		min-height: unset;
+	}
 
-  .placeholder_a552a6,
-  [role="textbox"] {
-    padding: var(--spacing);
-  }
+	.placeholder_a552a6,
+	[role="textbox"] {
+		padding: var(--spacing);
+	}
 
-  .buttons_bdf0de {
-    margin: 0 !important;
+	.buttons_bdf0de {
+		margin: 0 !important;
 
-    /* align to start for longer text */
-    & > div {
-      height: 100%;
-      align-items: start;
-    }
-  }
+		/* align to start for longer text */
+		& > div {
+			height: 100%;
+			align-items: start;
+		}
+	}
 
-  .separator_a06035 {
-    margin: 0;
+	.separator_a06035 {
+		margin: 0;
 
-    &::before {
-      display: none;
-    }
-  }
+		&::before {
+			display: none;
+		}
+	}
 }
 
 .channelTextAreaInner_fb4810 > div > div {
-  min-height: unset !important;
+	min-height: unset !important;
 }
 
 .textAreaThreadCreation_bdf0de [role="textbox"] {
-  border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+	border-radius: var(--radius-xs) 0 0 var(--radius-xs);
 }

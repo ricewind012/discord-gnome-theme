@@ -4,120 +4,120 @@
 .sidebar_a4d4d9 .headerButton_fd6364,
 .panels_a4d4d9 :where([role="button"], button),
 .privateChannels_f0963d .searchBarComponent_f0963d {
-  @extend %icon-button;
+	@extend %icon-button;
 }
 
 .toolbar_fc4f04 {
-  [class*="liveQualityIndicator_"],
-  [class*="live_"] {
-    margin-bottom: 0 !important;
-  }
+	[class*="liveQualityIndicator_"],
+	[class*="live_"] {
+		margin-bottom: 0 !important;
+	}
 
-  [class*="qualityIndicator_"] {
-    width: unset !important;
-    height: unset !important;
+	[class*="qualityIndicator_"] {
+		width: unset !important;
+		height: unset !important;
 
-    &::before {
-      display: none;
-    }
+		&::before {
+			display: none;
+		}
 
-    & > * {
-      display: initial !important;
-    }
-  }
+		& > * {
+			display: initial !important;
+		}
+	}
 
-  [role="button"] {
-    @extend %icon-button;
-  }
+	[role="button"] {
+		@extend %icon-button;
+	}
 }
 
 [href="/channels/@me"] .avatar_ec8679 {
-  --icon-button-size: 32px;
+	--icon-button-size: 32px;
 
-  @extend %icon-button;
+	@extend %icon-button;
 
-  background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 [class*="searchBar_"],
 [class*="searchBox_"] {
-  [role="button"][aria-hidden="true"]:not([class*="icon_"]) {
-    --icon-button-size: var(--icon-size);
+	[role="button"][aria-hidden="true"]:not([class*="icon_"]) {
+		--icon-button-size: var(--icon-size);
 
-    @extend %icon-button;
+		@extend %icon-button;
 
-    background-color: transparent !important;
-    margin-right: 9px;
-  }
+		background-color: transparent !important;
+		margin-right: 9px;
+	}
 }
 
 .winButtonClose_a934d8,
 [class*="close_"],
 [class*="closeIcon_"],
 [class*="closeButton_"] {
-  --percentage: 7.5%;
+	--percentage: 7.5%;
 
-  @extend %icon-button;
+	@extend %icon-button;
 
-  background-color: color-mix(
-    in srgb,
-    var(--window_fg_color) var(--percentage),
-    transparent
-  ) !important;
-  border: none !important;
-  border-radius: 100% !important;
-  padding: 0 !important;
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--percentage),
+		transparent
+	) !important;
+	border: none !important;
+	border-radius: 100% !important;
+	padding: 0 !important;
 
-  width: var(--close-button-size) !important;
-  height: var(--close-button-size) !important;
+	width: var(--close-button-size) !important;
+	height: var(--close-button-size) !important;
 
-  transform: none !important;
+	transform: none !important;
 }
 
 /* dialog */
 [class*="close_"] {
-  opacity: 1;
+	opacity: 1;
 
-  position: absolute !important;
-  top: var(--close-button-pos);
-  right: var(--close-button-pos);
+	position: absolute !important;
+	top: var(--close-button-pos);
+	right: var(--close-button-pos);
 }
 
 /* settings */
 .tools_c25c6d {
-  position: fixed;
-  top: calc(var(--p) + var(--close-button-pos));
-  right: calc(var(--p) + var(--close-button-pos));
+	position: fixed;
+	top: calc(var(--p) + var(--close-button-pos));
+	right: calc(var(--p) + var(--close-button-pos));
 }
 
 [class*="closeButton_"] {
-  opacity: 1;
+	opacity: 1;
 
-  flex: 0 0 var(--close-button-size);
+	flex: 0 0 var(--close-button-size);
 
-  /* align with the other child element */
-  .privateChannels_f0963d & {
-    margin-right: 8px;
-  }
+	/* align with the other child element */
+	.privateChannels_f0963d & {
+		margin-right: 8px;
+	}
 }
 
 .toolbar_fc4f04 {
-  gap: var(--spacing);
-  padding: var(--spacing);
+	gap: var(--spacing);
+	padding: var(--spacing);
 
-  & > button {
-    margin: 0;
-  }
+	& > button {
+		margin: 0;
+	}
 
-  [role="button"] {
-    @extend %icon-button;
+	[role="button"] {
+		@extend %icon-button;
 
-    margin: 0;
-  }
+		margin: 0;
+	}
 }
 
 .channelTextArea_a7d72e button {
-  @extend %icon-button;
+	@extend %icon-button;
 
-  border-radius: 0 !important;
+	border-radius: 0 !important;
 }

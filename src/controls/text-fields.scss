@@ -1,42 +1,42 @@
 @use "../mixins";
 
 [role="textbox"] {
-  @extend %text-field-focus;
+	@extend %text-field-focus;
 }
 
 [class*="textarea_"],
 .quickswitcher_f4e139 > input,
 .channelName_f0fccd > div > input {
-  @extend %text-field;
+	@extend %text-field;
 }
 
 [class*="searchBar_"],
 [class*="searchBox_"] {
-  &[class*="container_"] {
-    @extend %text-field;
+	&[class*="container_"] {
+		@extend %text-field;
 
-    input {
-      font-size: 15px;
-      line-height: inherit;
-      padding: 0;
-      margin: 0;
+		input {
+			font-size: 15px;
+			line-height: inherit;
+			padding: 0;
+			margin: 0;
 
-      height: inherit;
-    }
-  }
+			height: inherit;
+		}
+	}
 
-  & > [class*="inner_"] {
-    padding: 0;
+	& > [class*="inner_"] {
+		padding: 0;
 
-    flex-direction: row-reverse;
-  }
+		flex-direction: row-reverse;
+	}
 }
 
 [class*="inputWrapper_"] {
-  border: none;
+	border: none;
 
-  input,
-  textarea {
-    @extend %text-field;
-  }
+	input,
+	textarea {
+		@extend %text-field;
+	}
 }

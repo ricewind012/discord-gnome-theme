@@ -1,27 +1,27 @@
 #add_friend-tab {
-  flex-direction: column-reverse;
-  justify-content: center;
+	flex-direction: column-reverse;
+	justify-content: center;
 
-  & > header {
-    border: none;
+	& > header {
+		border: none;
 
-    & > h2,
-    .description_b89ec7 {
-      display: none;
-    }
-  }
+		& > h2,
+		.description_b89ec7 {
+			display: none;
+		}
+	}
 
-  & > div {
-    flex-grow: 0;
-  }
+	& > div {
+		flex-grow: 0;
+	}
 }
 
 .addFriendInputWrapper_de812f {
-  background-color: transparent;
-  border: none;
-  margin: 0;
+	background-color: transparent;
+	border: none;
+	margin: 0;
 }
 
 .addFriendInput_de812f > input {
-  letter-spacing: 0;
+	letter-spacing: 0;
 }

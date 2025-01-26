@@ -1,98 +1,98 @@
 [class*="searchBar_"],
 [class*="searchBox_"] {
-  [role="button"] {
-    --icon: icon("loupe-large");
-  }
+	[role="button"] {
+		--icon: icon("loupe-large");
+	}
 }
 
 [aria-label="User Settings"] {
-  --icon: icon("settings");
+	--icon: icon("settings");
 }
 
 [aria-label="Threads"] {
-  --icon: icon("chat-bubbles-empty-inverted");
+	--icon: icon("chat-bubbles-empty-inverted");
 }
 
 [aria-label="Notification Settings"] {
-  --icon: icon("bell-outline");
-  display: none;
+	--icon: icon("bell-outline");
+	display: none;
 }
 
 [aria-label="Pinned Messages"] {
-  --icon: icon("star-outline-thick");
+	--icon: icon("star-outline-thick");
 }
 
 [aria-label="Pinned Messages"] {
-  --icon: icon("pin");
+	--icon: icon("pin");
 }
 
 [aria-label$="Member List"] {
-  --icon: icon("view-list");
+	--icon: icon("view-list");
 }
 
 // TODO: experiment
 [aria-label="Bookmarks"] {
-  --icon: icon("user-bookmarks");
+	--icon: icon("user-bookmarks");
 }
 
 [href="/channels/@me"] > div > div,
 [aria-label$="Member List"] {
-  --icon: icon("org.gnome.Settings-users");
+	--icon: icon("org.gnome.Settings-users");
 }
 
 [aria-label^="Start Voice Call"] {
-  --icon: icon("phone-right-facing");
+	--icon: icon("phone-right-facing");
 }
 
 .actionButtons_adcaac > :first-child,
 /* I have no camera, can't see the other text */
 [aria-label^="Start Video Call"] {
-  --icon: icon("camera-small");
+	--icon: icon("camera-small");
 }
 
 [aria-label*="User Profile"] {
-  --icon: icon("user-info");
+	--icon: icon("user-info");
 }
 
 [aria-label="Add Friends to DM"],
 [aria-label="New Group DM"] {
-  --icon: icon("contact-new");
+	--icon: icon("contact-new");
 }
 
 [aria-label="Accept"] {
-  --icon: icon("check-plain");
+	--icon: icon("check-plain");
 }
 
 .voiceButtonsContainer_adcaac > :first-child {
-  --icon: icon("sound-wave");
+	--icon: icon("sound-wave");
 }
 
 [aria-label="Share Your Screen"] {
-  --icon: icon("record-screen");
+	--icon: icon("record-screen");
 }
 
 [aria-label="Start An Activity"] {
-  --icon: icon("emoji-activities");
+	--icon: icon("emoji-activities");
 }
 
 [aria-label="Stop Streaming"] {
-  --icon: icon("stop");
+	--icon: icon("stop");
 }
 
 [aria-label="Leave Activity"] {
-  --icon: icon("log-out");
+	--icon: icon("log-out");
 }
 
 [aria-label*="Soundboard"] {
-  --icon: icon("bullhorn");
+	--icon: icon("bullhorn");
 }
 
 [aria-label="Inbox"] {
-  --icon: icon("mail-unread");
+	--icon: icon("mail-unread");
 }
 
 [aria-label="Message"] {
-  --icon: icon("chat-bubbles-empty-inverted");
+	--icon: icon("chat-bubbles-empty-inverted");
 }
 
 [class^="close"],
@@ -101,163 +101,163 @@
 [aria-label^="Cancel"],
 :focus-within > div > [aria-label="Clear search"],
 [aria-label^="Close"] {
-  --icon: icon("window-close");
+	--icon: icon("window-close");
 }
 
 [aria-label="More"] {
-  --icon: icon("menu");
-  order: 1;
+	--icon: icon("menu");
+	order: 1;
 }
 
 [role="tablist"][aria-label="Friends"] {
-  /* Hide *icons* on lower window sizes */
-  @media (min-width: 1050px) {
-    & > div::before {
-      content: "";
+	/* Hide *icons* on lower window sizes */
+	@media (min-width: 1050px) {
+		& > div::before {
+			content: "";
 
-      width: var(--icon-size);
-      height: var(--icon-size);
+			width: var(--icon-size);
+			height: var(--icon-size);
 
-      background-color: currentColor;
-      mask: var(--icon);
-      margin-right: 7px;
-    }
-  }
+			background-color: currentColor;
+			mask: var(--icon);
+			margin-right: 7px;
+		}
+	}
 
-  & > [data-tab-id="ONLINE"] {
-    --icon: icon("stop-sign-outline");
-  }
+	& > [data-tab-id="ONLINE"] {
+		--icon: icon("stop-sign-outline");
+	}
 
-  & > [data-tab-id="ALL"] {
-    --icon: icon("people");
-  }
+	& > [data-tab-id="ALL"] {
+		--icon: icon("people");
+	}
 
-  & > [data-tab-id="PENDING"] {
-    --icon: icon("spinner");
-  }
+	& > [data-tab-id="PENDING"] {
+		--icon: icon("spinner");
+	}
 
-  & > [data-tab-id="BLOCKED"] {
-    --icon: icon("action-unavailable");
-  }
+	& > [data-tab-id="BLOCKED"] {
+		--icon: icon("action-unavailable");
+	}
 
-  & > [data-tab-id="ADD_FRIEND"] {
-    --icon: icon("plus-circle-outline");
-  }
+	& > [data-tab-id="ADD_FRIEND"] {
+		--icon: icon("plus-circle-outline");
+	}
 }
 
 [aria-label="Upload a file or send invites"] {
-  --icon: icon("mail-attachment");
+	--icon: icon("mail-attachment");
 }
 
 [aria-label="Open GIF picker"] {
-  --icon: icon("image-round");
+	--icon: icon("image-round");
 }
 
 [aria-label="Select emoji"] {
-  --icon: icon("emoji-people");
+	--icon: icon("emoji-people");
 }
 
 [aria-label="Send Message"] {
-  --icon: icon("paper-plane");
+	--icon: icon("paper-plane");
 }
 
 [data-tab-id="My Account"] {
-  --icon: icon("person");
+	--icon: icon("person");
 }
 
 [aria-label="Edit custom status"],
 [data-tab-id="Profile Customization"] {
-  --icon: icon("edit");
+	--icon: icon("edit");
 }
 
 [data-tab-id="Privacy & Safety"],
 [data-tab-id="Activity Privacy"] {
-  --icon: icon("screen-privacy4");
+	--icon: icon("screen-privacy4");
 }
 
 [data-tab-id="Family Center"] {
-  --icon: icon("eye-open-negative-filled");
+	--icon: icon("eye-open-negative-filled");
 }
 
 [data-tab-id="Authorized Apps"] {
-  --icon: icon("grid-large");
+	--icon: icon("grid-large");
 }
 
 [data-tab-id="Sessions"] {
-  --icon: icon("smartphone");
+	--icon: icon("smartphone");
 }
 
 [data-tab-id="Connections"] {
-  --icon: icon("phonelink");
+	--icon: icon("phonelink");
 }
 
 [data-tab-id="Settings Clips"],
 [data-tab-id="Voice & Video"] {
-  --icon: icon("microphone");
+	--icon: icon("microphone");
 }
 
 [data-tab-id="Friend Requests"] {
-  --icon: icon("contact-new");
+	--icon: icon("contact-new");
 }
 
 [data-tab-id="Appearance"] {
-  --icon: icon("brush-monitor");
+	--icon: icon("brush-monitor");
 }
 
 [data-tab-id="Accessibility"] {
-  --icon: icon("body");
+	--icon: icon("body");
 }
 
 [data-tab-id="Text & Images"] {
-  --icon: icon("chat");
+	--icon: icon("chat");
 }
 
 [data-tab-id="Notifications"] {
-  --icon: icon("bell-outline");
+	--icon: icon("bell-outline");
 }
 
 [data-tab-id="Keybinds"] {
-  --icon: icon("keyboard3");
+	--icon: icon("keyboard3");
 }
 
 [data-tab-id="Language"] {
-  --icon: icon("translate");
+	--icon: icon("translate");
 }
 
 [data-tab-id="Streamer Mode"] {
-  --icon: icon("camera-small");
+	--icon: icon("camera-small");
 }
 
 [data-tab-id="Advanced"] {
-  --icon: icon("wrench-wide");
+	--icon: icon("wrench-wide");
 }
 
 [data-tab-id="VencordPlugins"] {
-  --icon: icon("puzzle-piece");
+	--icon: icon("puzzle-piece");
 }
 
 [data-tab-id="VencordThemes"] {
-  --icon: icon("larger-brush");
+	--icon: icon("larger-brush");
 }
 
 [data-tab-id="VencordUpdater"] {
-  --icon: icon("update");
+	--icon: icon("update");
 }
 
 [data-tab-id="VencordCloud"] {
-  --icon: icon("cloud-filled");
+	--icon: icon("cloud-filled");
 }
 
 [data-tab-id="VencordSettingsSync"] {
-  --icon: icon("history-undo");
+	--icon: icon("history-undo");
 }
 
 [data-tab-id="logout"] {
-  --icon: icon("system-log-out");
+	--icon: icon("system-log-out");
 
-  svg {
-    display: none;
-  }
+	svg {
+		display: none;
+	}
 }
 
 /* bro who the hell uses that ? */
@@ -271,5 +271,5 @@
 [data-tab-id="merchandise"],
 [data-tab-id="Hypesquad Online"],
 [data-tab-id="Hypesquad Online"] + div {
-  display: none !important;
+	display: none !important;
 }

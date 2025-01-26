@@ -1,128 +1,128 @@
 @use "../mixins";
 
 .standardSidebarView_c25c6d {
-  top: 0 !important;
+	top: 0 !important;
 }
 
 .contentRegion_c25c6d {
-  margin-top: 46px;
+	margin-top: 46px;
 }
 
 .contentColumn_c25c6d {
-  padding: 22px 28px;
-  margin: auto;
+	padding: 22px 28px;
+	margin: auto;
 
-  max-width: var(--content-width);
+	max-width: var(--content-width);
 
-  &::before {
-    content: "";
-    position: fixed;
-    inset: var(--p);
-    height: var(--headerbar-height);
-    box-shadow: var(--elevation-low);
-    z-index: 1;
-  }
+	&::before {
+		content: "";
+		position: fixed;
+		inset: var(--p);
+		height: var(--headerbar-height);
+		box-shadow: var(--elevation-low);
+		z-index: 1;
+	}
 
-  /*
+	/*
      https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
      L70
    */
-  & > h2:first-child,
-  & > :first-child > h2:first-child,
-  & > div > :first-child [class*="h1_"],
-  & > div > :first-child [class*="sectionTitle_"] > * {
-    --pad: 11px;
-    text-align: center;
-    padding: var(--pad);
+	& > h2:first-child,
+	& > :first-child > h2:first-child,
+	& > div > :first-child [class*="h1_"],
+	& > div > :first-child [class*="sectionTitle_"] > * {
+		--pad: 11px;
+		text-align: center;
+		padding: var(--pad);
 
-    position: fixed;
-    top: var(--p);
-    left: calc(var(--p) + var(--sidebar-width) + var(--pad));
-    width: calc(
-      100% - var(--p) * 2 - var(--sidebar-width) - var(--close-button-size) -
-        var(--pad) * 2
-    );
-    z-index: 999;
+		position: fixed;
+		top: var(--p);
+		left: calc(var(--p) + var(--sidebar-width) + var(--pad));
+		width: calc(
+			100% - var(--p) *
+				2 - var(--sidebar-width) - var(--close-button-size) - var(--pad) * 2
+		);
+		z-index: 999;
 
-    app-region: drag;
-  }
+		app-region: drag;
+	}
 
-  [role="tablist"][aria-orientation="horizontal"] {
-    border: none !important;
-    padding: 0;
-  }
+	[role="tablist"][aria-orientation="horizontal"] {
+		border: none !important;
+		padding: 0;
+	}
 }
 
 [class*="contentPanel_"] {
-  position: initial;
+	position: initial;
 }
 
 .toolsContainer_c25c6d {
-  position: absolute;
-  z-index: 999;
+	position: absolute;
+	z-index: 999;
 }
 
 .keybind_df5532 {
-  display: none;
+	display: none;
 }
 
 .sidebarRegion_c25c6d {
-  border-right: 1px solid var(--background-modifier-accent);
-  margin-top: var(--headerbar-height);
+	border-right: 1px solid var(--background-modifier-accent);
+	margin-top: var(--headerbar-height);
 
-  flex: unset;
+	flex: unset;
 
-  &::before {
-    content: "Settings";
+	&::before {
+		content: "Settings";
 
-    position: fixed;
-    top: calc(var(--p) + 1px);
-    left: calc(var(--p) + 1px);
-    width: var(--sidebar-width);
-    height: var(--headerbar-height);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+		position: fixed;
+		top: calc(var(--p) + 1px);
+		left: calc(var(--p) + 1px);
+		width: var(--sidebar-width);
+		height: var(--headerbar-height);
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-    background-color: var(--background-secondary);
-    color: var(--window_fg_color);
-    border-top-left-radius: var(--window_radius);
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    text-transform: none !important;
-    text-align: center;
-    border-right: 1px solid var(--background-modifier-accent);
+		background-color: var(--background-secondary);
+		color: var(--window_fg_color);
+		border-top-left-radius: var(--window_radius);
+		font-weight: 700 !important;
+		font-size: 15px !important;
+		text-transform: none !important;
+		text-align: center;
+		border-right: 1px solid var(--background-modifier-accent);
 
-    app-region: drag;
-  }
+		app-region: drag;
+	}
 }
 
 /* .navigation-sidebar */
 .sidebar_c25c6d {
-  padding: 0;
+	padding: 0;
 
-  .header_a0 {
-    display: none;
-  }
+	.header_a0 {
+		display: none;
+	}
 
-  .separator_a0 {
-    margin: var(--menu_margin);
-  }
+	.separator_a0 {
+		margin: var(--menu_margin);
+	}
 }
 
 .contentRegion_c25c6d .divider_b03b7f {
-  display: none;
+	display: none;
 }
 
 /* bruh */
 .contentRegion_c25c6d [class*="children_"] > div:not([class], [style]),
 [class^="marginTop_"] {
-  margin-top: 28px;
+	margin-top: 28px;
 }
 
 [class^="marginBottom_"] {
-  margin-bottom: 28px;
+	margin-bottom: 28px;
 }
 
 .vc-addon-card,
@@ -138,7 +138,7 @@
   /* ^ */
   .settingsBackgroundFlashElement_fd41ea
 ) {
-  @extend %card;
+	@extend %card;
 }
 
 // 1. Connections tab
@@ -146,77 +146,77 @@
 .connectContainer_e2a436,
 .cameraWrapper_ff1ac9,
 [role="radiogroup"] {
-  @extend %cards-container;
+	@extend %cards-container;
 
-  border: none !important;
+	border: none !important;
 }
 
 [class^="margin"] > [class*="children_"] > [class*="container_"] {
-  @extend %card-with-actual-border-radiuses;
+	@extend %card-with-actual-border-radiuses;
 }
 
 /* Nitro themes */
 [class*="presets_"] {
-  gap: var(--spacing-2x);
+	gap: var(--spacing-2x);
 
-  [role="radiogroup"]:has(> &) {
-    background-color: transparent !important;
-    box-shadow: none !important;
-  }
+	[role="radiogroup"]:has(> &) {
+		background-color: transparent !important;
+		box-shadow: none !important;
+	}
 
-  .themeSelection_cb7c27 {
-    border-radius: 50% !important;
+	.themeSelection_cb7c27 {
+		border-radius: 50% !important;
 
-    &.lightIcon_cb7c27 {
-      background-color: #fafafa !important;
-    }
+		&.lightIcon_cb7c27 {
+			background-color: #fafafa !important;
+		}
 
-    &.darkIcon_cb7c27 {
-      background-color: #242424 !important;
-    }
+		&.darkIcon_cb7c27 {
+			background-color: #242424 !important;
+		}
 
-    & > div {
-      margin-top: 4px !important;
+		& > div {
+			margin-top: 4px !important;
 
-      & > svg {
-        border: none !important;
-      }
-    }
+			& > svg {
+				border: none !important;
+			}
+		}
 
-    svg {
-      display: initial;
-    }
-  }
+		svg {
+			display: initial;
+		}
+	}
 }
 
 .layers_d4b6c5 {
-  & > .layer_d4b6c5 {
-    opacity: 1 !important;
+	& > .layer_d4b6c5 {
+		opacity: 1 !important;
 
-    &[aria-hidden="true"] {
-      pointer-events: none;
-      transform: none !important;
+		&[aria-hidden="true"] {
+			pointer-events: none;
+			transform: none !important;
 
-      &::before {
-        content: "";
+			&::before {
+				content: "";
 
-        position: fixed;
-        inset: 0;
+				position: fixed;
+				inset: 0;
 
-        background-color: var(--backdrop);
-        z-index: 101;
-      }
-    }
-  }
+				background-color: var(--backdrop);
+				z-index: 101;
+			}
+		}
+	}
 
-  & > :not(:only-child):last-child {
-    box-shadow: var(--elevation-high);
-    border-radius: var(--window_radius);
+	& > :not(:only-child):last-child {
+		box-shadow: var(--elevation-high);
+		border-radius: var(--window_radius);
 
-    inset: var(--p);
+		inset: var(--p);
 
-    & > div {
-      top: 0;
-    }
-  }
+		& > div {
+			top: 0;
+		}
+	}
 }

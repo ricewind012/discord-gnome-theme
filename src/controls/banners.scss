@@ -1,54 +1,54 @@
 @use "../mixins";
 
 .chatHeaderBar_efb691 {
-  @extend %banner;
+	@extend %banner;
 
-  &::after {
-    display: none;
-  }
+	&::after {
+		display: none;
+	}
 }
 
 .barBase_cf58b5 {
-  @extend %banner;
+	@extend %banner;
 
-  opacity: 1;
-  border-radius: 0;
-  box-shadow: none;
-  margin: 0 !important;
+	opacity: 1;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0 !important;
 
-  left: 0;
-  right: 0;
-  z-index: 3;
-  height: unset;
-  min-height: unset;
+	left: 0;
+	right: 0;
+	z-index: 3;
+	height: unset;
+	min-height: unset;
 }
 
 .chatHeaderBarText_efb691,
 .barButtonBase_cf58b5 {
-  text-align: center;
-  color: var(--window_fg_color) !important;
+	text-align: center;
+	color: var(--window_fg_color) !important;
 
-  height: unset;
+	height: unset;
 }
 
 .messagesWrapper_e2e187:has(> .jumpToPresentBar_cf58b5:nth-child(3)) {
-  [aria-label="Jump to last unread message"] {
-    margin-left: 127px;
-  }
+	[aria-label="Jump to last unread message"] {
+		margin-left: 127px;
+	}
 
-  & > .jumpToPresentBar_cf58b5 {
-    top: 5000px !important;
+	& > .jumpToPresentBar_cf58b5 {
+		top: 5000px !important;
 
-    & > .barButtonAlt_cf58b5 {
-      position: absolute;
-      top: calc(-5000px + var(--spacing));
-    }
-  }
+		& > .barButtonAlt_cf58b5 {
+			position: absolute;
+			top: calc(-5000px + var(--spacing));
+		}
+	}
 }
 
 /* no top bar */
 .messagesWrapper_e2e187 > .jumpToPresentBar_cf58b5:nth-child(2) {
-  top: 0;
-  bottom: initial;
-  flex-direction: row-reverse;
+	top: 0;
+	bottom: initial;
+	flex-direction: row-reverse;
 }

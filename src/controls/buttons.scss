@@ -1,64 +1,64 @@
 @use "../mixins";
 
 [class*="button_"][class*="size" i]:not([class*="size32_"]) {
-  @extend %button;
+	@extend %button;
 
-  &[class*="disabled_"] {
-    opacity: var(--dim-level-opacity);
-  }
+	&[class*="disabled_"] {
+		opacity: var(--dim-level-opacity);
+	}
 
-  &.colorPrimary_dd4f85 {
-    --banner-bg: var(--accent_color) !important;
-    color: var(--accent_fg_color) !important;
-  }
+	&.colorPrimary_dd4f85 {
+		--banner-bg: var(--accent_color) !important;
+		color: var(--accent_fg_color) !important;
+	}
 
-  &.colorRed_dd4f85 {
-    --banner-bg: var(--destructive_bg_color) !important;
-    color: var(--destructive_fg_color) !important;
-  }
+	&.colorRed_dd4f85 {
+		--banner-bg: var(--destructive_bg_color) !important;
+		color: var(--destructive_fg_color) !important;
+	}
 
-  &.colorGreen_dd4f85 {
-    --banner-bg: var(--success_bg_color) !important;
-    color: var(--success_fg_color) !important;
-  }
+	&.colorGreen_dd4f85 {
+		--banner-bg: var(--success_bg_color) !important;
+		color: var(--success_fg_color) !important;
+	}
 }
 
 .mentionButton_b11c5e,
 .barButtonAlt_cf58b5 {
-  @extend %button;
+	@extend %button;
 }
 
 [role="button"][aria-haspopup] {
-  @extend %button;
+	@extend %button;
 
-  min-height: 34px !important;
+	min-height: 34px !important;
 
-  .videoControls_f72aac & {
-    --banner-bg: transparent;
-  }
+	.videoControls_f72aac & {
+		--banner-bg: transparent;
+	}
 }
 
 .jumpButton_ac3dc2 {
-  @extend %button;
+	@extend %button;
 
-  height: unset !important;
+	height: unset !important;
 }
 
 .searchResultsWrap_c2b47d .button_ddc613 {
-  @extend %button;
+	@extend %button;
 
-  font-size: 15px;
-  font-weight: bold !important;
+	font-size: 15px;
+	font-weight: bold !important;
 
-  height: unset !important;
+	height: unset !important;
 }
 
 [aria-roledescription="Open Thread Button"] {
-  @extend %button;
+	@extend %button;
 
-  height: unset !important;
+	height: unset !important;
 
-  .cta_c15230 {
-    text-decoration: none !important;
-  }
+	.cta_c15230 {
+		text-decoration: none !important;
+	}
 }
