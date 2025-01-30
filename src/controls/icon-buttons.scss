@@ -1,13 +1,13 @@
 @use "../mixins";
 
-.peopleListItem_d51464 [role="button"],
-.sidebar_a4d4d9 .headerButton_fd6364,
-.panels_a4d4d9 :where([role="button"], button),
-.privateChannels_f0963d .searchBarComponent_f0963d {
+.peopleListItem_cc6179 [role="button"],
+.sidebar_c48ade .headerButton_f37cb1,
+.panels_c48ade :where([role="button"], button),
+.privateChannels__35e86 .searchBarComponent__35e86 {
 	@extend %icon-button;
 }
 
-.toolbar_fc4f04 {
+.toolbar__9293f {
 	[class*="liveQualityIndicator_"],
 	[class*="live_"] {
 		margin-bottom: 0 !important;
@@ -31,7 +31,7 @@
 	}
 }
 
-[href="/channels/@me"] .avatar_ec8679 {
+[href="/channels/@me"] .avatar__20a53 {
 	--icon-button-size: 32px;
 
 	@extend %icon-button;
@@ -51,7 +51,7 @@
 	}
 }
 
-.winButtonClose_a934d8,
+.winButtonClose__421ed,
 [class*="close_"],
 [class*="closeIcon_"],
 [class*="closeButton_"] {
@@ -84,7 +84,7 @@
 }
 
 /* settings */
-.tools_c25c6d {
+.tools__23e6b {
 	position: fixed;
 	top: calc(var(--p) + var(--close-button-pos));
 	right: calc(var(--p) + var(--close-button-pos));
@@ -96,12 +96,12 @@
 	flex: 0 0 var(--close-button-size);
 
 	/* align with the other child element */
-	.privateChannels_f0963d & {
+	.privateChannels__35e86 & {
 		margin-right: 8px;
 	}
 }
 
-.toolbar_fc4f04 {
+.toolbar__9293f {
 	gap: var(--spacing);
 	padding: var(--spacing);
 
@@ -116,7 +116,7 @@
 	}
 }
 
-.channelTextArea_a7d72e button {
+.channelTextArea_f75fb0 button {
 	@extend %icon-button;
 
 	border-radius: 0 !important;

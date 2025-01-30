@@ -1,9 +1,9 @@
 @use "../mixins";
 
-.root_f9a4c9.vc-text-selectable {
+.root__49fc1.vc-text-selectable {
 	gap: 0;
 
-	& > .header_f9a4c9 {
+	& > .header__49fc1 {
 		box-shadow: var(--elevation-low);
 		padding: 0
 			calc(var(--spacing) + var(--close-button-pos) + var(--close-button-size));
@@ -11,7 +11,7 @@
 		height: var(--headerbar-height);
 	}
 
-	& > .content_f9a4c9 {
+	& > .content__49fc1 {
 		text-align: start;
 		padding-top: 24px !important;
 
@@ -36,8 +36,8 @@
 		}
 	}
 
-	& > .footer_f9a4c9 {
-		&.horizontalReverse_dc333f {
+	& > .footer__49fc1 {
+		&.horizontalReverse__7c0ba {
 			& > div > div > button:first-child,
 			& > button:last-child {
 				border-left: none !important;
@@ -50,7 +50,7 @@
 		}
 	}
 
-	.header_f9a4c9 {
+	.header__49fc1 {
 		& > [data-text-variant] {
 			text-align: center;
 		}

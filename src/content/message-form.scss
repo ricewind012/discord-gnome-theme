@@ -1,4 +1,4 @@
-.form_a7d72e {
+.form_f75fb0 {
 	--custom-channel-textarea-text-area-height: unset;
 
 	margin: 0;
@@ -10,11 +10,11 @@
 }
 
 [aria-label="Send a gift"],
-.channelAppLauncher_df39bd {
+.channelAppLauncher_e6e74f {
 	display: none;
 }
 
-.channelTextArea_a7d72e {
+.channelTextArea_f75fb0 {
 	background-color: color-mix(
 		in srgb,
 		var(--window_fg_color) 7.5%,
@@ -31,7 +31,7 @@
 		}
 	}
 
-	.attachButton_f298d4 {
+	.attachButton__0923f {
 		--icon: icon("plus-circle-outline");
 
 		margin: 0 !important;
@@ -40,27 +40,27 @@
 		width: calc(var(--icon-button-size) + 8px * 2) !important;
 	}
 
-	.clipContainer_b11c5e {
+	.clipContainer__841c8 {
 		padding: 0;
 		margin: 0;
 	}
 
-	.replyLabel_b11c5e {
+	.replyLabel__841c8 {
 		font-size: 15px !important;
 	}
 
-	.textArea_bdf0de,
-	.buttons_bdf0de {
+	.textArea__74017,
+	.buttons__74017 {
 		height: unset;
 		min-height: unset;
 	}
 
-	.placeholder_a552a6,
+	.placeholder__1b31f,
 	[role="textbox"] {
 		padding: var(--spacing);
 	}
 
-	.buttons_bdf0de {
+	.buttons__74017 {
 		margin: 0 !important;
 
 		/* align to start for longer text */
@@ -70,7 +70,7 @@
 		}
 	}
 
-	.separator_a06035 {
+	.separator_aa63ab {
 		margin: 0;
 
 		&::before {
@@ -79,10 +79,10 @@
 	}
 }
 
-.channelTextAreaInner_fb4810 > div > div {
+.channelTextAreaInner_fb64c9 > div > div {
 	min-height: unset !important;
 }
 
-.textAreaThreadCreation_bdf0de [role="textbox"] {
+.textAreaThreadCreation__74017 [role="textbox"] {
 	border-radius: var(--radius-xs) 0 0 var(--radius-xs);
 }

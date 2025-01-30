@@ -1,14 +1,14 @@
 @use "../mixins";
 
-.standardSidebarView_c25c6d {
+.standardSidebarView__23e6b {
 	top: 0 !important;
 }
 
-.contentRegion_c25c6d {
+.contentRegion__23e6b {
 	margin-top: 46px;
 }
 
-.contentColumn_c25c6d {
+.contentColumn__23e6b {
 	padding: 22px 28px;
 	margin: auto;
 
@@ -57,16 +57,16 @@
 	position: initial;
 }
 
-.toolsContainer_c25c6d {
+.toolsContainer__23e6b {
 	position: absolute;
 	z-index: 999;
 }
 
-.keybind_df5532 {
+.keybind_c2b141 {
 	display: none;
 }
 
-.sidebarRegion_c25c6d {
+.sidebarRegion__23e6b {
 	border-right: 1px solid var(--background-modifier-accent);
 	margin-top: var(--headerbar-height);
 
@@ -99,24 +99,24 @@
 }
 
 /* .navigation-sidebar */
-.sidebar_c25c6d {
+.sidebar__23e6b {
 	padding: 0;
 
-	.header_a0 {
+	.header_b3f026 {
 		display: none;
 	}
 
-	.separator_a0 {
+	.separator_b3f026 {
 		margin: var(--menu_margin);
 	}
 }
 
-.contentRegion_c25c6d .divider_b03b7f {
+.contentRegion__23e6b .divider__46c3b {
 	display: none;
 }
 
 /* bruh */
-.contentRegion_c25c6d [class*="children_"] > div:not([class], [style]),
+.contentRegion__23e6b [class*="children_"] > div:not([class], [style]),
 [class^="marginTop_"] {
 	margin-top: 28px;
 }
@@ -127,14 +127,14 @@
 
 .vc-addon-card,
 :is(
-  .contentRegion_c25c6d [class*="children_"],
+  .contentRegion__23e6b [class*="children_"],
   [class*="children_"] > div:not([class]),
   /* bruh */
   [class^="margin"]
 ) > :is(
   [class^="flex_"],
   /* Switch container */
-  .container_ed1d57,
+  .container__0d850,
   /* ^ */
   .settingsBackgroundFlashElement_fd41ea
 ) {
@@ -143,8 +143,8 @@
 
 // 1. Connections tab
 // 2. Voice tab
-.connectContainer_e2a436,
-.cameraWrapper_ff1ac9,
+.connectContainer_c7f964,
+.cameraWrapper_d41d5f,
 [role="radiogroup"] {
 	@extend %cards-container;
 
@@ -164,14 +164,14 @@
 		box-shadow: none !important;
 	}
 
-	.themeSelection_cb7c27 {
+	.themeSelection__36dee {
 		border-radius: 50% !important;
 
-		&.lightIcon_cb7c27 {
+		&.lightIcon__36dee {
 			background-color: #fafafa !important;
 		}
 
-		&.darkIcon_cb7c27 {
+		&.darkIcon__36dee {
 			background-color: #242424 !important;
 		}
 
@@ -189,8 +189,8 @@
 	}
 }
 
-.layers_d4b6c5 {
-	& > .layer_d4b6c5 {
+.layers__960e4 {
+	& > .layer__960e4 {
 		opacity: 1 !important;
 
 		&[aria-hidden="true"] {

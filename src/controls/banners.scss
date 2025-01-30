@@ -1,6 +1,6 @@
 @use "../mixins";
 
-.chatHeaderBar_efb691 {
+.chatHeaderBar_dc83f5 {
 	@extend %banner;
 
 	&::after {
@@ -8,7 +8,7 @@
 	}
 }
 
-.barBase_cf58b5 {
+.barBase__0f481 {
 	@extend %banner;
 
 	opacity: 1;
@@ -23,23 +23,23 @@
 	min-height: unset;
 }
 
-.chatHeaderBarText_efb691,
-.barButtonBase_cf58b5 {
+.chatHeaderBarText_dc83f5,
+.barButtonBase__0f481 {
 	text-align: center;
 	color: var(--window_fg_color) !important;
 
 	height: unset;
 }
 
-.messagesWrapper_e2e187:has(> .jumpToPresentBar_cf58b5:nth-child(3)) {
+.messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) {
 	[aria-label="Jump to last unread message"] {
 		margin-left: 127px;
 	}
 
-	& > .jumpToPresentBar_cf58b5 {
+	& > .jumpToPresentBar__0f481 {
 		top: 5000px !important;
 
-		& > .barButtonAlt_cf58b5 {
+		& > .barButtonAlt__0f481 {
 			position: absolute;
 			top: calc(-5000px + var(--spacing));
 		}
@@ -47,7 +47,7 @@
 }
 
 /* no top bar */
-.messagesWrapper_e2e187 > .jumpToPresentBar_cf58b5:nth-child(2) {
+.messagesWrapper__36d07 > .jumpToPresentBar__0f481:nth-child(2) {
 	top: 0;
 	bottom: initial;
 	flex-direction: row-reverse;

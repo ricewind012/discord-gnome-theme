@@ -1,20 +1,20 @@
 [role="slider"] {
-	.track_c7a159 {
+	.track_a562c8 {
 		top: 32px;
 	}
 
-	.bar_c7a159 {
+	.bar_a562c8 {
 		border-radius: 16px;
 
 		height: 4px;
 	}
 
-	.barFill_c7a159 {
+	.barFill_a562c8 {
 		background-color: var(--accent_bg_color);
 	}
 
 	/* the grabber is different with exact values, but i don't care fuck you */
-	.grabber_c7a159 {
+	.grabber_a562c8 {
 		/* close enough on dark theme, don't bother */
 		background-color: #fff;
 		border: none;
@@ -29,7 +29,7 @@
 		height: 20px;
 	}
 
-	.mark_c7a159 {
+	.mark_a562c8 {
 		flex-direction: column-reverse;
 
 		& > * {
@@ -38,14 +38,14 @@
 		}
 	}
 
-	.markDash_c7a159 {
+	.markDash_a562c8 {
 		background-color: currentColor;
 
 		width: 1px;
 		height: 6px;
 	}
 
-	.markValue_c7a159 {
+	.markValue_a562c8 {
 		margin-top: 2px;
 		margin-bottom: 0;
 	}

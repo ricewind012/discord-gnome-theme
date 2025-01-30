@@ -1,24 +1,24 @@
 @use "../mixins";
 
-.searchHeader_b7c924 {
+.searchHeader_f3b986 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
 	padding: var(--spacing);
 
 	height: unset;
 }
 
-.searchResult_ddc613 {
+.searchResult__02a39 {
 	background-color: transparent;
 	border-radius: 0;
 	margin: 0;
 }
 
-.searchResultsWrap_c2b47d {
+.searchResultsWrap_a9e706 {
 	border-left: 1px solid var(--secondary_sidebar_border_color);
 
 	z-index: 0;
 
-	.channelNameContainer_a9e225 {
+	.channelNameContainer_c68065 {
 		margin-bottom: 16px;
 
 		& > svg {

@@ -1,4 +1,4 @@
-.container_cebd1c {
+.container__87bf1 {
 	--percentage: 15.25%;
 	background-color: color-mix(
 		in srgb,
@@ -29,7 +29,7 @@
 		--percentage: 8%;
 	}
 
-	&.checked_cebd1c {
+	&.checked__87bf1 {
 		background-color: var(--accent_bg_color) !important;
 
 		&::before {
@@ -46,7 +46,7 @@
 		}
 	}
 
-	.slider_cebd1c {
+	.slider__87bf1 {
 		display: none;
 	}
 }

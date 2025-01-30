@@ -1,4 +1,4 @@
-.sidebar_a4d4d9 {
+.sidebar_c48ade {
 	& > nav {
 		&::before {
 			content: "";
@@ -12,7 +12,7 @@
 			app-region: drag;
 		}
 
-		&.privateChannels_f0963d::before {
+		&.privateChannels__35e86::before {
 			content: attr(aria-label);
 
 			inset: 0 calc(var(--icon-button-size) + var(--spacing));
@@ -23,10 +23,10 @@
 			color: var(--window_fg_color);
 		}
 
-		&:not(.privateChannels_f0963d) > :first-child {
+		&:not(.privateChannels__35e86) > :first-child {
 			pointer-events: none;
 
-			&.bannerVisible_fd6364 {
+			&.bannerVisible_f37cb1 {
 				--window_fg_color: var(--white-500);
 			}
 		}
@@ -38,11 +38,11 @@
 	}
 
 	[class*="guildIcon"],
-	.headerChildren_fd6364 {
+	.headerChildren_f37cb1 {
 		display: none;
 	}
 
-	.headerButton_fd6364 {
+	.headerButton_f37cb1 {
 		--icon: icon("menu");
 
 		flex-shrink: 0;
@@ -51,7 +51,7 @@
 	}
 }
 
-div.sidebar_a4d4d9 {
+div.sidebar_c48ade {
 	background: var(
 		--bg-overlay-app-frame,
 		var(--background-secondary-alt)
@@ -60,7 +60,7 @@ div.sidebar_a4d4d9 {
 	border-radius: 0 !important;
 }
 
-.panels_a4d4d9 {
+.panels_c48ade {
 	background: var(
 		--bg-overlay-app-frame,
 		var(--background-secondary-alt)
@@ -72,7 +72,7 @@ div.sidebar_a4d4d9 {
 
 		height: unset;
 
-		& > .container_adcaac {
+		& > .container_e131a9 {
 			border: none;
 		}
 	}
@@ -107,14 +107,14 @@ div.sidebar_a4d4d9 {
 		}
 	}
 
-	.nameTag_b2ca13 {
+	.nameTag__37e49 {
 		padding: 0;
 		padding-left: var(--spacing);
 		margin: 0;
 	}
 }
 
-.rtcConnectionStatus_c02c63 button {
+.rtcConnectionStatus__06d62 button {
 	width: unset !important;
 	height: unset !important;
 
@@ -128,7 +128,7 @@ div.sidebar_a4d4d9 {
 }
 
 #channels {
-	.wrapper_d8bfb3 {
+	.wrapper__2ea32 {
 		padding: 0;
 		margin: 0;
 	}
@@ -138,11 +138,11 @@ div.sidebar_a4d4d9 {
 	}
 }
 
-.typeThread_d8bfb3 {
+.typeThread__2ea32 {
 	margin-left: 36px !important;
 }
 
-.link_d8bfb3 {
+.link__2ea32 {
 	color: var(--window_fg_color);
 	padding: 0 14px;
 
@@ -150,13 +150,13 @@ div.sidebar_a4d4d9 {
 	justify-content: center;
 }
 
-.unread_d8bfb3 {
+.unread__2ea32 {
 	top: 9px;
 	left: 0;
 	height: calc(100% - 11px);
 }
 
 [aria-label="Invite to Server"],
-.iconContainer_d8bfb3 {
+.iconContainer__2ea32 {
 	display: none;
 }

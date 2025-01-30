@@ -44,7 +44,7 @@
 	--icon: icon("phone-right-facing");
 }
 
-.actionButtons_adcaac > :first-child,
+.actionButtons_e131a9 > :first-child,
 /* I have no camera, can't see the other text */
 [aria-label^="Start Video Call"] {
 	--icon: icon("camera-small");
@@ -63,7 +63,7 @@
 	--icon: icon("check-plain");
 }
 
-.voiceButtonsContainer_adcaac > :first-child {
+.voiceButtonsContainer_e131a9 > :first-child {
 	--icon: icon("sound-wave");
 }
 
