@@ -1,3 +1,5 @@
+@use "../mixins";
+
 .container__9293f {
 	padding: 0;
 
@@ -7,51 +9,8 @@
 	&:not([role="navigation"]) > div {
 		margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
 
-		// Button that shows the channel description
-		// TODO: use topicClickTarget
 		&:has(.topic__6ec1a) {
 			margin-right: calc(var(--icon-button-size) + var(--spacing));
-
-			.topic__6ec1a {
-				&::before,
-				&::after {
-					content: "";
-
-					position: fixed;
-					top: calc(var(--spacing) + 1px);
-					right: calc(var(--titlebar-right-spacing) + var(--spacing));
-					width: var(--icon-button-size);
-					height: var(--icon-button-size);
-				}
-
-				&::before {
-					background-color: var(--window_fg_color);
-					mask: icon("info-outline");
-					mask-repeat: no-repeat;
-					mask-position: center;
-				}
-
-				&::after {
-					background-color: color-mix(
-						in srgb,
-						var(--window_fg_color) var(--percentage),
-						transparent
-					) !important;
-					border-radius: var(--radius-xs);
-
-					transition: var(--backdrop_transition) !important;
-				}
-
-				&:hover {
-					// *exact* #404040 for dark theme
-					--percentage: 12.75% !important;
-				}
-
-				&:active {
-					// *exact* #616161 for dark theme
-					--percentage: 27.75% !important;
-				}
-			}
 		}
 	}
 
@@ -132,6 +91,20 @@
 	[aria-label="Help"] {
 		--icon: icon("menu");
 	}
+}
+
+// Button that shows the channel description
+.topicClickTarget__6ec1a {
+	--icon: icon("info-outline");
+
+	@extend %icon-button;
+
+	position: fixed !important;
+	top: calc(var(--spacing) + var(--app-border-size));
+	right: calc(var(--titlebar-right-spacing) + var(--spacing));
+	left: unset !important;
+
+	pointer-events: all !important;
 }
 
 .upperContainer__9293f {
