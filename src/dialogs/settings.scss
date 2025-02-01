@@ -98,7 +98,7 @@
 	}
 }
 
-/* .navigation-sidebar */
+// .navigation-sidebar
 .sidebar__23e6b {
 	padding: 0;
 
@@ -115,7 +115,7 @@
 	display: none;
 }
 
-/* bruh */
+// bruh
 .contentRegion__23e6b [class*="children_"] > div:not([class], [style]),
 [class^="marginTop_"] {
 	margin-top: 28px;
@@ -129,13 +129,13 @@
 :is(
   .contentRegion__23e6b [class*="children_"],
   [class*="children_"] > div:not([class]),
-  /* bruh */
+  // bruh
   [class^="margin"]
 ) > :is(
   [class^="flex_"],
-  /* Switch container */
+  // Switch container
   .container__0d850,
-  /* ^ */
+  // ^
   .settingsBackgroundFlashElement_fd41ea
 ) {
 	@extend %card;
@@ -155,7 +155,7 @@
 	@extend %card-with-actual-border-radiuses;
 }
 
-/* Nitro themes */
+// Nitro themes
 [class*="presets_"] {
 	gap: var(--spacing-2x);
 

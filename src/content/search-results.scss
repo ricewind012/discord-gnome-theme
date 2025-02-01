@@ -34,7 +34,7 @@
 		position: relative;
 		top: var(--offset);
 
-		/* header */
+		// header
 		& > :first-child {
 			position: absolute;
 			top: calc(var(--offset) * -1);

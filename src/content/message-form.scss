@@ -36,7 +36,7 @@
 
 		margin: 0 !important;
 
-		/* align with cozy mode avatars, à la discord */
+		// align with cozy mode avatars, à la discord
 		width: calc(var(--icon-button-size) + 8px * 2) !important;
 	}
 
@@ -63,7 +63,7 @@
 	.buttons__74017 {
 		margin: 0 !important;
 
-		/* align to start for longer text */
+		// align to start for longer text
 		& > div {
 			height: 100%;
 			align-items: start;

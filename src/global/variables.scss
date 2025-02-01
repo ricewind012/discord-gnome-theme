@@ -11,7 +11,7 @@
 	--popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
 		0 2px 14px 3px color-mix(in srgb, black 5%, transparent);
 
-	/* found in _colors.scss */
+	// found in _colors.scss
 	--osd_bg_color: rgba(0, 0, 0, 0.7);
 	--osd_fg_color: rgba(255, 255, 255, 0.9);
 
@@ -201,7 +201,7 @@
 	--font-code: "Source Code Pro", monospace !important;
 }
 
-/* Nitro themes */
+// Nitro themes
 .custom-theme-background {
 	--nitro-border: rgb(
 		var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)
@@ -308,7 +308,7 @@
 	--popover_shade_color: rgba(0, 0, 0, 0.25);
 }
 
-/* my colors, cuz idk what these colors are */
+// my colors, cuz idk what these colors are
 .theme-light {
 	--bg-selected-percentage: 7.5%;
 	--bg-active-percentage: 13.75%;

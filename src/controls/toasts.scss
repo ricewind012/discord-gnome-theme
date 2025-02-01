@@ -48,7 +48,7 @@
 	border-radius: var(--popover_radius) !important;
 	box-shadow: var(--popover_shadow);
 
-	/* [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using */
+	// [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using
 	[role="listbox"]:not([style*="inset"]) {
 		padding: 8px;
 	}

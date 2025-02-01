@@ -45,7 +45,7 @@
 }
 
 .actionButtons_e131a9 > :first-child,
-/* I have no camera, can't see the other text */
+// I have no camera, can't see the other text
 [aria-label^="Start Video Call"] {
 	--icon: icon("camera-small");
 }
@@ -224,7 +224,7 @@
 	}
 }
 
-/* bro who the hell uses that ? */
+// bro who the hell uses that ?
 [data-tab-id="Discord Nitro"],
 [data-tab-id="Nitro Server Boost"],
 [data-tab-id="Subscriptions"],

@@ -6,10 +6,8 @@
 	overflow: auto !important;
 }
 
-/*
- * "list" role is used in many places, including ones I DO NOT FUCKING WANT
- * "listitem" is not reliable, since there are "option" ones being used
- */
+// "list" role is used in many places, including ones I DO NOT FUCKING WANT
+// "listitem" is not reliable, since there are "option" ones being used
 .peopleListItem_cc6179 {
 	@extend %card-with-actual-border-radiuses;
 

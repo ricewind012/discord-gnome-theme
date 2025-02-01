@@ -5,7 +5,7 @@
 	text-transform: none !important;
 }
 
-/* .title-3 in _labels */
+// .title-3 in _labels
 // TODO: multiple?
 [class*="username_"],
 .displayedNick__56fec,
@@ -44,8 +44,8 @@
 	}
 }
 
-/* .title-1 */
-/* TODO: Placeholder header seems to be larger */
+// .title-1
+// TODO: Placeholder header seems to be larger
 .flexChild__7c0ba[direction^="vertical_"] > :first-child,
 .markup__75297 :is(h1, h2, h3) *,
 .embedProvider__623de > *,
@@ -55,7 +55,7 @@
 	font-size: 20px !important;
 }
 
-/* .title-2 */
+// .title-2
 // 2. Special case for DMs (header)
 // 4. Search results
 .sidebar_c48ade h2,
@@ -67,7 +67,7 @@
 	font-size: 15px !important;
 }
 
-/* .title-4 */
+// .title-4
 .embedTitle__623de > *,
 [class*="resultsGroup_"] > [class*="header_"],
 .flexChild__7c0ba[direction^="vertical_"] > :last-child:not(:only-child),
@@ -100,7 +100,7 @@
 	margin-right: 8px;
 }
 
-/* .caption */
+// .caption
 [class*="playTime_"],
 [class*="cozy_"] [class*="timestamp_"],
 .peopleListItem_cc6179 [class*="subtext_"] > *,
@@ -126,7 +126,7 @@
 	margin: auto !important;
 }
 
-/* links */
+// links
 .anchor_edefb8[href] {
 	opacity: 1 !important;
 	color: var(--accent_color) !important;

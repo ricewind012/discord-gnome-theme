@@ -74,7 +74,7 @@
 	transform: none !important;
 }
 
-/* dialog */
+// dialog
 [class*="close_"] {
 	opacity: 1;
 
@@ -83,7 +83,7 @@
 	right: var(--close-button-pos);
 }
 
-/* settings */
+// settings
 .tools__23e6b {
 	position: fixed;
 	top: calc(var(--p) + var(--close-button-pos));
@@ -95,7 +95,7 @@
 
 	flex: 0 0 var(--close-button-size);
 
-	/* align with the other child element */
+	// align with the other child element
 	.privateChannels__35e86 & {
 		margin-right: 8px;
 	}

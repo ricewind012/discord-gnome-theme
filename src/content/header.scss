@@ -3,11 +3,11 @@
 
 	min-height: unset;
 
-	/* home */
+	// home
 	&:not([role="navigation"]) > div {
 		margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
 
-		/* Button that shows the channel description */
+		// Button that shows the channel description
 		// TODO: use topicClickTarget
 		&:has(.topic__6ec1a) {
 			margin-right: calc(var(--icon-button-size) + var(--spacing));
@@ -43,12 +43,12 @@
 				}
 
 				&:hover {
-					/* *exact* #404040 for dark theme */
+					// *exact* #404040 for dark theme
 					--percentage: 12.75% !important;
 				}
 
 				&:active {
-					/* *exact* #616161 for dark theme */
+					// *exact* #616161 for dark theme
 					--percentage: 27.75% !important;
 				}
 			}
@@ -87,7 +87,7 @@
 			display: none;
 		}
 
-		/* Group chat */
+		// Group chat
 		& > .container__754bd {
 			flex-grow: 0;
 			flex-shrink: 0;
@@ -116,7 +116,7 @@
 		margin: 0;
 	}
 
-	/* wtf ? */
+	// wtf ?
 	.topic__6ec1a {
 		text-align: center;
 
@@ -180,7 +180,7 @@
 	}
 }
 
-/* position: fixed & top: 0 doesn't actually bring it to the top, wtf ??? */
+// position: fixed & top: 0 doesn't actually bring it to the top, wtf ???
 .peopleColumn__133bf > .searchBar__5ec2f {
 	border-radius: var(--button_radius);
 

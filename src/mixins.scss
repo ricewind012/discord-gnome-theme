@@ -116,12 +116,12 @@
 	transition: var(--backdrop_transition) !important;
 
 	&:hover {
-		/* *exact* #404040 for dark theme */
+		// *exact* #404040 for dark theme
 		--percentage: 12.75% !important;
 	}
 
 	&:active {
-		/* *exact* #616161 for dark theme */
+		// *exact* #616161 for dark theme
 		--percentage: 27.75% !important;
 	}
 
