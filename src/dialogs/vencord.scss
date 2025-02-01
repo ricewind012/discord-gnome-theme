@@ -6,7 +6,10 @@
 	& > .header__49fc1 {
 		box-shadow: var(--elevation-low);
 		padding: 0
-			calc(var(--spacing) + var(--close-button-pos) + var(--close-button-size));
+			calc(
+				var(--spacing) + var(--titlebar-button-spacing) +
+					var(--titlebar-button-size)
+			);
 
 		height: var(--headerbar-height);
 	}

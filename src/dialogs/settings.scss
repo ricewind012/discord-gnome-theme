@@ -40,7 +40,7 @@
 		left: calc(var(--p) + var(--sidebar-width) + var(--pad));
 		width: calc(
 			100% - var(--p) *
-				2 - var(--sidebar-width) - var(--close-button-size) - var(--pad) * 2
+				2 - var(--sidebar-width) - var(--titlebar-button-size) - var(--pad) * 2
 		);
 		z-index: 999;
 

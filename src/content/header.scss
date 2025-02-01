@@ -10,7 +10,7 @@
 		// Button that shows the channel description
 		// TODO: use topicClickTarget
 		&:has(.topic__6ec1a) {
-			margin-right: calc(var(--icon-button-size) + var(--spacing));
+			margin-right: var(--icon-button-size);
 
 			.topic__6ec1a {
 				&::before,
@@ -19,7 +19,7 @@
 
 					position: fixed;
 					top: calc(var(--spacing) + 1px);
-					right: calc(var(--close-button-pos) + var(--icon-button-size));
+					right: calc(var(--titlebar-right-spacing) + var(--spacing));
 					width: var(--icon-button-size);
 					height: var(--icon-button-size);
 				}
@@ -135,7 +135,7 @@
 }
 
 .upperContainer__9293f {
-	padding-right: calc(var(--icon-button-size) + var(--spacing));
+	padding-right: var(--titlebar-right-spacing);
 	align-items: center;
 }
 

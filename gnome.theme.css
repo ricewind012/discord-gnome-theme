@@ -3,3 +3,13 @@
  */
 
 @import "https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/dist/dist/index.css";
+
+:root {
+	/*
+	 * on - var(--titlebar-right-button-size)
+	 * off - 0px
+	 */
+	--titlebar-close-button: var(--titlebar-right-button-size);
+	--titlebar-maximize-button: 0px;
+	--titlebar-minimize-button: 0px;
+}

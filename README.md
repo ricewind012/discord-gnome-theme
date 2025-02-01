@@ -17,14 +17,19 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 - Rewrite
 - Scrollbars
-- SSD support
 - Fix message form
 - Old messages banner -> toast
 - Update dialogs to newer libadwaita
 
 ## Installation
 
-Copy `https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css` into the text box located in Settings > Themes > "Online Themes" tab.
+Copy the following into the text box located in Settings > Themes > "Online Themes" tab:
+
+```
+https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
+```
+
+or put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes for additional configuration.
 
 ## Preview
 

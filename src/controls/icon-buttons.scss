@@ -51,7 +51,7 @@
 	}
 }
 
-.winButtonClose__421ed,
+.winButton__421ed,
 [class*="close_"],
 [class*="closeIcon_"],
 [class*="closeButton_"] {
@@ -68,8 +68,8 @@
 	border-radius: 100% !important;
 	padding: 0 !important;
 
-	width: var(--close-button-size) !important;
-	height: var(--close-button-size) !important;
+	width: var(--titlebar-button-size) !important;
+	height: var(--titlebar-button-size) !important;
 
 	transform: none !important;
 }
@@ -79,21 +79,21 @@
 	opacity: 1;
 
 	position: absolute !important;
-	top: var(--close-button-pos);
-	right: var(--close-button-pos);
+	top: var(--titlebar-button-spacing);
+	right: var(--titlebar-button-spacing);
 }
 
 // settings
 .tools__23e6b {
 	position: fixed;
-	top: calc(var(--p) + var(--close-button-pos));
-	right: calc(var(--p) + var(--close-button-pos));
+	top: calc(var(--p) + var(--titlebar-button-spacing));
+	right: calc(var(--p) + var(--titlebar-button-spacing));
 }
 
 [class*="closeButton_"] {
 	opacity: 1;
 
-	flex: 0 0 var(--close-button-size);
+	flex: 0 0 var(--titlebar-button-size);
 
 	// align with the other child element
 	.privateChannels__35e86 & {

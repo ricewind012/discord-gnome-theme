@@ -1,21 +1,48 @@
 #app-mount {
 	color: var(--window_fg_color);
-	border: 1px solid var(--window_border_color);
+	border: var(--app-border-size) solid var(--window_border_color);
 	border-radius: var(--window_radius);
 
-	width: calc(100% - 2px) !important;
-	height: calc(100% - 2px) !important;
+	width: calc(100% - var(--app-border-size) * 2) !important;
+	height: calc(100% - var(--app-border-size) * 2) !important;
 }
 
 .titleBar__421ed {
 	background: none !important;
 
 	position: fixed;
-	top: 12px;
-	right: 12px;
+	top: var(--titlebar-button-spacing);
+	right: var(--titlebar-button-spacing);
 	height: unset;
+}
 
-	& > :not(.winButtonClose__421ed) {
-		display: none;
+// TODO: lmao
+.winButton__421ed {
+	margin-left: calc(
+		max(var(--titlebar-right-button-size), var(--titlebar-button-size)) - var(
+				--titlebar-button-size
+			)
+	) !important;
+
+	width: calc(
+		var(--titlebar-right-button-size) - var(--titlebar-button-spacing)
+	) !important;
+}
+
+.winButtonClose__421ed {
+	--titlebar-right-button-size: var(--titlebar-close-button);
+}
+
+.winButtonMinMax__421ed {
+	--icon: icon("window-maximize");
+	--titlebar-right-button-size: var(--titlebar-maximize-button);
+
+	&:last-child {
+		--icon: icon("window-minimize");
+		--titlebar-right-button-size: var(--titlebar-minimize-button);
 	}
+}
+
+.wordmark__421ed {
+	display: none !important;
 }

@@ -43,8 +43,6 @@
 
 	--headerbar-height: 46px;
 	--icon-button-size: 34px;
-	--close-button-size: 24px;
-	--close-button-pos: 12px;
 	--settings-dialog-size: 80%;
 	--sidebar-width: 263px;
 	--content-width: 575px;
@@ -56,6 +54,31 @@
 		--button_transition: none;
 		--focus_transition: none;
 		--switch-transition: none;
+	}
+}
+
+// CSD/SSD support
+:root {
+	--app-border-size: 0px;
+	--titlebar-button-size: 24px;
+	--titlebar-button-spacing: 12px;
+	--titlebar-right-button-size: calc(
+		var(--titlebar-button-size) + var(--titlebar-button-spacing)
+	);
+	--titlebar-right-spacing: 0px;
+
+	// Fallback for me because I'm not downloading this every single day
+	// multiple times LOOOL
+	--titlebar-minimize-button: 0px;
+	--titlebar-maximize-button: 0px;
+	--titlebar-close-button: var(--titlebar-right-button-size);
+
+	&.platform-win {
+		--app-border-size: 1px;
+		--titlebar-right-spacing: calc(
+			var(--titlebar-minimize-button) + var(--titlebar-maximize-button) +
+				var(--titlebar-close-button)
+		);
 	}
 }
 
