@@ -8,12 +8,12 @@
 }
 
 .toolbar__9293f {
-	[class*="liveQualityIndicator_"],
+	.liveQualityIndicator__30845,
 	[class*="live_"] {
 		margin-bottom: 0 !important;
 	}
 
-	[class*="qualityIndicator_"] {
+	.qualityIndicator__30845 {
 		width: unset !important;
 		height: unset !important;
 
@@ -52,9 +52,8 @@
 }
 
 .winButton__421ed,
-[class*="close_"],
-[class*="closeIcon_"],
-[class*="closeButton_"] {
+.close__49fc1,
+.closeButton_c2b141 {
 	--percentage: 7.5%;
 
 	@extend %icon-button;
@@ -75,7 +74,7 @@
 }
 
 // dialog
-[class*="close_"] {
+.close__49fc1 {
 	opacity: 1;
 
 	position: absolute !important;
@@ -90,7 +89,7 @@
 	right: calc(var(--p) + var(--titlebar-button-spacing));
 }
 
-[class*="closeButton_"] {
+.closeButton_c2b141 {
 	opacity: 1;
 
 	flex: 0 0 var(--titlebar-button-size);

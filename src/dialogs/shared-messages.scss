@@ -2,12 +2,12 @@
 
 .recentMentionsPopout__95796 {
 	.expandedInboxHeader_f0cd33,
-	[class*="channelHeader_"] {
+	.channelHeader__35a7e {
 		display: none;
 	}
 }
 
-[class*="messagesPopout_"] {
+.messagesPopout__45690 {
 	padding: 0 !important;
 
 	[role="list"] {
@@ -29,13 +29,13 @@
 		}
 	}
 
-	[class*="messageContainer_"] {
+	.messageContainer__95796 {
 		background-color: transparent;
 		padding: 8px 0;
 		margin: 0;
 	}
 
-	[class*="jumpButton_"] {
+	.jumpButton_ed0c8c {
 		top: 8px;
 		right: 8px;
 

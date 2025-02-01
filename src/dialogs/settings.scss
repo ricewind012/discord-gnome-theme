@@ -6,6 +6,10 @@
 
 .contentRegion__23e6b {
 	margin-top: 46px;
+
+	.divider__46c3b {
+		display: none;
+	}
 }
 
 .contentColumn__23e6b {
@@ -29,8 +33,8 @@
    */
 	& > h2:first-child,
 	& > :first-child > h2:first-child,
-	& > div > :first-child [class*="h1_"],
-	& > div > :first-child [class*="sectionTitle_"] > * {
+	& > div > :first-child .h1_b717a1,
+	& > div > :first-child .sectionTitle__7bffb > * {
 		--pad: 11px;
 		text-align: center;
 		padding: var(--pad);
@@ -51,10 +55,6 @@
 		border: none !important;
 		padding: 0;
 	}
-}
-
-[class*="contentPanel_"] {
-	position: initial;
 }
 
 .toolsContainer__23e6b {
@@ -111,36 +111,6 @@
 	}
 }
 
-.contentRegion__23e6b .divider__46c3b {
-	display: none;
-}
-
-// bruh
-.contentRegion__23e6b [class*="children_"] > div:not([class], [style]),
-[class^="marginTop_"] {
-	margin-top: 28px;
-}
-
-[class^="marginBottom_"] {
-	margin-bottom: 28px;
-}
-
-.vc-addon-card,
-:is(
-  .contentRegion__23e6b [class*="children_"],
-  [class*="children_"] > div:not([class]),
-  // bruh
-  [class^="margin"]
-) > :is(
-  [class^="flex_"],
-  // Switch container
-  .container__0d850,
-  // ^
-  .settingsBackgroundFlashElement_fd41ea
-) {
-	@extend %card;
-}
-
 // 1. Connections tab
 // 2. Voice tab
 .connectContainer_c7f964,
@@ -151,12 +121,14 @@
 	border: none !important;
 }
 
-[class^="margin"] > [class*="children_"] > [class*="container_"] {
+.container__0d850 {
 	@extend %card-with-actual-border-radiuses;
+
+	margin: 0 !important;
 }
 
 // Nitro themes
-[class*="presets_"] {
+.presets__67a11 {
 	gap: var(--spacing-2x);
 
 	[role="radiogroup"]:has(> &) {

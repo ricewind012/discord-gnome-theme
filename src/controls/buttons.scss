@@ -1,6 +1,6 @@
 @use "../mixins";
 
-[class*="button_"][class*="size" i]:not([class*="size32_"]) {
+[class*="button_"][class*="size" i]:not(.size32__06eda) {
 	@extend %button;
 
 	&[class*="disabled_"] {

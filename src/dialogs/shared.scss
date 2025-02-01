@@ -5,6 +5,7 @@
 }
 
 .root__49fc1 {
+	background-color: var(--background-primary);
 	border-radius: var(--window_radius);
 	gap: 12px;
 
@@ -88,10 +89,7 @@
 }
 
 [role="dialog"] > div {
-	background-color: var(--background-primary);
-	border-radius: var(--window_radius);
-
-	&:not([class*="root_"]) > [class*="header_"] {
+	&:not(.root__49fc1) > .header__49fc1 {
 		background-color: var(--background-primary);
 		box-shadow: var(--elevation-low);
 		gap: var(--spacing);
@@ -100,10 +98,5 @@
 		height: unset;
 		min-height: unset;
 		z-index: 1;
-	}
-
-	// Image carousel arrows
-	[class*="arrowContainer_"] {
-		color: var(--window_fg_color);
 	}
 }
