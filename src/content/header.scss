@@ -10,7 +10,7 @@
 		// Button that shows the channel description
 		// TODO: use topicClickTarget
 		&:has(.topic__6ec1a) {
-			margin-right: var(--icon-button-size);
+			margin-right: calc(var(--icon-button-size) + var(--spacing));
 
 			.topic__6ec1a {
 				&::before,
