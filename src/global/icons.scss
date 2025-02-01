@@ -109,42 +109,6 @@
 	order: 1;
 }
 
-[role="tablist"][aria-label="Friends"] {
-	/* Hide *icons* on lower window sizes */
-	@media (min-width: 1050px) {
-		& > div::before {
-			content: "";
-
-			width: var(--icon-size);
-			height: var(--icon-size);
-
-			background-color: currentColor;
-			mask: var(--icon);
-			margin-right: 7px;
-		}
-	}
-
-	& > [data-tab-id="ONLINE"] {
-		--icon: icon("stop-sign-outline");
-	}
-
-	& > [data-tab-id="ALL"] {
-		--icon: icon("people");
-	}
-
-	& > [data-tab-id="PENDING"] {
-		--icon: icon("spinner");
-	}
-
-	& > [data-tab-id="BLOCKED"] {
-		--icon: icon("action-unavailable");
-	}
-
-	& > [data-tab-id="ADD_FRIEND"] {
-		--icon: icon("plus-circle-outline");
-	}
-}
-
 [aria-label="Upload a file or send invites"] {
 	--icon: icon("mail-attachment");
 }
