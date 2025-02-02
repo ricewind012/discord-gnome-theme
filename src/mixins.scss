@@ -178,7 +178,7 @@
 	padding: 8px 9px;
 	margin: 0 !important;
 
-	height: unset;
+	height: unset !important;
 
 	&:disabled {
 		opacity: var(--dim-level-opacity);

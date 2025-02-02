@@ -1,11 +1,11 @@
-[data-list-item-id$="forum-channel-header"] {
+div[data-list-item-id$="forum-channel-header"] {
 	background-color: transparent !important;
 	box-shadow: none !important;
 	padding: 0 !important;
-	margin-bottom: 16px;
+	margin-bottom: 16px !important;
 
-	& > div {
-		border: none !important;
+	&:hover {
+		background-color: transparent !important;
 	}
 }
 
@@ -44,21 +44,24 @@
 		}
 	}
 
-	.tagsContainer_f369db {
-		padding: 0;
-	}
-
-	.prefixElement_d9be46 {
-		display: none;
-	}
-
 	[data-item-role="item"] {
 		& > div {
-			transform: unset;
 			background-color: transparent;
 			border: none;
-			box-shadow: none;
 			padding: 0;
 		}
 	}
+}
+
+.header_f369db {
+	background: none !important;
+	border: none !important;
+}
+
+.tagsContainer_f369db {
+	padding: 0;
+}
+
+.prefixElement_d9be46 {
+	display: none;
 }
