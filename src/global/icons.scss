@@ -223,17 +223,3 @@
 		display: none;
 	}
 }
-
-// bro who the hell uses that ?
-[data-tab-id="Discord Nitro"],
-[data-tab-id="Nitro Server Boost"],
-[data-tab-id="Subscriptions"],
-[data-tab-id="Library Inventory"],
-[data-tab-id="Billing"],
-[data-tab-id="Billing"] + div,
-[data-tab-id="changelog"],
-[data-tab-id="merchandise"],
-[data-tab-id="Hypesquad Online"],
-[data-tab-id="Hypesquad Online"] + div {
-	display: none;
-}

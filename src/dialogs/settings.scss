@@ -149,6 +149,7 @@
 .themeSelection__36dee {
 	// radios.scss override
 	&:first-of-type {
+		// TODO: last one also has it
 		border-bottom: 1px solid var(--card_shade_color);
 		border-radius: 0;
 
