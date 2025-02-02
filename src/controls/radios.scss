@@ -3,14 +3,14 @@
 [role="radio"] {
 	@extend %card-with-actual-border-radiuses;
 
-	box-shadow: none !important;
-	padding: 16px !important;
-	margin: 0 !important;
+	box-shadow: none;
+	padding: 16px;
+	margin: 0;
 
 	& > div {
-		border: none !important;
-		gap: 16px !important;
-		padding: 0 !important;
+		border: none;
+		gap: 16px;
+		padding: 0;
 
 		& > :first-child {
 			border-radius: 50%;

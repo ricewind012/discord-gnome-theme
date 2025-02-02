@@ -1,11 +1,11 @@
 div[data-list-item-id$="forum-channel-header"] {
-	background-color: transparent !important;
-	box-shadow: none !important;
-	padding: 0 !important;
-	margin-bottom: 16px !important;
+	background-color: transparent;
+	box-shadow: none;
+	padding: 0;
+	margin-bottom: 16px;
 
 	&:hover {
-		background-color: transparent !important;
+		background-color: transparent;
 	}
 }
 
@@ -21,25 +21,25 @@ div[data-list-item-id$="forum-channel-header"] {
 				in srgb,
 				currentColor var(--percentage),
 				transparent
-			) !important;
-			border-radius: 50% !important;
+			);
+			border-radius: 50%;
 			margin: 0;
 
-			position: relative !important;
-			width: var(--icon-button-size) !important;
-			height: var(--icon-button-size) !important;
+			position: relative;
+			width: var(--icon-button-size);
+			height: var(--icon-button-size);
 
-			transition: var(--backdrop_transition) !important;
+			transition: var(--backdrop_transition);
 			order: 1;
 
 			&:hover {
 				// *exact* #404040 for dark theme
-				--percentage: 12.75% !important;
+				--percentage: 12.75%;
 			}
 
 			&:active {
 				// *exact* #616161 for dark theme
-				--percentage: 27.75% !important;
+				--percentage: 27.75%;
 			}
 		}
 	}
@@ -54,8 +54,8 @@ div[data-list-item-id$="forum-channel-header"] {
 }
 
 .header_f369db {
-	background: none !important;
-	border: none !important;
+	background: none;
+	border: none;
 }
 
 .tagsContainer_f369db {

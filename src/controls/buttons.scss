@@ -8,18 +8,18 @@
 	}
 
 	&.colorPrimary__201d5 {
-		--banner-bg: var(--accent_color) !important;
-		color: var(--accent_fg_color) !important;
+		--banner-bg: var(--accent_color);
+		color: var(--accent_fg_color);
 	}
 
 	&.colorRed__201d5 {
-		--banner-bg: var(--destructive_bg_color) !important;
-		color: var(--destructive_fg_color) !important;
+		--banner-bg: var(--destructive_bg_color);
+		color: var(--destructive_fg_color);
 	}
 
 	&.colorGreen__201d5 {
-		--banner-bg: var(--success_bg_color) !important;
-		color: var(--success_fg_color) !important;
+		--banner-bg: var(--success_bg_color);
+		color: var(--success_fg_color);
 	}
 }
 
@@ -31,7 +31,7 @@
 [role="button"][aria-haspopup] {
 	@extend %button;
 
-	min-height: 34px !important;
+	min-height: 34px;
 
 	.videoControls_cf09d8 & {
 		--banner-bg: transparent;
@@ -41,24 +41,24 @@
 .jumpButton_ed0c8c {
 	@extend %button;
 
-	height: unset !important;
+	height: unset;
 }
 
 .searchResultsWrap_a9e706 .button__02a39 {
 	@extend %button;
 
 	font-size: 15px;
-	font-weight: bold !important;
+	font-weight: bold;
 
-	height: unset !important;
+	height: unset;
 }
 
 [aria-roledescription="Open Thread Button"] {
 	@extend %button;
 
-	height: unset !important;
+	height: unset;
 
 	.cta__9271d {
-		text-decoration: none !important;
+		text-decoration: none;
 	}
 }

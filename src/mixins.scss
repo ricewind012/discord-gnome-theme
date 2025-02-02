@@ -1,14 +1,14 @@
 %banner {
 	background-color: var(--banner-bg);
-	padding: var(--spacing) !important;
+	padding: var(--spacing);
 
 	* {
-		font-size: 15px !important;
-		font-weight: bold !important;
+		font-size: 15px;
+		font-weight: bold;
 	}
 
 	& > button {
-		--banner-bg: inherit !important;
+		--banner-bg: inherit;
 	}
 
 	svg {
@@ -24,14 +24,14 @@
 		in srgb,
 		currentColor var(--percentage),
 		var(--banner-bg)
-	) !important;
-	color: var(--window_fg_color) !important;
+	);
+	color: var(--window_fg_color);
 	padding: 5px 10px;
-	border: none !important;
+	border: none;
 	border-radius: var(--button_radius);
 
-	min-width: 16px !important;
-	min-height: 24px !important;
+	min-width: 16px;
+	min-height: 24px;
 	height: 34px;
 
 	transition: var(--backdrop_transition);
@@ -45,7 +45,7 @@
 	}
 
 	* {
-		font-weight: bold !important;
+		font-weight: bold;
 	}
 
 	svg {
@@ -54,50 +54,50 @@
 }
 
 %cards-container {
-	background-color: var(--card_bg_color) !important;
-	border-radius: var(--card_radius) !important;
-	box-shadow: var(--elevation-medium) !important;
+	background-color: var(--card_bg_color);
+	border-radius: var(--card_radius);
+	box-shadow: var(--elevation-medium);
 
-	transition: var(--backdrop_transition) !important;
+	transition: var(--backdrop_transition);
 }
 
 %card {
-	background-color: var(--card_bg_color) !important;
-	border-radius: var(--card_radius) !important;
-	box-shadow: var(--elevation-medium) !important;
-	padding: 10px 16px !important;
-	margin: 16px 0 !important;
+	background-color: var(--card_bg_color);
+	border-radius: var(--card_radius);
+	box-shadow: var(--elevation-medium);
+	padding: 10px 16px;
+	margin: 16px 0;
 
-	transition: var(--backdrop_transition) !important;
+	transition: var(--backdrop_transition);
 
 	&:hover {
-		background-color: var(--card_bg_hover_color) !important;
+		background-color: var(--card_bg_hover_color);
 	}
 
 	&:active {
-		background-color: var(--card_bg_active_color) !important;
+		background-color: var(--card_bg_active_color);
 	}
 }
 
 %card-with-actual-border-radiuses {
 	@extend %card;
 
-	border-bottom: 1px solid var(--card_shade_color) !important;
-	border-radius: 0 !important;
+	border-bottom: 1px solid var(--card_shade_color);
+	border-radius: 0;
 
 	&:first-child,
 	&:first-of-type {
-		border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+		border-radius: var(--card_radius) var(--card_radius) 0 0;
 	}
 
 	&:last-child,
 	&:last-of-type {
-		border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
-		border: none !important;
+		border-radius: 0 0 var(--card_radius) var(--card_radius);
+		border: none;
 	}
 
 	&:only-of-type {
-		border-radius: var(--card_radius) !important;
+		border-radius: var(--card_radius);
 	}
 }
 
@@ -106,29 +106,29 @@
 		in srgb,
 		currentColor var(--percentage),
 		transparent
-	) !important;
-	border-radius: var(--button_radius) !important;
-	padding: 0 !important;
+	);
+	border-radius: var(--button_radius);
+	padding: 0;
 
-	position: relative !important;
-	width: var(--icon-button-size) !important;
-	height: var(--icon-button-size) !important;
+	position: relative;
+	width: var(--icon-button-size);
+	height: var(--icon-button-size);
 
-	transition: var(--backdrop_transition) !important;
+	transition: var(--backdrop_transition);
 
 	&:hover {
 		// *exact* #404040 for dark theme
-		--percentage: 12.75% !important;
+		--percentage: 12.75%;
 	}
 
 	&:active {
 		// *exact* #616161 for dark theme
-		--percentage: 27.75% !important;
+		--percentage: 27.75%;
 	}
 
 	&:disabled {
-		--percentage: 0% !important;
-		opacity: var(--dim-level-opacity) !important;
+		--percentage: 0%;
+		opacity: var(--dim-level-opacity);
 	}
 
 	&::before {
@@ -149,15 +149,15 @@
 }
 
 %text-field-focus {
-	outline: 0 solid transparent !important;
-	outline-offset: 2px !important;
+	outline: 0 solid transparent;
+	outline-offset: 2px;
 
-	transition: var(--focus_transition) !important;
+	transition: var(--focus_transition);
 
 	&:is(:focus, :focus-within) {
 		outline: 2px solid
-			color-mix(in srgb, var(--accent_bg_color) 50%, transparent) !important;
-		outline-offset: -2px !important;
+			color-mix(in srgb, var(--accent_bg_color) 50%, transparent);
+		outline-offset: -2px;
 	}
 }
 
@@ -170,15 +170,15 @@
 		in srgb,
 		currentColor var(--percentage),
 		var(--window_bg_color)
-	) !important;
+	);
 	font-size: 15px;
 	line-height: 1.2;
 	border: none;
 	border-radius: var(--button_radius);
 	padding: 8px 9px;
-	margin: 0 !important;
+	margin: 0;
 
-	height: unset !important;
+	height: unset;
 
 	&:disabled {
 		opacity: var(--dim-level-opacity);
@@ -192,8 +192,8 @@
 }
 
 %title-3 {
-	font-weight: 700 !important;
-	font-size: 15px !important;
-	text-transform: none !important;
-	letter-spacing: 0 !important;
+	font-weight: 700;
+	font-size: 15px;
+	text-transform: none;
+	letter-spacing: 0;
 }

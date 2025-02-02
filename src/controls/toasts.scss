@@ -6,8 +6,8 @@
 	}
 
 	[data-text-variant] {
-		color: inherit !important;
-		font-weight: bold !important;
+		color: inherit;
+		font-weight: bold;
 	}
 
 	.replyLabel__841c8 {
@@ -19,11 +19,11 @@
 			in srgb,
 			var(--window_fg_color) var(--percentage),
 			transparent
-		) !important;
+		);
 		box-sizing: border-box;
 
 		svg {
-			display: initial !important;
+			display: initial;
 		}
 	}
 
@@ -43,9 +43,9 @@
 		var(--window_fg_color) 20%,
 		transparent
 	);
-	background-color: var(--background-floating) !important;
+	background-color: var(--background-floating);
 	border: 1px solid color-mix(in srgb, black 14%, transparent);
-	border-radius: var(--popover_radius) !important;
+	border-radius: var(--popover_radius);
 	box-shadow: var(--popover_shadow);
 
 	// [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using
@@ -61,7 +61,7 @@
 				in srgb,
 				var(--window_fg_color) var(--percentage),
 				transparent
-			) !important;
+			);
 			line-height: inherit;
 			padding: var(--spacing) var(--spacing-2x);
 

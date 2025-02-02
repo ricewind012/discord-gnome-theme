@@ -4,7 +4,7 @@
 		in srgb,
 		var(--window_fg_color) var(--percentage),
 		transparent
-	) !important;
+	);
 
 	&::before {
 		content: "";
@@ -30,7 +30,7 @@
 	}
 
 	&.checked__87bf1 {
-		background-color: var(--accent_bg_color) !important;
+		background-color: var(--accent_bg_color);
 
 		&::before {
 			margin-left: 18px;
@@ -38,11 +38,11 @@
 		}
 
 		&:hover {
-			background-color: #4990e7 !important;
+			background-color: #4990e7;
 		}
 
 		&:active {
-			background-color: #2a6ab6 !important;
+			background-color: #2a6ab6;
 		}
 	}
 

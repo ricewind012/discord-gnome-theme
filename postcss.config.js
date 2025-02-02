@@ -5,6 +5,16 @@ import postcssFunctions from "postcss-functions";
 import postcssSassParser from "postcss-scss";
 import postcssSassPlugin from "@csstools/postcss-sass";
 
+// Generate an index.css file that imports everything
+const { argv } = yargs(process.argv);
+const files = fs
+	.readdirSync(argv.base, { recursive: true })
+	.filter((e) => e.endsWith(".scss"));
+const content = files
+	.map((e) => `@import "${e.replace("scss", "css")}";`)
+	.join("\n");
+fs.writeFileSync(path.join(argv.dir, "index.css"), content);
+
 /**
  * `icon("name")` => `url("data:image/png;base64,${base64}")`
  *
@@ -18,15 +28,15 @@ function icon(name) {
 	return `url("data:image/svg+xml;base64,${base64}")`;
 }
 
-// Generate an index.css file that imports everything
-const { argv } = yargs(process.argv);
-const files = fs
-	.readdirSync(argv.base, { recursive: true })
-	.filter((e) => e.endsWith(".scss"));
-const content = files
-	.map((e) => `@import "${e.replace("scss", "css")}";`)
-	.join("\n");
-fs.writeFileSync(path.join(argv.dir, "index.css"), content);
+const appendImportantPlugin = () => (css) => {
+	css.walkRules((rule) => {
+		const nodes = rule.nodes.filter((e) => e.parent.selector !== ":root");
+		for (const node of nodes) {
+			node.important = true;
+		}
+	});
+};
+appendImportantPlugin.postcss = true;
 
 /** @type {import("postcss-load-config").Config} */
 export default {
@@ -41,5 +51,6 @@ export default {
 		postcssSassPlugin({
 			silenceDeprecations: ["legacy-js-api"],
 		}),
+		appendImportantPlugin(),
 	],
 };

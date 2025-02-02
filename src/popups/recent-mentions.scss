@@ -5,7 +5,7 @@
 }
 
 .controls_ab6641 {
-	gap: var(--spacing) !important;
+	gap: var(--spacing);
 
 	[role="button"] {
 		@extend %icon-button;
@@ -17,10 +17,10 @@
 }
 
 .headerTabs_ab6641 {
-	margin: 0 !important;
+	margin: 0;
 
 	[role="tablist"] {
-		margin: 0 !important;
+		margin: 0;
 	}
 }
 
@@ -28,5 +28,5 @@
 .inboxIcon_ab6641,
 .inboxTitle_ab6641,
 .recentMentionsPopout__95796 .titleContainer__45690 {
-	display: none !important;
+	display: none;
 }

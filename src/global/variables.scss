@@ -85,143 +85,141 @@
 // Discord
 .theme-light,
 .theme-dark {
-	--background-primary: var(--window_bg_color) !important;
-	--background-secondary: var(--secondary_sidebar_bg_color) !important;
-	--background-secondary-alt: var(--secondary_sidebar_bg_color) !important;
-	--background-tertiary: var(--sidebar_bg_color) !important;
-	--background-floating: var(--popover_bg_color) !important;
+	--background-primary: var(--window_bg_color);
+	--background-secondary: var(--secondary_sidebar_bg_color);
+	--background-secondary-alt: var(--secondary_sidebar_bg_color);
+	--background-tertiary: var(--sidebar_bg_color);
+	--background-floating: var(--popover_bg_color);
 
 	--background-modifier-hover: color-mix(
 		in srgb,
 		currentColor var(--bg-hover-percentage),
 		transparent
-	) !important;
+	);
 	--background-modifier-active: color-mix(
 		in srgb,
 		currentColor var(--bg-active-percentage),
 		transparent
-	) !important;
+	);
 	--background-modifier-selected: color-mix(
 		in srgb,
 		currentColor var(--bg-selected-percentage),
 		transparent
-	) !important;
+	);
 	--background-modifier-accent: color-mix(
 		in srgb,
 		var(--window_fg_color) var(--separator-percentage),
 		var(--window_bg_color)
-	) !important;
+	);
 
-	--background-message-hover: var(--sidebar_bg_color) !important;
+	--background-message-hover: var(--sidebar_bg_color);
 	--background-mentioned: color-mix(
 		in srgb,
 		var(--warning_bg_color) 10%,
 		transparent
-	) !important;
+	);
 	--background-mentioned-hover: color-mix(
 		in srgb,
 		var(--warning_bg_color) 20%,
 		transparent
-	) !important;
+	);
 	--background-message-highlight: color-mix(
 		in srgb,
 		var(--accent_bg_color) 10%,
 		transparent
-	) !important;
+	);
 	--background-message-highlight-hover: color-mix(
 		in srgb,
 		var(--accent_bg_color) 20%,
 		transparent
-	) !important;
+	);
 
-	--home-background: var(--window_bg_color) !important;
-	--modal-background: var(--background-primary) !important;
-	--modal-footer-background: transparent !important;
+	--home-background: var(--window_bg_color);
+	--modal-background: var(--background-primary);
+	--modal-footer-background: transparent;
 
-	--text-danger: var(--destructive_color) !important;
-	--text-link: var(--accent_color) !important;
-	--text-muted: var(--window_fg_muted) !important;
-	--text-normal: var(--window_fg_color) !important;
-	--text-positive: var(--success_color) !important;
-	--text-primary: var(--window_fg_color) !important;
-	--text-secondary: var(--window_fg_muted) !important;
-	--text-warning: var(--warning_color) !important;
+	--text-danger: var(--destructive_color);
+	--text-link: var(--accent_color);
+	--text-muted: var(--window_fg_muted);
+	--text-normal: var(--window_fg_color);
+	--text-positive: var(--success_color);
+	--text-primary: var(--window_fg_color);
+	--text-secondary: var(--window_fg_muted);
+	--text-warning: var(--warning_color);
 
-	--header-primary: var(--window_fg_color) !important;
-	--header-secondary: var(--window_fg_color) !important;
-	--header-muted: var(--window_fg_color) !important;
+	--header-primary: var(--window_fg_color);
+	--header-secondary: var(--window_fg_color);
+	--header-muted: var(--window_fg_color);
 
-	--interactive-normal: var(--window_fg_color) !important;
-	--interactive-active: var(--window_fg_color) !important;
-	--interactive-hover: var(--window_fg_color) !important;
-	--interactive-muted: var(--window_fg_muted) !important;
+	--interactive-normal: var(--window_fg_color);
+	--interactive-active: var(--window_fg_color);
+	--interactive-hover: var(--window_fg_color);
+	--interactive-muted: var(--window_fg_muted);
 
-	--channel-text-area-placeholder: var(--text-muted) !important;
-	--channel-icon: var(--text-muted) !important;
-	--channels-default: var(--window_fg_color) !important;
-	--embed-title: var(--window_fg_color) !important;
+	--channel-text-area-placeholder: var(--text-muted);
+	--channel-icon: var(--text-muted);
+	--channels-default: var(--window_fg_color);
+	--embed-title: var(--window_fg_color);
 
-	--status-danger: var(--destructive_color) !important;
-	--status-dnd: var(--destructive_color) !important;
-	--status-idle: var(--warning_color) !important;
-	--status-offline: var(--text-muted) !important;
-	--status-online: var(--success_color) !important;
-	--status-positive: var(--success_color) !important;
-	--status-positive-background: var(--success_color) !important;
-	--status-positive-text: var(--window_fg_color) !important;
-	--status-speaking: var(--success_color) !important;
-	--status-warning: var(--warning_color) !important;
-	--status-warning-background: var(--warning_bg_color) !important;
-	--status-warning-text: var(--warning_fg_color) !important;
+	--status-danger: var(--destructive_color);
+	--status-dnd: var(--destructive_color);
+	--status-idle: var(--warning_color);
+	--status-offline: var(--text-muted);
+	--status-online: var(--success_color);
+	--status-positive: var(--success_color);
+	--status-positive-background: var(--success_color);
+	--status-positive-text: var(--window_fg_color);
+	--status-speaking: var(--success_color);
+	--status-warning: var(--warning_color);
+	--status-warning-background: var(--warning_bg_color);
+	--status-warning-text: var(--warning_fg_color);
 
-	--search-popout-option-fade: none !important;
-	--search-popout-option-fade-hover: none !important;
+	--search-popout-option-fade: none;
+	--search-popout-option-fade-hover: none;
 
-	--brand-experiment: var(--accent_color) !important;
+	--brand-experiment: var(--accent_color);
 
-	--custom-standard-sidebar-view-sidebar-total-width: var(
-		--sidebar-width
-	) !important;
+	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
 
-	--custom-margin-margin-x-small: 16px !important;
-	--custom-margin-margin-small: 16px !important;
-	--custom-margin-margin-medium: 16px !important;
-	--custom-margin-margin-large: 16px !important;
-	--custom-margin-margin-x-large: 16px !important;
+	--custom-margin-margin-x-small: 16px;
+	--custom-margin-margin-small: 16px;
+	--custom-margin-margin-medium: 16px;
+	--custom-margin-margin-large: 16px;
+	--custom-margin-margin-x-large: 16px;
 
-	--elevation-stroke: 0 0 0 1px var(--window_border_color) !important;
+	--elevation-stroke: 0 0 0 1px var(--window_border_color);
 	--elevation-low: 0 1px
 			color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
-		0 2px 4px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent) !important;
+		0 2px 4px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent);
 	--elevation-medium: 0 0 0 1px color-mix(in srgb, black 3%, transparent),
 		0 1px 3px 1px color-mix(in srgb, black 7%, transparent),
-		0 2px 6px 2px color-mix(in srgb, black 3%, transparent) !important;
+		0 2px 6px 2px color-mix(in srgb, black 3%, transparent);
 	--elevation-high: 0 1px 3px 3px transparent,
 		0 2px 8px 2px color-mix(in srgb, black 13%, transparent),
 		0 3px 20px 10px color-mix(in srgb, black 9%, transparent),
 		0 6px 32px 16px color-mix(in srgb, black 4%, transparent),
-		0 0 0 1px color-mix(in srgb, black 5%, transparent) !important;
+		0 0 0 1px color-mix(in srgb, black 5%, transparent);
 
-	--legacy-elevation-low: var(--elevation-low) !important;
-	--legacy-elevation-high: var(--elevation-high) !important;
-	--legacy-elevation-border: var(--elevation-stroke) !important;
+	--legacy-elevation-low: var(--elevation-low);
+	--legacy-elevation-high: var(--elevation-high);
+	--legacy-elevation-border: var(--elevation-stroke);
 
-	--shadow-border: var(--elevation-stroke) !important;
-	--shadow-ledge: var(--elevation-low) !important;
-	--shadow-medium: var(--elevation-medium) !important;
-	--shadow-high: var(--elevation-high) !important;
+	--shadow-border: var(--elevation-stroke);
+	--shadow-ledge: var(--elevation-low);
+	--shadow-medium: var(--elevation-medium);
+	--shadow-high: var(--elevation-high);
 
-	--radius-xs: var(--base-unit) !important;
-	--radius-sm: var(--base-unit) !important;
-	--radius-md: calc(var(--base-unit) * 2) !important;
-	--radius-lg: calc(var(--base-unit) * 2) !important;
-	--radius-xl: calc(var(--base-unit) * 3) !important;
-	--radius-xxl: calc(var(--base-unit) * 3) !important;
+	--radius-xs: var(--base-unit);
+	--radius-sm: var(--base-unit);
+	--radius-md: calc(var(--base-unit) * 2);
+	--radius-lg: calc(var(--base-unit) * 2);
+	--radius-xl: calc(var(--base-unit) * 3);
+	--radius-xxl: calc(var(--base-unit) * 3);
 
-	--font-primary: "Cantarell", sans-serif !important;
-	--font-display: "Cantarell", sans-serif !important;
-	--font-headline: "Cantarell", sans-serif !important;
-	--font-code: "Source Code Pro", monospace !important;
+	--font-primary: "Cantarell", sans-serif;
+	--font-display: "Cantarell", sans-serif;
+	--font-headline: "Cantarell", sans-serif;
+	--font-code: "Source Code Pro", monospace;
 }
 
 // Nitro themes
@@ -230,9 +228,9 @@
 		var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)
 	);
 
-	--background-modifier-accent: var(--nitro-border) !important;
-	--secondary_sidebar_border_color: var(--nitro-border) !important;
-	--window_border_color: var(--nitro-border) !important;
+	--background-modifier-accent: var(--nitro-border);
+	--secondary_sidebar_border_color: var(--nitro-border);
+	--window_border_color: var(--nitro-border);
 }
 
 .theme-light {

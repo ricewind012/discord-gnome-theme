@@ -52,7 +52,7 @@
 			flex-shrink: 0;
 
 			div.input__4f074 {
-				display: none !important;
+				display: none;
 			}
 		}
 
@@ -61,11 +61,11 @@
 			margin: 0;
 
 			input {
-				opacity: 1 !important;
-				box-shadow: none !important;
-				padding-block: 7px !important;
+				opacity: 1;
+				box-shadow: none;
+				padding-block: 7px;
 
-				position: relative !important;
+				position: relative;
 			}
 		}
 	}
@@ -99,12 +99,12 @@
 
 	@extend %icon-button;
 
-	position: fixed !important;
+	position: fixed;
 	top: calc(var(--spacing) + var(--app-border-size));
 	right: calc(var(--titlebar-right-spacing) + var(--spacing));
-	left: unset !important;
+	left: unset;
 
-	pointer-events: all !important;
+	pointer-events: all;
 }
 
 .upperContainer__9293f {
@@ -125,17 +125,17 @@
 
 			&,
 			& > [role="button"] {
-				width: var(--icon-button-size) !important;
+				width: var(--icon-button-size);
 			}
 		}
 
 		[role="button"] {
-			border-radius: 0 !important;
+			border-radius: 0;
 		}
 
 		& > div {
 			padding: 0;
-			border-radius: var(--button_radius) !important;
+			border-radius: var(--button_radius);
 
 			height: var(--icon-button-size);
 			flex-direction: row-reverse;
@@ -167,15 +167,15 @@
 // TODO: move
 .nowPlayingColumn__133bf {
 	.container__7d20c {
-		background: var(--bg-overlay-2, var(--background-secondary)) !important;
+		background: var(--bg-overlay-2, var(--background-secondary));
 	}
 
 	[role="button"][aria-haspopup] {
-		height: unset !important;
-		min-height: unset !important;
+		height: unset;
+		min-height: unset;
 
 		svg {
-			display: block !important;
+			display: block;
 		}
 	}
 }

@@ -10,19 +10,19 @@
 .toolbar__9293f {
 	.liveQualityIndicator__30845,
 	[class*="live_"] {
-		margin-bottom: 0 !important;
+		margin-bottom: 0;
 	}
 
 	.qualityIndicator__30845 {
-		width: unset !important;
-		height: unset !important;
+		width: unset;
+		height: unset;
 
 		&::before {
 			display: none;
 		}
 
 		& > * {
-			display: initial !important;
+			display: initial;
 		}
 	}
 
@@ -36,7 +36,7 @@
 
 	@extend %icon-button;
 
-	background-color: transparent !important;
+	background-color: transparent;
 }
 
 [class*="searchBar_"],
@@ -46,7 +46,7 @@
 
 		@extend %icon-button;
 
-		background-color: transparent !important;
+		background-color: transparent;
 		margin-right: 9px;
 	}
 }
@@ -62,21 +62,21 @@
 		in srgb,
 		var(--window_fg_color) var(--percentage),
 		transparent
-	) !important;
-	border: none !important;
-	border-radius: 100% !important;
+	);
+	border: none;
+	border-radius: 100%;
 
-	width: var(--titlebar-button-size) !important;
-	height: var(--titlebar-button-size) !important;
+	width: var(--titlebar-button-size);
+	height: var(--titlebar-button-size);
 
-	transform: none !important;
+	transform: none;
 }
 
 // dialog
 .close__49fc1 {
 	opacity: 1;
 
-	position: absolute !important;
+	position: absolute;
 	top: var(--titlebar-button-spacing);
 	right: var(--titlebar-button-spacing);
 }
@@ -117,5 +117,5 @@
 .channelTextArea_f75fb0 button {
 	@extend %icon-button;
 
-	border-radius: 0 !important;
+	border-radius: 0;
 }

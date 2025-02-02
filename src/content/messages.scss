@@ -21,7 +21,7 @@
 			margin-left: 0;
 
 			& > span {
-				opacity: 1 !important;
+				opacity: 1;
 			}
 		}
 
@@ -59,8 +59,8 @@
 	}
 
 	[href] {
-		color: inherit !important;
-		text-decoration: none !important;
+		color: inherit;
+		text-decoration: none;
 	}
 }
 
@@ -74,7 +74,7 @@
 
 .embedMedia__623de,
 .embedVideo__623de {
-	margin-top: var(--spacing) !important;
+	margin-top: var(--spacing);
 }
 
 .embedMedia__623de {

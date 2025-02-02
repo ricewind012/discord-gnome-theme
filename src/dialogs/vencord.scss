@@ -16,24 +16,24 @@
 
 	& > .content__49fc1 {
 		text-align: start;
-		padding-top: 24px !important;
+		padding-top: 24px;
 
 		& > .vc-m-bottom-16 > div {
 			@extend %cards-container;
 
-			gap: 0 !important;
-			padding: 0 !important;
+			gap: 0;
+			padding: 0;
 
 			& > div {
 				@extend %card-with-actual-border-radiuses;
 
-				border: none !important;
-				box-shadow: none !important;
-				padding: 10px 16px !important;
-				margin: 0 !important;
+				border: none;
+				box-shadow: none;
+				padding: 10px 16px;
+				margin: 0;
 
 				& > div {
-					margin: 0 !important;
+					margin: 0;
 				}
 			}
 		}
@@ -43,13 +43,13 @@
 		&.horizontalReverse__7c0ba {
 			& > div > div > button:first-child,
 			& > button:last-child {
-				border-left: none !important;
+				border-left: none;
 			}
 		}
 
 		& > div > div {
-			gap: 0 !important;
-			margin: 0 !important;
+			gap: 0;
+			margin: 0;
 		}
 	}
 
@@ -63,25 +63,25 @@
 .vc-addon-card {
 	@extend %card;
 
-	border: none !important;
-	box-shadow: none !important;
-	padding: 10px 16px !important;
-	margin: 0 !important;
+	border: none;
+	box-shadow: none;
+	padding: 10px 16px;
+	margin: 0;
 
 	&:hover {
-		transform: unset !important;
+		transform: unset;
 	}
 }
 
 .vc-addon-note {
-	height: unset !important;
+	height: unset;
 }
 
 .vc-plugins-grid {
 	@extend %cards-container;
 
-	gap: 0 !important;
-	border: none !important;
+	gap: 0;
+	border: none;
 
-	grid-template-columns: 1fr !important;
+	grid-template-columns: 1fr;
 }

@@ -1,7 +1,7 @@
 @use "../mixins";
 
 .header__45690 {
-	border: none !important;
+	border: none;
 
 	display: flex;
 	flex-direction: row-reverse;
@@ -10,14 +10,14 @@
 }
 
 .messagesPopout__45690 {
-	padding: 0 !important;
+	padding: 0;
 
 	[role="list"] {
 		@extend %cards-container;
 
-		margin: 22px 28px !important;
+		margin: 22px 28px;
 
-		overflow: hidden !important;
+		overflow: hidden;
 
 		& > div {
 			border: none;
@@ -42,8 +42,8 @@
 		right: 8px;
 
 		& > div {
-			color: inherit !important;
-			font-size: inherit !important;
+			color: inherit;
+			font-size: inherit;
 		}
 	}
 }

@@ -3,7 +3,7 @@
 .peopleList__5ec2f {
 	@extend %cards-container;
 
-	overflow: auto !important;
+	overflow: auto;
 }
 
 // "list" role is used in many places, including ones I DO NOT FUCKING WANT
@@ -11,9 +11,9 @@
 .peopleListItem_cc6179 {
 	@extend %card-with-actual-border-radiuses;
 
-	box-shadow: none !important;
-	border-top: none !important;
-	margin: 0 !important;
+	box-shadow: none;
+	border-top: none;
+	margin: 0;
 
 	.userInfo__0a06e {
 		align-items: center;

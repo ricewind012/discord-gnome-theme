@@ -1,7 +1,7 @@
 @use "../mixins";
 
 .standardSidebarView__23e6b {
-	top: 0 !important;
+	top: 0;
 }
 
 .contentRegion__23e6b {
@@ -52,7 +52,7 @@
 	}
 
 	[role="tablist"][aria-orientation="horizontal"] {
-		border: none !important;
+		border: none;
 		padding: 0;
 	}
 }
@@ -88,9 +88,9 @@
 		background-color: var(--background-secondary);
 		color: var(--window_fg_color);
 		border-top-left-radius: var(--window_radius);
-		font-weight: 700 !important;
-		font-size: 15px !important;
-		text-transform: none !important;
+		font-weight: 700;
+		font-size: 15px;
+		text-transform: none;
 		text-align: center;
 		border-right: 1px solid var(--background-modifier-accent);
 
@@ -118,13 +118,13 @@
 [role="radiogroup"] {
 	@extend %cards-container;
 
-	border: none !important;
+	border: none;
 }
 
 .container__0d850 {
 	@extend %card-with-actual-border-radiuses;
 
-	margin: 0 !important;
+	margin: 0;
 }
 
 // Nitro themes
@@ -132,26 +132,26 @@
 	gap: var(--spacing-2x);
 
 	[role="radiogroup"]:has(> &) {
-		background-color: transparent !important;
-		box-shadow: none !important;
+		background-color: transparent;
+		box-shadow: none;
 	}
 
 	.themeSelection__36dee {
-		border-radius: 50% !important;
+		border-radius: 50%;
 
 		&.lightIcon__36dee {
-			background-color: #fafafa !important;
+			background-color: #fafafa;
 		}
 
 		&.darkIcon__36dee {
-			background-color: #242424 !important;
+			background-color: #242424;
 		}
 
 		& > div {
-			margin-top: 4px !important;
+			margin-top: 4px;
 
 			& > svg {
-				border: none !important;
+				border: none;
 			}
 		}
 
@@ -163,11 +163,11 @@
 
 .layers__960e4 {
 	& > .layer__960e4 {
-		opacity: 1 !important;
+		opacity: 1;
 
 		&[aria-hidden="true"] {
 			pointer-events: none;
-			transform: none !important;
+			transform: none;
 
 			&::before {
 				content: "";

@@ -3,7 +3,7 @@
 	border: 1px solid rgba(0, 0, 0, 0.14);
 	border-radius: var(--popover_radius);
 	box-shadow: var(--popover_shadow);
-	padding: var(--spacing) !important;
+	padding: var(--spacing);
 	margin-top: var(--spacing);
 
 	& > [role="option"] {

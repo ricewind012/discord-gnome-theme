@@ -1,16 +1,16 @@
 @use "../mixins";
 
 * {
-	font-weight: 500 !important;
-	scrollbar-width: none !important;
+	font-weight: 500;
+	scrollbar-width: none;
 }
 
 strong {
-	font-weight: 700 !important;
+	font-weight: 700;
 }
 
 ::selection {
-	background-color: var(--selection-bg) !important;
+	background-color: var(--selection-bg);
 }
 
 // 2. "Browser channels"
@@ -24,11 +24,11 @@ strong {
 [aria-label="Open sticker picker"],
 [href="https://support.discord.com"]
 {
-	display: none !important;
+	display: none;
 }
 
 [class*="card_"] {
 	@extend %card-with-actual-border-radiuses;
 
-	margin: 0 !important;
+	margin: 0;
 }

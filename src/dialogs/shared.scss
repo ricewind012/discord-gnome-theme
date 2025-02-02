@@ -1,7 +1,7 @@
 @use "../mixins";
 
 .backdrop__78332 {
-	background-color: var(--backdrop) !important;
+	background-color: var(--backdrop);
 }
 
 .root__49fc1 {
@@ -18,7 +18,7 @@
 
 	.content__49fc1 {
 		text-align: center;
-		padding: 0 24px !important;
+		padding: 0 24px;
 	}
 
 	.footer__49fc1 {
@@ -45,14 +45,14 @@
 				in srgb,
 				currentColor var(--bg-percentage),
 				transparent
-			) !important;
-			color: var(--window_fg_color) !important;
+			);
+			color: var(--window_fg_color);
 			border-left: 1px solid
-				color-mix(in srgb, currentColor var(--border-percentage), transparent) !important;
-			border-radius: 0 !important;
-			margin: 0 !important;
+				color-mix(in srgb, currentColor var(--border-percentage), transparent);
+			border-radius: 0;
+			margin: 0;
 
-			height: 44px !important;
+			height: 44px;
 
 			&:hover {
 				--bg-percentage: 10%;
@@ -64,19 +64,19 @@
 			}
 
 			&.colorBrand__201d5 {
-				color: var(--accent_color) !important;
+				color: var(--accent_color);
 			}
 
 			&.colorRed__201d5 {
-				color: var(--destructive_color) !important;
+				color: var(--destructive_color);
 			}
 
 			& > div {
-				background: none !important;
-				font-weight: 700 !important;
-				font-size: 15px !important;
-				text-transform: none !important;
-				letter-spacing: 0 !important;
+				background: none;
+				font-weight: 700;
+				font-size: 15px;
+				text-transform: none;
+				letter-spacing: 0;
 
 				justify-content: center;
 			}

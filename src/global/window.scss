@@ -3,12 +3,12 @@
 	border: var(--app-border-size) solid var(--window_border_color);
 	border-radius: var(--window_radius);
 
-	width: calc(100% - var(--app-border-size) * 2) !important;
-	height: calc(100% - var(--app-border-size) * 2) !important;
+	width: calc(100% - var(--app-border-size) * 2);
+	height: calc(100% - var(--app-border-size) * 2);
 }
 
 .titleBar__421ed {
-	background: none !important;
+	background: none;
 
 	position: fixed;
 	top: var(--titlebar-button-spacing);
@@ -22,11 +22,11 @@
 		max(var(--titlebar-right-button-size), var(--titlebar-button-size)) - var(
 				--titlebar-button-size
 			)
-	) !important;
+	);
 
 	width: calc(
 		var(--titlebar-right-button-size) - var(--titlebar-button-spacing)
-	) !important;
+	);
 }
 
 .winButtonClose__421ed {
@@ -44,5 +44,5 @@
 }
 
 .wordmark__421ed {
-	display: none !important;
+	display: none;
 }

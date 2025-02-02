@@ -34,10 +34,10 @@
 	.attachButton__0923f {
 		--icon: icon("plus-circle-outline");
 
-		margin: 0 !important;
+		margin: 0;
 
 		// align with cozy mode avatars, à la discord
-		width: calc(var(--icon-button-size) + 8px * 2) !important;
+		width: calc(var(--icon-button-size) + 8px * 2);
 	}
 
 	.clipContainer__841c8 {
@@ -46,7 +46,7 @@
 	}
 
 	.replyLabel__841c8 {
-		font-size: 15px !important;
+		font-size: 15px;
 	}
 
 	.textArea__74017,
@@ -61,7 +61,7 @@
 	}
 
 	.buttons__74017 {
-		margin: 0 !important;
+		margin: 0;
 
 		// align to start for longer text
 		& > div {
@@ -80,7 +80,7 @@
 }
 
 .channelTextAreaInner_fb64c9 > div > div {
-	min-height: unset !important;
+	min-height: unset;
 }
 
 .textAreaThreadCreation__74017 [role="textbox"] {

@@ -9,9 +9,9 @@
 	box-shadow: var(--popover_shadow);
 
 	& > div {
-		padding: 8px !important;
+		padding: 8px;
 
-		overflow: auto !important;
+		overflow: auto;
 	}
 
 	[role^="menuitem"] {
@@ -19,8 +19,8 @@
 			in srgb,
 			var(--window_fg_color) var(--percentage),
 			transparent
-		) !important;
-		color: var(--window_fg_color) !important;
+		);
+		color: var(--window_fg_color);
 		border-radius: var(--menu_radius);
 		padding: 4px 12px;
 		margin: 0;
@@ -42,5 +42,5 @@
 }
 
 .customItem_c1e9c4 {
-	padding: 0 !important;
+	padding: 0;
 }

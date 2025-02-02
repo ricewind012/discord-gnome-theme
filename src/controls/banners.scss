@@ -14,7 +14,7 @@
 	opacity: 1;
 	border-radius: 0;
 	box-shadow: none;
-	margin: 0 !important;
+	margin: 0;
 
 	left: 0;
 	right: 0;
@@ -26,7 +26,7 @@
 .chatHeaderBarText_dc83f5,
 .barButtonBase__0f481 {
 	text-align: center;
-	color: var(--window_fg_color) !important;
+	color: var(--window_fg_color);
 
 	height: unset;
 }
@@ -37,7 +37,7 @@
 	}
 
 	& > .jumpToPresentBar__0f481 {
-		top: 5000px !important;
+		top: 5000px;
 
 		& > .barButtonAlt__0f481 {
 			position: absolute;
