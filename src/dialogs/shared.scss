@@ -89,7 +89,7 @@
 }
 
 [role="dialog"] > div {
-	&:not(.root__49fc1) > .header__49fc1 {
+	&:not(.root__49fc1) > [class*="header_"] {
 		background-color: var(--background-primary);
 		box-shadow: var(--elevation-low);
 		gap: var(--spacing);

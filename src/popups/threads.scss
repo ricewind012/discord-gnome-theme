@@ -1,12 +1,13 @@
-.browser_d98031 > .header_d9c882 {
-	& > svg,
-	& > h1,
-	& > .divider_d9c882,
-	& > .spacer_d9c882 {
+.header_d9c882 {
+	svg,
+	h1,
+	.closeIcon_d9c882,
+	.divider_d9c882,
+	.spacer_d9c882 {
 		display: none;
 	}
 
-	& > button {
+	.createButton_d9c882 {
 		margin: 0;
 	}
 }

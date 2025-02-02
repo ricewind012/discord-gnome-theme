@@ -1,10 +1,12 @@
 @use "../mixins";
 
-.recentMentionsPopout__95796 {
-	.expandedInboxHeader_f0cd33,
-	.channelHeader__35a7e {
-		display: none;
-	}
+.header__45690 {
+	border: none !important;
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .messagesPopout__45690 {

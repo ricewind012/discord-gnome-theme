@@ -1,0 +1,32 @@
+@use "../mixins";
+
+.controlButton_ab6641 {
+	--icon: icon("funnel");
+}
+
+.controls_ab6641 {
+	gap: var(--spacing) !important;
+
+	[role="button"] {
+		@extend %icon-button;
+	}
+}
+
+.friendRequestsButton__523aa {
+	--icon: icon("person");
+}
+
+.headerTabs_ab6641 {
+	margin: 0 !important;
+
+	[role="tablist"] {
+		margin: 0 !important;
+	}
+}
+
+.channelHeader__35a7e,
+.inboxIcon_ab6641,
+.inboxTitle_ab6641,
+.recentMentionsPopout__95796 .titleContainer__45690 {
+	display: none !important;
+}
