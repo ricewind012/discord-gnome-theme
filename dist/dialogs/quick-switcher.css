@@ -1,0 +1,5 @@
+.quickswitcher_ac6cb0 {
+  background-color: var(--background-primary) !important;
+  border-radius: var(--window_radius) !important;
+  box-shadow: var(--elevation-stroke), var(--elevation-high) !important;
+}

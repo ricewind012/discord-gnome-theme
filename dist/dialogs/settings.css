@@ -1,0 +1,219 @@
+.connectContainer_c7f964,
+.cameraWrapper_d41d5f,
+[role=radiogroup], .presets__67a11 {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  transition: var(--backdrop_transition) !important;
+}
+
+.container__0d850 {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  margin: 16px 0 !important;
+  transition: var(--backdrop_transition) !important;
+}
+.container__0d850:hover {
+  background-color: var(--card_bg_hover_color) !important;
+}
+.container__0d850:active {
+  background-color: var(--card_bg_active_color) !important;
+}
+
+.container__0d850 {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+}
+.container__0d850:first-child, .container__0d850:first-of-type {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.container__0d850:last-child, .container__0d850:last-of-type {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.container__0d850:only-of-type {
+  border-radius: var(--card_radius) !important;
+}
+
+.standardSidebarView__23e6b {
+  top: 0 !important;
+}
+
+.contentRegion__23e6b {
+  margin-top: 46px !important;
+}
+.contentRegion__23e6b .divider__46c3b {
+  display: none !important;
+}
+
+.contentColumn__23e6b {
+  padding: 22px 28px !important;
+  margin: auto !important;
+  max-width: var(--content-width) !important;
+  /*
+      https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
+      L70
+    */
+}
+.contentColumn__23e6b::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: var(--p) !important;
+  height: var(--headerbar-height) !important;
+  box-shadow: var(--elevation-low) !important;
+  z-index: 1 !important;
+}
+.contentColumn__23e6b > h2:first-child, .contentColumn__23e6b > :first-child > h2:first-child, .contentColumn__23e6b > div > :first-child .h1_b717a1, .contentColumn__23e6b > div > :first-child .sectionTitle__7bffb > * {
+  --pad: 11px !important;
+  text-align: center !important;
+  padding: var(--pad) !important;
+  position: fixed !important;
+  top: var(--p) !important;
+  left: calc(var(--p) + var(--sidebar-width) + var(--pad)) !important;
+  width: calc(100% - var(--p) * 2 - var(--sidebar-width) - var(--titlebar-button-size) - var(--pad) * 2) !important;
+  z-index: 999 !important;
+  app-region: drag !important;
+}
+.contentColumn__23e6b [role=tablist][aria-orientation=horizontal] {
+  border: none !important;
+  padding: 0 !important;
+}
+
+.toolsContainer__23e6b {
+  position: absolute !important;
+  z-index: 999 !important;
+}
+
+.keybind_c2b141 {
+  display: none !important;
+}
+
+.sidebarRegion__23e6b {
+  border-right: 1px solid var(--background-modifier-accent) !important;
+  margin-top: var(--headerbar-height) !important;
+  flex: unset !important;
+}
+.sidebarRegion__23e6b::before {
+  content: "Settings" !important;
+  position: fixed !important;
+  top: calc(var(--p) + 1px) !important;
+  left: calc(var(--p) + 1px) !important;
+  width: var(--sidebar-width) !important;
+  height: var(--headerbar-height) !important;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: var(--background-secondary) !important;
+  color: var(--window_fg_color) !important;
+  border-top-left-radius: var(--window_radius) !important;
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  text-transform: none !important;
+  text-align: center !important;
+  border-right: 1px solid var(--background-modifier-accent) !important;
+  app-region: drag !important;
+}
+
+/* .navigation-sidebar*/
+.sidebar__23e6b {
+  padding: 0 !important;
+}
+.sidebar__23e6b .header_b3f026 {
+  display: none !important;
+}
+.sidebar__23e6b .separator_b3f026 {
+  margin: var(--menu_margin) !important;
+}
+
+/* 1. Connections tab*/
+/* 2. Voice tab*/
+.connectContainer_c7f964,
+.cameraWrapper_d41d5f,
+[role=radiogroup] {
+  border: none !important;
+}
+
+.container__0d850 {
+  margin: 0 !important;
+}
+
+/* Nitro themes*/
+.presets__67a11 {
+  gap: 0 !important;
+  overflow: hidden !important;
+  flex-direction: column !important;
+}
+[role=radiogroup]:has(> .presets__67a11) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.selectionCircle__36dee {
+  display: none !important;
+}
+
+.themeSelection__36dee {
+  /* radios.scss override*/
+}
+.themeSelection__36dee:first-of-type {
+  /* TODO: last one also has it*/
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.themeSelection__36dee::before {
+  content: "" !important;
+  border: none !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  margin-inline-end: 16px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+.themeSelection__36dee[aria-checked=true]::before {
+  background-color: #fff !important;
+  border: 7px solid var(--accent_bg_color) !important;
+}
+.themeSelection__36dee[aria-checked=false]::before {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+.themeSelection__36dee::after {
+  content: attr(aria-label) !important;
+}
+.themeSelection__36dee svg {
+  display: none !important;
+}
+
+.themeSelectionContainer__36dee {
+  width: unset !important;
+  height: unset !important;
+}
+
+.layers__960e4 > .layer__960e4 {
+  opacity: 1 !important;
+}
+.layers__960e4 > .layer__960e4[aria-hidden=true] {
+  pointer-events: none !important;
+  transform: none !important;
+}
+.layers__960e4 > .layer__960e4[aria-hidden=true]::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background-color: var(--backdrop) !important;
+  z-index: 101 !important;
+}
+.layers__960e4 > :not(:only-child):last-child {
+  box-shadow: var(--elevation-high) !important;
+  border-radius: var(--window_radius) !important;
+  inset: var(--p) !important;
+}
+.layers__960e4 > :not(:only-child):last-child > div {
+  top: 0 !important;
+}

@@ -1,0 +1,31 @@
+/* TODO: mixin*/
+button[aria-expanded],
+[role=button][aria-haspopup] {
+  /* vc*/
+}
+button[aria-expanded] svg,
+[role=button][aria-haspopup] svg {
+  display: none !important;
+}
+button[aria-expanded] > [class*=flex_],
+[role=button][aria-haspopup] > [class*=flex_] {
+  height: inherit !important;
+}
+
+button[aria-expanded] > div::after,
+[role=button][aria-haspopup] .icons__3f413 {
+  background-color: currentColor !important;
+  mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDEzLjk5NjA5NCA1IGwgLTUuOTk2MDk0IDYgbCAtNi4wMDM5MDYgLTYgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+
+button[aria-expanded] > div::after {
+  content: "" !important;
+}
+button[aria-expanded] [data-text-variant] {
+  color: inherit !important;
+  font-size: inherit !important;
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+}

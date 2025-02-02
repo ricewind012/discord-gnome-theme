@@ -1,0 +1,68 @@
+.searchResultsWrap_a9e706 [role=listitem] {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  margin: 16px 0 !important;
+  transition: var(--backdrop_transition) !important;
+}
+.searchResultsWrap_a9e706 [role=listitem]:hover {
+  background-color: var(--card_bg_hover_color) !important;
+}
+.searchResultsWrap_a9e706 [role=listitem]:active {
+  background-color: var(--card_bg_active_color) !important;
+}
+
+.searchResultsWrap_a9e706 [role=listitem] {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+}
+.searchResultsWrap_a9e706 [role=listitem]:first-child, .searchResultsWrap_a9e706 [role=listitem]:first-of-type {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.searchResultsWrap_a9e706 [role=listitem]:last-child, .searchResultsWrap_a9e706 [role=listitem]:last-of-type {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.searchResultsWrap_a9e706 [role=listitem]:only-of-type {
+  border-radius: var(--card_radius) !important;
+}
+
+.searchHeader_f3b986 {
+  border-bottom: 1px solid var(--secondary_sidebar_border_color) !important;
+  padding: var(--spacing) !important;
+  height: unset !important;
+}
+
+.searchResult__02a39 {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+}
+
+.searchResultsWrap_a9e706 {
+  border-left: 1px solid var(--secondary_sidebar_border_color) !important;
+  z-index: 0 !important;
+}
+.searchResultsWrap_a9e706 .channelNameContainer_c68065 {
+  margin-bottom: 16px !important;
+}
+.searchResultsWrap_a9e706 .channelNameContainer_c68065 > svg {
+  display: none !important;
+}
+.searchResultsWrap_a9e706 [role=group] {
+  --offset: calc(15px * 1.25 + 4px) !important;
+  margin-bottom: calc(var(--offset) + 24px) !important;
+  position: relative !important;
+  top: var(--offset) !important;
+  /* header*/
+}
+.searchResultsWrap_a9e706 [role=group] > :first-child {
+  position: absolute !important;
+  top: calc(var(--offset) * -1) !important;
+}
+.searchResultsWrap_a9e706 [role=listitem] {
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}

@@ -1,0 +1,24 @@
+#add_friend-tab {
+  flex-direction: column-reverse !important;
+  justify-content: center !important;
+}
+#add_friend-tab > header {
+  border: none !important;
+}
+#add_friend-tab > header > h2,
+#add_friend-tab > header .description_ddd181 {
+  display: none !important;
+}
+#add_friend-tab > div {
+  flex-grow: 0 !important;
+}
+
+.addFriendInputWrapper__72ba7 {
+  background-color: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.addFriendInput__72ba7 > input {
+  letter-spacing: 0 !important;
+}

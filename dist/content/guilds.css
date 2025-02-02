@@ -1,0 +1,16 @@
+[data-list-id=guildsnav] {
+  background-color: var(--sidebar_bg_color) !important;
+  border-right: 1px solid var(--secondary_sidebar_border_color) !important;
+}
+[data-list-id=guildsnav] .scroller_ef3116 {
+  padding-top: 12px !important;
+}
+[data-list-id=guildsnav] .footer__214dc {
+  display: none !important;
+}
+
+.guildSeparator__252b6 {
+  background-color: var(--sidebar_border_color) !important;
+  width: calc(100% - var(--spacing) * 2) !important;
+  height: 1px !important;
+}

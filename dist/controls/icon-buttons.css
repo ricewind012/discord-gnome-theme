@@ -1,0 +1,144 @@
+.peopleListItem_cc6179 [role=button],
+.sidebar_c48ade .headerButton_f37cb1,
+.panels_c48ade :where([role=button], button),
+.privateChannels__35e86 .searchBarComponent__35e86, .toolbar__9293f [role=button], [href="/channels/@me"] .avatar__20a53, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]), .winButton__421ed,
+.close__49fc1,
+.closeButton_c2b141, .channelTextArea_f75fb0 button {
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+}
+.peopleListItem_cc6179 [role=button]:hover,
+.sidebar_c48ade .headerButton_f37cb1:hover,
+.panels_c48ade :hover:where([role=button], button),
+.privateChannels__35e86 .searchBarComponent__35e86:hover, .toolbar__9293f [role=button]:hover, [href="/channels/@me"] .avatar__20a53:hover, [class*=searchBar_] [role=button][aria-hidden=true]:hover:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:hover:not([class*=icon_]), .winButton__421ed:hover,
+.close__49fc1:hover,
+.closeButton_c2b141:hover, .channelTextArea_f75fb0 button:hover {
+  --percentage: 12.75% !important;
+}
+.peopleListItem_cc6179 [role=button]:active,
+.sidebar_c48ade .headerButton_f37cb1:active,
+.panels_c48ade :active:where([role=button], button),
+.privateChannels__35e86 .searchBarComponent__35e86:active, .toolbar__9293f [role=button]:active, [href="/channels/@me"] .avatar__20a53:active, [class*=searchBar_] [role=button][aria-hidden=true]:active:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:active:not([class*=icon_]), .winButton__421ed:active,
+.close__49fc1:active,
+.closeButton_c2b141:active, .channelTextArea_f75fb0 button:active {
+  --percentage: 27.75% !important;
+}
+.peopleListItem_cc6179 [role=button]:disabled,
+.sidebar_c48ade .headerButton_f37cb1:disabled,
+.panels_c48ade :disabled:where([role=button], button),
+.privateChannels__35e86 .searchBarComponent__35e86:disabled, .toolbar__9293f [role=button]:disabled, [href="/channels/@me"] .avatar__20a53:disabled, [class*=searchBar_] [role=button][aria-hidden=true]:disabled:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:disabled:not([class*=icon_]), .winButton__421ed:disabled,
+.close__49fc1:disabled,
+.closeButton_c2b141:disabled, .channelTextArea_f75fb0 button:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.peopleListItem_cc6179 [role=button]::before,
+.sidebar_c48ade .headerButton_f37cb1::before,
+.panels_c48ade :where([role=button], button)::before,
+.privateChannels__35e86 .searchBarComponent__35e86::before, .toolbar__9293f [role=button]::before, [href="/channels/@me"] .avatar__20a53::before, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_])::before,
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_])::before, .winButton__421ed::before,
+.close__49fc1::before,
+.closeButton_c2b141::before, .channelTextArea_f75fb0 button::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  mask: var(--icon) !important;
+  mask-repeat: no-repeat !important;
+  mask-position: center !important;
+  background-color: var(--window_fg_color) !important;
+}
+.peopleListItem_cc6179 [role=button] > *,
+.sidebar_c48ade .headerButton_f37cb1 > *,
+.panels_c48ade :where([role=button], button) > *,
+.privateChannels__35e86 .searchBarComponent__35e86 > *, .toolbar__9293f [role=button] > *, [href="/channels/@me"] .avatar__20a53 > *, [class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]) > *,
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) > *, .winButton__421ed > *,
+.close__49fc1 > *,
+.closeButton_c2b141 > *, .channelTextArea_f75fb0 button > * {
+  display: none !important;
+}
+
+.toolbar__9293f .liveQualityIndicator__30845,
+.toolbar__9293f [class*=live_] {
+  margin-bottom: 0 !important;
+}
+.toolbar__9293f .qualityIndicator__30845 {
+  width: unset !important;
+  height: unset !important;
+}
+.toolbar__9293f .qualityIndicator__30845::before {
+  display: none !important;
+}
+.toolbar__9293f .qualityIndicator__30845 > * {
+  display: initial !important;
+}
+[href="/channels/@me"] .avatar__20a53 {
+  --icon-button-size: 32px !important;
+  background-color: transparent !important;
+}
+
+[class*=searchBar_] [role=button][aria-hidden=true]:not([class*=icon_]),
+[class*=searchBox_] [role=button][aria-hidden=true]:not([class*=icon_]) {
+  --icon-button-size: var(--icon-size) !important;
+  background-color: transparent !important;
+  margin-right: 9px !important;
+}
+
+.winButton__421ed,
+.close__49fc1,
+.closeButton_c2b141 {
+  --percentage: 7.5% !important;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  border: none !important;
+  border-radius: 100% !important;
+  width: var(--titlebar-button-size) !important;
+  height: var(--titlebar-button-size) !important;
+  transform: none !important;
+}
+
+/* dialog*/
+.close__49fc1 {
+  opacity: 1 !important;
+  position: absolute !important;
+  top: var(--titlebar-button-spacing) !important;
+  right: var(--titlebar-button-spacing) !important;
+}
+
+/* settings*/
+.tools__23e6b {
+  position: fixed !important;
+  top: calc(var(--p) + var(--titlebar-button-spacing)) !important;
+  right: calc(var(--p) + var(--titlebar-button-spacing)) !important;
+}
+
+.closeButton_c2b141 {
+  opacity: 1 !important;
+  flex: 0 0 var(--titlebar-button-size) !important;
+  /* align with the other child element*/
+}
+.privateChannels__35e86 .closeButton_c2b141 {
+  margin-right: 8px !important;
+}
+
+.toolbar__9293f {
+  gap: var(--spacing) !important;
+  padding: var(--spacing) !important;
+}
+.toolbar__9293f > button {
+  margin: 0 !important;
+}
+.toolbar__9293f [role=button] {
+  margin: 0 !important;
+}
+
+.channelTextArea_f75fb0 button {
+  border-radius: 0 !important;
+}

@@ -1,0 +1,44 @@
+.messagesPopout__45690 [role=list] {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  transition: var(--backdrop_transition) !important;
+}
+
+.header__45690 {
+  border: none !important;
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.messagesPopout__45690 {
+  padding: 0 !important;
+}
+.messagesPopout__45690 [role=list] {
+  margin: 22px 28px !important;
+  overflow: hidden !important;
+}
+.messagesPopout__45690 [role=list] > div {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.messagesPopout__45690 [role=list] > div:not(:last-child) {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+}
+.messagesPopout__45690 .messageContainer__95796 {
+  background-color: transparent !important;
+  padding: 8px 0 !important;
+  margin: 0 !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c {
+  top: 8px !important;
+  right: 8px !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c > div {
+  color: inherit !important;
+  font-size: inherit !important;
+}

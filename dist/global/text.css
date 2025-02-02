@@ -1,0 +1,126 @@
+.username__0a06e,
+.username_c19a55,
+.username__07f91,
+.displayedNick__56fec,
+.privateChannels__35e86::before,
+.name__20a53,
+.peopleColumn__133bf h2,
+.themeTitle__3e443 > div,
+[data-text-variant^=text-md], .eyebrow__2b1f5:not(.numberBadge__2b1f5),
+.h1_b717a1,
+.h2_b717a1,
+.h3_b717a1,
+.h4_b717a1,
+.h5_b717a1,
+.h6_c46f6a, .panelTitleContainer__37e49 > div, .membersGroup_c8ffbb > span {
+  font-weight: 700 !important;
+  font-size: 15px !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+
+/** headers **/
+[data-text-variant] {
+  text-transform: none !important;
+}
+
+/* .title-3 in _labels*/
+.eyebrow__2b1f5:not(.numberBadge__2b1f5),
+.h1_b717a1,
+.h2_b717a1,
+.h3_b717a1,
+.h4_b717a1,
+.h5_b717a1,
+.h6_c46f6a {
+  margin-bottom: 16px !important;
+}
+
+.panelTitleContainer__37e49 > div {
+  color: var(--window_fg_color) !important;
+}
+
+.membersGroup_c8ffbb {
+  color: var(--window_fg_color) !important;
+}
+/* .title-1*/
+/* TODO: Placeholder header seems to be larger*/
+.flexChild__7c0ba[direction^=vertical_] > :first-child,
+.markup__75297 :is(h1, h2, h3) *,
+.embedProvider__623de > *,
+[data-text-variant^=heading-lg],
+[data-text-variant^=heading-x] {
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+/* .title-2*/
+/* 2. Special case for DMs (header)*/
+/* 4. Search results*/
+.sidebar_c48ade h2,
+.titleWrapper__9293f > h1 > div,
+.embedAuthor__623de *,
+.channelNameText_c68065 > span,
+[data-text-variant^=heading-md] {
+  font-weight: 800 !important;
+  font-size: 15px !important;
+}
+
+/* .title-4*/
+.embedTitle__623de > *,
+.header__56fec,
+.flexChild__7c0ba[direction^=vertical_] > :last-child:not(:only-child),
+[data-text-variant^=heading-deprecated-12],
+[data-text-variant^=heading-sm] {
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  letter-spacing: 0 !important;
+}
+
+.flexChild__7c0ba[direction^=vertical_] > * {
+  color: var(--window_fg_color) !important;
+  text-transform: unset !important;
+}
+.flexChild__7c0ba[direction^=vertical_] > :last-child:not(:only-child) {
+  font-size: 14px !important;
+}
+.flexChild__7c0ba[direction^=vertical_] .text__33d12 {
+  margin-top: 8px !important;
+}
+
+.labelRow__0d850 .title__0d850 {
+  font-size: 15px !important;
+  margin-right: 8px !important;
+}
+
+/* .caption*/
+.cozy_c19a55 .timestamp_c19a55,
+.subtext__0a06e,
+.text__19b6d,
+.topic__6ec1a,
+[data-list-id=chat-messages] [role=separator] > span,
+.searchResultChannelCategory__56fec,
+[data-text-variant^=text-sm],
+[data-text-variant^=text-xs],
+.description_ddd181 {
+  color: var(--window_fg_muted) !important;
+  font-weight: 400 !important;
+  font-size: 9pt !important;
+}
+
+/* settings field subtext*/
+.note__0d850 {
+  margin: 0 !important;
+  margin-right: 48px !important;
+}
+
+.sidebar_c48ade h2 {
+  margin: auto !important;
+}
+
+/* links*/
+.anchor_edefb8[href] {
+  opacity: 1 !important;
+  color: var(--accent_color) !important;
+  text-decoration: underline !important;
+  transition: var(--backdrop_transition) !important;
+}

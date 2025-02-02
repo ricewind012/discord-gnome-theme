@@ -1,0 +1,35 @@
+[role=menu] {
+  --background-modifier-accent: color-mix(
+  	in srgb,
+  	var(--window_fg_color) 20%,
+  	transparent
+  ) !important;
+  border: 1px solid color-mix(in srgb, black 14%, transparent) !important;
+  border-radius: var(--popover_radius) !important;
+  box-shadow: var(--popover_shadow) !important;
+}
+[role=menu] > div {
+  padding: 8px !important;
+  overflow: auto !important;
+}
+[role=menu] [role^=menuitem] {
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  color: var(--window_fg_color) !important;
+  border-radius: var(--menu_radius) !important;
+  padding: 4px 12px !important;
+  margin: 0 !important;
+  min-height: 32px !important;
+}
+[role=menu] [role^=menuitem].focused_c1e9c4 {
+  --percentage: 10% !important;
+}
+[role=menu] [role^=menuitem]:active {
+  --percentage: 18.5% !important;
+}
+[role=menu] [role=separator] {
+  margin: var(--menu_margin) 0 !important;
+}
+
+.customItem_c1e9c4 {
+  padding: 0 !important;
+}

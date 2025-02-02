@@ -1,0 +1,55 @@
+.chatHeaderBar_dc83f5, .barBase__0f481 {
+  background-color: var(--banner-bg) !important;
+  padding: var(--spacing) !important;
+}
+.chatHeaderBar_dc83f5 *, .barBase__0f481 * {
+  font-size: 15px !important;
+  font-weight: bold !important;
+}
+.chatHeaderBar_dc83f5 > button, .barBase__0f481 > button {
+  --banner-bg: inherit !important;
+}
+.chatHeaderBar_dc83f5 svg, .barBase__0f481 svg {
+  display: none !important;
+}
+
+.chatHeaderBar_dc83f5::after {
+  display: none !important;
+}
+
+.barBase__0f481 {
+  opacity: 1 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 3 !important;
+  height: unset !important;
+  min-height: unset !important;
+}
+
+.chatHeaderBarText_dc83f5,
+.barButtonBase__0f481 {
+  text-align: center !important;
+  color: var(--window_fg_color) !important;
+  height: unset !important;
+}
+
+.messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) [aria-label="Jump to last unread message"] {
+  margin-left: 127px !important;
+}
+.messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) > .jumpToPresentBar__0f481 {
+  top: 5000px !important;
+}
+.messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) > .jumpToPresentBar__0f481 > .barButtonAlt__0f481 {
+  position: absolute !important;
+  top: calc(-5000px + var(--spacing)) !important;
+}
+
+/* no top bar*/
+.messagesWrapper__36d07 > .jumpToPresentBar__0f481:nth-child(2) {
+  top: 0 !important;
+  bottom: initial !important;
+  flex-direction: row-reverse !important;
+}

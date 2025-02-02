@@ -1,0 +1,60 @@
+.container__55c99:not(:empty) {
+  --text-muted: var(--window_fg_color) !important;
+  border-radius: var(--window_radius) !important;
+  box-shadow: var(--popover_shadow) !important;
+  gap: var(--spacing-3x) !important;
+  padding: var(--menu_margin) !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+.container__55c99:not(:empty) .header__56fec {
+  padding: 0 !important;
+  padding-bottom: var(--spacing) !important;
+  padding-left: 4px !important;
+}
+.container__55c99:not(:empty) .searchClearHistory__56fec {
+  top: 4px !important;
+  right: 12px !important;
+}
+.container__55c99:not(:empty) [role=group] {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.container__55c99:not(:empty) [role=group]::before {
+  display: none !important;
+}
+.container__55c99:not(:empty) [role=group] > * {
+  padding: 0 !important;
+}
+.container__55c99:not(:empty) [role=option] {
+  font-size: 15px !important;
+  border-radius: var(--button_radius) !important;
+  margin: 0 !important;
+  padding: 0 var(--spacing-2x) !important;
+  height: 32px !important;
+}
+.container__55c99:not(:empty) [role=option] .resultChannel__56fec {
+  width: 100% !important;
+}
+.container__55c99:not(:empty) [role=option] strong,
+.container__55c99:not(:empty) [role=option] .displayedNick__56fec {
+  width: 50% !important;
+}
+.container__55c99:not(:empty) [role=option] strong {
+  margin-left: calc(20px + var(--spacing)) !important;
+}
+.container__55c99:not(:empty) [role=option] .displayedNick__56fec {
+  margin: 0 var(--spacing) !important;
+}
+.container__55c99:not(:empty) [role=option] .searchResultChannelCategory__56fec {
+  opacity: 1 !important;
+  text-transform: unset !important;
+  margin-left: var(--spacing) !important;
+}
+.container__55c99:not(:empty) .queryContainer__55c99,
+.container__55c99:not(:empty) .searchLearnMore__56fec,
+.container__55c99:not(:empty) .plusIcon__56fec,
+.container__55c99:not(:empty) .searchResultChannelIcon__56fec,
+.container__55c99:not(:empty) [role=option]:is(.user__56fec, :has(strong)) > .filter__56fec {
+  display: none !important;
+}

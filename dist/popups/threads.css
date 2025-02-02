@@ -1,0 +1,10 @@
+.header_d9c882 svg,
+.header_d9c882 h1,
+.header_d9c882 .closeIcon_d9c882,
+.header_d9c882 .divider_d9c882,
+.header_d9c882 .spacer_d9c882 {
+  display: none !important;
+}
+.header_d9c882 .createButton_d9c882 {
+  margin: 0 !important;
+}

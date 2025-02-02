@@ -1,0 +1,53 @@
+div[data-list-item-id$=forum-channel-header] {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: 16px !important;
+}
+div[data-list-item-id$=forum-channel-header]:hover {
+  background-color: transparent !important;
+}
+
+[data-list-id^=forum-channel-list] > [role=list] {
+  --custom-forum-post-form-horizontal-padding: 0px !important;
+  padding: 0 !important;
+}
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_d9be46 {
+  gap: 10px !important;
+}
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_d9be46 > [role=button] {
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: 50% !important;
+  margin: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  order: 1 !important;
+}
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_d9be46 > [role=button]:hover {
+  /* *exact* #404040 for dark theme*/
+  --percentage: 12.75% !important;
+}
+[data-list-id^=forum-channel-list] > [role=list] .titleContainer_d9be46 > [role=button]:active {
+  /* *exact* #616161 for dark theme*/
+  --percentage: 27.75% !important;
+}
+[data-list-id^=forum-channel-list] > [role=list] [data-item-role=item] > div {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.header_f369db {
+  background: none !important;
+  border: none !important;
+}
+
+.tagsContainer_f369db {
+  padding: 0 !important;
+}
+
+.prefixElement_d9be46 {
+  display: none !important;
+}
