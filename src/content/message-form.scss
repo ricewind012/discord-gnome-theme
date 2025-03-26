@@ -20,6 +20,7 @@
 		var(--window_fg_color) 7.5%,
 		transparent
 	);
+	border: none;
 	border-radius: var(--radius-xs);
 
 	& > div {
@@ -61,7 +62,7 @@
 	}
 
 	.buttons__74017 {
-		margin: 0;
+		gap: 0;
 
 		// align to start for longer text
 		& > div {

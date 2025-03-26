@@ -1,9 +1,14 @@
 [role="tablist"] {
 	[role="tab"] {
+		line-height: inehrit;
 		border: none;
 		border-radius: var(--button_radius);
 
 		transition: var(--backdrop_transition);
+
+		&::after {
+			display: none;
+		}
 	}
 
 	&:where([aria-orientation="horizontal"], .navList__08434) {

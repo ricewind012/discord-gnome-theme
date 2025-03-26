@@ -1,7 +1,12 @@
 .sidebar_c48ade {
+	&::after {
+		display: none;
+	}
+
+	// this entire shit is TODO
 	& > nav {
 		&::before {
-			content: "";
+			//content: "";
 
 			position: absolute;
 			inset: 0;
@@ -24,17 +29,12 @@
 		}
 
 		&:not(.privateChannels__35e86) > :first-child {
-			pointer-events: none;
+			//pointer-events: none;
 
 			&.bannerVisible_f37cb1 {
 				--window_fg_color: var(--white-500);
 			}
 		}
-	}
-
-	header {
-		background-color: transparent;
-		padding: calc(var(--spacing-2x) - 1px) var(--spacing);
 	}
 
 	.guildIconV2Container__85d16,
@@ -51,29 +51,61 @@
 	}
 }
 
+.container_f37cb1 {
+	&.bannerVisible_f37cb1 {
+		.headerContent_f37cb1 {
+			filter: drop-shadow(0 1px 1px var(--bg-backdrop));
+		}
+	}
+
+	.header_f37cb1 {
+		box-shadow: var(--elevation-low);
+		border: none;
+		padding: var(--spacing);
+	}
+
+	.headerEllipseBackdrop_f37cb1,
+	.headerEllipseForeground_f37cb1,
+	.headerGlass_f37cb1 {
+		display: none;
+	}
+}
+
 div.sidebar_c48ade {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border-right: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
 }
 
+.sidebarList_c48ade {
+	border: none;
+	border-radius: 0;
+
+	.container__2637a {
+		margin: 0;
+	}
+}
+
 .panels_c48ade {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
+	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
+	border-radius: 0;
 
-	& > div {
+	bottom: 0;
+	left: var(--custom-guild-list-width);
+	width: calc(
+		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
+	);
+
+	.container__37e49 {
 		padding: 0;
-
-		height: unset;
-
-		& > .container_e131a9 {
-			border: none;
-		}
+		margin: 0;
 	}
 
 	button {
 		border-radius: var(--button_radius);
-		margin-right: var(--spacing);
+		margin: 0;
 
 		svg {
 			display: none;
@@ -100,12 +132,6 @@ div.sidebar_c48ade {
 			display: initial;
 		}
 	}
-
-	.nameTag__37e49 {
-		padding: 0;
-		padding-left: var(--spacing);
-		margin: 0;
-	}
 }
 
 .rtcConnectionStatus__06d62 button {
@@ -119,6 +145,10 @@ div.sidebar_c48ade {
 	& > * {
 		display: initial;
 	}
+}
+
+#channels {
+	margin: 0;
 }
 
 .wrapper__2ea32 {

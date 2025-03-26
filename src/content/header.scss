@@ -1,6 +1,8 @@
 @use "../mixins";
 
 .container__9293f {
+	border: none;
+	box-shadow: var(--elevation-low);
 	padding: 0;
 
 	min-height: unset;
@@ -18,11 +20,11 @@
 	// 5. Thread child channel
 	&[role="navigation"] .titleWrapper__9293f,
 	.akaBadge__488b1,
+	.dot__9293f,
 	.nicknames__488b1,
 	.children__9293f > .iconWrapper__9293f,
-	.children__9293f > .caret__9293f,
-	.children__9293f:has(> .caret__9293f) [role="button"],
-	.divider__9293f {
+	//.children__9293f > .caret__9293f,
+	.children__9293f:has(> .caret__9293f) [role="button"] {
 		display: none;
 	}
 
@@ -72,6 +74,7 @@
 
 	.titleWrapper__9293f,
 	.topic__6ec1a {
+		padding: 0;
 		margin: 0;
 	}
 
@@ -129,12 +132,14 @@
 			}
 		}
 
+		// When expanded, don't round the icon
 		[role="button"] {
 			border-radius: 0;
 		}
 
 		& > div {
 			padding: 0;
+			border: none;
 			border-radius: var(--button_radius);
 
 			height: var(--icon-button-size);
@@ -149,7 +154,7 @@
 	}
 
 	.DraftEditor-root {
-		padding: 7px 0;
+		padding: 4px 0;
 	}
 }
 
