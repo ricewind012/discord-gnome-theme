@@ -20,10 +20,10 @@
 	// 5. Thread child channel
 	&[role="navigation"] .titleWrapper__9293f,
 	.akaBadge__488b1,
+	.caret__9293f,
 	.dot__9293f,
 	.nicknames__488b1,
 	.children__9293f > .iconWrapper__9293f,
-	//.children__9293f > .caret__9293f,
 	.children__9293f:has(> .caret__9293f) [role="button"] {
 		display: none;
 	}

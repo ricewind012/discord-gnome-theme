@@ -58,8 +58,13 @@
 		}
 	}
 
+	&:not(.bannerVisible_f37cb1) {
+		.header_f37cb1 {
+			box-shadow: var(--elevation-low);
+		}
+	}
+
 	.header_f37cb1 {
-		box-shadow: var(--elevation-low);
 		border: none;
 		padding: var(--spacing);
 	}
@@ -112,7 +117,7 @@ div.sidebar_c48ade {
 		}
 	}
 
-	[aria-label="Mute"],
+	.micButtonParent__37e49,
 	[aria-label="Deafen"] {
 		display: none;
 	}
@@ -120,9 +125,6 @@ div.sidebar_c48ade {
 	[role="button"] {
 		border-radius: 0;
 		padding: var(--spacing);
-		margin-right: var(--spacing);
-
-		flex-grow: 1;
 
 		&::before {
 			display: none;
