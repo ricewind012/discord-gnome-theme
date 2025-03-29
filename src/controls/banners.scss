@@ -40,7 +40,9 @@
 	& > .jumpToPresentBar__0f481 {
 		top: 5000px;
 
-		& > .barButtonAlt__0f481 {
+		& > .button__201d5 {
+			@extend %button;
+
 			position: absolute;
 			top: calc(-5000px + var(--spacing));
 		}

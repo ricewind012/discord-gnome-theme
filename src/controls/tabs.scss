@@ -1,6 +1,6 @@
 [role="tablist"] {
 	[role="tab"] {
-		line-height: inehrit;
+		line-height: inherit;
 		border: none;
 		border-radius: var(--button_radius);
 
@@ -13,6 +13,7 @@
 
 	&:where([aria-orientation="horizontal"], .navList__08434) {
 		gap: 5px;
+		border: none;
 
 		[role="tab"] {
 			background-color: color-mix(
