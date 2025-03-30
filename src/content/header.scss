@@ -187,6 +187,8 @@
 
 .privateChannels__35e86 {
 	& > .searchBar__35e86 {
+		border: none;
+		box-shadow: var(--elevation-low);
 		padding: 0 var(--spacing);
 
 		height: var(--headerbar-height);

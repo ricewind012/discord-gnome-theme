@@ -17,11 +17,16 @@
 	box-shadow: none;
 	margin: 0;
 
-	left: 0;
-	right: 0;
+	top: 0;
+	bottom: unset;
 	z-index: 3;
+	width: 100%;
 	height: unset;
 	min-height: unset;
+}
+
+.barButtonBase__0f481 {
+	padding-left: 0;
 }
 
 .chatHeaderBarText_dc83f5,
