@@ -1,13 +1,20 @@
 [role="tablist"] {
 	[role="tab"] {
+		color: var(--window_fg_color);
+		line-height: inherit;
 		border: none;
 		border-radius: var(--button_radius);
 
 		transition: var(--backdrop_transition);
+
+		&::after {
+			display: none;
+		}
 	}
 
 	&:where([aria-orientation="horizontal"], .navList__08434) {
 		gap: 5px;
+		border: none;
 
 		[role="tab"] {
 			background-color: color-mix(

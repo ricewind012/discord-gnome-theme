@@ -1,6 +1,7 @@
 .form_f75fb0 {
 	--custom-channel-textarea-text-area-height: unset;
 
+	padding-inline: var(--custom-message-margin-horizontal);
 	margin: 0;
 
 	&::before,
@@ -20,6 +21,7 @@
 		var(--window_fg_color) 7.5%,
 		transparent
 	);
+	border: none;
 	border-radius: var(--radius-xs);
 
 	& > div {
@@ -37,7 +39,10 @@
 		margin: 0;
 
 		// align with cozy mode avatars, à la discord
-		width: calc(var(--icon-button-size) + 8px * 2);
+		width: calc(
+			var(--custom-message-avatar-size) +
+				var(--custom-message-margin-horizontal) - var(--spacing)
+		);
 	}
 
 	.clipContainer__841c8 {
@@ -58,10 +63,14 @@
 	.placeholder__1b31f,
 	[role="textbox"] {
 		padding: var(--spacing);
+		margin: 0;
+
+		// TODO: huh
+		min-height: unset;
 	}
 
 	.buttons__74017 {
-		margin: 0;
+		gap: 0;
 
 		// align to start for longer text
 		& > div {

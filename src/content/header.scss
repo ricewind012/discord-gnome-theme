@@ -1,9 +1,15 @@
 @use "../mixins";
 
+.container__133bf {
+	border: none;
+}
+
 .container__9293f {
+	border: none;
+	box-shadow: var(--elevation-low);
 	padding: 0;
 
-	min-height: unset;
+	height: unset;
 
 	// home
 	&:not([role="navigation"]) > div {
@@ -18,11 +24,11 @@
 	// 5. Thread child channel
 	&[role="navigation"] .titleWrapper__9293f,
 	.akaBadge__488b1,
+	.caret__9293f,
+	.dot__9293f,
 	.nicknames__488b1,
 	.children__9293f > .iconWrapper__9293f,
-	.children__9293f > .caret__9293f,
-	.children__9293f:has(> .caret__9293f) [role="button"],
-	.divider__9293f {
+	.children__9293f:has(> .caret__9293f) [role="button"] {
 		display: none;
 	}
 
@@ -72,6 +78,7 @@
 
 	.titleWrapper__9293f,
 	.topic__6ec1a {
+		padding: 0;
 		margin: 0;
 	}
 
@@ -93,6 +100,16 @@
 	}
 }
 
+.recentsIcon_c99c29 > div {
+	@extend %icon-button;
+
+	// Move from titlebar...
+	position: fixed;
+	// TODO: wtf is this offset
+	top: calc(var(--spacing) + 2px);
+	right: calc(var(--titlebar-right-spacing) + var(--spacing));
+}
+
 // Button that shows the channel description
 .topicClickTarget__6ec1a {
 	--icon: icon("info-outline");
@@ -101,14 +118,18 @@
 
 	position: fixed;
 	top: calc(var(--spacing) + var(--app-border-size));
-	right: calc(var(--titlebar-right-spacing) + var(--spacing));
+	right: calc(
+		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing-2x)
+	);
 	left: unset;
 
 	pointer-events: all;
 }
 
 .upperContainer__9293f {
-	padding-right: var(--titlebar-right-spacing);
+	padding-right: calc(
+		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing)
+	);
 	align-items: center;
 }
 
@@ -129,12 +150,14 @@
 			}
 		}
 
+		// When expanded, don't round the icon
 		[role="button"] {
 			border-radius: 0;
 		}
 
 		& > div {
 			padding: 0;
+			border: none;
 			border-radius: var(--button_radius);
 
 			height: var(--icon-button-size);
@@ -149,7 +172,7 @@
 	}
 
 	.DraftEditor-root {
-		padding: 7px 0;
+		padding: 4px 0;
 	}
 }
 
@@ -182,6 +205,8 @@
 
 .privateChannels__35e86 {
 	& > .searchBar__35e86 {
+		border: none;
+		box-shadow: var(--elevation-low);
 		padding: 0 var(--spacing);
 
 		height: var(--headerbar-height);

@@ -3,7 +3,7 @@
 .peopleListItem_cc6179 [role="button"],
 .sidebar_c48ade .headerButton_f37cb1,
 .panels_c48ade :where([role="button"], button),
-.privateChannels__35e86 .searchBarComponent__35e86 {
+.privateChannels__35e86 .searchBar__35e86 {
 	@extend %icon-button;
 }
 
@@ -51,7 +51,7 @@
 	}
 }
 
-.winButton__421ed,
+.winButton_c38106,
 .close__49fc1,
 .closeButton_c2b141 {
 	--percentage: 7.5%;

@@ -7,17 +7,23 @@
 	height: calc(100% - var(--app-border-size) * 2);
 }
 
-.titleBar__421ed {
+.bar_c38106 {
 	background: none;
+	padding: 0;
 
 	position: fixed;
 	top: var(--titlebar-button-spacing);
 	right: var(--titlebar-button-spacing);
+	z-index: 101;
 	height: unset;
 }
 
+.title_c38106 {
+	display: none;
+}
+
 // TODO: lmao
-.winButton__421ed {
+.winButton_c38106 {
 	margin-left: calc(
 		max(var(--titlebar-right-button-size), var(--titlebar-button-size)) - var(
 				--titlebar-button-size
@@ -29,20 +35,20 @@
 	);
 }
 
-.winButtonClose__421ed {
+.winButtons_c38106 {
+	gap: 0;
+}
+
+.winButtonClose_c38106 {
 	--titlebar-right-button-size: var(--titlebar-close-button);
 }
 
-.winButtonMinMax__421ed {
+.winButtonMinMax_c38106 {
 	--icon: icon("window-maximize");
 	--titlebar-right-button-size: var(--titlebar-maximize-button);
 
-	&:last-child {
+	&:first-child {
 		--icon: icon("window-minimize");
 		--titlebar-right-button-size: var(--titlebar-minimize-button);
 	}
-}
-
-.wordmark__421ed {
-	display: none;
 }

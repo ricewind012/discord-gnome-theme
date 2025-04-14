@@ -12,34 +12,38 @@
 	@extend %banner;
 
 	opacity: 1;
+	border: none;
 	border-radius: 0;
 	box-shadow: none;
 	margin: 0;
 
-	left: 0;
-	right: 0;
+	inset: 0;
+	bottom: unset;
 	z-index: 3;
 	height: unset;
 	min-height: unset;
 }
 
+.barButtonBase__0f481 {
+	padding-left: 0;
+}
+
 .chatHeaderBarText_dc83f5,
 .barButtonBase__0f481 {
 	text-align: center;
-	color: var(--window_fg_color);
-
-	height: unset;
 }
 
 .messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) {
 	[aria-label="Jump to last unread message"] {
-		margin-left: 127px;
+		margin-left: calc(134px + var(--spacing));
 	}
 
 	& > .jumpToPresentBar__0f481 {
 		top: 5000px;
 
-		& > .barButtonAlt__0f481 {
+		& > .button__201d5 {
+			@extend %button;
+
 			position: absolute;
 			top: calc(-5000px + var(--spacing));
 		}

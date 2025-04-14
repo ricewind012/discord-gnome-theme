@@ -179,6 +179,8 @@
 
 	--brand-experiment: var(--accent_color);
 
+	--custom-app-top-bar-height: 0px;
+
 	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
 
 	--custom-margin-margin-x-small: 16px;
@@ -204,10 +206,23 @@
 	--legacy-elevation-high: var(--elevation-high);
 	--legacy-elevation-border: var(--elevation-stroke);
 
-	--shadow-border: var(--elevation-stroke);
-	--shadow-ledge: var(--elevation-low);
-	--shadow-medium: var(--elevation-medium);
-	--shadow-high: var(--elevation-high);
+	$shadows: (
+		border: stroke,
+		ledge: low,
+		low: low,
+		low-active: low,
+		low-hover: low,
+		medium: medium,
+		high: high,
+		top-low: low,
+		top-high: high,
+		top-ledge: stroke,
+	);
+
+	@each $name, $type in $shadows {
+		--shadow-#{$name}: var(--elevation-#{$type});
+		--shadow-#{$name}-filter: drop-shadow(var(--elevation-#{$type}));
+	}
 
 	--radius-xs: var(--base-unit);
 	--radius-sm: var(--base-unit);
