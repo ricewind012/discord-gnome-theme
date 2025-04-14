@@ -3,40 +3,6 @@
 		display: none;
 	}
 
-	// this entire shit is TODO
-	& > nav {
-		&::before {
-			//content: "";
-
-			position: absolute;
-			inset: 0;
-			right: calc(var(--icon-button-size) + var(--spacing));
-			height: var(--headerbar-height);
-			z-index: 999;
-
-			app-region: drag;
-		}
-
-		&.privateChannels__35e86::before {
-			content: attr(aria-label);
-
-			inset: 0 calc(var(--icon-button-size) + var(--spacing));
-			display: flex;
-			align-items: center;
-			justify-content: center;
-
-			color: var(--window_fg_color);
-		}
-
-		&:not(.privateChannels__35e86) > :first-child {
-			//pointer-events: none;
-
-			&.bannerVisible_f37cb1 {
-				--window_fg_color: var(--white-500);
-			}
-		}
-	}
-
 	.guildIconV2Container__85d16,
 	.headerChildren_f37cb1 {
 		display: none;
@@ -47,6 +13,7 @@
 
 		flex-shrink: 0;
 
+		app-region: no-drag;
 		pointer-events: all;
 	}
 }
@@ -65,8 +32,11 @@
 	}
 
 	.header_f37cb1 {
+		background-color: transparent;
 		border: none;
 		padding: var(--spacing);
+
+		app-region: drag;
 	}
 
 	.headerEllipseBackdrop_f37cb1,
@@ -134,6 +104,17 @@ div.sidebar_c48ade {
 			display: initial;
 		}
 	}
+}
+
+.privateChannels__35e86::before {
+	content: attr(aria-label);
+
+	inset: 0 calc(var(--icon-button-size) + var(--spacing));
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: var(--window_fg_color);
 }
 
 .rtcConnectionStatus__06d62 button {

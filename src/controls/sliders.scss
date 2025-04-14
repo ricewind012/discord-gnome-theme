@@ -1,11 +1,8 @@
 [role="slider"] {
-	.track_a562c8 {
-		top: 32px;
-	}
-
 	.bar_a562c8 {
 		border-radius: 16px;
 
+		top: 0;
 		height: 4px;
 	}
 
@@ -31,6 +28,7 @@
 
 	.mark_a562c8 {
 		flex-direction: column-reverse;
+		height: unset;
 
 		& > * {
 			color: var(--text-muted);

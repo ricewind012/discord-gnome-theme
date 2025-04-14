@@ -17,10 +17,9 @@
 	box-shadow: none;
 	margin: 0;
 
-	top: 0;
+	inset: 0;
 	bottom: unset;
 	z-index: 3;
-	width: 100%;
 	height: unset;
 	min-height: unset;
 }
@@ -32,14 +31,11 @@
 .chatHeaderBarText_dc83f5,
 .barButtonBase__0f481 {
 	text-align: center;
-	color: var(--window_fg_color);
-
-	height: unset;
 }
 
 .messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) {
 	[aria-label="Jump to last unread message"] {
-		margin-left: 127px;
+		margin-left: calc(134px + var(--spacing));
 	}
 
 	& > .jumpToPresentBar__0f481 {

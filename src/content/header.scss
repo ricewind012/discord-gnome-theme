@@ -1,11 +1,15 @@
 @use "../mixins";
 
+.container__133bf {
+	border: none;
+}
+
 .container__9293f {
 	border: none;
 	box-shadow: var(--elevation-low);
 	padding: 0;
 
-	min-height: unset;
+	height: unset;
 
 	// home
 	&:not([role="navigation"]) > div {
@@ -96,6 +100,16 @@
 	}
 }
 
+.recentsIcon_c99c29 > div {
+	@extend %icon-button;
+
+	// Move from titlebar...
+	position: fixed;
+	// TODO: wtf is this offset
+	top: calc(var(--spacing) + 2px);
+	right: calc(var(--titlebar-right-spacing) + var(--spacing));
+}
+
 // Button that shows the channel description
 .topicClickTarget__6ec1a {
 	--icon: icon("info-outline");
@@ -104,14 +118,18 @@
 
 	position: fixed;
 	top: calc(var(--spacing) + var(--app-border-size));
-	right: calc(var(--titlebar-right-spacing) + var(--spacing));
+	right: calc(
+		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing-2x)
+	);
 	left: unset;
 
 	pointer-events: all;
 }
 
 .upperContainer__9293f {
-	padding-right: var(--titlebar-right-spacing);
+	padding-right: calc(
+		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing)
+	);
 	align-items: center;
 }
 
