@@ -3,7 +3,7 @@
 .peopleListItem_cc6179 [role="button"],
 .sidebar_c48ade .headerButton_f37cb1,
 .panels_c48ade :where([role="button"], button),
-.privateChannels__35e86 .searchBar__35e86 {
+.privateChannels__35e86 .searchBar__35e86 > button {
 	@extend %icon-button;
 }
 

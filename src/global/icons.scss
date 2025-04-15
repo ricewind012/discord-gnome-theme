@@ -1,8 +1,6 @@
 [class*="searchBar_"],
 [class*="searchBox_"] {
-	[role="button"] {
-		--icon: icon("loupe-large");
-	}
+	--icon: icon("loupe-large");
 }
 
 [aria-label="User Settings"] {

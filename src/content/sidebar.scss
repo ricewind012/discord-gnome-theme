@@ -106,17 +106,6 @@ div.sidebar_c48ade {
 	}
 }
 
-.privateChannels__35e86::before {
-	content: attr(aria-label);
-
-	inset: 0 calc(var(--icon-button-size) + var(--spacing));
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	color: var(--window_fg_color);
-}
-
 .rtcConnectionStatus__06d62 button {
 	width: unset;
 	height: unset;
