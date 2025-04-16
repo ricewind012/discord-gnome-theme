@@ -87,9 +87,16 @@
 .theme-dark {
 	--background-primary: var(--window_bg_color);
 	--background-secondary: var(--secondary_sidebar_bg_color);
-	--background-secondary-alt: var(--secondary_sidebar_bg_color);
 	--background-tertiary: var(--sidebar_bg_color);
 	--background-floating: var(--popover_bg_color);
+
+	--bg-base-tertiary: var(--sidebar_bg_color);
+	--background-base-low: var(--window_bg_color);
+	--background-base-lower: var(--window_bg_color);
+	--background-base-lowest: var(--secondary_sidebar_bg_color);
+	--background-surface-high: var(--popover_bg_color);
+	--background-surface-higher: var(--popover_bg_color);
+	--background-surface-highest: var(--popover_bg_color);
 
 	--background-modifier-hover: color-mix(
 		in srgb,
@@ -134,8 +141,6 @@
 		transparent
 	);
 
-	--home-background: var(--window_bg_color);
-	--modal-background: var(--background-primary);
 	--modal-footer-background: transparent;
 
 	--text-danger: var(--destructive_color);
@@ -157,7 +162,6 @@
 	--interactive-muted: var(--window_fg_muted);
 
 	--channel-text-area-placeholder: var(--text-muted);
-	--channel-icon: var(--text-muted);
 	--channels-default: var(--window_fg_color);
 	--embed-title: var(--window_fg_color);
 
@@ -174,13 +178,7 @@
 	--status-warning-background: var(--warning_bg_color);
 	--status-warning-text: var(--warning_fg_color);
 
-	--search-popout-option-fade: none;
-	--search-popout-option-fade-hover: none;
-
-	--brand-experiment: var(--accent_color);
-
 	--custom-app-top-bar-height: 0px;
-
 	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
 
 	--custom-margin-margin-x-small: 16px;
