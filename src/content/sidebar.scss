@@ -119,6 +119,11 @@ div.sidebar_c48ade {
 	}
 }
 
+// Private channels
+.scroller__99e7c {
+	margin-bottom: var(--custom-app-panels-height);
+}
+
 #channels {
 	margin: 0;
 }
@@ -148,6 +153,7 @@ div.sidebar_c48ade {
 }
 
 [aria-label="Invite to Server"],
-.iconContainer__2ea32 {
+.iconContainer__2ea32,
+.sectionDivider__35e86 {
 	display: none;
 }
