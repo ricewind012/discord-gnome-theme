@@ -33,21 +33,23 @@
 	text-align: center;
 }
 
+.jumpToPresentBar__0f481 {
+	top: 5000px;
+
+	& > .button__201d5 {
+		@extend %button;
+
+		position: absolute;
+		top: calc(-5000px + var(--spacing));
+	}
+}
+
 .messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) {
-	[aria-label="Jump to last unread message"] {
-		margin-left: calc(134px + var(--spacing));
-	}
+	--offset: 134px;
+}
 
-	& > .jumpToPresentBar__0f481 {
-		top: 5000px;
-
-		& > .button__201d5 {
-			@extend %button;
-
-			position: absolute;
-			top: calc(-5000px + var(--spacing));
-		}
-	}
+.newMessagesBar__0f481 .barButtonMain__0f481 {
+	margin-left: calc(var(--offset, 0px) + var(--spacing));
 }
 
 // no top bar
