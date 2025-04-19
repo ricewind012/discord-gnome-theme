@@ -7,9 +7,17 @@
 .contentRegion__23e6b {
 	margin-top: 46px;
 
+	// Banner
+	flex-direction: column-reverse;
+
 	.divider__46c3b {
 		display: none;
 	}
+}
+
+// Also banner
+.contentTransitionWrap__23e6b {
+	width: 100%;
 }
 
 .contentColumn__23e6b {

@@ -1,0 +1,30 @@
+@use "../../mixins";
+
+.container_fcf29c {
+	@extend %banner;
+
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+
+	// TODO: rewrite button selectors
+	[class*="button_"][class*="size" i]:not(.size32__06eda, .fullWidth__201d5) {
+		--banner-bg: inherit;
+	}
+}
+
+.noticeRegion__23e6b {
+	padding: 0;
+	position: unset;
+	width: 100%;
+	max-width: unset;
+
+	// Remove animation
+	opacity: 1;
+	transform: translateY(0%) translateZ(0px);
+}
+
+.shrinkingContainer_fcf29c {
+	text-align: center;
+	width: 100%;
+}

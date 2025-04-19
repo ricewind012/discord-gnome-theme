@@ -21,6 +21,10 @@
 		--banner-bg: var(--success_bg_color);
 		color: var(--success_fg_color);
 	}
+
+	& > div {
+		--button--underline-color: transparent;
+	}
 }
 
 .mentionButton__841c8,
