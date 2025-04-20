@@ -7,18 +7,19 @@
 		opacity: var(--dim-level-opacity);
 	}
 
+	&.colorBrand__201d5 {
+		color: var(--accent_color);
+	}
+
 	&.colorPrimary__201d5 {
-		--banner-bg: var(--accent_color);
 		color: var(--accent_fg_color);
 	}
 
 	&.colorRed__201d5 {
-		--banner-bg: var(--destructive_bg_color);
 		color: var(--destructive_fg_color);
 	}
 
 	&.colorGreen__201d5 {
-		--banner-bg: var(--success_bg_color);
 		color: var(--success_fg_color);
 	}
 

@@ -1,5 +1,11 @@
 %banner {
-	background-color: var(--banner-bg);
+	--banner-color: #7d7d83;
+	background-color: color-mix(
+		in srgb,
+		var(--banner-color) 30%,
+		var(--window_bg_color)
+	);
+	color: var(--window_fg_color);
 	padding: var(--spacing);
 
 	* {
@@ -17,13 +23,12 @@
 }
 
 %button {
-	--banner-bg: var(--window_bg_color);
 	--percentage: 10%;
 
 	background-color: color-mix(
 		in srgb,
 		currentColor var(--percentage),
-		var(--banner-bg)
+		transparent
 	);
 	color: var(--window_fg_color);
 	padding: 5px 10px;
