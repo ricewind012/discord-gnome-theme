@@ -97,7 +97,7 @@
 		color: var(--window_fg_color);
 		border-top-left-radius: var(--window_radius);
 		font-weight: 700;
-		font-size: 15px;
+		font-size: var(--document-font-size);
 		text-transform: none;
 		text-align: center;
 		border-right: 1px solid var(--background-modifier-accent);

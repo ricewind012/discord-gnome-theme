@@ -16,7 +16,7 @@
 		@extend %text-field;
 
 		input {
-			font-size: 15px;
+			font-size: var(--document-font-size);
 			line-height: inherit;
 			padding: 0;
 			margin: 0;

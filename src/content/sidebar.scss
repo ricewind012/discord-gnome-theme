@@ -1,3 +1,5 @@
+@use "../mixins/text";
+
 .sidebar_c48ade {
 	&::after {
 		display: none;
@@ -144,6 +146,10 @@ div.sidebar_c48ade {
 
 	min-height: 36px;
 	justify-content: center;
+}
+
+.name__2ea32 {
+	@extend %text-normal;
 }
 
 .unread__2ea32 {

@@ -1,13 +1,5 @@
 @use "../mixins";
 
-* {
-	font-weight: 500;
-}
-
-strong {
-	font-weight: 700;
-}
-
 ::selection {
 	background-color: var(--selection-bg);
 }

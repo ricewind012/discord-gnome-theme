@@ -27,7 +27,7 @@
 	}
 
 	[role="group"] {
-		--offset: calc(15px * 1.25 + 4px);
+		--offset: calc(var(--document-font-size) * 1.25 + 4px);
 
 		margin-bottom: calc(var(--offset) + 24px);
 

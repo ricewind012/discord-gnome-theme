@@ -1,3 +1,5 @@
+@use "../mixins/text";
+
 [role="menu"] {
 	--background-modifier-accent: color-mix(
 		in srgb,
@@ -15,6 +17,8 @@
 	}
 
 	[role^="menuitem"] {
+		@extend %text-normal;
+
 		background-color: color-mix(
 			in srgb,
 			var(--window_fg_color) var(--percentage),

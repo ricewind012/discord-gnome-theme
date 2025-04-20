@@ -51,7 +51,7 @@
 .searchResultsWrap_a9e706 .button__02a39 {
 	@extend %button;
 
-	font-size: 15px;
+	font-size: var(--document-font-size);
 	font-weight: bold;
 
 	height: unset;

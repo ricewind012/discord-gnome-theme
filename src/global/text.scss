@@ -64,7 +64,7 @@
 .channelNameText_c68065 > span,
 [data-text-variant^="heading-md"] {
 	font-weight: 800;
-	font-size: 15px;
+	font-size: var(--document-font-size);
 }
 
 // .title-4
@@ -95,7 +95,7 @@
 }
 
 .labelRow__0d850 .title__0d850 {
-	font-size: 15px;
+	font-size: var(--document-font-size);
 	margin-right: 8px;
 }
 
