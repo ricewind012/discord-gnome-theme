@@ -11,16 +11,12 @@
 		color: var(--accent_color);
 	}
 
-	&.colorPrimary__201d5 {
-		color: var(--accent_fg_color);
-	}
-
 	&.colorRed__201d5 {
-		color: var(--destructive_fg_color);
+		color: var(--destructive_color);
 	}
 
 	&.colorGreen__201d5 {
-		color: var(--success_fg_color);
+		color: var(--success_color);
 	}
 
 	& > div {

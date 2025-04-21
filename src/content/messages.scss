@@ -10,7 +10,6 @@
 	&.cozy_c19a55 {
 		.header_c19a55 {
 			line-height: var(--chat-markup-line-height);
-			margin-bottom: var(--space-xxs);
 		}
 	}
 
@@ -58,6 +57,10 @@
 
 			width: 11ch;
 		}
+	}
+
+	.markup__75297 {
+		font-weight: normal;
 	}
 }
 
