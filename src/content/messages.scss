@@ -7,8 +7,16 @@
 		margin-right: 0rem;
 	}
 
+	&.cozy_c19a55 {
+		.header_c19a55 {
+			line-height: var(--chat-markup-line-height);
+		}
+	}
+
 	&.compact_c19a55 {
-		--custom-message-margin-compact-indent: calc(5.875rem);
+		--custom-message-margin-compact-indent: calc(
+			7.6rem + var(--custom-message-meta-space)
+		);
 		--custom-message-reply-indent: 1.375rem;
 
 		i {
@@ -20,7 +28,7 @@
 
 		.repliedMessage_c19a55 {
 			--custom-message-reply-indent: 0rem;
-			--timestamp-width: calc(11ch - 1.5rem);
+			--timestamp-width: 11ch;
 
 			margin-left: 0;
 
@@ -30,7 +38,7 @@
 		}
 
 		.replyBadge_c19a55 {
-			margin-top: 0.1em;
+			margin-bottom: 0.25em;
 
 			width: 1em;
 			height: 1em;
@@ -44,9 +52,15 @@
 
 		.timestamp_c19a55 {
 			font-family: var(--font-code);
+			font-size: var(--monospace-font-size);
+			line-height: var(--chat-markup-line-height);
 
 			width: 11ch;
 		}
+	}
+
+	.markup__75297 {
+		font-weight: normal;
 	}
 }
 

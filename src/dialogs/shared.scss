@@ -4,86 +4,53 @@
 	background-color: var(--backdrop);
 }
 
+// Do NOT use gap on root, since its parts are not always direct descendants of
+// the dialog container.
 .root__49fc1 {
-	background-color: var(--background-primary);
+	--dialog-spacing: 24px;
+
+	background-color: var(--dialog_bg_color);
+	border: var(--app-border-size) solid var(--window_border_color);
 	border-radius: var(--window_radius);
-	gap: 12px;
+	box-shadow: var(--shadow-high);
+
+	&:has(.close__49fc1) {
+		background-color: var(--window_bg_color);
+	}
 
 	.header__49fc1 {
-		padding: 22px;
-		padding-bottom: 0;
+		padding: 0;
+		padding-top: var(--dialog-spacing);
 
+		position: unset;
 		justify-content: center;
 	}
 
 	.content__49fc1 {
 		text-align: center;
-		padding: 0 24px;
+		padding: var(--dialog-spacing);
+		padding-top: calc(var(--dialog-spacing) / 2);
 	}
 
 	.footer__49fc1 {
-		--background-modifier-accent: color-mix(
-			in srgb,
-			currentColor 15%,
-			transparent
-		);
-
 		box-shadow: none;
-		border-top: 1px solid var(--background-modifier-accent);
-		border-radius: 0 0 var(--window_radius) var(--window_radius);
 		padding: 0;
+		margin: var(--dialog-spacing);
+		margin-top: 0;
+		gap: var(--spacing-2x);
 
 		* {
 			flex-grow: 1;
 		}
 
 		button[class] {
-			--bg-percentage: 0%;
-			--border-percentage: 25%;
-
-			background-color: color-mix(
-				in srgb,
-				currentColor var(--bg-percentage),
-				transparent
-			);
-			color: var(--window_fg_color);
-			border-left: 1px solid
-				color-mix(in srgb, currentColor var(--border-percentage), transparent);
-			border-radius: 0;
+			// Hardcoded (maybe):
+			// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123
+			border-radius: 12px;
+			// Seen in "Change password" dialog
 			margin: 0;
 
 			height: 44px;
-
-			&:hover {
-				--bg-percentage: 10%;
-			}
-
-			&:active {
-				--bg-percentage: 20%;
-				--border-percentage: 50%;
-			}
-
-			&.colorBrand__201d5 {
-				color: var(--accent_color);
-			}
-
-			&.colorRed__201d5 {
-				color: var(--destructive_color);
-			}
-
-			& > div {
-				background: none;
-				font-weight: 700;
-				font-size: 15px;
-				text-transform: none;
-				letter-spacing: 0;
-
-				justify-content: center;
-			}
-
-			svg {
-				display: none;
-			}
 		}
 	}
 }

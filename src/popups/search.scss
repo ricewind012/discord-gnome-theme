@@ -34,7 +34,7 @@
 	}
 
 	[role="option"] {
-		font-size: 15px;
+		font-size: var(--document-font-size);
 		border-radius: var(--button_radius);
 		margin: 0;
 		padding: 0 var(--spacing-2x);

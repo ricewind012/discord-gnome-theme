@@ -1,5 +1,9 @@
+@use "../mixins/text";
+
 [role="tablist"] {
 	[role="tab"] {
+		@extend %text-normal;
+
 		color: var(--window_fg_color);
 		line-height: inherit;
 		border: none;

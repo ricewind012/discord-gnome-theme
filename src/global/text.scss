@@ -7,7 +7,7 @@
 
 // .title-3 in _labels
 .username__0a06e, // Home page
-.username_c19a55, // Messages
+.header_c19a55, // Messages
 .username__07f91, // VC
 .displayedNick__56fec,
 .privateChannels__35e86::before,
@@ -64,7 +64,7 @@
 .channelNameText_c68065 > span,
 [data-text-variant^="heading-md"] {
 	font-weight: 800;
-	font-size: 15px;
+	font-size: var(--document-font-size);
 }
 
 // .title-4
@@ -95,7 +95,7 @@
 }
 
 .labelRow__0d850 .title__0d850 {
-	font-size: 15px;
+	font-size: var(--document-font-size);
 	margin-right: 8px;
 }
 

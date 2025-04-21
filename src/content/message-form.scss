@@ -51,7 +51,7 @@
 	}
 
 	.replyLabel__841c8 {
-		font-size: 15px;
+		font-size: var(--document-font-size);
 	}
 
 	.textArea__74017,
@@ -62,6 +62,8 @@
 
 	.placeholder__1b31f,
 	[role="textbox"] {
+		// D*scord just ignores its own variable, genius
+		line-height: var(--chat-markup-line-height);
 		padding: var(--spacing);
 		margin: 0;
 
