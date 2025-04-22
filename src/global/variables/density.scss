@@ -1,0 +1,26 @@
+:root {
+	// Note: use these only when they shouldn't be affected by the UI spacing
+	// setting.
+	--spacing-05x: calc(var(--base-unit) / 2);
+	--spacing: var(--base-unit);
+
+	--space-xxs: var(--spacing-05x);
+	--space-xs: calc(var(--spacing) * var(--density-multiplier));
+	--space-sm: calc(var(--spacing) * var(--density-multiplier));
+	--space-md: calc(var(--spacing) * 2 * var(--density-multiplier));
+	--space-lg: calc(var(--spacing) * 2 * var(--density-multiplier));
+	--space-xl: calc(var(--spacing) * 3 * var(--density-multiplier));
+	--space-xxl: calc(var(--spacing) * 4 * var(--density-multiplier));
+}
+
+.density-compact {
+	--density-multiplier: 0.75;
+}
+
+.density-cozy {
+	--density-multiplier: 1.25;
+}
+
+.density-default {
+	--density-multiplier: 1;
+}

@@ -32,11 +32,6 @@
 	--base-unit: 6px;
 	--icon-size: 16px;
 
-	// TODO: discord actually has --space-4/8, etc. and --space-xxs/xs, etc.
-	--spacing-05x: calc(var(--base-unit) / 2);
-	--spacing: var(--base-unit);
-	--spacing-2x: calc(var(--base-unit) * 2);
-
 	--banner-bg: color-mix(
 		in srgb,
 		var(--accent_bg_color) 30%,
