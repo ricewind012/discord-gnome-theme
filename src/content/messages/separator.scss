@@ -1,23 +1,25 @@
 #---new-messages-bar {
 	--separator-spacing: 0px;
 
-	margin-inline: 16px;
-	margin-block: calc(8px + var(--separator-spacing));
+	margin-inline: var(--custom-message-margin-horizontal) 0;
+	margin-block: calc(var(--spacing) + var(--separator-spacing));
+
+	top: 0;
 
 	.group-spacing-4 & {
-		--separator-spacing: 4px;
+		--separator-spacing: var(--space-sm);
 	}
 
 	.group-spacing-8 & {
-		--separator-spacing: 8px;
+		--separator-spacing: var(--space-lg);
 	}
 
 	.group-spacing-16 & {
-		--separator-spacing: 16px;
+		--separator-spacing: var(--space-xl);
 	}
 
 	.group-spacing-24 & {
-		--separator-spacing: 24px;
+		--separator-spacing: var(--space-xxl);
 	}
 
 	&::before {

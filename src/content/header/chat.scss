@@ -35,7 +35,7 @@
 	}
 
 	.children__9293f {
-		padding: 4px var(--spacing);
+		padding: var(--spacing);
 
 		min-height: var(--headerbar-height);
 		display: flex;
@@ -71,7 +71,6 @@
 			input {
 				opacity: 1;
 				box-shadow: none;
-				padding-block: 7px;
 
 				position: relative;
 			}
@@ -91,6 +90,7 @@
 	.topic__6ec1a {
 		@extend %caption;
 
+		line-height: 16px;
 		text-align: center;
 
 		// wtf ?
@@ -113,8 +113,7 @@
 
 	// Move from titlebar...
 	position: fixed;
-	// TODO: wtf is this offset
-	top: calc(var(--spacing) + 2px);
+	top: calc(var(--spacing) + var(--app-border-size));
 	right: calc(var(--titlebar-right-spacing) + var(--spacing));
 }
 

@@ -13,9 +13,14 @@
 		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
 	);
 
+	.avatarWrapper__37e49 {
+		height: unset;
+	}
+
 	.container__37e49 {
 		padding: 0;
 		margin: 0;
+		margin-right: var(--spacing);
 	}
 
 	button {

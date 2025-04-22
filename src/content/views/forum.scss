@@ -2,7 +2,7 @@ div[data-list-item-id$="forum-channel-header"] {
 	background-color: transparent;
 	box-shadow: none;
 	padding: 0;
-	margin-bottom: 16px;
+	margin-bottom: var(--spacing-2x);
 
 	&:hover {
 		background-color: transparent;
@@ -14,7 +14,7 @@ div[data-list-item-id$="forum-channel-header"] {
 	padding: 0;
 
 	.titleContainer_d9be46 {
-		gap: 10px;
+		gap: var(--spacing-2x);
 
 		& > [role="button"] {
 			background-color: color-mix(

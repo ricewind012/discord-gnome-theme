@@ -38,7 +38,7 @@ button[aria-expanded] {
 		color: inherit;
 		font-size: inherit;
 		margin-left: 0;
-		margin-right: 8px;
+		margin-right: var(--spacing);
 	}
 
 	svg {

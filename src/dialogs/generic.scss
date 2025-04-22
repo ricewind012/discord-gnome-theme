@@ -13,6 +13,7 @@
 // Do NOT use gap on root, since its parts are not always direct descendants of
 // the dialog container.
 .root__49fc1 {
+	--dialog-spacing-x05: calc(var(--dialog-spacing) / 2);
 	--dialog-spacing: 24px;
 
 	background-color: var(--dialog_bg_color);
@@ -35,7 +36,7 @@
 	.content__49fc1 {
 		text-align: center;
 		padding: var(--dialog-spacing);
-		padding-top: calc(var(--dialog-spacing) / 2);
+		padding-top: var(--dialog-spacing-x05);
 	}
 
 	.footer__49fc1 {

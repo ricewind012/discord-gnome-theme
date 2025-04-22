@@ -25,7 +25,6 @@ div.sidebar_c48ade {
 
 .wrapper__2ea32 {
 	padding: 0;
-	margin: 0;
 
 	&.typeThread__2ea32 {
 		margin-left: 36px;
@@ -47,7 +46,7 @@ div.sidebar_c48ade {
 
 .unread__2ea32 {
 	top: 9px;
-	left: 0;
+	left: calc(var(--space-xs) * -1);
 	height: calc(100% - 11px);
 }
 

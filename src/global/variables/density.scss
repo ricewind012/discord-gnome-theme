@@ -3,6 +3,7 @@
 	// setting.
 	--spacing-05x: calc(var(--base-unit) / 2);
 	--spacing: var(--base-unit);
+	--spacing-2x: calc(var(--base-unit) * 2);
 
 	--space-xxs: var(--spacing-05x);
 	--space-xs: calc(var(--spacing) * var(--density-multiplier));
