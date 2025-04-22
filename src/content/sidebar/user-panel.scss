@@ -1,0 +1,70 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.panels_c48ade {
+	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
+	border: none;
+	border-top: 1px solid var(--secondary_sidebar_border_color);
+	border-radius: 0;
+
+	bottom: 0;
+	left: var(--custom-guild-list-width);
+	width: calc(
+		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
+	);
+
+	.container__37e49 {
+		padding: 0;
+		margin: 0;
+	}
+
+	button {
+		@extend %icon-button;
+
+		border-radius: var(--button_radius);
+		margin: 0;
+
+		svg {
+			display: none;
+		}
+	}
+
+	.micButtonParent__37e49,
+	[aria-label="Deafen"] {
+		display: none;
+	}
+
+	[role="button"] {
+		@extend %icon-button;
+
+		border-radius: 0;
+		padding: var(--spacing);
+
+		&::before {
+			display: none;
+		}
+
+		& > * {
+			display: initial;
+		}
+	}
+}
+
+.panelTitleContainer__37e49 > div {
+	@extend %title-3;
+
+	color: var(--window_fg_color);
+}
+
+.rtcConnectionStatus__06d62 button {
+	width: unset;
+	height: unset;
+
+	&::before {
+		display: none;
+	}
+
+	& > * {
+		display: initial;
+	}
+}

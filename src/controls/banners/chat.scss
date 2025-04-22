@@ -1,4 +1,4 @@
-@use "../../mixins";
+@use "../../mixins/controls";
 
 .chatHeaderBar_dc83f5 {
 	@extend %banner;
@@ -24,7 +24,9 @@
 	min-height: unset;
 }
 
-.barButtonBase__0f481 {
+.barButtonAlt__0f481 {
+	@extend %button;
+
 	padding-left: 0;
 }
 

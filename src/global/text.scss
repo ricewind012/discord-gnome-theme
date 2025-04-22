@@ -1,19 +1,16 @@
-@use "../mixins";
+@use "../mixins/text";
 
-/** headers **/
+// Reference: _labels.scss
+
+::selection {
+	background-color: var(--selection-bg);
+}
+
 [data-text-variant] {
 	text-transform: none;
 }
 
-// .title-3 in _labels
-.username__0a06e, // Home page
-.header_c19a55, // Messages
 .username__07f91, // VC
-.displayedNick__56fec,
-.privateChannels__35e86::before,
-.name__20a53, // Home page sidebar
-.peopleColumn__133bf h2,
-.themeTitle__3e443 > div,
 [data-text-variant^="text-md"] {
 	@extend %title-3;
 }
@@ -23,105 +20,31 @@
 .h2_b717a1,
 .h3_b717a1,
 .h4_b717a1,
-.h5_b717a1,
-.h6_c46f6a {
+.h5_b717a1 {
 	@extend %title-3;
 
 	margin-bottom: 16px;
 }
 
-.panelTitleContainer__37e49 > div {
-	@extend %title-3;
-
-	color: var(--window_fg_color);
-}
-
-.membersGroup_c8ffbb {
-	color: var(--window_fg_color);
-
-	& > span {
-		@extend %title-3;
-	}
-}
-
-// .title-1
 // TODO: Placeholder header seems to be larger
-.flexChild__7c0ba[direction^="vertical_"] > :first-child,
-.markup__75297 :is(h1, h2, h3) *,
-.embedProvider__623de > *,
 [data-text-variant^="heading-lg"],
 [data-text-variant^="heading-x"] {
-	font-weight: 800;
-	font-size: 20px;
+	@extend %title-1;
 }
 
-// .title-2
-// 2. Special case for DMs (header)
-// 4. Search results
-.sidebar_c48ade h2,
-.titleWrapper__9293f > h1 > div,
-.embedAuthor__623de *,
-.channelNameText_c68065 > span,
 [data-text-variant^="heading-md"] {
-	font-weight: 800;
-	font-size: var(--document-font-size);
+	@extend %title-2;
 }
 
-// .title-4
-.embedTitle__623de > *,
-.header__56fec, // Search popup
-.flexChild__7c0ba[direction^="vertical_"] > :last-child:not(:only-child),
 [data-text-variant^="heading-deprecated-12"],
 [data-text-variant^="heading-sm"] {
-	font-weight: 700;
-	font-size: 13px;
-
-	letter-spacing: 0;
+	@extend %title-4;
 }
 
-.flexChild__7c0ba[direction^="vertical_"] {
-	& > * {
-		color: var(--window_fg_color);
-		text-transform: unset;
-	}
-
-	& > :last-child:not(:only-child) {
-		font-size: 14px;
-	}
-
-	.text__33d12 {
-		margin-top: 8px;
-	}
-}
-
-.labelRow__0d850 .title__0d850 {
-	font-size: var(--document-font-size);
-	margin-right: 8px;
-}
-
-// .caption
-.cozy_c19a55 .timestamp_c19a55,
-.subtext__0a06e, // peopleListItem subtext
-.text__19b6d, // ^
-.topic__6ec1a, // header
-[data-list-id="chat-messages"] [role="separator"] > span,
-.searchResultChannelCategory__56fec,
+.description_ddd181,
 [data-text-variant^="text-sm"],
-[data-text-variant^="text-xs"],
-.description_ddd181 {
-	color: var(--window_fg_muted);
-	font-weight: 400;
-	font-size: 9pt;
-}
-
-// settings field subtext
-.note__0d850 {
-	margin: 0;
-	margin-right: 48px;
-}
-
-.sidebar_c48ade h2 {
-	margin: auto;
+[data-text-variant^="text-xs"] {
+	@extend %caption;
 }
 
 // links

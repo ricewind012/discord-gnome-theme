@@ -1,0 +1,51 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.privateChannels__35e86 {
+	&::before {
+		content: attr(aria-label);
+
+		position: absolute;
+		inset-inline: 0;
+		height: var(--headerbar-height);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@extend %title-3;
+		color: var(--window_fg_color);
+	}
+
+	& > .searchBar__35e86 {
+		border: none;
+		box-shadow: var(--elevation-low);
+		padding: var(--spacing);
+
+		height: var(--headerbar-height);
+
+		app-region: drag;
+
+		& > button {
+			@extend %icon-button;
+
+			// Overrides from buttons.scss, since I can't have nice things
+			border: none;
+			min-width: unset;
+
+			position: absolute;
+			top: var(--spacing);
+			left: var(--spacing);
+
+			app-region: no-drag;
+		}
+	}
+
+	[role="listitem"] {
+		border-radius: var(--button_radius);
+		padding: 0;
+	}
+}
+
+.privateChannelsHeaderContainer__99e7c {
+	display: none;
+}

@@ -1,5 +1,20 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
 .chat_f75fb0 {
 	border: none;
+}
+
+.embedAuthor__623de * {
+	@extend %title-2;
+}
+
+.embedProvider__623de > * {
+	@extend %title-1;
+}
+
+.embedTitle__623de > * {
+	@extend %title-4;
 }
 
 .message__5126c {
@@ -9,7 +24,13 @@
 
 	&.cozy_c19a55 {
 		.header_c19a55 {
+			@extend %title-3;
+
 			line-height: var(--chat-markup-line-height);
+		}
+
+		.timestamp_c19a55 {
+			@extend %caption;
 		}
 	}
 
@@ -61,6 +82,10 @@
 
 	.markup__75297 {
 		font-weight: normal;
+
+		:is(h1, h2, h3) * {
+			@extend %title-1;
+		}
 	}
 }
 
@@ -102,4 +127,14 @@
 .buttonsInner__5126c {
 	box-shadow: var(--elevation-medium);
 	border-radius: var(--button_radius);
+}
+
+[aria-roledescription="Open Thread Button"] {
+	@extend %button;
+
+	height: unset;
+
+	.cta__9271d {
+		text-decoration: none;
+	}
 }

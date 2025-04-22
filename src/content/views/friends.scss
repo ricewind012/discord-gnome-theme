@@ -1,0 +1,69 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.container__133bf {
+	border: none;
+}
+
+.nowPlayingColumn__133bf {
+	.container__7d20c {
+		background: var(--bg-overlay-2, var(--background-secondary));
+	}
+
+	[role="button"][aria-haspopup] {
+		height: unset;
+		min-height: unset;
+
+		svg {
+			display: block;
+		}
+	}
+}
+
+.peopleColumn__133bf {
+	gap: 16px;
+	padding: 16px;
+
+	& > * {
+		margin: 0;
+	}
+
+	h2 {
+		@extend %title-3;
+
+		margin: 0;
+	}
+}
+
+.peopleList__5ec2f {
+	@extend %cards-container;
+
+	overflow: auto;
+}
+
+// "list" role is used in many places, including ones I DO NOT FUCKING WANT
+// "listitem" is not reliable, since there are "option" ones being used
+.peopleListItem_cc6179 {
+	@extend %card-with-actual-border-radiuses;
+
+	box-shadow: none;
+	border-top: none;
+	margin: 0;
+
+	[role="button"] {
+		@extend %icon-button;
+	}
+
+	.userInfo__0a06e {
+		align-items: center;
+	}
+
+	.username__0a06e {
+		@extend %title-3;
+	}
+
+	.subtext__0a06e,
+	.text__19b6d {
+		@extend %caption;
+	}
+}

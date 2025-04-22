@@ -1,4 +1,4 @@
-@use "../mixins";
+@use "../mixins/controls";
 
 [role="textbox"] {
 	@extend %text-field-focus;
@@ -29,6 +29,15 @@
 		padding: 0;
 
 		flex-direction: row-reverse;
+	}
+
+	[role="button"][aria-hidden="true"]:not([class*="icon_"]) {
+		--icon-button-size: var(--icon-size);
+
+		@extend %icon-button;
+
+		background-color: transparent;
+		margin-right: 9px;
 	}
 }
 

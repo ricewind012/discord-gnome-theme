@@ -1,0 +1,101 @@
+%button {
+	--percentage: 10%;
+
+	background-color: color-mix(
+		in srgb,
+		currentColor var(--percentage),
+		transparent
+	);
+	color: var(--window_fg_color);
+	padding: 5px 10px;
+	border: none;
+	border-radius: var(--button_radius);
+
+	min-width: 16px;
+	min-height: 24px;
+	height: 34px;
+
+	transition: var(--backdrop_transition);
+
+	&:hover {
+		--percentage: 15%;
+	}
+
+	&:active {
+		--percentage: 30%;
+	}
+
+	* {
+		font-weight: bold;
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+%icon-button {
+	background-color: color-mix(
+		in srgb,
+		currentColor var(--percentage),
+		transparent
+	);
+	border-radius: var(--button_radius);
+	padding: 0;
+
+	position: relative;
+	width: var(--icon-button-size);
+	height: var(--icon-button-size);
+
+	transition: var(--backdrop_transition);
+
+	&:hover {
+		// *exact* #404040 for dark theme
+		--percentage: 12.75%;
+	}
+
+	&:active {
+		// *exact* #616161 for dark theme
+		--percentage: 27.75%;
+	}
+
+	&:disabled {
+		--percentage: 0%;
+		opacity: var(--dim-level-opacity);
+	}
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		inset: 0;
+
+		mask: var(--icon);
+		mask-repeat: no-repeat;
+		mask-position: center;
+		background-color: var(--window_fg_color);
+	}
+
+	& > * {
+		display: none;
+	}
+}
+
+%titlebar-button {
+	--percentage: 7.5%;
+
+	@extend %icon-button;
+
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--percentage),
+		transparent
+	);
+	border: none;
+	border-radius: 100%;
+
+	width: var(--titlebar-button-size);
+	height: var(--titlebar-button-size);
+
+	transform: none;
+}

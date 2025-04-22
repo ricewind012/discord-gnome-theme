@@ -1,0 +1,125 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.closeButton_c2b141 {
+	@extend %titlebar-button;
+
+	opacity: 1;
+
+	flex: 0 0 var(--titlebar-button-size);
+
+	// align with the other child element
+	.privateChannels__35e86 & {
+		margin-right: 8px;
+	}
+}
+
+.contentColumn__23e6b {
+	&::before {
+		content: "";
+		position: fixed;
+		inset: var(--p);
+		height: var(--headerbar-height);
+		box-shadow: var(--elevation-low);
+		z-index: 1;
+	}
+
+	/*
+     https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
+     L70
+   */
+	& > h2:first-child,
+	& > :first-child > h2:first-child,
+	& > div > :first-child .h1_b717a1,
+	& > div > :first-child .sectionTitle__7bffb > * {
+		--pad: 11px;
+		text-align: center;
+		padding: var(--pad);
+
+		position: fixed;
+		top: var(--p);
+		left: calc(var(--p) + var(--sidebar-width) + var(--pad));
+		width: calc(
+			100% - var(--p) *
+				2 - var(--sidebar-width) - var(--titlebar-button-size) - var(--pad) * 2
+		);
+		z-index: 999;
+
+		app-region: drag;
+	}
+}
+
+.keybind_c2b141 {
+	display: none;
+}
+
+.layers__960e4 {
+	--p: calc((100% - var(--settings-dialog-size)) / 2);
+
+	& > .layer__960e4 {
+		opacity: 1;
+
+		&[aria-hidden="true"] {
+			pointer-events: none;
+			transform: none;
+
+			&::before {
+				content: "";
+
+				position: fixed;
+				inset: 0;
+
+				background-color: var(--backdrop);
+				z-index: 101;
+			}
+		}
+	}
+
+	& > :not(:only-child):last-child {
+		box-shadow: var(--elevation-high);
+		border-radius: var(--window_radius);
+
+		inset: var(--p);
+
+		& > div {
+			top: 0;
+		}
+	}
+}
+
+.sidebarRegion__23e6b {
+	&::before {
+		content: "Settings";
+
+		position: fixed;
+		top: calc(var(--p) + 1px);
+		left: calc(var(--p) + 1px);
+		width: var(--sidebar-width);
+		height: var(--headerbar-height);
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		background-color: var(--background-secondary);
+		color: var(--window_fg_color);
+		border-top-left-radius: var(--window_radius);
+		@extend %title-3;
+		text-transform: none;
+		text-align: center;
+		border-right: 1px solid var(--background-modifier-accent);
+
+		app-region: drag;
+	}
+}
+
+.tools__23e6b {
+	position: fixed;
+	top: calc(var(--p) + var(--titlebar-button-spacing));
+	right: calc(var(--p) + var(--titlebar-button-spacing));
+}
+
+.toolsContainer__23e6b {
+	position: absolute;
+	z-index: 999;
+}

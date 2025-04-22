@@ -1,0 +1,58 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.container_f37cb1 {
+	&.bannerVisible_f37cb1 {
+		.headerContent_f37cb1 {
+			filter: drop-shadow(0 1px 1px var(--bg-backdrop));
+		}
+	}
+
+	&:not(.bannerVisible_f37cb1) {
+		.header_f37cb1 {
+			box-shadow: var(--elevation-low);
+		}
+	}
+
+	.header_f37cb1 {
+		background-color: transparent;
+		border: none;
+		padding: var(--spacing);
+
+		app-region: drag;
+	}
+
+	.headerEllipseBackdrop_f37cb1,
+	.headerEllipseForeground_f37cb1,
+	.headerGlass_f37cb1 {
+		display: none;
+	}
+
+	.name_f37cb1 {
+		@extend %title-2;
+
+		margin: auto;
+	}
+}
+
+.guildIconV2Container__85d16,
+.headerChildren_f37cb1 {
+	display: none;
+}
+
+.headerButton_f37cb1 {
+	--icon: icon("menu");
+
+	@extend %icon-button;
+
+	flex-shrink: 0;
+
+	app-region: no-drag;
+	pointer-events: all;
+}
+
+// "Browse channels
+.sectionDivider__629e4,
+#channels > ul > [role="button"] {
+	display: none;
+}

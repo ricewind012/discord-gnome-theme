@@ -1,0 +1,11 @@
+@use "../../mixins/controls";
+
+// 1. Connections tab
+// 2. Voice tab
+.connectContainer_c7f964,
+.cameraWrapper_d41d5f,
+[role="radiogroup"] {
+	@extend %cards-container;
+
+	border: none;
+}

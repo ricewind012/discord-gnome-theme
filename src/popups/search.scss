@@ -1,3 +1,5 @@
+@use "../mixins/text";
+
 .container__55c99:not(:empty) {
 	--text-muted: var(--window_fg_color);
 
@@ -10,6 +12,8 @@
 	flex-direction: column;
 
 	.header__56fec {
+		@extend %title-4;
+
 		padding: 0;
 		padding-bottom: var(--spacing);
 		padding-left: 4px;
@@ -55,6 +59,8 @@
 		}
 
 		.displayedNick__56fec {
+			@extend %title-3;
+
 			margin: 0 var(--spacing);
 		}
 

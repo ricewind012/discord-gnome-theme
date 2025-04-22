@@ -1,4 +1,4 @@
-@use "../mixins";
+@use "../mixins/controls";
 
 [role="radio"] {
 	@extend %card-with-actual-border-radiuses;

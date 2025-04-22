@@ -1,3 +1,5 @@
+@use "../../mixins/controls";
+
 .form_f75fb0 {
 	--custom-channel-textarea-text-area-height: unset;
 
@@ -10,6 +12,7 @@
 	}
 }
 
+[aria-label="Open sticker picker"],
 [aria-label="Send a gift"],
 .channelAppLauncher_e6e74f {
 	display: none;
@@ -23,6 +26,12 @@
 	);
 	border: none;
 	border-radius: var(--radius-xs);
+
+	button {
+		@extend %icon-button;
+
+		border-radius: 0;
+	}
 
 	& > div {
 		background-color: transparent;

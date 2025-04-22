@@ -1,0 +1,27 @@
+%caption {
+	color: var(--window_fg_muted);
+	font-weight: 400;
+	font-size: 9pt;
+}
+
+%title-1 {
+	font-weight: 800;
+	font-size: 20px;
+}
+
+%title-2 {
+	font-size: var(--document-font-size);
+	font-weight: 800;
+}
+
+%title-3 {
+	font-weight: 700;
+	font-size: var(--document-font-size);
+}
+
+%title-4 {
+	font-weight: 700;
+	font-size: 13px;
+
+	letter-spacing: 0;
+}

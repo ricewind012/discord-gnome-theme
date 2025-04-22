@@ -1,0 +1,62 @@
+@use "../mixins/controls";
+
+.close__49fc1 {
+	@extend %titlebar-button;
+
+	opacity: 1;
+
+	position: absolute;
+	top: var(--titlebar-button-spacing);
+	right: var(--titlebar-button-spacing);
+}
+
+// Do NOT use gap on root, since its parts are not always direct descendants of
+// the dialog container.
+.root__49fc1 {
+	--dialog-spacing: 24px;
+
+	background-color: var(--dialog_bg_color);
+	border: var(--app-border-size) solid var(--window_border_color);
+	border-radius: var(--window_radius);
+	box-shadow: var(--shadow-high);
+
+	&:has(.close__49fc1) {
+		background-color: var(--window_bg_color);
+	}
+
+	.header__49fc1 {
+		padding: 0;
+		padding-top: var(--dialog-spacing);
+
+		position: unset;
+		justify-content: center;
+	}
+
+	.content__49fc1 {
+		text-align: center;
+		padding: var(--dialog-spacing);
+		padding-top: calc(var(--dialog-spacing) / 2);
+	}
+
+	.footer__49fc1 {
+		box-shadow: none;
+		padding: 0;
+		margin: var(--dialog-spacing);
+		margin-top: 0;
+		gap: var(--spacing-2x);
+
+		* {
+			flex-grow: 1;
+		}
+
+		button[class] {
+			// Hardcoded (maybe):
+			// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123
+			border-radius: 12px;
+			// Seen in "Change password" dialog
+			margin: 0;
+
+			height: 44px;
+		}
+	}
+}

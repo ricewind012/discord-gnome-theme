@@ -52,8 +52,6 @@
 	--sidebar-width: 263px;
 	--content-width: 575px;
 
-	--p: calc((100% - var(--settings-dialog-size)) / 2);
-
 	font-size: var(--document-font-size);
 
 	@media (prefers-reduced-motion) {

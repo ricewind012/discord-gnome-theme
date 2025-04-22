@@ -1,4 +1,5 @@
-@use "../mixins";
+@use "../../mixins/controls";
+@use "../../mixins/text";
 
 .searchHeader_f3b986 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
@@ -13,10 +14,23 @@
 	margin: 0;
 }
 
+.searchResultChannelCategory__56fec {
+	@extend %caption;
+}
+
 .searchResultsWrap_a9e706 {
 	border-left: 1px solid var(--secondary_sidebar_border_color);
 
 	z-index: 0;
+
+	.button__02a39 {
+		@extend %button;
+
+		font-size: var(--document-font-size);
+		font-weight: bold;
+
+		height: unset;
+	}
 
 	.channelNameContainer_c68065 {
 		margin-bottom: 16px;
@@ -24,6 +38,10 @@
 		& > svg {
 			display: none;
 		}
+	}
+
+	.channelNameText_c68065 > span {
+		@extend %title-2;
 	}
 
 	[role="group"] {

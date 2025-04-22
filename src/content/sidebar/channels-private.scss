@@ -1,0 +1,27 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+[href="/channels/@me"] .avatar__20a53 {
+	--icon-button-size: 32px;
+
+	@extend %icon-button;
+
+	background-color: transparent;
+}
+
+// "Friends" entry
+.channel__972a0:not(.dm__972a0) .link__972a0 {
+	padding-block: var(--space-xxs);
+}
+
+.name__20a53 {
+	@extend %title-3;
+}
+
+.interactive__972a0 {
+	color: var(--window_fg_color);
+}
+
+.scroller__99e7c {
+	margin-bottom: var(--custom-app-panels-height);
+}

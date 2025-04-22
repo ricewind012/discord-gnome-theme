@@ -1,8 +1,24 @@
-// TODO: mixin
-button[aria-expanded],
+@use "../mixins/controls";
+
+%-icon {
+	background-color: currentColor;
+	mask: icon("pan-down");
+
+	width: var(--icon-size);
+	height: var(--icon-size);
+}
+
 [role="button"][aria-haspopup] {
-	svg {
-		display: none;
+	@extend %button;
+
+	min-height: 34px;
+
+	.icons__3f413 {
+		@extend %-icon;
+	}
+
+	.videoControls_cf09d8 & {
+		--banner-bg: transparent;
 	}
 
 	// vc
@@ -11,18 +27,11 @@ button[aria-expanded],
 	}
 }
 
-button[aria-expanded] > div::after,
-[role="button"][aria-haspopup] .icons__3f413 {
-	background-color: currentColor;
-	mask: icon("pan-down");
-
-	width: var(--icon-size);
-	height: var(--icon-size);
-}
-
 button[aria-expanded] {
 	& > div::after {
 		content: "";
+
+		@extend %-icon;
 	}
 
 	[data-text-variant] {
@@ -30,5 +39,9 @@ button[aria-expanded] {
 		font-size: inherit;
 		margin-left: 0;
 		margin-right: 8px;
+	}
+
+	svg {
+		display: none;
 	}
 }

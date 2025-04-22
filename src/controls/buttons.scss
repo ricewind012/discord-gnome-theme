@@ -1,4 +1,4 @@
-@use "../mixins";
+@use "../mixins/controls";
 
 [class*="button_"][class*="size" i]:not(.size32__06eda, .fullWidth__201d5) {
 	@extend %button;
@@ -21,45 +21,5 @@
 
 	& > div {
 		--button--underline-color: transparent;
-	}
-}
-
-.mentionButton__841c8,
-.barButtonAlt__0f481 {
-	@extend %button;
-}
-
-[role="button"][aria-haspopup] {
-	@extend %button;
-
-	min-height: 34px;
-
-	.videoControls_cf09d8 & {
-		--banner-bg: transparent;
-	}
-}
-
-.jumpButton_ed0c8c {
-	@extend %button;
-
-	height: unset;
-}
-
-.searchResultsWrap_a9e706 .button__02a39 {
-	@extend %button;
-
-	font-size: var(--document-font-size);
-	font-weight: bold;
-
-	height: unset;
-}
-
-[aria-roledescription="Open Thread Button"] {
-	@extend %button;
-
-	height: unset;
-
-	.cta__9271d {
-		text-decoration: none;
 	}
 }

@@ -1,7 +1,9 @@
-@use "../mixins";
+@use "../../mixins/controls";
+@use "../../mixins/text";
 
-.container__133bf {
-	border: none;
+[href="https://support.discord.com"]
+{
+	display: none;
 }
 
 .container__9293f {
@@ -82,10 +84,16 @@
 		margin: 0;
 	}
 
-	// wtf ?
+	.titleWrapper__9293f > h1 > div {
+		@extend %title-2;
+	}
+
 	.topic__6ec1a {
+		@extend %caption;
+
 		text-align: center;
 
+		// wtf ?
 		width: -webkit-fill-available;
 	}
 
@@ -133,6 +141,41 @@
 	align-items: center;
 }
 
+.toolbar__9293f {
+	gap: var(--spacing);
+	padding: var(--spacing);
+
+	& > button {
+		margin: 0;
+	}
+
+	[role="button"] {
+		@extend %icon-button;
+
+		margin: 0;
+	}
+
+	// vc
+	.liveQualityIndicator__30845,
+	[class*="live_"] {
+		margin-bottom: 0;
+	}
+
+	// vc
+	.qualityIndicator__30845 {
+		width: unset;
+		height: unset;
+
+		&::before {
+			display: none;
+		}
+
+		& > * {
+			display: initial;
+		}
+	}
+}
+
 // Search
 .toolbar__9293f > .search__49676 {
 	margin: 0 var(--spacing);
@@ -173,47 +216,5 @@
 
 	.DraftEditor-root {
 		padding: 4px 0;
-	}
-}
-
-.privateChannels__35e86 {
-	&::before {
-		content: attr(aria-label);
-
-		position: absolute;
-		inset-inline: 0;
-		height: var(--headerbar-height);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
-		color: var(--window_fg_color);
-	}
-
-	& > .searchBar__35e86 {
-		border: none;
-		box-shadow: var(--elevation-low);
-		padding: var(--spacing);
-
-		height: var(--headerbar-height);
-
-		app-region: drag;
-
-		& > button {
-			// Overrides from buttons.scss, since I can't have nice things
-			border: none;
-			min-width: unset;
-
-			position: absolute;
-			top: 0;
-			left: 0;
-
-			app-region: no-drag;
-		}
-	}
-
-	[role="listitem"] {
-		border-radius: var(--button_radius);
-		padding: 0;
 	}
 }

@@ -1,0 +1,72 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.presets__67a11 {
+	@extend %cards-container;
+
+	gap: 0;
+
+	overflow: hidden;
+	flex-direction: column;
+
+	[role="radiogroup"]:has(> &) {
+		background-color: transparent;
+		box-shadow: none;
+	}
+}
+
+.selectionCircle__36dee {
+	display: none;
+}
+
+.themeSelection__36dee {
+	// radios.scss override
+	&:first-of-type {
+		// TODO: last one also has it
+		border-bottom: 1px solid var(--card_shade_color);
+		border-radius: 0;
+
+		display: flex;
+		align-items: center;
+	}
+
+	&::before {
+		content: "";
+
+		border: none;
+		border-radius: 50%;
+		padding: 0;
+		margin-inline-end: 16px;
+
+		box-sizing: border-box;
+		display: block;
+		width: 22px;
+		height: 22px;
+	}
+
+	&[aria-checked="true"]::before {
+		background-color: #fff;
+		border: 7px solid var(--accent_bg_color);
+	}
+
+	&[aria-checked="false"]::before {
+		border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+	}
+
+	&::after {
+		content: attr(aria-label);
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+.themeSelectionContainer__36dee {
+	width: unset;
+	height: unset;
+}
+
+.themeTitleContainer__3e443 {
+	@extend %title-3;
+}

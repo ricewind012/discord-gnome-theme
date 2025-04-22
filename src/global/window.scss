@@ -1,3 +1,5 @@
+@use "../mixins/controls";
+
 #app-mount {
 	color: var(--window_fg_color);
 	border: var(--app-border-size) solid var(--window_border_color);
@@ -22,8 +24,10 @@
 	display: none;
 }
 
-// TODO: lmao
 .winButton_c38106 {
+	@extend %titlebar-button;
+
+	// TODO: lmao
 	margin-left: calc(
 		max(var(--titlebar-right-button-size), var(--titlebar-button-size)) - var(
 				--titlebar-button-size

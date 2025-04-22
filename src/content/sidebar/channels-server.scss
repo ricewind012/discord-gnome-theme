@@ -1,0 +1,58 @@
+@use "../../mixins/text";
+
+div.sidebar_c48ade {
+	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
+	border-right: 1px solid var(--secondary_sidebar_border_color);
+	border-radius: 0;
+
+	&::after {
+		display: none;
+	}
+}
+
+.sidebarList_c48ade {
+	border: none;
+	border-radius: 0;
+
+	.container__2637a {
+		margin: 0;
+	}
+}
+
+#channels {
+	margin: 0;
+}
+
+.wrapper__2ea32 {
+	padding: 0;
+	margin: 0;
+
+	&.typeThread__2ea32 {
+		margin-left: 36px;
+	}
+}
+
+.link__2ea32 {
+	color: var(--window_fg_color);
+	padding: 0 14px;
+	margin: 0 var(--menu_margin) 2px;
+
+	min-height: 36px;
+	justify-content: center;
+}
+
+.name__2ea32 {
+	@extend %text-normal;
+}
+
+.unread__2ea32 {
+	top: 9px;
+	left: 0;
+	height: calc(100% - 11px);
+}
+
+[aria-label="Invite to Server"],
+.iconContainer__2ea32,
+.sectionDivider__35e86 {
+	display: none;
+}

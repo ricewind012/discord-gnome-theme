@@ -1,0 +1,42 @@
+%text-field-focus {
+	outline: 0 solid transparent;
+	outline-offset: 2px;
+
+	transition: var(--focus_transition);
+
+	&:is(:focus, :focus-within) {
+		outline: 2px solid
+			color-mix(in srgb, var(--accent_bg_color) 50%, transparent);
+		outline-offset: -2px;
+	}
+}
+
+%text-field {
+	@extend %text-field-focus;
+
+	--percentage: 10%;
+
+	background-color: color-mix(
+		in srgb,
+		currentColor var(--percentage),
+		var(--window_bg_color)
+	);
+	font-size: var(--document-font-size);
+	line-height: 1.2;
+	border: none;
+	border-radius: var(--button_radius);
+	padding: 8px 9px;
+	margin: 0;
+
+	height: unset;
+
+	&:disabled {
+		opacity: var(--dim-level-opacity);
+	}
+
+	&::placeholder {
+		color: var(--text-muted);
+		font-size: inherit;
+		font-weight: inherit;
+	}
+}
