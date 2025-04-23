@@ -1,218 +1,112 @@
-[class*="searchBar_"],
-[class*="searchBox_"] {
-	--icon: icon("loupe-large");
+@mixin -gen-icons($attr, $map) {
+	@each $id, $icon in $map {
+		[#{$attr}="#{$id}"] {
+			--icon: icon(#{$icon});
+		}
+	}
 }
 
-[aria-label="User Settings"] {
-	--icon: icon("settings");
-}
+// Common
+@include -gen-icons(
+	"aria-label",
+	(
+		"Close": "window-close",
+		"More": "menu",
+	)
+);
 
-[aria-label="Threads"] {
-	--icon: icon("chat-bubbles-empty-inverted");
-}
+// Chat toolbar
+@include -gen-icons(
+	"aria-label",
+	(
+		"Add Friends to DM": "contact-new",
+		// TODO: experiment
+		"Bookmarks": "user-bookmarks",
+		"Hide Member List": "org.gnome.Settings-users",
+		"Hide User Profile": "user-info",
+		"Inbox": "mail-unread",
+		"New Group DM": "contact-new",
+		"Notification Settings": "bell-outline",
+		"Pinned Messages": "pin",
+		"Show Member List": "org.gnome.Settings-users",
+		"Show User Profile": "user-info",
+		"Show User Profile (Unavailable)": "user-info",
+		"Start Video Call": "camera-small",
+		"Start Voice Call": "phone-right-facing",
+		"Threads": "chat-bubbles-empty-inverted",
+		"User Settings": "settings",
+	)
+);
 
-[aria-label="Notification Settings"] {
-	--icon: icon("bell-outline");
-	display: none;
-}
+// User panel
+@include -gen-icons(
+	"aria-label",
+	(
+		"Camera Unavailable": "camera-small",
+		"Disconnect": "window-close",
+		"Leave Activity": "log-out",
+		"Noise Suppression powered by Krisp": "sound-wave",
+		"Open Soundboard": "bullhorn",
+		"Share Your Screen": "record-screen",
+		"Start An Activity": "emoji-activities",
+		"Stop Streaming": "stop",
+		"Video": "camera-small",
+	)
+);
 
-[aria-label="Pinned Messages"] {
-	--icon: icon("star-outline-thick");
-}
+// Home page
+@include -gen-icons(
+	"aria-label",
+	(
+		"Accept": "check-plain",
+		"Cancel": "window-close",
+		"Ignore": "window-close",
+		"Message": "chat-bubbles-empty-inverted",
+	)
+);
 
-[aria-label="Pinned Messages"] {
-	--icon: icon("pin");
-}
+// Message form
+@include -gen-icons(
+	"aria-label",
+	(
+		"Open GIF picker": "image-round",
+		"Select emoji": "emoji-people",
+		"Send Message": "paper-plane",
+		// TODO: where is this?
+		"Upload a file or send invites": "mail-attachment",
+	)
+);
 
-[aria-label$="Member List"] {
-	--icon: icon("view-list");
-}
-
-// TODO: experiment
-[aria-label="Bookmarks"] {
-	--icon: icon("user-bookmarks");
-}
-
-[href="/channels/@me"] > div > div,
-[aria-label$="Member List"] {
-	--icon: icon("org.gnome.Settings-users");
-}
-
-[aria-label^="Start Voice Call"] {
-	--icon: icon("phone-right-facing");
-}
-
-.actionButtons_e131a9 > :first-child,
-// I have no camera, can't see the other text
-[aria-label^="Start Video Call"] {
-	--icon: icon("camera-small");
-}
-
-[aria-label*="User Profile"] {
-	--icon: icon("user-info");
-}
-
-[aria-label="Add Friends to DM"],
-[aria-label="New Group DM"] {
-	--icon: icon("contact-new");
-}
-
-[aria-label="Accept"] {
-	--icon: icon("check-plain");
-}
-
-.voiceButtonsContainer_e131a9 > :first-child {
-	--icon: icon("sound-wave");
-}
-
-[aria-label="Share Your Screen"] {
-	--icon: icon("record-screen");
-}
-
-[aria-label="Start An Activity"] {
-	--icon: icon("emoji-activities");
-}
-
-[aria-label="Stop Streaming"] {
-	--icon: icon("stop");
-}
-
-[aria-label="Leave Activity"] {
-	--icon: icon("log-out");
-}
-
-[aria-label*="Soundboard"] {
-	--icon: icon("bullhorn");
-}
-
-[aria-label="Inbox"] {
-	--icon: icon("mail-unread");
-}
-
-[aria-label="Message"] {
-	--icon: icon("chat-bubbles-empty-inverted");
-}
-
-[class^="close"],
-[aria-label="Disconnect"],
-[aria-label="Ignore"],
-[aria-label^="Cancel"],
-:focus-within > div > [aria-label="Clear search"],
-[aria-label^="Close"] {
-	--icon: icon("window-close");
-}
-
-[aria-label="More"] {
-	--icon: icon("menu");
-	order: 1;
-}
-
-[aria-label="Upload a file or send invites"] {
-	--icon: icon("mail-attachment");
-}
-
-[aria-label="Open GIF picker"] {
-	--icon: icon("image-round");
-}
-
-[aria-label="Select emoji"] {
-	--icon: icon("emoji-people");
-}
-
-[aria-label="Send Message"] {
-	--icon: icon("paper-plane");
-}
-
-[data-tab-id="My Account"] {
-	--icon: icon("person");
-}
-
-[aria-label="Edit custom status"],
-[data-tab-id="Profile Customization"] {
-	--icon: icon("edit");
-}
-
-[data-tab-id="Privacy & Safety"],
-[data-tab-id="Activity Privacy"] {
-	--icon: icon("screen-privacy4");
-}
-
-[data-tab-id="Family Center"] {
-	--icon: icon("eye-open-negative-filled");
-}
-
-[data-tab-id="Authorized Apps"] {
-	--icon: icon("grid-large");
-}
-
-[data-tab-id="Sessions"] {
-	--icon: icon("smartphone");
-}
-
-[data-tab-id="Connections"] {
-	--icon: icon("phonelink");
-}
-
-[data-tab-id="Settings Clips"],
-[data-tab-id="Voice & Video"] {
-	--icon: icon("microphone");
-}
-
-[data-tab-id="Friend Requests"] {
-	--icon: icon("contact-new");
-}
-
-[data-tab-id="Appearance"] {
-	--icon: icon("brush-monitor");
-}
-
-[data-tab-id="Accessibility"] {
-	--icon: icon("body");
-}
-
-[data-tab-id="Text & Images"] {
-	--icon: icon("chat");
-}
-
-[data-tab-id="Notifications"] {
-	--icon: icon("bell-outline");
-}
-
-[data-tab-id="Keybinds"] {
-	--icon: icon("keyboard3");
-}
-
-[data-tab-id="Language"] {
-	--icon: icon("translate");
-}
-
-[data-tab-id="Streamer Mode"] {
-	--icon: icon("camera-small");
-}
-
-[data-tab-id="Advanced"] {
-	--icon: icon("wrench-wide");
-}
-
-[data-tab-id="VencordPlugins"] {
-	--icon: icon("puzzle-piece");
-}
-
-[data-tab-id="VencordThemes"] {
-	--icon: icon("larger-brush");
-}
-
-[data-tab-id="VencordUpdater"] {
-	--icon: icon("update");
-}
-
-[data-tab-id="VencordCloud"] {
-	--icon: icon("cloud-filled");
-}
-
-[data-tab-id="VencordSettingsSync"] {
-	--icon: icon("history-undo");
-}
+// User settings
+@include -gen-icons(
+	"data-tab-id",
+	(
+		"Accessibility": "body",
+		"Activity Privacy": "screen-privacy4",
+		"Advanced": "wrench-wide",
+		"Appearance": "brush-monitor",
+		"Authorized Apps": "grid-large",
+		"Connections": "phonelink",
+		"Family Center": "eye-open-negative-filled",
+		"Friend Requests": "contact-new",
+		"Keybinds": "keyboard3",
+		"Language": "translate",
+		"My Account": "person",
+		"Notifications": "bell-outline",
+		"Privacy & Safety": "screen-privacy4",
+		"Profile Customization": "edit",
+		"Sessions": "smartphone",
+		"Settings Clips": "microphone",
+		"Streamer Mode": "camera-small",
+		"Text & Images": "chat",
+		"VencordCloud": "cloud-filled",
+		"VencordPlugins": "puzzle-piece",
+		"VencordSettingsSync": "history-undo",
+		"VencordThemes": "larger-brush",
+		"VencordUpdater": "update",
+		"Voice & Video": "microphone",
+	)
+);
 
 [data-tab-id="logout"] {
 	--icon: icon("system-log-out");

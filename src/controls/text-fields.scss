@@ -12,6 +12,8 @@
 
 [class*="searchBar_"],
 [class*="searchBox_"] {
+	--icon: icon("loupe-large");
+
 	&[class*="container_"] {
 		@extend %text-field;
 
