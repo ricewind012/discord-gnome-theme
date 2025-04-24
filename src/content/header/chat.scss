@@ -193,7 +193,7 @@
 
 	& > div {
 		&:not(:focus-within) > div {
-			background-color: transparent;
+			background: transparent;
 
 			&,
 			& > [role="button"] {

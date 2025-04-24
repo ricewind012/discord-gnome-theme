@@ -1,10 +1,14 @@
 @use "../mixins/controls";
 
+body {
+	background: var(--bg-overlay-app-frame, var(--window_border_color));
+}
+
 #app-mount {
 	color: var(--window_fg_color);
-	border: var(--app-border-size) solid var(--window_border_color);
 	border-radius: var(--window_radius);
 
+	inset: var(--app-border-size);
 	width: calc(100% - var(--app-border-size) * 2);
 	height: calc(100% - var(--app-border-size) * 2);
 }
