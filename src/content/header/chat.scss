@@ -155,6 +155,14 @@
 		margin: 0;
 	}
 
+	.vc-toolbox-btn {
+		--window_fg_color: transparent;
+
+		svg {
+			display: initial;
+		}
+	}
+
 	// vc
 	.liveQualityIndicator__30845,
 	[class*="live_"] {

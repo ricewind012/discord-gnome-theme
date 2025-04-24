@@ -77,6 +77,21 @@
 	)
 );
 
+// Vencord
+@include -gen-icons(
+	"aria-label",
+	(
+		"Disable Game Activity": "xbox-controller",
+		"Disable Silent Message": "bell-outline",
+		"Disable Silent Typing": "keyboard3",
+		"Enable Game Activity": "xbox-controller",
+		"Enable Silent Message": "bell-outline",
+		"Enable Silent Typing": "keyboard3",
+		"Encrypt Message": "padlock2",
+		"Open Translate Modal": "translate",
+	)
+);
+
 // User settings
 @include -gen-icons(
 	"data-tab-id",
