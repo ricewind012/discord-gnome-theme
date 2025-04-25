@@ -1,51 +1,81 @@
 @use "../../mixins/controls";
 @use "../../mixins/text";
 
+%-center-text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+%-tab-header {
+	position: fixed;
+	top: calc(var(--p) + var(--weird-offset));
+	// prettier-ignore
+	left: calc(
+		var(--p)
+		+ var(--sidebar-width)
+		+ var(--scrollbar-width)
+		+ var(--weird-offset)
+		+ 1px
+	);
+	// prettier-ignore
+	width: calc(
+		100%
+		- var(--p) * 2 - var(--sidebar-width)
+		- var(--titlebar-button-size) - var(--titlebar-button-spacing) * 2
+		- var(--scrollbar-width)
+	);
+	height: var(--headerbar-height);
+	z-index: 999;
+
+	app-region: drag;
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		inset: 0;
+		// prettier-ignore
+		width: calc(
+			100%
+			+ var(--titlebar-button-size) + var(--titlebar-button-spacing) * 2
+			- 5px
+		);
+		z-index: -1;
+
+		background-color: var(--window_bg_color);
+		border-top-right-radius: var(--window_radius);
+		box-shadow: var(--elevation-low);
+	}
+}
+
 .closeButton_c2b141 {
 	@extend %titlebar-button;
 
 	opacity: 1;
 
 	flex: 0 0 var(--titlebar-button-size);
-
-	// align with the other child element
-	.privateChannels__35e86 & {
-		margin-right: 8px;
-	}
 }
 
 .contentColumn__23e6b {
-	&::before {
-		content: "";
-		position: fixed;
-		inset: var(--p);
-		height: var(--headerbar-height);
-		box-shadow: var(--elevation-low);
-		z-index: 1;
+	// First is for vencord, but maybe others as well
+	& > div > .defaultColor__4bd52:first-child,
+	& > .defaultColor__4bd52:first-child,
+	.settingsPage_f131e9 > h3 {
+		@extend %-center-text;
+		@extend %-tab-header;
+		@extend %title-3;
 	}
 
-	/*
-     https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_header-bar.scss
-     L70
-   */
-	& > h2:first-child,
-	& > :first-child > h2:first-child,
-	& > div > :first-child .h1_b717a1,
-	& > div > :first-child .sectionTitle__7bffb > * {
-		--pad: 11px;
-		text-align: center;
-		padding: var(--pad);
+	& > div > .sectionTitle__7bffb {
+		@extend %-tab-header;
 
-		position: fixed;
-		top: var(--p);
-		left: calc(var(--p) + var(--sidebar-width) + var(--pad));
-		width: calc(
-			100% - var(--p) *
-				2 - var(--sidebar-width) - var(--titlebar-button-size) - var(--pad) * 2
-		);
-		z-index: 999;
+		& > * {
+			@extend %-center-text;
+			@extend %title-3;
 
-		app-region: drag;
+			margin: 0;
+		}
 	}
 }
 
@@ -55,6 +85,7 @@
 
 .layers__960e4 {
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
+	--weird-offset: 2px;
 
 	& > .layer__960e4 {
 		opacity: 1;
@@ -77,37 +108,33 @@
 
 	& > :not(:only-child):last-child {
 		box-shadow: var(--elevation-high);
+		border: 1px solid var(--window_border_color);
 		border-radius: var(--window_radius);
 
 		inset: var(--p);
 
 		& > div {
-			top: 0;
+			top: var(--headerbar-height);
 		}
 	}
 }
 
 .sidebarRegion__23e6b {
-	&::before {
-		content: "Settings";
+	[role="tablist"][aria-orientation="vertical"]::before {
+		content: attr(aria-label);
 
 		position: fixed;
-		top: calc(var(--p) + 1px);
-		left: calc(var(--p) + 1px);
-		width: var(--sidebar-width);
+		top: calc(var(--p) + var(--weird-offset));
+		left: calc(var(--p) + var(--weird-offset));
+		width: calc(var(--sidebar-width) + var(--scrollbar-width));
 		height: var(--headerbar-height);
-		z-index: 1;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@extend %-center-text;
 
-		background-color: var(--background-secondary);
-		color: var(--window_fg_color);
-		border-top-left-radius: var(--window_radius);
+		background-color: var(--secondary_sidebar_bg_color);
 		@extend %title-3;
-		text-transform: none;
-		text-align: center;
 		border-right: 1px solid var(--background-modifier-accent);
+		border-top-left-radius: var(--window_radius);
+		box-shadow: var(--elevation-low);
 
 		app-region: drag;
 	}

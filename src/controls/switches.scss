@@ -1,22 +1,29 @@
 .container__87bf1 {
 	--percentage: 15.25%;
+	--spacing: var(--spacing-05x);
+	--swatch-size: 20px;
+
 	background-color: color-mix(
 		in srgb,
 		var(--window_fg_color) var(--percentage),
 		transparent
 	);
+	border: none;
+	padding: var(--spacing);
+
+	width: calc(var(--swatch-size) * 2 + var(--spacing) * 2);
+	height: calc(var(--swatch-size) + var(--spacing) * 2);
 
 	&::before {
 		content: "";
 
-		position: absolute;
-		min-width: 20px;
-		min-height: 20px;
+		display: block;
+		width: var(--swatch-size);
+		height: var(--swatch-size);
 
 		background-color: #fff;
 		border-radius: 14px;
 		box-shadow: 0 2px 4px color-mix(in srgb, black 20%, transparent);
-		margin: 2px;
 
 		transition: var(--switch-transition);
 	}
@@ -33,7 +40,7 @@
 		background-color: var(--accent_bg_color);
 
 		&::before {
-			margin-left: 18px;
+			margin-left: var(--swatch-size);
 			transition: var(--switch-transition);
 		}
 

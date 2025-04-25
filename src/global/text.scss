@@ -10,11 +10,6 @@
 	text-transform: none;
 }
 
-.username__07f91, // VC
-[data-text-variant^="text-md"] {
-	@extend %title-3;
-}
-
 .eyebrow__2b1f5:not(.numberBadge__2b1f5),
 .h1_b717a1,
 .h2_b717a1,
@@ -45,6 +40,10 @@
 [data-text-variant^="text-sm"],
 [data-text-variant^="text-xs"] {
 	@extend %caption;
+}
+
+[data-text-variant^="text-md"] {
+	@extend %title-3;
 }
 
 // links

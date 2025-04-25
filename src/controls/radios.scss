@@ -33,3 +33,7 @@
 		border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
 	}
 }
+
+[role="radiogroup"] {
+	gap: 0;
+}

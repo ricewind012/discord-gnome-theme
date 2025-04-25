@@ -1,10 +1,8 @@
 @use "../../mixins/controls";
 @use "../../mixins/text";
 
-.container__0d850 {
-	@extend %card-with-actual-border-radiuses;
-
-	margin: 0;
+.category__41c03 {
+	margin-bottom: 34px;
 }
 
 .contentColumn__23e6b {
@@ -20,8 +18,6 @@
 }
 
 .contentRegion__23e6b {
-	margin-top: 46px;
-
 	// for banner
 	flex-direction: column-reverse;
 
@@ -57,7 +53,8 @@
 }
 
 .labelRow__0d850 .title__0d850 {
-	font-size: var(--document-font-size);
+	@extend %text-normal;
+
 	margin-right: 8px;
 }
 
@@ -75,6 +72,10 @@
 		display: none;
 	}
 
+	.searchBar_c7e907 {
+		margin: 0 var(--menu_margin) 2px;
+	}
+
 	.separator_b3f026 {
 		margin: var(--menu_margin);
 	}
@@ -82,11 +83,14 @@
 
 .sidebarRegion__23e6b {
 	border-right: 1px solid var(--background-modifier-accent);
-	margin-top: var(--headerbar-height);
 
 	flex: unset;
 }
 
 .standardSidebarView__23e6b {
 	top: 0;
+}
+
+.title__3e443 {
+	margin-bottom: 0;
 }
