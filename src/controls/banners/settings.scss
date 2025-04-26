@@ -1,5 +1,9 @@
 @use "../../mixins/controls";
 
+.actions_fcf29c {
+	gap: var(--spacing);
+}
+
 .container_fcf29c {
 	@extend %banner;
 
@@ -15,7 +19,9 @@
 
 .noticeRegion__23e6b {
 	padding: 0;
-	position: unset;
+
+	position: relative;
+	top: var(--headerbar-height);
 	width: 100%;
 	max-width: unset;
 

@@ -1,5 +1,6 @@
 @use "../../mixins/controls";
 
+// TODO: don't remember where this is lol
 .chatHeaderBar_dc83f5 {
 	@extend %banner;
 
@@ -8,55 +9,38 @@
 	}
 }
 
+.chatHeaderBarText_dc83f5 {
+	text-align: center;
+}
+
 .barBase__0f481 {
 	@extend %banner;
 
-	opacity: 1;
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
 	margin: 0;
 
-	inset: 0;
-	bottom: unset;
-	z-index: 3;
+	position: unset;
+	width: 100%;
 	height: unset;
 	min-height: unset;
+
+	// TODO: selector
+	.button__201d5 {
+		@extend %button;
+	}
 }
 
 .barButtonAlt__0f481 {
 	@extend %button;
-
-	padding-left: 0;
 }
 
-.chatHeaderBarText_dc83f5,
 .barButtonBase__0f481 {
 	text-align: center;
+	padding: 0 var(--spacing);
 }
 
-.jumpToPresentBar__0f481 {
-	top: 5000px;
-
-	& > .button__201d5 {
-		@extend %button;
-
-		position: absolute;
-		top: calc(-5000px + var(--spacing));
-	}
-}
-
-.messagesWrapper__36d07:has(> .jumpToPresentBar__0f481:nth-child(3)) {
-	--offset: 134px;
-}
-
-.newMessagesBar__0f481 .barButtonMain__0f481 {
-	margin-left: calc(var(--offset, 0px) + var(--spacing));
-}
-
-// no top bar
-.messagesWrapper__36d07 > .jumpToPresentBar__0f481:nth-child(2) {
-	top: 0;
-	bottom: initial;
-	flex-direction: row-reverse;
+.messagesWrapper__36d07 {
+	flex-direction: column;
 }
