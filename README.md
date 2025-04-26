@@ -1,35 +1,40 @@
-# discord-gnome-theme
+# Discord GNOME Theme
 
 A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines (with whatever the Discord CSS lets me do).
 
 ## Requirements
 
-1. Settings > Language > Choose "English (US)"
-2. Settings > Plugins > Enable "ThemeAttributes"
-3. Settings > Vesktop Settings > Enable "Discord Titlebar"
+1. Vesktop
+
+   For enabling the Windows titlebar.
+
+2. Settings > Language > Choose "English (US)"
+
+   This allows for custom icons due to how they are identified in Discord.
+
+3. Settings > Plugins > Enable "ThemeAttributes"
+
+   This allows for icons in the settings dialog.
+
+4. Settings > Vesktop Settings > Enable "Discord Titlebar"
+
+   Optional, but recommended if you have titlebars.
 
 ### Optional additions
 
-1. Colorful placeholder icons: https://github.com/NYRI4/Discolored
-2. Remove Nitro references: https://github.com/CroissantDuNord/discord-adblock
+1. Remove Nitro references: https://github.com/CroissantDuNord/discord-adblock
 
-## TODO
-
-- Rewrite
-- Scrollbars
-- Fix message form
-- Old messages banner -> toast
-- Update dialogs to newer libadwaita
+   Nitro elements are not themed, but they should not look broken either way.
 
 ## Installation
 
-Copy the following into the text box located in Settings > Themes > "Online Themes" tab:
+Copy the following into the text box located in Settings > Themes > Online Themes:
 
 ```
 https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
 ```
 
-or put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes for additional configuration.
+or put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes for additional configuration. It's still updated automatically.
 
 ## Preview
 
