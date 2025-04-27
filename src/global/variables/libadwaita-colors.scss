@@ -1,0 +1,134 @@
+// Reference: https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/doc/css-variables.md?ref_type=heads
+
+.theme-light {
+	--accent_color: #1c71d8;
+	--accent_bg_color: #3584e4;
+	--accent_fg_color: #ffffff;
+	--destructive_color: #c30000;
+	--destructive_bg_color: #e01b24;
+	--destructive_fg_color: #ffffff;
+	--success_color: #007c3d;
+	--success_bg_color: #2ec27e;
+	--success_fg_color: #ffffff;
+	--warning_color: #905400;
+	--warning_bg_color: #e5a50a;
+	--warning_fg_color: rgba(0, 0, 0, 0.8);
+	--error_color: #c30000;
+	--error_bg_color: #e01b24;
+	--error_fg_color: #ffffff;
+	--window_bg_color: #fafafb;
+	--window_fg_color: rgba(0, 0, 6, 0.8);
+	--view_bg_color: #ffffff;
+	--view_fg_color: rgba(0, 0, 6, 0.8);
+	--headerbar_bg_color: #ffffff;
+	--headerbar_fg_color: rgba(0, 0, 6, 0.8);
+	--headerbar_border_color: rgba(0, 0, 6, 0.8);
+	--headerbar_backdrop_color: #fafafb;
+	--headerbar_shade_color: rgba(0, 0, 6, 0.12);
+	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.12);
+	--sidebar_bg_color: #ebebed;
+	--sidebar_fg_color: rgba(0, 0, 6, 0.8);
+	--sidebar_backdrop_color: #f2f2f4;
+	--sidebar_border_color: rgba(0, 0, 6, 0.07);
+	--sidebar_shade_color: rgba(0, 0, 6, 0.07);
+	--secondary_sidebar_bg_color: #f3f3f5;
+	--secondary_sidebar_fg_color: rgba(0, 0, 6, 0.8);
+	--secondary_sidebar_backdrop_color: #f6f6fa;
+	--secondary_sidebar_border_color: rgba(0, 0, 6, 0.07);
+	--secondary_sidebar_shade_color: rgba(0, 0, 6, 0.07);
+	--card_bg_color: #ffffff;
+	--card_fg_color: rgba(0, 0, 6, 0.8);
+	--card_shade_color: rgba(0, 0, 6, 0.07);
+	--thumbnail_bg_color: #ffffff;
+	--thumbnail_fg_color: rgba(0, 0, 0, 0.8);
+	--dialog_bg_color: #fafafb;
+	--dialog_fg_color: rgba(0, 0, 6, 0.8);
+	--popover_bg_color: #ffffff;
+	--popover_fg_color: rgba(0, 0, 6, 0.8);
+	--popover_shade_color: rgba(0, 0, 6, 0.07);
+}
+
+.theme-dark {
+	--accent_color: #78aeed;
+	--accent_bg_color: #3584e4;
+	--accent_fg_color: #ffffff;
+	--destructive_color: #ff938c;
+	--destructive_bg_color: #c01c28;
+	--destructive_fg_color: #ffffff;
+	--success_color: #78e9ab;
+	--success_bg_color: #26a269;
+	--success_fg_color: #ffffff;
+	--warning_color: #ffc252;
+	--warning_bg_color: #cd9309;
+	--warning_fg_color: rgba(0, 0, 0, 0.8);
+	--error_color: #ff7b63;
+	--error_bg_color: #c01c28;
+	--error_fg_color: #ffffff;
+	--window_bg_color: #222226;
+	--window_fg_color: #ffffff;
+	--view_bg_color: #1d1d20;
+	--view_fg_color: #ffffff;
+	--headerbar_bg_color: #2e2e32;
+	--headerbar_fg_color: #ffffff;
+	--headerbar_border_color: #ffffff;
+	--headerbar_backdrop_color: #222226;
+	--headerbar_shade_color: rgba(0, 0, 6, 0.36);
+	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.9);
+	--sidebar_bg_color: #2e2e32;
+	--sidebar_fg_color: #ffffff;
+	--sidebar_backdrop_color: #28282c;
+	--sidebar_border_color: rgba(0, 0, 6, 0.36);
+	--sidebar_shade_color: rgba(0, 0, 6, 0.25);
+	--secondary_sidebar_bg_color: #28282c;
+	--secondary_sidebar_fg_color: #ffffff;
+	--secondary_sidebar_backdrop_color: #252529;
+	--secondary_sidebar_border_color: rgba(0, 0, 6, 0.36);
+	--secondary_sidebar_shade_color: rgba(0, 0, 6, 0.25);
+	--card_bg_color: rgba(255, 255, 255, 0.08);
+	--card_fg_color: #ffffff;
+	--card_shade_color: rgba(0, 0, 6, 0.36);
+	--thumbnail_bg_color: #39393d;
+	--thumbnail_fg_color: #ffffff;
+	--dialog_bg_color: #36363a;
+	--dialog_fg_color: #ffffff;
+	--popover_bg_color: #36363a;
+	--popover_fg_color: #ffffff;
+	--popover_shade_color: rgba(0, 0, 6, 0.25);
+}
+
+// my colors, cuz idk what these colors are
+.theme-light {
+	--bg-selected-percentage: 7.5%;
+	--bg-active-percentage: 13.75%;
+	--bg-hover-percentage: 4.75%;
+	--separator-percentage: 21.75%;
+
+	--window_border_color: #d4d4d4;
+	--window_fg_muted: #909090;
+	--selection-bg: #b4cce9;
+
+	--card_bg_hover_color: #f9f9f9;
+	--card_bg_active_color: #efefef;
+}
+
+.theme-dark {
+	--bg-selected-percentage: 7.5%;
+	--bg-active-percentage: 13.75%;
+	--bg-hover-percentage: 4.75%;
+	--separator-percentage: 13.25%;
+
+	--window_border_color: #333;
+	--window_fg_muted: #959595;
+	--selection-bg: #344c69;
+
+	--card_bg_hover_color: color-mix(
+		in srgb,
+		var(--window_fg_color) 11%,
+		transparent
+	);
+	--card_bg_active_color: color-mix(
+		in srgb,
+		var(--window_fg_color) 15.5%,
+		transparent
+	);
+}

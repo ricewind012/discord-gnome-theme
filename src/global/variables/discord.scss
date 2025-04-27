@@ -1,0 +1,159 @@
+.theme-light,
+.theme-dark {
+	--background-primary: var(--window_bg_color);
+	--background-secondary: var(--secondary_sidebar_bg_color);
+	--background-secondary-alt: var(--secondary_sidebar_bg_color);
+	--background-tertiary: var(--sidebar_bg_color);
+	--background-floating: var(--popover_bg_color);
+
+	--bg-base-tertiary: var(--sidebar_bg_color);
+	--background-base-low: var(--window_bg_color);
+	--background-base-lower: var(--window_bg_color);
+	--background-base-lowest: var(--secondary_sidebar_bg_color);
+	--background-surface-high: var(--popover_bg_color);
+	--background-surface-higher: var(--popover_bg_color);
+	--background-surface-highest: var(--popover_bg_color);
+
+	--background-modifier-hover: color-mix(
+		in srgb,
+		currentColor var(--bg-hover-percentage),
+		transparent
+	);
+	--background-modifier-active: color-mix(
+		in srgb,
+		currentColor var(--bg-active-percentage),
+		transparent
+	);
+	--background-modifier-selected: color-mix(
+		in srgb,
+		currentColor var(--bg-selected-percentage),
+		transparent
+	);
+	--background-modifier-accent: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--separator-percentage),
+		var(--window_bg_color)
+	);
+
+	--background-message-hover: var(--sidebar_bg_color);
+	--background-mentioned: color-mix(
+		in srgb,
+		var(--warning_bg_color) 10%,
+		transparent
+	);
+	--background-mentioned-hover: color-mix(
+		in srgb,
+		var(--warning_bg_color) 20%,
+		transparent
+	);
+	--background-message-highlight: color-mix(
+		in srgb,
+		var(--accent_bg_color) 10%,
+		transparent
+	);
+	--background-message-highlight-hover: color-mix(
+		in srgb,
+		var(--accent_bg_color) 20%,
+		transparent
+	);
+
+	--modal-footer-background: transparent;
+
+	--text-danger: var(--destructive_color);
+	--text-link: var(--accent_color);
+	--text-muted: var(--window_fg_muted);
+	--text-normal: var(--window_fg_color);
+	--text-positive: var(--success_color);
+	--text-primary: var(--window_fg_color);
+	--text-secondary: var(--window_fg_muted);
+	--text-tertiary: var(--window_fg_muted);
+	--text-warning: var(--warning_color);
+
+	--header-primary: var(--window_fg_color);
+	--header-secondary: var(--window_fg_color);
+	--header-muted: var(--window_fg_color);
+
+	--interactive-normal: var(--window_fg_color);
+	--interactive-active: var(--window_fg_color);
+	--interactive-hover: var(--window_fg_color);
+	--interactive-muted: var(--window_fg_muted);
+
+	--channel-text-area-placeholder: var(--text-muted);
+	--channels-default: var(--window_fg_color);
+	--embed-title: var(--window_fg_color);
+
+	--status-danger: var(--destructive_color);
+	--status-dnd: var(--destructive_color);
+	--status-idle: var(--warning_color);
+	--status-offline: var(--text-muted);
+	--status-online: var(--success_color);
+	--status-positive: var(--success_color);
+	--status-positive-background: var(--success_color);
+	--status-positive-text: var(--window_fg_color);
+	--status-speaking: var(--success_color);
+	--status-warning: var(--warning_color);
+	--status-warning-background: var(--warning_bg_color);
+	--status-warning-text: var(--warning_fg_color);
+
+	--custom-app-top-bar-height: 0px;
+	--chat-markup-line-height: 1.5rem;
+	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
+
+	--custom-margin-margin-x-small: 16px;
+	--custom-margin-margin-small: 16px;
+	--custom-margin-margin-medium: 16px;
+	--custom-margin-margin-large: 16px;
+	--custom-margin-margin-x-large: 16px;
+
+	--elevation-stroke: 0 0 0 1px var(--window_border_color);
+	// prettier-ignore
+	--elevation-low: 
+		0 1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
+		0 2px 4px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent);
+	// prettier-ignore
+	--elevation-medium:
+		0 0 0 1px rgb(0 0 6 / 3%),
+		0 1px 3px 1px rgb(0 0 6 / 7%),
+		0 2px 6px 2px rgb(0 0 6 / 3%);
+	// prettier-ignore
+	--elevation-high:
+		0 1px 3px 3px transparent,
+		0 2px 8px 2px rgb(0 0 6 / 7%),
+		0 3px 20px 10px rgb(0 0 6 / 5%),
+		0 6px 32px 16px rgb(0 0 6 / 2%),
+		0 0 0 1px rgb(0 0 6 / 5%);
+
+	--legacy-elevation-low: var(--elevation-low);
+	--legacy-elevation-high: var(--elevation-high);
+	--legacy-elevation-border: var(--elevation-stroke);
+
+	$shadows: (
+		border: stroke,
+		ledge: low,
+		low: low,
+		low-active: low,
+		low-hover: low,
+		medium: medium,
+		high: high,
+		top-low: low,
+		top-high: high,
+		top-ledge: stroke,
+	);
+
+	@each $name, $type in $shadows {
+		--shadow-#{$name}: var(--elevation-#{$type});
+		--shadow-#{$name}-filter: drop-shadow(var(--elevation-#{$type}));
+	}
+
+	--radius-xs: var(--base-unit);
+	--radius-sm: var(--base-unit);
+	--radius-md: calc(var(--base-unit) * 2);
+	--radius-lg: calc(var(--base-unit) * 2);
+	--radius-xl: calc(var(--base-unit) * 3);
+	--radius-xxl: calc(var(--base-unit) * 3);
+
+	--font-primary: var(--document-font-family);
+	--font-display: var(--document-font-family);
+	--font-headline: var(--document-font-family);
+	--font-code: var(--monospace-font-family);
+}

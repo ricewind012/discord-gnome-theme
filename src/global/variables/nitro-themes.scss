@@ -1,0 +1,9 @@
+.custom-theme-background {
+	--nitro-border: rgb(
+		var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)
+	);
+
+	--background-modifier-accent: var(--nitro-border);
+	--secondary_sidebar_border_color: var(--nitro-border);
+	--window_border_color: var(--nitro-border);
+}
