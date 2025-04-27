@@ -77,6 +77,19 @@
 	)
 );
 
+// Image carousel modal
+@include -gen-icons(
+	"aria-label",
+	(
+		"Forward": "mail-forward",
+		"Next": "go-next",
+		"Open in Browser": "external-link",
+		"Previous": "go-previous",
+		"Zoom In": "loupe-plus-large",
+		"Zoom Out": "loupe-minus-large",
+	)
+);
+
 // Vencord
 @include -gen-icons(
 	"aria-label",

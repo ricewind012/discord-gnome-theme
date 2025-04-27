@@ -1,0 +1,47 @@
+@use "../mixins/controls/buttons";
+
+.actionButton_cc1819 {
+	@extend %icon-button;
+}
+
+.actionButtons_cc1819 {
+	background-color: transparent;
+	border: none;
+	gap: var(--spacing);
+	padding: 0;
+}
+
+.button_aec7ab {
+	@extend %icon-button;
+}
+
+.carouselModal_d3a6f0 {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	margin: var(--space-xxl);
+}
+
+.gallery_d75751 {
+	gap: var(--spacing-05x);
+}
+
+.galleryItem_d75751 {
+	border-radius: 0;
+
+	&.first_d75751 {
+		border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+	}
+
+	&.last_d75751 {
+		border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+	}
+}
+
+.mediaArea_e03578 {
+	box-shadow: var(--elevation-high);
+}
+
+.topBar__6088c {
+	gap: var(--spacing);
+}

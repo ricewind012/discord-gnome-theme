@@ -26,10 +26,6 @@
 		.header_c19a55 {
 			line-height: var(--chat-markup-line-height);
 		}
-
-		.timestamp_c19a55 {
-			@extend %caption;
-		}
 	}
 
 	&.compact_c19a55 {
@@ -85,10 +81,14 @@
 			@extend %title-1;
 		}
 	}
+}
 
-	.username_c19a55 {
-		@extend %title-3;
-	}
+.timestamp_c19a55 {
+	@extend %caption;
+}
+
+.username_c19a55 {
+	@extend %title-3;
 }
 
 .chatLayerWrapper__01ae2 > .container__01ae2 {
