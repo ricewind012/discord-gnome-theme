@@ -56,4 +56,8 @@
 		--focus_transition: none;
 		--switch-transition: none;
 	}
+
+	&:not(.app-focused) {
+		--window-icon-opacity: 0.5;
+	}
 }

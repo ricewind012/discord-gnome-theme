@@ -17,9 +17,10 @@
 	--dialog-spacing: 24px;
 
 	background-color: var(--dialog_bg_color);
-	border: var(--app-border-size) solid var(--window_border_color);
 	border-radius: var(--window_radius);
 	box-shadow: var(--shadow-high);
+	outline: 1px solid rgba(255, 255, 255, 7%);
+	outline-offset: -1px;
 
 	&:has(.close__49fc1) {
 		background-color: var(--window_bg_color);
