@@ -1,16 +1,34 @@
 @use "../mixins/controls";
 
-body {
-	background: var(--bg-overlay-app-frame, var(--window_border_color));
+// TODO
+.custom-theme-background {
+	body {
+		background: var(--bg-overlay-app-frame);
+	}
+
+	#app-mount {
+		inset: var(--app-border-size);
+		width: calc(100% - var(--app-border-size) * 2);
+		height: calc(100% - var(--app-border-size) * 2);
+	}
 }
 
 #app-mount {
 	color: var(--window_fg_color);
 	border-radius: var(--window_radius);
 
-	inset: var(--app-border-size);
-	width: calc(100% - var(--app-border-size) * 2);
-	height: calc(100% - var(--app-border-size) * 2);
+	&::before {
+		content: "";
+
+		position: absolute;
+		inset: 1px;
+		z-index: 9999;
+
+		pointer-events: none;
+
+		outline: var(--app-border-size) solid var(--window_outline_color);
+		border-radius: var(--window_radius);
+	}
 }
 
 .bar_c38106 {

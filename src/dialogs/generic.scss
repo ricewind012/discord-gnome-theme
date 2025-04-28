@@ -19,7 +19,7 @@
 	background-color: var(--dialog_bg_color);
 	border-radius: var(--window_radius);
 	box-shadow: var(--shadow-high);
-	outline: 1px solid rgba(255, 255, 255, 7%);
+	outline: 1px solid var(--window_outline_color);
 	outline-offset: -1px;
 
 	&:has(.close__49fc1) {

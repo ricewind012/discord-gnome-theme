@@ -46,11 +46,6 @@
 	--popover_bg_color: #ffffff;
 	--popover_fg_color: rgba(0, 0, 6, 0.8);
 	--popover_shade_color: rgba(0, 0, 6, 0.07);
-
-	&:not(.app-focused) {
-		--sidebar_bg_color: var(--sidebar_backdrop_color);
-		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
-	}
 }
 
 .theme-dark {
@@ -99,11 +94,6 @@
 	--popover_bg_color: #36363a;
 	--popover_fg_color: #ffffff;
 	--popover_shade_color: rgba(0, 0, 6, 0.25);
-
-	&:not(.app-focused) {
-		--sidebar_bg_color: var(--sidebar_backdrop_color);
-		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
-	}
 }
 
 // my colors, cuz idk what these colors are
@@ -113,9 +103,7 @@
 	--bg-hover-percentage: 4.75%;
 	--separator-percentage: 21.75%;
 
-	--window_border_color: #d4d4d4;
 	--window_fg_muted: #909090;
-	--selection-bg: #b4cce9;
 
 	--card_bg_hover_color: #f9f9f9;
 	--card_bg_active_color: #efefef;
@@ -127,9 +115,7 @@
 	--bg-hover-percentage: 4.75%;
 	--separator-percentage: 13.25%;
 
-	--window_border_color: #333;
 	--window_fg_muted: #959595;
-	--selection-bg: #344c69;
 
 	--card_bg_hover_color: color-mix(
 		in srgb,

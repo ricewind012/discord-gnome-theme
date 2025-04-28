@@ -105,7 +105,7 @@
 	--custom-margin-margin-large: 16px;
 	--custom-margin-margin-x-large: 16px;
 
-	--elevation-stroke: 0 0 0 1px var(--window_border_color);
+	--elevation-stroke: 0 0 0 1px var(--window_outline_color);
 	// prettier-ignore
 	--elevation-low: 
 		0 1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),

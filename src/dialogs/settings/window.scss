@@ -108,7 +108,7 @@
 
 	& > :not(:only-child):last-child {
 		box-shadow: var(--elevation-high);
-		border: 1px solid var(--window_border_color);
+		border: 1px solid var(--window_outline_color);
 		border-radius: var(--window_radius);
 
 		inset: var(--p);

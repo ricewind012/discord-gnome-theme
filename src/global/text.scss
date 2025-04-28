@@ -3,7 +3,16 @@
 // Reference: _labels.scss
 
 ::selection {
-	background-color: var(--selection-bg);
+	background-color: color-mix(in srgb, var(--view_fg_color) 10%, transparent);
+	color: transparent;
+
+	&:focus-within {
+		background-color: color-mix(
+			in srgb,
+			var(--accent_bg_color) 30%,
+			transparent
+		);
+	}
 }
 
 [data-text-variant] {

@@ -38,6 +38,7 @@
 		var(--window_bg_color)
 	);
 	--switch-transition: 100ms;
+	--window_outline_color: rgba(255, 255, 255, 7%);
 	--backdrop: color-mix(in srgb, black 25%, transparent);
 	--dim-level-opacity: 50%;
 
@@ -55,9 +56,5 @@
 		--button_transition: none;
 		--focus_transition: none;
 		--switch-transition: none;
-	}
-
-	&:not(.app-focused) {
-		--window-icon-opacity: 0.5;
 	}
 }
