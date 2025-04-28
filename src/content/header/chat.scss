@@ -120,7 +120,7 @@
 	right: calc(var(--titlebar-right-spacing) + var(--spacing));
 }
 
-// Button that shows the channel description
+// Channel description button
 .topicClickTarget__6ec1a {
 	--icon: icon("info-outline");
 
@@ -146,10 +146,6 @@
 .toolbar__9293f {
 	gap: var(--spacing);
 	padding: var(--spacing);
-
-	& > button {
-		margin: 0;
-	}
 
 	[role="button"] {
 		@extend %icon-button;
@@ -186,49 +182,49 @@
 	}
 }
 
-// Search
-.toolbar__9293f > .search__49676 {
+.search__49676 {
 	margin: 0 var(--spacing);
 
 	position: absolute;
 	left: 0;
 
-	& > div {
-		&:not(:focus-within) > div {
-			background: transparent;
-
-			&,
-			& > [role="button"] {
-				width: var(--icon-button-size);
-			}
-		}
-
-		&:focus-within [aria-label="Clear search"] {
-			--icon: icon("window-close");
-		}
-
-		// When expanded, don't round the icon
-		[role="button"] {
-			border-radius: 0;
-		}
-
-		& > div {
-			padding: 0;
-			border: none;
-			border-radius: var(--button_radius);
-
-			height: var(--icon-button-size);
-			flex-direction: row-reverse;
-
-			transition: var(--backdrop_transition);
-
-			& > [role="button"] {
-				cursor: pointer;
-			}
-		}
-	}
-
 	.DraftEditor-root {
 		padding: 4px 0;
+	}
+}
+
+.searchBar__97492 {
+	background-color: color-mix(
+		in srgb,
+		currentColor 10%,
+		var(--window_bg_color)
+	);
+	padding: 0;
+	border: none;
+	border-radius: var(--button_radius);
+
+	height: var(--icon-button-size);
+	flex-direction: row-reverse;
+
+	transition: var(--backdrop_transition);
+
+	.search__97492:not(:focus-within) > & {
+		background: transparent;
+
+		&,
+		.icon__97492 {
+			width: var(--icon-button-size);
+		}
+	}
+}
+
+.icon__97492 {
+	// When expanded, don't round the icon
+	--button_radius: 0;
+
+	cursor: pointer;
+
+	.search__97492:focus-within & {
+		--icon: icon("window-close");
 	}
 }

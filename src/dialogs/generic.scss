@@ -46,10 +46,7 @@
 		margin-top: 0;
 		gap: var(--spacing-2x);
 
-		* {
-			flex-grow: 1;
-		}
-
+		// TODO: button sel
 		button[class] {
 			// Hardcoded (maybe):
 			// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123
@@ -57,6 +54,7 @@
 			// Seen in "Change password" dialog
 			margin: 0;
 
+			flex-grow: 1;
 			height: 44px;
 		}
 	}

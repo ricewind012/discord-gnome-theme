@@ -131,7 +131,8 @@
 	border-radius: var(--button_radius);
 }
 
-[aria-roledescription="Open Thread Button"] {
+// Open thread button
+.container__9271d {
 	@extend %button;
 
 	height: unset;

@@ -83,28 +83,28 @@
 	display: none;
 }
 
+.layer__960e4 {
+	opacity: 1;
+
+	&[aria-hidden="true"] {
+		pointer-events: none;
+		transform: none;
+
+		&::before {
+			content: "";
+
+			position: fixed;
+			inset: 0;
+
+			background-color: var(--backdrop);
+			z-index: 101;
+		}
+	}
+}
+
 .layers__960e4 {
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
 	--weird-offset: 2px;
-
-	& > .layer__960e4 {
-		opacity: 1;
-
-		&[aria-hidden="true"] {
-			pointer-events: none;
-			transform: none;
-
-			&::before {
-				content: "";
-
-				position: fixed;
-				inset: 0;
-
-				background-color: var(--backdrop);
-				z-index: 101;
-			}
-		}
-	}
 
 	& > :not(:only-child):last-child {
 		box-shadow: var(--elevation-high);
@@ -112,10 +112,6 @@
 		border-radius: var(--window_radius);
 
 		inset: var(--p);
-
-		& > div {
-			top: var(--headerbar-height);
-		}
 	}
 }
 
@@ -138,6 +134,10 @@
 
 		app-region: drag;
 	}
+}
+
+.standardSidebarView__23e6b {
+	top: var(--headerbar-height);
 }
 
 .tools__23e6b {

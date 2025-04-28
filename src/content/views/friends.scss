@@ -9,15 +9,6 @@
 	.container__7d20c {
 		background: var(--bg-overlay-2, var(--background-secondary));
 	}
-
-	[role="button"][aria-haspopup] {
-		height: unset;
-		min-height: unset;
-
-		svg {
-			display: block;
-		}
-	}
 }
 
 .peopleColumn__133bf {
@@ -41,8 +32,6 @@
 	overflow: auto;
 }
 
-// "list" role is used in many places, including ones I DO NOT FUCKING WANT
-// "listitem" is not reliable, since there are "option" ones being used
 .peopleListItem_cc6179 {
 	@extend %card-with-actual-border-radiuses;
 

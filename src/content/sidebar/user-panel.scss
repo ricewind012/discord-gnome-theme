@@ -14,7 +14,24 @@
 	);
 
 	.avatarWrapper__37e49 {
+		@extend %icon-button;
+
+		border-radius: 0;
+		padding: var(--spacing);
+
 		height: unset;
+
+		&::before {
+			display: none;
+		}
+
+		& > * {
+			display: initial;
+		}
+	}
+
+	.button_e131a9 {
+		@extend %icon-button;
 	}
 
 	.container__37e49 {
@@ -23,6 +40,7 @@
 		margin-right: var(--spacing);
 	}
 
+	/*
 	button {
 		@extend %icon-button;
 
@@ -33,25 +51,11 @@
 			display: none;
 		}
 	}
+		*/
 
 	.micButtonParent__37e49,
 	[aria-label="Deafen"] {
 		display: none;
-	}
-
-	[role="button"] {
-		@extend %icon-button;
-
-		border-radius: 0;
-		padding: var(--spacing);
-
-		&::before {
-			display: none;
-		}
-
-		& > * {
-			display: initial;
-		}
 	}
 }
 
