@@ -18,11 +18,21 @@
 	@extend %caption;
 }
 
+.searchResultGroup_c68065 {
+	--offset: calc(var(--document-font-size) * 1.25 + 4px);
+
+	margin-bottom: calc(var(--offset) + 24px);
+
+	position: relative;
+	top: var(--offset);
+}
+
 .searchResultsWrap_a9e706 {
 	border-left: 1px solid var(--secondary_sidebar_border_color);
 
 	z-index: 0;
 
+	// TODO: button sel
 	.button__02a39 {
 		@extend %button;
 
@@ -35,6 +45,9 @@
 	.channelNameContainer_c68065 {
 		margin-bottom: 16px;
 
+		position: absolute;
+		top: calc(var(--offset) * -1);
+
 		& > svg {
 			display: none;
 		}
@@ -42,21 +55,6 @@
 
 	.channelNameText_c68065 > span {
 		@extend %title-2;
-	}
-
-	[role="group"] {
-		--offset: calc(var(--document-font-size) * 1.25 + 4px);
-
-		margin-bottom: calc(var(--offset) + 24px);
-
-		position: relative;
-		top: var(--offset);
-
-		// header
-		& > :first-child {
-			position: absolute;
-			top: calc(var(--offset) * -1);
-		}
 	}
 
 	[role="listitem"] {

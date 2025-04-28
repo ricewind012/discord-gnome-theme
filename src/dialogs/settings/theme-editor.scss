@@ -1,0 +1,40 @@
+@use "../../mixins/controls";
+@use "../../mixins/text";
+
+.closeCircleButton_cf6da1 {
+	--icon: icon("window-close");
+
+	@extend %titlebar-button;
+
+	inset: 0;
+	order: 1;
+}
+
+.editorFooter_cf6da1 {
+	display: none;
+}
+
+.editorHeader_cf6da1 {
+	box-shadow: var(--elevation-low);
+	padding-inline: 0 var(--titlebar-button-spacing);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: 1 0 auto;
+	width: unset;
+	height: var(--headerbar-height);
+
+	h3 {
+		@extend %title-3;
+
+		margin: auto;
+	}
+}
+
+.themeEditor_cf6da1 {
+	border-left: 1px solid var(--secondary_sidebar_border_color);
+	padding: 0;
+
+	z-index: 999;
+}

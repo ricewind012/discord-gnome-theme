@@ -1,4 +1,6 @@
-div[data-list-item-id$="forum-channel-header"] {
+@use "../../mixins/controls";
+
+.headerRow_f369db {
 	background-color: transparent;
 	box-shadow: none;
 	padding: 0;
@@ -9,48 +11,29 @@ div[data-list-item-id$="forum-channel-header"] {
 	}
 }
 
-[data-list-id^="forum-channel-list"] > [role="list"] {
+.list_f369db > .content__99f8c {
 	--custom-forum-post-form-horizontal-padding: 0px;
 	padding: 0;
+}
 
-	.titleContainer_d9be46 {
-		gap: var(--spacing-2x);
+.card_f369db {
+	@extend %card-with-actual-border-radiuses;
 
-		& > [role="button"] {
-			background-color: color-mix(
-				in srgb,
-				currentColor var(--percentage),
-				transparent
-			);
-			border-radius: 50%;
-			margin: 0;
-
-			position: relative;
-			width: var(--icon-button-size);
-			height: var(--icon-button-size);
-
-			transition: var(--backdrop_transition);
-			order: 1;
-
-			&:hover {
-				// *exact* #404040 for dark theme
-				--percentage: 12.75%;
-			}
-
-			&:active {
-				// *exact* #616161 for dark theme
-				--percentage: 27.75%;
-			}
-		}
+	& > div {
+		background-color: transparent;
+		border: none;
+		padding: 0;
 	}
+}
 
-	[data-item-role="item"] {
-		& > div {
-			background-color: transparent;
-			border: none;
-			padding: 0;
-		}
-	}
+.forumPostFormButton_d9be46 {
+	--icon: icon("info-outline");
+
+	@extend %icon-button;
+
+	margin: 0;
+
+	order: 1;
 }
 
 .header_f369db {
@@ -60,6 +43,10 @@ div[data-list-item-id$="forum-channel-header"] {
 
 .tagsContainer_f369db {
 	padding: 0;
+}
+
+.titleContainer_d9be46 {
+	gap: var(--spacing-2x);
 }
 
 .prefixElement_d9be46 {

@@ -1,15 +1,3 @@
-[data-list-id="guildsnav"] {
-	border-right: 1px solid var(--secondary_sidebar_border_color);
-
-	.scroller_ef3116 {
-		padding-top: var(--space-md);
-	}
-
-	.footer__214dc {
-		display: none;
-	}
-}
-
 .guilds_c48ade {
 	margin: 0;
 }
@@ -18,4 +6,12 @@
 	background-color: var(--sidebar_border_color);
 
 	width: calc(100% - var(--spacing) * 2);
+}
+
+.scroller_ef3116 {
+	padding-top: var(--space-md);
+}
+
+.tree_ef3116 {
+	border-right: 1px solid var(--secondary_sidebar_border_color);
 }

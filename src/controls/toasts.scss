@@ -1,39 +1,39 @@
 @use "../mixins/controls";
 
-.stackedBars__74017 {
-	.replyBar__841c8 {
-		background-color: inherit;
-		gap: var(--spacing);
-		padding: var(--spacing);
-	}
+.mentionButton__841c8 {
+	@extend %button;
 
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--percentage),
+		transparent
+	);
+	box-sizing: border-box;
+
+	svg {
+		display: initial;
+	}
+}
+
+.replyBar__841c8 {
+	background-color: inherit;
+	gap: var(--spacing);
+	padding: var(--spacing);
+}
+
+.replyLabel__841c8 {
+	margin-left: var(--spacing);
+}
+
+.threadSuggestionBar__841c8,
+.separator__841c8 {
+	display: none;
+}
+
+.stackedBars__74017 {
 	[data-text-variant] {
 		color: inherit;
 		font-weight: bold;
-	}
-
-	.replyLabel__841c8 {
-		margin-left: var(--spacing);
-	}
-
-	.mentionButton__841c8 {
-		@extend %button;
-
-		background-color: color-mix(
-			in srgb,
-			var(--window_fg_color) var(--percentage),
-			transparent
-		);
-		box-sizing: border-box;
-
-		svg {
-			display: initial;
-		}
-	}
-
-	.threadSuggestionBar__841c8,
-	.separator__841c8 {
-		display: none;
 	}
 
 	.closeButton_e876a8 {
