@@ -11,6 +11,18 @@
 
 		transition: var(--backdrop_transition);
 
+		&:hover {
+			background-color: var(--hover_color);
+		}
+
+		&:active {
+			background-color: var(--active_color);
+		}
+
+		&[aria-selected="true"] {
+			background-color: var(--selected_color);
+		}
+
 		&::after {
 			display: none;
 		}
@@ -21,29 +33,12 @@
 		border: none;
 
 		[role="tab"] {
-			background-color: color-mix(
-				in srgb,
-				currentColor var(--percentage),
-				transparent
-			);
 			color: var(--window_fg_color);
 			padding: 5px 10px;
 			margin: 0;
 
 			// user dialog
 			height: unset;
-
-			&:hover {
-				--percentage: var(--bg-hover-percentage);
-			}
-
-			&[aria-selected="true"] {
-				--percentage: var(--bg-selected-percentage);
-			}
-
-			&:active {
-				--percentage: var(--bg-active-percentage);
-			}
 		}
 	}
 

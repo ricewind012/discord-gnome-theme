@@ -4,9 +4,8 @@
 
 ::selection {
 	background-color: color-mix(in srgb, var(--view_fg_color) 10%, transparent);
-	color: transparent;
 
-	&:focus-within {
+	.app-focused & {
 		background-color: color-mix(
 			in srgb,
 			var(--accent_bg_color) 30%,

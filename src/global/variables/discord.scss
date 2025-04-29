@@ -14,25 +14,13 @@
 	--background-surface-higher: var(--popover_bg_color);
 	--background-surface-highest: var(--popover_bg_color);
 
-	--background-modifier-hover: color-mix(
-		in srgb,
-		currentColor var(--bg-hover-percentage),
-		transparent
-	);
-	--background-modifier-active: color-mix(
-		in srgb,
-		currentColor var(--bg-active-percentage),
-		transparent
-	);
-	--background-modifier-selected: color-mix(
-		in srgb,
-		currentColor var(--bg-selected-percentage),
-		transparent
-	);
+	--background-modifier-hover: var(--hover_color);
+	--background-modifier-active: var(--active_color);
+	--background-modifier-selected: var(--selected_color);
 	--background-modifier-accent: color-mix(
 		in srgb,
-		var(--window_fg_color) var(--separator-percentage),
-		var(--window_bg_color)
+		currentColor var(--border-opacity),
+		transparent
 	);
 
 	--background-message-hover: var(--sidebar_bg_color);

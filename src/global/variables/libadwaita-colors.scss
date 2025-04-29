@@ -96,27 +96,29 @@
 	--popover_shade_color: rgba(0, 0, 6, 0.25);
 }
 
-// my colors, cuz idk what these colors are
+// present in libadwaita in some other form
+:root {
+	--window_outline_color: rgba(255, 255, 255, 7%);
+
+	--hover_color: color-mix(in srgb, currentColor 7%, transparent);
+	--active_color: color-mix(in srgb, currentColor 16%, transparent);
+	--selected_color: color-mix(in srgb, currentColor 10%, transparent);
+	--selected_hover_color: color-mix(in srgb, currentColor 13%, transparent);
+	--selected_active_color: color-mix(in srgb, currentColor 19%, transparent);
+
+	--window_fg_muted: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--dim-level-opacity),
+		transparent
+	);
+}
+
 .theme-light {
-	--bg-selected-percentage: 7.5%;
-	--bg-active-percentage: 13.75%;
-	--bg-hover-percentage: 4.75%;
-	--separator-percentage: 21.75%;
-
-	--window_fg_muted: #909090;
-
 	--card_bg_hover_color: #f9f9f9;
 	--card_bg_active_color: #efefef;
 }
 
 .theme-dark {
-	--bg-selected-percentage: 7.5%;
-	--bg-active-percentage: 13.75%;
-	--bg-hover-percentage: 4.75%;
-	--separator-percentage: 13.25%;
-
-	--window_fg_muted: #959595;
-
 	--card_bg_hover_color: color-mix(
 		in srgb,
 		var(--window_fg_color) 11%,

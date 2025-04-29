@@ -16,11 +16,11 @@
 	transition: var(--backdrop_transition);
 
 	&:hover {
-		background-color: var(--card_bg_hover_color);
+		background-color: color-mix(in srgb, currentColor 3%, transparent);
 	}
 
 	&:active {
-		background-color: var(--card_bg_active_color);
+		background-color: color-mix(in srgb, currentColor 8%, transparent);
 	}
 }
 

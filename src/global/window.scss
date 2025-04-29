@@ -27,7 +27,7 @@
 		pointer-events: none;
 
 		outline: var(--app-border-size) solid var(--window_outline_color);
-		border-radius: var(--window_radius);
+		border-radius: calc(var(--window_radius) - 2px);
 	}
 }
 
