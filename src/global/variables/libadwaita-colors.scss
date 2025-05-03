@@ -1,4 +1,5 @@
 // Reference: https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/doc/css-variables.md?ref_type=heads
+// TODO: redo these for new oklab shit
 
 .theme-light {
 	--accent_color: #1c71d8;
@@ -109,24 +110,6 @@
 	--window_fg_muted: color-mix(
 		in srgb,
 		var(--window_fg_color) var(--dim-level-opacity),
-		transparent
-	);
-}
-
-.theme-light {
-	--card_bg_hover_color: #f9f9f9;
-	--card_bg_active_color: #efefef;
-}
-
-.theme-dark {
-	--card_bg_hover_color: color-mix(
-		in srgb,
-		var(--window_fg_color) 11%,
-		transparent
-	);
-	--card_bg_active_color: color-mix(
-		in srgb,
-		var(--window_fg_color) 15.5%,
 		transparent
 	);
 }
