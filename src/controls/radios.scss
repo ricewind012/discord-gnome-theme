@@ -36,4 +36,6 @@
 
 [role="radiogroup"] {
 	gap: 0;
+	border-radius: var(--card_radius);
+	box-shadow: var(--elevation-medium);
 }

@@ -4,13 +4,13 @@
 .presets__67a11 {
 	@extend %cards-container;
 
+	background-color: transparent;
 	gap: 0;
 
 	overflow: hidden;
 	flex-direction: column;
 
 	[role="radiogroup"]:has(> &) {
-		background-color: transparent;
 		box-shadow: none;
 	}
 }
@@ -22,12 +22,15 @@
 .themeSelection__36dee {
 	// radios.scss override
 	&:first-of-type {
-		// TODO: last one also has it
 		border-bottom: 1px solid var(--card_shade_color);
 		border-radius: 0;
 
 		display: flex;
 		align-items: center;
+
+		.themeSelectionContainer__36dee:nth-last-child(2) > & {
+			border: none;
+		}
 	}
 
 	&::before {

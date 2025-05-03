@@ -1,6 +1,17 @@
 @use "../../mixins/controls";
 @use "../../mixins/text";
 
+.card__73069 {
+	@extend %card;
+
+	border: none;
+
+	// TODO: $activatable
+	&:is(:hover, :active) {
+		background-color: var(--card_bg_color);
+	}
+}
+
 .category__41c03 {
 	margin-bottom: 34px;
 }
