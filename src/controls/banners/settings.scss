@@ -10,11 +10,6 @@
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
-
-	// TODO: rewrite button selectors
-	[class*="button_"][class*="size" i]:not(.size32__06eda, .fullWidth__201d5) {
-		--banner-bg: inherit;
-	}
 }
 
 .noticeRegion__23e6b {

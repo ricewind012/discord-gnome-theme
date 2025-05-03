@@ -17,10 +17,6 @@
 		@extend %-icon;
 	}
 
-	.videoControls_cf09d8 & {
-		--banner-bg: transparent;
-	}
-
 	// vc
 	& > [class*="flex_"] {
 		height: inherit;

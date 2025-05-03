@@ -16,10 +16,6 @@
 	--monospace-font-family: "Adwaita Mono", monospace;
 	--monospace-font-size: 11pt;
 
-	// found in _colors.scss
-	--osd_bg_color: rgba(0, 0, 0, 0.7);
-	--osd_fg_color: rgba(255, 255, 255, 0.9);
-
 	--button_radius: 9px;
 	--card_radius: 12px;
 	--menu_radius: 9px;
@@ -32,13 +28,10 @@
 	--base-unit: 6px;
 	--icon-size: 16px;
 
-	--banner-bg: color-mix(
-		in srgb,
-		var(--accent_bg_color) 30%,
-		var(--window_bg_color)
-	);
 	--switch-transition: 100ms;
 	--backdrop: color-mix(in srgb, black 25%, transparent);
+
+	--border-opacity: 15%;
 	--dim-level-opacity: 50%;
 
 	--headerbar-height: 46px;

@@ -14,25 +14,13 @@
 	--background-surface-higher: var(--popover_bg_color);
 	--background-surface-highest: var(--popover_bg_color);
 
-	--background-modifier-hover: color-mix(
-		in srgb,
-		currentColor var(--bg-hover-percentage),
-		transparent
-	);
-	--background-modifier-active: color-mix(
-		in srgb,
-		currentColor var(--bg-active-percentage),
-		transparent
-	);
-	--background-modifier-selected: color-mix(
-		in srgb,
-		currentColor var(--bg-selected-percentage),
-		transparent
-	);
+	--background-modifier-hover: var(--hover_color);
+	--background-modifier-active: var(--active_color);
+	--background-modifier-selected: var(--selected_color);
 	--background-modifier-accent: color-mix(
 		in srgb,
-		var(--window_fg_color) var(--separator-percentage),
-		var(--window_bg_color)
+		currentColor var(--border-opacity),
+		transparent
 	);
 
 	--background-message-hover: var(--sidebar_bg_color);
@@ -105,7 +93,7 @@
 	--custom-margin-margin-large: 16px;
 	--custom-margin-margin-x-large: 16px;
 
-	--elevation-stroke: 0 0 0 1px var(--window_border_color);
+	--elevation-stroke: 0 0 0 1px var(--window_outline_color);
 	// prettier-ignore
 	--elevation-low: 
 		0 1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),

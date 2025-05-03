@@ -39,7 +39,7 @@
 		width: calc(
 			100%
 			+ var(--titlebar-button-size) + var(--titlebar-button-spacing) * 2
-			- 5px
+			- 3px
 		);
 		z-index: -1;
 
@@ -104,11 +104,11 @@
 
 .layers__960e4 {
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
-	--weird-offset: 2px;
+	--weird-offset: 1px;
 
 	& > :not(:only-child):last-child {
 		box-shadow: var(--elevation-high);
-		border: 1px solid var(--window_border_color);
+		border: 1px solid var(--window_outline_color);
 		border-radius: var(--window_radius);
 
 		inset: var(--p);
