@@ -1,0 +1,30 @@
+@use "../../mixins/controls";
+
+.back_c5cd6a {
+	margin: 0;
+	margin-right: var(--spacing);
+
+	position: unset;
+}
+
+.button_c5cd6a {
+	@extend %button;
+}
+
+// revert %caption
+.header_c5cd6a {
+	color: inherit;
+	margin: auto;
+
+	order: -1;
+}
+
+.notice_c5cd6a {
+	@extend %banner;
+
+	border: none;
+	border-radius: 0;
+
+	height: unset;
+	justify-content: unset;
+}

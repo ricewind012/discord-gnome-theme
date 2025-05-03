@@ -134,6 +134,11 @@
 	left: unset;
 
 	pointer-events: all;
+
+	// TODO: pasted from global/window.scss visible app banner part
+	.content_c48ade:nth-child(3) & {
+		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
+	}
 }
 
 .upperContainer__9293f {

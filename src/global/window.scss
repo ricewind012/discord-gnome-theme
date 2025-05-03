@@ -40,6 +40,17 @@
 	right: var(--titlebar-button-spacing);
 	z-index: 101;
 	height: unset;
+
+	// Visible app banner
+	// TODO: make inbox button not be fixed, since they have the same parent
+	&:nth-last-child(3) {
+		--offset: calc(var(--icon-button-size) + var(--spacing-2x));
+		margin-top: var(--offset);
+
+		.recentsIcon_c99c29 > div {
+			margin-top: var(--offset);
+		}
+	}
 }
 
 .title_c38106 {
