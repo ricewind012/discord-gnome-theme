@@ -1,0 +1,10 @@
+@mixin header {
+	background-color: var(--background-primary);
+	box-shadow: var(--elevation-low);
+	gap: var(--spacing);
+	padding: var(--spacing);
+
+	height: unset;
+	min-height: unset;
+	z-index: 1;
+}

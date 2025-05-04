@@ -1,8 +1,12 @@
+@use "dialog";
+
 .createButton_d9c882 {
 	margin: 0;
 }
 
 .header_d9c882 {
+	@include dialog.header;
+
 	svg,
 	h1,
 	.closeIcon_d9c882,

@@ -32,16 +32,6 @@
 
 	z-index: 0;
 
-	// TODO: button sel
-	.button__02a39 {
-		@extend %button;
-
-		font-size: var(--document-font-size);
-		font-weight: bold;
-
-		height: unset;
-	}
-
 	.channelNameContainer_c68065 {
 		margin-bottom: 16px;
 

@@ -44,11 +44,6 @@
 
 .menuItemInner_ce8328 {
 	padding: 0;
-
-	// TODO: from button[aria-expanded]
-	&::after {
-		display: none;
-	}
 }
 
 .menuOverlay_ce8328 {
@@ -241,11 +236,8 @@
 		gap: var(--spacing);
 		margin: 0;
 
-		// TODO: remove when better button sel
 		button {
 			// TODO: pill button
-			@extend %button;
-
 			padding: 10px 32px;
 			border: none;
 			border-radius: 9999px;

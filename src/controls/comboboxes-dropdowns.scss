@@ -16,28 +16,4 @@
 	.icons__3f413 {
 		@extend %-icon;
 	}
-
-	// vc
-	& > [class*="flex_"] {
-		height: inherit;
-	}
-}
-
-button[aria-expanded] {
-	& > div::after {
-		content: "";
-
-		@extend %-icon;
-	}
-
-	[data-text-variant] {
-		color: inherit;
-		font-size: inherit;
-		margin-left: 0;
-		margin-right: var(--spacing);
-	}
-
-	svg {
-		display: none;
-	}
 }

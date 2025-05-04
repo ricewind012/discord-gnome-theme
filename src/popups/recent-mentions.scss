@@ -1,4 +1,5 @@
 @use "controls";
+@use "dialog";
 
 .controlButton_ab6641 {
 	--icon: icon("funnel");
@@ -14,6 +15,10 @@
 
 .friendRequestsButton__523aa {
 	--icon: icon("person");
+}
+
+.header_ab6641 {
+	@include dialog.header;
 }
 
 .headerTabs_ab6641 {

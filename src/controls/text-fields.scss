@@ -1,5 +1,54 @@
 @use "controls";
 
+/// Class names have to be included by their entire name for easier usage with
+/// the change_classes.js script.
+@mixin -search-input($container, $input, $iconLayout, $inner) {
+	#{$container} {
+		@extend %text-field;
+
+		#{$iconLayout} {
+			--icon: icon("loupe-large");
+			--icon-button-size: var(--icon-size);
+
+			@extend %icon-button;
+
+			background-color: transparent;
+			margin-right: 9px;
+		}
+	}
+
+	#{$input} {
+		font-size: var(--document-font-size);
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+
+		height: inherit;
+	}
+
+	#{$inner} {
+		padding: 0;
+
+		flex-direction: row-reverse;
+	}
+}
+
+// Settings sidebar
+@include -search-input(
+	".container_fea832",
+	".input_fea832",
+	".iconLayout_fea832",
+	".inner_fea832"
+);
+
+// Home page
+@include -search-input(
+	".container_a45028",
+	".input_a45028",
+	".iconLayout_a45028",
+	".inner_a45028"
+);
+
 [role="textbox"] {
 	@extend %text-field-focus;
 }
@@ -10,44 +59,6 @@
 	@extend %text-field;
 }
 
-[class*="searchBar_"],
-[class*="searchBox_"] {
-	--icon: icon("loupe-large");
-
-	&[class*="container_"] {
-		@extend %text-field;
-
-		input {
-			font-size: var(--document-font-size);
-			line-height: 1;
-			padding: 0;
-			margin: 0;
-
-			height: inherit;
-		}
-	}
-
-	& > [class*="inner_"] {
-		padding: 0;
-
-		flex-direction: row-reverse;
-	}
-
-	[role="button"][aria-hidden="true"]:not([class*="icon_"]) {
-		--icon-button-size: var(--icon-size);
-
-		@extend %icon-button;
-
-		background-color: transparent;
-		margin-right: 9px;
-	}
-}
-
-[class*="inputWrapper_"] {
-	border: none;
-
-	input,
-	textarea {
-		@extend %text-field;
-	}
+.input__0f084 {
+	@extend %text-field;
 }

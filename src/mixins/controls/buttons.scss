@@ -35,6 +35,11 @@
 }
 
 %icon-button {
+	// %button compat
+	--percentage: 0%;
+	// .button__201d5.colorGreen, etc. classes compat
+	color: var(--window_fg_color);
+
 	background-color: color-mix(
 		in srgb,
 		currentColor var(--percentage),

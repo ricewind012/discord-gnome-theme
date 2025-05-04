@@ -36,11 +36,9 @@
 	app-region: drag;
 
 	& > button {
-		@extend %icon-button;
+		--icon: icon("loupe-large");
 
-		// Overrides from buttons.scss, since I can't have nice things
-		border: none;
-		min-width: unset;
+		@extend %icon-button;
 
 		position: absolute;
 		top: var(--spacing);

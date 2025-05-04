@@ -167,8 +167,7 @@
 	}
 
 	// vc
-	.liveQualityIndicator__30845,
-	[class*="live_"] {
+	.liveQualityIndicator__30845 {
 		margin-bottom: 0;
 	}
 
@@ -224,6 +223,7 @@
 }
 
 .icon__97492 {
+	--icon: icon("loupe-large");
 	// When expanded, don't round the icon
 	--button_radius: 0;
 
