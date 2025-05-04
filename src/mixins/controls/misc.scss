@@ -1,0 +1,19 @@
+@mixin banner {
+	--banner-color: #7d7d83;
+	background-color: color-mix(
+		in srgb,
+		var(--banner-color) 30%,
+		var(--window_bg_color)
+	);
+	color: var(--window_fg_color);
+	padding: var(--spacing);
+
+	* {
+		font-size: var(--document-font-size);
+		font-weight: bold;
+	}
+
+	svg {
+		display: none;
+	}
+}

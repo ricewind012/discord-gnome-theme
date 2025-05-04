@@ -1,5 +1,5 @@
-@use "../../mixins/controls";
-@use "../../mixins/text";
+@use "controls";
+@use "text";
 
 [href="/channels/@me"] .avatar__20a53 {
 	--icon: icon("org.gnome.Settings-users");

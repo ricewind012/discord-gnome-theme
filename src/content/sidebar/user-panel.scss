@@ -1,5 +1,5 @@
-@use "../../mixins/controls";
-@use "../../mixins/text";
+@use "controls";
+@use "text";
 
 .panels_c48ade {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));

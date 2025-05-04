@@ -1,5 +1,5 @@
-@use "../../mixins/controls";
-@use "../../mixins/text";
+@use "controls";
+@use "text";
 
 %-center-text {
 	display: flex;

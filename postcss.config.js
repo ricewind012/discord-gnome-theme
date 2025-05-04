@@ -50,6 +50,7 @@ export default {
 		}),
 		postcssSassPlugin({
 			silenceDeprecations: ["legacy-js-api"],
+			includePaths: ["src/mixins"],
 		}),
 		appendImportantPlugin(),
 	],

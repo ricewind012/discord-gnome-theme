@@ -1,5 +1,5 @@
-@use "../mixins/controls";
-@use "../mixins/text";
+@use "controls";
+@use "text";
 
 @mixin -role-button($icon) {
 	--icon: icon(#{$icon});

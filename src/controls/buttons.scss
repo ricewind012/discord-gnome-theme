@@ -1,4 +1,4 @@
-@use "../mixins/controls";
+@use "controls";
 
 [class*="button_"][class*="size" i]:not(.size32__06eda, .fullWidth__201d5) {
 	@extend %button;

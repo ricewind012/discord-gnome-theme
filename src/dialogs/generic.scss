@@ -1,4 +1,4 @@
-@use "../mixins/controls";
+@use "controls";
 
 [role="dialog"] {
 	--dialog-spacing-x05: calc(var(--dialog-spacing) / 2);
