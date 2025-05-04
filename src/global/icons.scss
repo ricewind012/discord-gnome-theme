@@ -90,10 +90,22 @@
 	)
 );
 
+// User profile popout
+@include -gen-icons(
+	"aria-label",
+	(
+		"Add Friend": "plus",
+		"Add Role": "plus",
+		"Friend": "person",
+		"Open in Mod View": "key5",
+	)
+);
+
 // Vencord
 @include -gen-icons(
 	"aria-label",
 	(
+		// Everything below until last comment is in the message form
 		"Disable Game Activity": "xbox-controller",
 		"Disable Silent Message": "bell-outline",
 		"Disable Silent Typing": "keyboard3",
@@ -102,6 +114,8 @@
 		"Enable Silent Typing": "keyboard3",
 		"Encrypt Message": "padlock2",
 		"Open Translate Modal": "translate",
+		// Seen in user profile popout
+		"View Reviews": "notepad"
 	)
 );
 

@@ -18,7 +18,23 @@
 	display: none;
 }
 
-.channelTextArea_f75fb0 {
+.buttons__74017 {
+	gap: 0;
+
+	// align to start for longer text
+	& > div {
+		height: 100%;
+		align-items: start;
+	}
+}
+
+.textArea__74017,
+.buttons__74017 {
+	height: unset;
+	min-height: unset;
+}
+
+.channelTextArea__74017 {
 	background-color: color-mix(
 		in srgb,
 		var(--window_fg_color) 7.5%,
@@ -31,15 +47,6 @@
 		@extend %icon-button;
 
 		border-radius: 0;
-	}
-
-	& > div {
-		background-color: transparent;
-		border-radius: inherit;
-
-		& > div {
-			padding: 0;
-		}
 	}
 
 	.attachButton__0923f {
@@ -63,12 +70,6 @@
 		font-size: var(--document-font-size);
 	}
 
-	.textArea__74017,
-	.buttons__74017 {
-		height: unset;
-		min-height: unset;
-	}
-
 	.placeholder__1b31f,
 	[role="textbox"] {
 		// D*scord just ignores its own variable, genius
@@ -80,16 +81,6 @@
 		min-height: unset;
 	}
 
-	.buttons__74017 {
-		gap: 0;
-
-		// align to start for longer text
-		& > div {
-			height: 100%;
-			align-items: start;
-		}
-	}
-
 	.separator_aa63ab {
 		margin: 0;
 
@@ -97,6 +88,15 @@
 			display: none;
 		}
 	}
+}
+
+.inner__74017 {
+	padding: 0;
+}
+
+.themedBackground__74017 {
+	background-color: transparent;
+	border-radius: inherit;
 }
 
 .channelTextAreaInner_fb64c9 > div > div {
