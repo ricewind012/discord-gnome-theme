@@ -30,10 +30,7 @@
 		}
 	}
 
-	// Currently only user settings
 	.button__201d5 {
-		--icon: icon("settings");
-
 		@extend %icon-button;
 	}
 
