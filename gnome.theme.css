@@ -7,11 +7,10 @@
 @import "https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/dist/dist/index.css";
 
 :root {
-	/*
-	 * on - var(--titlebar-right-button-size)
-	 * off - 0px
-	 */
-	--titlebar-close-button: var(--titlebar-right-button-size);
-	--titlebar-maximize-button: 0px;
-	--titlebar-minimize-button: 0px;
+	/* on/off - flex/none */
+	--titlebar-close-button: flex;
+	--titlebar-maximize-button: none;
+	--titlebar-minimize-button: none;
+	/* also set this to how much buttons are visible */
+	--titlebar-buttons-count: 1;
 }

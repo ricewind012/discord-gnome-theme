@@ -36,20 +36,14 @@
 	padding: 0;
 
 	position: fixed;
-	top: var(--titlebar-button-spacing);
+	top: var(--spacing);
 	right: var(--titlebar-button-spacing);
 	z-index: 101;
 	height: unset;
 
 	// Visible app banner
-	// TODO: make inbox button not be fixed, since they have the same parent
 	&:nth-last-child(3) {
-		--offset: calc(var(--icon-button-size) + var(--spacing-2x));
-		margin-top: var(--offset);
-
-		.recentsIcon_c99c29 > div {
-			margin-top: var(--offset);
-		}
+		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
 }
 
@@ -57,35 +51,32 @@
 	display: none;
 }
 
+.trailing_c38106 {
+	gap: var(--spacing);
+}
+
 .winButton_c38106 {
 	@extend %titlebar-button;
-
-	// TODO: lmao
-	margin-left: calc(
-		max(var(--titlebar-right-button-size), var(--titlebar-button-size)) - var(
-				--titlebar-button-size
-			)
-	);
-
-	width: calc(
-		var(--titlebar-right-button-size) - var(--titlebar-button-spacing)
-	);
 }
 
 .winButtons_c38106 {
-	gap: 0;
+	gap: var(--titlebar-button-spacing);
+
+	&::before {
+		display: none;
+	}
 }
 
 .winButtonClose_c38106 {
-	--titlebar-right-button-size: var(--titlebar-close-button);
+	display: var(--titlebar-close-button);
 }
 
 .winButtonMinMax_c38106 {
 	--icon: icon("window-maximize");
-	--titlebar-right-button-size: var(--titlebar-maximize-button);
+	display: var(--titlebar-maximize-button);
 
 	&:first-child {
 		--icon: icon("window-minimize");
-		--titlebar-right-button-size: var(--titlebar-minimize-button);
+		display: var(--titlebar-minimize-button);
 	}
 }

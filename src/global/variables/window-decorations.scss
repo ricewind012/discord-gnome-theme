@@ -2,22 +2,20 @@
 	--app-border-size: 0px;
 	--titlebar-button-size: 24px;
 	--titlebar-button-spacing: 12px;
-	--titlebar-right-button-size: calc(
-		var(--titlebar-button-size) + var(--titlebar-button-spacing)
-	);
 	--titlebar-right-spacing: 0px;
 
-	// Fallback for me because I'm not downloading this every single day
-	// multiple times LOOOL
-	--titlebar-minimize-button: 0px;
-	--titlebar-maximize-button: 0px;
-	--titlebar-close-button: var(--titlebar-right-button-size);
+	/* on/off - flex/none */
+	--titlebar-close-button: flex;
+	--titlebar-maximize-button: none;
+	--titlebar-minimize-button: none;
+	/* also set this to how much buttons are visible */
+	--titlebar-buttons-count: 1;
 
 	&.platform-win {
 		--app-border-size: 1px;
 		--titlebar-right-spacing: calc(
-			var(--titlebar-minimize-button) + var(--titlebar-maximize-button) +
-				var(--titlebar-close-button)
+			(var(--titlebar-button-size) + var(--titlebar-button-spacing)) *
+				var(--titlebar-buttons-count)
 		);
 	}
 }

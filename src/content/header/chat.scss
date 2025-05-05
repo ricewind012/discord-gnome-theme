@@ -111,13 +111,8 @@
 	}
 }
 
-.recentsIcon_c99c29 > div {
+.iconWrapper__9293f {
 	@extend %icon-button;
-
-	// Move from titlebar...
-	position: fixed;
-	top: calc(var(--spacing) + var(--app-border-size));
-	right: calc(var(--titlebar-right-spacing) + var(--spacing));
 }
 
 // Channel description button
@@ -127,7 +122,7 @@
 	@extend %icon-button;
 
 	position: fixed;
-	top: calc(var(--spacing) + var(--app-border-size));
+	top: var(--spacing);
 	right: calc(
 		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing-2x)
 	);
@@ -151,12 +146,6 @@
 .toolbar__9293f {
 	gap: var(--spacing);
 	padding: var(--spacing);
-
-	[role="button"] {
-		@extend %icon-button;
-
-		margin: 0;
-	}
 
 	.vc-toolbox-btn {
 		--window_fg_color: transparent;
@@ -226,6 +215,8 @@
 	--icon: icon("loupe-large");
 	// When expanded, don't round the icon
 	--button_radius: 0;
+
+	@extend %icon-button;
 
 	cursor: pointer;
 

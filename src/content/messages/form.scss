@@ -1,7 +1,7 @@
 @use "controls";
 
 .form_f75fb0 {
-	--custom-channel-textarea-text-area-height: unset;
+	--custom-channel-textarea-text-area-height: 0px;
 
 	padding-inline: var(--custom-message-margin-horizontal);
 	margin: 0;
@@ -26,12 +26,6 @@
 		height: 100%;
 		align-items: start;
 	}
-}
-
-.textArea__74017,
-.buttons__74017 {
-	height: unset;
-	min-height: unset;
 }
 
 .channelTextArea__74017 {
@@ -76,9 +70,6 @@
 		line-height: var(--chat-markup-line-height);
 		padding: var(--spacing);
 		margin: 0;
-
-		// TODO: huh
-		min-height: unset;
 	}
 
 	.separator_aa63ab {
