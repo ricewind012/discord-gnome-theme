@@ -2,10 +2,7 @@
 @use "typography";
 
 [href="/channels/@me"] .avatar__20a53 {
-	--icon: icon("org.gnome.Settings-users");
-	--icon-button-size: 32px;
-
-	@include controls.icon-button;
+	@include controls.icon-button("org.gnome.Settings-users", 32px);
 
 	background-color: transparent;
 }

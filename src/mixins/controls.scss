@@ -56,7 +56,14 @@
 	}
 }
 
-@mixin icon-button {
+@mixin icon-button($name: null, $size: null) {
+	@if $name {
+		--icon: icon(#{$name});
+	}
+	@if $size {
+		--icon-button-size: #{$size};
+	}
+
 	// %button compat
 	--percentage: 0%;
 	// .button__201d5.colorGreen, etc. classes compat
@@ -108,8 +115,8 @@
 	}
 }
 
-@mixin icon-button-circular {
-	@include icon-button;
+@mixin icon-button-circular($name: null) {
+	@include icon-button($name);
 
 	background-color: rgb(0 0 0 / 65%);
 	color: white;
@@ -136,7 +143,7 @@
 @mixin titlebar-button {
 	--percentage: 7.5%;
 
-	@include icon-button;
+	@include icon-button($size: var(--titlebar-button-size));
 
 	background-color: color-mix(
 		in srgb,
@@ -145,11 +152,6 @@
 	);
 	border: none;
 	border-radius: 100%;
-
-	width: var(--titlebar-button-size);
-	height: var(--titlebar-button-size);
-
-	transform: none;
 }
 
 @mixin text-field {
@@ -191,7 +193,7 @@
 	transition: var(--backdrop_transition);
 }
 
-@mixin card {
+@mixin card($activatable: false) {
 	background-color: var(--card_bg_color);
 	border-radius: var(--card_radius);
 	box-shadow: var(--elevation-medium);
@@ -200,17 +202,27 @@
 
 	transition: var(--backdrop_transition);
 
-	&:hover {
-		background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color));
-	}
+	@if $activatable {
+		&:hover {
+			background-color: color-mix(
+				in srgb,
+				currentColor 3%,
+				var(--card_bg_color)
+			);
+		}
 
-	&:active {
-		background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color));
+		&:active {
+			background-color: color-mix(
+				in srgb,
+				currentColor 8%,
+				var(--card_bg_color)
+			);
+		}
 	}
 }
 
-@mixin card-with-actual-border-radiuses {
-	@include card;
+@mixin card-with-actual-border-radiuses($activatable: false) {
+	@include card($activatable);
 
 	border-bottom: 1px solid var(--card_shade_color);
 	border-radius: 0;

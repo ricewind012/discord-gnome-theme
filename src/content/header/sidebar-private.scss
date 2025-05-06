@@ -36,9 +36,7 @@
 	app-region: drag;
 
 	& > button {
-		--icon: icon("loupe-large");
-
-		@include controls.icon-button;
+		@include controls.icon-button("loupe-large");
 
 		position: absolute;
 		top: var(--spacing);

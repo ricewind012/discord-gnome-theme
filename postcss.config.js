@@ -49,7 +49,7 @@ export default {
 			},
 		}),
 		postcssSassPlugin({
-			silenceDeprecations: ["legacy-js-api"],
+			silenceDeprecations: ["legacy-js-api", "mixed-decls"],
 			includePaths: ["src/mixins"],
 		}),
 		appendImportantPlugin(),

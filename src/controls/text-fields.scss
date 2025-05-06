@@ -8,10 +8,7 @@
 		@include controls.text-field;
 
 		#{$iconLayout} {
-			--icon: icon("loupe-large");
-			--icon-button-size: var(--icon-size);
-
-			@include controls.icon-button;
+			@include controls.icon-button("loupe-large", var(--icon-size));
 
 			background-color: transparent;
 			margin-right: 9px;

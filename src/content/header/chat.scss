@@ -117,9 +117,7 @@
 
 // Channel description button
 .topicClickTarget__6ec1a {
-	--icon: icon("info-outline");
-
-	@include controls.icon-button;
+	@include controls.icon-button("info-outline");
 
 	position: fixed;
 	top: var(--spacing);
@@ -212,11 +210,10 @@
 }
 
 .icon__97492 {
-	--icon: icon("loupe-large");
 	// When expanded, don't round the icon
 	--button_radius: 0;
 
-	@include controls.icon-button;
+	@include controls.icon-button("loupe-large");
 
 	cursor: pointer;
 

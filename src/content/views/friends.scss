@@ -33,7 +33,7 @@
 }
 
 .peopleListItem_cc6179 {
-	@include controls.card-with-actual-border-radiuses;
+	@include controls.card-with-actual-border-radiuses($activatable: true);
 
 	box-shadow: none;
 	border-top: none;

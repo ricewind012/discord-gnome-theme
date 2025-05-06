@@ -1,7 +1,7 @@
 @use "controls";
 
 [role="radio"] {
-	@include controls.card-with-actual-border-radiuses;
+	@include controls.card-with-actual-border-radiuses($activatable: true);
 
 	box-shadow: none;
 	padding: 16px;

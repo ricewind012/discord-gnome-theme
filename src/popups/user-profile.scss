@@ -3,10 +3,7 @@
 @use "util";
 
 @mixin -role-button($icon) {
-	--icon: icon(#{$icon});
-	--icon-button-size: var(--role-height);
-
-	@include controls.icon-button;
+	@include controls.icon-button($icon, var(--role-height));
 
 	border: none;
 	border-radius: 999px;
@@ -81,7 +78,7 @@
 
 	button {
 		// TODO: margin only useful in settings
-		@include controls.card;
+		@include controls.card($activatable: true);
 
 		border-bottom: 1px solid var(--card_shade_color);
 		border-radius: 0;

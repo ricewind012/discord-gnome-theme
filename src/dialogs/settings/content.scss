@@ -3,14 +3,9 @@
 @use "util";
 
 .card__73069 {
-	@include controls.card;
+	@include controls.card($activatable: false);
 
 	border: none;
-
-	// TODO: $activatable
-	&:is(:hover, :active) {
-		background-color: var(--card_bg_color);
-	}
 }
 
 .category__41c03 {

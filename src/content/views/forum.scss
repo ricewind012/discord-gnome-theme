@@ -17,7 +17,7 @@
 }
 
 .card_f369db {
-	@include controls.card-with-actual-border-radiuses;
+	@include controls.card-with-actual-border-radiuses($activatable: true);
 
 	& > div {
 		background-color: transparent;
@@ -27,9 +27,7 @@
 }
 
 .forumPostFormButton_d9be46 {
-	--icon: icon("info-outline");
-
-	@include controls.icon-button;
+	@include controls.icon-button("info-outline");
 
 	margin: 0;
 

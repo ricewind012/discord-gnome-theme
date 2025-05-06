@@ -41,9 +41,7 @@
 }
 
 .headerButton_f37cb1 {
-	--icon: icon("menu");
-
-	@include controls.icon-button;
+	@include controls.icon-button("menu");
 
 	flex-shrink: 0;
 
