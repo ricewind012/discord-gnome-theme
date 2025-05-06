@@ -8,7 +8,7 @@
 }
 
 .button_c5cd6a {
-	@extend %button;
+	@include controls.button;
 }
 
 // revert %caption
@@ -20,7 +20,7 @@
 }
 
 .notice_c5cd6a {
-	@extend %banner;
+	@include controls.banner;
 
 	border: none;
 	border-radius: 0;

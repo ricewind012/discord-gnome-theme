@@ -56,7 +56,7 @@
 }
 
 .winButton_c38106 {
-	@extend %titlebar-button;
+	@include controls.titlebar-button;
 }
 
 .winButtons_c38106 {

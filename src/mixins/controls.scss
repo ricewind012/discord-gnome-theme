@@ -1,4 +1,233 @@
-@use "controls/banners";
-@use "controls/buttons";
-@use "controls/cards";
-@use "controls/text-fields";
+@use "util";
+
+@mixin banner {
+	--banner-color: #7d7d83;
+	background-color: color-mix(
+		in srgb,
+		var(--banner-color) 30%,
+		var(--window_bg_color)
+	);
+	color: var(--window_fg_color);
+	padding: var(--spacing);
+
+	* {
+		font-size: var(--document-font-size);
+		font-weight: bold;
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+@mixin button {
+	--percentage: 10%;
+
+	background-color: color-mix(
+		in srgb,
+		currentColor var(--percentage),
+		transparent
+	);
+	color: var(--window_fg_color);
+	padding: 5px 10px;
+	border: none;
+	border-radius: var(--button_radius);
+
+	min-width: 16px;
+	min-height: 24px;
+	height: 34px;
+
+	transition: var(--backdrop_transition);
+
+	&:hover {
+		--percentage: 15%;
+	}
+
+	&:active {
+		--percentage: 30%;
+	}
+
+	* {
+		font-weight: bold;
+	}
+
+	svg {
+		display: none;
+	}
+}
+
+@mixin icon-button {
+	// %button compat
+	--percentage: 0%;
+	// .button__201d5.colorGreen, etc. classes compat
+	color: var(--window_fg_color);
+
+	background-color: color-mix(
+		in srgb,
+		currentColor var(--percentage),
+		transparent
+	);
+	border-radius: var(--button_radius);
+	padding: 0;
+
+	position: relative;
+	width: var(--icon-button-size);
+	height: var(--icon-button-size);
+
+	transition: var(--backdrop_transition);
+
+	&:hover {
+		// *exact* #404040 for dark theme
+		--percentage: 12.75%;
+	}
+
+	&:active {
+		// *exact* #616161 for dark theme
+		--percentage: 27.75%;
+	}
+
+	&:disabled {
+		--percentage: 0%;
+		opacity: var(--dim-level-opacity);
+	}
+
+	&::before {
+		content: "";
+
+		position: absolute;
+		inset: 0;
+
+		mask: var(--icon);
+		mask-repeat: no-repeat;
+		mask-position: center;
+		background-color: currentColor;
+	}
+
+	& > * {
+		display: none;
+	}
+}
+
+@mixin icon-button-circular {
+	@include icon-button;
+
+	background-color: rgb(0 0 0 / 65%);
+	color: white;
+	border: none;
+	border-radius: 999px;
+
+	&:hover {
+		background-color: color-mix(
+			in srgb,
+			black calc(0.85 * 65%),
+			currentColor calc(0.15 * 65%)
+		);
+	}
+
+	&:active {
+		background-color: color-mix(
+			in srgb,
+			black calc(0.75 * 65%),
+			currentColor calc(0.25 * 65%)
+		);
+	}
+}
+
+@mixin titlebar-button {
+	--percentage: 7.5%;
+
+	@include icon-button;
+
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--percentage),
+		transparent
+	);
+	border: none;
+	border-radius: 100%;
+
+	width: var(--titlebar-button-size);
+	height: var(--titlebar-button-size);
+
+	transform: none;
+}
+
+@mixin text-field {
+	@include util.focus-ring;
+
+	--percentage: 10%;
+
+	background-color: color-mix(
+		in srgb,
+		currentColor var(--percentage),
+		var(--window_bg_color)
+	);
+	font-size: var(--document-font-size);
+	line-height: 1.2;
+	border: none;
+	border-radius: var(--button_radius);
+	padding: 8px 9px;
+	margin: 0;
+
+	height: unset;
+
+	&:disabled {
+		opacity: var(--dim-level-opacity);
+	}
+
+	&::placeholder {
+		color: var(--text-muted);
+		font-size: inherit;
+		font-weight: inherit;
+	}
+}
+
+/*#region card */
+@mixin cards-container {
+	background-color: var(--card_bg_color);
+	border-radius: var(--card_radius);
+	box-shadow: var(--elevation-medium);
+
+	transition: var(--backdrop_transition);
+}
+
+@mixin card {
+	background-color: var(--card_bg_color);
+	border-radius: var(--card_radius);
+	box-shadow: var(--elevation-medium);
+	padding: 10px 16px;
+	margin: 16px 0;
+
+	transition: var(--backdrop_transition);
+
+	&:hover {
+		background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color));
+	}
+
+	&:active {
+		background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color));
+	}
+}
+
+@mixin card-with-actual-border-radiuses {
+	@include card;
+
+	border-bottom: 1px solid var(--card_shade_color);
+	border-radius: 0;
+
+	&:first-child,
+	&:first-of-type {
+		border-radius: var(--card_radius) var(--card_radius) 0 0;
+	}
+
+	&:last-child,
+	&:last-of-type {
+		border-radius: 0 0 var(--card_radius) var(--card_radius);
+		border: none;
+	}
+
+	&:only-of-type {
+		border-radius: var(--card_radius);
+	}
+}
+/*#endregion*/

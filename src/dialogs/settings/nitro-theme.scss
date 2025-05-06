@@ -1,8 +1,8 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .presets__67a11 {
-	@extend %cards-container;
+	@include controls.cards-container;
 
 	background-color: transparent;
 	gap: 0;

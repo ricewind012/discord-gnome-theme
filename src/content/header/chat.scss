@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 [aria-label="Notification Settings"],
 [href="https://support.discord.com"]
@@ -112,14 +112,14 @@
 }
 
 .iconWrapper__9293f {
-	@extend %icon-button;
+	@include controls.icon-button;
 }
 
 // Channel description button
 .topicClickTarget__6ec1a {
 	--icon: icon("info-outline");
 
-	@extend %icon-button;
+	@include controls.icon-button;
 
 	position: fixed;
 	top: var(--spacing);
@@ -216,7 +216,7 @@
 	// When expanded, don't round the icon
 	--button_radius: 0;
 
-	@extend %icon-button;
+	@include controls.icon-button;
 
 	cursor: pointer;
 

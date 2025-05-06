@@ -1,16 +1,17 @@
 @use "controls";
+@use "util";
 
 /// Class names have to be included by their entire name for easier usage with
 /// the change_classes.js script.
 @mixin -search-input($container, $input, $iconLayout, $inner) {
 	#{$container} {
-		@extend %text-field;
+		@include controls.text-field;
 
 		#{$iconLayout} {
 			--icon: icon("loupe-large");
 			--icon-button-size: var(--icon-size);
 
-			@extend %icon-button;
+			@include controls.icon-button;
 
 			background-color: transparent;
 			margin-right: 9px;
@@ -50,15 +51,15 @@
 );
 
 [role="textbox"] {
-	@extend %text-field-focus;
+	@include util.focus-ring;
 }
 
 .textarea__9daae, // User profile note
 .quickswitcher_ac6cb0 > input,
 .channelName__754bd > div > input {
-	@extend %text-field;
+	@include controls.text-field;
 }
 
 .input__0f084 {
-	@extend %text-field;
+	@include controls.text-field;
 }

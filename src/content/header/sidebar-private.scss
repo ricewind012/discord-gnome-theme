@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .privateChannels__35e86 {
 	&::before {
@@ -38,7 +38,7 @@
 	& > button {
 		--icon: icon("loupe-large");
 
-		@extend %icon-button;
+		@include controls.icon-button;
 
 		position: absolute;
 		top: var(--spacing);

@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .container__133bf {
 	border: none;
@@ -27,20 +27,20 @@
 }
 
 .peopleList__5ec2f {
-	@extend %cards-container;
+	@include controls.cards-container;
 
 	overflow: auto;
 }
 
 .peopleListItem_cc6179 {
-	@extend %card-with-actual-border-radiuses;
+	@include controls.card-with-actual-border-radiuses;
 
 	box-shadow: none;
 	border-top: none;
 	margin: 0;
 
 	[role="button"] {
-		@extend %icon-button;
+		@include controls.icon-button;
 	}
 
 	.userInfo__0a06e {

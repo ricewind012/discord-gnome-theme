@@ -38,7 +38,7 @@
 	border-radius: var(--radius-xs);
 
 	.button__201d5 {
-		@extend %icon-button;
+		@include controls.icon-button;
 
 		border-radius: 0;
 	}

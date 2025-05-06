@@ -13,7 +13,7 @@
 	padding: 0;
 
 	[role="list"] {
-		@extend %cards-container;
+		@include controls.cards-container;
 
 		margin: 22px 28px;
 
@@ -39,7 +39,7 @@
 	}
 
 	.jumpButton_ed0c8c {
-		@extend %button;
+		@include controls.button;
 
 		box-shadow: none;
 

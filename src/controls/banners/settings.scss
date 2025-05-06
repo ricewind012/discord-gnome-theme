@@ -5,7 +5,7 @@
 }
 
 .container_fcf29c {
-	@extend %banner;
+	@include controls.banner;
 
 	border: none;
 	border-radius: 0;

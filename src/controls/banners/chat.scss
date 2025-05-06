@@ -2,7 +2,7 @@
 
 // TODO: don't remember where this is lol
 .chatHeaderBar_dc83f5 {
-	@extend %banner;
+	@include controls.banner;
 
 	&::after {
 		display: none;
@@ -14,7 +14,7 @@
 }
 
 .barBase__0f481 {
-	@extend %banner;
+	@include controls.banner;
 
 	border: none;
 	border-radius: 0;
@@ -28,7 +28,7 @@
 }
 
 .barButtonAlt__0f481 {
-	@extend %button;
+	@include controls.button;
 }
 
 .barButtonBase__0f481 {

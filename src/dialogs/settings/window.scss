@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 %-center-text {
 	display: flex;
@@ -50,7 +50,7 @@
 }
 
 .closeButton_c2b141 {
-	@extend %titlebar-button;
+	@include controls.titlebar-button;
 
 	opacity: 1;
 

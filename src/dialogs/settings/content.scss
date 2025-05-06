@@ -1,8 +1,9 @@
 @use "controls";
-@use "text";
+@use "typography";
+@use "util";
 
 .card__73069 {
-	@extend %card;
+	@include controls.card;
 
 	border: none;
 

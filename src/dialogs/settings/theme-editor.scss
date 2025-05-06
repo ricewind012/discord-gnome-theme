@@ -1,10 +1,10 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .closeCircleButton_cf6da1 {
 	--icon: icon("window-close");
 
-	@extend %titlebar-button;
+	@include controls.titlebar-button;
 
 	inset: 0;
 	order: 1;

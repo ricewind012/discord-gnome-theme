@@ -1,0 +1,17 @@
+@mixin focus-ring {
+	outline: 0 solid transparent;
+	outline-offset: 2px;
+
+	transition: var(--focus_transition);
+
+	&:is(:focus, :focus-within) {
+		outline: 2px solid
+			color-mix(in srgb, var(--accent_bg_color) 50%, transparent);
+		outline-offset: -2px;
+	}
+}
+
+%text-normal {
+	font-size: var(--document-font-size);
+	font-weight: normal;
+}

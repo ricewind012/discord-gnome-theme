@@ -4,7 +4,7 @@
 // 2. Voice tab
 .connectContainer_c7f964,
 .cameraWrapper_d41d5f {
-	@extend %cards-container;
+	@include controls.cards-container;
 
 	border: none;
 }

@@ -1,7 +1,7 @@
 @use "controls";
 
 .mentionButton__841c8 {
-	@extend %button;
+	@include controls.button;
 
 	background-color: color-mix(
 		in srgb,

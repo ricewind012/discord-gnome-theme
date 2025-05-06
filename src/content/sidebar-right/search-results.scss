@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .searchHeader_f3b986 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
@@ -48,7 +48,7 @@
 	}
 
 	[role="listitem"] {
-		@extend %card-with-actual-border-radiuses;
+		@include controls.card-with-actual-border-radiuses;
 
 		padding: 0;
 		margin: 0;

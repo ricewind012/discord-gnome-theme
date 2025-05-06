@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .panels_c48ade {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
@@ -14,7 +14,7 @@
 	);
 
 	.avatarWrapper__37e49 {
-		@extend %icon-button;
+		@include controls.icon-button;
 
 		border-radius: 0;
 		padding: var(--spacing);
@@ -31,11 +31,11 @@
 	}
 
 	.button__201d5 {
-		@extend %icon-button;
+		@include controls.icon-button;
 	}
 
 	.button_e131a9 {
-		@extend %icon-button;
+		@include controls.icon-button;
 	}
 
 	.container__37e49 {
@@ -46,7 +46,7 @@
 
 	/*
 	button {
-		@extend %icon-button;
+		@include controls.icon-button;
 
 		border-radius: var(--button_radius);
 		margin: 0;

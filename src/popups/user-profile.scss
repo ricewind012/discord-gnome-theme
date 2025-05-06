@@ -1,11 +1,12 @@
 @use "controls";
-@use "text";
+@use "typography";
+@use "util";
 
 @mixin -role-button($icon) {
 	--icon: icon(#{$icon});
 	--icon-button-size: var(--role-height);
 
-	@extend %icon-button;
+	@include controls.icon-button;
 
 	border: none;
 	border-radius: 999px;
@@ -65,14 +66,14 @@
 	}
 
 	.menuItemIcon_ce8328 {
-		@extend %icon-button;
+		@include controls.icon-button;
 
 		pointer-events: all;
 	}
 }
 
 .menus_ce8328 {
-	@extend %cards-container;
+	@include controls.cards-container;
 
 	gap: 0;
 
@@ -80,7 +81,7 @@
 
 	button {
 		// TODO: margin only useful in settings
-		@extend %card;
+		@include controls.card;
 
 		border-bottom: 1px solid var(--card_shade_color);
 		border-radius: 0;
@@ -275,6 +276,6 @@
 	gap: var(--spacing);
 
 	.banner_fb7f94.button_fb7f94 {
-		@extend %icon-button-circular;
+		@include controls.icon-button-circular;
 	}
 }

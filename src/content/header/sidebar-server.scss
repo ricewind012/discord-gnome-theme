@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .container_f37cb1 {
 	&.bannerVisible_f37cb1 {
@@ -43,7 +43,7 @@
 .headerButton_f37cb1 {
 	--icon: icon("menu");
 
-	@extend %icon-button;
+	@include controls.icon-button;
 
 	flex-shrink: 0;
 

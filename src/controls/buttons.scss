@@ -1,7 +1,7 @@
 @use "controls";
 
 .button__201d5 {
-	@extend %button;
+	@include controls.button;
 
 	&:disabled {
 		opacity: var(--dim-level-opacity);

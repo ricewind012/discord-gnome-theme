@@ -1,7 +1,7 @@
 @use "controls";
 
 .actionButton_cc1819 {
-	@extend %icon-button;
+	@include controls.icon-button;
 }
 
 .actionButtons_cc1819 {
@@ -12,7 +12,7 @@
 }
 
 .button_aec7ab {
-	@extend %icon-button;
+	@include controls.icon-button;
 }
 
 .carouselModal_d3a6f0 {

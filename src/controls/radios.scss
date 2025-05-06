@@ -1,7 +1,7 @@
 @use "controls";
 
 [role="radio"] {
-	@extend %card-with-actual-border-radiuses;
+	@include controls.card-with-actual-border-radiuses;
 
 	box-shadow: none;
 	padding: 16px;

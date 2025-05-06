@@ -9,7 +9,7 @@
 }
 
 .select__3f413 {
-	@extend %button;
+	@include controls.button;
 
 	min-height: 34px;
 

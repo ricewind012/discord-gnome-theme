@@ -9,7 +9,7 @@
 	gap: var(--spacing);
 
 	[role="button"] {
-		@extend %icon-button;
+		@include controls.icon-button;
 	}
 }
 

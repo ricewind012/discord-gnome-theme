@@ -1,5 +1,5 @@
 @use "controls";
-@use "text";
+@use "typography";
 
 .chat_f75fb0 {
 	border: none;
@@ -133,7 +133,7 @@
 
 // Open thread button
 .container__9271d {
-	@extend %button;
+	@include controls.button;
 
 	height: unset;
 
