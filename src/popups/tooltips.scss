@@ -1,13 +1,11 @@
+@use "controls";
+
 .tooltip__382e7 {
-	background-color: rgba(0, 0, 0, 0.8);
-	color: white;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 9px;
-	box-shadow: none;
+	@include controls.tooltip;
 }
 
 .tooltipContent__382e7 {
-	padding: 6px 10px;
+	padding: 0;
 
 	* {
 		color: inherit;

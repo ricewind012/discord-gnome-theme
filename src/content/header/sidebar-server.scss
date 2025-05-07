@@ -41,12 +41,21 @@
 }
 
 .headerButton_f37cb1 {
-	@include controls.icon-button("menu");
+	@include controls.icon-button-with-tooltip(
+		$name: "menu",
+		$direction: "bottom",
+		$selector: "::after"
+	);
 
 	flex-shrink: 0;
 
 	app-region: no-drag;
 	pointer-events: all;
+
+	// tooltip, it doesn't want $overflow-workaround-direction
+	&::after {
+		right: 0;
+	}
 }
 
 // "Browse channels", since it's fucking useless

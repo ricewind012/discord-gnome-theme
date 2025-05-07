@@ -36,7 +36,11 @@
 	app-region: drag;
 
 	& > button {
-		@include controls.icon-button("loupe-large");
+		@include controls.icon-button-with-tooltip(
+			$name: "loupe-large",
+			$direction: bottom,
+			$overflow-workaround-direction: "left"
+		);
 
 		position: absolute;
 		top: var(--spacing);

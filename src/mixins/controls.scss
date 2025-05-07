@@ -1,3 +1,4 @@
+@use "sass:string";
 @use "util";
 
 @mixin banner {
@@ -18,6 +19,15 @@
 	svg {
 		display: none;
 	}
+}
+
+@mixin tooltip {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 9px;
+	box-shadow: none;
+	padding: 6px 10px;
 }
 
 @mixin button {
@@ -137,6 +147,46 @@
 			black calc(0.75 * 65%),
 			currentColor calc(0.25 * 65%)
 		);
+	}
+}
+
+@mixin icon-button-with-tooltip(
+	$name,
+	$direction,
+	$selector: "> *",
+	$overflow-workaround-direction: null
+) {
+	@include icon-button($name);
+
+	$id: --tooltip-#{string.unique-id()};
+	$is-pseudo: $selector == "::after";
+	$is-vert: $direction == "top" or $direction == "bottom";
+	$direction-opposite: null;
+	@if $is-vert {
+		$direction-opposite: $direction == "top" and "bottom" or "top";
+	} @else {
+		$direction-opposite: $direction == "left" and "right" or "left";
+	}
+
+	anchor-name: $id;
+
+	&:hover#{$selector} {
+		@include tooltip;
+
+		@if $is-pseudo {
+			content: attr(aria-label);
+		}
+
+		display: block;
+		position: fixed;
+		position-anchor: $id;
+		#{$direction-opposite}: calc(anchor(#{$direction}) + var(--spacing));
+
+		// Make the tooltip appear not centered, since it's prevented by various
+		// "overflow: hidden" rules, and it's too risky reverting all of them
+		#{$overflow-workaround-direction}: var(--spacing);
+
+		pointer-events: none;
 	}
 }
 

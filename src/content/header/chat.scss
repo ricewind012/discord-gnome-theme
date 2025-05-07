@@ -117,7 +117,14 @@
 
 // Channel description button
 .topicClickTarget__6ec1a {
-	@include controls.icon-button("info-outline");
+	@include controls.icon-button-with-tooltip(
+		$name: "info-outline",
+		$direction: "bottom",
+		$selector: "::after"
+	);
+
+	// tooltip
+	@extend %text-normal;
 
 	position: fixed;
 	top: var(--spacing);
@@ -213,11 +220,20 @@
 	// When expanded, don't round the icon
 	--button_radius: 0;
 
-	@include controls.icon-button("loupe-large");
+	@include controls.icon-button-with-tooltip(
+		$name: "loupe-large",
+		$direction: "bottom",
+		$selector: "::after"
+	);
 
 	cursor: pointer;
 
 	.search__97492:focus-within & {
 		--icon: icon("window-close");
+	}
+
+	// tooltip, the theme is english only anyway lol
+	.search__97492:not(:focus-within) &::after {
+		content: "Search Messages";
 	}
 }
