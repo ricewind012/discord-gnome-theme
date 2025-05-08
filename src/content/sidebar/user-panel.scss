@@ -1,6 +1,13 @@
 @use "controls";
 @use "typography";
 
+// vc
+.container_e131a9 {
+	border-bottom: 1px solid var(--secondary_sidebar_border_color);
+	padding: var(--spacing);
+	margin: 0;
+}
+
 .panels_c48ade {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border: none;
@@ -12,6 +19,13 @@
 	width: calc(
 		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
 	);
+
+	// also vc
+	.activityPanel_c48ade {
+		background-color: inherit;
+		border-bottom: var(--secondary_sidebar_border_color);
+		border-radius: 0;
+	}
 
 	.avatarWrapper__37e49 {
 		@include controls.icon-button;
@@ -69,7 +83,7 @@
 	color: var(--window_fg_color);
 }
 
-.rtcConnectionStatus__06d62 button {
+.rtcConnectionStatus__06d62 .button__201d5 {
 	width: unset;
 	height: unset;
 

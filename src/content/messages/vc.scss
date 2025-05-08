@@ -1,0 +1,105 @@
+@use "controls";
+
+// TODO: make vc light themed ?
+// prettier-ignore
+.base_c48ade:has(
+	> .content_c48ade
+    > .page_c48ade
+    > div
+    > .chat_f75fb0
+    > .wrapper_cb9592
+) > .bar_c38106 {
+	--window_fg_color: #ffffff;
+}
+
+.callContainer_cb9592 {
+	border: none;
+}
+
+// popout
+.container__9fa5a .button__201d5 {
+	height: unset;
+}
+
+// !important in controls/buttons
+.colorable_f1ceac.colorable_f1ceac {
+	@include controls.icon-button;
+
+	&.attachedCaret_f1ceac {
+		--icon: icon("up");
+
+		margin: 0;
+
+		width: 24px;
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			left: 0;
+			height: calc(100% - var(--spacing-2x));
+
+			border-left: 1px solid;
+			border-color: color-mix(
+				in srgb,
+				currentColor var(--dim-level-opacity),
+				transparent
+			);
+
+			transition: var(--backdrop_transition);
+
+			.attachedCaretButtonContainer_f1ceac:hover & {
+				border-color: transparent;
+			}
+		}
+	}
+
+	&.button__201d5.colorBrand__201d5 {
+		--accent_color: var(--window_fg_color);
+	}
+
+	&.disconnect_f1ceac {
+		color: var(--destructive_color);
+	}
+
+	&.redGlow_f1ceac {
+		color: var(--destructive_color);
+	}
+
+	&:not([aria-label]) {
+		// Assume soundboard button, since it doesn't have an aria-label, and
+		// pulls out the expression picker on hover instead of displaying a
+		// tooltip, fucking genius design
+		--icon: icon("bullhorn");
+	}
+}
+
+.headerWrapper_cb9592 .button__9db96 {
+	@include controls.icon-button;
+
+	margin: 0;
+}
+
+.overlayButton__2f4f7 {
+	@include controls.icon-button-circular("settings");
+}
+
+.rightTrayIcon_cb9592 {
+	@include controls.icon-button-circular;
+
+	--accent_color: var(--window_fg_color);
+	margin-left: var(--spacing);
+}
+
+.wrapper__1405b {
+	gap: var(--spacing-2x);
+
+	.buttonSection__1405b {
+		// TODO: what else ? this looks good at least
+		$toast_bg_color: #505053;
+
+		background-color: color-mix(in srgb, currentColor 10%, transparent);
+		gap: var(--spacing);
+		border: none;
+	}
+}

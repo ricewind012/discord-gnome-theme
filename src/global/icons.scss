@@ -28,10 +28,12 @@
 		"New Group DM": "contact-new",
 		"Notification Settings": "bell-outline",
 		"Pinned Messages": "pin",
+		// VC
+		"Show Chat": "chat",
 		"Show Member List": "org.gnome.Settings-users",
 		"Show User Profile": "user-info",
 		"Show User Profile (Unavailable)": "user-info",
-		"Start Video Call": "camera-small",
+		"Start Video Call": "camera-photo",
 		"Start Voice Call": "phone-right-facing",
 		"Threads": "chat-bubbles-empty-inverted",
 		"User Settings": "settings",
@@ -42,7 +44,7 @@
 @include -gen-icons(
 	"aria-label",
 	(
-		"Camera Unavailable": "camera-small",
+		"Camera Unavailable": "camera-disabled",
 		"Disconnect": "window-close",
 		"Leave Activity": "log-out",
 		"Noise Suppression powered by Krisp": "sound-wave",
@@ -50,8 +52,9 @@
 		"Share Your Screen": "record-screen",
 		"Start An Activity": "emoji-activities",
 		"Stop Streaming": "stop",
+		"Turn On Camera": "camera-photo",
 		"User Settings": "settings",
-		"Video": "camera-small",
+		"Video": "camera-photo",
 	)
 );
 
@@ -73,6 +76,17 @@
 		"Open GIF picker": "image-round",
 		"Select emoji": "emoji-people",
 		"Send Message": "paper-plane",
+	)
+);
+
+// VC
+@include -gen-icons(
+	"aria-label",
+	(
+		"Full Screen": "view-fullscreen",
+		"More Options": "menu",
+		"Pop Out": "pip-in",
+		"Unmute": "mic-none",
 	)
 );
 
@@ -138,7 +152,7 @@
 		"Profile Customization": "edit",
 		"Sessions": "smartphone",
 		"Settings Clips": "microphone",
-		"Streamer Mode": "camera-small",
+		"Streamer Mode": "camera-photo",
 		"Text & Images": "chat",
 		"VencordCloud": "cloud-filled",
 		"VencordPlugins": "puzzle-piece",
