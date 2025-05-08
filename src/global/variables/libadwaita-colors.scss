@@ -98,7 +98,8 @@
 }
 
 // present in libadwaita in some other form
-:root {
+.theme-light,
+.theme-dark {
 	--window_outline_color: rgba(255, 255, 255, 7%);
 
 	--hover_color: color-mix(in srgb, currentColor 7%, transparent);
