@@ -1,5 +1,17 @@
 @use "controls";
 
+%-banner {
+	@include controls.banner;
+
+	border: none;
+	border-radius: 0;
+}
+
+%-banner-button {
+	@include controls.button;
+}
+
+// #region Server preview
 .back_c5cd6a {
 	margin: 0;
 	margin-right: var(--spacing);
@@ -8,7 +20,7 @@
 }
 
 .button_c5cd6a {
-	@include controls.button;
+	@extend %-banner-button;
 }
 
 // revert %caption
@@ -20,11 +32,52 @@
 }
 
 .notice_c5cd6a {
-	@include controls.banner;
-
-	border: none;
-	border-radius: 0;
+	@extend %-banner;
 
 	height: unset;
 	justify-content: unset;
 }
+// #endregion
+
+// #region Previous VC
+.button__6e2b9 {
+	@extend %-banner-button;
+
+	margin-left: auto;
+
+	top: 0;
+}
+
+.closeButton__6e2b9 {
+	@extend %-banner-button;
+
+	// Probably the only way to center the text
+	margin-right: auto;
+
+	position: unset;
+	width: unset;
+	height: unset;
+
+	&::before {
+		content: attr(aria-label);
+	}
+}
+
+.closeIcon__6e2b9 {
+	display: none;
+}
+
+.notice__6e2b9 {
+	--custom-notice-text: var(--window_fg_color);
+
+	@extend %-banner;
+
+	font-weight: bold;
+	text-align: center;
+	line-height: unset;
+	gap: var(--spacing);
+
+	display: flex;
+	align-items: center;
+}
+// #endregion
