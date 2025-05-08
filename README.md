@@ -10,7 +10,7 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 2. Settings > Language > Choose "English (US)"
 
-   This allows for custom icons due to how they are identified in Discord.
+   This allows for custom icons due to how they are identified in Discord. You may [localize](./src/global/icons.scss) the theme, but read the localization note.
 
 3. Settings > Plugins > Enable "ThemeAttributes"
 
@@ -24,9 +24,29 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 1. Remove Nitro references: https://github.com/CroissantDuNord/discord-adblock
 
-   Nitro elements are not themed, but they should not look broken either way.
+## Theming philosophy
+
+### Human Interface Guidelines
+
+The theme may not fully confine to the HIG because of Discord's either CSS or design limitations or my own choices.
+
+### Support
+
+These are not supported:
+
+- Discord experiments
+
+  I do not work for Discord, so I have no way of knowing if these experiments are getting changed, deprecated, etc., i.e. maintenance burden — I maintain several other projects
+
+- Nitro
+
+  Exceptions — anything accessible with the FakeNitro plugin.
+
+You \*can\* open an issue about any of these, but it's only getting fixed if it's an easy fix, i.e. missing icon.
 
 ## Installation
+
+### No configuration
 
 Copy the following into the text box located in Settings > Themes > Online Themes:
 
@@ -34,7 +54,9 @@ Copy the following into the text box located in Settings > Themes > Online Theme
 https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
 ```
 
-or put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes for additional configuration. It's still updated automatically.
+### Including configuration
+
+Put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes. It's still updated automatically.
 
 ## Preview
 

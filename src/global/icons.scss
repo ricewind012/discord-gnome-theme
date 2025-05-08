@@ -1,3 +1,14 @@
+// I may create a script in the future for this exact purpose when the theme is
+// fully done, but for now you may localize this file into your own language by
+// changing the left hand side of the -gen-icons mixin, but note:
+//
+// 1. There will be *no support* for anything but English (US) because of
+//    potential performance issues (I did not test this, but there's a chance
+//    Discord doesn't like *that* many attribute selectors). You may instead
+//    create a gist with the built "dist/global/icons.css" file and import it.
+//
+// 2. I forgot what I wanted to type here.
+
 @mixin -gen-icons($attr, $map) {
 	@each $id, $icon in $map {
 		[#{$attr}="#{$id}"] {
