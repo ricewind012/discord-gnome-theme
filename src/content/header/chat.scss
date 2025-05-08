@@ -98,6 +98,16 @@
 
 		// wtf ?
 		width: -webkit-fill-available;
+
+		a,
+		.channelMention {
+			app-region: no-drag;
+		}
+
+		// channel icon, needed to not expand by 1px
+		.icon_b75563 {
+			margin-bottom: 0.1rem;
+		}
 	}
 
 	.avatar_f75fb0 {
@@ -233,7 +243,7 @@
 	}
 
 	// tooltip, the theme is english only anyway lol
-	.search__97492:not(:focus-within) &::after {
+	.search__97492:not(:focus-within):hover &::after {
 		content: "Search Messages";
 	}
 }
