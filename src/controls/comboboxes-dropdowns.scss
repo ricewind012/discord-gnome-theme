@@ -8,6 +8,10 @@
 	height: var(--icon-size);
 }
 
+.searchInput__3f413 {
+	all: unset;
+}
+
 .select__3f413 {
 	@include controls.button;
 
@@ -15,5 +19,8 @@
 
 	.icons__3f413 {
 		@extend %-icon;
+
+		height: unset;
+		min-height: unset;
 	}
 }

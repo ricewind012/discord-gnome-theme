@@ -12,16 +12,20 @@
 	margin-bottom: 34px;
 }
 
+.content_dbba93 {
+	@extend .contentColumn__23e6b;
+
+	// Server Profile
+	.divider_dbba93 {
+		display: none;
+	}
+}
+
 .contentColumn__23e6b {
 	padding: 22px 28px;
 	margin: auto;
 
 	max-width: var(--content-width);
-
-	[role="tablist"][aria-orientation="horizontal"] {
-		border: none;
-		padding: 0;
-	}
 }
 
 .contentRegion__23e6b {
@@ -30,6 +34,16 @@
 
 	.divider__46c3b {
 		display: none;
+	}
+
+	// Server Profile Engagement
+	.divider_f83afb {
+		display: none;
+	}
+
+	[role="tablist"][aria-orientation="horizontal"] {
+		border: none;
+		padding: 0;
 	}
 }
 
@@ -56,6 +70,26 @@
 
 	.text__33d12 {
 		margin-top: 8px;
+	}
+}
+
+// Server settings traits
+.grid__4cbea {
+	gap: var(--spacing) var(--spacing-2x);
+
+	.emojiButton__04eed {
+		@include controls.icon-button("emoji-people");
+	}
+
+	.emojiWrapper__4cbea {
+		all: unset;
+	}
+
+	.traitContainer__4cbea {
+		background-color: transparent;
+		border: none;
+		gap: var(--spacing);
+		padding: 0;
 	}
 }
 

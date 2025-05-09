@@ -47,7 +47,6 @@
 		"Start Video Call": "camera-photo",
 		"Start Voice Call": "phone-right-facing",
 		"Threads": "chat-bubbles-empty-inverted",
-		"User Settings": "settings",
 	)
 );
 
@@ -144,17 +143,19 @@
 	)
 );
 
-// User settings
+// Settings dialog
 @include -gen-icons(
 	"data-tab-id",
 	(
+		// User settings
 		"Accessibility": "body",
 		"Activity Privacy": "screen-privacy4",
 		"Advanced": "wrench-wide",
 		"Appearance": "brush-monitor",
 		"Authorized Apps": "grid-large",
 		"Connections": "phonelink",
-		"Content & Social": "chat-bubbles-empty-inverted",
+		//"Content & Social": "chat-bubbles-empty-inverted",
+		"Content & Social": "shield-full",
 		"Data & Privacy": "screen-privacy4",
 		"Family Center": "eye-open-negative-filled",
 		"Friend Requests": "contact-new",
@@ -173,6 +174,28 @@
 		"VencordThemes": "larger-brush",
 		"VencordUpdater": "update",
 		"Voice & Video": "microphone",
+
+		// Server settings
+		"ACCESS": "padlock2",
+		"ANALYTICS": "info-outline",
+		"APP_DIRECTORY": "grid-large",
+		"AUDIT_LOG": "notepad",
+		"BANS": "circle-crossed",
+		"BOOST_PERKS": "credit-card",
+		"COMMUNITY": "org.gnome.Settings-users",
+		"EMOJI": "emoji-people",
+		"ENGAGEMENT": "info-outline",
+		"GUILD_AUTOMOD": "shield-full",
+		"GUILD_PREMIUM": "credit-card",
+		"GUILD_TEMPLATES": "folder-templates",
+		"INTEGRATIONS": "grid-large",
+		"INVITES": "paper-plane",
+		"MEMBERS": "org.gnome.Settings-users",
+		"MODERATION": "shield-full",
+		"PROFILE": "info-outline",
+		"ROLES": "view-list",
+		"STICKERS": "image-round",
+		"SOUNDBOARD": "bullhorn"
 	)
 );
 

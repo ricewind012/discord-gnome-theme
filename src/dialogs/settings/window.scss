@@ -79,6 +79,35 @@
 	}
 }
 
+// Server settings
+// #2 is for "Invites" tab
+:where(.scrollerBase_d125d2, .scrollerBase__99f8c) {
+	// Most tabs. Exception: "Members" tab toggle field header
+	h2[data-text-variant="heading-lg/semibold"]:not([style="color: white;"]),
+	// Emoji/Bans
+	:is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2,
+	// Members
+	.header_fa2640 > h2,
+	// Roles
+	[aria-hidden="true"][style="height: 60px;"] + div > h2,
+	// Integrations
+	.breadcrumbs_befe67 > h2,
+	// Server Templates
+	#guild_templates-tab > div > h2,
+	// Audit logs
+	.formTitle__5906b {
+		@extend %-center-text;
+		@extend %-tab-header;
+		@extend %title-3;
+	}
+
+	// "Invites" tab
+	// TODO: consider all: unset ?
+	.header__1de14 {
+		padding: 0;
+	}
+}
+
 .keybind_c2b141 {
 	display: none;
 }
@@ -112,6 +141,40 @@
 		border-radius: var(--window_radius);
 
 		inset: var(--p);
+	}
+}
+
+// Server settings "Roles" tab sidebar
+// No idea how this got broken, 0 behavior change, GENIUS layout, D*scord
+.page__91dc3 {
+	position: absolute;
+
+	// Single role view headerbar
+	.titleContainer_e29cd7 {
+		@extend %-tab-header;
+
+		box-shadow: none;
+		gap: var(--spacing);
+		padding: var(--spacing);
+		margin: 0;
+
+		justify-content: start;
+
+		.addRole_e29cd7 {
+			@include controls.icon-button("plus");
+
+			app-region: no-drag;
+		}
+
+		.title_e29cd7 {
+			@include controls.icon-button-with-tooltip(
+				$name: "left",
+				$direction: "top",
+				$selector: "> .titleText_e29cd7"
+			);
+
+			app-region: no-drag;
+		}
 	}
 }
 
