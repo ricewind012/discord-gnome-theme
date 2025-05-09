@@ -153,10 +153,11 @@
 @mixin icon-button-with-tooltip(
 	$name,
 	$direction,
+	$size: null,
 	$selector: "> *",
 	$overflow-workaround-direction: null
 ) {
-	@include icon-button($name);
+	@include icon-button($name, $size);
 
 	$id: --tooltip-#{string.unique-id()};
 	$is-pseudo: $selector == "::after";
