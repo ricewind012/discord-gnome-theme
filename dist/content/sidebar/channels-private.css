@@ -1,0 +1,57 @@
+.name__20a53 {
+  font-weight: 700 !important;
+  font-size: var(--document-font-size) !important;
+}
+
+[href="/channels/@me"] .avatar__20a53 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDUuOTE0MDYyIDAgYyAtMC41NDY4NzQgMC4wMTk1MzEyIC0xLjA4NTkzNyAwLjE4MzU5NCAtMS41NTg1OTMgMC40OTIxODggYyAtMC45NDkyMTkgMC42MTcxODcgLTEuNDY0ODQ0IDEuNzI2NTYyIC0xLjMzNTkzOCAyLjg0NzY1NiBjIDAuMTMyODEzIDEuMTIxMDk0IDAuODk0NTMxIDIuMDc4MTI1IDEuOTU3MDMxIDIuNDYwOTM3IGMgMC41MTk1MzIgMC4xODc1IDEuMDg5ODQ0IC0wLjA3ODEyNSAxLjI3NzM0NCAtMC41OTc2NTYgYyAwLjE5MTQwNiAtMC41MTk1MzEgLTAuMDc4MTI1IC0xLjA5Mzc1IC0wLjU5NzY1NiAtMS4yODEyNSBjIC0wLjM1OTM3NSAtMC4xMjg5MDYgLTAuNjA1NDY5IC0wLjQ0NTMxMyAtMC42NDg0MzggLTAuODE2NDA2IGMgLTAuMDQyOTY4IC0wLjM3MTA5NCAwLjEyNSAtMC43MzQzNzUgMC40NDE0MDcgLTAuOTQxNDA3IGMgMC4zMTY0MDYgLTAuMjA3MDMxIDAuNzIyNjU2IC0wLjIxODc1IDEuMDUwNzgxIC0wLjAzMTI1IGMgMC40ODA0NjkgMC4yNzczNDQgMS4wOTM3NSAwLjExMzI4MiAxLjM2NzE4OCAtMC4zNjcxODcgYyAwLjI3MzQzNyAtMC40ODA0NjkgMC4xMDkzNzQgLTEuMDg5ODQ0IC0wLjM2NzE4OCAtMS4zNjcxODcgYyAtMC40OTIxODggLTAuMjgxMjUgLTEuMDM5MDYyIC0wLjQxNDA2MyAtMS41ODU5MzggLTAuMzk4NDM4IHogbSA1LjA4NTkzOCAyIGMgLTEuNjQwNjI1IDAgLTMgMS4zNTE1NjIgLTMgMi45OTIxODggYyAwIDEuNjQwNjI0IDEuMzU5Mzc1IDIuOTg4MjgxIDMgMi45ODgyODEgcyAzIC0xLjM0NzY1NyAzIC0yLjk4ODI4MSBjIDAgLTEuNjQwNjI2IC0xLjM1OTM3NSAtMi45OTIxODggLTMgLTIuOTkyMTg4IHogbSAwIDIgYyAwLjU2NjQwNiAwIDEgMC40Mzc1IDEgMC45OTIxODggYyAwIDAuNTU0Njg3IC0wLjQzMzU5NCAwLjk4ODI4MSAtMSAwLjk4ODI4MSBzIC0xIC0wLjQzMzU5NCAtMSAtMC45ODgyODEgYyAwIC0wLjU1NDY4OCAwLjQzMzU5NCAtMC45OTIxODggMSAtMC45OTIxODggeiBtIC02LjE5OTIxOSAzIGMgLTIuMDg1OTM3IDAgLTMuODAwNzgxIDEuNzA3MDMxIC0zLjgwMDc4MSAzLjc4OTA2MiB2IDEuMjEwOTM4IGMgMCAwLjU1MDc4MSAwLjQ0OTIxOSAxIDEgMSBzIDEgLTAuNDQ5MjE5IDEgLTEgdiAtMS4yMTA5MzggYyAwIC0wLjk5NjA5MyAwLjc5Mjk2OSAtMS43ODkwNjIgMS44MDA3ODEgLTEuNzg5MDYyIGggMS4xOTkyMTkgYyAwLjU1MDc4MSAwIDEgLTAuNDQ5MjE5IDEgLTEgcyAtMC40NDkyMTkgLTEgLTEgLTEgeiBtIDUgMiBjIC0yLjA4NTkzNyAwIC0zLjgwMDc4MSAxLjcwNzAzMSAtMy44MDA3ODEgMy43ODkwNjIgdiAxLjIxMDkzOCBjIDAgMC41NTA3ODEgMC40NDkyMTkgMSAxIDEgcyAxIC0wLjQ0OTIxOSAxIC0xIHYgLTEuMjEwOTM4IGMgMCAtMC45OTYwOTMgMC43OTI5NjkgLTEuNzg5MDYyIDEuODAwNzgxIC0xLjc4OTA2MiBoIDIuMzk4NDM4IGMgMS4wMTE3MTkgMCAxLjgwMDc4MSAwLjc5Mjk2OSAxLjgwMDc4MSAxLjc4OTA2MiB2IDEuMjEwOTM4IGMgMCAwLjU1MDc4MSAwLjQ0OTIxOSAxIDEgMSBzIDEgLTAuNDQ5MjE5IDEgLTEgdiAtMS4yMTA5MzggYyAwIC0yLjA4MjAzMSAtMS43MTQ4NDQgLTMuNzg5MDYyIC0zLjgwMDc4MSAtMy43ODkwNjIgeiBtIDAgMCIvPgo8L3N2Zz4K") !important;
+  --icon-button-size: 32px !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  background-color: transparent !important;
+}
+[href="/channels/@me"] .avatar__20a53:hover {
+  --percentage: 12.75% !important;
+}
+[href="/channels/@me"] .avatar__20a53:active {
+  --percentage: 27.75% !important;
+}
+[href="/channels/@me"] .avatar__20a53:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+[href="/channels/@me"] .avatar__20a53::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+[href="/channels/@me"] .avatar__20a53 > * {
+  display: none !important;
+}
+
+/* "Friends" entry*/
+.channel__972a0:not(.dm__972a0) .link__972a0 {
+  padding-block: var(--space-xxs) !important;
+}
+
+.interactive__972a0 {
+  color: var(--window_fg_color) !important;
+}
+
+.scroller__99e7c {
+  margin-bottom: var(--custom-app-panels-height) !important;
+}

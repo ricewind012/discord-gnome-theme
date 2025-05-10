@@ -1,0 +1,107 @@
+/* TODO*/
+.custom-theme-background body {
+  background: var(--bg-overlay-app-frame) !important;
+}
+.custom-theme-background #app-mount {
+  inset: var(--app-border-size) !important;
+  width: calc(100% - var(--app-border-size) * 2) !important;
+  height: calc(100% - var(--app-border-size) * 2) !important;
+}
+
+#app-mount {
+  color: var(--window_fg_color) !important;
+  border-radius: var(--window_radius) !important;
+}
+#app-mount::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 1px !important;
+  z-index: 9999 !important;
+  pointer-events: none !important;
+  outline: var(--app-border-size) solid var(--window_outline_color) !important;
+  border-radius: calc(var(--window_radius) - 2px) !important;
+}
+
+.bar_c38106 {
+  background: none !important;
+  padding: 0 !important;
+  position: fixed !important;
+  top: var(--spacing) !important;
+  right: var(--titlebar-button-spacing) !important;
+  z-index: 101 !important;
+  height: unset !important;
+  /* Visible app banner*/
+}
+.bar_c38106:nth-last-child(3) {
+  margin-top: calc(var(--icon-button-size) + var(--spacing-2x)) !important;
+}
+
+.title_c38106 {
+  display: none !important;
+}
+
+.trailing_c38106 {
+  gap: var(--spacing) !important;
+}
+
+.winButton_c38106 {
+  --percentage: 7.5% !important;
+  --icon-button-size: var(--titlebar-button-size) !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  border: none !important;
+  border-radius: 100% !important;
+}
+.winButton_c38106:hover {
+  --percentage: 12.75% !important;
+}
+.winButton_c38106:active {
+  --percentage: 27.75% !important;
+}
+.winButton_c38106:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.winButton_c38106::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.winButton_c38106 > * {
+  display: none !important;
+}
+
+.winButtons_c38106 {
+  gap: var(--titlebar-button-spacing) !important;
+}
+.winButtons_c38106::before {
+  display: none !important;
+}
+
+.winButtonClose_c38106 {
+  display: var(--titlebar-close-button) !important;
+}
+
+.winButtonMinMax_c38106 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuOTg4MjgxIDMuOTkyMTg4IHYgOC4wMTE3MTggaCA4LjAxMTcxOSB2IC04LjAxMTcxOCB6IG0gMiAyIGggNC4wMTE3MTkgdiA0LjAxMTcxOCBoIC00LjAxMTcxOSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=") !important;
+  display: var(--titlebar-maximize-button) !important;
+}
+.winButtonMinMax_c38106:first-child {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgMTAuMDA3ODEyIGggOCB2IDEuOTg4MjgyIGggLTggeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
+  display: var(--titlebar-minimize-button) !important;
+}

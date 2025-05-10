@@ -1,0 +1,52 @@
+.mentionButton__841c8 {
+  --percentage: 10% !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  transition: var(--backdrop_transition) !important;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  box-sizing: border-box !important;
+}
+.mentionButton__841c8:hover {
+  --percentage: 15% !important;
+}
+.mentionButton__841c8:active {
+  --percentage: 30% !important;
+}
+.mentionButton__841c8 * {
+  font-weight: bold !important;
+}
+.mentionButton__841c8 svg {
+  display: none !important;
+}
+.mentionButton__841c8 svg {
+  display: initial !important;
+}
+
+.replyBar__841c8 {
+  background-color: inherit !important;
+  gap: var(--spacing) !important;
+  padding: var(--spacing) !important;
+}
+
+.replyLabel__841c8 {
+  margin-left: var(--spacing) !important;
+}
+
+.threadSuggestionBar__841c8,
+.separator__841c8 {
+  display: none !important;
+}
+
+.stackedBars__74017 [data-text-variant] {
+  color: inherit !important;
+  font-weight: bold !important;
+}
+.stackedBars__74017 .closeButton_e876a8 {
+  margin-left: var(--spacing) !important;
+}

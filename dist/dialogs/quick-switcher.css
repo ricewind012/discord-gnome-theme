@@ -1,0 +1,20 @@
+.container_ac6cb0 {
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.quickswitcher_ac6cb0 {
+  background-color: var(--dialog_bg_color) !important;
+  border-color: var(--window_outline_color) !important;
+  border-radius: var(--window_radius) !important;
+  box-shadow: var(--shadow-high) !important;
+  padding: var(--dialog-spacing) !important;
+  padding-bottom: 0 !important;
+}
+
+.scroller_ac6cb0 {
+  background-color: transparent !important;
+  margin-top: var(--dialog-spacing-x05) !important;
+  margin-right: 0 !important;
+}

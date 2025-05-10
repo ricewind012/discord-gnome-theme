@@ -1,0 +1,64 @@
+.themeTitleContainer__3e443 {
+  font-weight: 700 !important;
+  font-size: var(--document-font-size) !important;
+}
+
+.presets__67a11 {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  transition: var(--backdrop_transition) !important;
+  background-color: transparent !important;
+  gap: 0 !important;
+  overflow: hidden !important;
+  flex-direction: column !important;
+}
+[role=radiogroup]:has(> .presets__67a11) {
+  box-shadow: none !important;
+}
+
+.selectionCircle__36dee {
+  display: none !important;
+}
+
+.themeSelection__36dee {
+  /* radios.scss override*/
+}
+.themeSelection__36dee:first-of-type {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.themeSelectionContainer__36dee:nth-last-child(2) > .themeSelection__36dee:first-of-type {
+  border: none !important;
+}
+.themeSelection__36dee::before {
+  content: "" !important;
+  border: none !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  margin-inline-end: 16px !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+.themeSelection__36dee[aria-checked=true]::before {
+  background-color: #fff !important;
+  border: 7px solid var(--accent_bg_color) !important;
+}
+.themeSelection__36dee[aria-checked=false]::before {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+.themeSelection__36dee::after {
+  content: attr(aria-label) !important;
+}
+.themeSelection__36dee svg {
+  display: none !important;
+}
+
+.themeSelectionContainer__36dee {
+  width: unset !important;
+  height: unset !important;
+}

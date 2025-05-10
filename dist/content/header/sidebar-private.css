@@ -1,0 +1,90 @@
+.searchBar__35e86 > button:hover > * {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+.privateChannels__35e86::before {
+  font-weight: 700 !important;
+  font-size: var(--document-font-size) !important;
+}
+
+.privateChannels__35e86::before {
+  content: attr(aria-label) !important;
+  position: absolute !important;
+  inset-inline: 0 !important;
+  height: var(--headerbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--window_fg_color) !important;
+}
+.privateChannels__35e86 [role=listitem] {
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+}
+
+.privateChannelsHeaderContainer__99e7c {
+  display: none !important;
+}
+
+.searchBar__35e86 {
+  border: none !important;
+  box-shadow: var(--elevation-low) !important;
+  padding: var(--spacing) !important;
+  height: var(--headerbar-height) !important;
+  app-region: drag !important;
+}
+.searchBar__35e86 > button {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PGcgZmlsbD0iIzIyMjIyMiI+PHBhdGggZD0ibSAxMC44NzUgMTAuMDYyNSBjIC0wLjgxMjUgMC4xNDg0MzggLTEuMTA1NDY5IDEuMTYwMTU2IC0wLjUgMS43MTg3NSBsIDMgMyBjIDAuOTU3MDMxIDAuOTM3NSAyLjM2MzI4MSAtMC41IDEuNDA2MjUgLTEuNDM3NSBsIC0zIC0zIGMgLTAuMjM0Mzc1IC0wLjIzODI4MSAtMC41NzQyMTkgLTAuMzQ3NjU2IC0wLjkwNjI1IC0wLjI4MTI1IHogbSAwIDAiLz48cGF0aCBkPSJtIDYuNTcwMzEyIDAuMDYyNSBjIC0zLjU3ODEyNCAwIC02LjQ5OTk5OTUgMi45MjE4NzUgLTYuNDk5OTk5NSA2LjUgcyAyLjkyMTg3NTUgNi41IDYuNDk5OTk5NSA2LjUgYyAzLjU3ODEyNiAwIDYuNSAtMi45MjE4NzUgNi41IC02LjUgcyAtMi45MjE4NzQgLTYuNSAtNi41IC02LjUgeiBtIDAgMiBjIDIuNSAwIDQuNSAyLjAwMzkwNiA0LjUgNC41IGMgMCAyLjUgLTIgNC41IC00LjUgNC41IGMgLTIuNDk2MDkzIDAgLTQuNSAtMiAtNC41IC00LjUgYyAwIC0yLjQ5NjA5NCAyLjAwMzkwNyAtNC41IDQuNSAtNC41IHogbSAwIDAiLz48L2c+PC9zdmc+Cg==") !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  anchor-name: --tooltip-uj23diw !important;
+  app-region: no-drag !important;
+}
+.searchBar__35e86 > button:hover {
+  --percentage: 12.75% !important;
+}
+.searchBar__35e86 > button:active {
+  --percentage: 27.75% !important;
+}
+.searchBar__35e86 > button:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.searchBar__35e86 > button::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.searchBar__35e86 > button > * {
+  display: none !important;
+}
+.searchBar__35e86 > button:hover > * {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+  display: block !important;
+  position: fixed !important;
+  position-anchor: --tooltip-uj23diw !important;
+  top: calc(anchor(bottom) + var(--spacing)) !important;
+  z-index: 999 !important;
+  left: anchor(left) !important;
+  pointer-events: none !important;
+}

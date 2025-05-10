@@ -1,0 +1,20 @@
+.createButton_d9c882 {
+  margin: 0 !important;
+}
+
+.header_d9c882 {
+  background-color: var(--background-primary) !important;
+  box-shadow: var(--elevation-low) !important;
+  gap: var(--spacing) !important;
+  padding: var(--spacing) !important;
+  height: unset !important;
+  min-height: unset !important;
+  z-index: 1 !important;
+}
+.header_d9c882 svg,
+.header_d9c882 h1,
+.header_d9c882 .closeIcon_d9c882,
+.header_d9c882 .divider_d9c882,
+.header_d9c882 .spacer_d9c882 {
+  display: none !important;
+}

@@ -1,0 +1,65 @@
+.description_ddd181,
+[data-text-variant^=text-sm],
+[data-text-variant^=text-xs] {
+  color: var(--window_fg_muted) !important;
+  font-weight: 400 !important;
+  font-size: 9pt !important;
+}
+
+[data-text-variant^=heading-lg],
+[data-text-variant^=heading-x] {
+  font-weight: 800 !important;
+  font-size: 20px !important;
+}
+
+[data-text-variant^=heading-md] {
+  font-size: var(--document-font-size) !important;
+  font-weight: 800 !important;
+}
+
+.eyebrow__2b1f5:not(.numberBadge__2b1f5),
+.h1_b717a1,
+.h2_b717a1,
+.h3_b717a1,
+.h4_b717a1,
+.h5_b717a1, [data-text-variant^=text-md] {
+  font-weight: 700 !important;
+  font-size: var(--document-font-size) !important;
+}
+
+[data-text-variant^=heading-deprecated-12],
+[data-text-variant^=heading-sm] {
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
+
+/* Reference: _labels.scss*/
+::selection {
+  background-color: color-mix(in srgb, var(--view_fg_color) 10%, transparent) !important;
+}
+.app-focused ::selection {
+  background-color: color-mix(in srgb, var(--accent_bg_color) 30%, transparent) !important;
+}
+
+[data-text-variant] {
+  line-height: 1.25 !important;
+  text-transform: none !important;
+}
+
+.eyebrow__2b1f5:not(.numberBadge__2b1f5),
+.h1_b717a1,
+.h2_b717a1,
+.h3_b717a1,
+.h4_b717a1,
+.h5_b717a1 {
+  margin-bottom: 16px !important;
+}
+
+/* TODO: Placeholder header seems to be larger*/
+/* links*/
+.anchor_edefb8[href] {
+  opacity: 1 !important;
+  color: var(--accent_color) !important;
+  text-decoration: underline !important;
+  transition: var(--backdrop_transition) !important;
+}

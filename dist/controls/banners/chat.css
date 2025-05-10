@@ -1,0 +1,77 @@
+/* TODO: don't remember where this is lol*/
+.chatHeaderBar_dc83f5 {
+  --banner-color: #7d7d83 !important;
+  background-color: color-mix(in srgb, var(--banner-color) 30%, var(--window_bg_color)) !important;
+  color: var(--window_fg_color) !important;
+  padding: var(--spacing) !important;
+}
+.chatHeaderBar_dc83f5 * {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+}
+.chatHeaderBar_dc83f5 svg {
+  display: none !important;
+}
+.chatHeaderBar_dc83f5::after {
+  display: none !important;
+}
+
+.chatHeaderBarText_dc83f5 {
+  text-align: center !important;
+}
+
+.barBase__0f481 {
+  --banner-color: #7d7d83 !important;
+  background-color: color-mix(in srgb, var(--banner-color) 30%, var(--window_bg_color)) !important;
+  color: var(--window_fg_color) !important;
+  padding: var(--spacing) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  position: unset !important;
+  width: 100% !important;
+  height: unset !important;
+  min-height: unset !important;
+}
+.barBase__0f481 * {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+}
+.barBase__0f481 svg {
+  display: none !important;
+}
+
+.barButtonAlt__0f481 {
+  --percentage: 10% !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  transition: var(--backdrop_transition) !important;
+}
+.barButtonAlt__0f481:hover {
+  --percentage: 15% !important;
+}
+.barButtonAlt__0f481:active {
+  --percentage: 30% !important;
+}
+.barButtonAlt__0f481 * {
+  font-weight: bold !important;
+}
+.barButtonAlt__0f481 svg {
+  display: none !important;
+}
+
+.barButtonBase__0f481 {
+  text-align: center !important;
+  padding: 0 var(--spacing) !important;
+}
+
+.messagesWrapper__36d07 {
+  flex-direction: column !important;
+}

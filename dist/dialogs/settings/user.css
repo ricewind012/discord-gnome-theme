@@ -1,0 +1,10 @@
+/* 1. Connections tab*/
+/* 2. Voice tab*/
+.connectContainer_c7f964,
+.cameraWrapper_d41d5f {
+  background-color: var(--card_bg_color) !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  transition: var(--backdrop_transition) !important;
+  border: none !important;
+}

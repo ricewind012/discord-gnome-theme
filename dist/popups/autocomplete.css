@@ -1,0 +1,65 @@
+.autocomplete__13533 {
+  --background-modifier-accent: color-mix(
+  	in srgb,
+  	var(--window_fg_color) 20%,
+  	transparent
+  ) !important;
+  background-color: var(--background-floating) !important;
+  border: 1px solid color-mix(in srgb, black 14%, transparent) !important;
+  border-radius: var(--popover_radius) !important;
+  box-shadow: var(--popover_shadow) !important;
+  /* [style] is for commands, that has some other kind of a virtual list or whatever brainrot these cunts thought of using*/
+  /** commands **/
+}
+.autocomplete__13533 [role=listbox]:not([style*=inset]) {
+  padding: 8px !important;
+}
+.autocomplete__13533 .rail_d1405b {
+  border-right: 1px solid var(--sidebar_border_color) !important;
+}
+
+.autocompleteRow__13533 {
+  padding: 0 !important;
+}
+.autocompleteRow__13533 > .base__13533 {
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  line-height: inherit !important;
+  padding: var(--spacing) var(--spacing-2x) !important;
+}
+.autocompleteRow__13533 > .base__13533:hover {
+  --percentage: 10% !important;
+}
+.autocompleteRow__13533 > .base__13533:active {
+  --percentage: 18.5% !important;
+}
+
+.autocompleteRowContent__13533 {
+  gap: 8px !important;
+}
+.autocompleteRowContent__13533 > * {
+  margin: 0 !important;
+  text-align: start !important;
+}
+
+.autocompleteRowContentPrimary__13533,
+.autocompleteRowContentSecondary__13533 {
+  width: 50% !important;
+}
+
+.autocompleteRowContentPrimary__13533:first-child {
+  margin-left: 32px !important;
+}
+
+.base__13533 {
+  border-radius: var(--menu_radius) !important;
+  padding: 0 !important;
+}
+
+.contentTitle__13533 {
+  padding-top: 0 !important;
+  padding-bottom: var(--spacing) !important;
+}
+
+.divider__13533 {
+  padding: var(--menu_margin) 0 !important;
+}

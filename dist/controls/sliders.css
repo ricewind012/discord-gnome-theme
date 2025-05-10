@@ -1,0 +1,42 @@
+.bar_a562c8 {
+  border-radius: 16px !important;
+  top: 0 !important;
+  height: 4px !important;
+}
+
+.barFill_a562c8 {
+  background-color: var(--accent_bg_color) !important;
+}
+
+/* the grabber is different with exact values, but i don't care fuck you*/
+.grabber_a562c8 {
+  /* close enough on dark theme, don't bother*/
+  background-color: #fff !important;
+  border: none !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  margin-left: -10px !important;
+  top: -11px !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.mark_a562c8 {
+  flex-direction: column-reverse !important;
+  height: unset !important;
+}
+.mark_a562c8 > * {
+  color: var(--text-muted) !important;
+  font-size: var(--document-font-size) !important;
+}
+
+.markDash_a562c8 {
+  background-color: currentColor !important;
+  width: 1px !important;
+  height: 6px !important;
+}
+
+.markValue_a562c8 {
+  margin-top: 2px !important;
+  margin-bottom: 0 !important;
+}

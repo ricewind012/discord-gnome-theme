@@ -1,0 +1,28 @@
+#---new-messages-bar {
+  --separator-spacing: 0px !important;
+  margin-inline: var(--custom-message-margin-horizontal) 0 !important;
+  margin-block: calc(var(--spacing) + var(--separator-spacing)) !important;
+  top: 0 !important;
+}
+.group-spacing-4 #---new-messages-bar {
+  --separator-spacing: var(--space-sm) !important;
+}
+.group-spacing-8 #---new-messages-bar {
+  --separator-spacing: var(--space-lg) !important;
+}
+.group-spacing-16 #---new-messages-bar {
+  --separator-spacing: var(--space-xl) !important;
+}
+.group-spacing-24 #---new-messages-bar {
+  --separator-spacing: var(--space-xxl) !important;
+}
+#---new-messages-bar::before {
+  content: "NEW MESSAGES" !important;
+  background-color: var(--background-primary) !important;
+  color: var(--status-danger) !important;
+  font-weight: bold !important;
+  padding: 0 var(--spacing) !important;
+}
+#---new-messages-bar > span {
+  display: none !important;
+}

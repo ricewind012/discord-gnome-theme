@@ -1,0 +1,98 @@
+[role=dialog] {
+  --dialog-spacing-x05: calc(var(--dialog-spacing) / 2) !important;
+  --dialog-spacing: 24px !important;
+}
+
+.backdrop__78332 {
+  background-color: var(--backdrop) !important;
+  /* Image carousel*/
+}
+.backdrop__78332[style^="background: rgba(0, 0, 0, 0.92)"] {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.close__49fc1 {
+  --percentage: 7.5% !important;
+  --icon-button-size: var(--titlebar-button-size) !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  border: none !important;
+  border-radius: 100% !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  top: var(--titlebar-button-spacing) !important;
+  right: var(--titlebar-button-spacing) !important;
+}
+.close__49fc1:hover {
+  --percentage: 12.75% !important;
+}
+.close__49fc1:active {
+  --percentage: 27.75% !important;
+}
+.close__49fc1:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.close__49fc1::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.close__49fc1 > * {
+  display: none !important;
+}
+
+/* Do NOT use gap on root, since its parts are not always direct descendants of*/
+/* the dialog container.*/
+.root__49fc1 {
+  background-color: var(--dialog_bg_color) !important;
+  border-radius: var(--window_radius) !important;
+  box-shadow: var(--shadow-high) !important;
+  outline: 1px solid var(--window_outline_color) !important;
+  outline-offset: -1px !important;
+}
+.root__49fc1:has(.close__49fc1) {
+  background-color: var(--window_bg_color) !important;
+}
+.root__49fc1 .header__49fc1 {
+  padding: 0 !important;
+  padding-top: var(--dialog-spacing) !important;
+  position: unset !important;
+  justify-content: center !important;
+}
+.root__49fc1 .content__49fc1 {
+  text-align: center !important;
+  padding: var(--dialog-spacing) !important;
+  padding-top: var(--dialog-spacing-x05) !important;
+}
+.root__49fc1 .footer__49fc1 {
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: var(--dialog-spacing) !important;
+  margin-top: 0 !important;
+  gap: var(--spacing-2x) !important;
+}
+.root__49fc1 .footer__49fc1 button {
+  /* Hardcoded (maybe):*/
+  /* https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123*/
+  border-radius: 12px !important;
+  /* Seen in "Change password" dialog*/
+  margin: 0 !important;
+  flex-grow: 1 !important;
+  height: 44px !important;
+}
