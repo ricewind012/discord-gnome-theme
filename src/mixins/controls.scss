@@ -232,7 +232,7 @@
 	}
 }
 
-/*#region card */
+// #region card
 @mixin cards-container {
 	background-color: var(--card_bg_color);
 	border-radius: var(--card_radius);
@@ -290,4 +290,4 @@
 		border-radius: var(--card_radius);
 	}
 }
-/*#endregion*/
+// #endregion

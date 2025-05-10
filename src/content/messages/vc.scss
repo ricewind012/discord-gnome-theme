@@ -1,6 +1,7 @@
 @use "controls";
 
-// TODO: make vc light themed ?
+// VC is permanently dark themed, so do the same for titlebar.
+//
 // prettier-ignore
 .base_c48ade:has(
 	> .content_c48ade

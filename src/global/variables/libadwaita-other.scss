@@ -24,10 +24,6 @@
 	--window_radius: calc(var(--button_radius) + 6px);
 	--popover_radius: calc(var(--menu_radius) + 6px);
 
-	/** my **/
-	--base-unit: 6px;
-	--icon-size: 16px;
-
 	--switch-transition: 100ms;
 	--backdrop: color-mix(in srgb, black 25%, transparent);
 
@@ -40,6 +36,10 @@
 	--settings-dialog-size: 80%;
 	--sidebar-width: 263px;
 	--content-width: 575px;
+
+	// my
+	--base-unit: 6px;
+	--icon-size: 16px;
 
 	font-size: var(--document-font-size);
 

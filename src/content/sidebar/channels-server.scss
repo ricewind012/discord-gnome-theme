@@ -89,7 +89,7 @@ div.sidebar_c48ade {
 }
 
 .children__2ea32 {
-	// Use the context menu
+	// Use the context menu instead
 	.iconItem_c69b6d {
 		display: none;
 	}
@@ -110,7 +110,7 @@ div.sidebar_c48ade {
 .link__2ea32 {
 	color: inherit;
 	// Originally --space-xxs, but it's at a constant 4px. This is put here in
-	// order to not fuck with the virtualized list.
+	// order to not fuck with the virtualized list, since --space-xxs is edited.
 	padding-block: var(--space-4);
 }
 
