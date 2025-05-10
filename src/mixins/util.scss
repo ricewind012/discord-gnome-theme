@@ -1,3 +1,15 @@
+@function get-opposite-dir($direction) {
+	@if $direction == "top" {
+		@return "bottom";
+	} @else if $direction == "right" {
+		@return "left";
+	} @else if $direction == "bottom" {
+		@return "top";
+	} @else if $direction == "left" {
+		@return "right";
+	}
+}
+
 @mixin focus-ring {
 	outline: 0 solid transparent;
 	outline-offset: 2px;
@@ -14,6 +26,8 @@
 @mixin icon {
 	background-color: currentColor;
 	mask: var(--icon);
+	mask-position: center;
+	mask-repeat: no-repeat;
 
 	width: var(--icon-size);
 	height: var(--icon-size);

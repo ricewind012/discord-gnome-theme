@@ -44,16 +44,12 @@
 	@include controls.icon-button-with-tooltip(
 		$name: "menu",
 		$direction: "bottom",
-		$selector: "::after"
+		$selector: "::after",
+		$overflow-workaround-direction: "right"
 	);
 
 	flex-shrink: 0;
 
 	app-region: no-drag;
 	pointer-events: all;
-
-	// tooltip, it doesn't want $overflow-workaround-direction
-	&::after {
-		right: 0;
-	}
 }

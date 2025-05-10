@@ -133,9 +133,6 @@
 		$selector: "::after"
 	);
 
-	// tooltip
-	@extend %text-normal;
-
 	position: fixed;
 	top: var(--spacing);
 	right: calc(

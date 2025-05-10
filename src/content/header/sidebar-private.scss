@@ -42,10 +42,6 @@
 			$overflow-workaround-direction: "left"
 		);
 
-		position: absolute;
-		top: var(--spacing);
-		left: var(--spacing);
-
 		app-region: no-drag;
 	}
 }
