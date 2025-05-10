@@ -1,12 +1,5 @@
 @use "controls";
-
-%-icon {
-	background-color: currentColor;
-	mask: icon("pan-down");
-
-	width: var(--icon-size);
-	height: var(--icon-size);
-}
+@use "util";
 
 .searchInput__3f413 {
 	all: unset;
@@ -18,7 +11,9 @@
 	min-height: 34px;
 
 	.icons__3f413 {
-		@extend %-icon;
+		--icon: icon("pan-down");
+
+		@include util.icon;
 
 		height: unset;
 		min-height: unset;

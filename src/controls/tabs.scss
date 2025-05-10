@@ -61,12 +61,10 @@
 				&::before {
 					content: "";
 
-					width: var(--icon-size);
-					height: var(--icon-size);
+					@include util.icon;
+
 					display: inline-block;
 
-					mask: var(--icon);
-					background-color: currentColor;
 					margin-right: 12px;
 				}
 			}

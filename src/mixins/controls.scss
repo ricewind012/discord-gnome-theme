@@ -114,10 +114,7 @@
 		position: absolute;
 		inset: 0;
 
-		mask: var(--icon);
-		mask-repeat: no-repeat;
-		mask-position: center;
-		background-color: currentColor;
+		@include util.icon;
 	}
 
 	& > * {
