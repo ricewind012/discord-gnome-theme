@@ -50,6 +50,17 @@
 	)
 );
 
+// Channels list
+@include -gen-icons(
+	"aria-label",
+	(
+		"Announcements icon": "bullhorn",
+		"Forum icon": "chat-bubbles-empty-inverted",
+		"Rules icon": "notepad",
+		"Voice icon": "phone-right-facing",
+	)
+);
+
 // User panel
 @include -gen-icons(
 	"aria-label",

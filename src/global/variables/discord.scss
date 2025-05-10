@@ -84,6 +84,9 @@
 	--status-warning-text: var(--warning_fg_color);
 
 	--custom-app-top-bar-height: 0px;
+	--channels-spine-offset-left: calc(
+		var(--space-xs) * 2 + var(--icon-size) / 2
+	);
 	--chat-markup-line-height: 1.5rem;
 	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
 

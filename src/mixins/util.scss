@@ -11,6 +11,14 @@
 	}
 }
 
+@mixin icon {
+	background-color: currentColor;
+	mask: var(--icon);
+
+	width: var(--icon-size);
+	height: var(--icon-size);
+}
+
 %text-normal {
 	font-size: var(--document-font-size);
 	font-weight: normal;

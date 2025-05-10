@@ -25,34 +25,107 @@ div.sidebar_c48ade {
 }
 
 .wrapper__2ea32 {
-	padding: 0;
+	color: var(--window_fg_color);
+
+	&.modeMuted__2ea32 {
+		color: var(--window_fg_muted);
+	}
 
 	&.typeThread__2ea32 {
-		margin-left: 36px;
+		--spine-width: 10px;
+		margin-left: calc(var(--channels-spine-offset-left) + var(--spine-width));
+	}
+
+	.channelInfo_c69b6d {
+		margin: 0;
+	}
+
+	[data-text-variant="text-xs/semibold"] {
+		@extend %text-normal;
 	}
 }
 
-.link__2ea32 {
-	color: var(--window_fg_color);
-	padding: 0 14px;
-	margin: 0 var(--menu_margin) 2px;
+// Header
+.wrapperCommon__29444 {
+	--icon: icon("pan-down");
 
-	min-height: 36px;
-	justify-content: center;
+	&.collapsed__29444 {
+		--icon: icon("pan-up");
+	}
+
+	&:not(:hover) {
+		color: var(--window_fg_muted);
+	}
+
+	.icon__29444 {
+		@include util.icon;
+
+		transform: none;
+
+		path {
+			display: none;
+		}
+	}
+
+	.mainContent__29444 {
+		gap: var(--space-xs);
+
+		flex-direction: row-reverse;
+		justify-content: start;
+	}
+
+	.name__29444 {
+		@extend %title-4;
+
+		color: inherit;
+	}
+}
+
+// "Browse channels", since it's fucking useless
+.basicChannelRowLink__2ea32,
+.sectionDivider__629e4,
+.sectionDivider__629e4 + [style="height: 12px;"] {
+	display: none;
+}
+
+.children__2ea32 {
+	// Use the context menu
+	.iconItem_c69b6d {
+		display: none;
+	}
+}
+
+.icon__2ea32 {
+	display: none;
+}
+
+// TODO: optional !important
+:where(.iconContainer__2ea32) {
+	// Align with Discord
+	--icon: icon("lang-include");
+
+	@include util.icon;
+}
+
+.link__2ea32 {
+	color: inherit;
+	// Originally --space-xxs, but it's at a constant 4px. This is put here in
+	// order to not fuck with the virtualized list.
+	padding-block: var(--space-4);
 }
 
 .name__2ea32 {
 	@extend %text-normal;
 }
 
-.unread__2ea32 {
-	top: 9px;
-	left: calc(var(--space-xs) * -1);
-	height: calc(100% - 11px);
+.spine__5b40b {
+	color: var(--window_fg_color);
 }
 
-[aria-label="Invite to Server"],
-.iconContainer__2ea32,
-.sectionDivider__35e86 {
-	display: none;
+.unread__2ea32 {
+	margin: 0;
+
+	top: var(--space-4);
+	left: calc(var(--space-xs) * -1);
+	height: calc(100% - var(--space-4) * 2);
 }
