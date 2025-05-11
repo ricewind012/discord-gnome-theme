@@ -68,11 +68,11 @@
 		"Camera Unavailable": "camera-disabled",
 		"Disconnect": "window-close",
 		"Leave Activity": "log-out",
-		"Noise Suppression powered by Krisp": "sound-wave",
 		"Open Soundboard": "bullhorn",
 		"Share Your Screen": "record-screen",
 		"Start An Activity": "emoji-activities",
 		"Stop Streaming": "stop",
+		"Turn Off Camera": "camera-photo",
 		"Turn On Camera": "camera-photo",
 		"User Settings": "settings",
 		"Video": "camera-photo",
@@ -171,6 +171,7 @@
 		"Friend Requests": "contact-new",
 		"Keybinds": "keyboard3",
 		"Language": "translate",
+		"logout": "system-log-out",
 		"My Account": "person",
 		"Notifications": "bell-outline",
 		"Profile Customization": "edit",
@@ -205,14 +206,12 @@
 		"PROFILE": "info-outline",
 		"ROLES": "view-list",
 		"STICKERS": "image-round",
-		"SOUNDBOARD": "bullhorn"
+		"SOUNDBOARD": "bullhorn",
+
+		// Channel settings
+		"DELETE": "window-close",
+		"INSTANT_INVITES": "paper-plane",
+		"OVERVIEW": "info-outline",
+		"PERMISSIONS": "org.gnome.Settings-users"
 	)
 );
-
-[data-tab-id="logout"] {
-	--icon: icon("system-log-out");
-
-	svg {
-		display: none;
-	}
-}

@@ -120,6 +120,10 @@
 	.separator_b3f026 {
 		margin: var(--menu_margin);
 	}
+
+	[role="tab"] svg {
+		display: none;
+	}
 }
 
 .sidebarRegion__23e6b {

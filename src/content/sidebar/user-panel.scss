@@ -82,3 +82,9 @@
 		display: initial;
 	}
 }
+
+// There are only 2 buttons and 1 of them has a constant aria-label, the other
+// doesn't
+.voiceButtonsContainer_e131a9 {
+	--icon: icon("sound-wave");
+}
