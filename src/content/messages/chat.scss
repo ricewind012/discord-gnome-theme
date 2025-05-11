@@ -3,6 +3,16 @@
 
 .chat_f75fb0 {
 	border: none;
+	border-radius: 0;
+
+	&.threadSidebarOpen_f75fb0 {
+		--chat-header-right-padding: 0px;
+
+		// Unnamed div with min-width
+		& + div {
+			display: none;
+		}
+	}
 }
 
 .embedAuthor__623de * {
@@ -89,10 +99,6 @@
 
 .username_c19a55 {
 	@extend %title-3;
-}
-
-.chatLayerWrapper__01ae2 > .container__01ae2 {
-	border-radius: 0;
 }
 
 .embed__623de {
