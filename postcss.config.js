@@ -28,10 +28,21 @@ function icon(name) {
 	return `url("data:image/svg+xml;base64,${base64}")`;
 }
 
-const appendImportantPlugin = () => (css) => {
+const appendImportantPlugin = (opts) => (css) => {
+	const NOT_IMPORTANT_MATCH = / notimportant$/;
+
 	css.walkRules((rule) => {
-		const nodes = rule.nodes.filter((e) => e.parent.selector !== ":root");
+		const nodes = rule.nodes.filter(
+			(node) =>
+				node.type !== "comment" &&
+				!opts.filter.some((sel) => node.parent.selectors.includes(sel)),
+		);
 		for (const node of nodes) {
+			if (node.value.match(NOT_IMPORTANT_MATCH)) {
+				node.value = node.value.replace(NOT_IMPORTANT_MATCH, "");
+				continue;
+			}
+
 			node.important = true;
 		}
 	});
@@ -52,6 +63,8 @@ export default {
 			silenceDeprecations: ["legacy-js-api", "mixed-decls"],
 			includePaths: ["src/mixins"],
 		}),
-		appendImportantPlugin(),
+		appendImportantPlugin({
+			filter: [":root"],
+		}),
 	],
 };
