@@ -33,7 +33,9 @@ div.sidebar_c48ade {
 
 	&.typeThread__2ea32 {
 		--spine-width: 10px;
-		margin-left: calc(var(--channels-spine-offset-left) + var(--spine-width));
+		margin-left: calc(
+			var(--channels-spine-offset-left) + var(--spine-width) + var(--space-xs)
+		);
 	}
 
 	.channelInfo_c69b6d {
