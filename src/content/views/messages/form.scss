@@ -1,0 +1,51 @@
+[aria-label="Open sticker picker"] {
+	display: none;
+}
+
+// Message form-specific channelTextArea stuff
+.channelTextArea__74017 {
+	.attachButton__0923f {
+		--icon: icon("plus-circle-outline");
+
+		margin: 0;
+
+		// align with cozy mode avatars, à la discord
+		width: calc(
+			var(--custom-message-avatar-size) +
+				var(--custom-message-margin-horizontal) - var(--spacing)
+		);
+	}
+
+	.clipContainer__841c8 {
+		padding: 0;
+		margin: 0;
+	}
+
+	.replyLabel__841c8 {
+		font-size: var(--document-font-size);
+	}
+
+	.separator_aa63ab {
+		margin: 0;
+
+		&::before {
+			display: none;
+		}
+	}
+}
+
+.form_f75fb0 {
+	--custom-channel-textarea-text-area-height: 0px;
+
+	padding-inline: var(--custom-message-margin-horizontal);
+	margin: 0;
+
+	&::before,
+	&::after {
+		display: none;
+	}
+}
+
+.textAreaThreadCreation__74017 [role="textbox"] {
+	border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+}

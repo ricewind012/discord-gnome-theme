@@ -80,8 +80,9 @@
 			margin: 0;
 
 			input {
+				@include controls.text-field;
+
 				opacity: 1;
-				box-shadow: none;
 
 				position: relative;
 			}

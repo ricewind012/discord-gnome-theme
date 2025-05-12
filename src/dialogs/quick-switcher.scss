@@ -1,7 +1,13 @@
+@use "controls";
+
 .container_ac6cb0 {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
+}
+
+.input_ac6cb0 {
+	@include controls.text-field;
 }
 
 .quickswitcher_ac6cb0 {

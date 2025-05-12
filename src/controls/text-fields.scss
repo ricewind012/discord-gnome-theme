@@ -47,16 +47,53 @@
 	".inner_a45028"
 );
 
-[role="textbox"] {
-	@include util.focus-ring;
-}
-
-.textarea__9daae, // User profile note
-.quickswitcher_ac6cb0 > input,
-.channelName__754bd > div > input {
-	@include controls.text-field;
-}
-
 .input__0f084 {
 	@include controls.text-field;
+}
+
+.channelTextArea__74017 {
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) 7.5%,
+		transparent
+	);
+	border: none;
+	border-radius: var(--radius-xs);
+
+	:where(.button__201d5) {
+		@include controls.icon-button;
+
+		border-radius: 0;
+	}
+
+	.buttons__74017 {
+		gap: 0;
+
+		// align to start for longer text
+		& > div {
+			height: 100%;
+			align-items: start;
+		}
+	}
+
+	.inner__74017 {
+		padding: 0;
+	}
+
+	.themedBackground__74017 {
+		background-color: transparent;
+		border-radius: inherit;
+	}
+
+	.placeholder__1b31f {
+		// D*scord just ignores its own variable, genius
+		line-height: var(--chat-markup-line-height);
+		padding: var(--spacing);
+		margin: 0;
+	}
+
+	[role="textbox"] {
+		@extend .placeholder__1b31f;
+		@include util.focus-ring;
+	}
 }
