@@ -15,7 +15,7 @@
 }
 
 [data-text-variant] {
-	line-height: 1.25;
+	line-height: 1.2;
 	text-transform: none;
 }
 
@@ -30,7 +30,6 @@
 	margin-bottom: 16px;
 }
 
-// TODO: Placeholder header seems to be larger
 [data-text-variant^="heading-lg"],
 [data-text-variant^="heading-x"] {
 	@extend %title-1;
@@ -55,11 +54,8 @@
 	@extend %title-3;
 }
 
-// links
 .anchor_edefb8[href] {
-	opacity: 1;
-	color: var(--accent_color);
-	text-decoration: underline;
+	@extend %link;
 
-	transition: var(--backdrop_transition);
+	opacity: 1;
 }
