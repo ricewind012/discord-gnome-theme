@@ -29,6 +29,15 @@
 	}
 
 	.themeSelection__36dee {
+		// --card_fg_color
+		&.darkOverlay__36dee {
+			color: #fff;
+		}
+
+		&.lightOverlay__36dee {
+			color: rgba(0, 0, 6, 0.8);
+		}
+
 		// radios.scss override
 		&:first-of-type {
 			border-bottom: 1px solid var(--card_shade_color);

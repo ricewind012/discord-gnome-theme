@@ -9,7 +9,7 @@
 
 %-tab-header {
 	position: fixed;
-	top: calc(var(--p) + var(--weird-offset));
+	top: calc(var(--p) + 1px);
 	// prettier-ignore
 	left: calc(
 		var(--p)
@@ -39,7 +39,7 @@
 		width: calc(
 			100%
 			+ var(--titlebar-button-size) + var(--titlebar-button-spacing) * 2
-			- 3px
+			- var(--weird-offset) - 2px
 		);
 		z-index: -1;
 
@@ -135,6 +135,10 @@
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
 	--weird-offset: 1px;
 
+	.custom-theme-background & {
+		--weird-offset: 2px;
+	}
+
 	& > :not(:only-child):last-child {
 		box-shadow: var(--elevation-high);
 		border: 1px solid var(--window_outline_color);
@@ -183,7 +187,7 @@
 		content: attr(aria-label);
 
 		position: fixed;
-		top: calc(var(--p) + var(--weird-offset));
+		top: calc(var(--p) + 1px);
 		left: calc(var(--p) + var(--weird-offset));
 		width: calc(var(--sidebar-width) + var(--scrollbar-width));
 		height: var(--headerbar-height);
