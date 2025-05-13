@@ -1,0 +1,21 @@
+@use "controls";
+
+// Server settings traits
+.grid__4cbea {
+	gap: var(--spacing) var(--spacing-2x);
+
+	.emojiButton__04eed {
+		@include controls.icon-button("emoji-people");
+	}
+
+	.emojiWrapper__4cbea {
+		all: unset;
+	}
+
+	.traitContainer__4cbea {
+		background-color: transparent;
+		border: none;
+		gap: var(--spacing);
+		padding: 0;
+	}
+}

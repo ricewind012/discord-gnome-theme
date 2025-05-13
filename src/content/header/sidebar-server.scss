@@ -17,30 +17,21 @@
 			box-shadow: var(--elevation-low);
 		}
 	}
+}
 
-	.header_f37cb1 {
-		background-color: transparent;
-		border: none;
-		padding: var(--spacing);
+.header_f37cb1 {
+	background-color: transparent;
+	border: none;
+	padding: var(--spacing);
 
-		app-region: drag;
-	}
-
-	.headerEllipseBackdrop_f37cb1,
-	.headerEllipseForeground_f37cb1,
-	.headerGlass_f37cb1 {
-		display: none;
-	}
-
-	.name_f37cb1 {
-		@extend %title-2;
-
-		margin: auto;
-	}
+	app-region: drag;
 }
 
 .guildIconV2Container__85d16,
-.headerChildren_f37cb1 {
+.headerChildren_f37cb1,
+.headerEllipseBackdrop_f37cb1,
+.headerEllipseForeground_f37cb1,
+.headerGlass_f37cb1 {
 	display: none;
 }
 
@@ -58,4 +49,10 @@
 
 	app-region: no-drag;
 	pointer-events: all;
+}
+
+.name_f37cb1 {
+	@extend %title-2;
+
+	margin: auto;
 }

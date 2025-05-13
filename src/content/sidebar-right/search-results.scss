@@ -43,11 +43,11 @@
 		}
 	}
 
-	.channelNameText_c68065 > span {
+	.channelNameText_c68065 {
 		@extend %title-2;
 	}
 
-	[role="listitem"] {
+	.container__02a39 {
 		@include controls.card-with-actual-border-radiuses($activatable: true);
 
 		padding: 0;

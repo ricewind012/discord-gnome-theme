@@ -40,11 +40,6 @@
 	.divider_f83afb {
 		display: none;
 	}
-
-	[role="tablist"][aria-orientation="horizontal"] {
-		border: none;
-		padding: 0;
-	}
 }
 
 // for banner
@@ -52,57 +47,18 @@
 	width: 100%;
 }
 
-.flexChild__7c0ba[direction^="vertical_"] {
-	& > * {
-		color: var(--window_fg_color);
-		text-transform: unset;
+// Toggle field
+.container__0d850 {
+	.note__0d850 {
+		margin: 0;
+		margin-right: 48px;
 	}
 
-	& > :first-child {
-		@extend %title-1;
+	.title__0d850 {
+		@extend %text-normal;
+
+		margin-right: 8px;
 	}
-
-	& > :last-child:not(:only-child) {
-		@extend %title-4;
-
-		font-size: 14px;
-	}
-
-	.text__33d12 {
-		margin-top: 8px;
-	}
-}
-
-// Server settings traits
-.grid__4cbea {
-	gap: var(--spacing) var(--spacing-2x);
-
-	.emojiButton__04eed {
-		@include controls.icon-button("emoji-people");
-	}
-
-	.emojiWrapper__4cbea {
-		all: unset;
-	}
-
-	.traitContainer__4cbea {
-		background-color: transparent;
-		border: none;
-		gap: var(--spacing);
-		padding: 0;
-	}
-}
-
-.labelRow__0d850 .title__0d850 {
-	@extend %text-normal;
-
-	margin-right: 8px;
-}
-
-// settings field subtext
-.note__0d850 {
-	margin: 0;
-	margin-right: 48px;
 }
 
 // .navigation-sidebar
@@ -132,6 +88,19 @@
 	flex: unset;
 }
 
-.title__3e443 {
-	margin-bottom: 0;
+// Status page
+.wrapper__33d12 {
+	.text__33d12 {
+		@extend %text-normal;
+
+		color: var(--window_fg_color);
+		margin-top: var(--spacing-2x);
+	}
+
+	.title__33d12 {
+		@extend %title-1;
+
+		color: var(--window_fg_color);
+		text-transform: unset;
+	}
 }

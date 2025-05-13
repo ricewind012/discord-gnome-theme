@@ -11,12 +11,6 @@
 	--chat-header-right-padding: 0px;
 }
 
-[aria-label="Notification Settings"],
-[href="https://support.discord.com"]
-{
-	display: none;
-}
-
 .container__9293f {
 	border: none;
 	box-shadow: var(--elevation-low);
@@ -27,99 +21,6 @@
 	// home
 	&:not([role="navigation"], [aria-label="Thread header"]) > div {
 		margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
-	}
-
-	// 1. Home title
-	// 5. Thread child channel
-	&[role="navigation"] .titleWrapper__9293f,
-	.akaBadge__488b1,
-	.caret__9293f,
-	.dot__9293f,
-	.nicknames__488b1,
-	.children__9293f > .iconWrapper__9293f,
-	.children__9293f:has(> .caret__9293f) [role="button"] {
-		display: none;
-	}
-
-	.children__9293f {
-		padding: var(--spacing);
-
-		min-height: var(--headerbar-height);
-		display: flex;
-		justify-content: center;
-
-		app-region: drag;
-
-		&:not(:has(.avatar_f75fb0)) {
-			flex-direction: column;
-		}
-
-		&:has(> .topic__6ec1a) {
-			margin-right: var(--icon-button-size);
-		}
-
-		// 1. VC fix
-		// 2. Channel news
-		& > :empty,
-		& > .followButton_f75fb0 {
-			display: none;
-		}
-
-		// Group chat
-		& > .container__754bd {
-			flex-grow: 0;
-			flex-shrink: 0;
-
-			div.input__4f074 {
-				display: none;
-			}
-		}
-
-		.channelName__754bd {
-			padding: 0;
-			margin: 0;
-
-			input {
-				@include controls.text-field;
-
-				opacity: 1;
-
-				position: relative;
-			}
-		}
-	}
-
-	.titleWrapper__9293f,
-	.topic__6ec1a {
-		padding: 0;
-		margin: 0;
-	}
-
-	.titleWrapper__9293f > h1 > div {
-		@extend %title-2;
-
-		line-height: 18px;
-	}
-
-	.topic__6ec1a {
-		@extend %caption;
-
-		line-height: 16px;
-		text-align: center;
-
-		anchor-name: --chat-topic;
-		// wtf ?
-		width: -webkit-fill-available;
-
-		a,
-		.channelMention {
-			app-region: no-drag;
-		}
-
-		// channel icon, needed to not expand by 1px
-		.icon_b75563 {
-			margin-bottom: 0.1rem;
-		}
 	}
 
 	.avatar_f75fb0 {
@@ -133,67 +34,85 @@
 	}
 }
 
-.iconWrapper__9293f {
-	@include controls.icon-button;
+.children__9293f {
+	padding: var(--spacing);
+
+	min-height: var(--headerbar-height);
+	display: flex;
+	justify-content: center;
+
+	app-region: drag;
+
+	&:not(:has(.avatar_f75fb0)) {
+		flex-direction: column;
+	}
+
+	&:has(> .topic__6ec1a) {
+		margin-right: var(--icon-button-size);
+	}
+
+	// 5. VC fix
+	// 6. Channel news
+	// 7. Thread child channel
+	.akaBadge__488b1,
+	.caret__9293f,
+	.dot__9293f,
+	.nicknames__488b1,
+	& > :empty,
+	& > .followButton_f75fb0,
+	& > .iconWrapper__9293f,
+	&:has(> .caret__9293f) [role="button"] {
+		display: none;
+	}
+
+	// Group chat
+	.channelName__754bd {
+		padding: 0;
+		margin: 0;
+
+		input {
+			@include controls.text-field;
+
+			opacity: 1;
+
+			position: relative;
+		}
+	}
+
+	.container__754bd {
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		div.input__4f074 {
+			display: none;
+		}
+	}
 }
 
-// Channel description button
-.topicClickTarget__6ec1a {
+.icon__97492 {
+	// When expanded, don't round the icon
+	--button_radius: 0;
+
 	@include controls.icon-button-with-tooltip(
-		$name: "info-outline",
+		$name: "loupe-large",
 		$direction: "bottom",
 		$selector: "::after"
 	);
 
-	position: fixed;
-	position-anchor: --chat-topic;
-	top: var(--spacing);
-	right: calc(anchor(right) - var(--icon-button-size) - var(--spacing));
-	left: unset;
+	cursor: pointer;
 
-	pointer-events: all;
+	.search__97492:focus-within & {
+		--icon: icon("window-close");
+	}
 
-	// TODO: pasted from global/window.scss visible app banner part
-	.content_c48ade:nth-child(3) & {
-		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
+	// tooltip, the theme is english only anyway lol
+	.search__97492:not(:focus-within):hover &::after {
+		content: "Search Messages";
 	}
 }
 
-.upperContainer__9293f {
-	padding-right: var(--chat-header-right-padding);
-	align-items: center;
-}
-
-.toolbar__9293f {
-	gap: var(--spacing);
-	padding: var(--spacing);
-
-	.vc-toolbox-btn {
-		--window_fg_color: transparent;
-
-		svg {
-			display: initial;
-		}
-	}
-
-	// vc
-	.liveQualityIndicator__30845 {
-		margin-bottom: 0;
-	}
-
-	// vc
-	.qualityIndicator__30845 {
-		width: unset;
-		height: unset;
-
-		&::before {
-			display: none;
-		}
-
-		& > * {
-			display: initial;
-		}
-	}
+.iconWrapper__9293f {
+	@include controls.icon-button;
 }
 
 .search__49676 {
@@ -232,24 +151,104 @@
 	}
 }
 
-.icon__97492 {
-	// When expanded, don't round the icon
-	--button_radius: 0;
+.titleWrapper__9293f {
+	padding: 0;
+	margin: 0;
 
+	// Home title
+	.container__9293f[role="navigation"] & {
+		display: none;
+	}
+
+	& > h1 > div {
+		@extend %title-2;
+
+		line-height: 18px;
+	}
+}
+
+.topic__6ec1a {
+	@extend %caption;
+
+	line-height: 16px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+
+	anchor-name: --chat-topic;
+	// wtf ?
+	width: -webkit-fill-available;
+
+	a,
+	.channelMention {
+		app-region: no-drag;
+	}
+
+	// channel icon, needed to not expand by 1px
+	.icon_b75563 {
+		margin-bottom: 0.1rem;
+	}
+}
+
+// Channel description button
+.topicClickTarget__6ec1a {
 	@include controls.icon-button-with-tooltip(
-		$name: "loupe-large",
+		$name: "info-outline",
 		$direction: "bottom",
 		$selector: "::after"
 	);
 
-	cursor: pointer;
+	position: fixed;
+	position-anchor: --chat-topic;
+	top: var(--spacing);
+	right: calc(anchor(right) - var(--icon-button-size) - var(--spacing));
+	left: unset;
 
-	.search__97492:focus-within & {
-		--icon: icon("window-close");
+	pointer-events: all;
+
+	// TODO: pasted from global/window.scss visible app banner part
+	.content_c48ade:nth-child(3) & {
+		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
+	}
+}
+
+.toolbar__9293f {
+	gap: var(--spacing);
+	padding: var(--spacing);
+
+	[aria-label="Notification Settings"] {
+		display: none;
 	}
 
-	// tooltip, the theme is english only anyway lol
-	.search__97492:not(:focus-within):hover &::after {
-		content: "Search Messages";
+	.vc-toolbox-btn {
+		--window_fg_color: transparent;
+
+		svg {
+			display: initial;
+		}
 	}
+
+	// vc
+	.liveQualityIndicator__30845 {
+		margin-bottom: 0;
+	}
+
+	// vc
+	.qualityIndicator__30845 {
+		width: unset;
+		height: unset;
+
+		&::before {
+			display: none;
+		}
+
+		& > * {
+			display: initial;
+		}
+	}
+}
+
+.upperContainer__9293f {
+	padding-right: var(--chat-header-right-padding);
+	align-items: center;
 }

@@ -1,4 +1,5 @@
 @use "controls";
+@use "typography";
 
 // 1. Connections tab
 // 2. Voice tab
@@ -7,4 +8,82 @@
 	@include controls.cards-container;
 
 	border: none;
+}
+
+// Nitro themes
+.presets__67a11 {
+	@include controls.cards-container;
+
+	background-color: transparent;
+	gap: 0;
+
+	overflow: hidden;
+	flex-direction: column;
+
+	[role="radiogroup"]:has(> &) {
+		box-shadow: none;
+	}
+
+	.selectionCircle__36dee {
+		display: none;
+	}
+
+	.themeSelection__36dee {
+		// radios.scss override
+		&:first-of-type {
+			border-bottom: 1px solid var(--card_shade_color);
+			border-radius: 0;
+
+			display: flex;
+			align-items: center;
+
+			.themeSelectionContainer__36dee:nth-last-child(2) > & {
+				border: none;
+			}
+		}
+
+		&::before {
+			content: "";
+
+			border: none;
+			border-radius: 50%;
+			padding: 0;
+			margin-inline-end: 16px;
+
+			box-sizing: border-box;
+			display: block;
+			width: 22px;
+			height: 22px;
+		}
+
+		&[aria-checked="true"]::before {
+			background-color: #fff;
+			border: 7px solid var(--accent_bg_color);
+		}
+
+		&[aria-checked="false"]::before {
+			border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+		}
+
+		&::after {
+			content: attr(aria-label);
+		}
+
+		svg {
+			display: none;
+		}
+	}
+
+	.themeSelectionContainer__36dee {
+		width: unset;
+		height: unset;
+	}
+
+	.themeTitleContainer__3e443 {
+		@extend %title-3;
+	}
+
+	.title__3e443 {
+		margin-bottom: 0;
+	}
 }

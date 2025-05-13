@@ -53,6 +53,11 @@
 
 .trailing_c38106 {
 	gap: var(--spacing);
+
+	[href="https://support.discord.com"]
+	{
+		display: none;
+	}
 }
 
 .winButton_c38106 {
