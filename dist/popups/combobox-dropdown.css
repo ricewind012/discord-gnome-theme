@@ -1,0 +1,16 @@
+.option__3f413 {
+  border-radius: var(--radius-xs) !important;
+}
+
+.popout__3f413 {
+  background-color: var(--popover_bg_color) !important;
+  border: 1px solid rgba(0, 0, 0, 0.14) !important;
+  border-radius: var(--popover_radius) !important;
+  box-shadow: var(--popover_shadow) !important;
+  padding: var(--spacing) !important;
+  margin-top: var(--spacing) !important;
+}
+
+.selectedIcon__3f413 {
+  display: none !important;
+}

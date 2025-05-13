@@ -1,0 +1,97 @@
+.headerButton_f37cb1:hover::after {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+.name_f37cb1 {
+  font-weight: 800 !important;
+  font-size: 14.96px !important;
+}
+
+.container_f37cb1.bannerVisible_f37cb1 .header_f37cb1 {
+  background-image: linear-gradient(var(--backdrop), transparent) !important;
+}
+.container_f37cb1.bannerVisible_f37cb1 .headerContent_f37cb1 {
+  filter: drop-shadow(0 1px 1px var(--bg-backdrop)) !important;
+}
+.container_f37cb1:not(.bannerVisible_f37cb1) .header_f37cb1 {
+  box-shadow: var(--elevation-low) !important;
+}
+
+.header_f37cb1 {
+  background-color: transparent !important;
+  border: none !important;
+  padding: var(--spacing) !important;
+  app-region: drag !important;
+}
+
+.guildIconV2Container__85d16,
+.headerChildren_f37cb1,
+.headerEllipseBackdrop_f37cb1,
+.headerEllipseForeground_f37cb1,
+.headerGlass_f37cb1 {
+  display: none !important;
+}
+
+.headerButton_f37cb1 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PGcgZmlsbD0iIzIyMjIyMiI+PHBhdGggZD0ibSAyIDMgaCAxMiB2IDIgaCAtMTIgeiBtIDAgMCIvPjxwYXRoIGQ9Im0gMiA3IGggMTIgdiAyIGggLTEyIHogbSAwIDAiLz48cGF0aCBkPSJtIDIgMTEgaCAxMiB2IDIgaCAtMTIgeiBtIDAgMCIvPjwvZz48L3N2Zz4K") !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  anchor-name: --tooltip-ur3dtkw !important;
+  color: inherit !important;
+  flex-shrink: 0 !important;
+  app-region: no-drag !important;
+  pointer-events: all !important;
+}
+.headerButton_f37cb1:hover {
+  --percentage: 12.75% !important;
+}
+.headerButton_f37cb1:active {
+  --percentage: 27.75% !important;
+}
+.headerButton_f37cb1:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.headerButton_f37cb1::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.headerButton_f37cb1 > * {
+  display: none !important;
+}
+.headerButton_f37cb1:hover::after {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+  content: attr(aria-label) !important;
+  display: block !important;
+  position: fixed !important;
+  position-anchor: --tooltip-ur3dtkw !important;
+  top: calc(anchor(bottom) + var(--spacing)) !important;
+  z-index: 999 !important;
+  right: anchor(right) !important;
+  pointer-events: none !important;
+}
+
+.name_f37cb1 {
+  margin: auto !important;
+}

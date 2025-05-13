@@ -1,0 +1,47 @@
+.theme-light,
+.theme-dark {
+  /* libadwaita 1.7*/
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+  --backdrop_transition: 200ms ease-out !important;
+  --focus_transition: outline-color 200ms var(--ease-out-quad),
+  	outline-width 200ms var(--ease-out-quad),
+  	outline-offset 200ms var(--ease-out-quad) !important;
+  --button_transition: background 200ms var(--ease-out-quad),
+  	box-shadow 200ms var(--ease-out-quad) !important;
+  --popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
+  	0 2px 14px 3px color-mix(in srgb, black 5%, transparent) !important;
+  --document-font-family: "Adwaita Sans", sans-serif !important;
+  --document-font-size: 11pt !important;
+  --monospace-font-family: "Adwaita Mono", monospace !important;
+  --monospace-font-size: 11pt !important;
+  --button_radius: 9px !important;
+  --card_radius: 12px !important;
+  --menu_radius: 9px !important;
+  --menu_margin: 6px !important;
+  --menu_padding: 12px !important;
+  --window_radius: calc(var(--button_radius) + 6px) !important;
+  --popover_radius: calc(var(--menu_radius) + 6px) !important;
+  --switch-transition: 100ms !important;
+  --backdrop: color-mix(in srgb, black 25%, transparent) !important;
+  --border-opacity: 15% !important;
+  --dim-level-opacity: 50% !important;
+  --headerbar-height: 46px !important;
+  --icon-button-size: 34px !important;
+  --scrollbar-width: 8px !important;
+  --settings-dialog-size: 80% !important;
+  --sidebar-width: 263px !important;
+  --content-width: 575px !important;
+  /* my*/
+  --base-unit: 6px !important;
+  --icon-size: 16px !important;
+  font-size: var(--document-font-size) !important;
+}
+@media (prefers-reduced-motion) {
+  .theme-light,
+  .theme-dark {
+    --backdrop_transition: none !important;
+    --button_transition: none !important;
+    --focus_transition: none !important;
+    --switch-transition: none !important;
+  }
+}

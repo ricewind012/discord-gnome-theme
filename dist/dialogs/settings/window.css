@@ -1,0 +1,296 @@
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover > .titleText_e29cd7 {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+.contentColumn__23e6b > div > .defaultColor__4bd52:first-child, .contentColumn__23e6b > .defaultColor__4bd52:first-child,
+.contentColumn__23e6b .settingsPage_f131e9 > h3, .contentColumn__23e6b > div > .sectionTitle__7bffb > *, .standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) h2[data-text-variant="heading-lg/semibold"]:not([style="color: white;"]),
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) :is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .header_fa2640 > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) [aria-hidden=true][style="height: 60px;"] + div > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .breadcrumbs_befe67 > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) #guild_templates-tab > div > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .formTitle__5906b, .sidebarRegion__23e6b [role=tablist][aria-orientation=vertical]::before {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+.sidebarRegion__23e6b [role=tablist][aria-orientation=vertical]::before, .standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) h2[data-text-variant="heading-lg/semibold"]:not([style="color: white;"]),
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) :is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .header_fa2640 > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) [aria-hidden=true][style="height: 60px;"] + div > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .breadcrumbs_befe67 > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) #guild_templates-tab > div > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .formTitle__5906b, .contentColumn__23e6b > div > .sectionTitle__7bffb > *, .contentColumn__23e6b > div > .defaultColor__4bd52:first-child, .contentColumn__23e6b > .defaultColor__4bd52:first-child,
+.contentColumn__23e6b .settingsPage_f131e9 > h3 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.page__91dc3 .titleContainer_e29cd7, .standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) h2[data-text-variant="heading-lg/semibold"]:not([style="color: white;"]),
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) :is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .header_fa2640 > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) [aria-hidden=true][style="height: 60px;"] + div > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .breadcrumbs_befe67 > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) #guild_templates-tab > div > h2,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .formTitle__5906b, .contentColumn__23e6b > div > .sectionTitle__7bffb, .contentColumn__23e6b > div > .defaultColor__4bd52:first-child, .contentColumn__23e6b > .defaultColor__4bd52:first-child,
+.contentColumn__23e6b .settingsPage_f131e9 > h3 {
+  position: fixed !important;
+  top: calc(var(--p) + 1px) !important;
+  /* prettier-ignore*/
+  left: calc(var(--p) + var(--sidebar-width) + var(--scrollbar-width) + var(--weird-offset) + 1px) !important;
+  /* prettier-ignore*/
+  width: calc(100% - var(--p) * 2 - var(--sidebar-width) - var(--titlebar-button-size) - var(--titlebar-button-spacing) * 2 - var(--scrollbar-width)) !important;
+  height: var(--headerbar-height) !important;
+  z-index: 999 !important;
+  app-region: drag !important;
+}
+.page__91dc3 .titleContainer_e29cd7::before, .standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) h2[data-text-variant="heading-lg/semibold"]:not([style="color: white;"])::before,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) :is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2::before,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .header_fa2640 > h2::before,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) [aria-hidden=true][style="height: 60px;"] + div > h2::before,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .breadcrumbs_befe67 > h2::before,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) #guild_templates-tab > div > h2::before,
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .formTitle__5906b::before, .contentColumn__23e6b > div > .sectionTitle__7bffb::before, .contentColumn__23e6b > div > .defaultColor__4bd52:first-child::before, .contentColumn__23e6b > .defaultColor__4bd52:first-child::before,
+.contentColumn__23e6b .settingsPage_f131e9 > h3::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  /* prettier-ignore*/
+  width: calc(100% + var(--titlebar-button-size) + var(--titlebar-button-spacing) * 2 - var(--weird-offset) - 2px) !important;
+  z-index: -1 !important;
+  background-color: var(--window_bg_color) !important;
+  border-top-right-radius: var(--window_radius) !important;
+  box-shadow: var(--elevation-low) !important;
+}
+
+.closeButton_c2b141 {
+  --percentage: 7.5% !important;
+  --icon-button-size: var(--titlebar-button-size) !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  background-color: color-mix(in srgb, var(--window_fg_color) var(--percentage), transparent) !important;
+  border: none !important;
+  border-radius: 100% !important;
+  opacity: 1 !important;
+  flex: 0 0 var(--titlebar-button-size) !important;
+}
+.closeButton_c2b141:hover {
+  --percentage: 12.75% !important;
+}
+.closeButton_c2b141:active {
+  --percentage: 27.75% !important;
+}
+.closeButton_c2b141:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.closeButton_c2b141::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.closeButton_c2b141 > * {
+  display: none !important;
+}
+
+.contentColumn__23e6b {
+  /* First is for vencord, but maybe others as well*/
+}
+.contentColumn__23e6b > div > .sectionTitle__7bffb > * {
+  margin: 0 !important;
+}
+
+/* Server settings*/
+/* #2 is for "Invites" tab*/
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) {
+  /* Most tabs. Exception: "Members" tab toggle field header*/
+  /* "Invites" tab*/
+  /* TODO: consider all: unset ?*/
+}
+.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) .header__1de14 {
+  padding: 0 !important;
+}
+
+.keybind_c2b141 {
+  display: none !important;
+}
+
+.layer__960e4 {
+  opacity: 1 !important;
+}
+.layer__960e4[aria-hidden=true] {
+  pointer-events: none !important;
+  transform: none !important;
+}
+.layer__960e4[aria-hidden=true]::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  background-color: var(--backdrop) !important;
+  z-index: 101 !important;
+}
+
+.layers__960e4 {
+  --p: calc((100% - var(--settings-dialog-size)) / 2) !important;
+  --weird-offset: 1px !important;
+}
+.custom-theme-background .layers__960e4 {
+  --weird-offset: 2px !important;
+}
+.layers__960e4 > :not(:only-child):last-child {
+  box-shadow: var(--elevation-high) !important;
+  border: 1px solid var(--window_outline_color) !important;
+  border-radius: var(--window_radius) !important;
+  inset: var(--p) !important;
+}
+
+/* Server settings "Roles" tab sidebar*/
+/* No idea how this got broken, 0 behavior change, GENIUS layout, D*scord*/
+.page__91dc3 {
+  position: absolute !important;
+  /* Single role view headerbar*/
+}
+.page__91dc3 .titleContainer_e29cd7 {
+  box-shadow: none !important;
+  gap: var(--spacing) !important;
+  padding: var(--spacing) !important;
+  margin: 0 !important;
+  justify-content: start !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .addRole_e29cd7 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA3IDMgdiA0IGggLTQgdiAyIGggNCB2IDQgaCAyIHYgLTQgaCA0IHYgLTIgaCAtNCB2IC00IHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K") !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  app-region: no-drag !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .addRole_e29cd7:hover {
+  --percentage: 12.75% !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .addRole_e29cd7:active {
+  --percentage: 27.75% !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .addRole_e29cd7:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .addRole_e29cd7::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .addRole_e29cd7 > * {
+  display: none !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA5LjI5Mjk2OSAxMy43MDcwMzEgbCAtNSAtNSBjIC0wLjM5MDYyNSAtMC4zOTA2MjUgLTAuMzkwNjI1IC0xLjAyMzQzNyAwIC0xLjQxNDA2MiBsIDUgLTUgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMS4wMjM0MzcgLTAuMzkwNjI1IDEuNDE0MDYyIDAgcyAwLjM5MDYyNSAxLjAyMzQzNyAwIDEuNDE0MDYyIGwgLTQuMjkyOTY5IDQuMjkyOTY5IGwgNC4yOTI5NjkgNC4yOTI5NjkgYyAwLjM5MDYyNSAwLjM5MDYyNSAwLjM5MDYyNSAxLjAyMzQzNyAwIDEuNDE0MDYyIHMgLTEuMDIzNDM3IDAuMzkwNjI1IC0xLjQxNDA2MiAwIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPgo=") !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  anchor-name: --tooltip-ur3dtm1 !important;
+  app-region: no-drag !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover {
+  --percentage: 12.75% !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7:active {
+  --percentage: 27.75% !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7 > * {
+  display: none !important;
+}
+.page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover > .titleText_e29cd7 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+  display: block !important;
+  position: fixed !important;
+  position-anchor: --tooltip-ur3dtm1 !important;
+  bottom: calc(anchor(top) + var(--spacing)) !important;
+  z-index: 999 !important;
+  : anchor() !important;
+  pointer-events: none !important;
+}
+
+.sidebarRegion__23e6b [role=tablist][aria-orientation=vertical]::before {
+  content: attr(aria-label) !important;
+  position: fixed !important;
+  top: calc(var(--p) + 1px) !important;
+  left: calc(var(--p) + var(--weird-offset)) !important;
+  width: calc(var(--sidebar-width) + var(--scrollbar-width)) !important;
+  height: var(--headerbar-height) !important;
+  background-color: var(--secondary_sidebar_bg_color) !important;
+  border-right: 1px solid var(--background-modifier-accent) !important;
+  border-top-left-radius: var(--window_radius) !important;
+  box-shadow: var(--elevation-low) !important;
+  app-region: drag !important;
+}
+
+.standardSidebarView__23e6b {
+  top: var(--headerbar-height) !important;
+}
+
+.tools__23e6b {
+  position: fixed !important;
+  top: calc(var(--p) + var(--titlebar-button-spacing)) !important;
+  right: calc(var(--p) + var(--titlebar-button-spacing)) !important;
+}
+
+.toolsContainer__23e6b {
+  position: absolute !important;
+  z-index: 999 !important;
+}

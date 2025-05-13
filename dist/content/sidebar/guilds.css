@@ -1,0 +1,152 @@
+.guilds_c48ade .vc-ranb-button:hover > * {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+.circleIconButton__5bc7e {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA3IDMgdiA0IGggLTQgdiAyIGggNCB2IDQgaCAyIHYgLTQgaCA0IHYgLTIgaCAtNCB2IC00IHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K") !important;
+  --icon-button-size: var(--guildbar-avatar-size) !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  border-radius: 50% !important;
+}
+.circleIconButton__5bc7e:hover {
+  --percentage: 12.75% !important;
+}
+.circleIconButton__5bc7e:active {
+  --percentage: 27.75% !important;
+}
+.circleIconButton__5bc7e:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.circleIconButton__5bc7e::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.circleIconButton__5bc7e > * {
+  display: none !important;
+}
+
+.guilds_c48ade {
+  margin: 0 !important;
+  /* TODO: vencord dir ?*/
+}
+.guilds_c48ade .vc-ranb-button {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAxMy43NTM5MDYgNC42NTYyNSBjIDAuMTc1NzgyIC0wLjE5OTIxOSAwLjI2MTcxOSAtMC40NjA5MzggMC4yNDYwOTQgLTAuNzIyNjU2IGMgLTAuMDE5NTMxIC0wLjI2NTYyNSAtMC4xNDA2MjUgLTAuNTExNzE5IC0wLjMzOTg0NCAtMC42ODc1IGMgLTAuMTk5MjE4IC0wLjE3NTc4MiAtMC40NjA5MzcgLTAuMjY1NjI1IC0wLjcyNjU2MiAtMC4yNDYwOTQgYyAtMC4yNjU2MjUgMC4wMTU2MjUgLTAuNTExNzE5IDAuMTQwNjI1IC0wLjY4NzUgMC4zMzk4NDQgbCAtNi4yOTY4NzUgNy4xOTUzMTIgbCAtMi4yNDIxODggLTIuMjQ2MDk0IGMgLTAuMzkwNjI1IC0wLjM5MDYyNCAtMS4wMjM0MzcgLTAuMzkwNjI0IC0xLjQxNDA2MiAwIGMgLTAuMTg3NSAwLjE4NzUgLTAuMjkyOTY5IDAuNDQ1MzEzIC0wLjI5Mjk2OSAwLjcxMDkzOCBzIDAuMTA1NDY5IDAuNTE5NTMxIDAuMjkyOTY5IDAuNzA3MDMxIGwgMyAzIGMgMC4xOTUzMTIgMC4xOTUzMTMgMC40NjQ4NDMgMC4zMDA3ODEgMC43NDIxODcgMC4yOTI5NjkgYyAwLjI3NzM0NCAtMC4wMTE3MTkgMC41MzUxNTYgLTAuMTMyODEyIDAuNzE4NzUgLTAuMzQzNzUgeiBtIDAgMCIgZmlsbD0iIzIyMjIyMiIvPjwvc3ZnPgo=") !important;
+  --icon-button-size: var(--guildbar-avatar-size) !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+  anchor-name: --tooltip-ur3dtkp !important;
+  border-radius: 50% !important;
+  margin: auto !important;
+  /* TODO: revise button min-{w,h} ?*/
+  min-height: var(--guildbar-avatar-size) !important;
+}
+.guilds_c48ade .vc-ranb-button:hover {
+  --percentage: 12.75% !important;
+}
+.guilds_c48ade .vc-ranb-button:active {
+  --percentage: 27.75% !important;
+}
+.guilds_c48ade .vc-ranb-button:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.guilds_c48ade .vc-ranb-button::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.guilds_c48ade .vc-ranb-button > * {
+  display: none !important;
+}
+.guilds_c48ade .vc-ranb-button:hover > * {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+  display: block !important;
+  position: fixed !important;
+  position-anchor: --tooltip-ur3dtkp !important;
+  left: calc(anchor(right) + var(--spacing)) !important;
+  z-index: 999 !important;
+  top: calc(anchor(top) + (var(--icon-button-size) - 30px) / 2) !important;
+  : anchor() !important;
+  pointer-events: none !important;
+}
+
+.guildSeparator__252b6 {
+  background-color: var(--sidebar_border_color) !important;
+  width: calc(100% - var(--spacing) * 2) !important;
+}
+
+.listItemWrapper__91816 {
+  transform: none !important;
+}
+
+.scroller_ef3116 {
+  padding-top: var(--space-md) !important;
+}
+
+.tree_ef3116 {
+  background: var(--bg-overlay-app-frame, var(--sidebar_bg_color)) !important;
+  border-right: 1px solid var(--sidebar_border_color) !important;
+}
+
+/* guild*/
+.wrapper__6e9f8 {
+  border-radius: 50% !important;
+  transition: var(--backdrop_transition) !important;
+}
+.wrapper__6e9f8[aria-selected=true] {
+  border-radius: 25% !important;
+}
+.wrapper__6e9f8 .childWrapper__6e9f8 {
+  /* TODO: remove --percentage*/
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: inherit !important;
+  transition: var(--backdrop_transition) !important;
+}
+.wrapper__6e9f8 .childWrapper__6e9f8:hover {
+  /* *exact* #404040 for dark theme*/
+  --percentage: 12.75% !important;
+}
+.wrapper__6e9f8 .childWrapper__6e9f8:active {
+  /* *exact* #616161 for dark theme*/
+  --percentage: 27.75% !important;
+}
+.wrapper__6e9f8 img {
+  border-radius: inherit !important;
+}

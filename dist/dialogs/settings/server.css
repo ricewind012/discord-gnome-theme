@@ -1,0 +1,50 @@
+/* Server settings traits*/
+.grid__4cbea {
+  gap: var(--spacing) var(--spacing-2x) !important;
+}
+.grid__4cbea .emojiButton__04eed {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDggMCBjIC00LjQwMjM0NCAwIC04IDMuNTk3NjU2IC04IDggcyAzLjU5NzY1NiA4IDggOCBzIDggLTMuNTk3NjU2IDggLTggcyAtMy41OTc2NTYgLTggLTggLTggeiBtIDAgMS45ODA0NjkgYyAzLjMzOTg0NCAwIDYuMDE5NTMxIDIuNjc5Njg3IDYuMDE5NTMxIDYuMDE5NTMxIHMgLTIuNjc5Njg3IDYuMDE5NTMxIC02LjAxOTUzMSA2LjAxOTUzMSBzIC02LjAxOTUzMSAtMi42Nzk2ODcgLTYuMDE5NTMxIC02LjAxOTUzMSBzIDIuNjc5Njg3IC02LjAxOTUzMSA2LjAxOTUzMSAtNi4wMTk1MzEgeiBtIC0yIDMuMDE5NTMxIGMgLTAuNTUwNzgxIDAgLTEgMC40NDkyMTkgLTEgMSBzIDAuNDQ5MjE5IDEgMSAxIHMgMSAtMC40NDkyMTkgMSAtMSBzIC0wLjQ0OTIxOSAtMSAtMSAtMSB6IG0gNCAwIGMgLTAuNTUwNzgxIDAgLTEgMC40NDkyMTkgLTEgMSBzIDAuNDQ5MjE5IDEgMSAxIHMgMSAtMC40NDkyMTkgMSAtMSBzIC0wLjQ0OTIxOSAtMSAtMSAtMSB6IG0gLTUuMjgxMjUgNC4wNjY0MDYgYyAtMC4xMTMyODEgMC4wNjY0MDYgLTAuMTk5MjE5IDAuMTc1NzgyIC0wLjIzNDM3NSAwLjMwNDY4OCBzIC0wLjAxNTYyNSAwLjI2NTYyNSAwLjA1MDc4MSAwLjM3ODkwNiBjIDAuNzE0ODQ0IDEuMjM4MjgxIDIuMDM1MTU2IDIgMy40NjQ4NDQgMiBzIDIuNzUgLTAuNzYxNzE5IDMuNDY0ODQ0IC0yIGMgMC4wNjY0MDYgLTAuMTEzMjgxIDAuMDg1OTM3IC0wLjI1IDAuMDUwNzgxIC0wLjM3ODkwNiBzIC0wLjEyMTA5NCAtMC4yMzgyODIgLTAuMjM0Mzc1IC0wLjMwNDY4OCBzIC0wLjI1IC0wLjA4NTkzNyAtMC4zNzg5MDYgLTAuMDUwNzgxIHMgLTAuMjM4MjgyIDAuMTIxMDk0IC0wLjMwNDY4OCAwLjIzNDM3NSBjIC0wLjUzNTE1NiAwLjkyOTY4OCAtMS41MjM0MzcgMS41IC0yLjU5NzY1NiAxLjUgcyAtMi4wNjI1IC0wLjU3MDMxMiAtMi41OTc2NTYgLTEuNSBjIC0wLjA2NjQwNiAtMC4xMTMyODEgLTAuMTc1NzgyIC0wLjE5OTIxOSAtMC4zMDQ2ODggLTAuMjM0Mzc1IHMgLTAuMjY1NjI1IC0wLjAxNTYyNSAtMC4zNzg5MDYgMC4wNTA3ODEgeiBtIDAgMCIgZmlsbD0iIzJlMzQzNiIvPgo8L3N2Zz4K") !important;
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+}
+.grid__4cbea .emojiButton__04eed:hover {
+  --percentage: 12.75% !important;
+}
+.grid__4cbea .emojiButton__04eed:active {
+  --percentage: 27.75% !important;
+}
+.grid__4cbea .emojiButton__04eed:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.grid__4cbea .emojiButton__04eed::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.grid__4cbea .emojiButton__04eed > * {
+  display: none !important;
+}
+.grid__4cbea .emojiWrapper__4cbea {
+  all: unset !important;
+}
+.grid__4cbea .traitContainer__4cbea {
+  background-color: transparent !important;
+  border: none !important;
+  gap: var(--spacing) !important;
+  padding: 0 !important;
+}

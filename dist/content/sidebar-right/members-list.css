@@ -1,0 +1,11 @@
+.membersGroup_c8ffbb > span {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+.membersGroup_c8ffbb {
+  color: var(--window_fg_color) !important;
+}
+.membersWrap_c8ffbb {
+  border-left: 1px solid var(--secondary_sidebar_border_color) !important;
+}

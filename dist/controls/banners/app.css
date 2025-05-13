@@ -1,0 +1,93 @@
+.notice__6e2b9, .notice_c5cd6a {
+  --banner-color: #7d7d83 !important;
+  background-color: color-mix(in srgb, var(--banner-color) 30%, var(--window_bg_color)) !important;
+  color: var(--window_fg_color) !important;
+  padding: var(--spacing) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.notice__6e2b9 *, .notice_c5cd6a * {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+}
+.notice__6e2b9 svg, .notice_c5cd6a svg {
+  display: none !important;
+}
+
+.closeButton__6e2b9, .button__6e2b9, .button_c5cd6a {
+  --percentage: 10% !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  transition: var(--backdrop_transition) !important;
+}
+.closeButton__6e2b9:hover, .button__6e2b9:hover, .button_c5cd6a:hover {
+  --percentage: 15% !important;
+}
+.closeButton__6e2b9:active, .button__6e2b9:active, .button_c5cd6a:active {
+  --percentage: 30% !important;
+}
+.closeButton__6e2b9 *, .button__6e2b9 *, .button_c5cd6a * {
+  font-weight: bold !important;
+}
+.closeButton__6e2b9 svg, .button__6e2b9 svg, .button_c5cd6a svg {
+  display: none !important;
+}
+
+/* #region Server preview*/
+.back_c5cd6a {
+  margin: 0 !important;
+  margin-right: var(--spacing) !important;
+  position: unset !important;
+}
+
+/* revert %caption*/
+.header_c5cd6a {
+  color: inherit !important;
+  margin: auto !important;
+  order: -1 !important;
+}
+
+.notice_c5cd6a {
+  height: unset !important;
+  justify-content: unset !important;
+}
+
+/* #endregion*/
+/* #region Previous VC*/
+.button__6e2b9 {
+  margin-left: auto !important;
+  top: 0 !important;
+}
+
+.closeButton__6e2b9 {
+  /* Probably the only way to center the text*/
+  margin-right: auto !important;
+  position: unset !important;
+  width: unset !important;
+  height: unset !important;
+}
+.closeButton__6e2b9::before {
+  content: attr(aria-label) !important;
+}
+
+.closeIcon__6e2b9 {
+  display: none !important;
+}
+
+.notice__6e2b9 {
+  --custom-notice-text: var(--window_fg_color) !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  line-height: unset !important;
+  gap: var(--spacing) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* #endregion*/

@@ -1,0 +1,22 @@
+.closeIcon_d9c882,
+.divider_d9c882,
+.spacer_d9c882,
+.threadIcon_d9c882,
+.title_d9c882 {
+  display: none !important;
+}
+
+.createButton_d9c882 {
+  margin: 0 !important;
+}
+
+.header_d9c882 {
+  background-color: var(--headerbar_bg_color) !important;
+  box-shadow: var(--elevation-low) !important;
+  border: none !important;
+  gap: var(--spacing) !important;
+  padding: var(--spacing) !important;
+  height: unset !important;
+  min-height: unset !important;
+  z-index: 1 !important;
+}

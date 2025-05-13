@@ -1,0 +1,19 @@
+.tooltip__382e7 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+}
+
+.tooltipContent__382e7 {
+  padding: 0 !important;
+}
+.tooltipContent__382e7 * {
+  color: inherit !important;
+}
+
+.tooltipPointer__382e7 {
+  display: none !important;
+}

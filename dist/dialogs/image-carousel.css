@@ -1,0 +1,109 @@
+.actionButton_cc1819 {
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+}
+.actionButton_cc1819:hover {
+  --percentage: 12.75% !important;
+}
+.actionButton_cc1819:active {
+  --percentage: 27.75% !important;
+}
+.actionButton_cc1819:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.actionButton_cc1819::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.actionButton_cc1819 > * {
+  display: none !important;
+}
+
+.actionButtons_cc1819 {
+  background-color: transparent !important;
+  border: none !important;
+  gap: var(--spacing) !important;
+  padding: 0 !important;
+}
+
+.button_aec7ab {
+  --percentage: 0% !important;
+  color: var(--window_fg_color) !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  transition: var(--backdrop_transition) !important;
+}
+.button_aec7ab:hover {
+  --percentage: 12.75% !important;
+}
+.button_aec7ab:active {
+  --percentage: 27.75% !important;
+}
+.button_aec7ab:disabled {
+  --percentage: 0% !important;
+  opacity: var(--dim-level-opacity) !important;
+}
+.button_aec7ab::before {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  --icon-size: 100% !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+.button_aec7ab > * {
+  display: none !important;
+}
+
+.carouselModal_d3a6f0 {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: var(--space-xxl) !important;
+}
+
+.gallery_d75751 {
+  gap: var(--spacing-05x) !important;
+}
+
+.galleryItem_d75751 {
+  border-radius: 0 !important;
+}
+.galleryItem_d75751.first_d75751 {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm) !important;
+}
+.galleryItem_d75751.last_d75751 {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
+}
+
+.mediaArea_e03578 {
+  box-shadow: var(--elevation-high) !important;
+}
+
+.topBar__6088c {
+  gap: var(--spacing) !important;
+}

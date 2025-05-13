@@ -1,0 +1,43 @@
+.button__201d5 {
+  --percentage: 10% !important;
+  background-color: color-mix(in srgb, currentColor var(--percentage), transparent) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  transition: var(--backdrop_transition) !important;
+}
+.button__201d5:hover {
+  --percentage: 15% !important;
+}
+.button__201d5:active {
+  --percentage: 30% !important;
+}
+.button__201d5 * {
+  font-weight: bold !important;
+}
+.button__201d5 svg {
+  display: none !important;
+}
+.button__201d5:disabled {
+  opacity: var(--dim-level-opacity) !important;
+}
+.button__201d5.colorBrand__201d5 {
+  color: var(--accent_color) !important;
+}
+.button__201d5.colorRed__201d5 {
+  color: var(--destructive_color) !important;
+}
+.button__201d5.colorGreen__201d5 {
+  color: var(--success_color) !important;
+}
+.button__201d5.lookBlank__201d5 {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.button__201d5 > div {
+  --button--underline-color: transparent !important;
+}

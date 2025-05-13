@@ -1,0 +1,19 @@
+:root {
+  --app-border-size: 0px;
+  --titlebar-button-size: 24px;
+  --titlebar-button-spacing: 12px;
+  --titlebar-right-spacing: 0px;
+  /* on/off - flex/none */
+  --titlebar-close-button: flex;
+  --titlebar-maximize-button: none;
+  --titlebar-minimize-button: none;
+  /* also set this to how much buttons are visible */
+  --titlebar-buttons-count: 1;
+}
+:root.platform-win {
+  --app-border-size: 1px !important;
+  --titlebar-right-spacing: calc(
+  	(var(--titlebar-button-size) + var(--titlebar-button-spacing)) *
+  		var(--titlebar-buttons-count)
+  ) !important;
+}
