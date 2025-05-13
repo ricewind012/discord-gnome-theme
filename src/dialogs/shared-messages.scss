@@ -1,12 +1,9 @@
 @use "controls";
+@use "dialog";
+@use "typography";
 
 .header__45690 {
-	border: none;
-
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	justify-content: space-between;
+	@include dialog.header;
 }
 
 .messagesPopout__45690 {
@@ -51,5 +48,22 @@
 			color: inherit;
 			font-size: inherit;
 		}
+	}
+}
+
+.messagesPopoutWrap__45690 {
+	@include dialog.container;
+}
+
+.titleContainer__45690 {
+	justify-content: center;
+	height: var(--headerbar-height);
+
+	[data-text-variant="text-lg/semibold"] {
+		@extend %title-3;
+	}
+
+	svg {
+		display: none;
 	}
 }

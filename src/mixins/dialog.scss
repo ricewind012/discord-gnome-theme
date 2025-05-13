@@ -1,6 +1,15 @@
+@mixin container {
+	background-color: var(--dialog_bg_color);
+	border-radius: var(--window_radius);
+	box-shadow: var(--shadow-high);
+	outline: 1px solid var(--window_outline_color);
+	outline-offset: -1px;
+}
+
 @mixin header {
-	background-color: var(--background-primary);
+	background-color: var(--headerbar_bg_color);
 	box-shadow: var(--elevation-low);
+	border: none;
 	gap: var(--spacing);
 	padding: var(--spacing);
 

@@ -18,7 +18,10 @@
 }
 
 .header_ab6641 {
-	@include dialog.header;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .headerTabs_ab6641 {
