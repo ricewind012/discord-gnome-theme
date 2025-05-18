@@ -45,6 +45,12 @@
 		transparent
 	);
 
+	--background-code-addition: color-mix(
+		in srgb,
+		var(--green-5) 20%,
+		transparent
+	);
+	--background-code-deletion: color-mix(in srgb, var(--red-2) 20%, transparent);
 	--modal-footer-background: transparent;
 
 	--text-danger: var(--destructive_color);
@@ -56,6 +62,19 @@
 	--text-secondary: var(--window_fg_muted);
 	--text-tertiary: var(--window_fg_muted);
 	--text-warning: var(--warning_color);
+
+	--text-code-addition: var(--green-5);
+	--text-code-builtin: var(--purple-2);
+	--text-code-bullet: var(--violet-2);
+	--text-code-comment: var(--window_fg_muted);
+	--text-code-default: var(--card_fg_color);
+	--text-code-deletion: var(--red-2);
+	--text-code-keyword: var(--orange-2);
+	--text-code-section: var(--blue-2);
+	--text-code-string: var(--teal-2);
+	--text-code-tag: var(--teal-2);
+	--text-code-title: var(--green-5);
+	--text-code-variable: var(--blue-2);
 
 	--header-primary: var(--window_fg_color);
 	--header-secondary: var(--window_fg_color);

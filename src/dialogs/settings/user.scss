@@ -11,9 +11,14 @@
 }
 
 // Nitro themes
-.presets__67a11 {
-	@include controls.cards-container;
+@include controls.radio(
+	".presets__67a11",
+	".themeSelection__36dee",
+	".themeSelection__36dee::before",
+	".hack"
+);
 
+.presets__67a11 {
 	background-color: transparent;
 	gap: 0;
 
@@ -22,6 +27,10 @@
 
 	[role="radiogroup"]:has(> &) {
 		box-shadow: none;
+	}
+
+	.iconWrapper__36dee {
+		display: none;
 	}
 
 	.selectionCircle__36dee {
@@ -54,11 +63,6 @@
 		&::before {
 			content: "";
 
-			border: none;
-			border-radius: 50%;
-			padding: 0;
-			margin-inline-end: 16px;
-
 			box-sizing: border-box;
 			display: block;
 			width: 22px;
@@ -76,10 +80,6 @@
 
 		&::after {
 			content: attr(aria-label);
-		}
-
-		svg {
-			display: none;
 		}
 	}
 

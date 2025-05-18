@@ -90,6 +90,22 @@
 	)
 );
 
+// Message actions
+@include -gen-icons(
+	"aria-label",
+	(
+		"Add Reaction": "reaction-add2",
+		"Copy Link": "edit-copy",
+		"Create Thread": "chat",
+		"Delete": "user-trash",
+		"Edit": "edit",
+		"Forward": "arrow-turn-right-horizontal2",
+		"Mark Unread": "arrow-circular-top-right",
+		"Pin Message": "pin",
+		"Reply": "arrow-hook-left-horizontal2",
+	)
+);
+
 // Message form
 @include -gen-icons(
 	"aria-label",

@@ -1,41 +1,17 @@
 @use "controls";
 
-[role="radio"] {
-	@include controls.card-with-actual-border-radiuses($activatable: true);
+// Settings
+@include controls.radio(
+	".contentRegion__23e6b [role='radiogroup']",
+	".item__001a7",
+	".radioIndicatorGroup__001a7",
+	".radioIndicator__001a7"
+);
 
-	box-shadow: none;
-	padding: 16px;
-	margin: 0;
-
-	& > div {
-		border: none;
-		gap: 16px;
-		padding: 0;
-
-		& > :first-child {
-			border-radius: 50%;
-
-			width: 22px;
-			height: 22px;
-		}
-	}
-
-	svg {
-		display: none;
-	}
-
-	&[aria-checked="true"] > div > :first-child {
-		background-color: #fff;
-		border: 7px solid var(--accent_bg_color);
-	}
-
-	&[aria-checked="false"] > div > :first-child {
-		border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
-	}
-}
-
-[role="radiogroup"] {
-	gap: 0;
-	border-radius: var(--card_radius);
-	box-shadow: var(--elevation-medium);
-}
+// Poll
+@include controls.radio(
+	".answersContainer__4c520",
+	".answer__4c520",
+	".answerSelectionIcon__4c520",
+	".answerSelectionIcon__4c520 > *"
+);

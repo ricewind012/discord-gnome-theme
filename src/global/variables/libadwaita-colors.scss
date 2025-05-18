@@ -97,6 +97,21 @@
 	--popover_shade_color: rgba(0, 0, 6, 0.25);
 }
 
+// Reference: https://github.com/GNOME/gtksourceview/blob/master/data/styles/Adwaita-dark.xml
+.theme-light,
+.theme-dark {
+	--blue-2: #62a0ea;
+	--brown-2: #b5835a;
+	--green-5: #26a269;
+	--orange-2: #ffa348;
+	--orange-5: #c64600;
+	--purple-2: #c061cb;
+	--red-2: #ed333b;
+	--teal-2: #5bc8af;
+	--violet-2: #7d8ac7;
+	--yellow-2: #f8e45c;
+}
+
 // present in libadwaita in some other form
 .theme-light,
 .theme-dark {

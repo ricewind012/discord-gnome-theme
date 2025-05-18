@@ -111,11 +111,12 @@
 	&::before {
 		content: "";
 
+		@include util.icon;
+
 		position: absolute;
 		inset: 0;
-
-		--icon-size: 100%;
-		@include util.icon;
+		width: 100%;
+		height: 100%;
 	}
 
 	& > * {
@@ -205,6 +206,82 @@
 	);
 	border: none;
 	border-radius: 100%;
+}
+
+@mixin radio($radio-group, $item, $icon, $remove) {
+	#{$radio-group} {
+		gap: 0;
+		border-radius: var(--card_radius);
+		box-shadow: var(--elevation-medium);
+	}
+
+	#{$item} {
+		@include card-with-actual-border-radiuses($activatable: true);
+
+		box-shadow: none;
+		gap: 16px;
+		padding: 16px;
+		margin: 0;
+
+		&[aria-checked="true"] #{$icon} {
+			background-color: #fff;
+			border: 7px solid var(--accent_bg_color);
+		}
+
+		&[aria-checked="false"] #{$icon} {
+			border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
+		}
+
+		& > div {
+			all: unset;
+			gap: inherit;
+
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	#{$icon} {
+		border-radius: 50%;
+
+		// Needed for settings
+		flex-shrink: 0;
+		width: 22px;
+		height: 22px;
+	}
+
+	#{$remove} {
+		display: none;
+	}
+}
+
+@mixin slider($bar, $bar-fill, $grabber) {
+	#{$bar} {
+		border-radius: 16px;
+
+		top: 0;
+		height: 4px;
+	}
+
+	#{$bar-fill} {
+		background-color: var(--accent_bg_color);
+	}
+
+	// the grabber is different with exact values, but i don't care fuck you
+	#{$grabber} {
+		// close enough on dark theme, don't bother
+		background-color: #fff;
+		border: none;
+		border-radius: 50%;
+		box-shadow:
+			0 0 0 1px rgba(0, 0, 6, 0.1),
+			0 2px 4px rgba(0, 0, 6, 0.2);
+		margin-right: -10px;
+
+		top: -8px;
+		width: 20px;
+		height: 20px;
+	}
 }
 
 @mixin text-field {

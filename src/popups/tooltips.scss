@@ -1,5 +1,38 @@
 @use "controls";
 
+// Emoji
+.popoutContent_d5cd2d {
+	--custom-message-helpers-popout-padding-width: 0px;
+
+	@include controls.tooltip;
+
+	// There is too much text, so blur here is fine
+	//backdrop-filter: none;
+
+	.emojiSection_d5cd2d {
+		& > div {
+			align-items: center;
+		}
+	}
+
+	.guildSection_d5cd2d {
+		background-color: transparent;
+	}
+
+	.primaryEmoji_d5cd2d {
+		margin: 0;
+	}
+}
+
+.reactionTooltip_b49891 {
+	@include controls.tooltip;
+
+	.reactionTooltipText_b49891 {
+		color: inherit;
+		font: inherit;
+	}
+}
+
 .tooltip__382e7 {
 	@include controls.tooltip;
 }

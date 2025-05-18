@@ -16,13 +16,27 @@ const content = files
 fs.writeFileSync(path.join(argv.dir, "index.css"), content);
 
 /**
- * `icon("name")` => `url("data:image/png;base64,${base64}")`
+ * `icon("name")` => `url("data:image/svg+xml;base64,${base64}")`
  *
  * @param {string} name File name without the extension.
  */
 function icon(name) {
 	const fileName = `${name.replace(/"/g, "")}-symbolic.svg`;
 	const file = path.join("assets", "icons", fileName);
+	const base64 = fs.readFileSync(file, { encoding: "base64" });
+
+	return `url("data:image/svg+xml;base64,${base64}")`;
+}
+
+/**
+ * Like {@link icon}, but for non-symbolic icons.
+ *
+ * @param {string} name File name without the extension.
+ * @todo unify ?
+ */
+function iconNonSymbolic(name) {
+	const fileName = `${name.replace(/"/g, "")}.svg`;
+	const file = path.join("assets", "icons", "files", fileName);
 	const base64 = fs.readFileSync(file, { encoding: "base64" });
 
 	return `url("data:image/svg+xml;base64,${base64}")`;
@@ -57,6 +71,7 @@ export default {
 		postcssFunctions({
 			functions: {
 				icon,
+				"icon-non-symbolic": iconNonSymbolic,
 			},
 		}),
 		postcssSassPlugin({
