@@ -3,11 +3,6 @@
 .mentionButton__841c8 {
 	@include controls.button;
 
-	background-color: color-mix(
-		in srgb,
-		var(--window_fg_color) var(--percentage),
-		transparent
-	);
 	box-sizing: border-box;
 
 	svg {

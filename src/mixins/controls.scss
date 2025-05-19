@@ -1,7 +1,14 @@
 @use "sass:string";
 @use "util";
 
+@mixin -bold-font {
+	font-size: var(--document-font-size);
+	font-weight: bold;
+}
+
 @mixin banner {
+	@include -bold-font;
+
 	--banner-color: #7d7d83;
 	background-color: color-mix(
 		in srgb,
@@ -12,8 +19,7 @@
 	padding: var(--spacing);
 
 	* {
-		font-size: var(--document-font-size);
-		font-weight: bold;
+		font: inherit;
 	}
 
 	svg {
@@ -31,13 +37,9 @@
 }
 
 @mixin button {
-	--percentage: 10%;
+	@include -bold-font;
+	@include button-basic-raised;
 
-	background-color: color-mix(
-		in srgb,
-		currentColor var(--percentage),
-		transparent
-	);
 	color: var(--window_fg_color);
 	padding: 5px 10px;
 	border: none;
@@ -47,22 +49,26 @@
 	min-height: 24px;
 	height: 34px;
 
-	transition: var(--backdrop_transition);
-
-	&:hover {
-		--percentage: 15%;
-	}
-
-	&:active {
-		--percentage: 30%;
-	}
-
 	* {
-		font-weight: bold;
+		font: inherit;
 	}
 
 	svg {
 		display: none;
+	}
+}
+
+@mixin button-basic-raised {
+	background-color: color-mix(in srgb, currentColor 10%, transparent);
+
+	transition: var(--button_transition);
+
+	&:hover {
+		background-color: color-mix(in srgb, currentColor 15%, transparent);
+	}
+
+	&:active {
+		background-color: color-mix(in srgb, currentColor 30%, transparent);
 	}
 }
 
@@ -74,16 +80,12 @@
 		--icon-button-size: #{$size};
 	}
 
-	// %button compat
-	--percentage: 0%;
+	@include button-basic-raised;
+
+	background-color: transparent;
 	// .button__201d5.colorGreen, etc. classes compat
 	color: var(--window_fg_color);
-
-	background-color: color-mix(
-		in srgb,
-		currentColor var(--percentage),
-		transparent
-	);
+	border: none;
 	border-radius: var(--button_radius);
 	padding: 0;
 
@@ -91,21 +93,9 @@
 	width: var(--icon-button-size);
 	height: var(--icon-button-size);
 
-	transition: var(--backdrop_transition);
-
-	&:hover {
-		// *exact* #404040 for dark theme
-		--percentage: 12.75%;
-	}
-
-	&:active {
-		// *exact* #616161 for dark theme
-		--percentage: 27.75%;
-	}
-
 	&:disabled {
-		--percentage: 0%;
 		opacity: var(--dim-level-opacity);
+		background-color: transparent;
 	}
 
 	&::before {
@@ -129,7 +119,6 @@
 
 	background-color: rgb(0 0 0 / 65%);
 	color: white;
-	border: none;
 	border-radius: 999px;
 
 	&:hover {
@@ -195,16 +184,9 @@
 }
 
 @mixin titlebar-button {
-	--percentage: 7.5%;
-
 	@include icon-button($size: var(--titlebar-button-size));
 
-	background-color: color-mix(
-		in srgb,
-		var(--window_fg_color) var(--percentage),
-		transparent
-	);
-	border: none;
+	background-color: color-mix(in srgb, currentColor 10%, transparent);
 	border-radius: 100%;
 }
 
@@ -291,11 +273,9 @@
 @mixin text-field {
 	@include util.focus-ring;
 
-	--percentage: 10%;
-
 	background-color: color-mix(
 		in srgb,
-		currentColor var(--percentage),
+		currentColor 10%,
 		var(--window_bg_color)
 	);
 	font-size: var(--document-font-size);

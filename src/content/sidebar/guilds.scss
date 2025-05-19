@@ -59,25 +59,9 @@
 	}
 
 	.childWrapper__6e9f8 {
-		// TODO: remove --percentage
-		background-color: color-mix(
-			in srgb,
-			currentColor var(--percentage),
-			transparent
-		);
+		@include controls.button-basic-raised;
+
 		border-radius: inherit;
-
-		transition: var(--backdrop_transition);
-
-		&:hover {
-			// *exact* #404040 for dark theme
-			--percentage: 12.75%;
-		}
-
-		&:active {
-			// *exact* #616161 for dark theme
-			--percentage: 27.75%;
-		}
 	}
 
 	img {

@@ -169,11 +169,8 @@ $-osd-like-padding: 2px;
 
 		// This is an svg, so no custom icon here...
 		.codeIcon__4d95d {
-			background-color: color-mix(
-				in srgb,
-				currentColor var(--percentage),
-				transparent
-			);
+			@include controls.button-basic-raised;
+
 			color: var(--card_fg_color);
 			border-radius: var(--button_radius);
 			padding: var(--spacing);
@@ -182,20 +179,6 @@ $-osd-like-padding: 2px;
 			width: var(--icon-button-size);
 			height: var(--icon-button-size);
 			order: 1;
-
-			transition: var(--backdrop_transition);
-
-			// TODO(controls): remove --percentage
-			// TODO(util): mixin
-			&:hover {
-				// *exact* #404040 for dark theme
-				--percentage: 12.75%;
-			}
-
-			&:active {
-				// *exact* #616161 for dark theme
-				--percentage: 27.75%;
-			}
 		}
 
 		.downloadSection__4d95d {
@@ -294,9 +277,6 @@ $-osd-like-padding: 2px;
 
 	.playbackRate_a8e786 {
 		@include controls.button;
-
-		font-size: var(--document-font-size);
-		font-weight: bold;
 
 		box-sizing: border-box;
 	}

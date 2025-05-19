@@ -26,7 +26,7 @@
 	& > .base__13533 {
 		background-color: color-mix(
 			in srgb,
-			var(--window_fg_color) var(--percentage),
+			currentColor var(--percentage),
 			transparent
 		);
 		line-height: inherit;
