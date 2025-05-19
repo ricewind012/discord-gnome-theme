@@ -15,28 +15,27 @@ const content = files
 	.join("\n");
 fs.writeFileSync(path.join(argv.dir, "index.css"), content);
 
+const unquote = (str) => str.replace(/"/g, "");
+
 /**
  * `icon("name")` => `url("data:image/svg+xml;base64,${base64}")`
  *
  * @param {string} name File name without the extension.
+ * @param {string} category Icon category. Defaults to "symbolic", since most of
+ * them are symbolic.
  */
-function icon(name) {
-	const fileName = `${name.replace(/"/g, "")}-symbolic.svg`;
-	const file = path.join("assets", "icons", fileName);
-	const base64 = fs.readFileSync(file, { encoding: "base64" });
+function icon(name, category = "symbolic") {
+	// biome-ignore lint/style/noParameterAssign: quoted in scss
+	name = unquote(name);
+	// biome-ignore lint/style/noParameterAssign: quoted in scss
+	category = unquote(category);
 
-	return `url("data:image/svg+xml;base64,${base64}")`;
-}
-
-/**
- * Like {@link icon}, but for non-symbolic icons.
- *
- * @param {string} name File name without the extension.
- * @todo unify ?
- */
-function iconNonSymbolic(name) {
-	const fileName = `${name.replace(/"/g, "")}.svg`;
-	const file = path.join("assets", "icons", "files", fileName);
+	// fuck you whoever thought it had to end with "-symbolic" only for symbolic
+	// icons, even though it had a separate directory for said icons... no, I am
+	// not renaming them
+	const fileEnding = category === "symbolic" ? "-symbolic" : "";
+	const fileName = `${name}${fileEnding}.svg`;
+	const file = path.join("assets", "icons", category, fileName);
 	const base64 = fs.readFileSync(file, { encoding: "base64" });
 
 	return `url("data:image/svg+xml;base64,${base64}")`;
@@ -71,7 +70,6 @@ export default {
 		postcssFunctions({
 			functions: {
 				icon,
-				"icon-non-symbolic": iconNonSymbolic,
 			},
 		}),
 		postcssSassPlugin({
