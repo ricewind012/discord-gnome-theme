@@ -12,21 +12,6 @@
 
 .guilds_c48ade {
 	margin: 0;
-
-	// TODO: vencord dir ?
-	.vc-ranb-button {
-		@include controls.icon-button-with-tooltip(
-			$name: "check-plain",
-			$size: var(--guildbar-avatar-size),
-			$direction: "right"
-		);
-
-		border-radius: 50%;
-		margin: auto;
-
-		// TODO: revise button min-{w,h} ?
-		min-height: var(--guildbar-avatar-size);
-	}
 }
 
 .guildSeparator__252b6 {

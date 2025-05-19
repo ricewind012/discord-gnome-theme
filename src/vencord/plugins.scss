@@ -1,0 +1,29 @@
+@use "controls";
+
+// CopyFileContents
+.vc-cfc-button {
+	--icon: icon("edit-copy");
+}
+
+// ReadAllNotificationsButton
+.vc-ranb-button {
+	@include controls.icon-button-with-tooltip(
+		$name: "check-plain",
+		$size: var(--guildbar-avatar-size),
+		$direction: "right"
+	);
+
+	border-radius: 50%;
+	margin: auto;
+
+	min-height: var(--guildbar-avatar-size);
+}
+
+// VencordToolbox
+.vc-toolbox-btn {
+	--window_fg_color: transparent;
+
+	svg {
+		display: initial;
+	}
+}

@@ -19,7 +19,8 @@
 	padding: var(--spacing);
 
 	* {
-		font: inherit;
+		font-size: inherit;
+		font-weight: inherit;
 	}
 
 	svg {
