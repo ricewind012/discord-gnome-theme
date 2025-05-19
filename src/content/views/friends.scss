@@ -30,16 +30,24 @@
 	@include controls.cards-container;
 
 	overflow: auto;
+
+	& > div > div {
+		@include controls.card-in-container(
+			$activatable: true,
+			$first-selector: ":nth-child(2)",
+			$last-selector: ":last-child"
+		);
+
+		// Title
+		min-height: unset;
+	}
 }
 
 .peopleListItem_cc6179 {
-	@include controls.card-with-actual-border-radiuses($activatable: true);
-
-	box-shadow: none;
 	border-top: none;
 	margin: 0;
 
-	[role="button"] {
+	.actionButton_f8fa06 {
 		@include controls.icon-button;
 	}
 

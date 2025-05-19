@@ -24,12 +24,10 @@
 			padding: 0;
 
 			& > div {
-				@include controls.card-with-actual-border-radiuses;
-
-				border: none;
-				box-shadow: none;
-				padding: 10px 16px;
-				margin: 0;
+				@include controls.card-in-container(
+					$first-selector: ":first-child",
+					$last-selector: ":last-child"
+				);
 
 				& > div {
 					margin: 0;
@@ -53,12 +51,10 @@
 }
 
 .vc-addon-card {
-	@include controls.card-with-actual-border-radiuses;
-
-	border: none;
-	box-shadow: none;
-	padding: 10px 16px;
-	margin: 0;
+	@include controls.card-in-container(
+		$first-selector: ":first-child",
+		$last-selector: ":last-child"
+	);
 
 	&:hover {
 		transform: unset;

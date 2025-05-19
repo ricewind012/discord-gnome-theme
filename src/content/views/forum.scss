@@ -17,9 +17,16 @@
 }
 
 .card_f369db {
-	@include controls.card-with-actual-border-radiuses($activatable: true);
+	@include controls.card-in-container(
+		$activatable: true,
+		$first-selector: ":first-of-type",
+		$last-selector: ":last-of-type"
+	);
 
-	& > div {
+	// for now
+	box-shadow: var(--elevation-medium);
+
+	.mainCard_f369db {
 		background-color: transparent;
 		border: none;
 		padding: 0;

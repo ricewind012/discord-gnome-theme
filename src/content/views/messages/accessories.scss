@@ -6,14 +6,6 @@ $osd_fg_color: rgb(255 255 255 / 90%);
 
 $-osd-like-padding: 2px;
 
-@mixin -accessory-card {
-	@include controls.card;
-
-	border: none;
-	// TODO: move margin to settings
-	margin: 0;
-}
-
 @mixin -file-name {
 	@extend %title-3;
 
@@ -150,7 +142,7 @@ $-osd-like-padding: 2px;
 
 // Code with other fancy shit
 .container__4d95d {
-	@include -accessory-card;
+	@include controls.card;
 
 	padding: 0;
 
@@ -287,11 +279,7 @@ $-osd-like-padding: 2px;
 
 // Poll results
 .container_f69538 {
-	@include -accessory-card;
-
-	// TODO: fucking card margin, this is just pasted from discord css
-	margin-bottom: var(--custom-message-spacing-vertical-container-cozy);
-	margin-top: 8px;
+	@include controls.card;
 
 	[data-text-variant] {
 		color: inherit;
@@ -302,7 +290,7 @@ $-osd-like-padding: 2px;
 
 // Voice message
 .container_a8e786 {
-	@include -accessory-card;
+	@include controls.card;
 
 	.playbackRate_a8e786 {
 		@include controls.button;
@@ -439,12 +427,10 @@ $-osd-like-padding: 2px;
 	}
 
 	.hljs {
-		@include -accessory-card;
+		@include controls.card;
 
 		// 6px shadow spread + 2px Y offset
 		margin-bottom: 8px;
-
-		min-height: var(--icon-button-size);
 	}
 }
 
@@ -462,7 +448,7 @@ $-osd-like-padding: 2px;
 }
 
 .file__0ccae {
-	@include -accessory-card;
+	@include controls.card;
 
 	.fileNameLink__0ccae {
 		@include -file-name;
@@ -533,7 +519,7 @@ $-osd-like-padding: 2px;
 
 // Server invite
 .wrapper_d5f3cd {
-	@include -accessory-card;
+	@include controls.card;
 
 	.guildIcon_d5f3cd {
 		border-radius: 999px;
@@ -552,7 +538,7 @@ $-osd-like-padding: 2px;
 }
 
 .wrapperAudio_cf09d8 {
-	@include -accessory-card;
+	@include controls.card;
 
 	.audioControls_cf09d8 {
 		@include -media-controls;

@@ -10,6 +10,7 @@
 
 .searchResult__02a39 {
 	background-color: transparent;
+	border: none;
 	border-radius: 0;
 	margin: 0;
 }
@@ -20,6 +21,8 @@
 
 .searchResultGroup_c68065 {
 	--offset: calc(var(--document-font-size) * 1.25 + 4px);
+
+	@include controls.cards-container;
 
 	margin-bottom: calc(var(--offset) + 24px);
 
@@ -48,11 +51,12 @@
 	}
 
 	.container__02a39 {
-		@include controls.card-with-actual-border-radiuses($activatable: true);
+		@include controls.card-in-container(
+			$activatable: true,
+			$first-selector: ":first-of-type",
+			$last-selector: ":last-of-type"
+		);
 
 		padding: 0;
-		margin: 0;
-
-		overflow: hidden;
 	}
 }

@@ -216,7 +216,11 @@
 	}
 
 	#{$item} {
-		@include card-with-actual-border-radiuses($activatable: true);
+		@include card-in-container(
+			$activatable: true,
+			$first-selector: ":first-child",
+			$last-selector: ":last-child"
+		);
 
 		box-shadow: none;
 		gap: 16px;
@@ -319,20 +323,20 @@
 	background-color: var(--card_bg_color);
 	border-radius: var(--card_radius);
 	box-shadow: var(--elevation-medium);
-
-	transition: var(--backdrop_transition);
 }
 
 @mixin card($activatable: false) {
 	background-color: var(--card_bg_color);
+	border: none;
 	border-radius: var(--card_radius);
 	box-shadow: var(--elevation-medium);
 	padding: 10px 16px;
-	margin: 16px 0;
 
-	transition: var(--backdrop_transition);
+	min-height: calc(var(--icon-button-size) + 10px * 2);
 
 	@if $activatable {
+		transition: var(--backdrop_transition);
+
 		&:hover {
 			background-color: color-mix(
 				in srgb,
@@ -351,25 +355,32 @@
 	}
 }
 
-@mixin card-with-actual-border-radiuses($activatable: false) {
+/// Children of a `cards-container`.
+///
+/// @param {boolean} $activatable
+/// @param {string} $first-selector
+/// @param {string} $last-selector
+@mixin card-in-container($activatable: false, $first-selector, $last-selector) {
 	@include card($activatable);
 
 	border-bottom: 1px solid var(--card_shade_color);
 	border-radius: 0;
+	box-shadow: none;
 
-	&:first-child,
-	&:first-of-type {
+	&#{$first-selector} {
 		border-radius: var(--card_radius) var(--card_radius) 0 0;
 	}
 
-	&:last-child,
-	&:last-of-type {
+	&#{$last-selector} {
 		border-radius: 0 0 var(--card_radius) var(--card_radius);
 		border: none;
 	}
 
-	&:only-of-type {
-		border-radius: var(--card_radius);
+	@if $first-selector == ":first-of-type" and $last-selector == ":last-of-type"
+	{
+		&:only-of-type {
+			border-radius: var(--card_radius);
+		}
 	}
 }
 // #endregion

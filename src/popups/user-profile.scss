@@ -76,16 +76,11 @@
 	overflow: hidden;
 
 	button {
-		// TODO: margin only useful in settings
 		@include controls.card($activatable: true);
 
 		border-bottom: 1px solid var(--card_shade_color);
 		border-radius: 0;
 		box-shadow: none;
-		margin: 0;
-
-		// TODO: include it in %card maybe
-		min-height: calc(var(--icon-button-size) + 10px * 2);
 
 		&[aria-expanded] .menuItemIcon_ce8328 {
 			background-color: currentColor;
