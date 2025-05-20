@@ -198,6 +198,8 @@
 		$selector: "::after"
 	);
 
+	color: var(--window_fg_color);
+
 	position: fixed;
 	position-anchor: --chat-topic;
 	top: var(--spacing);

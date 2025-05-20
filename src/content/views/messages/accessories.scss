@@ -16,7 +16,17 @@ $-osd-like-padding: 2px;
 	pointer-events: none;
 }
 
-@mixin -media-controls {
+@mixin -media-button($osd, $name) {
+	@if $osd {
+		@include controls.icon-button-circular($name);
+
+		background-color: transparent;
+	} @else {
+		@include controls.icon-button($name);
+	}
+}
+
+@mixin -media-controls($osd) {
 	gap: var(--spacing);
 
 	@include controls.slider(
@@ -46,14 +56,13 @@ $-osd-like-padding: 2px;
 		box-shadow: none;
 
 		.buffer_b26b79 {
-			background-color: color-mix(in srgb, currentColor 15%, transparent);
+			background-color: color-mix(in srgb, currentColor 30%, transparent);
 		}
 	}
 
 	.videoButton_cf09d8 {
-		@include controls.icon-button-circular("play");
+		@include -media-button($osd, $name: "play");
 
-		background-color: transparent;
 		margin: 0;
 
 		flex-shrink: 0;
@@ -61,11 +70,16 @@ $-osd-like-padding: 2px;
 		&[aria-label="Pause"] {
 			--icon: icon("pause");
 		}
+	}
 
-		&.button__201d5 {
-			--icon: icon("view-fullscreen");
+	.volumeButton__2d263.button__201d5 {
+		@include -media-button($osd, $name: "speaker-3");
 
-			color: inherit;
+		color: inherit;
+
+		// No other way to identify state as of writing this
+		&:has(> div > svg > :only-child) {
+			--icon: icon("speaker-0");
 		}
 	}
 }
@@ -125,21 +139,6 @@ $-osd-like-padding: 2px;
 	}
 }
 
-// Accessories container
-.container_b7e1cb {
-	.volumeButton__2d263.button__201d5 {
-		@include controls.icon-button-circular("speaker-3");
-
-		background-color: transparent;
-		color: inherit;
-
-		// No other way to identify state as of writing this
-		&:has(> div > svg > :only-child) {
-			--icon: icon("speaker-0");
-		}
-	}
-}
-
 // Code with other fancy shit
 .container__4d95d {
 	@include controls.card;
@@ -153,6 +152,7 @@ $-osd-like-padding: 2px;
 
 	.footer__4d95d {
 		background-color: transparent;
+		color: var(--card_fg_color);
 		border: none;
 		border-radius: var(--card_radius);
 		gap: var(--spacing);
@@ -167,10 +167,11 @@ $-osd-like-padding: 2px;
 			@extend %title-3;
 		}
 
-		// This is an svg, so no custom icon here...
+		// This is an svg, so no custom icon here... but looks pretty fitting
 		.codeIcon__4d95d {
 			@include controls.button-basic-raised;
 
+			background-color: transparent;
 			color: var(--card_fg_color);
 			border-radius: var(--button_radius);
 			padding: var(--spacing);
@@ -324,10 +325,6 @@ $-osd-like-padding: 2px;
 
 	// Video actions
 	.wrapper__926d7 {
-		// 34 * 1.5
-		--icon-button-size: 51px;
-		// 24 is too large
-		--icon-size: 20px;
 		--icon-button-size: calc(34px * 2);
 		--icon-size: calc(16px * 2);
 
@@ -482,7 +479,7 @@ $-osd-like-padding: 2px;
 }
 
 .videoControls_cf09d8 {
-	@include -media-controls;
+	@include -media-controls($osd: true);
 	@include -osd-like-button-group;
 
 	margin: var(--spacing);
@@ -490,6 +487,13 @@ $-osd-like-padding: 2px;
 
 	width: calc(100% - var(--spacing) * 3);
 	height: unset;
+
+	// No other way to identify that
+	.videoButton_cf09d8.button__201d5 {
+		--icon: icon("view-fullscreen");
+
+		color: inherit;
+	}
 }
 
 // Server invite
@@ -516,11 +520,15 @@ $-osd-like-padding: 2px;
 	@include controls.card;
 
 	.audioControls_cf09d8 {
-		@include -media-controls;
+		@include -media-controls($osd: false);
 
 		background-color: transparent;
 		color: var(--card_fg_color);
 		margin-top: var(--spacing-2x);
+
+		.videoButton_cf09d8 {
+			color: inherit;
+		}
 	}
 
 	.audioMetadata_cf09d8 {

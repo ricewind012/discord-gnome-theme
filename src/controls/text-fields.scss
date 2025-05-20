@@ -63,6 +63,7 @@
 	:where(.button__201d5) {
 		@include controls.icon-button;
 
+		color: inherit;
 		border-radius: 0;
 	}
 

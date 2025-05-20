@@ -7,7 +7,9 @@
 		opacity: var(--dim-level-opacity);
 	}
 
-	&.colorBrand__201d5 {
+	// Special treatment because this gets used everywhere for absolutely no
+	// fucking reason
+	&:where(.colorBrand__201d5) {
 		color: var(--accent_color);
 	}
 

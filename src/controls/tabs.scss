@@ -1,73 +1,45 @@
+@use "controls";
 @use "typography";
 @use "util";
 
-[role="tablist"] {
-	[role="tab"] {
-		@extend %text-normal;
+[role="tab"] {
+	@include controls.button;
 
-		color: var(--window_fg_color);
-		line-height: inherit;
-		border: none;
-		border-radius: var(--button_radius);
+	background-color: transparent;
+	margin: 0;
 
-		transition: var(--backdrop_transition);
+	&[aria-selected="true"] {
+		background-color: color-mix(in srgb, currentColor 10%, transparent);
 
 		&:hover {
-			background-color: var(--hover_color);
+			background-color: color-mix(in srgb, currentColor 13%, transparent);
 		}
 
 		&:active {
-			background-color: var(--active_color);
-		}
-
-		&[aria-selected="true"] {
-			background-color: var(--selected_color);
-		}
-
-		&::after {
-			display: none;
+			background-color: color-mix(in srgb, currentColor 19%, transparent);
 		}
 	}
 
-	&:where([aria-orientation="horizontal"], .navList__08434) {
-		gap: 5px;
-		border: none;
-
-		[role="tab"] {
-			color: var(--window_fg_color);
-			padding: 5px 10px;
-			margin: 0;
-
-			// user dialog
-			height: unset;
-		}
+	&::after {
+		display: none;
 	}
+}
 
-	// .navigation-sidebar > row
-	&[aria-orientation="vertical"] {
-		padding: var(--menu_margin) 0;
+[role="tablist"][aria-orientation="horizontal"] {
+	gap: 5px;
+	border: none;
+}
 
-		[role="tab"] {
-			line-height: 44px;
-			min-height: 36px;
-			padding: 0 14px;
-			margin: 0 var(--menu_margin) 2px;
+// .navigation-sidebar > row
+[role="tablist"][aria-orientation="vertical"] {
+	padding: var(--menu_margin) 0;
 
-			// Settings
-			.sidebar__23e6b & {
-				display: flex;
-				align-items: center;
+	[role="tab"] {
+		@extend %text-normal;
 
-				&::before {
-					content: "";
-
-					@include util.icon;
-
-					display: inline-block;
-
-					margin-right: 12px;
-				}
-			}
-		}
+		line-height: 44px;
+		min-height: 36px;
+		padding: 0 14px;
+		margin: 0 var(--menu_margin) 2px;
 	}
 }

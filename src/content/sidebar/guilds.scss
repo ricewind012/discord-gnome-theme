@@ -7,6 +7,7 @@
 		$size: var(--guildbar-avatar-size)
 	);
 
+	color: inherit;
 	border-radius: 50%;
 }
 
@@ -46,6 +47,7 @@
 	.childWrapper__6e9f8 {
 		@include controls.button-basic-raised;
 
+		color: inherit;
 		border-radius: inherit;
 	}
 

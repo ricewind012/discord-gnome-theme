@@ -1,6 +1,12 @@
 @use "controls";
 @use "util";
 
+.icons__3f413 {
+	@include util.icon("pan-down");
+
+	min-height: unset;
+}
+
 .searchInput__3f413 {
 	all: unset;
 }
@@ -9,13 +15,4 @@
 	@include controls.button;
 
 	min-height: 34px;
-
-	.icons__3f413 {
-		--icon: icon("pan-down");
-
-		@include util.icon;
-
-		height: unset;
-		min-height: unset;
-	}
 }

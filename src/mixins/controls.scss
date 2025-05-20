@@ -84,8 +84,6 @@
 	@include button-basic-raised;
 
 	background-color: transparent;
-	// .button__201d5.colorGreen, etc. classes compat
-	color: var(--window_fg_color);
 	border: none;
 	border-radius: var(--button_radius);
 	padding: 0;
@@ -301,7 +299,6 @@
 
 // #region card
 @mixin cards-container {
-	background-color: var(--card_bg_color);
 	border-radius: var(--card_radius);
 	box-shadow: var(--elevation-medium);
 }

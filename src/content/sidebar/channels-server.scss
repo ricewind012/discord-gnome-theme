@@ -104,9 +104,7 @@ div.sidebar_c48ade {
 // TODO: optional !important
 :where(.iconContainer__2ea32) {
 	// Align with Discord
-	--icon: icon("lang-include");
-
-	@include util.icon;
+	@include util.icon("lang-include");
 }
 
 .link__2ea32 {

@@ -1,10 +1,10 @@
-@use "controls";
 @use "typography";
+@use "util";
 
 [href="/channels/@me"] .avatar__20a53 {
-	@include controls.icon-button("org.gnome.Settings-users", 32px);
+	@include util.icon("org.gnome.Settings-users");
 
-	background-color: transparent;
+	padding: 8px;
 }
 
 // "Friends" entry

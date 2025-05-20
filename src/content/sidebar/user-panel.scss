@@ -28,24 +28,17 @@
 	}
 
 	.avatarWrapper__37e49 {
-		@include controls.icon-button;
+		@include controls.button-basic-raised;
 
+		background-color: transparent;
 		border-radius: 0;
 		padding: var(--spacing);
-
-		height: unset;
-
-		&::before {
-			display: none;
-		}
-
-		& > * {
-			display: initial;
-		}
 	}
 
 	.button__201d5 {
 		@include controls.icon-button;
+
+		color: inherit;
 	}
 
 	.button_e131a9 {

@@ -23,7 +23,14 @@
 	}
 }
 
-@mixin icon {
+@mixin icon($name: null, $size: null) {
+	@if $name {
+		--icon: icon(#{$name});
+	}
+	@if $size {
+		--icon-size: #{$size};
+	}
+
 	background-color: currentColor;
 	mask: var(--icon);
 	mask-position: center;

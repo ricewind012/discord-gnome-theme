@@ -75,8 +75,23 @@
 		margin: var(--menu_margin);
 	}
 
-	[role="tab"] svg {
-		display: none;
+	[role="tab"] {
+		display: flex;
+		align-items: center;
+
+		&::before {
+			content: "";
+
+			@include util.icon;
+
+			display: inline-block;
+
+			margin-right: 12px;
+		}
+
+		svg {
+			display: none;
+		}
 	}
 }
 

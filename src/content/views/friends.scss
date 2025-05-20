@@ -34,12 +34,24 @@
 	& > div > div {
 		@include controls.card-in-container(
 			$activatable: true,
-			$first-selector: ":nth-child(2)",
+			$first-selector: ":first-child",
 			$last-selector: ":last-child"
 		);
 
 		// Title
 		min-height: unset;
+
+		&.sectionTitle__5ec2f {
+			&:hover,
+			&:active {
+				background-color: var(--card_bg_color);
+			}
+		}
+	}
+
+	// WTF is this shit
+	& > [aria-hidden="true"] {
+		display: none;
 	}
 }
 
