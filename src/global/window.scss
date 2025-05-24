@@ -32,6 +32,7 @@
 
 .bar_c38106 {
 	background: none;
+	color: var(--headerbar_fg_color);
 	padding: 0;
 
 	position: fixed;
@@ -64,6 +65,7 @@
 }
 
 .winButtons_c38106 {
+	color: inherit;
 	gap: var(--titlebar-button-spacing);
 
 	&::before {

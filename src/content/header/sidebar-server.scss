@@ -16,6 +16,10 @@
 		.header_f37cb1 {
 			box-shadow: var(--elevation-low);
 		}
+
+		.headerContent_f37cb1 {
+			color: var(--headerbar_fg_color);
+		}
 	}
 }
 
@@ -54,5 +58,6 @@
 .name_f37cb1 {
 	@extend %title-2;
 
+	color: inherit;
 	margin: auto;
 }

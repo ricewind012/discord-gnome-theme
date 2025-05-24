@@ -27,6 +27,8 @@
 }
 
 .contentRegion__23e6b {
+	border-left: 1px solid var(--sidebar_border_color);
+
 	// for banner
 	flex-direction: column-reverse;
 
@@ -96,9 +98,11 @@
 }
 
 .sidebarRegion__23e6b {
-	border-right: 1px solid var(--background-modifier-accent);
-
 	flex: unset;
+}
+
+.sidebarRegionScroller__23e6b {
+	background-color: var(--sidebar_bg_color);
 }
 
 // Status page

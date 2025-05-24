@@ -100,15 +100,15 @@
 		&[data-list-item-id$="set-status"] {
 			// awful
 			&:has([mask="url(#svg-mask-status-online)"]) {
-				color: var(--success_color);
+				color: var(--success-color);
 			}
 
 			&:has([mask="url(#svg-mask-status-idle)"]) {
-				color: var(--warning_color);
+				color: var(--warning-color);
 			}
 
 			&:has([mask="url(#svg-mask-status-dnd)"]) {
-				color: var(--destructive_color);
+				color: var(--destructive-color);
 			}
 
 			&:has([mask="url(#svg-mask-status-offline)"]) {

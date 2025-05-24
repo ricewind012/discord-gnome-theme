@@ -2,13 +2,17 @@
 
 // Reference: _labels.scss
 
+html {
+	font-size: var(--document-font-size);
+}
+
 ::selection {
 	background-color: color-mix(in srgb, var(--view_fg_color) 10%, transparent);
 
 	.app-focused & {
 		background-color: color-mix(
 			in srgb,
-			var(--accent_bg_color) 30%,
+			var(--accent-bg-color) 30%,
 			transparent
 		);
 	}

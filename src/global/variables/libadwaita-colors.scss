@@ -1,32 +1,64 @@
-// Reference: https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/doc/css-variables.md?ref_type=heads
-// TODO: redo these for new oklab shit
+// Source: https://github.com/GNOME/libadwaita/blob/main/src/stylesheet/_palette.scss
+$blue_1: #99c1f1;
+$blue_2: #62a0ea;
+$blue_3: #3584e4;
+$blue_4: #1c71d8;
+$blue_5: #1a5fb4;
+$green_1: #8ff0a4;
+$green_2: #57e389;
+$green_3: #33d17a;
+$green_4: #2ec27e;
+$green_5: #26a269;
+$yellow_1: #f9f06b;
+$yellow_2: #f8e45c;
+$yellow_3: #f6d32d;
+$yellow_4: #f5c211;
+$yellow_5: #e5a50a;
+$orange_1: #ffbe6f;
+$orange_2: #ffa348;
+$orange_3: #ff7800;
+$orange_4: #e66100;
+$orange_5: #c64600;
+$red_1: #f66151;
+$red_2: #ed333b;
+$red_3: #e01b24;
+$red_4: #c01c28;
+$red_5: #a51d2d;
+$purple_1: #dc8add;
+$purple_2: #c061cb;
+$purple_3: #9141ac;
+$purple_4: #813d9c;
+$purple_5: #613583;
+$brown_1: #cdab8f;
+$brown_2: #b5835a;
+$brown_3: #986a44;
+$brown_4: #865e3c;
+$brown_5: #63452c;
+$light_1: #ffffff;
+$light_2: #f6f5f4;
+$light_3: #deddda;
+$light_4: #c0bfbc;
+$light_5: #9a9996;
+$dark_1: #77767b;
+$dark_2: #5e5c64;
+$dark_3: #3d3846;
+$dark_4: #241f31;
+$dark_5: #000000;
 
 .theme-light {
-	--accent_color: #1c71d8;
-	--accent_bg_color: #3584e4;
-	--accent_fg_color: #ffffff;
-	--destructive_color: #c30000;
-	--destructive_bg_color: #e01b24;
-	--destructive_fg_color: #ffffff;
-	--success_color: #007c3d;
-	--success_bg_color: #2ec27e;
-	--success_fg_color: #ffffff;
-	--warning_color: #905400;
-	--warning_bg_color: #e5a50a;
+	--standalone-color-oklab: min(l, 0.5) a b;
+
+	// TODO: accent option, later support AccentColor when chrome does
+	--accent-bg-color: #{$blue_3};
+	--destructive-bg-color: #{$red_3};
+	--success-bg-color: #{$green_4};
+	--warning-bg-color: #{$yellow_5};
 	--warning_fg_color: rgba(0, 0, 0, 0.8);
-	--error_color: #c30000;
-	--error_bg_color: #e01b24;
-	--error_fg_color: #ffffff;
+	--error-bg-color: #{$red_3};
 	--window_bg_color: #fafafb;
 	--window_fg_color: rgba(0, 0, 6, 0.8);
 	--view_bg_color: #ffffff;
 	--view_fg_color: rgba(0, 0, 6, 0.8);
-	--headerbar_bg_color: #ffffff;
-	--headerbar_fg_color: rgba(0, 0, 6, 0.8);
-	--headerbar_border_color: rgba(0, 0, 6, 0.8);
-	--headerbar_backdrop_color: #fafafb;
-	--headerbar_shade_color: rgba(0, 0, 6, 0.12);
-	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.12);
 	--sidebar_bg_color: #ebebed;
 	--sidebar_fg_color: rgba(0, 0, 6, 0.8);
 	--sidebar_backdrop_color: #f2f2f4;
@@ -50,31 +82,20 @@
 }
 
 .theme-dark {
-	--accent_color: #78aeed;
-	--accent_bg_color: #3584e4;
-	--accent_fg_color: #ffffff;
-	--destructive_color: #ff938c;
-	--destructive_bg_color: #c01c28;
-	--destructive_fg_color: #ffffff;
-	--success_color: #78e9ab;
-	--success_bg_color: #26a269;
+	--standalone-color-oklab: max(l, 0.85) a b;
+
+	--accent-bg-color: #{$blue_3};
+	--destructive-bg-color: #{$red_4};
+	--success-bg-color: #{$green_5};
 	--success_fg_color: #ffffff;
-	--warning_color: #ffc252;
-	--warning_bg_color: #cd9309;
+	--warning-bg-color: #cd9309;
 	--warning_fg_color: rgba(0, 0, 0, 0.8);
-	--error_color: #ff7b63;
-	--error_bg_color: #c01c28;
+	--error-bg-color: #{$red_4};
 	--error_fg_color: #ffffff;
 	--window_bg_color: #222226;
 	--window_fg_color: #ffffff;
 	--view_bg_color: #1d1d20;
 	--view_fg_color: #ffffff;
-	--headerbar_bg_color: #2e2e32;
-	--headerbar_fg_color: #ffffff;
-	--headerbar_border_color: #ffffff;
-	--headerbar_backdrop_color: #222226;
-	--headerbar_shade_color: rgba(0, 0, 6, 0.36);
-	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.9);
 	--sidebar_bg_color: #2e2e32;
 	--sidebar_fg_color: #ffffff;
 	--sidebar_backdrop_color: #28282c;
@@ -97,24 +118,56 @@
 	--popover_shade_color: rgba(0, 0, 6, 0.25);
 }
 
-// Reference: https://github.com/GNOME/gtksourceview/blob/master/data/styles/Adwaita-dark.xml
 .theme-light,
 .theme-dark {
-	--blue-2: #62a0ea;
-	--brown-2: #b5835a;
-	--green-5: #26a269;
-	--orange-2: #ffa348;
-	--orange-5: #c64600;
-	--purple-2: #c061cb;
-	--red-2: #ed333b;
-	--teal-2: #5bc8af;
-	--violet-2: #7d8ac7;
-	--yellow-2: #f8e45c;
+	--window_fg_muted: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--dim-level-opacity),
+		transparent
+	);
 }
 
-// present in libadwaita in some other form
-.theme-light,
-.theme-dark {
+:root.theme-light {
+	--headerbar_bg_color: #ffffff;
+	--headerbar_fg_color: rgba(0, 0, 6, 0.8);
+	--headerbar_border_color: rgba(0, 0, 6, 0.8);
+	--headerbar_backdrop_color: #fafafb;
+	--headerbar_shade_color: rgba(0, 0, 6, 0.12);
+	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.12);
+}
+
+:root.theme-dark {
+	--headerbar_bg_color: #2e2e32;
+	--headerbar_fg_color: #ffffff;
+	--headerbar_border_color: #ffffff;
+	--headerbar_backdrop_color: #222226;
+	--headerbar_shade_color: rgba(0, 0, 6, 0.36);
+	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.9);
+}
+
+:root {
+	--accent-color: oklab(
+		from var(--accent-bg-color) var(--standalone-color-oklab)
+	);
+	--destructive-color: oklab(
+		from var(--destructive-bg-color) var(--standalone-color-oklab)
+	);
+	--success-color: oklab(
+		from var(--success-bg-color) var(--standalone-color-oklab)
+	);
+	--warning-color: oklab(
+		from var(--warning-bg-color) var(--standalone-color-oklab)
+	);
+	--error-color: oklab(
+		from var(--error-bg-color) var(--standalone-color-oklab)
+	);
+
+	--accent_fg_color: #ffffff;
+	--destructive_fg_color: #ffffff;
+	--success_fg_color: #ffffff;
+	--error_fg_color: #ffffff;
+
+	// present in libadwaita in some other form
 	--window_outline_color: rgba(255, 255, 255, 7%);
 
 	--hover_color: color-mix(in srgb, currentColor 7%, transparent);
@@ -123,9 +176,10 @@
 	--selected_hover_color: color-mix(in srgb, currentColor 13%, transparent);
 	--selected_active_color: color-mix(in srgb, currentColor 19%, transparent);
 
-	--window_fg_muted: color-mix(
-		in srgb,
-		var(--window_fg_color) var(--dim-level-opacity),
-		transparent
-	);
+	&:not(.app-focused) {
+		--headerbar_bg_color: var(--headerbar_backdrop_color);
+		--headerbar_fg_color: var(--window_fg_muted);
+		--sidebar_bg_color: var(--sidebar_backdrop_color);
+		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
+	}
 }

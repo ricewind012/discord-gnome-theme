@@ -9,15 +9,15 @@
 }
 
 %link {
-	color: var(--accent_color);
+	color: var(--accent-color);
 	text-decoration: underline;
 
 	&:hover {
-		color: hsl(from var(--accent_color) h calc(s * 1.1) calc(l * 1.1));
+		color: hsl(from var(--accent-color) h calc(s * 1.1) calc(l * 1.1));
 	}
 
 	&:active {
-		color: var(--accent_color);
+		color: var(--accent-color);
 	}
 }
 

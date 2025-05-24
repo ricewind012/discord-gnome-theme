@@ -13,7 +13,7 @@
 		justify-content: center;
 
 		@extend %title-3;
-		color: var(--window_fg_color);
+		color: var(--headerbar_fg_color);
 	}
 
 	[role="listitem"] {
@@ -41,6 +41,8 @@
 			$direction: bottom,
 			$overflow-workaround-direction: "left"
 		);
+
+		color: var(--headerbar_fg_color);
 
 		app-region: no-drag;
 	}

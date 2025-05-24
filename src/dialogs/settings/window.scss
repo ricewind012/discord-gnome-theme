@@ -8,6 +8,8 @@
 }
 
 %-tab-header {
+	color: var(--headerbar_fg_color);
+
 	position: fixed;
 	top: calc(var(--p) + 1px);
 	// prettier-ignore
@@ -53,6 +55,7 @@
 	@include controls.titlebar-button;
 
 	opacity: 1;
+	color: var(--headerbar_fg_color);
 
 	flex: 0 0 var(--titlebar-button-size);
 }
@@ -193,9 +196,10 @@
 		height: var(--headerbar-height);
 		@extend %-center-text;
 
-		background-color: var(--secondary_sidebar_bg_color);
+		background-color: var(--sidebar_bg_color);
 		@extend %title-3;
-		border-right: 1px solid var(--background-modifier-accent);
+		color: var(--headerbar_fg_color);
+		border-right: 1px solid var(--sidebar_border_color);
 		border-top-left-radius: var(--window_radius);
 		box-shadow: var(--elevation-low);
 

@@ -26,22 +26,22 @@
 	--background-message-hover: var(--sidebar_bg_color);
 	--background-mentioned: color-mix(
 		in srgb,
-		var(--warning_bg_color) 10%,
+		var(--warning-bg-color) 10%,
 		transparent
 	);
 	--background-mentioned-hover: color-mix(
 		in srgb,
-		var(--warning_bg_color) 20%,
+		var(--warning-bg-color) 20%,
 		transparent
 	);
 	--background-message-highlight: color-mix(
 		in srgb,
-		var(--accent_bg_color) 10%,
+		var(--accent-bg-color) 10%,
 		transparent
 	);
 	--background-message-highlight-hover: color-mix(
 		in srgb,
-		var(--accent_bg_color) 20%,
+		var(--accent-bg-color) 20%,
 		transparent
 	);
 
@@ -53,15 +53,15 @@
 	--background-code-deletion: color-mix(in srgb, var(--red-2) 20%, transparent);
 	--modal-footer-background: transparent;
 
-	--text-danger: var(--destructive_color);
-	--text-link: var(--accent_color);
+	--text-danger: var(--destructive-color);
+	--text-link: var(--accent-color);
 	--text-muted: var(--window_fg_muted);
 	--text-normal: var(--window_fg_color);
-	--text-positive: var(--success_color);
+	--text-positive: var(--success-color);
 	--text-primary: var(--window_fg_color);
 	--text-secondary: var(--window_fg_muted);
 	--text-tertiary: var(--window_fg_muted);
-	--text-warning: var(--warning_color);
+	--text-warning: var(--warning-color);
 
 	--text-code-addition: var(--green-5);
 	--text-code-builtin: var(--purple-2);
@@ -89,17 +89,22 @@
 	--channels-default: var(--window_fg_color);
 	--embed-title: var(--window_fg_color);
 
-	--status-danger: var(--destructive_color);
-	--status-dnd: var(--destructive_color);
-	--status-idle: var(--warning_color);
+	$border_color: color-mix(in srgb, currentColor 50%, transparent);
+	--border-faint: $border_color;
+	--border-strong: $border_color;
+	--border-subtle: $border_color;
+
+	--status-danger: var(--destructive-color);
+	--status-dnd: var(--destructive-color);
+	--status-idle: var(--warning-color);
 	--status-offline: var(--text-muted);
-	--status-online: var(--success_color);
-	--status-positive: var(--success_color);
-	--status-positive-background: var(--success_color);
+	--status-online: var(--success-color);
+	--status-positive: var(--success-color);
+	--status-positive-background: var(--success-color);
 	--status-positive-text: var(--window_fg_color);
-	--status-speaking: var(--success_color);
-	--status-warning: var(--warning_color);
-	--status-warning-background: var(--warning_bg_color);
+	--status-speaking: var(--success-color);
+	--status-warning: var(--warning-color);
+	--status-warning-background: var(--warning-bg-color);
 	--status-warning-text: var(--warning_fg_color);
 
 	--custom-app-top-bar-height: 0px;

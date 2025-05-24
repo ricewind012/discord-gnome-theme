@@ -18,7 +18,7 @@
 
 	&:is(:focus, :focus-within) {
 		outline: 2px solid
-			color-mix(in srgb, var(--accent_bg_color) 50%, transparent);
+			color-mix(in srgb, var(--accent-bg-color) 50%, transparent);
 		outline-offset: -2px;
 	}
 }

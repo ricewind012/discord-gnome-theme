@@ -12,11 +12,16 @@
 }
 
 .container__9293f {
+	color: var(--headerbar_fg_color);
 	border: none;
-	box-shadow: var(--elevation-low);
 	padding: 0;
 
 	height: unset;
+
+	&.themed__9293f {
+		background-color: var(--window_bg_color);
+		box-shadow: var(--elevation-low);
+	}
 
 	// home
 	&:not([role="navigation"], [aria-label="Thread header"]) > div {
@@ -113,6 +118,8 @@
 
 .iconWrapper__9293f {
 	@include controls.icon-button;
+
+	color: inherit;
 }
 
 .search__49676 {
@@ -132,6 +139,7 @@
 		currentColor 10%,
 		var(--window_bg_color)
 	);
+	color: inherit;
 	padding: 0;
 	border: none;
 	border-radius: var(--button_radius);
@@ -149,6 +157,10 @@
 			width: var(--icon-button-size);
 		}
 	}
+}
+
+.title__9293f {
+	color: inherit;
 }
 
 .titleWrapper__9293f {
@@ -198,7 +210,7 @@
 		$selector: "::after"
 	);
 
-	color: var(--window_fg_color);
+	color: var(--headerbar_fg_color);
 
 	position: fixed;
 	position-anchor: --chat-topic;
@@ -243,6 +255,12 @@
 }
 
 .upperContainer__9293f {
+	--window_fg_color: var(--headerbar_fg_color);
+	--window_fg_muted: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--dim-level-opacity),
+		transparent
+	);
 	padding-right: var(--chat-header-right-padding);
 	align-items: center;
 }

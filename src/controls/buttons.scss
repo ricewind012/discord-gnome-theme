@@ -1,5 +1,17 @@
 @use "controls";
 
+$destructive_button_color: color-mix(in srgb, currentColor 15%, transparent);
+$destructive_button_hover_color: color-mix(
+	in srgb,
+	currentColor 20%,
+	transparent
+);
+$destructive_button_active_color: color-mix(
+	in srgb,
+	currentColor 35%,
+	transparent
+);
+
 .button__201d5 {
 	@include controls.button;
 
@@ -10,15 +22,24 @@
 	// Special treatment because this gets used everywhere for absolutely no
 	// fucking reason
 	&:where(.colorBrand__201d5) {
-		color: var(--accent_color);
+		color: var(--accent-color);
 	}
 
 	&.colorRed__201d5 {
-		color: var(--destructive_color);
+		background-color: $destructive_button_color;
+		color: var(--destructive-color);
+
+		&:hover {
+			background-color: $destructive_button_hover_color;
+		}
+
+		&:active {
+			background-color: $destructive_button_active_color;
+		}
 	}
 
 	&.colorGreen__201d5 {
-		color: var(--success_color);
+		color: var(--success-color);
 	}
 
 	&.lookBlank__201d5 {

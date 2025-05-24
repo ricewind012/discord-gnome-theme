@@ -1,5 +1,4 @@
-.theme-light,
-.theme-dark {
+:root {
 	// libadwaita 1.7
 	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	--backdrop_transition: 200ms ease-out;
@@ -40,8 +39,6 @@
 	// my
 	--base-unit: 6px;
 	--icon-size: 16px;
-
-	font-size: var(--document-font-size);
 
 	@media (prefers-reduced-motion) {
 		--backdrop_transition: none;

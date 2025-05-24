@@ -1,20 +1,36 @@
 @use "controls";
 
+%-dark-headerbar {
+	--headerbar_fg_color: #ffffff;
+
+	:root:not(.app-focused) & {
+		--headerbar_fg_color: color-mix(
+			in srgb,
+			#ffffff var(--dim-level-opacity),
+			transparent
+		);
+	}
+}
+
 // VC is permanently dark themed, so do the same for titlebar.
 //
 // prettier-ignore
 .base_c48ade:has(
 	> .content_c48ade
-    > .page_c48ade
-    > div
-    > .chat_f75fb0
-    > .wrapper_cb9592
+	> .page_c48ade
+	> div
+	> .chat_f75fb0
+	> .wrapper_cb9592
 ) > .bar_c38106 {
-	--window_fg_color: #ffffff;
+	@extend %-dark-headerbar;
 }
 
 .callContainer_cb9592 {
 	border: none;
+
+	.container__9293f {
+		@extend %-dark-headerbar;
+	}
 }
 
 // popout
@@ -56,15 +72,15 @@
 	}
 
 	&.button__201d5.colorBrand__201d5 {
-		--accent_color: var(--window_fg_color);
+		color: var(--window_fg_color);
 	}
 
 	&.disconnect_f1ceac {
-		color: var(--destructive_color);
+		color: var(--destructive-color);
 	}
 
 	&.redGlow_f1ceac {
-		color: var(--destructive_color);
+		color: var(--destructive-color);
 	}
 
 	&:not([aria-label]) {
@@ -78,6 +94,7 @@
 .headerWrapper_cb9592 .button__9db96 {
 	@include controls.icon-button;
 
+	color: inherit;
 	margin: 0;
 }
 
@@ -88,7 +105,7 @@
 .rightTrayIcon_cb9592 {
 	@include controls.icon-button-circular;
 
-	--accent_color: var(--window_fg_color);
+	--accent-color: var(--window_fg_color);
 	margin-left: var(--spacing);
 }
 

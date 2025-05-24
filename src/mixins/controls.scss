@@ -210,7 +210,7 @@
 
 		&[aria-checked="true"] #{$icon} {
 			background-color: #fff;
-			border: 7px solid var(--accent_bg_color);
+			border: 7px solid var(--accent-bg-color);
 		}
 
 		&[aria-checked="false"] #{$icon} {
@@ -249,7 +249,7 @@
 	}
 
 	#{$bar-fill} {
-		background-color: var(--accent_bg_color);
+		background-color: var(--accent-bg-color);
 	}
 
 	// the grabber is different with exact values, but i don't care fuck you

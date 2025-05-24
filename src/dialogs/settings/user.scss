@@ -69,7 +69,7 @@
 
 		&[aria-checked="true"]::before {
 			background-color: #fff;
-			border: 7px solid var(--accent_bg_color);
+			border: 7px solid var(--accent-bg-color);
 		}
 
 		&[aria-checked="false"]::before {
