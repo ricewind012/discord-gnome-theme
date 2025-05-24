@@ -1,0 +1,73 @@
+.editorHeader_cf6da1 h3 {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+.closeCircleButton_cf6da1 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDQgNCBoIDEgaCAwLjAzMTI1IGMgMC4yNTM5MDYgMC4wMTE3MTkgMC41MTE3MTkgMC4xMjg5MDYgMC42ODc1IDAuMzEyNSBsIDIuMjgxMjUgMi4yODEyNSBsIDIuMzEyNSAtMi4yODEyNSBjIDAuMjY1NjI1IC0wLjIzMDQ2OSAwLjQ0NTMxMiAtMC4zMDQ2ODggMC42ODc1IC0wLjMxMjUgaCAxIHYgMSBjIDAgMC4yODUxNTYgLTAuMDM1MTU2IDAuNTUwNzgxIC0wLjI1IDAuNzUgbCAtMi4yODEyNSAyLjI4MTI1IGwgMi4yNSAyLjI1IGMgMC4xODc1IDAuMTg3NSAwLjI4MTI1IDAuNDUzMTI1IDAuMjgxMjUgMC43MTg3NSB2IDEgaCAtMSBjIC0wLjI2NTYyNSAwIC0wLjUzMTI1IC0wLjA5Mzc1IC0wLjcxODc1IC0wLjI4MTI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgbCAtMi4yODEyNSAyLjI4MTI1IGMgLTAuMTg3NSAwLjE4NzUgLTAuNDUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgMC4yODEyNSBoIC0xIHYgLTEgYyAwIC0wLjI2NTYyNSAwLjA5Mzc1IC0wLjUzMTI1IDAuMjgxMjUgLTAuNzE4NzUgbCAyLjI4MTI1IC0yLjI1IGwgLTIuMjgxMjUgLTIuMjgxMjUgYyAtMC4yMTA5MzggLTAuMTk1MzEyIC0wLjMwNDY4OCAtMC40Njg3NSAtMC4yODEyNSAtMC43NSB6IG0gMCAwIiBmaWxsPSIjMmUzNDM2Ii8+Cjwvc3ZnPgo=") !important;
+  --icon-button-size: var(--titlebar-button-size) !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  border-radius: 100% !important;
+  inset: 0 !important;
+  order: 1 !important;
+}
+.closeCircleButton_cf6da1:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.closeCircleButton_cf6da1:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.closeCircleButton_cf6da1:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.closeCircleButton_cf6da1::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.closeCircleButton_cf6da1 > * {
+  display: none !important;
+}
+
+.editorFooter_cf6da1 {
+  display: none !important;
+}
+
+.editorHeader_cf6da1 {
+  box-shadow: var(--elevation-low) !important;
+  padding-inline: 0 var(--titlebar-button-spacing) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex: 1 0 auto !important;
+  width: unset !important;
+  height: var(--headerbar-height) !important;
+}
+.editorHeader_cf6da1 h3 {
+  margin: auto !important;
+}
+
+.themeEditor_cf6da1 {
+  border-left: 1px solid var(--secondary_sidebar_border_color) !important;
+  padding: 0 !important;
+  z-index: 999 !important;
+}

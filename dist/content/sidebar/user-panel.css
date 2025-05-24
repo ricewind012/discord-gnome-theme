@@ -1,0 +1,147 @@
+.panelTitleContainer__37e49 > div {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+/* vc*/
+.container_e131a9 {
+  border-bottom: 1px solid var(--secondary_sidebar_border_color) !important;
+  padding: var(--spacing) !important;
+  margin: 0 !important;
+}
+
+.panels_c48ade {
+  background: var(--bg-overlay-app-frame, var(--background-secondary-alt)) !important;
+  border: none !important;
+  border-top: 1px solid var(--secondary_sidebar_border_color) !important;
+  border-radius: 0 !important;
+  bottom: 0 !important;
+  left: var(--custom-guild-list-width) !important;
+  width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)) !important;
+  /* also vc*/
+}
+.panels_c48ade .activityPanel_c48ade {
+  background-color: inherit !important;
+  border-bottom: var(--secondary_sidebar_border_color) !important;
+  border-radius: 0 !important;
+}
+.panels_c48ade .avatarWrapper__37e49 {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  padding: var(--spacing) !important;
+}
+.panels_c48ade .avatarWrapper__37e49:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.panels_c48ade .avatarWrapper__37e49:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.panels_c48ade .button__201d5 {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  color: inherit !important;
+}
+.panels_c48ade .button__201d5:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.panels_c48ade .button__201d5:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.panels_c48ade .button__201d5:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.panels_c48ade .button__201d5::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.panels_c48ade .button__201d5 > * {
+  display: none !important;
+}
+.panels_c48ade .button_e131a9 {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+}
+.panels_c48ade .button_e131a9:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.panels_c48ade .button_e131a9:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.panels_c48ade .button_e131a9:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.panels_c48ade .button_e131a9::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.panels_c48ade .button_e131a9 > * {
+  display: none !important;
+}
+.panels_c48ade .container__37e49 {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-right: var(--spacing) !important;
+}
+.panels_c48ade .micButtonParent__37e49,
+.panels_c48ade [aria-label=Deafen] {
+  display: none !important;
+}
+
+.panelTitleContainer__37e49 > div {
+  color: var(--window_fg_color) !important;
+}
+
+.rtcConnectionStatus__06d62 .button__201d5 {
+  width: unset !important;
+  height: unset !important;
+}
+.rtcConnectionStatus__06d62 .button__201d5::before {
+  display: none !important;
+}
+.rtcConnectionStatus__06d62 .button__201d5 > * {
+  display: initial !important;
+}
+
+/* There are only 2 buttons and 1 of them has a constant aria-label, the other*/
+/* doesn't*/
+.voiceButtonsContainer_e131a9 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IDIgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHYgMTAgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC0xMCBjIDAgLTAuNTU0Njg4IC0wLjQ0NTMxMiAtMSAtMSAtMSB6IG0gNiAyIGMgLTAuNTU0Njg4IDAgLTEgMC40NDUzMTIgLTEgMSB2IDYgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC02IGMgMCAtMC41NTQ2ODggLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSAtOSAxIGMgLTAuNTU0Njg4IDAgLTEgMC40NDUzMTIgLTEgMSB2IDQgYyAwIDAuNTU0Njg4IDAuNDQ1MzEyIDEgMSAxIHMgMSAtMC40NDUzMTIgMSAtMSB2IC00IGMgMCAtMC41NTQ2ODggLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSA2IDEgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHYgMiBjIDAgMC41NTQ2ODggMC40NDUzMTIgMSAxIDEgcyAxIC0wLjQ0NTMxMiAxIC0xIHYgLTIgYyAwIC0wLjU1NDY4OCAtMC40NDUzMTIgLTEgLTEgLTEgeiBtIC05IDEgYyAtMC41NTQ2ODggMCAtMSAwLjQ0NTMxMiAtMSAxIHMgMC40NDUzMTIgMSAxIDEgcyAxIC0wLjQ0NTMxMiAxIC0xIHMgLTAuNDQ1MzEyIC0xIC0xIC0xIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K") !important;
+}

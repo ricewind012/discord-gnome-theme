@@ -1,0 +1,38 @@
+@charset "UTF-8";
+[aria-label="Open sticker picker"] {
+  display: none !important;
+}
+
+/* Message form-specific channelTextArea stuff*/
+.channelTextArea__74017 .attachButton__0923f {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IC0wLjAzMTI1IGMgLTQuNDAyMzQ0IDAgLTggMy41OTc2NTYgLTggOCBzIDMuNTk3NjU2IDggOCA4IHMgOCAtMy41OTc2NTYgOCAtOCBzIC0zLjU5NzY1NiAtOCAtOCAtOCB6IG0gMCAxLjk4MDQ2OSBjIDMuMzM5ODQ0IDAgNi4wMTU2MjUgMi42Nzk2ODcgNi4wMTU2MjUgNi4wMTk1MzEgcyAtMi42NzU3ODEgNi4wMTk1MzEgLTYuMDE1NjI1IDYuMDE5NTMxIHMgLTYuMDE5NTMxIC0yLjY3OTY4NyAtNi4wMTk1MzEgLTYuMDE5NTMxIHMgMi42Nzk2ODcgLTYuMDE5NTMxIDYuMDE5NTMxIC02LjAxOTUzMSB6IG0gLTEgMi4wNTA3ODEgdiAzIGggLTMgdiAyIGggMyB2IDMgaCAyIHYgLTMgaCAzIHYgLTIgaCAtMyB2IC0zIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K") !important;
+  margin: 0 !important;
+  /* align with cozy mode avatars, à la discord*/
+  width: calc(var(--custom-message-avatar-size) + var(--custom-message-margin-horizontal) - var(--spacing)) !important;
+}
+.channelTextArea__74017 .clipContainer__841c8 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.channelTextArea__74017 .replyLabel__841c8 {
+  font-size: var(--document-font-size) !important;
+}
+.channelTextArea__74017 .separator_aa63ab {
+  margin: 0 !important;
+}
+.channelTextArea__74017 .separator_aa63ab::before {
+  display: none !important;
+}
+
+.form_f75fb0 {
+  --custom-channel-textarea-text-area-height: 0px !important;
+  padding-inline: var(--custom-message-margin-horizontal) !important;
+  margin: 0 !important;
+}
+.form_f75fb0::before, .form_f75fb0::after {
+  display: none !important;
+}
+
+.textAreaThreadCreation__74017 [role=textbox] {
+  border-radius: var(--radius-xs) 0 0 var(--radius-xs) !important;
+}

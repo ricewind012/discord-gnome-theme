@@ -1,0 +1,116 @@
+.peopleListItem_cc6179 .subtext__0a06e,
+.peopleListItem_cc6179 .text__19b6d {
+  color: var(--window_fg_muted) !important;
+  font-weight: 400 !important;
+  font-size: 12.3px !important;
+}
+
+.peopleColumn__133bf h2, .peopleListItem_cc6179 .username__0a06e {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+.container__133bf {
+  border: none !important;
+}
+
+.nowPlayingColumn__133bf .container__7d20c {
+  background: var(--bg-overlay-2, var(--background-secondary)) !important;
+}
+
+.peopleColumn__133bf {
+  gap: 16px !important;
+  padding: 16px !important;
+}
+.peopleColumn__133bf > * {
+  margin: 0 !important;
+}
+.peopleColumn__133bf h2 {
+  margin: 0 !important;
+}
+
+.peopleList__5ec2f {
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  overflow: auto !important;
+  /* WTF is this shit*/
+}
+.peopleList__5ec2f > div > div {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  transition: var(--backdrop_transition) !important;
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  /* Title*/
+  min-height: unset !important;
+}
+.peopleList__5ec2f > div > div:hover {
+  background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color)) !important;
+}
+.peopleList__5ec2f > div > div:active {
+  background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color)) !important;
+}
+.peopleList__5ec2f > div > div:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.peopleList__5ec2f > div > div:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.peopleList__5ec2f > div > div.sectionTitle__5ec2f:hover, .peopleList__5ec2f > div > div.sectionTitle__5ec2f:active {
+  background-color: var(--card_bg_color) !important;
+}
+.peopleList__5ec2f > [aria-hidden=true] {
+  display: none !important;
+}
+
+.peopleListItem_cc6179 {
+  border-top: none !important;
+  margin: 0 !important;
+}
+.peopleListItem_cc6179 .actionButton_f8fa06 {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+}
+.peopleListItem_cc6179 .actionButton_f8fa06:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.peopleListItem_cc6179 .actionButton_f8fa06:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.peopleListItem_cc6179 .actionButton_f8fa06:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.peopleListItem_cc6179 .actionButton_f8fa06::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.peopleListItem_cc6179 .actionButton_f8fa06 > * {
+  display: none !important;
+}
+.peopleListItem_cc6179 .userInfo__0a06e {
+  align-items: center !important;
+}

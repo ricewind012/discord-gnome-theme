@@ -1,0 +1,54 @@
+/* Emoji*/
+.popoutContent_d5cd2d {
+  --custom-message-helpers-popout-padding-width: 0px !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+  /* There is too much text, so blur here is fine*/
+  /*backdrop-filter: none;*/
+}
+.popoutContent_d5cd2d .emojiSection_d5cd2d > div {
+  align-items: center !important;
+}
+.popoutContent_d5cd2d .guildSection_d5cd2d {
+  background-color: transparent !important;
+}
+.popoutContent_d5cd2d .primaryEmoji_d5cd2d {
+  margin: 0 !important;
+}
+
+.reactionTooltip_b49891 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+}
+.reactionTooltip_b49891 .reactionTooltipText_b49891 {
+  color: inherit !important;
+  font: inherit !important;
+}
+
+.tooltip__382e7 {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 9px !important;
+  box-shadow: none !important;
+  padding: 6px 10px !important;
+}
+
+.tooltipContent__382e7 {
+  padding: 0 !important;
+}
+.tooltipContent__382e7 * {
+  color: inherit !important;
+}
+
+.tooltipPointer__382e7 {
+  display: none !important;
+}

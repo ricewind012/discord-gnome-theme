@@ -1,0 +1,124 @@
+.wrapperCommon__29444 .name__29444 {
+  font-weight: 700 !important;
+  font-size: 12.98px !important;
+}
+
+.wrapper__2ea32 [data-text-variant="text-xs/semibold"], .name__2ea32 {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+div.sidebar_c48ade {
+  background: var(--bg-overlay-app-frame, var(--background-secondary-alt)) !important;
+  border-right: 1px solid var(--secondary_sidebar_border_color) !important;
+  border-radius: 0 !important;
+}
+div.sidebar_c48ade::after {
+  display: none !important;
+}
+
+.sidebarList_c48ade {
+  border: none !important;
+  border-radius: 0 !important;
+}
+.sidebarList_c48ade .container__2637a {
+  margin: 0 !important;
+}
+
+#channels {
+  margin: 0 !important;
+}
+
+.wrapper__2ea32 {
+  color: var(--window_fg_color) !important;
+}
+.wrapper__2ea32.modeMuted__2ea32 {
+  color: var(--window_fg_muted) !important;
+}
+.wrapper__2ea32.typeThread__2ea32 {
+  --spine-width: 10px !important;
+  margin-left: calc(var(--channels-spine-offset-left) + var(--spine-width) + var(--space-xs)) !important;
+}
+.wrapper__2ea32 .channelInfo_c69b6d {
+  margin: 0 !important;
+}
+/* Header*/
+.wrapperCommon__29444 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuMjkyOTY5IDcuNzA3MDMxIGwgNCA0IGMgMC4zOTA2MjUgMC4zOTA2MjUgMS4wMjM0MzcgMC4zOTA2MjUgMS40MTQwNjIgMCBsIDQgLTQgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMC4zOTA2MjUgLTEuMDIzNDM3IDAgLTEuNDE0MDYyIHMgLTEuMDIzNDM3IC0wLjM5MDYyNSAtMS40MTQwNjIgMCBsIC0zLjI5Mjk2OSAzLjI5Mjk2OSBsIC0zLjI5Mjk2OSAtMy4yOTI5NjkgYyAtMC4zOTA2MjUgLTAuMzkwNjI1IC0xLjAyMzQzNyAtMC4zOTA2MjUgLTEuNDE0MDYyIDAgcyAtMC4zOTA2MjUgMS4wMjM0MzcgMCAxLjQxNDA2MiB6IG0gMCAwIiBmaWxsPSIjMjIyMjIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==") !important;
+}
+.wrapperCommon__29444.collapsed__29444 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuMzAwNzgxIDkuMjAzMTI1IGwgNCAtMy45MTc5NjkgYyAwLjM5MDYyNSAtMC4zNzg5MDYgMS4wMDc4MTMgLTAuMzc4OTA2IDEuMzk0NTMxIDAgbCA0IDMuOTE3OTY5IGMgMC4zOTg0MzggMC4zODI4MTMgMC40MDYyNSAxLjAxNTYyNSAwLjAxOTUzMiAxLjQxNDA2MyBjIC0wLjM4MjgxMyAwLjM5NDUzMSAtMS4wMTU2MjUgMC40MDIzNDMgLTEuNDE0MDYzIDAuMDE5NTMxIGwgLTMuMzAwNzgxIC0zLjI0MjE4OCBsIC0zLjMwMDc4MSAzLjI0MjE4OCBjIC0wLjM5ODQzOCAwLjM4MjgxMiAtMS4wMzEyNSAwLjM3NSAtMS40MTc5NjkgLTAuMDE5NTMxIGMgLTAuMzgyODEyIC0wLjM5ODQzOCAtMC4zNzUgLTEuMDMxMjUgMC4wMTk1MzEgLTEuNDE0MDYzIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPgo8L3N2Zz4K") !important;
+}
+.wrapperCommon__29444:not(:hover) {
+  color: var(--window_fg_muted) !important;
+}
+.wrapperCommon__29444 .icon__29444 {
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  transform: none !important;
+}
+.wrapperCommon__29444 .icon__29444 path {
+  display: none !important;
+}
+.wrapperCommon__29444 .mainContent__29444 {
+  gap: var(--space-xs) !important;
+  flex-direction: row-reverse !important;
+  justify-content: start !important;
+}
+.wrapperCommon__29444 .name__29444 {
+  color: inherit !important;
+}
+
+/* "Browse channels", since it's fucking useless*/
+.basicChannelRowLink__2ea32,
+.sectionDivider__629e4,
+.sectionDivider__629e4 + [style="height: 12px;"] {
+  display: none !important;
+}
+
+.children__2ea32 {
+  /* Use the context menu instead*/
+}
+.children__2ea32 .iconItem_c69b6d {
+  display: none !important;
+}
+
+.icon__2ea32 {
+  display: none !important;
+}
+
+/* TODO: optional !important*/
+:where(.iconContainer__2ea32) {
+  /* Align with Discord*/
+  --icon: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+CiAgICA8cGF0aCBkPSJNNSAxdjNIM3YyaDJ2NEgzdjJoMnYzaDJ2LTNoM3YzaDJ2LTNoMnYtMmgtMlY2aDJWNGgtMlYxaC0ydjNIN1Yxem0yIDVoM3Y0SDd6IiBjb2xvcj0iIzAwMCIgb3ZlcmZsb3c9InZpc2libGUiIGZpbGw9IiMyZTM0MzYiLz4KPC9zdmc+Cg==") !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+}
+
+.link__2ea32 {
+  color: inherit !important;
+  /* Originally --space-xxs, but it's at a constant 4px. This is put here in*/
+  /* order to not fuck with the virtualized list, since --space-xxs is edited.*/
+  padding-block: var(--space-4) !important;
+}
+
+.spine__5b40b {
+  color: var(--window_fg_color) !important;
+}
+
+.unread__2ea32 {
+  margin: 0 !important;
+  top: var(--space-4) !important;
+  left: calc(var(--space-xs) * -1) !important;
+  height: calc(100% - var(--space-4) * 2) !important;
+}

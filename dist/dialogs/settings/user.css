@@ -1,0 +1,132 @@
+.presets__67a11 .themeTitleContainer__3e443 {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+/* 1. Connections tab*/
+/* 2. Voice tab*/
+.connectContainer_c7f964,
+.cameraWrapper_d41d5f {
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+}
+
+/* Nitro themes*/
+.presets__67a11 {
+  gap: 0 !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+}
+
+.themeSelection__36dee {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  transition: var(--backdrop_transition) !important;
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-shadow: none !important;
+  gap: 16px !important;
+  padding: 16px !important;
+  margin: 0 !important;
+}
+.themeSelection__36dee:hover {
+  background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color)) !important;
+}
+.themeSelection__36dee:active {
+  background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color)) !important;
+}
+.themeSelection__36dee:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.themeSelection__36dee:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.themeSelection__36dee[aria-checked=true] .themeSelection__36dee::before {
+  background-color: #fff !important;
+  border: 7px solid var(--accent-bg-color) !important;
+}
+.themeSelection__36dee[aria-checked=false] .themeSelection__36dee::before {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+.themeSelection__36dee > div {
+  all: unset !important;
+  gap: inherit !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.themeSelection__36dee::before {
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.hack {
+  display: none !important;
+}
+
+.presets__67a11 {
+  background-color: transparent !important;
+  gap: 0 !important;
+  overflow: hidden !important;
+  flex-direction: column !important;
+}
+[role=radiogroup]:has(> .presets__67a11) {
+  box-shadow: none !important;
+}
+.presets__67a11 .iconWrapper__36dee {
+  display: none !important;
+}
+.presets__67a11 .selectionCircle__36dee {
+  display: none !important;
+}
+.presets__67a11 .themeSelection__36dee {
+  /* --card_fg_color*/
+  /* radios.scss override*/
+}
+.presets__67a11 .themeSelection__36dee.darkOverlay__36dee {
+  color: #fff !important;
+}
+.presets__67a11 .themeSelection__36dee.lightOverlay__36dee {
+  color: rgba(0, 0, 6, 0.8) !important;
+}
+.presets__67a11 .themeSelection__36dee:first-of-type {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.themeSelectionContainer__36dee:nth-last-child(2) > .presets__67a11 .themeSelection__36dee:first-of-type {
+  border: none !important;
+}
+.presets__67a11 .themeSelection__36dee::before {
+  content: "" !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+.presets__67a11 .themeSelection__36dee[aria-checked=true]::before {
+  background-color: #fff !important;
+  border: 7px solid var(--accent-bg-color) !important;
+}
+.presets__67a11 .themeSelection__36dee[aria-checked=false]::before {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+.presets__67a11 .themeSelection__36dee::after {
+  content: attr(aria-label) !important;
+}
+.presets__67a11 .themeSelectionContainer__36dee {
+  width: unset !important;
+  height: unset !important;
+}
+.presets__67a11 .title__3e443 {
+  margin-bottom: 0 !important;
+}

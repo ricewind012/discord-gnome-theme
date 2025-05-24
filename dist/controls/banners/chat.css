@@ -1,0 +1,82 @@
+/* TODO: don't remember where this is lol*/
+.chatHeaderBar_dc83f5 {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+  --banner-color: #7d7d83 !important;
+  background-color: color-mix(in srgb, var(--banner-color) 30%, var(--window_bg_color)) !important;
+  color: var(--window_fg_color) !important;
+  padding: var(--spacing) !important;
+}
+.chatHeaderBar_dc83f5 * {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+.chatHeaderBar_dc83f5 svg {
+  display: none !important;
+}
+.chatHeaderBar_dc83f5::after {
+  display: none !important;
+}
+
+.chatHeaderBarText_dc83f5 {
+  text-align: center !important;
+}
+
+.barBase__0f481 {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+  --banner-color: #7d7d83 !important;
+  background-color: color-mix(in srgb, var(--banner-color) 30%, var(--window_bg_color)) !important;
+  color: var(--window_fg_color) !important;
+  padding: var(--spacing) !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  position: unset !important;
+  width: 100% !important;
+  height: unset !important;
+  min-height: unset !important;
+}
+.barBase__0f481 * {
+  font-size: inherit !important;
+  font-weight: inherit !important;
+}
+.barBase__0f481 svg {
+  display: none !important;
+}
+
+.barButtonAlt__0f481 {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+}
+.barButtonAlt__0f481:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.barButtonAlt__0f481:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.barButtonAlt__0f481 * {
+  font: inherit !important;
+}
+.barButtonAlt__0f481 svg {
+  display: none !important;
+}
+
+.barButtonBase__0f481 {
+  text-align: center !important;
+  padding: 0 var(--spacing) !important;
+}
+
+.messagesWrapper__36d07 {
+  flex-direction: column !important;
+}

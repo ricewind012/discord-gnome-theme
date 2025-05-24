@@ -1,0 +1,89 @@
+.titleContainer__45690 [data-text-variant="text-lg/semibold"] {
+  font-weight: 700 !important;
+  font-size: 14.96px !important;
+}
+
+.header__45690 {
+  background-color: var(--headerbar_bg_color) !important;
+  box-shadow: var(--elevation-low) !important;
+  border: none !important;
+  gap: var(--spacing) !important;
+  padding: var(--spacing) !important;
+  height: unset !important;
+  min-height: unset !important;
+  z-index: 1 !important;
+}
+
+.messagesPopout__45690 {
+  padding: 0 !important;
+}
+.messagesPopout__45690 [role=list] {
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  margin: 22px 28px !important;
+  overflow: hidden !important;
+}
+.messagesPopout__45690 [role=list] > div {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.messagesPopout__45690 [role=list] > div:not(:last-child) {
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+}
+.messagesPopout__45690 .messageContainer__95796 {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 8px 0 !important;
+  margin: 0 !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  box-shadow: none !important;
+  top: 8px !important;
+  right: 8px !important;
+  height: unset !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c * {
+  font: inherit !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c svg {
+  display: none !important;
+}
+.messagesPopout__45690 .jumpButton_ed0c8c > div {
+  color: inherit !important;
+  font-size: inherit !important;
+}
+
+.messagesPopoutWrap__45690 {
+  background-color: var(--dialog_bg_color) !important;
+  border-radius: var(--window_radius) !important;
+  box-shadow: var(--shadow-high) !important;
+  outline: 1px solid var(--window_outline_color) !important;
+  outline-offset: -1px !important;
+}
+
+.titleContainer__45690 {
+  justify-content: center !important;
+  height: var(--headerbar-height) !important;
+}
+.titleContainer__45690 svg {
+  display: none !important;
+}

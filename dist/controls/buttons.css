@@ -1,0 +1,53 @@
+.button__201d5 {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  /* Special treatment because this gets used everywhere for absolutely no*/
+  /* fucking reason*/
+}
+.button__201d5:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.button__201d5:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.button__201d5 * {
+  font: inherit !important;
+}
+.button__201d5 svg {
+  display: none !important;
+}
+.button__201d5:disabled {
+  opacity: var(--dim-level-opacity) !important;
+}
+.button__201d5:where(.colorBrand__201d5) {
+  color: var(--accent-color) !important;
+}
+.button__201d5.colorRed__201d5 {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+  color: var(--destructive-color) !important;
+}
+.button__201d5.colorRed__201d5:hover {
+  background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
+}
+.button__201d5.colorRed__201d5:active {
+  background-color: color-mix(in srgb, currentColor 35%, transparent) !important;
+}
+.button__201d5.colorGreen__201d5 {
+  color: var(--success-color) !important;
+}
+.button__201d5.lookBlank__201d5 {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.button__201d5 > div {
+  --button--underline-color: transparent !important;
+}

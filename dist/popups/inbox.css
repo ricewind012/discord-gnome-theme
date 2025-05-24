@@ -1,0 +1,70 @@
+.controlButton_ab6641 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAwIDEgaCAxNSBsIC02IDcgdiA2IGwgLTMgMiB2IC04IHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K") !important;
+}
+
+.controls_ab6641 {
+  gap: var(--spacing) !important;
+}
+.controls_ab6641 [role=button] {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+}
+.controls_ab6641 [role=button]:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.controls_ab6641 [role=button]:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.controls_ab6641 [role=button]:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.controls_ab6641 [role=button]::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.controls_ab6641 [role=button] > * {
+  display: none !important;
+}
+
+.friendRequestsButton__523aa {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IDEgYyAtMS42NTYyNSAwIC0zIDEuMzQzNzUgLTMgMyBzIDEuMzQzNzUgMyAzIDMgcyAzIC0xLjM0Mzc1IDMgLTMgcyAtMS4zNDM3NSAtMyAtMyAtMyB6IG0gLTEuNSA3IGMgLTIuNDkyMTg4IDAgLTQuNSAyLjAwNzgxMiAtNC41IDQuNSB2IDEuNSBjIDAgMSAxIDEgMSAxIGggMTAgcyAxIDAgMSAtMSB2IC0xLjUgYyAwIC0yLjQ5MjE4OCAtMi4wMDc4MTIgLTQuNSAtNC41IC00LjUgeiBtIDAgMCIgZmlsbD0iIzIyMjIyMiIvPjwvc3ZnPgo=") !important;
+}
+
+.header_ab6641 {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.headerTabs_ab6641 {
+  margin: 0 !important;
+}
+.headerTabs_ab6641 [role=tablist] {
+  margin: 0 !important;
+}
+
+.channelHeader__35a7e,
+.inboxIcon_ab6641,
+.inboxTitle_ab6641,
+.recentMentionsPopout__95796 .titleContainer__45690 {
+  display: none !important;
+}

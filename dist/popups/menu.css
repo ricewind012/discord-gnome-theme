@@ -1,0 +1,34 @@
+[role=menu] [role^=menuitem] {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+[role=menu] {
+  border: 1px solid rgba(0, 0, 0, 0.14) !important;
+  border-radius: var(--popover_radius) !important;
+  box-shadow: var(--popover_shadow) !important;
+}
+[role=menu] > div {
+  padding: 8px !important;
+  overflow: auto !important;
+}
+[role=menu] [role^=menuitem] {
+  color: var(--window_fg_color) !important;
+  border-radius: var(--menu_radius) !important;
+  padding: 0 var(--menu_padding) !important;
+  margin: 0 !important;
+  min-height: 32px !important;
+}
+[role=menu] [role^=menuitem].focused_c1e9c4 {
+  background-color: var(--selected_color) !important;
+}
+[role=menu] [role^=menuitem]:active {
+  background-color: var(--active_color) !important;
+}
+[role=menu] [role=separator] {
+  margin: var(--menu_margin) 0 !important;
+}
+
+.customItem_c1e9c4 {
+  padding: 0 !important;
+}

@@ -1,0 +1,113 @@
+.actionButton_cc1819 {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+}
+.actionButton_cc1819:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.actionButton_cc1819:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.actionButton_cc1819:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.actionButton_cc1819::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.actionButton_cc1819 > * {
+  display: none !important;
+}
+
+.actionButtons_cc1819 {
+  background-color: transparent !important;
+  border: none !important;
+  gap: var(--spacing) !important;
+  padding: 0 !important;
+}
+
+.button_aec7ab {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+}
+.button_aec7ab:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.button_aec7ab:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.button_aec7ab:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.button_aec7ab::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.button_aec7ab > * {
+  display: none !important;
+}
+
+.carouselModal_d3a6f0 {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: var(--space-xxl) !important;
+}
+
+.gallery_d75751 {
+  gap: var(--spacing-05x) !important;
+}
+
+.galleryItem_d75751 {
+  border-radius: 0 !important;
+}
+.galleryItem_d75751.first_d75751 {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm) !important;
+}
+.galleryItem_d75751.last_d75751 {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0 !important;
+}
+
+.mediaArea_e03578 {
+  box-shadow: var(--elevation-high) !important;
+}
+
+.topBar__6088c {
+  gap: var(--spacing) !important;
+}

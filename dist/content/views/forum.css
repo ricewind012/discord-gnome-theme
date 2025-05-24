@@ -1,0 +1,109 @@
+.headerRow_f369db {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin-bottom: var(--spacing-2x) !important;
+}
+.headerRow_f369db:hover {
+  background-color: transparent !important;
+}
+
+.list_f369db > .content__99f8c {
+  --custom-forum-post-form-horizontal-padding: 0px !important;
+  padding: 0 !important;
+}
+
+.card_f369db {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  transition: var(--backdrop_transition) !important;
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  /* for now*/
+  box-shadow: var(--elevation-medium) !important;
+}
+.card_f369db:hover {
+  background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color)) !important;
+}
+.card_f369db:active {
+  background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color)) !important;
+}
+.card_f369db:first-of-type {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.card_f369db:last-of-type {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.card_f369db:only-of-type {
+  border-radius: var(--card_radius) !important;
+}
+.card_f369db .mainCard_f369db {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.forumPostFormButton_d9be46 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSA4IDAgYyAtNC40MTAxNTYgMCAtOCAzLjU4OTg0NCAtOCA4IHMgMy41ODk4NDQgOCA4IDggcyA4IC0zLjU4OTg0NCA4IC04IHMgLTMuNTg5ODQ0IC04IC04IC04IHogbSAwIDIgYyAzLjMzMjAzMSAwIDYgMi42Njc5NjkgNiA2IHMgLTIuNjY3OTY5IDYgLTYgNiBzIC02IC0yLjY2Nzk2OSAtNiAtNiBzIDIuNjY3OTY5IC02IDYgLTYgeiBtIDAgMS44NzUgYyAtMC42MjEwOTQgMCAtMS4xMjUgMC41MDM5MDYgLTEuMTI1IDEuMTI1IHMgMC41MDM5MDYgMS4xMjUgMS4xMjUgMS4xMjUgcyAxLjEyNSAtMC41MDM5MDYgMS4xMjUgLTEuMTI1IHMgLTAuNTAzOTA2IC0xLjEyNSAtMS4xMjUgLTEuMTI1IHogbSAtMS41MjM0MzggMy4xMjUgYyAtMC4yNjU2MjQgMC4wMTE3MTkgLTAuNDc2NTYyIDAuMjMwNDY5IC0wLjQ3NjU2MiAwLjUgYyAwIDAuMjc3MzQ0IDAuMjIyNjU2IDAuNSAwLjUgMC41IGggMC41IHYgMyBoIC0wLjUgYyAtMC4yNzczNDQgMCAtMC41IDAuMjIyNjU2IC0wLjUgMC41IHMgMC4yMjI2NTYgMC41IDAuNSAwLjUgaCAzIGMgMC4yNzczNDQgMCAwLjUgLTAuMjIyNjU2IDAuNSAtMC41IHMgLTAuMjIyNjU2IC0wLjUgLTAuNSAtMC41IGggLTAuNSB2IC00IGggLTIuNSBjIC0wLjAwNzgxMiAwIC0wLjAxNTYyNSAwIC0wLjAyMzQzOCAwIHogbSAwIDAiIGZpbGw9IiMyMjIyMjIiLz48L3N2Zz4K") !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: var(--icon-button-size) !important;
+  height: var(--icon-button-size) !important;
+  margin: 0 !important;
+  order: 1 !important;
+}
+.forumPostFormButton_d9be46:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+.forumPostFormButton_d9be46:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+.forumPostFormButton_d9be46:disabled {
+  opacity: var(--dim-level-opacity) !important;
+  background-color: transparent !important;
+}
+.forumPostFormButton_d9be46::before {
+  content: "" !important;
+  background-color: currentColor !important;
+  mask: var(--icon) !important;
+  mask-position: center !important;
+  mask-repeat: no-repeat !important;
+  mask-size: var(--icon-size) !important;
+  width: var(--icon-size) !important;
+  height: var(--icon-size) !important;
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.forumPostFormButton_d9be46 > * {
+  display: none !important;
+}
+
+.header_f369db {
+  background: none !important;
+  border: none !important;
+}
+
+.tagsContainer_f369db {
+  padding: 0 !important;
+}
+
+.titleContainer_d9be46 {
+  gap: var(--spacing-2x) !important;
+}
+
+.prefixElement_d9be46 {
+  display: none !important;
+}

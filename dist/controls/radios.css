@@ -1,0 +1,121 @@
+/* Settings*/
+.contentRegion__23e6b [role=radiogroup] {
+  gap: 0 !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+}
+
+.item__001a7 {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  transition: var(--backdrop_transition) !important;
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-shadow: none !important;
+  gap: 16px !important;
+  padding: 16px !important;
+  margin: 0 !important;
+}
+.item__001a7:hover {
+  background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color)) !important;
+}
+.item__001a7:active {
+  background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color)) !important;
+}
+.item__001a7:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.item__001a7:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.item__001a7[aria-checked=true] .radioIndicatorGroup__001a7 {
+  background-color: #fff !important;
+  border: 7px solid var(--accent-bg-color) !important;
+}
+.item__001a7[aria-checked=false] .radioIndicatorGroup__001a7 {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+.item__001a7 > div {
+  all: unset !important;
+  gap: inherit !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.radioIndicatorGroup__001a7 {
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.radioIndicator__001a7 {
+  display: none !important;
+}
+
+/* Poll*/
+.answersContainer__4c520 {
+  gap: 0 !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+}
+
+.answer__4c520 {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  transition: var(--backdrop_transition) !important;
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  box-shadow: none !important;
+  gap: 16px !important;
+  padding: 16px !important;
+  margin: 0 !important;
+}
+.answer__4c520:hover {
+  background-color: color-mix(in srgb, currentColor 3%, var(--card_bg_color)) !important;
+}
+.answer__4c520:active {
+  background-color: color-mix(in srgb, currentColor 8%, var(--card_bg_color)) !important;
+}
+.answer__4c520:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.answer__4c520:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.answer__4c520[aria-checked=true] .answerSelectionIcon__4c520 {
+  background-color: #fff !important;
+  border: 7px solid var(--accent-bg-color) !important;
+}
+.answer__4c520[aria-checked=false] .answerSelectionIcon__4c520 {
+  border: 2px solid color-mix(in srgb, currentColor 25%, transparent) !important;
+}
+.answer__4c520 > div {
+  all: unset !important;
+  gap: inherit !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.answerSelectionIcon__4c520 {
+  border-radius: 50% !important;
+  flex-shrink: 0 !important;
+  width: 22px !important;
+  height: 22px !important;
+}
+
+.answerSelectionIcon__4c520 > * {
+  display: none !important;
+}

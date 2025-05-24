@@ -1,0 +1,60 @@
+[role=tablist][aria-orientation=vertical] [role=tab] {
+  font-size: var(--document-font-size) !important;
+  font-weight: normal !important;
+}
+
+[role=tab] {
+  font-size: var(--document-font-size) !important;
+  font-weight: bold !important;
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+  transition: var(--button_transition) !important;
+  color: var(--window_fg_color) !important;
+  padding: 5px 10px !important;
+  border: none !important;
+  border-radius: var(--button_radius) !important;
+  min-width: 16px !important;
+  min-height: 24px !important;
+  height: 34px !important;
+  background-color: transparent !important;
+  margin: 0 !important;
+}
+[role=tab]:hover {
+  background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
+}
+[role=tab]:active {
+  background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
+}
+[role=tab] * {
+  font: inherit !important;
+}
+[role=tab] svg {
+  display: none !important;
+}
+[role=tab][aria-selected=true] {
+  background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
+}
+[role=tab][aria-selected=true]:hover {
+  background-color: color-mix(in srgb, currentColor 13%, transparent) !important;
+}
+[role=tab][aria-selected=true]:active {
+  background-color: color-mix(in srgb, currentColor 19%, transparent) !important;
+}
+[role=tab]::after {
+  display: none !important;
+}
+
+[role=tablist][aria-orientation=horizontal] {
+  gap: 5px !important;
+  border: none !important;
+}
+
+/* .navigation-sidebar > row*/
+[role=tablist][aria-orientation=vertical] {
+  padding: var(--menu_margin) 0 !important;
+}
+[role=tablist][aria-orientation=vertical] [role=tab] {
+  line-height: 44px !important;
+  min-height: 36px !important;
+  padding: 0 14px !important;
+  margin: 0 var(--menu_margin) 2px !important;
+}

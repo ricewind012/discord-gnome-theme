@@ -1,0 +1,133 @@
+/* Source: https://github.com/GNOME/libadwaita/blob/main/src/stylesheet/_palette.scss*/
+.theme-light {
+  --standalone-color-oklab: min(l, 0.5) a b !important;
+  /* TODO: accent option, later support AccentColor when chrome does*/
+  --accent-bg-color: #3584e4 !important;
+  --destructive-bg-color: #e01b24 !important;
+  --success-bg-color: #2ec27e !important;
+  --warning-bg-color: #e5a50a !important;
+  --warning_fg_color: rgba(0, 0, 0, 0.8) !important;
+  --error-bg-color: #e01b24 !important;
+  --window_bg_color: #fafafb !important;
+  --window_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --view_bg_color: #ffffff !important;
+  --view_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --sidebar_bg_color: #ebebed !important;
+  --sidebar_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --sidebar_backdrop_color: #f2f2f4 !important;
+  --sidebar_border_color: rgba(0, 0, 6, 0.07) !important;
+  --sidebar_shade_color: rgba(0, 0, 6, 0.07) !important;
+  --secondary_sidebar_bg_color: #f3f3f5 !important;
+  --secondary_sidebar_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --secondary_sidebar_backdrop_color: #f6f6fa !important;
+  --secondary_sidebar_border_color: rgba(0, 0, 6, 0.07) !important;
+  --secondary_sidebar_shade_color: rgba(0, 0, 6, 0.07) !important;
+  --card_bg_color: #ffffff !important;
+  --card_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --card_shade_color: rgba(0, 0, 6, 0.07) !important;
+  --thumbnail_bg_color: #ffffff !important;
+  --thumbnail_fg_color: rgba(0, 0, 0, 0.8) !important;
+  --dialog_bg_color: #fafafb !important;
+  --dialog_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --popover_bg_color: #ffffff !important;
+  --popover_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --popover_shade_color: rgba(0, 0, 6, 0.07) !important;
+}
+
+.theme-dark {
+  --standalone-color-oklab: max(l, 0.85) a b !important;
+  --accent-bg-color: #3584e4 !important;
+  --destructive-bg-color: #c01c28 !important;
+  --success-bg-color: #26a269 !important;
+  --success_fg_color: #ffffff !important;
+  --warning-bg-color: #cd9309 !important;
+  --warning_fg_color: rgba(0, 0, 0, 0.8) !important;
+  --error-bg-color: #c01c28 !important;
+  --error_fg_color: #ffffff !important;
+  --window_bg_color: #222226 !important;
+  --window_fg_color: #ffffff !important;
+  --view_bg_color: #1d1d20 !important;
+  --view_fg_color: #ffffff !important;
+  --sidebar_bg_color: #2e2e32 !important;
+  --sidebar_fg_color: #ffffff !important;
+  --sidebar_backdrop_color: #28282c !important;
+  --sidebar_border_color: rgba(0, 0, 6, 0.36) !important;
+  --sidebar_shade_color: rgba(0, 0, 6, 0.25) !important;
+  --secondary_sidebar_bg_color: #28282c !important;
+  --secondary_sidebar_fg_color: #ffffff !important;
+  --secondary_sidebar_backdrop_color: #252529 !important;
+  --secondary_sidebar_border_color: rgba(0, 0, 6, 0.36) !important;
+  --secondary_sidebar_shade_color: rgba(0, 0, 6, 0.25) !important;
+  --card_bg_color: rgba(255, 255, 255, 0.08) !important;
+  --card_fg_color: #ffffff !important;
+  --card_shade_color: rgba(0, 0, 6, 0.36) !important;
+  --thumbnail_bg_color: #39393d !important;
+  --thumbnail_fg_color: #ffffff !important;
+  --dialog_bg_color: #36363a !important;
+  --dialog_fg_color: #ffffff !important;
+  --popover_bg_color: #36363a !important;
+  --popover_fg_color: #ffffff !important;
+  --popover_shade_color: rgba(0, 0, 6, 0.25) !important;
+}
+
+.theme-light,
+.theme-dark {
+  --window_fg_muted: color-mix(
+  	in srgb,
+  	var(--window_fg_color) var(--dim-level-opacity),
+  	transparent
+  ) !important;
+}
+
+:root.theme-light {
+  --headerbar_bg_color: #ffffff !important;
+  --headerbar_fg_color: rgba(0, 0, 6, 0.8) !important;
+  --headerbar_border_color: rgba(0, 0, 6, 0.8) !important;
+  --headerbar_backdrop_color: #fafafb !important;
+  --headerbar_shade_color: rgba(0, 0, 6, 0.12) !important;
+  --headerbar_darker_shade_color: rgba(0, 0, 6, 0.12) !important;
+}
+
+:root.theme-dark {
+  --headerbar_bg_color: #2e2e32 !important;
+  --headerbar_fg_color: #ffffff !important;
+  --headerbar_border_color: #ffffff !important;
+  --headerbar_backdrop_color: #222226 !important;
+  --headerbar_shade_color: rgba(0, 0, 6, 0.36) !important;
+  --headerbar_darker_shade_color: rgba(0, 0, 6, 0.9) !important;
+}
+
+:root {
+  --accent-color: oklab(
+  	from var(--accent-bg-color) var(--standalone-color-oklab)
+  );
+  --destructive-color: oklab(
+  	from var(--destructive-bg-color) var(--standalone-color-oklab)
+  );
+  --success-color: oklab(
+  	from var(--success-bg-color) var(--standalone-color-oklab)
+  );
+  --warning-color: oklab(
+  	from var(--warning-bg-color) var(--standalone-color-oklab)
+  );
+  --error-color: oklab(
+  	from var(--error-bg-color) var(--standalone-color-oklab)
+  );
+  --accent_fg_color: #ffffff;
+  --destructive_fg_color: #ffffff;
+  --success_fg_color: #ffffff;
+  --error_fg_color: #ffffff;
+  /* present in libadwaita in some other form*/
+  --window_outline_color: rgba(255, 255, 255, 7%);
+  --hover_color: color-mix(in srgb, currentColor 7%, transparent);
+  --active_color: color-mix(in srgb, currentColor 16%, transparent);
+  --selected_color: color-mix(in srgb, currentColor 10%, transparent);
+  --selected_hover_color: color-mix(in srgb, currentColor 13%, transparent);
+  --selected_active_color: color-mix(in srgb, currentColor 19%, transparent);
+}
+:root:not(.app-focused) {
+  --headerbar_bg_color: var(--headerbar_backdrop_color) !important;
+  --headerbar_fg_color: var(--window_fg_muted) !important;
+  --sidebar_bg_color: var(--sidebar_backdrop_color) !important;
+  --secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color) !important;
+}
