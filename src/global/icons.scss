@@ -116,6 +116,16 @@
 	)
 );
 
+// Group chat
+@include -gen-icons(
+	"aria-label",
+	(
+		"Dismiss": "log-out",
+		"Join Call": "phone-right-facing",
+		"Join Video Call": "camera-photo",
+	)
+);
+
 // VC
 @include -gen-icons(
 	"aria-label",
@@ -165,6 +175,8 @@
 		"Enable Silent Typing": "keyboard3",
 		"Encrypt Message": "padlock2",
 		"Open Translate Modal": "translate",
+		// Message actions
+		"Translate": "translate",
 		// Seen in user profile popout
 		"View Reviews": "notepad"
 	)
