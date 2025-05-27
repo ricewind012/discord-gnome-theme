@@ -13,11 +13,13 @@
 
 .button_aec7ab {
 	@include controls.icon-button;
+
+	color: var(--window_fg_color);
 }
 
 .carouselModal_d3a6f0 {
 	background-color: transparent;
-	border: none;
+	outline: none;
 	box-shadow: none;
 	margin: var(--space-xxl);
 }
