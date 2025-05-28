@@ -16,11 +16,16 @@
 	border: none;
 	padding: 0;
 
+	overflow: hidden;
 	height: unset;
 
 	&.themed__9293f {
 		background-color: var(--window_bg_color);
 		box-shadow: var(--elevation-low);
+	}
+
+	&:has(.search__97492:focus-within, .icon__97492.clear_fea832) {
+		height: calc(var(--headerbar-height) * 2);
 	}
 
 	// home
@@ -95,9 +100,6 @@
 }
 
 .icon__97492 {
-	// When expanded, don't round the icon
-	--button_radius: 0;
-
 	@include controls.icon-button-with-tooltip(
 		$name: "loupe-large",
 		$direction: "bottom",
@@ -106,12 +108,25 @@
 
 	cursor: pointer;
 
-	.search__97492:focus-within & {
+	.search__97492.open__97492 & {
+		// TODO: mixin
+		background-color: var(--selected_color);
+
+		&:hover {
+			background-color: var(--selected_hover_color);
+		}
+
+		&:active {
+			background-color: var(--selected_active_color);
+		}
+	}
+
+	&.clear_fea832 {
 		--icon: icon("window-close");
 	}
 
 	// tooltip, the theme is english only anyway lol
-	.search__97492:not(:focus-within):hover &::after {
+	&:not(.clear_fea832):hover::after {
 		content: "Search Messages";
 	}
 }
@@ -128,35 +143,53 @@
 	position: absolute;
 	left: 0;
 
+	.DraftEditor-editorContainer {
+		height: unset;
+	}
+
 	.DraftEditor-root {
-		padding: 4px 0;
+		@include controls.text-field;
+
+		font-weight: normal;
+
+		position: absolute;
+		top: var(--headerbar-height);
+		left: 0;
+		width: 250px;
+	}
+
+	.public-DraftEditor-content,
+	.public-DraftEditorPlaceholder-root {
+		padding: 0;
+		padding-left: 2px;
+		margin-block: 1px -1px;
+	}
+
+	.searchAnswer_bd8186,
+	.searchFilter_bd8186 {
+		@extend %text-normal;
+
+		background-color: color-mix(in srgb, currentColor 20%, transparent);
+		border: none;
+		border-radius: 0;
+		margin-block: calc(var(--space-4) * -1);
+
+		height: unset;
 	}
 }
 
 .searchBar__97492 {
-	background-color: color-mix(
-		in srgb,
-		currentColor 10%,
-		var(--window_bg_color)
-	);
+	background: transparent;
 	color: inherit;
 	padding: 0;
 	border: none;
 	border-radius: var(--button_radius);
 
+	width: var(--icon-button-size);
 	height: var(--icon-button-size);
 	flex-direction: row-reverse;
 
 	transition: var(--backdrop_transition);
-
-	.search__97492:not(:focus-within) > & {
-		background: transparent;
-
-		&,
-		.icon__97492 {
-			width: var(--icon-button-size);
-		}
-	}
 }
 
 .title__9293f {
@@ -262,5 +295,5 @@
 		transparent
 	);
 	padding-right: var(--chat-header-right-padding);
-	align-items: center;
+	align-items: start;
 }

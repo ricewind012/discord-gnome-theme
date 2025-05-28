@@ -90,9 +90,9 @@
 	--embed-title: var(--window_fg_color);
 
 	$border_color: color-mix(in srgb, currentColor 50%, transparent);
-	--border-faint: $border_color;
-	--border-strong: $border_color;
-	--border-subtle: $border_color;
+	--border-faint: #{$border_color};
+	--border-strong: #{$border_color};
+	--border-subtle: #{$border_color};
 
 	--status-danger: var(--destructive-color);
 	--status-dnd: var(--destructive-color);

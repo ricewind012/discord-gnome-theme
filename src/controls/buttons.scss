@@ -19,8 +19,6 @@ $destructive_button_active_color: color-mix(
 		opacity: var(--dim-level-opacity);
 	}
 
-	// Special treatment because this gets used everywhere for absolutely no
-	// fucking reason
 	&:where(.colorBrand__201d5) {
 		color: var(--accent-color);
 	}

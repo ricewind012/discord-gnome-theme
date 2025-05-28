@@ -1,11 +1,19 @@
 @use "controls";
 @use "typography";
 
+.pageButton_c15210 {
+	@include controls.button;
+}
+
 .searchHeader_f3b986 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
 	padding: var(--spacing);
 
 	height: unset;
+
+	[data-text-variant] {
+		@extend %text-normal;
+	}
 }
 
 .searchResult__02a39 {
@@ -20,14 +28,28 @@
 }
 
 .searchResultGroup_c68065 {
-	--offset: calc(var(--document-font-size) * 1.25 + 4px);
+	--offset: calc(var(--document-font-size) * 1.25 + 16px);
 
 	@include controls.cards-container;
 
-	margin-bottom: calc(var(--offset) + 24px);
+	margin-bottom: calc(var(--offset) + 34px);
 
 	position: relative;
 	top: var(--offset);
+
+	.channelNameIcon_c68065,
+	.parentChannelName_c68065 {
+		display: none;
+	}
+
+	.channelNameContainer_c68065 {
+		position: absolute;
+		top: calc(var(--offset) * -1);
+	}
+
+	.channelNameText_c68065 {
+		@extend %title-2;
+	}
 }
 
 .searchResultsWrap_a9e706 {
@@ -35,19 +57,9 @@
 
 	z-index: 0;
 
-	.channelNameContainer_c68065 {
-		margin-bottom: 16px;
-
-		position: absolute;
-		top: calc(var(--offset) * -1);
-
-		& > svg {
-			display: none;
-		}
-	}
-
-	.channelNameText_c68065 {
-		@extend %title-2;
+	// Clicking on the message does the thing
+	.button__02a39 {
+		display: none;
 	}
 
 	.container__02a39 {
