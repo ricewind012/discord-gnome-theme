@@ -1,0 +1,35 @@
+@use "controls";
+
+// TODO: dedi file
+$border_color: color-mix(in srgb, currentColor 50%, transparent);
+
+$icon-size: 20px;
+
+@mixin container {
+	background-color: var(--popover_bg_color);
+	// for border
+	color: var(--window_fg_muted);
+	border: 1px solid $border_color;
+	border-radius: var(--popover_radius);
+	box-shadow: var(--popover_shadow);
+	padding: var(--menu_margin);
+}
+
+@mixin entry($hover: ":hover") {
+	@include controls.button-basic-raised($hover);
+
+	background-color: transparent;
+	border-radius: var(--button_radius);
+	padding: 0 var(--menu_padding);
+
+	height: 32px;
+
+	transition: none;
+}
+
+@mixin title {
+	color: var(--window_fg_muted);
+	font-size: var(--document-font-size);
+	font-weight: bold;
+	padding: 4px var(--menu_padding);
+}

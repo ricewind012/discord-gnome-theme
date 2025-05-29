@@ -1,35 +1,12 @@
 @use "controls";
+@use "popover";
 @use "typography";
 @use "util";
-
-$border_color: color-mix(in srgb, currentColor 50%, transparent);
-$menu-icon-size: 20px;
-
-@mixin menu-entry {
-	@include controls.button-basic-raised;
-
-	background-color: transparent;
-	border-radius: var(--button_radius);
-	padding: 0 var(--menu_padding);
-
-	height: 32px;
-
-	transition: none;
-}
-
-@mixin popover-container {
-	// for border
-	color: var(--window_fg_muted);
-	border: 1px solid $border_color;
-	border-radius: var(--popover_radius);
-	box-shadow: var(--popover_shadow);
-	padding: var(--menu_margin);
-}
 
 .container__55c99:not(:empty) {
 	--search-popout-option-non-text-color: currentColor;
 
-	@include popover-container;
+	@include popover.container;
 
 	gap: calc(var(--menu_margin) * 2);
 	margin-top: calc(var(--headerbar-height) + var(--spacing));
@@ -39,13 +16,9 @@ $menu-icon-size: 20px;
 }
 
 .header__56fec {
-	@include menu-entry;
+	@include popover.title;
 
-	color: var(--window_fg_muted);
-	font-size: var(--document-font-size);
-	font-weight: bold;
 	letter-spacing: 0;
-	padding-block: 8px;
 
 	box-sizing: border-box;
 
@@ -53,7 +26,7 @@ $menu-icon-size: 20px;
 }
 
 .option__56fec {
-	@include menu-entry;
+	@include popover.entry($hover: ":is(:hover, [aria-selected='true'])");
 
 	font-size: var(--document-font-size);
 	// focus border
@@ -76,7 +49,7 @@ $menu-icon-size: 20px;
 	strong {
 		color: var(--popover_fg_color);
 		font-weight: normal;
-		margin-left: calc($menu-icon-size + var(--spacing));
+		margin-left: calc(popover.$icon-size + var(--spacing));
 	}
 
 	.answer__56fec {
@@ -114,7 +87,9 @@ $menu-icon-size: 20px;
 
 		position: absolute;
 		// Make it centered with avatars
-		left: calc(var(--menu_padding) + ($menu-icon-size - var(--icon-size)) / 2);
+		left: calc(
+			var(--menu_padding) + (popover.$icon-size - var(--icon-size)) / 2
+		);
 
 		path {
 			display: none;
@@ -145,6 +120,6 @@ $menu-icon-size: 20px;
 	border-radius: 999px;
 
 	position: absolute;
-	top: 0;
+	top: -4px;
 	right: 0;
 }

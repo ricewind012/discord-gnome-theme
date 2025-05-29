@@ -29,6 +29,8 @@
 }
 
 @mixin tooltip {
+	// There is too much text, so blur here is fine
+	backdrop-filter: blur(3px);
 	background-color: rgba(0, 0, 0, 0.8);
 	color: white;
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -59,16 +61,16 @@
 	}
 }
 
-@mixin button-basic-raised {
+@mixin button-basic-raised($hover: ":hover", $active: ":active") {
 	background-color: color-mix(in srgb, currentColor 10%, transparent);
 
 	transition: var(--button_transition);
 
-	&:hover {
+	&#{$hover} {
 		background-color: color-mix(in srgb, currentColor 15%, transparent);
 	}
 
-	&:active {
+	&#{$active} {
 		background-color: color-mix(in srgb, currentColor 30%, transparent);
 	}
 }
@@ -252,16 +254,15 @@
 		background-color: var(--accent-bg-color);
 	}
 
-	// the grabber is different with exact values, but i don't care fuck you
 	#{$grabber} {
-		// close enough on dark theme, don't bother
 		background-color: #fff;
 		border: none;
 		border-radius: 50%;
 		box-shadow:
 			0 0 0 1px rgba(0, 0, 6, 0.1),
 			0 2px 4px rgba(0, 0, 6, 0.2);
-		margin-right: -10px;
+		margin: 0;
+		margin-left: -10px;
 
 		top: -8px;
 		width: 20px;

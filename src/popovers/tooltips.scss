@@ -6,9 +6,6 @@
 
 	@include controls.tooltip;
 
-	// There is too much text, so blur here is fine
-	//backdrop-filter: none;
-
 	.emojiSection_d5cd2d {
 		& > div {
 			align-items: center;
@@ -35,16 +32,16 @@
 
 .tooltip__382e7 {
 	@include controls.tooltip;
-}
 
-.tooltipContent__382e7 {
-	padding: 0;
+	.tooltipContent__382e7 {
+		padding: 0;
 
-	* {
-		color: inherit;
+		* {
+			color: inherit;
+		}
 	}
-}
 
-.tooltipPointer__382e7 {
-	display: none;
+	.tooltipPointer__382e7 {
+		display: none;
+	}
 }

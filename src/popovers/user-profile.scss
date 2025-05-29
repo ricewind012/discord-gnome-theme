@@ -99,20 +99,21 @@
 
 		&[data-list-item-id$="set-status"] {
 			// awful
-			&:has([mask="url(#svg-mask-status-online)"]) {
-				color: var(--success-color);
-			}
+			$colors: (
+				online: "var(--success-color)",
+				idle: "var(--warning-color)",
+				dnd: "var(--destructive-color)",
+				offline: "var(--window_fg_muted)",
+			);
 
-			&:has([mask="url(#svg-mask-status-idle)"]) {
-				color: var(--warning-color);
-			}
+			@each $status, $color in $colors {
+				&:has([mask="url(#svg-mask-status-#{$status})"]) {
+					color: #{$color};
+				}
 
-			&:has([mask="url(#svg-mask-status-dnd)"]) {
-				color: var(--destructive-color);
-			}
-
-			&:has([mask="url(#svg-mask-status-offline)"]) {
-				color: var(--window_fg_muted);
+				@at-root #set-status-submenu-#{$status} {
+					color: #{$color};
+				}
 			}
 		}
 	}

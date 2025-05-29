@@ -1,0 +1,174 @@
+@use "controls";
+@use "popover";
+@use "typography";
+@use "util";
+
+.caret_c1e9c4 {
+	@include util.icon("right");
+
+	color: var(--window_fg_muted);
+	margin: 2px;
+
+	position: absolute;
+	right: var(--menu_padding);
+
+	path {
+		display: none;
+	}
+}
+
+.customItem_c1e9c4 {
+	padding: 0;
+}
+
+.groupLabel_c1e9c4 {
+	@include popover.title;
+
+	margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
+}
+
+.icon_c1e9c4 {
+	display: none;
+}
+
+.iconContainer_c1e9c4 {
+	margin-inline: -2px var(--spacing);
+
+	position: unset;
+	order: -1;
+
+	.checkbox_f525d3 {
+		background-color: transparent;
+		border: none;
+		margin: 2px;
+
+		&.checked_f525d3 {
+			@include util.icon("check-plain");
+		}
+
+		svg {
+			display: none;
+		}
+	}
+
+	.radioIndicator__001a7 {
+		display: block;
+	}
+}
+
+.item_c1e9c4 {
+	@include popover.entry($hover: ".focused_c1e9c4");
+
+	&:not(.colorDanger_c1e9c4):active {
+		color: var(--popover_fg_color);
+	}
+
+	// sliders
+	&.hideInteraction_c1e9c4 {
+		height: unset;
+		min-height: 32px;
+	}
+
+	.labelContainer_c1e9c4 {
+		padding: 0;
+	}
+
+	.slider__65039 {
+		top: 6px;
+	}
+
+	.sliderContainer__65039 {
+		padding: 0;
+	}
+}
+
+.label_c1e9c4 {
+	color: inherit;
+	margin-inline-end: var(--spacing);
+
+	&:only-child {
+		margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
+	}
+}
+
+.menu_c1e9c4 {
+	@include popover.container;
+
+	padding: 0;
+}
+
+.scroller_c1e9c4 {
+	padding: var(--menu_margin);
+
+	overflow: auto;
+}
+
+.separator_c1e9c4 {
+	margin: var(--menu_margin) 0;
+}
+
+// Always useless
+.subtext_c1e9c4 {
+	display: none;
+}
+
+// Reactions
+.wrapper_f563df {
+	gap: var(--spacing);
+	padding: 0;
+	margin-bottom: var(--menu_margin);
+
+	.button_f563df {
+		@include controls.button;
+
+		width: 32px;
+	}
+}
+
+#set-status-submenu {
+	.expiringStatusMenuItem_ce8328 {
+		.description_ce8328 {
+			display: none;
+		}
+
+		.label_c1e9c4 {
+			margin: 0;
+		}
+
+		.separator_c1e9c4 {
+			display: none;
+		}
+
+		.status_ce8328 {
+			color: inherit;
+		}
+
+		.statusItem_ce8328 {
+			padding: 0;
+		}
+	}
+}
+
+#switch-accounts-submenu {
+	.activeIcon_d40c56 {
+		@include util.icon("check-plain");
+
+		position: absolute;
+		right: var(--menu_padding);
+
+		* {
+			display: none;
+		}
+	}
+
+	.userMenuText_d40c56 {
+		color: inherit;
+		font: inherit;
+	}
+
+	// Avatar
+	.wrapper__44b0c {
+		position: absolute;
+		left: var(--menu_padding);
+	}
+}

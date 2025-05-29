@@ -2,6 +2,10 @@
 
 @include controls.slider(".bar_a562c8", ".barFill_a562c8", ".grabber_a562c8");
 
+.barFill_a562c8 {
+	border: none;
+}
+
 .mark_a562c8 {
 	flex-direction: column-reverse;
 	height: unset;
@@ -22,4 +26,8 @@
 .markValue_a562c8 {
 	margin-top: 2px;
 	margin-bottom: 0;
+}
+
+.slider_a562c8 {
+	--grabber-size: 20px;
 }

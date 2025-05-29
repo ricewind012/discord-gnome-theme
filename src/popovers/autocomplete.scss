@@ -1,0 +1,75 @@
+@use "popover";
+
+.autocomplete__13533 {
+	@include popover.container;
+
+	padding: 0;
+
+	inset-inline: 0;
+}
+
+.contentTitle__13533 {
+	@include popover.title;
+}
+
+.divider__13533 {
+	padding: var(--menu_margin) 0;
+
+	&::after {
+		background-color: popover.$border_color;
+	}
+}
+
+// .scroller_affa7e is for a virtual list seen in commands list
+.scroller__6b0e0:not(.scroller_affa7e) {
+	padding: var(--menu_padding);
+
+	.autocompleteRow__13533 {
+		padding: 0;
+
+		&[aria-selected="true"] > .base__13533 {
+			background-color: color-mix(in srgb, currentColor 15%, transparent);
+		}
+
+		& > .base__13533 {
+			@include popover.entry;
+
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.autocompleteRowContent__13533 {
+		gap: var(--spacing);
+
+		flex-grow: 1;
+
+		& > * {
+			margin: 0;
+
+			text-align: start;
+		}
+	}
+
+	.autocompleteRowContentPrimary__13533 {
+		width: 50%;
+
+		&:first-child {
+			--margin: calc(24px + var(--spacing));
+
+			margin-left: var(--margin);
+
+			width: calc(50% - var(--margin));
+		}
+	}
+
+	.autocompleteRowContentSecondary__13533 {
+		font: inherit;
+
+		width: 50%;
+	}
+
+	.base__13533 {
+		padding: 0;
+	}
+}
