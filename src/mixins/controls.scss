@@ -75,6 +75,18 @@
 	}
 }
 
+@mixin button-selected {
+	background-color: var(--selected_color);
+
+	&:hover {
+		background-color: var(--selected_hover_color);
+	}
+
+	&:active {
+		background-color: var(--selected_active_color);
+	}
+}
+
 @mixin icon-button($name: null, $size: null) {
 	@if $name {
 		--icon: icon(#{$name});

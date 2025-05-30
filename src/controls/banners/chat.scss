@@ -1,12 +1,10 @@
 @use "controls";
 
-// TODO: don't remember where this is lol
+// "This channel is not on your channel list."
 .chatHeaderBar_dc83f5 {
 	@include controls.banner;
 
-	&::after {
-		display: none;
-	}
+	border: none;
 }
 
 .chatHeaderBarText_dc83f5 {

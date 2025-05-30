@@ -113,9 +113,6 @@
 	gap: var(--spacing-2x);
 
 	.buttonSection__1405b {
-		// TODO: what else ? this looks good at least
-		$toast_bg_color: #505053;
-
 		background-color: color-mix(in srgb, currentColor 10%, transparent);
 		gap: var(--spacing);
 		border: none;

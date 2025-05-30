@@ -109,16 +109,7 @@
 	cursor: pointer;
 
 	.search__97492.open__97492 & {
-		// TODO: mixin
-		background-color: var(--selected_color);
-
-		&:hover {
-			background-color: var(--selected_hover_color);
-		}
-
-		&:active {
-			background-color: var(--selected_active_color);
-		}
+		@include controls.button-selected;
 	}
 
 	&.clear_fea832 {
@@ -253,7 +244,7 @@
 
 	pointer-events: all;
 
-	// TODO: pasted from global/window.scss visible app banner part
+	// Visible banner
 	.content_c48ade:nth-child(3) & {
 		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
