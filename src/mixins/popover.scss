@@ -9,10 +9,10 @@ $icon-size: 20px;
 	background-color: var(--popover_bg_color);
 	// for border
 	color: var(--window_fg_muted);
-	border: 1px solid $border_color;
+	border: 1px solid rgb(0 0 0 / 14%);
 	border-radius: var(--popover_radius);
 	box-shadow: var(--popover_shadow);
-	padding: var(--menu_margin);
+	padding: 8px;
 }
 
 @mixin entry($hover: ":hover") {
