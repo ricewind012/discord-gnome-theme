@@ -1,19 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
-import yargs from "yargs";
 import postcssFunctions from "postcss-functions";
 import postcssSassParser from "postcss-scss";
 import postcssSassPlugin from "@csstools/postcss-sass";
-
-// Generate an index.css file that imports everything
-const { argv } = yargs(process.argv);
-const files = fs
-	.readdirSync(argv.base, { recursive: true })
-	.filter((e) => e.endsWith(".scss"));
-const content = files
-	.map((e) => `@import "${e.replace("scss", "css")}";`)
-	.join("\n");
-fs.writeFileSync(path.join(argv.dir, "index.css"), content);
 
 const unquote = (str) => str.replace(/"/g, "");
 

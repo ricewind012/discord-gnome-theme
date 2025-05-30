@@ -1,0 +1,69 @@
+// scss is horrible
+
+@use "mixins/controls" as *;
+@use "mixins/dialog" as *;
+@use "mixins/popover" as *;
+@use "mixins/typography" as *;
+@use "mixins/util" as *;
+
+@use "global/icons" as *;
+@use "global/text" as *;
+@use "global/window" as *;
+@use "global/variables/density" as *;
+@use "global/variables/discord" as *;
+@use "global/variables/libadwaita-colors" as *;
+@use "global/variables/libadwaita-other" as *;
+@use "global/variables/nitro-themes" as *;
+@use "global/variables/window-decorations" as *;
+
+@use "controls/banners/app" as *;
+@use "controls/banners/chat" as *;
+@use "controls/banners/settings" as *;
+@use "controls/buttons" as *;
+@use "controls/dropdowns" as *;
+@use "controls/radios" as *;
+@use "controls/sliders" as *;
+@use "controls/switches" as *;
+@use "controls/tabs" as *;
+@use "controls/text-fields" as *;
+@use "controls/toasts" as *;
+
+@use "content/header/chat" as *;
+@use "content/header/sidebar-private" as *;
+@use "content/header/sidebar-server" as *;
+@use "content/sidebar/channels-private" as *;
+@use "content/sidebar/channels-server" as *;
+@use "content/sidebar/guilds" as *;
+@use "content/sidebar/user-panel" as *;
+@use "content/sidebar-right/members-list" as *;
+@use "content/sidebar-right/search-results" as *;
+@use "content/sidebar-right/theme-editor" as *;
+@use "content/sidebar-right/thread" as *;
+@use "content/views/add-friend" as *;
+@use "content/views/forum" as *;
+@use "content/views/friends" as *;
+@use "content/views/vc" as *;
+@use "content/views/messages/accessories" as *;
+@use "content/views/messages/content" as *;
+@use "content/views/messages/form" as *;
+
+@use "dialogs/generic" as *;
+@use "dialogs/image-carousel" as *;
+@use "dialogs/quick-switcher" as *;
+@use "dialogs/shared-messages" as *;
+@use "dialogs/settings/content" as *;
+@use "dialogs/settings/server" as *;
+@use "dialogs/settings/user" as *;
+@use "dialogs/settings/window" as *;
+
+@use "popovers/autocomplete" as *;
+@use "popovers/dropdown" as *;
+@use "popovers/inbox" as *;
+@use "popovers/menu" as *;
+@use "popovers/search" as *;
+@use "popovers/threads" as *;
+@use "popovers/tooltips" as *;
+@use "popovers/user-profile" as *;
+
+@use "vencord/plugins" as *;
+@use "vencord/settings" as *;
