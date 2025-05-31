@@ -61,8 +61,6 @@
 }
 
 .contentColumn__23e6b {
-	// First is for vencord, but maybe others as well
-	& > div > .defaultColor__4bd52:first-child,
 	& > .defaultColor__4bd52:first-child,
 	.settingsPage_f131e9 > h3 {
 		@extend %-center-text;
@@ -87,6 +85,8 @@
 .standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) {
 	// Most tabs
 	div:not([class]) > h2[data-text-variant="heading-lg/semibold"],
+	// Boost Perks
+	#boost_perks-tab > main > h2,
 	// Emoji/Bans
 	:is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2,
 	// Members
@@ -94,11 +94,13 @@
 	// Roles
 	[aria-hidden="true"][style="height: 60px;"] + div > h2,
 	// Invites
-	#invites-tab > div > h2,
+	.header__1de14,
 	// Access
-	&.customScroller__23e6b > div > h2,
+	#access-tab > div > h2,
 	// Integrations
 	.breadcrumbs_befe67 > h2,
+	// Server Boost Status
+	#guild_premium-tab > h2,
 	// Server Templates
 	#guild_templates-tab > div > h2,
 	// Audit logs

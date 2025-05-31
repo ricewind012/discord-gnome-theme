@@ -41,6 +41,10 @@
 	z-index: 101;
 	height: unset;
 
+	&.systemBar_c38106 {
+		display: none;
+	}
+
 	// Visible app banner
 	&:nth-last-child(3) {
 		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
