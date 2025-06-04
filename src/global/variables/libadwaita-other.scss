@@ -7,6 +7,7 @@
 		outline-offset 200ms var(--ease-out-quad);
 	--button_transition: background 200ms var(--ease-out-quad),
 		box-shadow 200ms var(--ease-out-quad);
+	--scrollbar_transition: all 200ms linear;
 	--popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
 		0 2px 14px 3px color-mix(in srgb, black 5%, transparent);
 
@@ -43,6 +44,7 @@
 	@media (prefers-reduced-motion) {
 		--backdrop_transition: none;
 		--button_transition: none;
+		--scrollbar_transition: none;
 		--focus_transition: none;
 		--switch-transition: none;
 	}
