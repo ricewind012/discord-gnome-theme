@@ -125,6 +125,13 @@ $dark_5: #000000;
 		var(--window_fg_color) var(--dim-level-opacity),
 		transparent
 	);
+
+	:root:not(.app-focused) & {
+		--headerbar_bg_color: var(--headerbar_backdrop_color);
+		--headerbar_fg_color: var(--window_fg_muted);
+		--sidebar_bg_color: var(--sidebar_backdrop_color);
+		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
+	}
 }
 
 :root.theme-light {
@@ -175,11 +182,4 @@ $dark_5: #000000;
 	--selected_color: color-mix(in srgb, currentColor 10%, transparent);
 	--selected_hover_color: color-mix(in srgb, currentColor 13%, transparent);
 	--selected_active_color: color-mix(in srgb, currentColor 19%, transparent);
-
-	&:not(.app-focused) {
-		--headerbar_bg_color: var(--headerbar_backdrop_color);
-		--headerbar_fg_color: var(--window_fg_muted);
-		--sidebar_bg_color: var(--sidebar_backdrop_color);
-		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
-	}
 }
