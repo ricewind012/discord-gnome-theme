@@ -23,7 +23,7 @@ $destructive_button_active_color: color-mix(
 		color: var(--accent-color);
 	}
 
-	&.colorRed__201d5 {
+	&:where(.colorRed__201d5) {
 		background-color: $destructive_button_color;
 		color: var(--destructive-color);
 
@@ -36,11 +36,11 @@ $destructive_button_active_color: color-mix(
 		}
 	}
 
-	&.colorGreen__201d5 {
+	&:where(.colorGreen__201d5) {
 		color: var(--success-color);
 	}
 
-	&.lookBlank__201d5 {
+	&:where(.lookBlank__201d5) {
 		background-color: transparent;
 		padding: 0;
 	}
