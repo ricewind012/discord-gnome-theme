@@ -1,7 +1,9 @@
 @use "controls";
+@use "util";
 
 %-banner {
 	@include controls.banner;
+	@include util.inactive-dim;
 
 	border: none;
 	border-radius: 0;

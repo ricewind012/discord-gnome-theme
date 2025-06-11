@@ -41,6 +41,12 @@
 	height: var(--icon-size);
 }
 
+@mixin inactive-dim {
+	:root:not(.app-focused) & {
+		opacity: var(--dim-level-opacity);
+	}
+}
+
 %text-normal {
 	font-size: var(--document-font-size);
 	font-weight: normal;

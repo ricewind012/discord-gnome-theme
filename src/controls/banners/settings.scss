@@ -1,4 +1,5 @@
 @use "controls";
+@use "util";
 
 .actions_fcf29c {
 	gap: var(--spacing);
@@ -6,6 +7,7 @@
 
 .container_fcf29c {
 	@include controls.banner;
+	@include util.inactive-dim;
 
 	border: none;
 	border-radius: 0;
