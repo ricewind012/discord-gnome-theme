@@ -19,6 +19,7 @@
 	@include controls.titlebar-button;
 
 	opacity: 1;
+	color: inherit;
 
 	position: absolute;
 	top: var(--titlebar-button-spacing);
