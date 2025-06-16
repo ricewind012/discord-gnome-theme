@@ -60,5 +60,7 @@
 	@extend %title-2;
 
 	color: inherit;
+	line-height: 1;
+	padding-inline: var(--spacing);
 	margin: auto;
 }
