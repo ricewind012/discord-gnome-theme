@@ -130,6 +130,11 @@ $-osd-like-padding: 2px;
 	}
 }
 
+// Accessories container
+.container_b7e1cb {
+	gap: var(--spacing);
+}
+
 // Message actions
 .container__040f0 {
 	padding: 0;
@@ -452,8 +457,8 @@ $-osd-like-padding: 2px;
 }
 
 .reaction__23977 {
-	@include controls.button;
-
+	border: none;
+	padding: 0;
 	margin-right: var(--spacing);
 	margin-bottom: var(--spacing);
 
@@ -461,12 +466,21 @@ $-osd-like-padding: 2px;
 		color: var(--accent-color);
 	}
 
+	// Super reaction
+	.burstGlow__23977 {
+		display: none;
+	}
+
 	.reactionCount__23977 {
 		color: inherit;
 	}
 
 	.reactionInner__23977 {
-		padding: 0;
+		@include controls.button;
+
+		background-color: inherit;
+
+		height: unset;
 	}
 }
 
