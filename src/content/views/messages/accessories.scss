@@ -1,11 +1,6 @@
 @use "controls";
 @use "typography";
 
-$osd_bg_color: rgb(0 0 0 / 70%);
-$osd_fg_color: rgb(255 255 255 / 90%);
-
-$-osd-like-padding: 2px;
-
 @mixin -file-name {
 	@extend %title-3;
 
@@ -84,24 +79,15 @@ $-osd-like-padding: 2px;
 	}
 }
 
-@mixin -osd-like-button-group {
-	background-color: $osd_bg_color;
-	color: $osd_fg_color;
-	border-radius: 999px;
-	padding: $-osd-like-padding;
-}
-
 // D*scord put an !important here, el mao
 .visual-refresh .buttonsInner__5126c {
-	@include -osd-like-button-group;
+	@include controls.osd-like-button-group;
 
 	border: none;
 	box-shadow: none;
 
 	.hoverBarButton_f84418 {
-		@include controls.icon-button-circular;
-
-		background-color: transparent;
+		@include controls.osd-like-button;
 
 		// :has is for reactions
 		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
@@ -126,7 +112,7 @@ $-osd-like-padding: 2px;
 		background-color: color-mix(in srgb, currentColor 32.5%, transparent);
 		margin: 0 var(--spacing);
 
-		height: calc(100% - var(--spacing-2x) + #{$-osd-like-padding} * 2);
+		height: calc(100% - var(--spacing-2x) + #{controls.$osd-like-padding} * 2);
 	}
 }
 
@@ -140,7 +126,9 @@ $-osd-like-padding: 2px;
 	padding: 0;
 
 	&.isHeader__040f0:not(.isReply__040f0) {
-		top: calc((var(--icon-button-size) + #{$-osd-like-padding} * 2) * -0.5);
+		top: calc(
+			(var(--icon-button-size) + #{controls.$osd-like-padding} * 2) * -0.5
+		);
 	}
 }
 
@@ -494,7 +482,7 @@ $-osd-like-padding: 2px;
 
 .videoControls_cf09d8 {
 	@include -media-controls($osd: true);
-	@include -osd-like-button-group;
+	@include controls.osd-like-button-group;
 
 	margin: var(--spacing);
 	margin-bottom: calc(var(--spacing) + 10px);

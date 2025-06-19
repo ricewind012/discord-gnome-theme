@@ -1,42 +1,96 @@
+@use "controls";
+@use "typography";
+
 [aria-label="Open sticker picker"] {
 	display: none;
 }
 
-// Message form-specific channelTextArea stuff
-.channelTextArea__74017 {
-	.attachButton__0923f {
-		--icon: icon("plus-circle-outline");
+.channelAttachmentArea_b77158 {
+	@include controls.cards-container;
 
-		margin: 0;
+	gap: 0;
+	padding: 0;
+	// shadow - 6px radius + 2px offset
+	margin: 8px 0;
 
-		// align with cozy mode avatars, à la discord
-		width: calc(
-			var(--custom-message-avatar-size) +
-				var(--custom-message-margin-horizontal) - var(--spacing)
+	.attachmentContainer__54ab5 {
+		border-radius: calc(var(--base-unit) * 2 + 2px);
+	}
+
+	.filename__41ea0 {
+		font: inherit;
+		color: inherit;
+	}
+
+	.upload_aa605f {
+		@include controls.card-in-container(
+			$first-selector: ":first-child",
+			$last-selector: ":last-child"
 		);
+
+		border-bottom: none;
+
+		&:not(:last-child) {
+			border-right: 1px solid var(--card_shade_color);
+		}
 	}
 
-	.clipContainer__841c8 {
-		padding: 0;
-		margin: 0;
-	}
+	// TODO: I've seen this somewhere
+	.wrapper_f7ecac {
+		@include controls.osd-like-button-group;
 
-	.replyLabel__841c8 {
-		font-size: var(--document-font-size);
-	}
+		box-shadow: none;
 
-	.separator_aa63ab {
-		margin: 0;
+		height: unset;
 
-		&::before {
-			display: none;
+		.button_f7ecac {
+			@include controls.osd-like-button;
+
+			&.dangerous_f7ecac {
+				color: var(--destructive-color);
+			}
 		}
 	}
 }
 
-.form_f75fb0 {
-	--custom-channel-textarea-text-area-height: 0px;
+// Message form-specific channelTextArea stuff
+.channelTextArea__74017 {
+	// prettier-ignore
+	--attach-button-left-offset: calc(
+		var(--custom-message-avatar-size)
+		+ var(--custom-message-margin-horizontal)
+		- var(--icon-button-size)
+		- var(--spacing-2x)
+		- 3px
+	);
 
+	.attachButton__0923f {
+		--icon: icon("plus-circle-outline");
+
+		// align with cozy mode avatars, à la discord
+		margin-left: var(--attach-button-left-offset);
+		margin-right: var(--spacing);
+	}
+
+	.button_aa63ab {
+		@include controls.button-basic-raised;
+
+		color: var(--accent-color);
+		border-radius: 50%;
+	}
+
+	// Not included in text-fields.scss since I disable scrolling only for the
+	// attachments card.
+	.scrollableContainer__74017 {
+		overflow: visible;
+	}
+
+	.separator_aa63ab {
+		display: none;
+	}
+}
+
+.form_f75fb0 {
 	padding-inline: var(--custom-message-margin-horizontal);
 	margin: 0;
 
@@ -46,6 +100,53 @@
 	}
 }
 
-.textAreaThreadCreation__74017 [role="textbox"] {
-	border-radius: var(--radius-xs) 0 0 var(--radius-xs);
+.stackedBars__74017 {
+	background-color: transparent;
+	border: none;
+
+	.actions__841c8 {
+		gap: var(--spacing);
+		margin: 0;
+	}
+
+	.clipContainer__841c8 {
+		padding: 0;
+		margin: 0;
+	}
+
+	.closeButton_e876a8 {
+		@include controls.icon-button("window-close");
+	}
+
+	.mentionButton__841c8 {
+		@include controls.button;
+
+		box-sizing: border-box;
+
+		svg {
+			display: initial;
+		}
+	}
+
+	.replyBar__841c8 {
+		background-color: inherit;
+		gap: var(--spacing);
+		margin: var(--spacing);
+		margin-right: 0;
+	}
+
+	.replyLabel__841c8 {
+		@extend %text-normal;
+		@extend %link;
+
+		// 8px = text field padding
+		margin-left: calc(
+			var(--attach-button-left-offset) + var(--icon-button-size) + 8px
+		);
+	}
+
+	.threadSuggestionBar__841c8,
+	.separator__841c8 {
+		display: none;
+	}
 }

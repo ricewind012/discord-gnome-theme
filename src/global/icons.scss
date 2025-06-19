@@ -116,6 +116,16 @@
 	)
 );
 
+// Attachment actions
+@include -gen-icons(
+	"aria-label",
+	(
+		"Modify Attachment": "edit",
+		"Remove Attachment": "user-trash",
+		"Spoiler Attachment": "eye-not-looking",
+	)
+);
+
 // Group chat
 @include -gen-icons(
 	"aria-label",

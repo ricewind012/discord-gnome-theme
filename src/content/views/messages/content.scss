@@ -113,6 +113,23 @@
 	}
 }
 
+.messagesWrapper__36d07 {
+	--fade-out-gradient-size: calc(var(--spacing) * 4);
+
+	flex-direction: column;
+
+	.scroller__36d07 {
+		mask: linear-gradient(
+			black calc(100% - var(--fade-out-gradient-size)),
+			transparent
+		);
+	}
+
+	.scrollerSpacer__36d07 {
+		height: var(--fade-out-gradient-size);
+	}
+}
+
 .timestamp_c19a55 {
 	@extend %caption;
 }

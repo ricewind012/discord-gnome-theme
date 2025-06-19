@@ -1,6 +1,10 @@
 @use "sass:string";
 @use "util";
 
+$osd_bg_color: rgb(0 0 0 / 70%);
+$osd_fg_color: rgb(255 255 255 / 90%);
+$osd-like-padding: 2px;
+
 @mixin -bold-font {
 	font-size: var(--document-font-size);
 	font-weight: bold;
@@ -194,6 +198,19 @@
 
 		pointer-events: none;
 	}
+}
+
+@mixin osd-like-button {
+	@include icon-button-circular;
+
+	background-color: transparent;
+}
+
+@mixin osd-like-button-group {
+	background-color: $osd_bg_color;
+	color: $osd_fg_color;
+	border-radius: 999px;
+	padding: $osd-like-padding;
 }
 
 @mixin titlebar-button {

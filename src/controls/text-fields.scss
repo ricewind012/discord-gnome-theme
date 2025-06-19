@@ -1,5 +1,4 @@
 @use "controls";
-@use "util";
 
 /// Class names have to be included by their entire name for easier usage with
 /// the change_classes.js script.
@@ -52,19 +51,15 @@
 }
 
 .channelTextArea__74017 {
-	background-color: color-mix(
-		in srgb,
-		var(--window_fg_color) 7.5%,
-		transparent
-	);
+	--custom-channel-textarea-text-area-height: 0px;
+	background: transparent;
 	border: none;
-	border-radius: var(--radius-xs);
 
 	:where(.button__201d5) {
 		@include controls.icon-button;
 
 		color: inherit;
-		border-radius: 0;
+		margin-left: var(--spacing);
 	}
 
 	.buttons__74017 {
@@ -77,24 +72,28 @@
 		}
 	}
 
+	.editor__1b31f {
+		@include controls.text-field;
+
+		&[contenteditable="false"] {
+			opacity: var(--dim-level-opacity);
+		}
+	}
+
 	.inner__74017 {
 		padding: 0;
 	}
 
-	.themedBackground__74017 {
-		background-color: transparent;
-		border-radius: inherit;
-	}
-
 	.placeholder__1b31f {
-		// D*scord just ignores its own variable, genius
-		line-height: var(--chat-markup-line-height);
-		padding: var(--spacing);
+		line-height: 1.25;
+		padding: 0;
 		margin: 0;
+
+		inset: 8px 9px;
+		z-index: 1;
 	}
 
-	[role="textbox"] {
-		@extend .placeholder__1b31f;
-		@include util.focus-ring;
+	.themedBackground__74017 {
+		background: transparent;
 	}
 }
