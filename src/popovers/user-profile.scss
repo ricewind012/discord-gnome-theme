@@ -23,6 +23,10 @@
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
 
+	.card__39ec2 {
+		@include controls.card($activatable: true);
+	}
+
 	// revert %caption
 	.markup__75297 [data-text-variant] {
 		--window_fg_muted: currentColor;
