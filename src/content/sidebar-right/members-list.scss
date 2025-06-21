@@ -1,13 +1,13 @@
 @use "typography";
 
+.container_c8ffbb {
+	--custom-channel-members-bg: var(--sidebar_bg_color);
+}
+
 .membersGroup_c8ffbb {
 	color: var(--window_fg_color);
 
 	& > span {
 		@extend %title-3;
 	}
-}
-
-.membersWrap_c8ffbb {
-	border-left: 1px solid var(--secondary_sidebar_border_color);
 }
