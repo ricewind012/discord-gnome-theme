@@ -118,22 +118,6 @@ $dark_5: #000000;
 	--popover_shade_color: rgba(0, 0, 6, 0.25);
 }
 
-.theme-light,
-.theme-dark {
-	--window_fg_muted: color-mix(
-		in srgb,
-		var(--window_fg_color) var(--dim-level-opacity),
-		transparent
-	);
-
-	:root:not(.app-focused) & {
-		--headerbar_bg_color: var(--headerbar_backdrop_color);
-		--headerbar_fg_color: var(--window_fg_muted);
-		--sidebar_bg_color: var(--sidebar_backdrop_color);
-		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
-	}
-}
-
 :root.theme-light {
 	--headerbar_bg_color: #ffffff;
 	--headerbar_fg_color: rgba(0, 0, 6, 0.8);
@@ -150,6 +134,22 @@ $dark_5: #000000;
 	--headerbar_backdrop_color: #222226;
 	--headerbar_shade_color: rgba(0, 0, 6, 0.36);
 	--headerbar_darker_shade_color: rgba(0, 0, 6, 0.9);
+}
+
+:root.theme-light,
+:root.theme-dark {
+	--window_fg_muted: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--dim-level-opacity),
+		transparent
+	);
+
+	&:not(.app-focused) {
+		--headerbar_bg_color: var(--headerbar_backdrop_color);
+		--headerbar_fg_color: var(--window_fg_muted);
+		--sidebar_bg_color: var(--sidebar_backdrop_color);
+		--secondary_sidebar_bg_color: var(--secondary_sidebar_backdrop_color);
+	}
 }
 
 :root {
