@@ -380,6 +380,17 @@
 	}
 }
 
+// Listen along
+.invite__4d3fa {
+	@include controls.card;
+
+	.header__4d3fa {
+		@extend %title-3;
+
+		color: inherit;
+	}
+}
+
 .markup__75297 {
 	.codeActions__75297 {
 		display: block;
