@@ -6,6 +6,14 @@
 
 	@include controls.tooltip;
 
+	// "Invite-only server"
+	[data-text-variant="text-xs/normal"],
+	// "This emoji is from"
+	.defaultColor__4bd52,
+	.guildTitle_d5cd2d {
+		color: inherit;
+	}
+
 	.emojiSection_d5cd2d {
 		& > div {
 			align-items: center;

@@ -51,7 +51,7 @@
 }
 
 .channelTextArea__74017 {
-	--custom-channel-textarea-text-area-height: 0px;
+	--custom-channel-textarea-text-area-height: 34px;
 	background: transparent;
 	border: none;
 
@@ -91,6 +91,12 @@
 
 		inset: 8px 9px;
 		z-index: 1;
+	}
+
+	.textArea__74017:not(.textAreaSlate__74017) {
+		@include controls.text-field;
+
+		line-height: 1.25;
 	}
 
 	.themedBackground__74017 {
