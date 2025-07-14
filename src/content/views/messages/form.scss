@@ -73,9 +73,8 @@
 	}
 
 	.button_aa63ab {
-		@include controls.button-basic-raised;
+		@include controls.button-accent;
 
-		color: var(--accent-color);
 		border-radius: 50%;
 	}
 

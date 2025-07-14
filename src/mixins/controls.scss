@@ -65,6 +65,27 @@ $osd-like-padding: 2px;
 	}
 }
 
+@mixin button-accent {
+	background-color: var(--accent-bg-color);
+	color: var(--accent_fg_color);
+
+	&:hover {
+		background-color: color-mix(
+			in srgb,
+			var(--accent-bg-color) 95%,
+			rgb(0, 0, 6)
+		);
+	}
+
+	&:active {
+		background-color: color-mix(
+			in srgb,
+			var(--accent-bg-color) 70%,
+			rgb(0, 0, 6)
+		);
+	}
+}
+
 @mixin button-basic-raised($hover: ":hover", $active: ":active") {
 	background-color: color-mix(in srgb, currentColor 10%, transparent);
 

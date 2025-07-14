@@ -20,7 +20,7 @@ $destructive_button_active_color: color-mix(
 	}
 
 	&:where(.colorBrand__201d5) {
-		color: var(--accent-color);
+		@include controls.button-accent;
 	}
 
 	&:where(.colorRed__201d5) {
