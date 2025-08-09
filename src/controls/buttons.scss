@@ -49,3 +49,7 @@ $destructive_button_active_color: color-mix(
 		--button--underline-color: transparent;
 	}
 }
+
+:where(.button_fb7f94).icon_fb7f94 {
+	@include controls.icon-button;
+}
