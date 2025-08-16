@@ -51,6 +51,13 @@
 	}
 }
 
+// An invisible element that increases the parent's width, amazing
+.leading_c38106 {
+	& > div > span {
+		display: none;
+	}
+}
+
 .title_c38106 {
 	display: none;
 }

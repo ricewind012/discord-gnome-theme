@@ -99,6 +99,25 @@
 	}
 }
 
+// Titlebar notifications button
+.clickableContainer_ede711 {
+	@include controls.icon-button;
+
+	// A little dot instead of :has()
+	& > .numberBadge__2b1f5 {
+		--size: 8px;
+
+		display: flex;
+		position: absolute;
+		top: var(--spacing);
+		right: var(--spacing);
+		width: var(--size);
+		height: var(--size);
+		min-width: var(--size);
+		min-height: var(--size);
+	}
+}
+
 .icon__97492 {
 	@include controls.icon-button-with-tooltip(
 		$name: "loupe-large",
