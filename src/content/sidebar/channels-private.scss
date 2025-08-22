@@ -5,6 +5,10 @@
 	@include util.icon("org.gnome.Settings-users");
 
 	padding: 8px;
+
+	svg {
+		display: none;
+	}
 }
 
 // "Friends" entry
