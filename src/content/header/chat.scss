@@ -61,7 +61,6 @@
 		margin-right: var(--icon-button-size);
 	}
 
-	// 5. VC fix
 	// 6. Channel news
 	// 7. Thread child channel
 	.akaBadge__488b1,
@@ -70,7 +69,7 @@
 	.nicknames__488b1,
 	& > :empty,
 	& > .followButton_f75fb0,
-	& > .iconWrapper__9293f,
+	.iconWrapper__9293f,
 	&:has(> .caret__9293f) [role="button"] {
 		display: none;
 	}
@@ -299,6 +298,14 @@
 	}
 }
 
+.transparent__9293f {
+	.children__9293f,
+	.toolbar__9293f,
+	.upperContainer__9293f {
+		opacity: 1;
+	}
+}
+
 .upperContainer__9293f {
 	--window_fg_color: var(--headerbar_fg_color);
 	--window_fg_muted: color-mix(
@@ -306,6 +313,7 @@
 		var(--window_fg_color) var(--dim-level-opacity),
 		transparent
 	);
+
 	padding-right: var(--chat-header-right-padding);
 	align-items: start;
 }

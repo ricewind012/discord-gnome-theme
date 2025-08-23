@@ -27,10 +27,6 @@
 
 .callContainer_cb9592 {
 	border: none;
-
-	.container__9293f {
-		@extend %-dark-headerbar;
-	}
 }
 
 // popout
@@ -89,6 +85,14 @@
 		// tooltip, fucking genius design
 		--icon: icon("bullhorn");
 	}
+}
+
+.headerBar__49508 {
+	@extend %-dark-headerbar;
+}
+
+.headerBarChildren__49508 {
+	gap: 0;
 }
 
 .headerWrapper_cb9592 .button__9db96 {
