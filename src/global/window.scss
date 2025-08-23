@@ -12,22 +12,36 @@
 	}
 }
 
-#app-mount {
-	color: var(--window_fg_color);
-	border-radius: var(--window_radius);
+.platform-win {
+	#app-mount {
+		border-radius: var(--window_radius);
 
-	&::before {
-		content: "";
+		&::before {
+			content: "";
 
-		position: absolute;
-		inset: 1px;
-		z-index: 9999;
+			position: absolute;
+			inset: 1px;
+			z-index: 9999;
 
-		pointer-events: none;
+			pointer-events: none;
 
-		outline: var(--app-border-size) solid var(--window_outline_color);
-		border-radius: calc(var(--window_radius) - 2px);
+			outline: var(--app-border-size) solid var(--window_outline_color);
+			border-radius: calc(var(--window_radius) - 2px);
+		}
 	}
+
+	.bar_c38106 {
+		right: var(--titlebar-button-spacing);
+	}
+
+	.trailing_c38106 {
+		display: flex;
+	}
+}
+
+#app-mount {
+	// wtf discord
+	color: var(--window_fg_color);
 }
 
 .bar_c38106 {
@@ -37,7 +51,7 @@
 
 	position: fixed;
 	top: var(--spacing);
-	right: var(--titlebar-button-spacing);
+	right: var(--spacing);
 	z-index: 101;
 	height: unset;
 
@@ -64,6 +78,8 @@
 
 .trailing_c38106 {
 	gap: var(--spacing);
+
+	display: none;
 
 	[aria-label="Update Ready!"],
 	[href="https://support.discord.com"]
