@@ -38,6 +38,9 @@
 	.button__201d5 {
 		@include controls.icon-button;
 
+		// TODO(#41): no aria-label
+		--icon: icon("settings");
+
 		color: inherit;
 	}
 

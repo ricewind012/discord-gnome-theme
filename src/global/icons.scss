@@ -31,10 +31,12 @@
 	"aria-label",
 	(
 		"Add Friends to DM": "contact-new",
-		// experiment
+		// TODO(experiment): remove later ? nitro only
 		"Bookmarks": "user-bookmarks",
 		"Hide Member List": "org.gnome.Settings-users",
 		"Hide User Profile": "user-info",
+		// TODO(experiment): remove in the future in favor of notifications
+		"Inbox": "mail-unread",
 		"New Group DM": "contact-new",
 		"Notification Settings": "bell-outline",
 		"Notifications": "bell-outline",
@@ -74,6 +76,7 @@
 		"Stop Streaming": "stop",
 		"Turn Off Camera": "camera-photo",
 		"Turn On Camera": "camera-photo",
+		// TODO(#41): no aria-label
 		"User Settings": "settings",
 		"Video": "camera-photo",
 	)
