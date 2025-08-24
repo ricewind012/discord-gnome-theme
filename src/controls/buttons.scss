@@ -12,6 +12,19 @@ $destructive_button_active_color: color-mix(
 	transparent
 );
 
+@mixin -destructive {
+	background-color: $destructive_button_color;
+	color: var(--destructive-color);
+
+	&:hover {
+		background-color: $destructive_button_hover_color;
+	}
+
+	&:active {
+		background-color: $destructive_button_active_color;
+	}
+}
+
 .button__201d5 {
 	@include controls.button;
 
@@ -24,16 +37,7 @@ $destructive_button_active_color: color-mix(
 	}
 
 	&:where(.colorRed__201d5) {
-		background-color: $destructive_button_color;
-		color: var(--destructive-color);
-
-		&:hover {
-			background-color: $destructive_button_hover_color;
-		}
-
-		&:active {
-			background-color: $destructive_button_active_color;
-		}
+		@include -destructive;
 	}
 
 	&:where(.colorGreen__201d5) {
@@ -47,6 +51,34 @@ $destructive_button_active_color: color-mix(
 
 	& > div {
 		--button--underline-color: transparent;
+	}
+}
+
+// new
+.button__6af3a {
+	@include controls.button;
+
+	max-height: unset;
+
+	&:where(.primary__6af3a) {
+		@include controls.button-accent;
+	}
+
+	&:where(.critical-primary__6af3a, .critical-secondary__6af3a) {
+		@include -destructive;
+	}
+
+	&:where(.icon-only__6af3a) {
+		@include controls.icon-button;
+	}
+}
+
+.buttonChildrenWrapper__6af3a {
+	all: unset;
+
+	// undo %caption
+	[data-text-variant] {
+		all: inherit;
 	}
 }
 

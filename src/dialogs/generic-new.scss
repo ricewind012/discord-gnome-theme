@@ -1,0 +1,74 @@
+@use "controls";
+@use "dialog";
+
+[role="dialog"] {
+	--dialog-spacing-x05: calc(var(--dialog-spacing) / 2);
+	--dialog-spacing: 24px;
+}
+
+.actionBar__53cea {
+	box-shadow: none;
+	padding: 0;
+	margin: var(--dialog-spacing);
+	margin-top: 0;
+	gap: var(--spacing-2x);
+
+	button {
+		// Hardcoded (maybe):
+		// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123
+		border-radius: 12px;
+		// Seen in "Change password" dialog
+		margin: 0;
+
+		flex-grow: 1;
+		height: 44px;
+	}
+}
+
+.bodyInner__53cea {
+	text-align: center;
+	padding: var(--dialog-spacing);
+	padding-top: var(--dialog-spacing-x05);
+}
+
+// ???
+.bodySpacerBottom__53cea,
+.bodySpacerTop__53cea {
+	display: none;
+}
+
+.container__53cea {
+	@include dialog.container;
+
+	border: none;
+	padding: 0;
+
+	&:has(.headerTrailing__53cea > [aria-label="Close"]) {
+		background-color: var(--window_bg_color);
+	}
+}
+
+.header__53cea {
+	padding: 0;
+	padding-top: var(--dialog-spacing);
+
+	& > .stack_dbd263 {
+		text-align: center;
+	}
+}
+
+.headerTrailing__53cea {
+	margin: 0;
+
+	position: absolute;
+	top: var(--titlebar-button-spacing);
+	right: var(--titlebar-button-spacing);
+
+	.button__6af3a.icon-only__6af3a {
+		@include controls.titlebar-button;
+	}
+}
+
+.scrim_d9cec8 {
+	background-color: var(--backdrop);
+}

@@ -1,17 +1,13 @@
 @use "controls";
+@use "util";
+
+// #region Search input
 
 /// Class names have to be included by their entire name for easier usage with
 /// the change_classes.js script.
-@mixin -search-input($container, $input, $iconLayout, $inner) {
+@mixin -search-input($container, $input, $inner) {
 	#{$container} {
 		@include controls.text-field;
-
-		#{$iconLayout} {
-			@include controls.icon-button("loupe-large", var(--icon-size));
-
-			background-color: transparent;
-			margin-right: 9px;
-		}
 	}
 
 	#{$input} {
@@ -24,6 +20,7 @@
 	}
 
 	#{$inner} {
+		gap: 9px;
 		padding: 0;
 
 		flex-direction: row-reverse;
@@ -31,23 +28,29 @@
 }
 
 // Settings sidebar
-@include -search-input(
-	".container_fea832",
-	".input_fea832",
-	".iconLayout_fea832",
-	".inner_fea832"
-);
+@include -search-input(".container_fea832", ".input_fea832", ".inner_fea832");
 
 // Home page
-@include -search-input(
-	".container_a45028",
-	".input_a45028",
-	".iconLayout_a45028",
-	".inner_a45028"
-);
+@include -search-input(".container_a45028", ".input_a45028", ".inner_a45028");
 
-.input__0f084 {
-	@include controls.text-field;
+.iconContainer__0c4c4 {
+	display: none;
+}
+
+.iconLayout__0c4c4 {
+	@include util.icon("loupe-large");
+}
+
+// #endregion
+
+.container__0f084 {
+	all: unset;
+
+	display: flex;
+
+	.input__0f084 {
+		@include controls.text-field;
+	}
 }
 
 .channelTextArea__74017 {

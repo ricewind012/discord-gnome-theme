@@ -48,6 +48,7 @@
 @use "content/views/messages/form" as *;
 
 @use "dialogs/generic" as *;
+@use "dialogs/generic-new" as *;
 @use "dialogs/image-carousel" as *;
 @use "dialogs/quick-switcher" as *;
 @use "dialogs/shared-messages" as *;
