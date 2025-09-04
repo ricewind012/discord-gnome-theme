@@ -71,4 +71,8 @@
 
 .scrim_d9cec8 {
 	background-color: var(--backdrop);
+
+	&.lightbox_d9cec8 {
+		background-color: rgba(0, 0, 0, 0.75);
+	}
 }
