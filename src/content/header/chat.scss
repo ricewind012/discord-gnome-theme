@@ -102,6 +102,8 @@
 .clickableContainer_ede711 {
 	@include controls.icon-button;
 
+	margin: 0;
+
 	// A little dot instead of :has()
 	& > .numberBadge__2b1f5 {
 		--size: 8px;
