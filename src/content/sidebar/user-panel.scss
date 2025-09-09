@@ -48,7 +48,10 @@
 	.container__37e49 {
 		padding: 0;
 		margin: 0;
-		margin-right: var(--spacing);
+
+		.buttons__37e49 {
+			margin-right: var(--spacing-8);
+		}
 	}
 
 	.micButtonParent__37e49,
