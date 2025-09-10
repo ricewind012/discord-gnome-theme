@@ -118,11 +118,8 @@
 
 	flex-direction: column;
 
-	.scroller__36d07 {
-		mask: linear-gradient(
-			black calc(100% - var(--fade-out-gradient-size)),
-			transparent
-		);
+	.chatGradient__36d07 {
+		height: var(--fade-out-gradient-size);
 	}
 
 	.scrollerSpacer__36d07 {

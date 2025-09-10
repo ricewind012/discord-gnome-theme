@@ -60,8 +60,7 @@
 		var(--custom-message-avatar-size)
 		+ var(--custom-message-margin-horizontal)
 		- var(--icon-button-size)
-		- var(--spacing-2x)
-		- 3px
+		- var(--spacing) * 2.5
 	);
 
 	.attachButton__0923f {
@@ -72,14 +71,24 @@
 		margin-right: var(--spacing);
 	}
 
+	.attachWrapper__0923f {
+		padding: 0;
+		margin-right: calc(var(--spacing) * 1.5);
+	}
+
+	.button__24af7 {
+		@include controls.icon-button;
+	}
+
 	.button_aa63ab {
 		@include controls.button-accent;
 
 		border-radius: 50%;
+		margin-left: var(--spacing);
 	}
 
-	// Not included in text-fields.scss since I disable scrolling only for the
-	// attachments card.
+	// Not included in channel-text-area.scss since I disable scrolling only for
+	// the attachments card.
 	.scrollableContainer__74017 {
 		overflow: visible;
 	}
@@ -147,5 +156,15 @@
 	.threadSuggestionBar__841c8,
 	.separator__841c8 {
 		display: none;
+	}
+}
+
+.typing_b88801 {
+	padding-left: var(--custom-message-margin-horizontal);
+
+	// good enough
+	.text_b88801 {
+		position: relative;
+		left: -1px;
 	}
 }

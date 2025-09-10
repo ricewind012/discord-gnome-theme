@@ -33,6 +33,7 @@
 		background-color: transparent;
 		border-radius: 0;
 		padding: var(--spacing);
+		margin: 0;
 	}
 
 	.button__201d5 {
@@ -47,8 +48,10 @@
 
 	.container__37e49 {
 		padding: 0;
+		padding-right: var(--spacing);
 		margin: 0;
-		margin-right: var(--spacing);
+
+		height: unset;
 	}
 
 	.micButtonParent__37e49,

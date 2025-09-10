@@ -1,5 +1,13 @@
 @use "controls";
 
+.button__74017 {
+	@include controls.icon-button;
+}
+
+.buttonContainer__74017 > :where(button, div) {
+	margin-left: var(--spacing);
+}
+
 .buttons__74017 {
 	gap: 0;
 
@@ -14,13 +22,6 @@
 	--custom-channel-textarea-text-area-height: 34px;
 	background: transparent;
 	border: none;
-
-	:where(.button__201d5) {
-		@include controls.icon-button;
-
-		color: inherit;
-		margin-left: var(--spacing);
-	}
 
 	.editor__1b31f {
 		@include controls.text-field;
