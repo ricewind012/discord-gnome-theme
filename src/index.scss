@@ -17,6 +17,8 @@
 @use "global/variables/nitro-themes" as *;
 @use "global/variables/window-decorations" as *;
 
+@use "components/channel-text-area" as *;
+
 @use "controls/banners/app" as *;
 @use "controls/banners/chat" as *;
 @use "controls/banners/settings" as *;
