@@ -55,25 +55,25 @@ $destructive_button_active_color: color-mix(
 }
 
 // new
-.button__6af3a {
+.button_a22cb0 {
 	@include controls.button;
 
 	max-height: unset;
 
-	&:where(.primary__6af3a) {
+	&:where(.primary_a22cb0) {
 		@include controls.button-accent;
 	}
 
-	&:where(.critical-primary__6af3a, .critical-secondary__6af3a) {
+	&:where(.critical-primary_a22cb0, .critical-secondary_a22cb0) {
 		@include -destructive;
 	}
 
-	&:where(.icon-only__6af3a) {
+	&:where(.icon-only_a22cb0) {
 		@include controls.icon-button;
 	}
 }
 
-.buttonChildrenWrapper__6af3a {
+.buttonChildrenWrapper_a22cb0 {
 	all: unset;
 
 	// undo %caption
