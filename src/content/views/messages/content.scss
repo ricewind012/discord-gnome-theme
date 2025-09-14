@@ -115,11 +115,31 @@
 
 .messagesWrapper__36d07 {
 	--fade-out-gradient-size: calc(var(--spacing) * 4);
+	--gradient-bg: var(--background-base-lower);
+	--gradient-image: linear-gradient(to bottom, transparent, var(--gradient-bg));
 
 	flex-direction: column;
 
-	.chatGradient__36d07 {
+	.chatGradientBase__36d07 {
+		transition: none;
+		background: var(--gradient-image);
+
 		height: var(--fade-out-gradient-size);
+	}
+
+	.chatTypingGradientNotAtBottom__36d07 {
+		background: var(--gradient-bg);
+
+		&::before {
+			content: "";
+
+			position: absolute;
+			bottom: 100%;
+			width: 100%;
+			height: 100%;
+
+			background: var(--gradient-image);
+		}
 	}
 
 	.scrollerSpacer__36d07 {
