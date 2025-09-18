@@ -99,9 +99,12 @@
 }
 
 // Titlebar notifications button
+// TODO: clean up after the dogshit notifs/inbox experiment is over
+.clickable_c99c29,
 .clickableContainer_ede711 {
 	@include controls.icon-button;
 
+	color: inherit;
 	margin: 0;
 
 	// A little dot instead of :has()
