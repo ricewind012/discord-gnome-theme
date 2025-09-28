@@ -60,10 +60,14 @@
 	}
 }
 
-.panelTitleContainer__37e49 > div {
-	@extend %title-3;
+.panelTitleContainer__37e49 {
+	margin: 0;
 
-	color: var(--window_fg_color);
+	& > div {
+		@extend %title-3;
+
+		color: var(--window_fg_color);
+	}
 }
 
 .rtcConnectionStatus__06d62 .button__201d5 {

@@ -45,6 +45,8 @@
 
 	.mediaBarGrabber_b26b79 {
 		margin-top: 0;
+
+		left: 0;
 	}
 
 	.mediaBarWrapper_b26b79 {
@@ -73,7 +75,7 @@
 		color: inherit;
 
 		// No other way to identify state as of writing this
-		&:has(> div > svg > :only-child) {
+		&:has(.controlIcon_cf09d8 > [d$="1.4Z"]) {
 			--icon: icon("speaker-0");
 		}
 	}
@@ -536,7 +538,7 @@
 		@include -media-controls($osd: false);
 
 		background-color: transparent;
-		color: var(--card_fg_color);
+		color: rgba(0, 0, 6, 0.8); // var(--card_fg_color);
 		margin-top: var(--spacing-2x);
 
 		.videoButton_cf09d8 {
