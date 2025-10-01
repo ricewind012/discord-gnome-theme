@@ -120,6 +120,11 @@
 	display: none;
 }
 
+.layer__960e4 {
+	opacity: 1;
+	background-color: transparent;
+}
+
 .layers__960e4 {
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
 	--weird-offset: 1px;
@@ -202,6 +207,7 @@
 	padding-top: var(--headerbar-height);
 
 	overflow: hidden;
+	position: fixed;
 	inset: var(--p);
 }
 
