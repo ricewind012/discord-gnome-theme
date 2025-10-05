@@ -5,6 +5,9 @@ $osd_bg_color: rgb(0 0 0 / 70%);
 $osd_fg_color: rgb(255 255 255 / 90%);
 $osd-like-padding: 2px;
 
+$toast_bg_color: #505053;
+$toast_fg_color: white;
+
 @mixin -bold-font {
 	font-size: var(--document-font-size);
 	font-weight: bold;
@@ -341,11 +344,44 @@ $osd-like-padding: 2px;
 		opacity: var(--dim-level-opacity);
 	}
 
+	// TODO: maybe remove and --input-placeholder-text: var(--text-muted)
 	&::placeholder {
 		color: var(--text-muted);
 		font-size: inherit;
 		font-weight: inherit;
 	}
+}
+
+@mixin toast {
+	background: $toast_bg_color;
+	color: $toast_fg_color;
+	box-shadow:
+		0 1px 3px 1px rgb(0 0 6 / 7%),
+		0 2px 6px 2px rgb(0 0 6 / 3%);
+
+	--standalone-color-oklab: max(l, 0.85) a b;
+
+	--accent-color: oklab(
+		from var(--accent-bg-color) var(--standalone-color-oklab)
+	);
+	--destructive-color: oklab(
+		from var(--destructive-bg-color) var(--standalone-color-oklab)
+	);
+	--success-color: oklab(
+		from var(--success-bg-color) var(--standalone-color-oklab)
+	);
+	--warning-color: oklab(
+		from var(--warning-bg-color) var(--standalone-color-oklab)
+	);
+	--error-color: oklab(
+		from var(--error-bg-color) var(--standalone-color-oklab)
+	);
+
+	margin: var(--spacing-2x);
+	margin-bottom: calc(var(--spacing-2x) * 2);
+
+	border-radius: 150px;
+	padding: var(--spacing);
 }
 
 // #region card

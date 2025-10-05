@@ -87,30 +87,66 @@
 	}
 }
 
+.edgeControls_bfe55a {
+	gap: var(--spacing);
+}
+
 .headerBar__49508 {
 	@extend %-dark-headerbar;
+
+	.playingText__49508 {
+		color: var(--window_fg_muted);
+	}
+
+	// avatar
+	.wrapper__44b0c {
+		width: var(--icon-size);
+		height: var(--icon-size);
+
+		// HELP
+		& > svg {
+			height: inherit;
+		}
+	}
 }
 
 .headerBarChildren__49508 {
 	gap: 0;
 }
 
-.headerWrapper_cb9592 .button__9db96 {
-	@include controls.icon-button;
+.headerWrapper_cb9592 {
+	margin-inline: -12px;
 
-	color: inherit;
-	margin: 0;
+	.button__9db96 {
+		@include controls.icon-button;
+
+		color: inherit;
+		margin: 0;
+	}
 }
 
 .overlayButton__2f4f7 {
 	@include controls.icon-button-circular("settings");
 }
 
-.rightTrayIcon_cb9592 {
+.rightTrayIcon_cb9592:not(.container__2d263) {
 	@include controls.icon-button-circular;
 
 	--accent-color: var(--window_fg_color);
-	margin-left: var(--spacing);
+}
+
+// is it really useful ?
+.streamQualityIndicator__30845 {
+	display: none;
+}
+
+// the *actual* volume button
+.volumeButton__2d263 {
+	@include controls.icon-button-circular($name: "speaker-3");
+
+	&:has(.controlIcon_f1ceac > :only-child) {
+		--icon: icon("speaker-0");
+	}
 }
 
 .wrapper__1405b {

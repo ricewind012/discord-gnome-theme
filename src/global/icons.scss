@@ -142,10 +142,12 @@
 @include -gen-icons(
 	"aria-label",
 	(
+		"Exit Full Screen": "view-fullscreen",
 		"Full Screen": "view-fullscreen",
 		"More Options": "menu",
 		"Mute": "microphone",
 		"Pop Out": "pip-in",
+		"Stop Watching": "window-close",
 		"Unmute": "mic-none",
 	)
 );
