@@ -6,17 +6,12 @@
 	@include controls.card($activatable: false);
 }
 
-.category__41c03 {
+.category_f06a86 {
 	margin-bottom: 34px;
 }
 
 .content_dbba93 {
 	@extend .contentColumn__23e6b;
-
-	// Server Profile
-	.divider_dbba93 {
-		display: none;
-	}
 }
 
 .contentColumn__23e6b {
@@ -32,12 +27,7 @@
 	// for banner
 	flex-direction: column-reverse;
 
-	.divider__46c3b {
-		display: none;
-	}
-
-	// Server Profile Engagement
-	.divider_f83afb {
+	.divider__1de9c {
 		display: none;
 	}
 }

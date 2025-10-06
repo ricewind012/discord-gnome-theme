@@ -61,7 +61,7 @@
 }
 
 .contentColumn__23e6b {
-	& > .defaultColor_b717a1:first-child,
+	& > .defaultColor__4bd52:first-child,
 	.settingsPage_f131e9 > h3 {
 		@extend %-center-text;
 		@extend %-tab-header;
@@ -88,7 +88,7 @@
 	// Boost Perks
 	#boost_perks-tab > main > h2,
 	// Emoji/Bans
-	:is(.emojiSettings_e7d73e, .container_cdb2b0) .sectionTitle__7bffb > h2,
+	:is(.emojiSettings_e7d73e, .container__4b8d8) .sectionTitle__7bffb > h2,
 	// Members
 	.header_fa2640 > h2,
 	// Roles

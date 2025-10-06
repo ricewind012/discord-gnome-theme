@@ -41,12 +41,12 @@
 	position: unset;
 	order: -1;
 
-	.checkbox_c4538f {
+	.checkbox__09aca {
 		background-color: transparent;
 		border: none;
 		margin: 2px;
 
-		&.checked_c4538f {
+		&.checked__09aca {
 			@include util.icon("check-plain");
 		}
 
@@ -55,7 +55,7 @@
 		}
 	}
 
-	.radioIndicator__001a7 {
+	.radioIndicator__1bda4 {
 		display: block;
 	}
 }

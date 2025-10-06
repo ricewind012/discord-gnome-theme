@@ -6,7 +6,7 @@
 	--dialog-spacing: 24px;
 }
 
-.actionBar__53cea {
+.actionBar__8a031 {
 	box-shadow: none;
 	padding: 0;
 	margin: var(--dialog-spacing);
@@ -25,30 +25,30 @@
 	}
 }
 
-.bodyInner__53cea {
+.bodyInner__8a031 {
 	text-align: center;
 	padding: var(--dialog-spacing);
 	padding-top: var(--dialog-spacing-x05);
 }
 
 // ???
-.bodySpacerBottom__53cea,
-.bodySpacerTop__53cea {
+.bodySpacerBottom__8a031,
+.bodySpacerTop__8a031 {
 	display: none;
 }
 
-.container__53cea {
+.container__8a031 {
 	@include dialog.container;
 
 	border: none;
 	padding: 0;
 
-	&:has(.headerTrailing__53cea > [aria-label="Close"]) {
+	&:has(.headerTrailing__8a031 > [aria-label="Close"]) {
 		background-color: var(--window_bg_color);
 	}
 }
 
-.header__53cea {
+.header__8a031 {
 	padding: 0;
 	padding-top: var(--dialog-spacing);
 
@@ -57,22 +57,22 @@
 	}
 }
 
-.headerTrailing__53cea {
+.headerTrailing__8a031 {
 	margin: 0;
 
 	position: absolute;
 	top: var(--titlebar-button-spacing);
 	right: var(--titlebar-button-spacing);
 
-	.button__6af3a.icon-only__6af3a {
+	.button_a22cb0.icon-only_a22cb0 {
 		@include controls.titlebar-button;
 	}
 }
 
-.scrim_d9cec8 {
+.scrim__40128 {
 	background-color: var(--backdrop);
 
-	&.lightbox_d9cec8 {
+	&.lightbox__40128 {
 		background-color: rgba(0, 0, 0, 0.75);
 	}
 }
