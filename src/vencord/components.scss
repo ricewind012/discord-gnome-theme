@@ -1,0 +1,57 @@
+@use "controls";
+@use "typography";
+
+:where(.vc-btn-base) {
+	@include controls.button;
+
+	&.vc-btn-primary {
+		@include controls.button-accent;
+	}
+}
+
+.vc-divider {
+	display: none;
+}
+
+.vc-form-switch {
+	margin-block: auto;
+
+	.vc-text-md {
+		@extend %title-3;
+	}
+
+	.vc-text-sm {
+		@extend %caption;
+	}
+}
+
+.vc-form-switch-text {
+	justify-content: start;
+}
+
+.vc-form-switch-wrapper {
+	@include controls.card;
+
+	border-bottom: 1px solid var(--card_shade_color);
+	border-radius: 0;
+	margin: 0;
+
+	display: flex;
+
+	&:nth-child(-n + 1 of &) {
+		border-radius: var(--card_radius) var(--card_radius) 0 0;
+	}
+
+	&:nth-last-child(-n + 1 of &) {
+		border-radius: 0 0 var(--card_radius) var(--card_radius);
+		border: none;
+	}
+}
+
+.vc-switch-container {
+	@include controls.switch($checked: ".vc-switch-checked");
+}
+
+.vc-switch-slider {
+	display: none;
+}

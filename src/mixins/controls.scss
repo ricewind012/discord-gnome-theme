@@ -323,6 +323,62 @@ $toast_fg_color: white;
 	}
 }
 
+@mixin switch($checked) {
+	--percentage: 15.25%;
+	--spacing: var(--spacing-05x);
+	--swatch-size: 20px;
+
+	background-color: color-mix(
+		in srgb,
+		var(--window_fg_color) var(--percentage),
+		transparent
+	);
+	border: none;
+	padding: var(--spacing);
+
+	width: calc(var(--swatch-size) * 2 + var(--spacing) * 2);
+	height: calc(var(--swatch-size) + var(--spacing) * 2);
+
+	&::before {
+		content: "";
+
+		display: block;
+		width: var(--swatch-size);
+		height: var(--swatch-size);
+
+		background-color: #fff;
+		border-radius: 14px;
+		box-shadow: 0 2px 4px color-mix(in srgb, black 20%, transparent);
+
+		transition: var(--switch-transition);
+	}
+
+	&:hover {
+		--percentage: 22.5%;
+	}
+
+	&:active {
+		--percentage: 8%;
+	}
+
+	&#{$checked} {
+		background-color: var(--accent-bg-color);
+
+		&::before {
+			margin-left: var(--swatch-size);
+			transition: var(--switch-transition);
+		}
+
+		&:hover {
+			background-color: #4990e7;
+		}
+
+		&:active {
+			background-color: #2a6ab6;
+		}
+	}
+}
+
 @mixin text-field {
 	@include util.focus-ring;
 
