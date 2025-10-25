@@ -4,6 +4,10 @@
 :where(.vc-btn-base) {
 	@include controls.button;
 
+	&:disabled {
+		opacity: var(--dim-level-opacity);
+	}
+
 	&.vc-btn-primary {
 		@include controls.button-accent;
 	}

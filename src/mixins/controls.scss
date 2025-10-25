@@ -440,6 +440,86 @@ $toast_fg_color: white;
 	padding: var(--spacing);
 }
 
+@mixin toggle-group {
+	---group-padding: 3px;
+
+	background: color-mix(in srgb, currentColor 10%, transparent);
+	border-radius: var(--button_radius);
+	padding: var(---group-padding);
+}
+
+@mixin toggle-group-toggle($checked) {
+	transition: var(--toggle_transition);
+	border-radius: calc(var(--button_radius) - var(---group-padding));
+	font-weight: bold;
+	padding-left: calc(11px - var(---group-padding));
+	padding-right: calc(11px - var(---group-padding));
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-width: 34px;
+	min-height: calc(34px - var(---group-padding) * 2);
+
+	&:hover {
+		background-color: var(--hover_color);
+	}
+
+	&:active {
+		background-color: var(--active_color);
+	}
+
+	&#{$checked} {
+		background-color: var(--active-toggle-bg-color);
+		color: var(--active-toggle-fg-color);
+		box-shadow:
+			0 1px 3px 1px rgb(0 0 6 / 7%),
+			0 2px 6px 2px rgb(0 0 6 / 3%);
+
+		&:disabled {
+			background-color: color-mix(
+				in srgb,
+				var(--active-toggle-bg-color) var(--disabled-opacity),
+				transparent
+			);
+			box-shadow: none;
+		}
+	}
+
+	&:not(:last-child) {
+		---separator-opacity: 1;
+		---separator-width: 1px;
+
+		margin-right: var(---group-padding);
+
+		&::after {
+			content: "";
+
+			position: absolute;
+			right: calc(var(---group-padding) * -1);
+			width: var(---separator-width);
+			height: 100%;
+
+			// TODO: dedi file
+			$border_color: color-mix(in srgb, currentColor 25%, transparent);
+			opacity: var(---separator-opacity);
+			background-color: $border_color;
+			margin: var(---group-padding) var(---separator-width);
+		}
+
+		@media not (prefers-reduced-motion) {
+			&::after {
+				transition: opacity 200ms var(--ease-out-quad);
+			}
+		}
+	}
+
+	&:is(:hover, #{$checked}, :has(+ &:is(:hover, #{$checked}))) {
+		---separator-opacity: 0;
+	}
+}
+
 // #region card
 @mixin cards-container {
 	border-radius: var(--card_radius);

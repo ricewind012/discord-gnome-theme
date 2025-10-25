@@ -1,0 +1,146 @@
+@use "controls";
+@use "typography";
+@use "util";
+
+.vcd-screen-picker-card:not(.vcd-screen-picker-preview) {
+	@include controls.cards-container;
+
+	background-color: transparent;
+	padding: 0;
+
+	& > :not(:first-child) {
+		@include controls.card-in-container(
+			$first-selector: ":first-child",
+			$last-selector: ":last-child"
+		);
+
+		margin: 0;
+	}
+
+	// "Audio Sources"
+	& > :nth-child(3) {
+		gap: var(--spacing);
+
+		section {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.vc-h5 {
+		font-weight: normal;
+	}
+
+	section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+// I know...
+.vcd-screen-picker-hint-description {
+	display: none;
+}
+
+.vcd-screen-picker-modal {
+	text-align: start;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.vc-h5 {
+		@extend %title-3;
+
+		margin-block: calc(var(--spacing) + 1px);
+	}
+}
+
+.vcd-screen-picker-option-radio {
+	@include controls.toggle-group-toggle($checked: "[data-checked='true']");
+
+	background-color: transparent;
+	border: none;
+	padding-block: 0;
+}
+
+.vcd-screen-picker-option-radios {
+	@include controls.toggle-group;
+
+	width: unset;
+}
+
+.vcd-screen-picker-quality {
+	border-bottom: 1px solid var(--card_shade_color);
+	gap: 0;
+	margin: 0;
+
+	flex-direction: column;
+
+	// Exclude "Content Type"
+	&:first-child > .vcd-screen-picker-quality-section {
+		@include controls.card-in-container(
+			$first-selector: ":first-child",
+			$last-selector: ":last-child"
+		);
+	}
+}
+
+.vcd-screen-picker-screen-label {
+	@include controls.button;
+
+	outline: none;
+
+	height: unset;
+}
+
+.vcd-screen-picker-screen-name {
+	margin-block-start: 5px;
+}
+
+.vcd-screen-picker-settings-button {
+	all: unset;
+
+	font-weight: normal;
+
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+
+	&::before,
+	&::after {
+		content: "";
+
+		position: absolute;
+		right: calc(var(--icon-button-size) - var(--icon-size));
+	}
+
+	&::before {
+		transition: var(--button_transition);
+		border-radius: var(--button_radius);
+
+		width: var(--icon-button-size);
+		height: var(--icon-button-size);
+	}
+
+	&:hover::before {
+		background-color: var(--selected_hover_color);
+	}
+
+	&:active::before {
+		background-color: var(--selected_active_color);
+	}
+
+	&::after {
+		position: absolute;
+		right: calc(var(--icon-button-size) - var(--icon-size));
+		display: block;
+
+		@include util.icon("speaker-3");
+
+		margin: calc(var(--spacing) * 1.5);
+	}
+}

@@ -79,6 +79,8 @@ $dark_5: #000000;
 	--popover_bg_color: #ffffff;
 	--popover_fg_color: rgba(0, 0, 6, 0.8);
 	--popover_shade_color: rgba(0, 0, 6, 0.07);
+	--active-toggle-bg-color: #ffffff;
+	--active-toggle-fg-color: rgb(0 0 6 / 80%);
 }
 
 .theme-dark {
@@ -116,6 +118,8 @@ $dark_5: #000000;
 	--popover_bg_color: #36363a;
 	--popover_fg_color: #ffffff;
 	--popover_shade_color: rgba(0, 0, 6, 0.25);
+	--active-toggle-bg-color: rgb(255 255 255 / 20%);
+	--active-toggle-fg-color: #ffffff;
 }
 
 :root.theme-light {
