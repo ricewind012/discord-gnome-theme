@@ -13,7 +13,7 @@
 	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
-
+	--icon: icon("bullhorn");
 	bottom: 0;
 	left: var(--custom-guild-list-width);
 	width: calc(
