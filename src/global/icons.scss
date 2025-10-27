@@ -35,7 +35,6 @@
 		"Bookmarks": "user-bookmarks",
 		"Hide Member List": "org.gnome.Settings-users",
 		"Hide User Profile": "user-info",
-		"Hide Chat": "chat",
 		// TODO(experiment): remove in the future in favor of notifications
 		"Inbox": "mail-unread",
 		"New Group DM": "contact-new",
@@ -43,13 +42,20 @@
 		"Notifications": "bell-outline",
 		"Pinned Messages": "pin",
 		// VC
-		"Show Chat": "chat",
 		"Show Member List": "org.gnome.Settings-users",
 		"Show User Profile": "user-info",
 		"Show User Profile (Unavailable)": "user-info",
 		"Start Video Call": "camera-photo",
 		"Start Voice Call": "phone-right-facing",
 		"Threads": "chat-bubbles-empty-inverted",
+	)
+);
+
+@include -gen-icons(
+	"aria-label*",
+	(
+		"Hide Chat": "chat",
+		"Show Chat": "chat"
 	)
 );
 
