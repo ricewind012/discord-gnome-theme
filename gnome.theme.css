@@ -4,7 +4,7 @@
  * @author ricewind
  */
 
-@import "https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/dist/dist/index.css";
+@import "https://github.com/garecrow/discord-gnome-theme/blob/patch-1/index.css";
 
 :root {
 	/* on/off - flex/none */
