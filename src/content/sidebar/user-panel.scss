@@ -8,17 +8,17 @@
 	margin: 0;
 }
 
-.panels_c48ade,
-	[aria-label="Open Soundboard"] {
+.panels_c48ade {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
 	bottom: 0;
 	left: var(--custom-guild-list-width);
-	width: calc(
-		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
-	);
+        width: calc(
+                var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
+        );
+        --icon: icon("bullhorn");
 
 	// also vc
 	.activityPanel_c48ade {
@@ -54,8 +54,8 @@
 		height: unset;
 	}
 
-	.micButtonParent__37e49,
-	[aria-label="Deafen"] {
+	.micButtonParent__37e49 {
+	--icon: icon("pan-down");
 	}
 }
 
