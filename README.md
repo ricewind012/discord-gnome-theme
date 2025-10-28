@@ -51,7 +51,7 @@ You \*can\* open an issue about any of these, but it's only getting fixed if it'
 Copy the following into the text box located in Settings > Themes > Online Themes:
 
 ```
-https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
+https://raw.githubusercontent.com/garecrow/discord-gnome-theme/refs/heads/patch-1/index.css
 ```
 
 ### Including configuration
