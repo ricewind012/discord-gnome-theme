@@ -13,12 +13,13 @@
 	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
+	
 	bottom: 0;
 	left: var(--custom-guild-list-width);
-        width: calc(
-                var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
-        );
-        --icon: icon("bullhorn");
+	width: calc(
+		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
+	);
+	--icon: icon("bullhorn");
 
 	// also vc
 	.activityPanel_c48ade {
@@ -55,7 +56,7 @@
 	}
 
 	.micButtonParent__37e49 {
-	--icon: icon("pan-down");
+		--icon: icon("pan-down");
 	}
 }
 
