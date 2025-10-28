@@ -48,16 +48,14 @@
 		"Start Video Call": "camera-photo",
 		"Start Voice Call": "phone-right-facing",
 		"Threads": "chat-bubbles-empty-inverted",
-		"Hide Chat": "chat",
-		"Show Chat": "chat"
 	)
 );
 
 @include -gen-icons(
-	"aria-label*",
+	"aria-label",
 	(
-		"Hide Chat": "chat",
-		"Show Chat": "chat"
+		"Hide chat": "chat",
+		"Show chat": "chat"
 	)
 );
 
