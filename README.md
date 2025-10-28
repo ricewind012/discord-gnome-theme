@@ -1,6 +1,6 @@
 # Discord GNOME Theme
 
-A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines (with whatever the Discord CSS lets me do).
+A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines (with whatever the Discord CSS lets me do). Forked from ricewind012/discord-gnome-theme (and offers a more comprehensive theme) after bugfixes/releases became too few and far between. Much appreciation for the work they did.
 
 ## Requirements
 
@@ -28,21 +28,19 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 ### Human Interface Guidelines
 
-The theme may not fully confine to the HIG because of Discord's either CSS or design limitations or my own choices.
+The theme may not fully confine to the HIG because of Discord's either CSS or design limitations.
 
 ### Support
 
-These are not supported:
+These are not supported for now, but requests for certain features will be considered if they present popular enough:
 
 - Discord experiments
 
-  I do not work for Discord, so I have no way of knowing if these experiments are getting changed, deprecated, etc., i.e. maintenance burden — I maintain several other projects
+  For the most park, experiments are too hard to keep up with, but I will consider support on an individual basis.
 
 - Nitro
 
-  Exceptions — anything accessible with the FakeNitro plugin.
-
-You \*can\* open an issue about any of these, but it's only getting fixed if it's an easy fix, i.e. missing icon.
+  Anything accessible with the FakeNitro plugin is supported, and requests for further nitro support will be considered.
 
 ## Installation
 
