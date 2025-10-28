@@ -18,6 +18,7 @@
 	left: var(--custom-guild-list-width);
 	width: calc(
 		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)
+	--icon: icon("bullhorn");
 	);
 
 	// also vc
@@ -56,6 +57,7 @@
 
 	.micButtonParent__37e49,
 	[aria-label="Deafen"] {
+	--icon: icon("window-minimize");
 	}
 }
 
