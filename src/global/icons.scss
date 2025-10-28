@@ -52,10 +52,10 @@
 );
 
 @include -gen-icons(
-	"aria-label*",
+	"aria-label",
 	(
-		"Hide Chat": "chat",
-		"Show Chat": "chat"
+		"Hide chat": "chat",
+		"Show chat": "chat"
 	)
 );
 
