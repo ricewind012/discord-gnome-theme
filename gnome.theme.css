@@ -1,0 +1,16 @@
+/**
+ * @name Discord GNOME Theme
+ * @description A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines.
+ * @author ricewind
+ */
+
+@import "https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/dist/dist/index.css";
+
+:root {
+	/* on/off - flex/none */
+	--titlebar-close-button: flex;
+	--titlebar-maximize-button: none;
+	--titlebar-minimize-button: none;
+	/* also set this to how much buttons are visible */
+	--titlebar-buttons-count: 1;
+}
