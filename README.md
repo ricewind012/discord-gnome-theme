@@ -49,7 +49,7 @@ These are not supported for now, but requests for certain features will be consi
 Copy the following into the text box located in Settings > Themes > Online Themes:
 
 ```
-https://raw.githubusercontent.com/garecrow/discord-gnome-theme/refs/heads/patch-1/index.css
+https://raw.githubusercontent.com/garecrow/discord-gnome-theme/refs/heads/master/index.css
 ```
 
 ### Including configuration
