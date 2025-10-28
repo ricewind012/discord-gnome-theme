@@ -1,19 +1,3 @@
-/**
- * @name Discord GNOME Theme
- * @description A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines.
- * @author ricewind
- */
-
-:root {
-	/* on/off - flex/none */
-	--titlebar-close-button: flex;
-	--titlebar-maximize-button: none;
-	--titlebar-minimize-button: none;
-	/* also set this to how much buttons are visible */
-	--titlebar-buttons-count: 1;
-}
-
-/* --- Discord GNOME Theme styles --- */
 /* scss is horrible*/
 .inner_c0bea0 .markup__75297 [data-text-variant], .role_dfa8b6 [data-text-variant], .option__56fec .searchResultChannelCategory__56fec, .container__0d850 .title__0d850, .wrapper__33d12 .text__33d12, .wrapper__2ea32 [data-text-variant="text-xs/semibold"], .name__2ea32, [role=tablist][aria-orientation=vertical] [role=tab], .vc-ranb-button:hover > *, .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover > .titleText_e29cd7, .stackedBars__74017 .replyLabel__841c8, .container__0be77 .label__4c520, .embedDescription__623de, .embedTitle__623de, .searchHeader_f3b986 [data-text-variant], .headerButton_f37cb1:hover::after, .searchBar__35e86 > button:hover > *, .icon__97492:hover::after, .search__49676 .searchAnswer_bd8186,
 .search__49676 .searchFilter_bd8186, .topicClickTarget__6ec1a:hover::after {
@@ -2280,7 +2264,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-u9h400m !important;
+  anchor-name: --tooltip-uv6ba8v !important;
   margin: 0 !important;
   cursor: pointer !important;
 }
@@ -2322,7 +2306,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-u9h400m !important;
+  position-anchor: --tooltip-uv6ba8v !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2491,7 +2475,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-u9h400p !important;
+  anchor-name: --tooltip-uv6ba9i !important;
   color: var(--headerbar_fg_color) !important;
   position: fixed !important;
   position-anchor: --chat-topic !important;
@@ -2538,7 +2522,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-u9h400p !important;
+  position-anchor: --tooltip-uv6ba9i !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2624,7 +2608,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-u9h401n !important;
+  anchor-name: --tooltip-uv6baa4 !important;
   color: var(--headerbar_fg_color) !important;
   app-region: no-drag !important;
 }
@@ -2665,7 +2649,7 @@ html {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-u9h401n !important;
+  position-anchor: --tooltip-uv6baa4 !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   left: anchor(left) !important;
@@ -2713,7 +2697,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-u9h401u !important;
+  anchor-name: --tooltip-uv6bab0 !important;
   color: inherit !important;
   flex-shrink: 0 !important;
   app-region: no-drag !important;
@@ -2757,7 +2741,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-u9h401u !important;
+  position-anchor: --tooltip-uv6bab0 !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   right: anchor(right) !important;
@@ -3010,6 +2994,7 @@ div.sidebar_c48ade::after {
   bottom: 0 !important;
   left: var(--custom-guild-list-width) !important;
   width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)) !important;
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAxMi45NzY1NjIgMCBjIC0wLjMyNDIxOCAwLjAwNzgxMjUgLTAuNjI1IDAuMTcxODc1IC0wLjgwODU5MyAwLjQ0NTMxMiBjIC0xLjQzMzU5NCAyLjE0MDYyNiAtNC45NzI2NTcgMy4yNjk1MzIgLTcuMTI1IDMuNTAzOTA3IGMgLTAuNDMzNTk0IDAuMDQyOTY5IC0xLjMzOTg0NCAwLjA1MDc4MSAtMS44OTQ1MzEgMC4wNTA3ODEgaCAtMS4xNDg0MzggYyAtMS4wOTM3NSAwIC0yIDAuOTA2MjUgLTIgMiB2IDMgYyAwIDEuMDkzNzUgMC45MDIzNDQgMiAxLjk5NjA5NCAyLjAwMzkwNiBsIDEuMTQ4NDM3IDAuMDAzOTA2IGMgMC4wNTQ2ODggMCAwLjEzNjcxOSAwLjAwMzkwNyAwLjE5NTMxMyAwLjAwMzkwNyBsIDAuNjc5Njg3IDMuMTk5MjE5IGMgMC4wNTg1OTQgMC4yNTc4MTIgMC4yMTQ4NDQgMC40ODQzNzQgMC40Mzc1IDAuNjI4OTA2IGMgMC4yMjI2NTcgMC4xNDQ1MzEgMC40OTIxODggMC4xOTUzMTIgMC43NSAwLjE0MDYyNSBjIDAuMjYxNzE5IC0wLjA1ODU5NCAwLjQ4ODI4MSAtMC4yMTQ4NDQgMC42MzI4MTMgLTAuNDM3NSBjIDAuMTQ0NTMxIC0wLjIyMjY1NyAwLjE5NTMxMiAtMC40OTIxODggMC4xNDA2MjUgLTAuNzUgbCAtMC41NzQyMTkgLTIuNjc5Njg4IGMgMi4xNzE4NzUgMC4zMDg1OTQgNS40MDYyNSAxLjQxNzk2OSA2Ljc2MTcxOSAzLjQ0NTMxMyBjIDAuMjQ2MDkzIDAuMzYzMjgxIDAuNzAzMTI1IDAuNTIzNDM3IDEuMTIxMDkzIDAuMzk4NDM3IGMgMC40MjE4NzYgLTAuMTI4OTA2IDAuNzEwOTM4IC0wLjUxNTYyNSAwLjcxMDkzOCAtMC45NTcwMzEgdiAtNC44NDM3NSBsIDEuNzM0Mzc1IC0wLjY5NTMxMiBjIDAuMTYwMTU2IC0wLjA2MjUgMC4yNjU2MjUgLTAuMjE4NzUgMC4yNjU2MjUgLTAuMzk0NTMyIHYgLTEuMTMyODEyIGMgMCAtMC4xNzE4NzUgLTAuMTA1NDY5IC0wLjMyODEyNSAtMC4yNjU2MjUgLTAuMzkwNjI1IGwgLTEuNzM0Mzc1IC0wLjY5NTMxMyB2IC00Ljg0NzY1NiBjIDAgLTAuNDQxNDA2IC0wLjI4OTA2MiAtMC44MjgxMjUgLTAuNzA3MDMxIC0wLjk1NzAzMTIgYyAtMC4xMDU0NjkgLTAuMDMxMjUgLTAuMjEwOTM4IC0wLjA0Njg3NTA1IC0wLjMxNjQwNyAtMC4wNDI5Njg4IHogbSAtMC45NzY1NjIgMy40NzY1NjIgdiA4LjA1NDY4OCBjIC0yLjEwNTQ2OSAtMS42MDE1NjIgLTQuODM1OTM4IC0yLjI1IC02Ljc0NjA5NCAtMi40NTcwMzEgYyAtMC4wNzgxMjUgLTAuMDA3ODEzIC0wLjE2Nzk2OCAtMC4wMTE3MTkgLTAuMjUzOTA2IC0wLjAxNTYyNSB2IC0zLjEwMTU2MyBjIDAuMDg1OTM4IC0wLjAwNzgxMiAwLjE3NTc4MSAtMC4wMTE3MTkgMC4yNTM5MDYgLTAuMDE5NTMxIGMgMS45MTAxNTYgLTAuMjA3MDMxIDQuNjQwNjI1IC0wLjg2MzI4MSA2Ljc0NjA5NCAtMi40NjA5MzggeiBtIC04IDIuNTE1NjI2IHYgMy4wMjM0MzcgYyAtMC4zMDg1OTQgLTAuMDAzOTA2IC0wLjYxMzI4MSAtMC4wMDM5MDYgLTAuODQzNzUgLTAuMDA3ODEzIGwgLTEuMTUyMzQ0IC0wLjAwMzkwNiBjIC0wLjAxNTYyNSAwIC0wLjAwMzkwNiAwLjAxMTcxOSAtMC4wMDM5MDYgLTAuMDAzOTA2IHYgLTMgaCAxLjE0ODQzOCBjIDAuMjM0Mzc0IDAgMC41NDI5NjggLTAuMDAzOTA2IDAuODUxNTYyIC0wLjAwNzgxMiB6IG0gMCAwIiBmaWxsPSIjMjIyMjIyIi8+PC9zdmc+Cg==") !important;
 }
 .panels_c48ade .activityPanel_c48ade,
 [aria-label="Open Soundboard"] .activityPanel_c48ade {
@@ -3130,6 +3115,13 @@ div.sidebar_c48ade::after {
   margin: 0 !important;
   height: unset !important;
 }
+.panels_c48ade .micButtonParent__37e49,
+.panels_c48ade [aria-label=Deafen],
+[aria-label="Open Soundboard"] .micButtonParent__37e49,
+[aria-label="Open Soundboard"] [aria-label=Deafen] {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8IS0tIERlYWZlbiBoZWFkc2V0IHN5bWJvbGljIGljb24gKEdOT01FIGdyaWQtYWxpZ25lZCkgLS0+CiAgPGcgZmlsbD0iY3VycmVudENvbG9yIj4KICAgIDwhLS0gSGVhZGJhbmQgKGFsaWduZWQgdG8gZ3JpZCkgLS0+CiAgICA8cGF0aCBkPSJNOCAyQzQuNjkgMiAyIDQuNjkgMiA4djFoMlY4YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDR2MWgyVjhjMC0zLjMxLTIuNjktNi02LTZ6Ii8+CiAgICA8IS0tIExlZnQgZWFyY3VwIC0tPgogICAgPHJlY3QgeD0iMiIgeT0iOSIgd2lkdGg9IjMiIGhlaWdodD0iNCIgcng9IjEiIHJ5PSIxIi8+CiAgICA8IS0tIFJpZ2h0IGVhcmN1cCAtLT4KICAgIDxyZWN0IHg9IjExIiB5PSI5IiB3aWR0aD0iMyIgaGVpZ2h0PSI0IiByeD0iMSIgcnk9IjEiLz4KICA8L2c+Cjwvc3ZnPgo=") !important;
+}
+
 .panelTitleContainer__37e49 {
   margin: 0 !important;
 }
@@ -6524,7 +6516,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-u9h4026 !important;
+  anchor-name: --tooltip-uv6babr !important;
   app-region: no-drag !important;
 }
 .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover {
@@ -6564,7 +6556,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-u9h4026 !important;
+  position-anchor: --tooltip-uv6babr !important;
   bottom: calc(anchor(top) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -7924,7 +7916,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-u9h4032 !important;
+  anchor-name: --tooltip-uv6babu !important;
   border-radius: 50% !important;
   margin: auto !important;
   min-height: var(--guildbar-avatar-size) !important;
@@ -7966,7 +7958,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-u9h4032 !important;
+  position-anchor: --tooltip-uv6babu !important;
   left: calc(anchor(right) + var(--spacing)) !important;
   z-index: 999 !important;
   top: calc(anchor(top) + (var(--icon-button-size) - 30px) / 2) !important;
