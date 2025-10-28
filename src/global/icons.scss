@@ -42,20 +42,14 @@
 		"Notifications": "bell-outline",
 		"Pinned Messages": "pin",
 		// VC
+		"Hide chat": "chat",
+		"Show chat": "chat",
 		"Show Member List": "org.gnome.Settings-users",
 		"Show User Profile": "user-info",
 		"Show User Profile (Unavailable)": "user-info",
 		"Start Video Call": "camera-photo",
 		"Start Voice Call": "phone-right-facing",
 		"Threads": "chat-bubbles-empty-inverted",
-	)
-);
-
-@include -gen-icons(
-	"aria-label",
-	(
-		"Hide chat": "chat",
-		"Show chat": "chat",
 	)
 );
 
