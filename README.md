@@ -60,6 +60,9 @@ Put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes. It's still
 
 ## Preview
 
-![first](./assets/preview/Screenshot%From%2025-10-27%22-39-49.png)
-![cozy second](./assets/preview/Screenshot%20from%202024-04-27%2012-31-42.png)
-![third](./assets/preview/Screenshot%20from%202024-04-27%2012-24-16.png)
+![first](<img width="1610" height="945" alt="image" src="https://github.com/user-attachments/assets/e0745beb-a512-43a8-8a6f-ba0b148596e9" />
+)
+![cozy second](<img width="1610" height="945" alt="image" src="https://github.com/user-attachments/assets/57ea8e6d-fbd5-4be8-8311-e4cec3e7e6c8" />
+)
+![third](<img width="1610" height="945" alt="image" src="https://github.com/user-attachments/assets/43015fe2-d028-4144-8854-42ed94e25e47" />
+)
