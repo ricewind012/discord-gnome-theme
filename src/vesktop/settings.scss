@@ -1,0 +1,59 @@
+@use "controls";
+
+.vcd-settings-title {
+        margin-bottom: var(--spacing-3x);
+}
+
+.vcd-settings-category {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-2x);
+        margin: 0;
+}
+
+.vcd-settings-category-title {
+        margin: 0;
+}
+
+.vcd-settings-category-content {
+        @include controls.cards-container;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        overflow: hidden;
+
+        & > * {
+                @include controls.card-in-container(
+                        $first-selector: ":first-child",
+                        $last-selector: ":last-child"
+                );
+
+                margin: 0;
+        }
+
+        .note__0d850 {
+                margin: 0;
+        }
+}
+
+.vcd-settings-category-divider {
+        margin: var(--spacing-4x) 0;
+}
+
+.vcd-settings-switch {
+        display: flex;
+        align-items: center;
+}
+
+.vcd-settings-updater-card {
+        @include controls.card($activatable: false);
+
+        display: grid;
+        gap: var(--spacing);
+
+        border: 1px solid var(--warning_fg_color);
+        background: var(--warning-bg-color);
+        color: var(--warning_fg_color);
+}

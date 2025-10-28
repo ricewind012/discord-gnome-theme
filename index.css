@@ -2264,7 +2264,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uj57tas !important;
+  anchor-name: --tooltip-u0opv5v !important;
   margin: 0 !important;
   cursor: pointer !important;
 }
@@ -2306,7 +2306,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uj57tas !important;
+  position-anchor: --tooltip-u0opv5v !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2475,7 +2475,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uj57tbe !important;
+  anchor-name: --tooltip-u0opv6k !important;
   color: var(--headerbar_fg_color) !important;
   position: fixed !important;
   position-anchor: --chat-topic !important;
@@ -2522,7 +2522,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uj57tbe !important;
+  position-anchor: --tooltip-u0opv6k !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2608,7 +2608,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uj57tcd !important;
+  anchor-name: --tooltip-u0opv6z !important;
   color: var(--headerbar_fg_color) !important;
   app-region: no-drag !important;
 }
@@ -2649,7 +2649,7 @@ html {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uj57tcd !important;
+  position-anchor: --tooltip-u0opv6z !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   left: anchor(left) !important;
@@ -2697,7 +2697,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uj57td6 !important;
+  anchor-name: --tooltip-u0opv7v !important;
   color: inherit !important;
   flex-shrink: 0 !important;
   app-region: no-drag !important;
@@ -2741,7 +2741,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uj57td6 !important;
+  position-anchor: --tooltip-u0opv7v !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   right: anchor(right) !important;
@@ -6495,7 +6495,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uj57tdp !important;
+  anchor-name: --tooltip-u0opv8h !important;
   app-region: no-drag !important;
 }
 .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover {
@@ -6535,7 +6535,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uj57tdp !important;
+  position-anchor: --tooltip-u0opv8h !important;
   bottom: calc(anchor(top) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -7895,7 +7895,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uj57te9 !important;
+  anchor-name: --tooltip-u0opv90 !important;
   border-radius: 50% !important;
   margin: auto !important;
   min-height: var(--guildbar-avatar-size) !important;
@@ -7937,7 +7937,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uj57te9 !important;
+  position-anchor: --tooltip-u0opv90 !important;
   left: calc(anchor(right) + var(--spacing)) !important;
   z-index: 999 !important;
   top: calc(anchor(top) + (var(--icon-button-size) - 30px) / 2) !important;
@@ -8248,4 +8248,75 @@ div.sidebar_c48ade::after {
   gap: 0 !important;
   border: none !important;
   grid-template-columns: 1fr !important;
+}
+
+/* scss is horrible*/
+.vcd-settings-title {
+  margin-bottom: var(--spacing-3x) !important;
+}
+
+.vcd-settings-category {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: var(--spacing-2x) !important;
+  margin: 0 !important;
+}
+
+.vcd-settings-category-title {
+  margin: 0 !important;
+}
+
+.vcd-settings-category-content {
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+.vcd-settings-category-content > * {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  border-bottom: 1px solid var(--card_shade_color) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+.vcd-settings-category-content > *:first-child {
+  border-radius: var(--card_radius) var(--card_radius) 0 0 !important;
+}
+.vcd-settings-category-content > *:last-child {
+  border-radius: 0 0 var(--card_radius) var(--card_radius) !important;
+  border: none !important;
+}
+.vcd-settings-category-content .note__0d850 {
+  margin: 0 !important;
+}
+
+.vcd-settings-category-divider {
+  margin: var(--spacing-4x) 0 !important;
+}
+
+.vcd-settings-switch {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.vcd-settings-updater-card {
+  background-color: var(--card_bg_color) !important;
+  border: none !important;
+  border-radius: var(--card_radius) !important;
+  box-shadow: var(--elevation-medium) !important;
+  padding: 10px 16px !important;
+  min-height: calc(var(--icon-button-size) + 20px) !important;
+  display: grid !important;
+  gap: var(--spacing) !important;
+  border: 1px solid var(--warning_fg_color) !important;
+  background: var(--warning-bg-color) !important;
+  color: var(--warning_fg_color) !important;
 }
