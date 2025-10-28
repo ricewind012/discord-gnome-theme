@@ -1,3 +1,8 @@
+/**
+ * @name Discord GNOME Theme
+ * @description A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines.
+ * @author ricewind
+ */
 /* scss is horrible*/
 .inner_c0bea0 .markup__75297 [data-text-variant], .role_dfa8b6 [data-text-variant], .option__56fec .searchResultChannelCategory__56fec, .container__0d850 .title__0d850, .wrapper__33d12 .text__33d12, .wrapper__2ea32 [data-text-variant="text-xs/semibold"], .name__2ea32, [role=tablist][aria-orientation=vertical] [role=tab], .vc-ranb-button:hover > *, .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover > .titleText_e29cd7, .stackedBars__74017 .replyLabel__841c8, .container__0be77 .label__4c520, .embedDescription__623de, .embedTitle__623de, .searchHeader_f3b986 [data-text-variant], .headerButton_f37cb1:hover::after, .searchBar__35e86 > button:hover > *, .icon__97492:hover::after, .search__49676 .searchAnswer_bd8186,
 .search__49676 .searchFilter_bd8186, .topicClickTarget__6ec1a:hover::after {
@@ -2264,7 +2269,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uv6ba8v !important;
+  anchor-name: --tooltip-uc1eyvg !important;
   margin: 0 !important;
   cursor: pointer !important;
 }
@@ -2306,7 +2311,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uv6ba8v !important;
+  position-anchor: --tooltip-uc1eyvg !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2475,7 +2480,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uv6ba9i !important;
+  anchor-name: --tooltip-uc1eyvi !important;
   color: var(--headerbar_fg_color) !important;
   position: fixed !important;
   position-anchor: --chat-topic !important;
@@ -2522,7 +2527,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uv6ba9i !important;
+  position-anchor: --tooltip-uc1eyvi !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2608,7 +2613,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uv6baa4 !important;
+  anchor-name: --tooltip-uc1eywf !important;
   color: var(--headerbar_fg_color) !important;
   app-region: no-drag !important;
 }
@@ -2649,7 +2654,7 @@ html {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uv6baa4 !important;
+  position-anchor: --tooltip-uc1eywf !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   left: anchor(left) !important;
@@ -2697,7 +2702,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uv6bab0 !important;
+  anchor-name: --tooltip-uc1eyx5 !important;
   color: inherit !important;
   flex-shrink: 0 !important;
   app-region: no-drag !important;
@@ -2741,7 +2746,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uv6bab0 !important;
+  position-anchor: --tooltip-uc1eyx5 !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   right: anchor(right) !important;
@@ -3119,7 +3124,7 @@ div.sidebar_c48ade::after {
 .panels_c48ade [aria-label=Deafen],
 [aria-label="Open Soundboard"] .micButtonParent__37e49,
 [aria-label="Open Soundboard"] [aria-label=Deafen] {
-  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8IS0tIERlYWZlbiBoZWFkc2V0IHN5bWJvbGljIGljb24gKEdOT01FIGdyaWQtYWxpZ25lZCkgLS0+CiAgPGcgZmlsbD0iY3VycmVudENvbG9yIj4KICAgIDwhLS0gSGVhZGJhbmQgKGFsaWduZWQgdG8gZ3JpZCkgLS0+CiAgICA8cGF0aCBkPSJNOCAyQzQuNjkgMiAyIDQuNjkgMiA4djFoMlY4YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDR2MWgyVjhjMC0zLjMxLTIuNjktNi02LTZ6Ii8+CiAgICA8IS0tIExlZnQgZWFyY3VwIC0tPgogICAgPHJlY3QgeD0iMiIgeT0iOSIgd2lkdGg9IjMiIGhlaWdodD0iNCIgcng9IjEiIHJ5PSIxIi8+CiAgICA8IS0tIFJpZ2h0IGVhcmN1cCAtLT4KICAgIDxyZWN0IHg9IjExIiB5PSI5IiB3aWR0aD0iMyIgaGVpZ2h0PSI0IiByeD0iMSIgcnk9IjEiLz4KICA8L2c+Cjwvc3ZnPgo=") !important;
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAyLjI5Mjk2OSA2LjcwNzAzMSBsIDUgNSBjIDAuMzkwNjI1IDAuMzkwNjI1IDEuMDIzNDM3IDAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1IC01IGMgMC4zOTA2MjUgLTAuMzkwNjI1IDAuMzkwNjI1IC0xLjAyMzQzNyAwIC0xLjQxNDA2MiBzIC0xLjAyMzQzNyAtMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNC4yOTI5NjkgNC4yOTI5NjkgbCAtNC4yOTI5NjkgLTQuMjkyOTY5IGMgLTAuMzkwNjI1IC0wLjM5MDYyNSAtMS4wMjM0MzcgLTAuMzkwNjI1IC0xLjQxNDA2MiAwIHMgLTAuMzkwNjI1IDEuMDIzNDM3IDAgMS40MTQwNjIgeiBtIDAgMCIgZmlsbD0iIzIyMjIyMiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+Cg==") !important;
 }
 
 .panelTitleContainer__37e49 {
@@ -6516,7 +6521,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uv6babr !important;
+  anchor-name: --tooltip-uc1eyxs !important;
   app-region: no-drag !important;
 }
 .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover {
@@ -6556,7 +6561,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uv6babr !important;
+  position-anchor: --tooltip-uc1eyxs !important;
   bottom: calc(anchor(top) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -7916,7 +7921,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uv6babu !important;
+  anchor-name: --tooltip-uc1eyy9 !important;
   border-radius: 50% !important;
   margin: auto !important;
   min-height: var(--guildbar-avatar-size) !important;
@@ -7958,7 +7963,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uv6babu !important;
+  position-anchor: --tooltip-uc1eyy9 !important;
   left: calc(anchor(right) + var(--spacing)) !important;
   z-index: 999 !important;
   top: calc(anchor(top) + (var(--icon-button-size) - 30px) / 2) !important;

@@ -57,7 +57,8 @@
 
 	.micButtonParent__37e49,
 	[aria-label="Deafen"] {
-		--icon: icon("deafen");
+	--icon: icon("down");
+		display: none;
 	}
 }
 
