@@ -1,8 +1,3 @@
-/**
- * @name Discord GNOME Theme
- * @description A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface Guidelines.
- * @author ricewind
- */
 /* scss is horrible*/
 .inner_c0bea0 .markup__75297 [data-text-variant], .role_dfa8b6 [data-text-variant], .option__56fec .searchResultChannelCategory__56fec, .container__0d850 .title__0d850, .wrapper__33d12 .text__33d12, .wrapper__2ea32 [data-text-variant="text-xs/semibold"], .name__2ea32, [role=tablist][aria-orientation=vertical] [role=tab], .vc-ranb-button:hover > *, .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover > .titleText_e29cd7, .stackedBars__74017 .replyLabel__841c8, .container__0be77 .label__4c520, .embedDescription__623de, .embedTitle__623de, .searchHeader_f3b986 [data-text-variant], .headerButton_f37cb1:hover::after, .searchBar__35e86 > button:hover > *, .icon__97492:hover::after, .search__49676 .searchAnswer_bd8186,
 .search__49676 .searchFilter_bd8186, .topicClickTarget__6ec1a:hover::after {
@@ -2269,7 +2264,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uc1eyvg !important;
+  anchor-name: --tooltip-uj57tas !important;
   margin: 0 !important;
   cursor: pointer !important;
 }
@@ -2311,7 +2306,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uc1eyvg !important;
+  position-anchor: --tooltip-uj57tas !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2480,7 +2475,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uc1eyvi !important;
+  anchor-name: --tooltip-uj57tbe !important;
   color: var(--headerbar_fg_color) !important;
   position: fixed !important;
   position-anchor: --chat-topic !important;
@@ -2527,7 +2522,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uc1eyvi !important;
+  position-anchor: --tooltip-uj57tbe !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -2613,7 +2608,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uc1eywf !important;
+  anchor-name: --tooltip-uj57tcd !important;
   color: var(--headerbar_fg_color) !important;
   app-region: no-drag !important;
 }
@@ -2654,7 +2649,7 @@ html {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uc1eywf !important;
+  position-anchor: --tooltip-uj57tcd !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   left: anchor(left) !important;
@@ -2702,7 +2697,7 @@ html {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uc1eyx5 !important;
+  anchor-name: --tooltip-uj57td6 !important;
   color: inherit !important;
   flex-shrink: 0 !important;
   app-region: no-drag !important;
@@ -2746,7 +2741,7 @@ html {
   content: attr(aria-label) !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uc1eyx5 !important;
+  position-anchor: --tooltip-uj57td6 !important;
   top: calc(anchor(bottom) + var(--spacing)) !important;
   z-index: 999 !important;
   right: anchor(right) !important;
@@ -2990,8 +2985,7 @@ div.sidebar_c48ade::after {
   margin: 0 !important;
 }
 
-.panels_c48ade,
-[aria-label="Open Soundboard"] {
+.panels_c48ade {
   background: var(--bg-overlay-app-frame, var(--background-secondary-alt)) !important;
   border: none !important;
   border-top: 1px solid var(--secondary_sidebar_border_color) !important;
@@ -3001,14 +2995,12 @@ div.sidebar_c48ade::after {
   width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width)) !important;
   --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAxMi45NzY1NjIgMCBjIC0wLjMyNDIxOCAwLjAwNzgxMjUgLTAuNjI1IDAuMTcxODc1IC0wLjgwODU5MyAwLjQ0NTMxMiBjIC0xLjQzMzU5NCAyLjE0MDYyNiAtNC45NzI2NTcgMy4yNjk1MzIgLTcuMTI1IDMuNTAzOTA3IGMgLTAuNDMzNTk0IDAuMDQyOTY5IC0xLjMzOTg0NCAwLjA1MDc4MSAtMS44OTQ1MzEgMC4wNTA3ODEgaCAtMS4xNDg0MzggYyAtMS4wOTM3NSAwIC0yIDAuOTA2MjUgLTIgMiB2IDMgYyAwIDEuMDkzNzUgMC45MDIzNDQgMiAxLjk5NjA5NCAyLjAwMzkwNiBsIDEuMTQ4NDM3IDAuMDAzOTA2IGMgMC4wNTQ2ODggMCAwLjEzNjcxOSAwLjAwMzkwNyAwLjE5NTMxMyAwLjAwMzkwNyBsIDAuNjc5Njg3IDMuMTk5MjE5IGMgMC4wNTg1OTQgMC4yNTc4MTIgMC4yMTQ4NDQgMC40ODQzNzQgMC40Mzc1IDAuNjI4OTA2IGMgMC4yMjI2NTcgMC4xNDQ1MzEgMC40OTIxODggMC4xOTUzMTIgMC43NSAwLjE0MDYyNSBjIDAuMjYxNzE5IC0wLjA1ODU5NCAwLjQ4ODI4MSAtMC4yMTQ4NDQgMC42MzI4MTMgLTAuNDM3NSBjIDAuMTQ0NTMxIC0wLjIyMjY1NyAwLjE5NTMxMiAtMC40OTIxODggMC4xNDA2MjUgLTAuNzUgbCAtMC41NzQyMTkgLTIuNjc5Njg4IGMgMi4xNzE4NzUgMC4zMDg1OTQgNS40MDYyNSAxLjQxNzk2OSA2Ljc2MTcxOSAzLjQ0NTMxMyBjIDAuMjQ2MDkzIDAuMzYzMjgxIDAuNzAzMTI1IDAuNTIzNDM3IDEuMTIxMDkzIDAuMzk4NDM3IGMgMC40MjE4NzYgLTAuMTI4OTA2IDAuNzEwOTM4IC0wLjUxNTYyNSAwLjcxMDkzOCAtMC45NTcwMzEgdiAtNC44NDM3NSBsIDEuNzM0Mzc1IC0wLjY5NTMxMiBjIDAuMTYwMTU2IC0wLjA2MjUgMC4yNjU2MjUgLTAuMjE4NzUgMC4yNjU2MjUgLTAuMzk0NTMyIHYgLTEuMTMyODEyIGMgMCAtMC4xNzE4NzUgLTAuMTA1NDY5IC0wLjMyODEyNSAtMC4yNjU2MjUgLTAuMzkwNjI1IGwgLTEuNzM0Mzc1IC0wLjY5NTMxMyB2IC00Ljg0NzY1NiBjIDAgLTAuNDQxNDA2IC0wLjI4OTA2MiAtMC44MjgxMjUgLTAuNzA3MDMxIC0wLjk1NzAzMTIgYyAtMC4xMDU0NjkgLTAuMDMxMjUgLTAuMjEwOTM4IC0wLjA0Njg3NTA1IC0wLjMxNjQwNyAtMC4wNDI5Njg4IHogbSAtMC45NzY1NjIgMy40NzY1NjIgdiA4LjA1NDY4OCBjIC0yLjEwNTQ2OSAtMS42MDE1NjIgLTQuODM1OTM4IC0yLjI1IC02Ljc0NjA5NCAtMi40NTcwMzEgYyAtMC4wNzgxMjUgLTAuMDA3ODEzIC0wLjE2Nzk2OCAtMC4wMTE3MTkgLTAuMjUzOTA2IC0wLjAxNTYyNSB2IC0zLjEwMTU2MyBjIDAuMDg1OTM4IC0wLjAwNzgxMiAwLjE3NTc4MSAtMC4wMTE3MTkgMC4yNTM5MDYgLTAuMDE5NTMxIGMgMS45MTAxNTYgLTAuMjA3MDMxIDQuNjQwNjI1IC0wLjg2MzI4MSA2Ljc0NjA5NCAtMi40NjA5MzggeiBtIC04IDIuNTE1NjI2IHYgMy4wMjM0MzcgYyAtMC4zMDg1OTQgLTAuMDAzOTA2IC0wLjYxMzI4MSAtMC4wMDM5MDYgLTAuODQzNzUgLTAuMDA3ODEzIGwgLTEuMTUyMzQ0IC0wLjAwMzkwNiBjIC0wLjAxNTYyNSAwIC0wLjAwMzkwNiAwLjAxMTcxOSAtMC4wMDM5MDYgLTAuMDAzOTA2IHYgLTMgaCAxLjE0ODQzOCBjIDAuMjM0Mzc0IDAgMC41NDI5NjggLTAuMDAzOTA2IDAuODUxNTYyIC0wLjAwNzgxMiB6IG0gMCAwIiBmaWxsPSIjMjIyMjIyIi8+PC9zdmc+Cg==") !important;
 }
-.panels_c48ade .activityPanel_c48ade,
-[aria-label="Open Soundboard"] .activityPanel_c48ade {
+.panels_c48ade .activityPanel_c48ade {
   background-color: inherit !important;
   border-bottom: var(--secondary_sidebar_border_color) !important;
   border-radius: 0 !important;
 }
-.panels_c48ade .avatarWrapper__37e49,
-[aria-label="Open Soundboard"] .avatarWrapper__37e49 {
+.panels_c48ade .avatarWrapper__37e49 {
   background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
   transition: var(--button_transition) !important;
   background-color: transparent !important;
@@ -3016,16 +3008,13 @@ div.sidebar_c48ade::after {
   padding: var(--spacing) !important;
   margin: 0 !important;
 }
-.panels_c48ade .avatarWrapper__37e49:hover,
-[aria-label="Open Soundboard"] .avatarWrapper__37e49:hover {
+.panels_c48ade .avatarWrapper__37e49:hover {
   background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
 }
-.panels_c48ade .avatarWrapper__37e49:active,
-[aria-label="Open Soundboard"] .avatarWrapper__37e49:active {
+.panels_c48ade .avatarWrapper__37e49:active {
   background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
 }
-.panels_c48ade .button__201d5,
-[aria-label="Open Soundboard"] .button__201d5 {
+.panels_c48ade .button__201d5 {
   background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
   transition: var(--button_transition) !important;
   background-color: transparent !important;
@@ -3037,21 +3026,17 @@ div.sidebar_c48ade::after {
   height: var(--icon-button-size) !important;
   color: inherit !important;
 }
-.panels_c48ade .button__201d5:hover,
-[aria-label="Open Soundboard"] .button__201d5:hover {
+.panels_c48ade .button__201d5:hover {
   background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
 }
-.panels_c48ade .button__201d5:active,
-[aria-label="Open Soundboard"] .button__201d5:active {
+.panels_c48ade .button__201d5:active {
   background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
 }
-.panels_c48ade .button__201d5:disabled,
-[aria-label="Open Soundboard"] .button__201d5:disabled {
+.panels_c48ade .button__201d5:disabled {
   opacity: var(--dim-level-opacity) !important;
   background-color: transparent !important;
 }
-.panels_c48ade .button__201d5::before,
-[aria-label="Open Soundboard"] .button__201d5::before {
+.panels_c48ade .button__201d5::before {
   content: "" !important;
   background-color: currentColor !important;
   mask: var(--icon) !important;
@@ -3065,12 +3050,10 @@ div.sidebar_c48ade::after {
   width: 100% !important;
   height: 100% !important;
 }
-.panels_c48ade .button__201d5 > *,
-[aria-label="Open Soundboard"] .button__201d5 > * {
+.panels_c48ade .button__201d5 > * {
   display: none !important;
 }
-.panels_c48ade .button_e131a9,
-[aria-label="Open Soundboard"] .button_e131a9 {
+.panels_c48ade .button_e131a9 {
   background-color: color-mix(in srgb, currentColor 10%, transparent) !important;
   transition: var(--button_transition) !important;
   background-color: transparent !important;
@@ -3081,21 +3064,17 @@ div.sidebar_c48ade::after {
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
 }
-.panels_c48ade .button_e131a9:hover,
-[aria-label="Open Soundboard"] .button_e131a9:hover {
+.panels_c48ade .button_e131a9:hover {
   background-color: color-mix(in srgb, currentColor 15%, transparent) !important;
 }
-.panels_c48ade .button_e131a9:active,
-[aria-label="Open Soundboard"] .button_e131a9:active {
+.panels_c48ade .button_e131a9:active {
   background-color: color-mix(in srgb, currentColor 30%, transparent) !important;
 }
-.panels_c48ade .button_e131a9:disabled,
-[aria-label="Open Soundboard"] .button_e131a9:disabled {
+.panels_c48ade .button_e131a9:disabled {
   opacity: var(--dim-level-opacity) !important;
   background-color: transparent !important;
 }
-.panels_c48ade .button_e131a9::before,
-[aria-label="Open Soundboard"] .button_e131a9::before {
+.panels_c48ade .button_e131a9::before {
   content: "" !important;
   background-color: currentColor !important;
   mask: var(--icon) !important;
@@ -3109,22 +3088,17 @@ div.sidebar_c48ade::after {
   width: 100% !important;
   height: 100% !important;
 }
-.panels_c48ade .button_e131a9 > *,
-[aria-label="Open Soundboard"] .button_e131a9 > * {
+.panels_c48ade .button_e131a9 > * {
   display: none !important;
 }
-.panels_c48ade .container__37e49,
-[aria-label="Open Soundboard"] .container__37e49 {
+.panels_c48ade .container__37e49 {
   padding: 0 !important;
   padding-right: var(--spacing) !important;
   margin: 0 !important;
   height: unset !important;
 }
-.panels_c48ade .micButtonParent__37e49,
-.panels_c48ade [aria-label=Deafen],
-[aria-label="Open Soundboard"] .micButtonParent__37e49,
-[aria-label="Open Soundboard"] [aria-label=Deafen] {
-  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTZweCI+PHBhdGggZD0ibSAyLjI5Mjk2OSA2LjcwNzAzMSBsIDUgNSBjIDAuMzkwNjI1IDAuMzkwNjI1IDEuMDIzNDM3IDAuMzkwNjI1IDEuNDE0MDYyIDAgbCA1IC01IGMgMC4zOTA2MjUgLTAuMzkwNjI1IDAuMzkwNjI1IC0xLjAyMzQzNyAwIC0xLjQxNDA2MiBzIC0xLjAyMzQzNyAtMC4zOTA2MjUgLTEuNDE0MDYyIDAgbCAtNC4yOTI5NjkgNC4yOTI5NjkgbCAtNC4yOTI5NjkgLTQuMjkyOTY5IGMgLTAuMzkwNjI1IC0wLjM5MDYyNSAtMS4wMjM0MzcgLTAuMzkwNjI1IC0xLjQxNDA2MiAwIHMgLTAuMzkwNjI1IDEuMDIzNDM3IDAgMS40MTQwNjIgeiBtIDAgMCIgZmlsbD0iIzIyMjIyMiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+Cg==") !important;
+.panels_c48ade .micButtonParent__37e49 {
+  --icon: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBoZWlnaHQ9IjE2cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2cHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgICA8cGF0aCBkPSJtIDMuMjkyOTY5IDcuNzA3MDMxIGwgNCA0IGMgMC4zOTA2MjUgMC4zOTA2MjUgMS4wMjM0MzcgMC4zOTA2MjUgMS40MTQwNjIgMCBsIDQgLTQgYyAwLjM5MDYyNSAtMC4zOTA2MjUgMC4zOTA2MjUgLTEuMDIzNDM3IDAgLTEuNDE0MDYyIHMgLTEuMDIzNDM3IC0wLjM5MDYyNSAtMS40MTQwNjIgMCBsIC0zLjI5Mjk2OSAzLjI5Mjk2OSBsIC0zLjI5Mjk2OSAtMy4yOTI5NjkgYyAtMC4zOTA2MjUgLTAuMzkwNjI1IC0xLjAyMzQzNyAtMC4zOTA2MjUgLTEuNDE0MDYyIDAgcyAtMC4zOTA2MjUgMS4wMjM0MzcgMCAxLjQxNDA2MiB6IG0gMCAwIiBmaWxsPSIjMjIyMjIyIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz4KPC9zdmc+Cg==") !important;
 }
 
 .panelTitleContainer__37e49 {
@@ -6521,7 +6495,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uc1eyxs !important;
+  anchor-name: --tooltip-uj57tdp !important;
   app-region: no-drag !important;
 }
 .page__91dc3 .titleContainer_e29cd7 .title_e29cd7:hover {
@@ -6561,7 +6535,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uc1eyxs !important;
+  position-anchor: --tooltip-uj57tdp !important;
   bottom: calc(anchor(top) + var(--spacing)) !important;
   z-index: 999 !important;
   : anchor() !important;
@@ -7921,7 +7895,7 @@ div.sidebar_c48ade::after {
   position: relative !important;
   width: var(--icon-button-size) !important;
   height: var(--icon-button-size) !important;
-  anchor-name: --tooltip-uc1eyy9 !important;
+  anchor-name: --tooltip-uj57te9 !important;
   border-radius: 50% !important;
   margin: auto !important;
   min-height: var(--guildbar-avatar-size) !important;
@@ -7963,7 +7937,7 @@ div.sidebar_c48ade::after {
   padding: 6px 10px !important;
   display: block !important;
   position: fixed !important;
-  position-anchor: --tooltip-uc1eyy9 !important;
+  position-anchor: --tooltip-uj57te9 !important;
   left: calc(anchor(right) + var(--spacing)) !important;
   z-index: 999 !important;
   top: calc(anchor(top) + (var(--icon-button-size) - 30px) / 2) !important;
