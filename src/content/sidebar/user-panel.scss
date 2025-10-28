@@ -8,12 +8,12 @@
 	margin: 0;
 }
 
-.panels_c48ade {
+.panels_c48ade,
+	[aria-label="Open Soundboard"] {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
-
 	bottom: 0;
 	left: var(--custom-guild-list-width);
 	width: calc(
@@ -56,7 +56,6 @@
 
 	.micButtonParent__37e49,
 	[aria-label="Deafen"] {
-		display: none;
 	}
 }
 
