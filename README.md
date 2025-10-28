@@ -60,7 +60,7 @@ Put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes. It's still
 
 ## Preview
 
-![first](<img width="1610" height="945" alt="image" src="https://github.com/user-attachments/assets/e0745beb-a512-43a8-8a6f-ba0b148596e9" />
+![first]([<img width="1610" height="945" alt="image" src="https://github.com/user-attachments/assets/e0745beb-a512-43a8-8a6f-ba0b148596e9" />](https://github.com/garecrow/discord-gnome-theme/blob/master/assets/preview/Screenshot%20From%202025-10-27%2022-39-49.png?raw=true)
 )
 ![cozy second](<img width="1610" height="945" alt="image" src="https://github.com/user-attachments/assets/57ea8e6d-fbd5-4be8-8311-e4cec3e7e6c8" />
 )
