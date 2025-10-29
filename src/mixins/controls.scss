@@ -323,6 +323,53 @@ $toast_fg_color: white;
 	}
 }
 
+@mixin split-button($lhs, $rhs) {
+	border-radius: var(--button_radius);
+
+	transition: var(--button_transition);
+
+	&:hover,
+	&:active {
+		background-color: var(--hover_color);
+
+		#{$lhs}::after {
+			background-color: transparent;
+		}
+	}
+
+	#{$lhs},
+	#{$rhs} {
+		@include button;
+
+		background-color: transparent;
+	}
+
+	#{$lhs} {
+		&::after {
+			content: "";
+
+			position: absolute;
+			inset-inline-end: -1px;
+			inset-block: var(--spacing);
+			width: 1px;
+			height: calc(100% - var(--spacing-2x));
+
+			opacity: var(--dim-level-opacity);
+			background-color: currentColor;
+			transition: var(--button_transition);
+		}
+	}
+
+	#{$rhs} {
+		--icon: icon("pan-down");
+
+		padding-left: 5px;
+		padding-right: 5px;
+
+		width: 24px;
+	}
+}
+
 @mixin switch($checked) {
 	--percentage: 15.25%;
 	--spacing: var(--spacing-05x);
