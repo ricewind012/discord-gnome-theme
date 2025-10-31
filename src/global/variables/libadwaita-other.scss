@@ -2,18 +2,15 @@
 	// libadwaita 1.7
 	--ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	--backdrop_transition: 200ms ease-out;
-	--focus_transition:
-		outline-color 200ms var(--ease-out-quad),
+	--focus_transition: outline-color 200ms var(--ease-out-quad),
 		outline-width 200ms var(--ease-out-quad),
 		outline-offset 200ms var(--ease-out-quad);
-	--button_transition:
-		background 200ms var(--ease-out-quad), box-shadow 200ms var(--ease-out-quad);
-	--scrollbar_transition: all 200ms linear;
-	--toggle_transition:
-		color 200ms var(--ease-out-quad), background 200ms var(--ease-out-quad),
+	--button_transition: background 200ms var(--ease-out-quad),
 		box-shadow 200ms var(--ease-out-quad);
-	--popover_shadow:
-		0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
+	--scrollbar_transition: all 200ms linear;
+	--toggle_transition: color 200ms var(--ease-out-quad),
+		background 200ms var(--ease-out-quad), box-shadow 200ms var(--ease-out-quad);
+	--popover_shadow: 0 1px 5px 1px color-mix(in srgb, black 9%, transparent),
 		0 2px 14px 3px color-mix(in srgb, black 5%, transparent);
 
 	--document-font-family: "Adwaita Sans", sans-serif;
@@ -45,6 +42,7 @@
 	// my
 	--base-unit: 6px;
 	--icon-size: 16px;
+	--text-shadow: drop-shadow(0 1px 1px var(--bg-backdrop));
 
 	@media (prefers-reduced-motion) {
 		--backdrop_transition: none;

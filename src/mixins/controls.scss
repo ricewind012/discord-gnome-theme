@@ -339,7 +339,7 @@ $toast_fg_color: white;
 
 	#{$lhs},
 	#{$rhs} {
-		@include button;
+		@include icon-button;
 
 		background-color: transparent;
 	}

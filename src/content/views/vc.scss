@@ -21,12 +21,11 @@
 	> div
 	> .chat_f75fb0
 	> .wrapper_cb9592
-) > .bar_c38106 {
-	@extend %-dark-headerbar;
-}
-
-.callContainer_cb9592 {
-	border: none;
+) {
+	& > .bar_c38106,
+	.container__9293f{
+		@extend %-dark-headerbar;
+	}
 }
 
 // popout
@@ -34,47 +33,12 @@
 	height: unset;
 }
 
-// !important in controls/buttons
-.colorable_f1ceac.colorable_f1ceac {
+.colorable_f1ceac {
 	@include controls.icon-button;
 
-	&.attachedCaret_f1ceac {
-		--icon: icon("up");
+	color: var(--window_fg_color);
 
-		margin: 0;
-
-		width: 24px;
-
-		&::after {
-			content: "";
-
-			position: absolute;
-			left: 0;
-			height: calc(100% - var(--spacing-2x));
-
-			border-left: 1px solid;
-			border-color: color-mix(
-				in srgb,
-				currentColor var(--dim-level-opacity),
-				transparent
-			);
-
-			transition: var(--backdrop_transition);
-
-			.attachedCaretButtonContainer_f1ceac:hover & {
-				border-color: transparent;
-			}
-		}
-	}
-
-	&.button__201d5.colorBrand__201d5 {
-		color: var(--window_fg_color);
-	}
-
-	&.disconnect_f1ceac {
-		color: var(--destructive-color);
-	}
-
+	&.disconnect_f1ceac,
 	&.redGlow_f1ceac {
 		color: var(--destructive-color);
 	}
@@ -87,12 +51,25 @@
 	}
 }
 
+.attachedCaretButtonContainer_f1ceac {
+	@include controls.split-button(
+		$lhs: ".attachedButton_f1ceac",
+		$rhs: ".attachedCaret_f1ceac"
+	);
+
+	background-color: var(--hover_color);
+}
+
 .edgeControls_bfe55a {
 	gap: var(--spacing);
 }
 
 .headerBar__49508 {
 	@extend %-dark-headerbar;
+
+	.headerBarChildren__49508 {
+		gap: 0;
+	}
 
 	.playingText__49508 {
 		color: var(--window_fg_muted);
@@ -110,10 +87,6 @@
 	}
 }
 
-.headerBarChildren__49508 {
-	gap: 0;
-}
-
 .headerWrapper_cb9592 {
 	margin-inline: -12px;
 
@@ -123,12 +96,22 @@
 		color: inherit;
 		margin: 0;
 	}
+
+	[data-text-variant] {
+		filter: var(--text-shadow);
+	}
 }
 
-.overlayButton__2f4f7 {
-	@include controls.icon-button-circular("settings");
-}
+.overlayContainer__2f4f7 {
+	.experimentOverlayTitle__2f4f7 {
+		color: var(--window_fg_color);
+	}
 
+	.overlayButton__2f4f7 {
+		@include controls.icon-button-circular("settings");
+	}
+}
+.leftTrayIcon_cb9592,
 .rightTrayIcon_cb9592:not(.container__2d263) {
 	@include controls.icon-button-circular;
 
@@ -153,8 +136,9 @@
 	gap: var(--spacing-2x);
 
 	.buttonSection__1405b {
-		background-color: color-mix(in srgb, currentColor 10%, transparent);
+		background-color: transparent;
 		gap: var(--spacing);
+		padding: 0;
 		border: none;
 	}
 }
