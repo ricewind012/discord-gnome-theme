@@ -2,11 +2,11 @@
 @use "dialog";
 @use "typography";
 
-.header__45690 {
+.header_e8b59c {
 	@include dialog.header;
 }
 
-.messagesPopout__45690 {
+.messagesPopout_e8b59c {
 	padding: 0;
 
 	[role="list"] {
@@ -51,11 +51,11 @@
 	}
 }
 
-.messagesPopoutWrap__45690 {
+.messagesPopoutWrap_e8b59c {
 	@include dialog.container;
 }
 
-.titleContainer__45690 {
+.titleContainer_e8b59c {
 	justify-content: center;
 	height: var(--headerbar-height);
 
