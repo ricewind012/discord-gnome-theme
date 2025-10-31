@@ -10,6 +10,7 @@
 
 	&.vc-btn-primary {
 		@include controls.button-accent;
+		margin-top: 10px;
 	}
 }
 
