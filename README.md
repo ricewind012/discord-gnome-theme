@@ -6,31 +6,25 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 1. Vesktop
 
-   For enabling the Windows titlebar.
+   Recommended for enabling the Discord's custom titlebar. Enable with Settings > Vesktop Settings > "Discord Titlebar".
 
-2. Settings > Language > Choose "English (US)"
+   You can still use something else like BetterDiscord - the theme will work but without the usual GNOME headerbar and with BetterDiscord content unthemed.
+
+2. Install [Discord Adblock](https://codeberg.org/ridge/Discord-AdBlock)
+
+   Removes Nitro elements, as they will look out of place.
+
+3. Settings > Language > Choose "English (US)"
 
    This allows for custom icons due to how they are identified in Discord. You may [localize](./src/global/icons.scss) the theme, but read the localization note.
 
-3. Settings > Plugins > Enable "ThemeAttributes"
+4. Settings > Plugins > Enable "ThemeAttributes"
 
    This allows for icons in the settings dialog.
 
-4. Settings > Vesktop Settings > Enable "Discord Titlebar"
-
-   Optional, but recommended if you have titlebars.
-
-### Optional additions
-
-1. Remove Nitro references: https://github.com/CroissantDuNord/discord-adblock
-
 ## Theming philosophy
 
-### Human Interface Guidelines
-
 The theme may not fully confine to the HIG because of Discord's either CSS or design limitations or my own choices.
-
-### Support
 
 These are not supported:
 
