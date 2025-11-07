@@ -37,10 +37,6 @@
 	.base__5e434 {
 		padding: 0;
 	}
-
-	.trailing_c38106 {
-		display: flex;
-	}
 }
 
 #app-mount {
@@ -82,8 +78,6 @@
 
 .trailing_c38106 {
 	gap: var(--spacing);
-
-	display: none;
 
 	[aria-label="Update Ready!"],
 	[href="https://support.discord.com"]
