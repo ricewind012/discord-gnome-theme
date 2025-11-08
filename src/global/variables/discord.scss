@@ -34,6 +34,16 @@
 		var(--warning-bg-color) 20%,
 		transparent
 	);
+	--background-message-automod: color-mix(
+		in srgb,
+		var(--destructive-bg-color) 10%,
+		transparent
+	);
+	--background-message-automod-hover: color-mix(
+		in srgb,
+		var(--destructive-bg-color) 20%,
+		transparent
+	);
 	--background-message-highlight: color-mix(
 		in srgb,
 		var(--accent-bg-color) 10%,
