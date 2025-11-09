@@ -1,54 +1,6 @@
 @use "controls";
-
-.root__49fc1.vc-text-selectable {
-	gap: 0;
-
-	& > .header__49fc1 {
-		box-shadow: var(--elevation-low);
-		padding: 0
-			calc(
-				var(--spacing) + var(--titlebar-button-spacing) +
-					var(--titlebar-button-size)
-			);
-
-		height: var(--headerbar-height);
-	}
-
-	& > .content__49fc1 {
-		text-align: start;
-
-		& > .vc-m-bottom-16 > div {
-			@include controls.cards-container;
-
-			gap: 0;
-			padding: 0;
-
-			& > div {
-				@include controls.card-in-container(
-					$first-selector: ":first-child",
-					$last-selector: ":last-child"
-				);
-
-				& > div {
-					margin: 0;
-				}
-			}
-		}
-	}
-
-	& > .footer__49fc1 {
-		& > div > div {
-			gap: var(--spacing-2x);
-			margin: 0;
-		}
-	}
-
-	.header__49fc1 {
-		& > [data-text-variant] {
-			text-align: center;
-		}
-	}
-}
+@use "typography";
+@use "util";
 
 .vc-addon-card {
 	@include controls.card-in-container(
@@ -56,13 +8,25 @@
 		$last-selector: ":last-child"
 	);
 
+	&.vc-addon-card-disabled {
+		opacity: 1;
+	}
+
 	&:hover {
 		transform: unset;
 	}
 }
 
+.vc-addon-header {
+	gap: var(--spacing);
+}
+
 .vc-addon-note {
 	height: unset;
+}
+
+.vc-backup-restore-card {
+	@extend .vc-warning-card;
 }
 
 .vc-plugins-grid {
@@ -72,4 +36,132 @@
 	border: none;
 
 	grid-template-columns: 1fr;
+}
+
+.vc-plugins-info-button {
+	@include controls.icon-button;
+
+	margin: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+
+	&::before {
+		display: none;
+	}
+
+	svg {
+		display: initial;
+	}
+}
+
+.vc-plugins-info-card {
+	all: unset;
+
+	.vc-h4 {
+		margin-bottom: 16px;
+	}
+}
+
+.vc-plugins-info-icon {
+	color: var(--card_fg_color);
+
+	&.vc-cog-wheel {
+		--icon: icon("settings");
+	}
+}
+
+.vc-settings-card {
+	margin-bottom: 34px;
+}
+
+.vc-settings-quickActions-card {
+	@include controls.cards-container;
+
+	background-color: transparent;
+	gap: 0;
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.vc-settings-quickActions-img {
+	// The GitHub link doesn't have a distinguishing class name
+	--icon: icon("external-link");
+
+	position: absolute;
+	right: calc(var(--icon-button-size) - var(--icon-size) + 10px);
+	order: 1;
+}
+
+.vc-settings-quickActions-pill {
+	@include controls.card-in-container(
+		$first-selector: ":first-child",
+		$last-selector: ":last-child"
+	);
+	@include controls.card-button-pseudo;
+
+	&:hover {
+		transform: none;
+	}
+
+	// child svg does the job
+	&::after {
+		display: none;
+	}
+}
+
+.vc-settings-tab-bar {
+	margin-block: 0 16px;
+}
+
+.vc-settings-theme-grid {
+	@include controls.cards-container;
+
+	gap: 0;
+}
+
+.vcd-settings-category {
+	margin-bottom: 34px;
+}
+
+.vcd-settings-category-content {
+	gap: 0;
+}
+
+.vcd-settings-category-title {
+	@extend %title-3;
+}
+
+.vc-special-card {
+	// $purple_1
+	background-color: color-mix(in srgb, #dc8add 50%, transparent);
+}
+
+.vc-special-card-flex {
+	align-items: center;
+
+	.vc-donate-button {
+		@include controls.button-accent;
+	}
+
+	.vc-special-image-container {
+		background-color: transparent;
+	}
+
+	.vc-special-title {
+		color: inherit;
+	}
+}
+
+.vc-warning-card {
+	background-color: color-mix(
+		in srgb,
+		var(--warning-bg-color) 10%,
+		transparent
+	);
+	color: var(--warning-color);
 }

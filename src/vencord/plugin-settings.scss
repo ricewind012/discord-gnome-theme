@@ -1,0 +1,86 @@
+@use "controls";
+@use "typography";
+
+.header__49fc1.vc-margin-bottom-8 {
+	box-shadow: var(--elevation-low);
+	padding: 0;
+	padding-inline: calc(
+		var(--spacing) + var(--titlebar-button-spacing) +
+			var(--titlebar-button-size)
+	);
+	margin: 0;
+
+	height: var(--headerbar-height);
+
+	.vc-text-base {
+		@extend %title-3;
+
+		text-align: center;
+	}
+}
+
+.content__49fc1.vc-margin-bottom-16 {
+	text-align: start;
+	margin: 0;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.vc-text-lg {
+		@extend %title-3;
+
+		margin-block: 34px 16px;
+	}
+}
+
+.vc-plugins-setting-content {
+	display: grid;
+	grid-template-columns: 60% 40%;
+
+	.vc-switch-container {
+		margin-left: auto;
+	}
+}
+
+.vc-plugins-setting-section {
+	@include controls.card-in-container(
+		$first-selector: ":first-child",
+		$last-selector: ":last-child"
+	);
+}
+
+.vc-plugins-setting-title {
+	@extend %title-3;
+}
+
+.vc-plugins-setting-description {
+	@extend %caption;
+}
+
+.vc-plugins-settings {
+	@include controls.cards-container;
+
+	gap: 0;
+	padding: 0;
+}
+
+.vc-settings-modal-link-icon {
+	border: none;
+}
+
+.vc-settings-modal-links {
+	gap: var(--spacing);
+
+	& > a {
+		@include controls.icon-button;
+
+		&[aria-label="View more info"] {
+			--icon: icon("info-outline");
+		}
+
+		&[aria-label="View source code"] {
+			--icon: icon("code");
+		}
+	}
+}

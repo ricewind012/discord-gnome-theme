@@ -1,7 +1,10 @@
 @use "controls";
 
 .container__3f21e {
-	@include controls.switch($checked: ".checked__3f2le");
+	@include controls.switch(
+		$checked: ".checked__3f2le",
+		$disabled: ".disabled__3f21e"
+	);
 }
 
 .slider__3f21e {

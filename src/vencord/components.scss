@@ -1,5 +1,6 @@
 @use "controls";
 @use "typography";
+@use "util";
 
 :where(.vc-btn-base) {
 	@include controls.button;
@@ -20,8 +21,14 @@
 .vc-form-switch {
 	margin-block: auto;
 
+	&.vc-form-switch-disabled {
+		opacity: 1;
+	}
+
 	.vc-text-md {
 		@extend %title-3;
+
+		margin-block: 4px;
 	}
 
 	.vc-text-sm {
@@ -42,20 +49,59 @@
 
 	display: flex;
 
-	&:nth-child(-n + 1 of &) {
+	&:where(:nth-child(-n + 1 of &)) {
 		border-radius: var(--card_radius) var(--card_radius) 0 0;
 	}
 
-	&:nth-last-child(-n + 1 of &) {
+	&:where(:nth-last-child(-n + 1 of &)) {
 		border-radius: 0 0 var(--card_radius) var(--card_radius);
 		border: none;
+	}
+
+	&:only-child {
+		border-radius: var(--card_radius);
+	}
+}
+
+.vc-h4,
+.vc-h5 {
+	@extend %title-3;
+}
+
+.vc-icon {
+	@include util.icon;
+
+	$-icons: (
+		folder: "folder",
+		info: "info-outline",
+		log: "info-outline",
+		paintbrush: "edit",
+		restart: "update",
+	);
+
+	@each $k, $v in $-icons {
+		&.vc-#{$k}-icon {
+			--icon: icon(#{$v});
+		}
+	}
+
+	* {
+		display: none;
 	}
 }
 
 .vc-switch-container {
-	@include controls.switch($checked: ".vc-switch-checked");
+	@include controls.switch(
+		$checked: ".vc-switch-checked",
+		$disabled: ".vc-switch-disabled"
+	);
 }
 
 .vc-switch-slider {
 	display: none;
+}
+
+.vc-text-sm {
+	color: var(--window_fg_muted);
+	font-size: var(--document-font-size);
 }

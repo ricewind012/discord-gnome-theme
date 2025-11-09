@@ -51,8 +51,6 @@
 	}
 
 	.vc-h5 {
-		@extend %title-3;
-
 		margin-block: calc(var(--spacing) + 1px);
 	}
 }
@@ -100,6 +98,8 @@
 }
 
 .vcd-screen-picker-settings-button {
+	@include controls.card-button-pseudo;
+
 	all: unset;
 
 	font-weight: normal;
@@ -109,38 +109,4 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-
-	&::before,
-	&::after {
-		content: "";
-
-		position: absolute;
-		right: calc(var(--icon-button-size) - var(--icon-size));
-	}
-
-	&::before {
-		transition: var(--button_transition);
-		border-radius: var(--button_radius);
-
-		width: var(--icon-button-size);
-		height: var(--icon-button-size);
-	}
-
-	&:hover::before {
-		background-color: var(--selected_hover_color);
-	}
-
-	&:active::before {
-		background-color: var(--selected_active_color);
-	}
-
-	&::after {
-		position: absolute;
-		right: calc(var(--icon-button-size) - var(--icon-size));
-		display: block;
-
-		@include util.icon("speaker-3");
-
-		margin: calc(var(--spacing) * 1.5);
-	}
 }

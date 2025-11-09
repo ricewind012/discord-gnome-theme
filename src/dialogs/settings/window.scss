@@ -83,6 +83,9 @@
 // Server settings
 // #2 is for "Invites" tab
 .standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) {
+	// Vencord
+	& > .contentColumn__23e6b > section > h2:first-child,
+	.vcd-settings-title,
 	// Most tabs
 	div:not([class]) > h2[data-text-variant="heading-lg/semibold"],
 	// Boost Perks

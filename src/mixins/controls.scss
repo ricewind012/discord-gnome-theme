@@ -370,7 +370,7 @@ $toast_fg_color: white;
 	}
 }
 
-@mixin switch($checked) {
+@mixin switch($checked, $disabled) {
 	--percentage: 15.25%;
 	--spacing: var(--spacing-05x);
 	--swatch-size: 20px;
@@ -423,6 +423,10 @@ $toast_fg_color: white;
 		&:active {
 			background-color: #2a6ab6;
 		}
+	}
+
+	&#{$disabled} {
+		opacity: var(--disabled-opacity);
 	}
 }
 
@@ -603,6 +607,44 @@ $toast_fg_color: white;
 	}
 }
 
+/// Creates an icon "button" (the rest is still clickable) for a
+/// turned-into-card button.
+@mixin card-button-pseudo {
+	&::before,
+	&::after {
+		content: "";
+
+		position: absolute;
+		right: calc(var(--icon-button-size) - var(--icon-size));
+	}
+
+	&::before {
+		transition: var(--button_transition);
+		border-radius: var(--button_radius);
+
+		width: var(--icon-button-size);
+		height: var(--icon-button-size);
+	}
+
+	&:hover::before {
+		background-color: var(--selected_hover_color);
+	}
+
+	&:active::before {
+		background-color: var(--selected_active_color);
+	}
+
+	&::after {
+		position: absolute;
+		right: calc(var(--icon-button-size) - var(--icon-size));
+		display: block;
+
+		@include util.icon;
+
+		margin: calc(var(--spacing) * 1.5);
+	}
+}
+
 /// Children of a `cards-container`.
 ///
 /// @param {boolean} $activatable
@@ -627,6 +669,12 @@ $toast_fg_color: white;
 	@if $first-selector == ":first-of-type" and $last-selector == ":last-of-type"
 	{
 		&:only-of-type {
+			border-radius: var(--card_radius);
+		}
+	}
+
+	@if $first-selector == ":first-child" and $last-selector == ":last-child" {
+		&:only-child {
 			border-radius: var(--card_radius);
 		}
 	}
