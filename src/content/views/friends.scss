@@ -30,6 +30,7 @@
 	@include controls.cards-container;
 
 	overflow: auto;
+	padding-bottom: 0;
 
 	& > div > div {
 		@include controls.card-in-container(
