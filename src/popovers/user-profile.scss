@@ -34,74 +34,22 @@
 	}
 }
 
-// User panel
-.menuDivider_ce8328 {
-	display: none;
-}
-
-.menuItemIcon_ce8328 {
-	order: 1;
-}
-
-.menuItemInner_ce8328 {
-	padding: 0;
-}
-
-.menuOverlay_ce8328 {
-	border: none;
-	padding: 0;
-
-	// For "Set Status"
-	overflow: visible;
-}
-
-// Move the actions to icons
-@mixin -card-icon($icon) {
-	--icon: icon(#{$icon});
-
-	pointer-events: none;
-
-	&:is(:hover, :active) {
-		background-color: var(--card_bg_color);
-	}
-
-	.menuItemIcon_ce8328 {
-		@include controls.icon-button;
-
-		pointer-events: all;
+// #region User panel
+.expiringStatusMenuItem_ce8328 {
+	.iconContainer_c1e9c4 {
+		display: none;
 	}
 }
 
-.menus_ce8328 {
-	@include controls.cards-container;
+.menuItem_ce8328 {
+	--icon: icon("right");
 
-	gap: 0;
-
-	overflow: hidden;
-
-	button {
-		@include controls.card($activatable: true);
-
-		border-bottom: 1px solid var(--card_shade_color);
-		border-radius: 0;
-		box-shadow: none;
-
-		&[aria-expanded] .menuItemIcon_ce8328 {
-			background-color: currentColor;
-			mask: icon("right");
+	.menuOverlay_ce8328:first-child & {
+		&:first-child {
+			--icon: icon("edit");
 		}
 
-		&[data-list-item-id$="copy-user-id"] {
-			@include -card-icon("edit-copy");
-
-			border: none;
-		}
-
-		&[data-list-item-id$="edit-profile"] {
-			@include -card-icon("edit");
-		}
-
-		&[data-list-item-id$="set-status"] {
+		&:nth-child(2) > .menuItemInner_ce8328 {
 			// awful
 			$colors: (
 				online: "var(--success-color)",
@@ -121,7 +69,65 @@
 			}
 		}
 	}
+
+	.menuOverlay_ce8328:nth-child(2) &:nth-child(2) {
+		--icon: icon("edit-copy");
+	}
+
+	&::after {
+		display: none;
+	}
 }
+
+.menuItemContent_ce8328 {
+	flex-direction: row-reverse;
+}
+
+.menuItemIcon_ce8328 {
+	@include controls.icon-button;
+
+	pointer-events: all;
+}
+
+.menuItemInner_ce8328 {
+	@include controls.card($activatable: true);
+
+	border-bottom: 1px solid var(--card_shade_color);
+	border-radius: 0;
+	box-shadow: none;
+
+	box-sizing: border-box;
+
+	pointer-events: none;
+
+	&:is(:hover, :active) {
+		background-color: var(--card_bg_color);
+	}
+}
+
+.menuItemLabelText_ce8328 {
+	@extend %title-3;
+
+	color: inherit;
+}
+
+.menuOverlay_ce8328 {
+	border: none;
+	padding: 0;
+}
+
+.menus_ce8328 {
+	@include controls.cards-container;
+
+	gap: 0;
+
+	overflow: hidden;
+}
+
+.submenuIconWrapper_ce8328 {
+	display: none;
+}
+// #endregion
 
 .textAreaWithoutAttachmentButton__74017 {
 	border-top-left-radius: var(--radius-xs);
