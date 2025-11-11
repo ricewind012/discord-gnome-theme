@@ -15,6 +15,18 @@
 	@include controls.icon-button;
 
 	color: var(--window_fg_color);
+
+	&.closeButton__6088c {
+		--icon: icon("window-close");
+	}
+
+	&.navNext_b2eddf {
+		--icon: icon("go-next");
+	}
+
+	&.navPrev_b2eddf {
+		--icon: icon("go-previous");
+	}
 }
 
 .carouselModal_d3a6f0 {
