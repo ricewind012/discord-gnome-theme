@@ -146,12 +146,15 @@
 		height: var(--size);
 	}
 }
-
-.outer_c0bea0.user-profile-sidebar {
-	border-radius: 0;
+.outer_c0bea0.user-profile-modal-v2 {
+	border: none;
 
 	.inner_c0bea0 {
 		gap: 0;
+	}
+	
+	.user-profile-sidebar {
+		border-radius-bottom-left : 0;
 	}
 }
 
