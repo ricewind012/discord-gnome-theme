@@ -112,9 +112,9 @@
 	&,
 	&:hover,
 	&:active {
-			&::before,
-			&::after {
-					display: none;
+		&::before,
+		&::after {
+			display: none;
 		}
 	}
 }
