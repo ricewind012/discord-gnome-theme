@@ -93,7 +93,7 @@
 	--icon: icon("external-link");
 
 	position: absolute;
-	right: calc(var(--icon-button-size) - var(--icon-size) + 10px);
+	right: calc(var(--icon-button-size) - var(--icon-size) + 26px);
 	order: 1;
 }
 
@@ -109,8 +109,13 @@
 	}
 
 	// child svg does the job
-	&::after {
-		display: none;
+	&,
+	&:hover,
+	&:active {
+			&::before,
+			&::after {
+					display: none;
+		}
 	}
 }
 
