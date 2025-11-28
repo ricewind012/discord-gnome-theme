@@ -25,8 +25,22 @@
 	height: unset;
 }
 
-.vc-backup-restore-card {
-	@extend .vc-warning-card;
+// Merged with the top card
+.vc-plugin-ui-elements-button {
+	--icon: icon("right");
+
+	@include controls.card-button-pseudo;
+
+	border-radius: 0 0 var(--card_radius) var(--card_radius);
+	margin: 0;
+
+	.vc-text-md {
+		@extend %title-3;
+	}
+}
+
+.vc-plugin-ui-elements-button-arrow {
+	display: none;
 }
 
 .vc-plugins-grid {
@@ -57,12 +71,13 @@
 	}
 }
 
+// Merge with the bottom card. Inconsistent, but ehhhh
 .vc-plugins-info-card {
-	all: unset;
+	border-radius: var(--card_radius) var(--card_radius) 0 0;
+	border-bottom: 1px solid var(--card_shade_color);
+	gap: var(--spacing);
 
-	.vc-h4 {
-		margin-bottom: 16px;
-	}
+	height: unset;
 }
 
 .vc-plugins-info-icon {
@@ -73,27 +88,30 @@
 	}
 }
 
+.vc-plugins-restart-button {
+	margin: 0;
+}
+
 .vc-settings-card {
 	margin-bottom: 34px;
 }
 
 .vc-settings-quickActions-card {
-	@include controls.cards-container;
-
 	background-color: transparent;
 	gap: 0;
 	padding: 0;
 
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .vc-settings-quickActions-img {
 	// The GitHub link doesn't have a distinguishing class name
 	--icon: icon("external-link");
 
-	position: absolute;
-	right: calc(var(--icon-button-size) - var(--icon-size) + 10px);
+	margin-left: auto;
+	margin-right: calc((var(--icon-button-size) - var(--icon-size)) / 2);
 	order: 1;
 }
 
@@ -155,13 +173,4 @@
 	.vc-special-title {
 		color: inherit;
 	}
-}
-
-.vc-warning-card {
-	background-color: color-mix(
-		in srgb,
-		var(--warning-bg-color) 10%,
-		transparent
-	);
-	color: var(--warning-color);
 }

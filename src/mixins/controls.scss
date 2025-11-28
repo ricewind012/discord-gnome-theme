@@ -579,6 +579,7 @@ $toast_fg_color: white;
 
 @mixin card($activatable: false) {
 	background-color: var(--card_bg_color);
+	color: var(--card_fg_color);
 	border: none;
 	border-radius: var(--card_radius);
 	box-shadow: var(--elevation-medium);
@@ -610,12 +611,15 @@ $toast_fg_color: white;
 /// Creates an icon "button" (the rest is still clickable) for a
 /// turned-into-card button.
 @mixin card-button-pseudo {
+	position: relative;
+
 	&::before,
 	&::after {
 		content: "";
 
 		position: absolute;
-		right: calc(var(--icon-button-size) - var(--icon-size));
+		// horizontal card padding
+		right: 16px;
 	}
 
 	&::before {
@@ -635,8 +639,6 @@ $toast_fg_color: white;
 	}
 
 	&::after {
-		position: absolute;
-		right: calc(var(--icon-button-size) - var(--icon-size));
 		display: block;
 
 		@include util.icon;

@@ -14,6 +14,26 @@
 	}
 }
 
+.vc-card-base {
+	@include controls.card;
+
+	border: none;
+
+	&.vc-card-warning {
+		--card_bg_color: color-mix(
+			in srgb,
+			var(--warning-bg-color) 10%,
+			transparent
+		);
+		--card_fg_color: var(--warning-color);
+		--card_shade_color: color-mix(
+			in srgb,
+			var(--warning-bg-color) 36%,
+			transparent
+		);
+	}
+}
+
 .vc-divider {
 	display: none;
 }
@@ -101,7 +121,8 @@
 	display: none;
 }
 
-.vc-text-sm {
+.vc-text-sm,
+.vc-text-xs {
 	color: var(--window_fg_muted);
 	font-size: var(--document-font-size);
 }
