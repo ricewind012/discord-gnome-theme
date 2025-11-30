@@ -4,6 +4,9 @@
 .icons__3f413 {
 	@include util.icon("pan-down");
 
+	// button horizontal spacing
+	margin-inline-end: 10px;
+
 	min-height: unset;
 }
 
@@ -13,6 +16,12 @@
 
 .select__3f413 {
 	@include controls.button;
+
+	min-height: inherit;
+}
+
+.wrapper__3f413 {
+	border: none;
 
 	min-height: 34px;
 }

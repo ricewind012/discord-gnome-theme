@@ -4,9 +4,15 @@
 .container__0f084 {
 	@include controls.text-field;
 
-	gap: 9px;
+	gap: 0;
+	// Move padding to the <input> element because the wrapper can't get focused
+	padding: 0;
 
 	min-height: unset;
+
+	input {
+		padding: 8px 9px;
+	}
 }
 
 // legacy
@@ -21,4 +27,5 @@
 	@include util.icon("loupe-large");
 
 	border: none;
+	margin-inline-start: 9px;
 }
