@@ -23,6 +23,16 @@
 	}
 }
 
+.guildDropdown_f37cb1 {
+	// Move text to .headerChildren
+	--text: attr(aria-label);
+
+	all: unset;
+
+	display: flex;
+	width: 100%;
+}
+
 .header_f37cb1 {
 	background-color: transparent;
 	border: none;
@@ -33,14 +43,14 @@
 }
 
 .guildIconV2Container__85d16,
-.headerChildren_f37cb1,
 .headerEllipseBackdrop_f37cb1,
 .headerEllipseForeground_f37cb1,
-.headerGlass_f37cb1 {
+.headerGlass_f37cb1,
+.inviteButton_f37cb1 {
 	display: none;
 }
 
-.headerButton_f37cb1 {
+.headerChildren_f37cb1 {
 	@include controls.icon-button-with-tooltip(
 		$name: "menu",
 		$direction: "bottom",
@@ -48,12 +58,18 @@
 		$overflow-workaround-direction: "right"
 	);
 
-	color: inherit;
-
 	flex-shrink: 0;
 
 	app-region: no-drag;
 	pointer-events: all;
+
+	&:hover::after {
+		content: var(--text);
+	}
+}
+
+.headerContent_f37cb1 {
+	gap: 0;
 }
 
 .name_f37cb1 {
