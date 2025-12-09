@@ -183,7 +183,7 @@ $toast_fg_color: white;
 	$name,
 	$direction,
 	$size: null,
-	$selector: "> *",
+	$selector: "&:hover > *",
 	$overflow-workaround-direction: null
 ) {
 	@include icon-button($name, $size);
@@ -196,7 +196,7 @@ $toast_fg_color: white;
 
 	anchor-name: $id;
 
-	&:hover#{$selector} {
+	#{$selector} {
 		@include tooltip;
 		@extend %text-normal;
 

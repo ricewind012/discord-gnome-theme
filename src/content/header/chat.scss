@@ -126,7 +126,7 @@
 	@include controls.icon-button-with-tooltip(
 		$name: "loupe-large",
 		$direction: "bottom",
-		$selector: "::after"
+		$selector: "&:hover::after"
 	);
 
 	margin: 0;
@@ -256,7 +256,7 @@
 	@include controls.icon-button-with-tooltip(
 		$name: "info-outline",
 		$direction: "bottom",
-		$selector: "::after"
+		$selector: "&:hover::after"
 	);
 
 	color: var(--headerbar_fg_color);

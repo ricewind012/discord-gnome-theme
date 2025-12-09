@@ -54,7 +54,7 @@
 	@include controls.icon-button-with-tooltip(
 		$name: "menu",
 		$direction: "bottom",
-		$selector: "::after",
+		$selector: "&:hover::after",
 		$overflow-workaround-direction: "right"
 	);
 

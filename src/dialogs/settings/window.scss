@@ -173,7 +173,7 @@
 			@include controls.icon-button-with-tooltip(
 				$name: "left",
 				$direction: "top",
-				$selector: "> .titleText_e29cd7"
+				$selector: "&:hover > .titleText_e29cd7"
 			);
 
 			app-region: no-drag;
