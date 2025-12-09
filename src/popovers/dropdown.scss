@@ -1,18 +1,18 @@
 @use "popover";
 @use "util";
 
-.option__3f413 {
+.option_a16aea {
 	@include popover.entry;
 
 	color: var(--popover_fg_color);
 	font-size: var(--document-font-size);
 }
 
-.popout__3f413 {
+.popout_a16aea {
 	@include popover.container;
 }
 
-.selectedIcon__3f413 {
+.selectedIcon_a16aea {
 	@include util.icon("check-plain");
 
 	* {
