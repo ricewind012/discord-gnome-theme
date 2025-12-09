@@ -209,36 +209,45 @@
 
 // Settings dialog
 @include -gen-icons(
-	"data-tab-id",
+	"data-list-item-id",
 	(
 		// User settings
-		"Accessibility": "body",
-		"Activity Privacy": "screen-privacy4",
-		"Advanced": "wrench-wide",
-		"Appearance": "brush-monitor",
-		"Authorized Apps": "grid-large",
-		"Connections": "phonelink",
-		"Content & Social": "shield-full",
-		"Data & Privacy": "screen-privacy4",
-		"Family Center": "eye-open-negative-filled",
-		"Friend Requests": "contact-new",
-		"Keybinds": "keyboard3",
-		"Language": "translate",
-		"logout": "system-log-out",
-		"My Account": "person",
-		"Notifications": "bell-outline",
-		"Profile Customization": "edit",
-		"Sessions": "smartphone",
-		"Settings Clips": "microphone",
-		"Streamer Mode": "camera-photo",
-		"Text & Images": "chat",
-		"VencordCloud": "cloud-filled",
-		"VencordPlugins": "puzzle-piece",
-		"VencordSettingsSync": "history-undo",
-		"VencordThemes": "larger-brush",
-		"VencordUpdater": "update",
-		"Voice & Video": "microphone",
+		"settings-sidebar___accessibility_sidebar_item": "body",
+		"settings-sidebar___activity_privacy_sidebar_item": "screen-privacy4",
+		"settings-sidebar___advanced_sidebar_item": "wrench-wide",
+		"settings-sidebar___appearance_sidebar_item": "brush-monitor",
+		"settings-sidebar___authorized_apps_sidebar_item": "grid-large",
+		"settings-sidebar___clips_sidebar_item": "microphone",
+		"settings-sidebar___connections_sidebar_item": "phonelink",
+		"settings-sidebar___content_and_social_sidebar_item": "shield-full",
+		"settings-sidebar___data_and_privacy_sidebar_item": "screen-privacy4",
+		"settings-sidebar___developer_options_sidebar_item": "build",
+		"settings-sidebar___experiments_sidebar_item": "test",
+		"settings-sidebar___family_center_sidebar_item": "eye-open-negative-filled",
+		"settings-sidebar___friend_requests_sidebar_item": "contact-new",
+		"settings-sidebar___keybinds_sidebar_item": "keyboard3",
+		"settings-sidebar___language_and_time_sidebar_item": "translate",
+		"settings-sidebar___legacy_notifications_sidebar_item": "bell-outline",
+		"settings-sidebar___logout_sidebar_item": "system-log-out",
+		"settings-sidebar___my_account_sidebar_item": "person",
+		//"profile_panel": "person",
+		"settings-sidebar___sessions_sidebar_item": "smartphone",
+		"settings-sidebar___streamer_mode_sidebar_item": "camera-photo",
+		"settings-sidebar___chat_sidebar_item": "chat",
+		"settings-sidebar___vencord_main": "settings",
+		"settings-sidebar___vencord_cloud": "cloud-filled",
+		"settings-sidebar___vencord_plugins": "puzzle-piece",
+		"settings-sidebar___vencord_themes": "larger-brush",
+		"settings-sidebar___vencord_updater": "update",
+		"settings-sidebar___vencord_backup_restore": "history-undo",
+		"settings-sidebar___voice_and_video_sidebar_item": "microphone"
+	)
+);
 
+// Old settings dialog
+@include -gen-icons(
+	"data-tab-id",
+	(
 		// Server settings
 		"ACCESS": "padlock2",
 		"ANALYTICS": "info-outline",
