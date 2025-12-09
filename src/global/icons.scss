@@ -17,6 +17,11 @@
 	}
 }
 
+// Dynamic attributes
+[aria-label^="Remove answer"] {
+	--icon: icon("window-close");
+}
+
 // Common
 @include -gen-icons(
 	"aria-label",
@@ -73,8 +78,11 @@
 		"Add Friends to DM": "contact-new",
 		// TODO(experiment): remove later ? nitro only
 		"Bookmarks": "user-bookmarks",
-		// VC
+		// TODO: remove when checkpoint is gone
+		"Checkpoint": "emoji-flags",
+		// VC (not a mistake, actually D*scord; "Show Chat" is the same)
 		"Hide chat": "chat",
+		"Hide Chat": "chat",
 		"Hide Member List": "org.gnome.Settings-users",
 		"Hide User Profile": "user-info",
 		// TODO(experiment): remove in the future in favor of notifications
@@ -86,6 +94,7 @@
 		"Notifications": "bell-outline",
 		"Pinned Messages": "pin",
 		"Show chat": "chat",
+		"Show Chat": "chat",
 		"Show Member List": "org.gnome.Settings-users",
 		"Show User Profile": "user-info",
 		"Show User Profile (Unavailable)": "user-info",
@@ -158,7 +167,7 @@
 	"aria-label",
 	(
 		"Open GIF picker": "image-round",
-		"Select emoji": "emoji-people",
+		"Add Emoji": "emoji-people",
 		"Send Message": "paper-plane",
 	)
 );
@@ -193,6 +202,7 @@
 		"Mute": "microphone",
 		"Pop Out": "pip-in",
 		"Stop Watching": "window-close",
+		"Stream Settings": "menu",
 		"Unmute": "mic-none",
 	)
 );
