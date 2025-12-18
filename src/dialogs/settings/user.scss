@@ -1,31 +1,22 @@
 @use "controls";
 @use "typography";
 
-// 1. Connections tab
-// 2. Voice tab
-.connectContainer_c7f964,
-.cameraWrapper_d41d5f {
-	@include controls.cards-container;
-}
+$-themes-container-sel: ".dbd2630aec71879b-stack:has(> ._36dee59b8fa89219-themeSelectionContainer)";
 
 // Nitro themes
 @include controls.radio(
-	".presets__67a11",
+	$-themes-container-sel,
 	"._36dee59b8fa89219-themeSelection",
 	"._36dee59b8fa89219-themeSelection::before",
 	".hack"
 );
 
-.presets__67a11 {
+#{$-themes-container-sel} {
 	background-color: transparent;
 	gap: 0;
 
 	overflow: hidden;
 	flex-direction: column;
-
-	[role="radiogroup"]:has(> &) {
-		box-shadow: none;
-	}
 
 	._36dee59b8fa89219-iconWrapper {
 		display: none;

@@ -1,5 +1,6 @@
 @use "controls";
 @use "typography";
+@use "util";
 
 :root {
 	--chat-header-right-padding: calc(
@@ -24,7 +25,8 @@
 		box-shadow: var(--elevation-low);
 	}
 
-	&:has(._974928fe84ca9647-search:focus-within, ._974928fe84ca9647-icon.clear_fea832) {
+	&:has(._974928fe84ca9647-search:focus-within),
+	&:has(._974928fe84ca9647-icon._974928fe84ca9647-pointer) {
 		height: calc(var(--headerbar-height) * 2);
 	}
 
@@ -75,25 +77,17 @@
 	}
 
 	// Group chat
-	.channelName__754bd {
-		padding: 0;
-		margin: 0;
+	._754bde0f294a39cb-hoverableContainer {
+		@include controls.button;
+		@include util.inactive-dim;
 
-		input {
-			@include controls.text-field;
+		background-color: transparent;
 
-			opacity: 1;
+		-webkit-app-region: no-drag;
 
-			position: relative;
-		}
-	}
-
-	.container__754bd {
-		flex-grow: 0;
-		flex-shrink: 0;
-
-		div._4f07413b2d47139a-input {
-			display: none;
+		// TODO: ? in controls.button
+		._44b0c28be7879b7b-svg {
+			display: initial;
 		}
 	}
 }
@@ -137,12 +131,12 @@
 		@include controls.button-selected;
 	}
 
-	&.clear_fea832 {
+	&._974928fe84ca9647-pointer {
 		--icon: icon("window-close");
 	}
 
 	// tooltip, the theme is english only anyway lol
-	&:not(.clear_fea832):hover::after {
+	&:not(._974928fe84ca9647-pointer):hover::after {
 		content: "Search Messages";
 	}
 }

@@ -92,7 +92,10 @@
 		@include controls.osd-like-button;
 
 		// :has is for reactions
-		&:is([aria-label="Copy Message ID"], :has(> .f84418acfdbdfe54-buttonContent)) {
+		&:is(
+				[aria-label="Copy Message ID"],
+				:has(> .f84418acfdbdfe54-buttonContent)
+			) {
 			&::before {
 				display: none;
 			}
@@ -379,17 +382,6 @@
 		&._6c706db0523bd9a7-removeMosaicItemHoverButton {
 			--icon: icon("window-close");
 		}
-	}
-}
-
-// Listen along
-.invite__4d3fa {
-	@include controls.card;
-
-	.header__4d3fa {
-		@extend %title-3;
-
-		color: inherit;
 	}
 }
 

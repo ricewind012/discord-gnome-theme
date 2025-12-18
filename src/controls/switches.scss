@@ -2,7 +2,7 @@
 
 ._3f21e80f8677ec40-container {
 	@include controls.switch(
-		$checked: ".checked__3f2le",
+		$checked: "._3f21e80f8677ec40-checked",
 		$disabled: "._3f21e80f8677ec40-disabled"
 	);
 }

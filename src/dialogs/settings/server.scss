@@ -7,17 +7,6 @@
 	._04eede68d145ae81-emojiButton {
 		@include controls.icon-button("emoji-people");
 	}
-
-	.emojiWrapper__4cbea {
-		all: unset;
-	}
-
-	.traitContainer__4cbea {
-		background-color: transparent;
-		border: none;
-		gap: var(--spacing);
-		padding: 0;
-	}
 }
 
 // Access -> "How can people join your server?"

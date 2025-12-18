@@ -14,6 +14,22 @@
 	padding: 0 var(--dialog-spacing);
 }
 
+// Activity
+._39ec2e3dfb4fd2f2-card {
+	@include controls.card($activatable: true);
+
+	border: none;
+
+	._39ec2e3dfb4fd2f2-actions {
+		gap: var(--spacing);
+		margin: 0;
+	}
+
+	._39ec2e3dfb4fd2f2-header {
+		display: none;
+	}
+}
+
 ._5be3ef42f92174b2-footer {
 	padding: var(--dialog-spacing);
 	padding-top: 0;
@@ -22,10 +38,6 @@
 .c0bea05627c5dc35-inner {
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
-
-	._39ec2e3dfb4fd2f2-card {
-		@include controls.card($activatable: true);
-	}
 
 	// revert %caption
 	._752971923a1e6683-markup [data-text-variant] {
@@ -129,11 +141,6 @@
 }
 // #endregion
 
-.textAreaWithoutAttachmentButton__74017 {
-	border-top-left-radius: var(--radius-xs);
-	border-bottom-left-radius: var(--radius-xs);
-}
-
 // [role="dialog"] child, so vars go here
 .c0bea05627c5dc35-outer {
 	--dialog-spacing: var(--space-xl);
@@ -229,23 +236,6 @@
 	}
 }
 
-// Activity
-.toolbarContainer__39ec2 {
-	._39ec2e3dfb4fd2f2-actions {
-		gap: var(--spacing);
-		margin: 0;
-	}
-
-	._39ec2e3dfb4fd2f2-card {
-		border: none;
-		padding: 0;
-	}
-
-	._39ec2e3dfb4fd2f2-header {
-		display: none;
-	}
-}
-
 ._63ed30c16c7151f2-userTagUsername {
 	@extend %caption;
 
@@ -263,10 +253,10 @@
 }
 
 // Banner buttons
-._0d1eff984b8fd277-wrapper {
+.da589062f0c96515-wrapper {
 	gap: var(--spacing);
 
-	.banner_fb7f94.button_fb7f94 {
+	.fb7f9476ada049c8-bannerButton {
 		@include controls.icon-button-circular;
 	}
 }

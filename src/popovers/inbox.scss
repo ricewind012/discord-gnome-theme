@@ -1,11 +1,10 @@
 @use "controls";
 @use "dialog";
 
-.controlButton_ab6641 {
-	--icon: icon("funnel");
-}
-
 .ab66419eae73260f-controls {
+	// for the ONLY mana icon button there
+	--icon: icon("funnel");
+
 	gap: var(--spacing);
 
 	[role="button"] {
