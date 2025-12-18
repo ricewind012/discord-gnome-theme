@@ -6,11 +6,11 @@
 	--dialog-spacing: 24px;
 }
 
-.backdrop__78332 {
+._783321f3468cf9e8-backdrop {
 	background-color: var(--backdrop);
 }
 
-.close__49fc1 {
+._49fc18ba07c5025f-close {
 	@include controls.titlebar-button;
 
 	opacity: 1;
@@ -23,14 +23,14 @@
 
 // Do NOT use gap on root, since its parts are not always direct descendants of
 // the dialog container.
-.root__49fc1 {
+._49fc18ba07c5025f-root {
 	@include dialog.container;
 
-	&:has(.close__49fc1) {
+	&:has(._49fc18ba07c5025f-close) {
 		background-color: var(--window_bg_color);
 	}
 
-	.header__49fc1 {
+	._49fc18ba07c5025f-header {
 		padding: 0;
 		padding-top: var(--dialog-spacing);
 
@@ -38,13 +38,13 @@
 		justify-content: center;
 	}
 
-	:where(.content__49fc1) {
+	:where(._49fc18ba07c5025f-content) {
 		text-align: center;
 		padding: var(--dialog-spacing);
 		padding-top: var(--dialog-spacing-x05);
 	}
 
-	.footer__49fc1 {
+	._49fc18ba07c5025f-footer {
 		box-shadow: none;
 		padding: 0;
 		margin: var(--dialog-spacing);

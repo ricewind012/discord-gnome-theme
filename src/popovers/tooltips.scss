@@ -1,7 +1,7 @@
 @use "controls";
 
 // Emoji
-.popoutContent_d5cd2d {
+.d5cd2da5733d0b6e-popoutContent {
 	--custom-message-helpers-popout-padding-width: 0px;
 
 	@include controls.tooltip;
@@ -9,39 +9,39 @@
 	// "Invite-only server"
 	[data-text-variant="text-xs/normal"],
 	// "This emoji is from"
-	.defaultColor__4bd52,
-	.guildTitle_d5cd2d {
+	._4bd5201c86a2042b-defaultColor,
+	.d5cd2da5733d0b6e-guildTitle {
 		color: inherit;
 	}
 
-	.emojiSection_d5cd2d {
+	.d5cd2da5733d0b6e-emojiSection {
 		& > div {
 			align-items: center;
 		}
 	}
 
-	.guildSection_d5cd2d {
+	.d5cd2da5733d0b6e-guildSection {
 		background-color: transparent;
 	}
 
-	.primaryEmoji_d5cd2d {
+	.d5cd2da5733d0b6e-primaryEmoji {
 		margin: 0;
 	}
 }
 
-.reactionTooltip_b49891 {
+.b49891f8a231dbff-reactionTooltip {
 	@include controls.tooltip;
 
-	.reactionTooltipText_b49891 {
+	.b49891f8a231dbff-reactionTooltipText {
 		color: inherit;
 		font: inherit;
 	}
 }
 
-.tooltip_c36707 {
+.c36707910f687430-tooltip {
 	@include controls.tooltip;
 
-	.tooltipContent_c36707 {
+	.c36707910f687430-tooltipContent {
 		padding: 0;
 
 		* {
@@ -49,7 +49,7 @@
 		}
 	}
 
-	.tooltipPointer_c36707 {
+	.c36707910f687430-tooltipPointer {
 		display: none;
 	}
 }

@@ -14,25 +14,25 @@
 }
 
 // #region Server preview
-.back_c5cd6a {
+.c5cd6ac154c385c9-back {
 	margin: 0;
 
 	position: unset;
 }
 
-.button_c5cd6a {
+.c5cd6ac154c385c9-button {
 	@extend %-banner-button;
 }
 
 // revert %caption
-.header_c5cd6a {
+.c5cd6ac154c385c9-header {
 	color: inherit;
 	margin: auto;
 
 	order: -1;
 }
 
-.notice_c5cd6a {
+.c5cd6ac154c385c9-notice {
 	@extend %-banner;
 
 	height: unset;
@@ -41,7 +41,7 @@
 // #endregion
 
 // #region Previous VC
-.button__6e2b9 {
+._6e2b9359c6f84cfd-button {
 	@extend %-banner-button;
 
 	margin-left: auto;
@@ -49,7 +49,7 @@
 	top: 0;
 }
 
-.closeButton__6e2b9 {
+._6e2b9359c6f84cfd-closeButton {
 	@extend %-banner-button;
 
 	// Probably the only way to center the text
@@ -64,11 +64,11 @@
 	}
 }
 
-.closeIcon__6e2b9 {
+._6e2b9359c6f84cfd-closeIcon {
 	display: none;
 }
 
-.notice__6e2b9 {
+._6e2b9359c6f84cfd-notice {
 	--custom-notice-text: var(--window_fg_color);
 
 	@extend %-banner;

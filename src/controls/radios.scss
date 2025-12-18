@@ -2,16 +2,16 @@
 
 // Settings
 @include controls.radio(
-	".container__88a69",
-	".item__88a69",
-	".radioIndicatorGroup__88a69",
-	".radioIndicator__88a69"
+	"._88a69141dd70013a-container",
+	"._88a69141dd70013a-item",
+	"._88a69141dd70013a-radioIndicatorGroup",
+	"._88a69141dd70013a-radioIndicator"
 );
 
 // Poll
 @include controls.radio(
-	".answersContainer__4c520",
-	".answer__4c520",
-	".answerSelectionIcon__4c520",
-	".answerSelectionIcon__4c520 > *"
+	"._4c5209741d147f1b-answersContainer",
+	"._4c5209741d147f1b-answer",
+	"._4c5209741d147f1b-answerSelectionIcon",
+	"._4c5209741d147f1b-answerSelectionIcon > *"
 );

@@ -1,7 +1,7 @@
 @use "controls";
 @use "util";
 
-.icons_a16aea {
+.a16aea1526925c2c-icons {
 	@include util.icon("pan-down");
 
 	// button horizontal spacing
@@ -10,17 +10,17 @@
 	min-height: unset;
 }
 
-.searchInput_a16aea {
+.a16aea1526925c2c-searchInput {
 	all: unset;
 }
 
-.select_a16aea {
+.a16aea1526925c2c-select {
 	@include controls.button;
 
 	min-height: inherit;
 }
 
-.wrapper_a16aea {
+.a16aea1526925c2c-wrapper {
 	border: none;
 
 	min-height: 34px;

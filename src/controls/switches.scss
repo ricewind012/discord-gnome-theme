@@ -1,12 +1,12 @@
 @use "controls";
 
-.container__3f21e {
+._3f21e80f8677ec40-container {
 	@include controls.switch(
 		$checked: ".checked__3f2le",
-		$disabled: ".disabled__3f21e"
+		$disabled: "._3f21e80f8677ec40-disabled"
 	);
 }
 
-.slider__3f21e {
+._3f21e80f8677ec40-slider {
 	display: none;
 }

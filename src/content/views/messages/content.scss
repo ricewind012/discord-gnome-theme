@@ -1,10 +1,10 @@
 @use "typography";
 
-.chat_f75fb0 {
+.f75fb00fb7356cbe-chat {
 	border: none;
 	border-radius: 0;
 
-	&.threadSidebarOpen_f75fb0 {
+	&.f75fb00fb7356cbe-threadSidebarOpen {
 		--chat-header-right-padding: 0px;
 	}
 }
@@ -47,18 +47,18 @@
 	}
 }
 
-.message__5126c {
-	.headerText_c19a55 {
+._5126c0cd07f243a0-message {
+	.c19a557985eb7793-headerText {
 		margin-right: 0rem;
 	}
 
-	&.cozy_c19a55 {
-		.header_c19a55 {
+	&.c19a557985eb7793-cozy {
+		.c19a557985eb7793-header {
 			line-height: var(--chat-markup-line-height);
 		}
 	}
 
-	&.compact_c19a55 {
+	&.c19a557985eb7793-compact {
 		--custom-message-margin-compact-indent: calc(
 			7.6rem + var(--custom-message-meta-space)
 		);
@@ -71,7 +71,7 @@
 			display: unset;
 		}
 
-		.repliedMessage_c19a55 {
+		.c19a557985eb7793-repliedMessage {
 			--custom-message-reply-indent: 0rem;
 			--timestamp-width: 11ch;
 
@@ -82,20 +82,20 @@
 			}
 		}
 
-		.replyBadge_c19a55 {
+		.c19a557985eb7793-replyBadge {
 			margin-bottom: 0.25em;
 
 			width: 1em;
 			height: 1em;
 		}
 
-		.avatar_c19a55 {
+		.c19a557985eb7793-avatar {
 			margin-left: 0;
 
 			top: 0.15em;
 		}
 
-		.timestamp_c19a55 {
+		.c19a557985eb7793-timestamp {
 			font-family: var(--font-code);
 			font-size: var(--monospace-font-size);
 			line-height: var(--chat-markup-line-height);
@@ -104,7 +104,7 @@
 		}
 	}
 
-	.markup__75297 {
+	._752971923a1e6683-markup {
 		font-weight: normal;
 
 		:is(h1, h2, h3) * {
@@ -113,21 +113,21 @@
 	}
 }
 
-.messagesWrapper__36d07 {
+._36d072eab2b2e737-messagesWrapper {
 	--fade-out-gradient-size: calc(var(--spacing) * 4);
 	--gradient-bg: var(--background-base-lower);
 	--gradient-image: linear-gradient(to bottom, transparent, var(--gradient-bg));
 
 	flex-direction: column;
 
-	.chatGradientBase__36d07 {
+	._36d072eab2b2e737-chatGradientBase {
 		transition: none;
 		background: var(--gradient-image);
 
 		height: var(--fade-out-gradient-size);
 	}
 
-	.chatTypingGradientNotAtBottom__36d07 {
+	._36d072eab2b2e737-chatTypingGradientNotAtBottom {
 		background: var(--gradient-bg);
 
 		&::before {
@@ -142,15 +142,15 @@
 		}
 	}
 
-	.scrollerSpacer__36d07 {
+	._36d072eab2b2e737-scrollerSpacer {
 		height: var(--fade-out-gradient-size);
 	}
 }
 
-.timestamp_c19a55 {
+.c19a557985eb7793-timestamp {
 	@extend %caption;
 }
 
-.username_c19a55 {
+.c19a557985eb7793-username {
 	@extend %title-3;
 }

@@ -1,12 +1,12 @@
 @use "controls";
 
-@include controls.slider(".bar_a562c8", ".barFill_a562c8", ".grabber_a562c8");
+@include controls.slider(".a562c840daab72a7-bar", ".a562c840daab72a7-barFill", ".a562c840daab72a7-grabber");
 
-.barFill_a562c8 {
+.a562c840daab72a7-barFill {
 	border: none;
 }
 
-.mark_a562c8 {
+.a562c840daab72a7-mark {
 	flex-direction: column-reverse;
 	height: unset;
 
@@ -16,18 +16,18 @@
 	}
 }
 
-.markDash_a562c8 {
+.a562c840daab72a7-markDash {
 	background-color: currentColor;
 
 	width: 1px;
 	height: 6px;
 }
 
-.markValue_a562c8 {
+.a562c840daab72a7-markValue {
 	margin-top: 2px;
 	margin-bottom: 0;
 }
 
-.slider_a562c8 {
+.a562c840daab72a7-slider {
 	--grabber-size: 20px;
 }

@@ -1,7 +1,7 @@
 @use "controls";
 @use "util";
 
-.container__0f084 {
+._0f0849b61557225e-container {
 	@include controls.text-field;
 
 	gap: 0;
@@ -17,22 +17,22 @@
 }
 
 // legacy
-.input__0ed4f {
+._0ed4fc708cdbac0d-input {
 	@include controls.text-field;
 
 	// + 1px
 	line-height: 1.25;
 }
 
-.icon__0f084 {
-	&:not(.button__0f084) {
+._0f0849b61557225e-icon {
+	&:not(._0f0849b61557225e-button) {
 		@include util.icon("loupe-large");
 
 		border: none;
 		margin-inline-start: 9px;
 	}
 
-	&.button__0f084 {
+	&._0f0849b61557225e-button {
 		@include controls.icon-button("window-close");
 	}
 }

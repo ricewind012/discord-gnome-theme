@@ -3,7 +3,7 @@
 @use "typography";
 @use "util";
 
-.caret_c1e9c4 {
+.c1e9c47c23f12ca3-caret {
 	@include util.icon("right");
 
 	color: var(--window_fg_muted);
@@ -17,36 +17,36 @@
 	}
 }
 
-.customItem_c1e9c4 {
+.c1e9c47c23f12ca3-customItem {
 	padding: 0;
 }
 
-.groupLabel_c1e9c4 {
+.c1e9c47c23f12ca3-groupLabel {
 	@include popover.title;
 
 	margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
 }
 
-.hintContainer_c1e9c4 {
+.c1e9c47c23f12ca3-hintContainer {
 	color: var(--window_fg_muted);
 }
 
-.icon_c1e9c4 {
+.c1e9c47c23f12ca3-icon {
 	display: none;
 }
 
-.iconContainer_c1e9c4 {
+.c1e9c47c23f12ca3-iconContainer {
 	margin-inline: -2px var(--spacing);
 
 	position: unset;
 	order: -1;
 
-	.checkbox__09aca {
+	._09aca73e6d4b214b-checkbox {
 		background-color: transparent;
 		border: none;
 		margin: 2px;
 
-		&.checked__09aca {
+		&._09aca73e6d4b214b-checked {
 			@include util.icon("check-plain");
 		}
 
@@ -55,38 +55,38 @@
 		}
 	}
 
-	.radioIndicator__88a69 {
+	._88a69141dd70013a-radioIndicator {
 		display: block;
 	}
 }
 
-.item_c1e9c4 {
-	@include popover.entry($hover: ".focused_c1e9c4");
+.c1e9c47c23f12ca3-item {
+	@include popover.entry($hover: ".c1e9c47c23f12ca3-focused");
 
-	&:not(.colorDanger_c1e9c4):active {
+	&:not(.c1e9c47c23f12ca3-colorDanger):active {
 		color: var(--popover_fg_color);
 	}
 
 	// sliders
-	&.hideInteraction_c1e9c4 {
+	&.c1e9c47c23f12ca3-hideInteraction {
 		height: unset;
 		min-height: 32px;
 	}
 
-	.labelContainer_c1e9c4 {
+	.c1e9c47c23f12ca3-labelContainer {
 		padding: 0;
 	}
 
-	.slider__65039 {
+	._650391965b2d6ee2-slider {
 		top: 6px;
 	}
 
-	.sliderContainer__65039 {
+	._650391965b2d6ee2-sliderContainer {
 		padding: 0;
 	}
 }
 
-.label_c1e9c4 {
+.c1e9c47c23f12ca3-label {
 	color: inherit;
 	margin-inline-end: var(--spacing);
 
@@ -95,34 +95,34 @@
 	}
 }
 
-.menu_c1e9c4 {
+.c1e9c47c23f12ca3-menu {
 	@include popover.container;
 
 	padding: 0;
 }
 
-.scroller_c1e9c4 {
+.c1e9c47c23f12ca3-scroller {
 	padding: var(--menu_margin);
 
 	overflow: auto;
 }
 
-.separator_c1e9c4 {
+.c1e9c47c23f12ca3-separator {
 	margin: var(--menu_margin) 0;
 }
 
 // Always useless
-.subtext_c1e9c4 {
+.c1e9c47c23f12ca3-subtext {
 	display: none;
 }
 
 // Reactions
-.wrapper_f563df {
+.f563df886a7377be-wrapper {
 	gap: var(--spacing);
 	padding: 0;
 	margin-bottom: var(--menu_margin);
 
-	.button_f563df {
+	.f563df886a7377be-button {
 		@include controls.button;
 
 		width: 32px;
@@ -130,31 +130,31 @@
 }
 
 #set-status-submenu {
-	.expiringStatusMenuItem_ce8328 {
-		.description_ce8328 {
+	.ce832809562bf737-expiringStatusMenuItem {
+		.ce832809562bf737-description {
 			display: none;
 		}
 
-		.label_c1e9c4 {
+		.c1e9c47c23f12ca3-label {
 			margin: 0;
 		}
 
-		.separator_c1e9c4 {
+		.c1e9c47c23f12ca3-separator {
 			display: none;
 		}
 
-		.status_ce8328 {
+		.ce832809562bf737-status {
 			color: inherit;
 		}
 
-		.statusItem_ce8328 {
+		.ce832809562bf737-statusItem {
 			padding: 0;
 		}
 	}
 }
 
 #switch-accounts-submenu {
-	.activeIcon_d40c56 {
+	.d40c56f847687e8d-activeIcon {
 		@include util.icon("check-plain");
 
 		position: absolute;
@@ -165,13 +165,13 @@
 		}
 	}
 
-	.userMenuText_d40c56 {
+	.d40c56f847687e8d-userMenuText {
 		color: inherit;
 		font: inherit;
 	}
 
 	// Avatar
-	.wrapper__44b0c {
+	._44b0c28be7879b7b-wrapper {
 		position: absolute;
 		left: var(--menu_padding);
 	}

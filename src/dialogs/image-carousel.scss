@@ -4,58 +4,58 @@
 	@include controls.icon-button;
 }
 
-.actionButtons_cc1819 {
+.cc1819cb49c2d109-actionButtons {
 	background-color: transparent;
 	border: none;
 	gap: var(--spacing);
 	padding: 0;
 }
 
-.button_aec7ab {
+.aec7abc73c126bc0-button {
 	@include controls.icon-button;
 
 	color: var(--window_fg_color);
 
-	&.closeButton__6088c {
+	&._6088c3df6d10c76d-closeButton {
 		--icon: icon("window-close");
 	}
 
-	&.navNext_b2eddf {
+	&.b2eddf192f54b058-navNext {
 		--icon: icon("go-next");
 	}
 
-	&.navPrev_b2eddf {
+	&.b2eddf192f54b058-navPrev {
 		--icon: icon("go-previous");
 	}
 }
 
-.carouselModal_d3a6f0 {
+.d3a6f0de39ff36e9-carouselModal {
 	background-color: transparent;
 	outline: none;
 	box-shadow: none;
 	margin: var(--space-xxl);
 }
 
-.gallery_d75751 {
+.d75751de2a8ac456-gallery {
 	gap: var(--spacing-05x);
 }
 
-.galleryItem_d75751 {
+.d75751de2a8ac456-galleryItem {
 	border-radius: 0;
 
-	&.first_d75751 {
+	&.d75751de2a8ac456-first {
 		border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 	}
 
-	&.last_d75751 {
+	&.d75751de2a8ac456-last {
 		border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 	}
 }
 
-.mediaArea_e03578 {
+.e035781d3e5b07da-mediaArea {
 	box-shadow: var(--elevation-high);
 }
 
-.topBar__6088c {
+._6088c3df6d10c76d-topBar {
 	gap: var(--spacing);
 }

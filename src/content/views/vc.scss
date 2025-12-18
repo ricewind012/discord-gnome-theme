@@ -15,31 +15,31 @@
 // VC is permanently dark themed, so do the same for titlebar.
 //
 // prettier-ignore
-.base__5e434:has(
-	> .content__5e434
-	> .page__5e434
+._5e434347c823b592-base:has(
+	> ._5e434347c823b592-content
+	> ._5e434347c823b592-page
 	> div
-	> .chat_f75fb0
-	> .wrapper_cb9592
+	> .f75fb00fb7356cbe-chat
+	> .cb9592ad77576717-wrapper
 ) {
-	& > .bar_c38106,
-	.container__9293f{
+	& > .c38106a3f0c3ca76-bar,
+	._9293f6b2fc12398a-container{
 		@extend %-dark-headerbar;
 	}
 }
 
 // popout
-.container__9fa5a .button__201d5 {
+._9fa5a5a4a4e10fc7-container ._201d5e8a3c09670a-button {
 	height: unset;
 }
 
-.colorable_f1ceac {
+.f1ceaca61b18918e-colorable {
 	@include controls.icon-button;
 
 	color: var(--window_fg_color);
 
-	&.disconnect_f1ceac,
-	&.redGlow_f1ceac {
+	&.f1ceaca61b18918e-disconnect,
+	&.f1ceaca61b18918e-redGlow {
 		color: var(--destructive-color);
 	}
 
@@ -51,32 +51,32 @@
 	}
 }
 
-.attachedCaretButtonContainer_f1ceac {
+.f1ceaca61b18918e-attachedCaretButtonContainer {
 	@include controls.split-button(
-		$lhs: ".attachedButton_f1ceac",
-		$rhs: ".attachedCaret_f1ceac"
+		$lhs: ".f1ceaca61b18918e-attachedButton",
+		$rhs: ".f1ceaca61b18918e-attachedCaret"
 	);
 
 	background-color: var(--hover_color);
 }
 
-.edgeControls_bfe55a {
+.bfe55a0aaaf62375-edgeControls {
 	gap: var(--spacing);
 }
 
-.headerBar__49508 {
+._495084e7a0006942-headerBar {
 	@extend %-dark-headerbar;
 
-	.headerBarChildren__49508 {
+	._495084e7a0006942-headerBarChildren {
 		gap: 0;
 	}
 
-	.playingText__49508 {
+	._495084e7a0006942-playingText {
 		color: var(--window_fg_muted);
 	}
 
 	// avatar
-	.wrapper__44b0c {
+	._44b0c28be7879b7b-wrapper {
 		width: var(--icon-size);
 		height: var(--icon-size);
 
@@ -87,10 +87,10 @@
 	}
 }
 
-.headerWrapper_cb9592 {
+.cb9592ad77576717-headerWrapper {
 	margin-inline: -12px;
 
-	.button__9db96 {
+	._9db96f7a92c2b507-button {
 		@include controls.icon-button;
 
 		color: inherit;
@@ -102,40 +102,40 @@
 	}
 }
 
-.overlayContainer__2f4f7 {
-	.experimentOverlayTitle__2f4f7 {
+._2f4f7eb58b61c328-overlayContainer {
+	._2f4f7eb58b61c328-experimentOverlayTitle {
 		color: var(--window_fg_color);
 	}
 
-	.overlayButton__2f4f7 {
+	._2f4f7eb58b61c328-overlayButton {
 		@include controls.icon-button-circular("settings");
 	}
 }
-.leftTrayIcon_cb9592,
-.rightTrayIcon_cb9592:not(.container__2d263) {
+.cb9592ad77576717-leftTrayIcon,
+.cb9592ad77576717-rightTrayIcon:not(._2d263e93fa75ef4c-container) {
 	@include controls.icon-button-circular;
 
 	--accent-color: var(--window_fg_color);
 }
 
 // is it really useful ?
-.streamQualityIndicator__30845 {
+._30845ecfafc292c8-streamQualityIndicator {
 	display: none;
 }
 
 // the *actual* volume button
-.volumeButton__2d263 {
+._2d263e93fa75ef4c-volumeButton {
 	@include controls.icon-button-circular($name: "speaker-3");
 
-	&:has(.controlIcon_f1ceac > :only-child) {
+	&:has(.f1ceaca61b18918e-controlIcon > :only-child) {
 		--icon: icon("speaker-0");
 	}
 }
 
-.wrapper__1405b {
+._1405b3b8e8eb5fd0-wrapper {
 	gap: var(--spacing-2x);
 
-	.buttonSection__1405b {
+	._1405b3b8e8eb5fd0-buttonSection {
 		background-color: transparent;
 		gap: var(--spacing);
 		padding: 0;

@@ -1,14 +1,14 @@
 @use "controls";
 
-.button__74017 {
+._740174f3d6a2c8fe-button {
 	@include controls.icon-button;
 }
 
-.buttonContainer__74017 > :where(button, div) {
+._740174f3d6a2c8fe-buttonContainer > :where(button, div) {
 	margin-left: var(--spacing);
 }
 
-.buttons__74017 {
+._740174f3d6a2c8fe-buttons {
 	gap: 0;
 
 	// align to start for longer text
@@ -18,12 +18,12 @@
 	}
 }
 
-.channelTextArea__74017 {
+._740174f3d6a2c8fe-channelTextArea {
 	--custom-channel-textarea-text-area-height: 34px;
 	background: transparent;
 	border: none;
 
-	.editor__1b31f {
+	._1b31f471f0bb10ab-editor {
 		@include controls.text-field;
 
 		&[contenteditable="false"] {
@@ -31,7 +31,7 @@
 		}
 	}
 
-	.placeholder__1b31f {
+	._1b31f471f0bb10ab-placeholder {
 		line-height: 1.25;
 		padding: 0;
 		margin: 0;
@@ -41,16 +41,16 @@
 	}
 }
 
-.inner__74017 {
+._740174f3d6a2c8fe-inner {
 	padding: 0;
 }
 
-.textArea__74017:not(.textAreaSlate__74017) {
+._740174f3d6a2c8fe-textArea:not(._740174f3d6a2c8fe-textAreaSlate) {
 	@include controls.text-field;
 
 	line-height: 1.25;
 }
 
-.themedBackground__74017 {
+._740174f3d6a2c8fe-themedBackground {
 	background: transparent;
 }

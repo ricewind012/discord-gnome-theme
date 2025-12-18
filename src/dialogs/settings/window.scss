@@ -51,7 +51,7 @@
 	}
 }
 
-.closeButton_c2b141 {
+.c2b141c0f80863fb-closeButton {
 	@include controls.titlebar-button;
 
 	opacity: 1;
@@ -60,9 +60,9 @@
 	flex: 0 0 var(--titlebar-button-size);
 }
 
-.contentColumn__23e6b {
-	& > .defaultColor__4bd52:first-child,
-	.settingsPage_f131e9 > h3 {
+._23e6b439306f125a-contentColumn {
+	& > ._4bd5201c86a2042b-defaultColor:first-child,
+	.f131e93f07e2fe18-settingsPage > h3 {
 		@extend %-center-text;
 		@extend %-tab-header;
 		@extend %title-3;
@@ -82,26 +82,26 @@
 
 // Server settings
 // #2 is for "Invites" tab
-.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) {
+._23e6b439306f125a-standardSidebarView :where(.d125d22cdfd32cfe-scrollerBase, ._99f8cc7ad4790ce9-scrollerBase) {
 	// Vencord
-	& > .contentColumn__23e6b > section > h2:first-child,
+	& > ._23e6b439306f125a-contentColumn > section > h2:first-child,
 	.vcd-settings-title,
 	// Most tabs
 	div:not([class]) > h2[data-text-variant="heading-lg/semibold"],
 	// Boost Perks
 	#boost_perks-tab > main > h2,
 	// Emoji/Bans
-	:is(.emojiSettings_e7d73e, .container__4b8d8) .sectionTitle__7bffb > h2,
+	:is(.e7d73e5106887df1-emojiSettings, ._4b8d892e5bcb9bd7-container) .sectionTitle__7bffb > h2,
 	// Members
-	.header_fa2640 > h2,
+	.fa2640ef99d88f6e-header > h2,
 	// Roles
 	[aria-hidden="true"][style="height: 60px;"] + div > h2,
 	// Invites
-	.header__1de14,
+	._1de147913cbd4329-header,
 	// Access
 	#access-tab > div > h2,
 	// Integrations
-	.breadcrumbs_befe67 > h2,
+	.befe6742ee31e9d2-breadcrumbs > h2,
 	// Server Boost Status
 	#guild_premium-tab > h2,
 	// Server Templates
@@ -114,21 +114,21 @@
 	}
 
 	// "Invites" tab
-	.header__1de14 {
+	._1de147913cbd4329-header {
 		padding: 0;
 	}
 }
 
-.keybind_c2b141 {
+.c2b141c0f80863fb-keybind {
 	display: none;
 }
 
-.layer__960e4 {
+._960e4207cea8323e-layer {
 	opacity: 1;
 	background-color: transparent;
 }
 
-.layers__960e4 {
+._960e4207cea8323e-layers {
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
 	--weird-offset: 1px;
 
@@ -136,7 +136,7 @@
 		--weird-offset: 2px;
 	}
 
-	.systemBar_c38106.show_c38106 + div &::before {
+	.c38106a3f0c3ca76-systemBar.c38106a3f0c3ca76-show + div &::before {
 		content: "";
 
 		position: fixed;
@@ -149,11 +149,11 @@
 
 // Server settings "Roles" tab sidebar
 // No idea how this got broken, 0 behavior change, GENIUS layout, D*scord
-.page__91dc3 {
+._91dc3971e82843c1-page {
 	position: absolute;
 
 	// Single role view headerbar
-	.titleContainer_e29cd7 {
+	.e29cd7b93c4f1266-titleContainer {
 		@extend %-tab-header;
 
 		box-shadow: none;
@@ -163,17 +163,17 @@
 
 		justify-content: start;
 
-		.addRole_e29cd7 {
+		.e29cd7b93c4f1266-addRole {
 			@include controls.icon-button("plus");
 
 			app-region: no-drag;
 		}
 
-		.title_e29cd7 {
+		.e29cd7b93c4f1266-title {
 			@include controls.icon-button-with-tooltip(
 				$name: "left",
 				$direction: "top",
-				$selector: "&:hover > .titleText_e29cd7"
+				$selector: "&:hover > .e29cd7b93c4f1266-titleText"
 			);
 
 			app-region: no-drag;
@@ -181,7 +181,7 @@
 	}
 }
 
-.sidebarRegion__23e6b {
+._23e6b439306f125a-sidebarRegion {
 	[role="tablist"][aria-orientation="vertical"]::before {
 		content: attr(aria-label);
 
@@ -203,7 +203,7 @@
 	}
 }
 
-.standardSidebarView__23e6b {
+._23e6b439306f125a-standardSidebarView {
 	box-shadow: var(--elevation-high);
 	border: 1px solid var(--window_outline_color);
 	border-radius: var(--window_radius);
@@ -214,13 +214,13 @@
 	inset: var(--p);
 }
 
-.tools__23e6b {
+._23e6b439306f125a-tools {
 	position: fixed;
 	top: calc(var(--p) + var(--titlebar-button-spacing));
 	right: calc(var(--p) + var(--titlebar-button-spacing));
 }
 
-.toolsContainer__23e6b {
+._23e6b439306f125a-toolsContainer {
 	position: absolute;
 	z-index: 999;
 }

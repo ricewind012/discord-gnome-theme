@@ -1,11 +1,11 @@
 @use "controls";
 
-.rightTrayIcon__2cdb8 {
+._2cdb89539fd956c8-rightTrayIcon {
 	@include controls.icon-button-circular;
 
 	margin-inline-start: var(--spacing);
 
-	&.viewers_d6b206 {
+	&.d6b206a637c8e59a-viewers {
 		--icon: icon("eye-open-negative-filled");
 	}
 }

@@ -1,11 +1,11 @@
 @use "controls";
 @use "util";
 
-.actions__9a9f9 {
+._9a9f981d3524e20f-actions {
 	gap: var(--spacing);
 }
 
-.container__9a9f9 {
+._9a9f981d3524e20f-container {
 	@include controls.banner;
 	@include util.inactive-dim;
 
@@ -15,8 +15,8 @@
 }
 
 // TODO: remove when server settings uses new modal
-.noticeRegion__23e6b,
-.notice__6131a {
+._23e6b439306f125a-noticeRegion,
+._6131ab3dbe0affed-notice {
 	padding: 0;
 
 	position: relative;
@@ -29,7 +29,7 @@
 	transform: translateY(0%) translateZ(0px);
 }
 
-.shrinkingContainer__9a9f9 {
+._9a9f981d3524e20f-shrinkingContainer {
 	text-align: center;
 	width: 100%;
 }

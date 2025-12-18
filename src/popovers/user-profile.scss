@@ -9,47 +9,47 @@
 	border-radius: 999px;
 }
 
-.body__5be3e {
+._5be3ef42f92174b2-body {
 	gap: var(--dialog-spacing-x05);
 	padding: 0 var(--dialog-spacing);
 }
 
-.footer__5be3e {
+._5be3ef42f92174b2-footer {
 	padding: var(--dialog-spacing);
 	padding-top: 0;
 }
 
-.inner_c0bea0 {
+.c0bea05627c5dc35-inner {
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
 
-	.card__39ec2 {
+	._39ec2e3dfb4fd2f2-card {
 		@include controls.card($activatable: true);
 	}
 
 	// revert %caption
-	.markup__75297 [data-text-variant] {
+	._752971923a1e6683-markup [data-text-variant] {
 		--window_fg_muted: currentColor;
 		@extend %text-normal;
 	}
 }
 
 // #region User panel
-.expiringStatusMenuItem_ce8328 {
-	.iconContainer_c1e9c4 {
+.ce832809562bf737-expiringStatusMenuItem {
+	.c1e9c47c23f12ca3-iconContainer {
 		display: none;
 	}
 }
 
-.menuItem_ce8328 {
+.ce832809562bf737-menuItem {
 	--icon: icon("right");
 
-	.menuOverlay_ce8328:first-child & {
+	.ce832809562bf737-menuOverlay:first-child & {
 		&:first-child {
 			--icon: icon("edit");
 		}
 
-		&:nth-child(2) > .menuItemInner_ce8328 {
+		&:nth-child(2) > .ce832809562bf737-menuItemInner {
 			// awful
 			$colors: (
 				online: "var(--success-color)",
@@ -70,7 +70,7 @@
 		}
 	}
 
-	.menuOverlay_ce8328:nth-child(2) &:nth-child(2) {
+	.ce832809562bf737-menuOverlay:nth-child(2) &:nth-child(2) {
 		--icon: icon("edit-copy");
 	}
 
@@ -79,17 +79,17 @@
 	}
 }
 
-.menuItemContent_ce8328 {
+.ce832809562bf737-menuItemContent {
 	flex-direction: row-reverse;
 }
 
-.menuItemIcon_ce8328 {
+.ce832809562bf737-menuItemIcon {
 	@include controls.icon-button;
 
 	pointer-events: all;
 }
 
-.menuItemInner_ce8328 {
+.ce832809562bf737-menuItemInner {
 	@include controls.card($activatable: true);
 
 	border-bottom: 1px solid var(--card_shade_color);
@@ -105,18 +105,18 @@
 	}
 }
 
-.menuItemLabelText_ce8328 {
+.ce832809562bf737-menuItemLabelText {
 	@extend %title-3;
 
 	color: inherit;
 }
 
-.menuOverlay_ce8328 {
+.ce832809562bf737-menuOverlay {
 	border: none;
 	padding: 0;
 }
 
-.menus_ce8328 {
+.ce832809562bf737-menus {
 	@include controls.cards-container;
 
 	gap: 0;
@@ -124,7 +124,7 @@
 	overflow: hidden;
 }
 
-.submenuIconWrapper_ce8328 {
+.ce832809562bf737-submenuIconWrapper {
 	display: none;
 }
 // #endregion
@@ -135,7 +135,7 @@
 }
 
 // [role="dialog"] child, so vars go here
-.outer_c0bea0 {
+.c0bea05627c5dc35-outer {
 	--dialog-spacing: var(--space-xl);
 	--role-button-size: 24px;
 	--role-spacing: 2px;
@@ -144,7 +144,7 @@
 	border-radius: var(--window_radius);
 }
 
-.role_dfa8b6 {
+.dfa8b6b94cddb191-role {
 	background: transparent;
 	border: none;
 	border-radius: 999px;
@@ -165,7 +165,7 @@
 	}
 }
 
-.roleCircle_dfa8b6 {
+.dfa8b6b94cddb191-roleCircle {
 	--icon: icon("window-close");
 
 	border-radius: 999px;
@@ -176,7 +176,7 @@
 	width: var(--role-button-size);
 	height: var(--role-button-size);
 
-	.roleRemoveButtonCanRemove_dfa8b6 &::before {
+	.dfa8b6b94cddb191-roleRemoveButtonCanRemove &::before {
 		content: "";
 
 		position: absolute;
@@ -201,59 +201,59 @@
 	}
 }
 
-.roleName_dfa8b6 {
+.dfa8b6b94cddb191-roleName {
 	margin: 0;
 
 	z-index: 1;
 }
 
-.roleRemoveIcon_dfa8b6 {
+.dfa8b6b94cddb191-roleRemoveIcon {
 	display: none;
 }
 
 // Roles container
-.root_fccfdf {
+.fccfdf3cfff21921-root {
 	gap: var(--role-spacing);
 
 	// Add role button
-	.button__7d7f7 {
+	._7d7f78b99d0a7581-button {
 		@include -role-button("plus");
 	}
 
-	.collapseButton_fccfdf {
+	.fccfdf3cfff21921-collapseButton {
 		@include -role-button("up");
 	}
 
-	.expandButton_fccfdf {
+	.fccfdf3cfff21921-expandButton {
 		@include -role-button("down");
 	}
 }
 
 // Activity
 .toolbarContainer__39ec2 {
-	.actions__39ec2 {
+	._39ec2e3dfb4fd2f2-actions {
 		gap: var(--spacing);
 		margin: 0;
 	}
 
-	.card__39ec2 {
+	._39ec2e3dfb4fd2f2-card {
 		border: none;
 		padding: 0;
 	}
 
-	.header__39ec2 {
+	._39ec2e3dfb4fd2f2-header {
 		display: none;
 	}
 }
 
-.userTagUsername__63ed3 {
+._63ed30c16c7151f2-userTagUsername {
 	@extend %caption;
 
 	// Align with src/global/text.scss
 	line-height: 1.25;
 }
 
-.viewFullBio_f5f93a {
+.f5f93a5c4078d63c-viewFullBio {
 	@extend %link;
 
 	// partially revert %caption
@@ -263,7 +263,7 @@
 }
 
 // Banner buttons
-.wrapper__4106a {
+._0d1eff984b8fd277-wrapper {
 	gap: var(--spacing);
 
 	.banner_fb7f94.button_fb7f94 {

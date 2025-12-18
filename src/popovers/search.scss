@@ -3,7 +3,7 @@
 @use "typography";
 @use "util";
 
-.container__55c99:not(:empty) {
+._55c999adcf6db265-container:not(:empty) {
 	--search-popout-option-non-text-color: currentColor;
 
 	@include popover.container;
@@ -15,7 +15,7 @@
 	flex-direction: column;
 }
 
-.header__56fec {
+._56fec8e8b8048fe0-header {
 	@include popover.title;
 
 	letter-spacing: 0;
@@ -25,7 +25,7 @@
 	pointer-events: none;
 }
 
-.option__56fec {
+._56fec8e8b8048fe0-option {
 	@include popover.entry($hover: ":is(:hover, [aria-selected='true'])");
 
 	font-size: var(--document-font-size);
@@ -33,16 +33,16 @@
 	box-shadow: none;
 	margin: 0;
 
-	&:is(.user__56fec, :has(strong)) .filter__56fec {
+	&:is(._56fec8e8b8048fe0-user, :has(strong)) ._56fec8e8b8048fe0-filter {
 		display: none;
 	}
 
-	.resultChannel__56fec {
+	._56fec8e8b8048fe0-resultChannel {
 		width: 100%;
 	}
 
 	strong,
-	.displayedNick__56fec {
+	._56fec8e8b8048fe0-displayedNick {
 		width: 50%;
 	}
 
@@ -52,25 +52,25 @@
 		margin-left: calc(popover.$icon-size + var(--spacing));
 	}
 
-	.answer__56fec {
+	._56fec8e8b8048fe0-answer {
 		color: var(--popover_fg_color);
 		font-weight: normal;
 	}
 
-	.displayedNick__56fec {
+	._56fec8e8b8048fe0-displayedNick {
 		font-weight: normal;
 		margin: 0 var(--spacing);
 	}
 
-	.displayUsername__56fec {
+	._56fec8e8b8048fe0-displayUsername {
 		font-weight: normal;
 	}
 
-	.filter__56fec {
+	._56fec8e8b8048fe0-filter {
 		font-weight: normal;
 	}
 
-	.searchResultChannelCategory__56fec {
+	._56fec8e8b8048fe0-searchResultChannelCategory {
 		@extend %text-normal;
 
 		opacity: 1;
@@ -80,7 +80,7 @@
 		top: 0;
 	}
 
-	.searchResultChannelIcon__56fec {
+	._56fec8e8b8048fe0-searchResultChannelIcon {
 		@include util.icon("lang-include");
 
 		opacity: 1;
@@ -97,13 +97,13 @@
 	}
 }
 
-.plusIcon__56fec,
-.queryContainer__55c99,
-.searchLearnMore__56fec {
+._56fec8e8b8048fe0-plusIcon,
+._55c999adcf6db265-queryContainer,
+._56fec8e8b8048fe0-searchLearnMore {
 	display: none;
 }
 
-.resultsGroup__56fec {
+._56fec8e8b8048fe0-resultsGroup {
 	padding: 0;
 	margin: 0;
 
@@ -114,7 +114,7 @@
 	}
 }
 
-.searchClearHistory__56fec {
+._56fec8e8b8048fe0-searchClearHistory {
 	@include controls.icon-button("user-trash", "32px");
 
 	border-radius: 999px;

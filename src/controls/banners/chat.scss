@@ -1,17 +1,17 @@
 @use "controls";
 
 // "This channel is not on your channel list."
-.chatHeaderBar_dc83f5 {
+.dc83f5490ab160ad-chatHeaderBar {
 	@include controls.banner;
 
 	border: none;
 }
 
-.chatHeaderBarText_dc83f5 {
+.dc83f5490ab160ad-chatHeaderBarText {
 	text-align: center;
 }
 
-.barBase__0f481 {
+._0f481cbbd7530492-barBase {
 	@include controls.banner;
 
 	border: none;
@@ -25,11 +25,11 @@
 	min-height: unset;
 }
 
-.barButtonAlt__0f481 {
+._0f481cbbd7530492-barButtonAlt {
 	@include controls.button;
 }
 
-.barButtonBase__0f481 {
+._0f481cbbd7530492-barButtonBase {
 	text-align: center;
 	padding: 0 var(--spacing);
 }

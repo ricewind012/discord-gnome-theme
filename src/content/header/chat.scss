@@ -7,11 +7,11 @@
 	);
 }
 
-.appAsidePanelWrapper_a3002d:has(> [data-app-right-panel="true"]) {
+.a3002d7de5be5280-appAsidePanelWrapper:has(> [data-app-right-panel="true"]) {
 	--chat-header-right-padding: 0px;
 }
 
-.container__9293f {
+._9293f6b2fc12398a-container {
 	color: var(--headerbar_fg_color);
 	border: none;
 	padding: 0;
@@ -19,12 +19,12 @@
 	overflow: hidden;
 	height: unset;
 
-	&.themed__9293f {
+	&._9293f6b2fc12398a-themed {
 		background-color: var(--window_bg_color);
 		box-shadow: var(--elevation-low);
 	}
 
-	&:has(.search__97492:focus-within, .icon__97492.clear_fea832) {
+	&:has(._974928fe84ca9647-search:focus-within, ._974928fe84ca9647-icon.clear_fea832) {
 		height: calc(var(--headerbar-height) * 2);
 	}
 
@@ -33,7 +33,7 @@
 		margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
 
-	.avatar_f75fb0 {
+	.f75fb00fb7356cbe-avatar {
 		margin-left: 0;
 		margin-right: var(--spacing);
 	}
@@ -44,7 +44,7 @@
 	}
 }
 
-.children__9293f {
+._9293f6b2fc12398a-children {
 	padding: var(--spacing);
 
 	min-height: var(--headerbar-height);
@@ -53,24 +53,24 @@
 
 	app-region: drag;
 
-	&:not(:has(.avatar_f75fb0)) {
+	&:not(:has(.f75fb00fb7356cbe-avatar)) {
 		flex-direction: column;
 	}
 
-	&:has(> .topic__6ec1a) {
+	&:has(> ._6ec1a06139ec3b27-topic) {
 		margin-right: var(--icon-button-size);
 	}
 
 	// 6. Channel news
 	// 7. Thread child channel
-	.akaBadge__488b1,
-	.caret__9293f,
-	.dot__9293f,
-	.nicknames__488b1,
+	._488b1a4248d1b790-akaBadge,
+	._9293f6b2fc12398a-caret,
+	._9293f6b2fc12398a-dot,
+	._488b1a4248d1b790-nicknames,
 	& > :empty,
-	& > .followButton_f75fb0,
-	.iconWrapper__9293f,
-	&:has(> .caret__9293f) [role="button"] {
+	& > .f75fb00fb7356cbe-followButton,
+	._9293f6b2fc12398a-iconWrapper,
+	&:has(> ._9293f6b2fc12398a-caret) [role="button"] {
 		display: none;
 	}
 
@@ -92,7 +92,7 @@
 		flex-grow: 0;
 		flex-shrink: 0;
 
-		div.input__4f074 {
+		div._4f07413b2d47139a-input {
 			display: none;
 		}
 	}
@@ -100,15 +100,15 @@
 
 // Titlebar notifications button
 // TODO: clean up after the dogshit notifs/inbox experiment is over
-.clickable_c99c29,
-.clickableContainer_ede711 {
+.c99c29809d200a61-clickable,
+.ede7113dd6ec1b66-clickableContainer {
 	@include controls.icon-button;
 
 	color: inherit;
 	margin: 0;
 
 	// A little dot instead of :has()
-	& > .numberBadge__2b1f5 {
+	& > ._2b1f52e43a8f1c02-numberBadge {
 		--size: 8px;
 
 		display: flex;
@@ -122,7 +122,7 @@
 	}
 }
 
-.icon__97492 {
+._974928fe84ca9647-icon {
 	@include controls.icon-button-with-tooltip(
 		$name: "loupe-large",
 		$direction: "bottom",
@@ -133,7 +133,7 @@
 
 	cursor: pointer;
 
-	.search__97492.open__97492 & {
+	._974928fe84ca9647-search._974928fe84ca9647-open & {
 		@include controls.button-selected;
 	}
 
@@ -147,13 +147,13 @@
 	}
 }
 
-.iconWrapper__9293f {
+._9293f6b2fc12398a-iconWrapper {
 	@include controls.icon-button;
 
 	color: inherit;
 }
 
-.search__49676 {
+._496769951eb140fe-search {
 	margin: 0 var(--spacing);
 
 	position: absolute;
@@ -181,8 +181,8 @@
 		margin-block: 1px -1px;
 	}
 
-	.searchAnswer_bd8186,
-	.searchFilter_bd8186 {
+	.bd818628221af7aa-searchAnswer,
+	.bd818628221af7aa-searchFilter {
 		@extend %text-normal;
 
 		background-color: color-mix(in srgb, currentColor 20%, transparent);
@@ -194,7 +194,7 @@
 	}
 }
 
-.searchBar__97492 {
+._974928fe84ca9647-searchBar {
 	background: transparent;
 	color: inherit;
 	padding: 0;
@@ -208,16 +208,16 @@
 	transition: var(--backdrop_transition);
 }
 
-.title__9293f {
+._9293f6b2fc12398a-title {
 	color: inherit;
 }
 
-.titleWrapper__9293f {
+._9293f6b2fc12398a-titleWrapper {
 	padding: 0;
 	margin: 0;
 
 	// Home title
-	.container__9293f[role="navigation"] & {
+	._9293f6b2fc12398a-container[role="navigation"] & {
 		display: none;
 	}
 
@@ -228,7 +228,7 @@
 	}
 }
 
-.topic__6ec1a {
+._6ec1a06139ec3b27-topic {
 	@extend %caption;
 
 	line-height: 16px;
@@ -246,13 +246,13 @@
 	}
 
 	// channel icon, needed to not expand by 1px
-	.icon_b75563 {
+	.b7556324b2bdb82b-icon {
 		margin-bottom: 0.1rem;
 	}
 }
 
 // Channel description button
-.topicClickTarget__6ec1a {
+._6ec1a06139ec3b27-topicClickTarget {
 	@include controls.icon-button-with-tooltip(
 		$name: "info-outline",
 		$direction: "bottom",
@@ -270,12 +270,12 @@
 	pointer-events: all;
 
 	// Visible banner
-	.content__5e434:nth-child(3) & {
+	._5e434347c823b592-content:nth-child(3) & {
 		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
 }
 
-.toolbar__9293f {
+._9293f6b2fc12398a-toolbar {
 	gap: var(--spacing);
 	padding: var(--spacing);
 
@@ -284,12 +284,12 @@
 	}
 
 	// vc
-	.liveQualityIndicator__30845 {
+	._30845ecfafc292c8-liveQualityIndicator {
 		margin-bottom: 0;
 	}
 
 	// vc
-	.qualityIndicator__30845 {
+	._30845ecfafc292c8-qualityIndicator {
 		width: unset;
 		height: unset;
 
@@ -303,15 +303,15 @@
 	}
 }
 
-.transparent__9293f {
-	.children__9293f,
-	.toolbar__9293f,
-	.upperContainer__9293f {
+._9293f6b2fc12398a-transparent {
+	._9293f6b2fc12398a-children,
+	._9293f6b2fc12398a-toolbar,
+	._9293f6b2fc12398a-upperContainer {
 		opacity: 1;
 	}
 }
 
-.upperContainer__9293f {
+._9293f6b2fc12398a-upperContainer {
 	--window_fg_color: var(--headerbar_fg_color);
 	--window_fg_muted: color-mix(
 		in srgb,

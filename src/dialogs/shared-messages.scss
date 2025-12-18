@@ -2,11 +2,11 @@
 @use "dialog";
 @use "typography";
 
-.header_e8b59c {
+.e8b59c4b335dd2fc-header {
 	@include dialog.header;
 }
 
-.messagesPopout_e8b59c {
+.e8b59c4b335dd2fc-messagesPopout {
 	padding: 0;
 
 	[role="list"] {
@@ -28,14 +28,14 @@
 		}
 	}
 
-	.messageContainer__95796 {
+	._957962c2bd49881b-messageContainer {
 		background-color: transparent;
 		border: none;
 		padding: 8px 0;
 		margin: 0;
 	}
 
-	.jumpButton_ed0c8c {
+	.ed0c8cb44ff95773-jumpButton {
 		@include controls.button;
 
 		box-shadow: none;
@@ -51,11 +51,11 @@
 	}
 }
 
-.messagesPopoutWrap_e8b59c {
+.e8b59c4b335dd2fc-messagesPopoutWrap {
 	@include dialog.container;
 }
 
-.titleContainer_e8b59c {
+.e8b59c4b335dd2fc-titleContainer {
 	justify-content: center;
 	height: var(--headerbar-height);
 

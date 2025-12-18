@@ -1,7 +1,7 @@
 @use "controls";
 @use "typography";
 
-.privateChannels_e6b769 {
+.e6b7699ce8339e1c-privateChannels {
 	&::before {
 		content: attr(aria-label);
 
@@ -22,11 +22,11 @@
 	}
 }
 
-.privateChannelsHeaderContainer__99e7c {
+._99e7cad8d4c55236-privateChannelsHeaderContainer {
 	display: none;
 }
 
-.searchBar_e6b769 {
+.e6b7699ce8339e1c-searchBar {
 	border: none;
 	box-shadow: var(--elevation-low);
 	padding: var(--spacing);

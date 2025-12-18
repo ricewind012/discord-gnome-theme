@@ -25,26 +25,26 @@ $destructive_button_active_color: color-mix(
 	}
 }
 
-.button__201d5 {
+._201d5e8a3c09670a-button {
 	@include controls.button;
 
 	&:disabled {
 		opacity: var(--dim-level-opacity);
 	}
 
-	&:where(.colorBrand__201d5) {
+	&:where(._201d5e8a3c09670a-colorBrand) {
 		@include controls.button-accent;
 	}
 
-	&:where(.colorRed__201d5) {
+	&:where(._201d5e8a3c09670a-colorRed) {
 		@include -destructive;
 	}
 
-	&:where(.colorGreen__201d5) {
+	&:where(._201d5e8a3c09670a-colorGreen) {
 		color: var(--success-color);
 	}
 
-	&:where(.lookBlank__201d5) {
+	&:where(._201d5e8a3c09670a-lookBlank) {
 		background-color: transparent;
 		padding: 0;
 	}
@@ -55,25 +55,25 @@ $destructive_button_active_color: color-mix(
 }
 
 // new
-.button_a22cb0 {
+.a22cb0c66246f5d3-button {
 	@include controls.button;
 
 	max-height: unset;
 
-	&:where(.primary_a22cb0) {
+	&:where(.a22cb0c66246f5d3-primary) {
 		@include controls.button-accent;
 	}
 
-	&:where(.critical-primary_a22cb0, .critical-secondary_a22cb0) {
+	&:where(.a22cb0c66246f5d3-critical-primary, .a22cb0c66246f5d3-critical-secondary) {
 		@include -destructive;
 	}
 
-	&:where(.icon-only_a22cb0) {
+	&:where(.a22cb0c66246f5d3-icon-only) {
 		@include controls.icon-button;
 	}
 }
 
-.buttonChildrenWrapper_a22cb0 {
+.a22cb0c66246f5d3-buttonChildrenWrapper {
 	all: unset;
 
 	// undo %caption

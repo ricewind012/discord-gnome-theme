@@ -25,16 +25,16 @@
 	gap: var(--spacing);
 
 	@include controls.slider(
-		".mediaBarWrapper_b26b79",
-		".mediaBarProgress_b26b79",
-		".mediaBarGrabber_b26b79"
+		".b26b790fd1005393-mediaBarWrapper",
+		".b26b790fd1005393-mediaBarProgress",
+		".b26b790fd1005393-mediaBarGrabber"
 	);
 
-	.durationTimeWrapper_cf09d8 {
+	.cf09d85aafe7e124-durationTimeWrapper {
 		margin: 0;
 	}
 
-	.fakeEdges_b26b79 {
+	.b26b790fd1005393-fakeEdges {
 		border-radius: 999px;
 
 		&::before,
@@ -43,21 +43,21 @@
 		}
 	}
 
-	.mediaBarGrabber_b26b79 {
+	.b26b790fd1005393-mediaBarGrabber {
 		margin-top: 0;
 
 		left: 0;
 	}
 
-	.mediaBarWrapper_b26b79 {
+	.b26b790fd1005393-mediaBarWrapper {
 		box-shadow: none;
 
-		.buffer_b26b79 {
+		.b26b790fd1005393-buffer {
 			background-color: color-mix(in srgb, currentColor 30%, transparent);
 		}
 	}
 
-	.videoButton_cf09d8 {
+	.cf09d85aafe7e124-videoButton {
 		@include -media-button($osd, $name: "play");
 
 		margin: 0;
@@ -69,35 +69,35 @@
 		}
 	}
 
-	.volumeButton__2d263.button__201d5 {
+	._2d263e93fa75ef4c-volumeButton._201d5e8a3c09670a-button {
 		@include -media-button($osd, $name: "speaker-3");
 
 		color: inherit;
 
 		// No other way to identify state as of writing this
-		&:has(.controlIcon_cf09d8 > [d$="1.4Z"]) {
+		&:has(.cf09d85aafe7e124-controlIcon > [d$="1.4Z"]) {
 			--icon: icon("speaker-0");
 		}
 	}
 }
 
 // D*scord put an !important here, el mao
-.visual-refresh .buttonsInner__5126c {
+.visual-refresh ._5126c0cd07f243a0-buttonsInner {
 	@include controls.osd-like-button-group;
 
 	border: none;
 	box-shadow: none;
 
-	.hoverBarButton_f84418 {
+	.f84418acfdbdfe54-hoverBarButton {
 		@include controls.osd-like-button;
 
 		// :has is for reactions
-		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
+		&:is([aria-label="Copy Message ID"], :has(> .f84418acfdbdfe54-buttonContent)) {
 			&::before {
 				display: none;
 			}
 
-			.icon_f84418 {
+			.f84418acfdbdfe54-icon {
 				transform: none;
 
 				display: initial;
@@ -109,7 +109,7 @@
 		}
 	}
 
-	.separator_f84418 {
+	.f84418acfdbdfe54-separator {
 		// 65% (from $osd_bg_color) / 2
 		background-color: color-mix(in srgb, currentColor 32.5%, transparent);
 		margin: 0 var(--spacing);
@@ -119,15 +119,15 @@
 }
 
 // Accessories container
-.container_b7e1cb {
+.b7e1cb0370c2dd0e-container {
 	gap: var(--spacing);
 }
 
 // Message actions
-.container__040f0 {
+._040f07d21e1fb0d6-container {
 	padding: 0;
 
-	&.isHeader__040f0:not(.isReply__040f0) {
+	&._040f07d21e1fb0d6-isHeader:not(._040f07d21e1fb0d6-isReply) {
 		top: calc(
 			(var(--icon-button-size) + #{controls.$osd-like-padding} * 2) * -0.5
 		);
@@ -135,17 +135,17 @@
 }
 
 // Code with other fancy shit
-.container__4d95d {
+._4d95d73152192cf9-container {
 	@include controls.card;
 
 	padding: 0;
 
-	.codeView__4d95d {
+	._4d95d73152192cf9-codeView {
 		padding: 10px 16px;
 		margin: 0;
 	}
 
-	.footer__4d95d {
+	._4d95d73152192cf9-footer {
 		background-color: transparent;
 		color: var(--card_fg_color);
 		border: none;
@@ -158,12 +158,12 @@
 			@include controls.icon-button;
 		}
 
-		.attachmentName__4d95d {
+		._4d95d73152192cf9-attachmentName {
 			@extend %title-3;
 		}
 
 		// This is an svg, so no custom icon here... but looks pretty fitting
-		.codeIcon__4d95d {
+		._4d95d73152192cf9-codeIcon {
 			@include controls.button-basic-raised;
 
 			background-color: transparent;
@@ -177,23 +177,23 @@
 			order: 1;
 		}
 
-		.downloadSection__4d95d {
+		._4d95d73152192cf9-downloadSection {
 			--icon: icon("folder-download");
 
 			order: -1;
 		}
 
-		.formattedSize__4d95d {
+		._4d95d73152192cf9-formattedSize {
 			margin-right: auto;
 
 			flex-grow: 0;
 		}
 
-		.openFullPreviewSection__4d95d {
+		._4d95d73152192cf9-openFullPreviewSection {
 			--icon: icon("view-fullscreen");
 		}
 
-		.toggleExpandSection__4d95d {
+		._4d95d73152192cf9-toggleExpandSection {
 			--icon: icon("down");
 
 			// It includes a tooltip with it for some reason anyway
@@ -207,11 +207,11 @@
 		}
 	}
 
-	.footerGap__4d95d {
+	._4d95d73152192cf9-footerGap {
 		display: none;
 	}
 
-	.textContainer__4d95d {
+	._4d95d73152192cf9-textContainer {
 		background-color: color-mix(in srgb, currentColor 3%, transparent);
 		border: none;
 		border-bottom: 1px solid var(--card_shade_color);
@@ -219,26 +219,26 @@
 }
 
 // Poll
-.container__0be77 {
-	.answerInner__4c520 {
+._0be773cf1443f34f-container {
+	._4c5209741d147f1b-answerInner {
 		outline: none;
 
 		min-height: unset;
 	}
 
-	.answersContainer__4c520 {
+	._4c5209741d147f1b-answersContainer {
 		margin-block: var(--spacing-2x);
 	}
 
-	.answerSelectionIcon__4c520 {
+	._4c5209741d147f1b-answerSelectionIcon {
 		box-sizing: border-box;
 	}
 
-	.bottomBar__0be77 {
+	._0be773cf1443f34f-bottomBar {
 		min-height: unset;
 	}
 
-	.label__4c520 {
+	._4c5209741d147f1b-label {
 		@extend %text-normal;
 
 		color: inherit;
@@ -246,13 +246,13 @@
 		order: 1;
 	}
 
-	.secondaryAction__0be77 {
+	._0be773cf1443f34f-secondaryAction {
 		align-items: center;
 	}
 }
 
 // Poll results
-.container_f69538 {
+.f69538e19b6eaacd-container {
 	@include controls.card;
 
 	[data-text-variant] {
@@ -263,21 +263,21 @@
 }
 
 // Voice message
-.container_a8e786 {
+.a8e786485f0c32f8-container {
 	@include controls.card;
 
-	.playbackRate_a8e786 {
+	.a8e786485f0c32f8-playbackRate {
 		@include controls.button;
 
 		box-sizing: border-box;
 	}
 
-	.rippleContainer_a8e786 {
+	.a8e786485f0c32f8-rippleContainer {
 		border: none;
 	}
 }
 
-.embedFull__623de {
+._623de82e76ad7f82-embedFull {
 	background-color: color-mix(in srgb, currentColor 3%, transparent);
 	border-top: none;
 	border-right: none;
@@ -285,32 +285,32 @@
 	border-left-width: var(--radius-xs);
 	border-radius: var(--radius-xs);
 
-	.grid__623de {
+	._623de82e76ad7f82-grid {
 		padding: 12px 8px;
 	}
 
-	.anchor_edefb8 {
+	.edefb8e22d63c542-anchor {
 		color: inherit;
 		text-decoration: none;
 	}
 
-	.embedAuthor__623de {
+	._623de82e76ad7f82-embedAuthor {
 		margin: 0;
 
-		.embedAuthorName__623de[href] {
+		._623de82e76ad7f82-embedAuthorName[href] {
 			@extend %caption;
 		}
 	}
 
-	.embedFooterText__623de {
+	._623de82e76ad7f82-embedFooterText {
 		@extend %caption;
 	}
 
-	:where(.embedMargin__623de) {
+	:where(._623de82e76ad7f82-embedMargin) {
 		margin-top: var(--spacing);
 	}
 
-	.embedSuppressButton__623de {
+	._623de82e76ad7f82-embedSuppressButton {
 		@include controls.icon-button("window-close");
 
 		position: absolute;
@@ -319,7 +319,7 @@
 	}
 
 	// Video actions
-	.wrapper__926d7 {
+	._926d764ff4a9f4d6-wrapper {
 		--icon-button-size: calc(34px * 2);
 		--icon-size: calc(16px * 2);
 
@@ -329,38 +329,38 @@
 
 		height: unset;
 
-		.iconWrapper__926d7 {
+		._926d764ff4a9f4d6-iconWrapper {
 			@include controls.icon-button-circular("play");
 
 			opacity: 1;
 
-			&.anchor_edefb8 {
+			&.edefb8e22d63c542-anchor {
 				--icon: icon("external-link");
 			}
 		}
 	}
 }
 
-.embedDescription__623de {
+._623de82e76ad7f82-embedDescription {
 	@extend %text-normal;
 }
 
-.embedVideo__623de {
+._623de82e76ad7f82-embedVideo {
 }
 
-.embedMedia__623de {
+._623de82e76ad7f82-embedMedia {
 	border-radius: var(--radius-xs);
 }
 
-.embedProvider__623de {
+._623de82e76ad7f82-embedProvider {
 	@extend %title-1;
 }
 
-.embedTitle__623de {
+._623de82e76ad7f82-embedTitle {
 	@extend %text-normal;
 }
 
-.hoverButtonGroup__06ab4 {
+._06ab41fd2ef7af3f-hoverButtonGroup {
 	background-color: transparent;
 	outline: none;
 	gap: var(--spacing);
@@ -368,7 +368,7 @@
 	top: var(--spacing);
 	right: var(--spacing);
 
-	.hoverButton__06ab4 {
+	._06ab41fd2ef7af3f-hoverButton {
 		@include controls.icon-button-circular("folder-download");
 
 		// %link
@@ -376,7 +376,7 @@
 			color: white;
 		}
 
-		&.removeMosaicItemHoverButton__6c706 {
+		&._6c706db0523bd9a7-removeMosaicItemHoverButton {
 			--icon: icon("window-close");
 		}
 	}
@@ -393,8 +393,8 @@
 	}
 }
 
-.markup__75297 {
-	.codeActions__75297 {
+._752971923a1e6683-markup {
+	._752971923a1e6683-codeActions {
 		display: block;
 		top: 10px;
 		right: 10px;
@@ -413,28 +413,28 @@
 }
 
 // Open thread button
-.container__9271d {
+._9271d23503a01b50-container {
 	@include controls.button;
 
 	margin-top: var(--spacing);
 
 	height: unset;
 
-	.cta__9271d {
+	._9271d23503a01b50-cta {
 		text-decoration: none;
 	}
 }
 
-.file__0ccae {
+._0ccaee68b77c7469-file {
 	@include controls.card;
 
-	.fileNameLink__0ccae {
+	._0ccaee68b77c7469-fileNameLink {
 		@include -file-name;
 	}
 }
 
 // Video play button
-.iconWrapper__6eb54 {
+._6eb54599f66932b1-iconWrapper {
 	--icon-button-size: calc(34px * 2);
 	--icon-size: calc(16px * 2);
 
@@ -443,40 +443,40 @@
 	opacity: 1;
 }
 
-.imageAccessory_af017a {
-	.gifFavoriteButton__43deb {
+.af017ab847f75d02-imageAccessory {
+	._43deb08d456619a2-gifFavoriteButton {
 		@include controls.icon-button-circular("star-outline-rounded");
 
-		&.selected__43deb {
+		&._43deb08d456619a2-selected {
 			--icon: icon("star-large");
 		}
 	}
 }
 
-.oneByOneGridSingle_f4758a {
+.f4758a8d6346d18b-oneByOneGridSingle {
 	border-radius: var(--radius-md);
 }
 
-.reaction__23977 {
+._23977d5b7cef7361-reaction {
 	border: none;
 	padding: 0;
 	margin-right: var(--spacing);
 	margin-bottom: var(--spacing);
 
-	&.reactionMe__23977 {
+	&._23977d5b7cef7361-reactionMe {
 		color: var(--accent-color);
 	}
 
 	// Super reaction
-	.burstGlow__23977 {
+	._23977d5b7cef7361-burstGlow {
 		display: none;
 	}
 
-	.reactionCount__23977 {
+	._23977d5b7cef7361-reactionCount {
 		color: inherit;
 	}
 
-	.reactionInner__23977 {
+	._23977d5b7cef7361-reactionInner {
 		@include controls.button;
 
 		background-color: inherit;
@@ -485,7 +485,7 @@
 	}
 }
 
-.reactionBtn__23977 {
+._23977d5b7cef7361-reactionBtn {
 	@include controls.icon-button("reaction-add2");
 
 	border: none;
@@ -493,7 +493,7 @@
 	margin-bottom: var(--spacing);
 }
 
-.videoControls_cf09d8 {
+.cf09d85aafe7e124-videoControls {
 	@include -media-controls($osd: true);
 	@include controls.osd-like-button-group;
 
@@ -504,7 +504,7 @@
 	height: unset;
 
 	// No other way to identify that
-	.videoButton_cf09d8.button__201d5 {
+	.cf09d85aafe7e124-videoButton._201d5e8a3c09670a-button {
 		--icon: icon("view-fullscreen");
 
 		color: inherit;
@@ -512,18 +512,18 @@
 }
 
 // Server invite
-.wrapper_d5f3cd {
+.d5f3cd116f175f35-wrapper {
 	@include controls.card;
 
-	.guildIcon_d5f3cd {
+	.d5f3cd116f175f35-guildIcon {
 		border-radius: 999px;
 	}
 
-	.inviteDestination_d5f3cd {
+	.d5f3cd116f175f35-inviteDestination {
 		margin: 0;
 	}
 
-	.inviteSplash_d5f3cd {
+	.d5f3cd116f175f35-inviteSplash {
 		border-top-right-radius: inherit;
 		border-top-left-radius: inherit;
 		margin: -10px -16px;
@@ -531,22 +531,22 @@
 	}
 }
 
-.wrapperAudio_cf09d8 {
+.cf09d85aafe7e124-wrapperAudio {
 	@include controls.card;
 
-	.audioControls_cf09d8 {
+	.cf09d85aafe7e124-audioControls {
 		@include -media-controls($osd: false);
 
 		background-color: transparent;
 		color: rgba(0, 0, 6, 0.8); // var(--card_fg_color);
 		margin-top: var(--spacing-2x);
 
-		.videoButton_cf09d8 {
+		.cf09d85aafe7e124-videoButton {
 			color: inherit;
 		}
 	}
 
-	.audioMetadata_cf09d8 {
+	.cf09d85aafe7e124-audioMetadata {
 		--icon-size: 48px;
 
 		align-items: center;
@@ -560,15 +560,15 @@
 		}
 	}
 
-	.metadataContent_cf09d8 {
+	.cf09d85aafe7e124-metadataContent {
 		padding-inline: var(--spacing-2x);
 	}
 
-	.metadataDownload_cf09d8 {
+	.cf09d85aafe7e124-metadataDownload {
 		@include -file-name;
 	}
 
-	.metadataSize_cf09d8 {
+	.cf09d85aafe7e124-metadataSize {
 		@extend %caption;
 
 		opacity: 1;

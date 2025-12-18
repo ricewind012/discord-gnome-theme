@@ -1,6 +1,6 @@
 @use "controls";
 
-.headerRow_f369db {
+.f369dba7416c67f0-headerRow {
 	background-color: transparent;
 	box-shadow: none;
 	padding: 0;
@@ -11,12 +11,12 @@
 	}
 }
 
-.list_f369db > .content__99f8c {
+.f369dba7416c67f0-list > ._99f8cc7ad4790ce9-content {
 	--custom-forum-post-form-horizontal-padding: 0px;
 	padding: 0;
 }
 
-.card_f369db {
+.f369dba7416c67f0-card {
 	@include controls.card-in-container(
 		$activatable: true,
 		$first-selector: ":first-of-type",
@@ -26,7 +26,7 @@
 	// for now
 	box-shadow: var(--elevation-medium);
 
-	.mainCard_f369db {
+	.f369dba7416c67f0-mainCard {
 		background-color: transparent;
 		border: none;
 		padding: 0;
@@ -41,19 +41,19 @@
 	order: 1;
 }
 
-.header_f369db {
+.f369dba7416c67f0-header {
 	background: none;
 	border: none;
 }
 
-.tagsContainer_f369db {
+.f369dba7416c67f0-tagsContainer {
 	padding: 0;
 }
 
-.titleContainer_d9be46 {
+.d9be463a3c35b91e-titleContainer {
 	gap: var(--spacing-2x);
 }
 
-.prefixElement_d9be46 {
+.d9be463a3c35b91e-prefixElement {
 	display: none;
 }

@@ -6,7 +6,7 @@
 	--dialog-spacing: 24px;
 }
 
-.actionBar__8a031 {
+._8a031a135bfcb9ba-actionBar {
 	box-shadow: none;
 	padding: 0;
 	margin: var(--dialog-spacing);
@@ -25,54 +25,54 @@
 	}
 }
 
-.bodyInner__8a031 {
+._8a031a135bfcb9ba-bodyInner {
 	text-align: center;
 	padding: var(--dialog-spacing);
 	padding-top: var(--dialog-spacing-x05);
 }
 
 // ???
-.bodySpacerBottom__8a031,
-.bodySpacerTop__8a031 {
+._8a031a135bfcb9ba-bodySpacerBottom,
+._8a031a135bfcb9ba-bodySpacerTop {
 	display: none;
 }
 
-.container__8a031 {
+._8a031a135bfcb9ba-container {
 	@include dialog.container;
 
 	border: none;
 	padding: 0;
 
-	&:has(.headerTrailing__8a031 > [aria-label="Close"]) {
+	&:has(._8a031a135bfcb9ba-headerTrailing > [aria-label="Close"]) {
 		background-color: var(--window_bg_color);
 	}
 }
 
-.header__8a031 {
+._8a031a135bfcb9ba-header {
 	padding: 0;
 	padding-top: var(--dialog-spacing);
 
-	& > .stack_dbd263 {
+	& > .dbd2630aec71879b-stack {
 		text-align: center;
 	}
 }
 
-.headerTrailing__8a031 {
+._8a031a135bfcb9ba-headerTrailing {
 	margin: 0;
 
 	position: absolute;
 	top: var(--titlebar-button-spacing);
 	right: var(--titlebar-button-spacing);
 
-	.button_a22cb0.icon-only_a22cb0 {
+	.a22cb0c66246f5d3-button.a22cb0c66246f5d3-icon-only {
 		@include controls.titlebar-button;
 	}
 }
 
-.scrim__40128 {
+._40128e129e4f87de-scrim {
 	background-color: var(--backdrop);
 
-	&.lightbox__40128 {
+	&._40128e129e4f87de-lightbox {
 		background-color: rgba(0, 0, 0, 0.75);
 	}
 }

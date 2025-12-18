@@ -1,17 +1,17 @@
 @use "controls";
 @use "typography";
 
-.container__133bf {
+._133bf5eea8e33a34-container {
 	border: none;
 }
 
-.nowPlayingColumn__133bf {
-	.container__7d20c {
+._133bf5eea8e33a34-nowPlayingColumn {
+	._7d20cf18f8a2784c-container {
 		background: var(--bg-overlay-2, var(--background-secondary));
 	}
 }
 
-.peopleColumn__133bf {
+._133bf5eea8e33a34-peopleColumn {
 	gap: 16px;
 	padding: 16px;
 
@@ -26,7 +26,7 @@
 	}
 }
 
-.peopleList__5ec2f {
+._5ec2fb8b5de26b21-peopleList {
 	@include controls.cards-container;
 
 	overflow: auto;
@@ -41,7 +41,7 @@
 		// Title
 		min-height: unset;
 
-		&.sectionTitle__5ec2f {
+		&._5ec2fb8b5de26b21-sectionTitle {
 			&:hover,
 			&:active {
 				background-color: var(--card_bg_color);
@@ -55,24 +55,24 @@
 	}
 }
 
-.peopleListItem_cc6179 {
+.cc61794aab086a2e-peopleListItem {
 	border-top: none;
 	margin: 0;
 
-	.actionButton_f8fa06 {
+	.f8fa068db52f043f-actionButton {
 		@include controls.icon-button;
 	}
 
-	.userInfo__0a06e {
+	._0a06ed6ea040aa1b-userInfo {
 		align-items: center;
 	}
 
-	.username__0a06e {
+	._0a06ed6ea040aa1b-username {
 		@extend %title-3;
 	}
 
-	.subtext__0a06e,
-	.text__19b6d {
+	.sub_0a06ed6ea040aa1b-text,
+	._19b6da809e654e70-text {
 		@extend %caption;
 	}
 }

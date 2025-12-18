@@ -11,8 +11,8 @@
 // Nitro themes
 @include controls.radio(
 	".presets__67a11",
-	".themeSelection__36dee",
-	".themeSelection__36dee::before",
+	"._36dee59b8fa89219-themeSelection",
+	"._36dee59b8fa89219-themeSelection::before",
 	".hack"
 );
 
@@ -27,21 +27,21 @@
 		box-shadow: none;
 	}
 
-	.iconWrapper__36dee {
+	._36dee59b8fa89219-iconWrapper {
 		display: none;
 	}
 
-	.selectionCircle__36dee {
+	._36dee59b8fa89219-selectionCircle {
 		display: none;
 	}
 
-	.themeSelection__36dee {
+	._36dee59b8fa89219-themeSelection {
 		// --card_fg_color
-		&.darkOverlay__36dee {
+		&._36dee59b8fa89219-darkOverlay {
 			color: #fff;
 		}
 
-		&.lightOverlay__36dee {
+		&._36dee59b8fa89219-lightOverlay {
 			color: rgba(0, 0, 6, 0.8);
 		}
 
@@ -53,7 +53,7 @@
 			display: flex;
 			align-items: center;
 
-			.themeSelectionContainer__36dee:nth-last-child(2) > & {
+			._36dee59b8fa89219-themeSelectionContainer:nth-last-child(2) > & {
 				border: none;
 			}
 		}
@@ -81,16 +81,16 @@
 		}
 	}
 
-	.themeSelectionContainer__36dee {
+	._36dee59b8fa89219-themeSelectionContainer {
 		width: unset;
 		height: unset;
 	}
 
-	.themeTitleContainer__3e443 {
+	._3e443c6b2569044a-themeTitleContainer {
 		@extend %title-3;
 	}
 
-	.title__3e443 {
+	._3e443c6b2569044a-title {
 		margin-bottom: 0;
 	}
 }

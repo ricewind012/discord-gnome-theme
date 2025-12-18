@@ -1,6 +1,6 @@
 @use "popover";
 
-.autocomplete__13533 {
+._13533e3c5791980f-autocomplete {
 	@include popover.container;
 
 	padding: 0;
@@ -8,11 +8,11 @@
 	inset-inline: 0;
 }
 
-.contentTitle__13533 {
+._13533e3c5791980f-contentTitle {
 	@include popover.title;
 }
 
-.divider__13533 {
+._13533e3c5791980f-divider {
 	padding: var(--menu_margin) 0;
 
 	&::after {
@@ -20,18 +20,18 @@
 	}
 }
 
-// .scroller_affa7e is for a virtual list seen in commands list
-.scroller__6b0e0:not(.scroller_affa7e) {
+// .affa7e120767dd82-scroller is for a virtual list seen in commands list
+._6b0e07cbaf13ec4e-scroller:not(.affa7e120767dd82-scroller) {
 	padding: var(--menu_padding);
 
-	.autocompleteRow__13533 {
+	._13533e3c5791980f-autocompleteRow {
 		padding: 0;
 
-		&[aria-selected="true"] > .base__13533 {
+		&[aria-selected="true"] > ._13533e3c5791980f-base {
 			background-color: color-mix(in srgb, currentColor 15%, transparent);
 		}
 
-		& > .base__13533 {
+		& > ._13533e3c5791980f-base {
 			@include popover.entry;
 
 			display: flex;
@@ -39,7 +39,7 @@
 		}
 	}
 
-	.autocompleteRowContent__13533 {
+	._13533e3c5791980f-autocompleteRowContent {
 		gap: var(--spacing);
 
 		flex-grow: 1;
@@ -51,7 +51,7 @@
 		}
 	}
 
-	.autocompleteRowContentPrimary__13533 {
+	._13533e3c5791980f-autocompleteRowContentPrimary {
 		width: 50%;
 
 		&:first-child {
@@ -63,13 +63,13 @@
 		}
 	}
 
-	.autocompleteRowContentSecondary__13533 {
+	._13533e3c5791980f-autocompleteRowContentSecondary {
 		font: inherit;
 
 		width: 50%;
 	}
 
-	.base__13533 {
+	._13533e3c5791980f-base {
 		padding: 0;
 	}
 }

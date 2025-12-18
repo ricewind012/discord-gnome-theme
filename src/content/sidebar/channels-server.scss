@@ -1,7 +1,7 @@
 @use "typography";
 @use "util";
 
-div.sidebar__5e434 {
+div._5e434347c823b592-sidebar {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border-right: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
@@ -11,11 +11,11 @@ div.sidebar__5e434 {
 	}
 }
 
-.sidebarList__5e434 {
+._5e434347c823b592-sidebarList {
 	border: none;
 	border-radius: 0;
 
-	.container__2637a {
+	._2637a2609f343032-container {
 		margin: 0;
 	}
 }
@@ -24,21 +24,21 @@ div.sidebar__5e434 {
 	margin: 0;
 }
 
-.wrapper__2ea32 {
+._2ea32c412048f708-wrapper {
 	color: var(--window_fg_color);
 
-	&.modeMuted__2ea32 {
+	&._2ea32c412048f708-modeMuted {
 		color: var(--window_fg_muted);
 	}
 
-	&.typeThread__2ea32 {
+	&._2ea32c412048f708-typeThread {
 		--spine-width: 10px;
 		margin-left: calc(
 			var(--channels-spine-offset-left) + var(--spine-width) + var(--space-xs)
 		);
 	}
 
-	.channelInfo_c69b6d {
+	.c69b6db0641110f6-channelInfo {
 		margin: 0;
 	}
 
@@ -48,10 +48,10 @@ div.sidebar__5e434 {
 }
 
 // Header
-.wrapperCommon__29444 {
+._29444ba32c7fbeab-wrapperCommon {
 	--icon: icon("pan-down");
 
-	&.collapsed__29444 {
+	&._29444ba32c7fbeab-collapsed {
 		--icon: icon("pan-up");
 	}
 
@@ -59,7 +59,7 @@ div.sidebar__5e434 {
 		color: var(--window_fg_muted);
 	}
 
-	.icon__29444 {
+	._29444ba32c7fbeab-icon {
 		@include util.icon;
 
 		transform: none;
@@ -69,14 +69,14 @@ div.sidebar__5e434 {
 		}
 	}
 
-	.mainContent__29444 {
+	._29444ba32c7fbeab-mainContent {
 		gap: var(--space-xs);
 
 		flex-direction: row-reverse;
 		justify-content: start;
 	}
 
-	.name__29444 {
+	._29444ba32c7fbeab-name {
 		@extend %title-4;
 
 		color: inherit;
@@ -84,44 +84,44 @@ div.sidebar__5e434 {
 }
 
 // "Browse channels", since it's fucking useless
-.basicChannelRowLink__2ea32,
-.sectionDivider__629e4,
-.sectionDivider__629e4 + [style="height: 12px;"] {
+._2ea32c412048f708-basicChannelRowLink,
+._629e4c86564a4ee7-sectionDivider,
+._629e4c86564a4ee7-sectionDivider + [style="height: 12px;"] {
 	display: none;
 }
 
-.children__2ea32 {
+._2ea32c412048f708-children {
 	// Use the context menu instead
-	.iconItem_c69b6d {
+	.c69b6db0641110f6-iconItem {
 		display: none;
 	}
 }
 
-.icon__2ea32 {
+._2ea32c412048f708-icon {
 	display: none;
 }
 
-:where(.iconContainer__2ea32) {
+:where(._2ea32c412048f708-iconContainer) {
 	// Align with Discord
 	@include util.icon("lang-include");
 }
 
-.link__2ea32 {
+._2ea32c412048f708-link {
 	color: inherit;
 	// Originally --space-xxs, but it's at a constant 4px. This is put here in
 	// order to not fuck with the virtualized list, since --space-xxs is edited.
 	padding-block: var(--space-4);
 }
 
-.name__2ea32 {
+._2ea32c412048f708-name {
 	@extend %text-normal;
 }
 
-.spine__5b40b {
+._5b40bdd67543ba35-spine {
 	color: var(--window_fg_color);
 }
 
-.unread__2ea32 {
+._2ea32c412048f708-unread {
 	margin: 0;
 
 	top: var(--space-4);
