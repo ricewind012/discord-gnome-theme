@@ -20,12 +20,12 @@
 
 // right side
 ._37bfcf3d457db7a9-container {
-	gap: 0;
+	--custom-gutter-left: 0px;
+
 	padding: 0;
 	margin: 0;
 
 	height: 100%;
-	z-index: 1;
 
 	// tabs
 	._37bfcf3d457db7a9-tabListScroller {
@@ -39,6 +39,15 @@
 
 		& > [role="tablist"] {
 			justify-content: center;
+		}
+	}
+
+	._37bfcf3d457db7a9-tabPanelScroller {
+		gap: 34px;
+
+		.theme-dark ._9c3bea41fd465666-backgroundImage ~ & {
+			// Double the alpha for visibility on really light banners
+			--card_bg_color: rgba(255, 255, 255, 0.16);
 		}
 	}
 }
@@ -150,6 +159,8 @@
 .c0bea05627c5dc35-outer.user-profile-modal-v2 {
 	border: none;
 
+	-webkit-app-region: no-drag;
+
 	.c0bea05627c5dc35-inner {
 		gap: 0;
 	}
@@ -176,7 +187,7 @@
 		gap: var(--spacing);
 	}
 
-	._9c3bea41fd465666-profileNote {
+	.eb110a19ea3d101d-note {
 		margin: 0;
 
 		textarea {
@@ -196,6 +207,8 @@
 // right side content
 ._764cdd81a2bebd88-scroller {
 	padding: var(--dialog-spacing);
+	// thin scrollbar size
+	padding-inline-end: calc(var(--dialog-spacing) - 8px);
 
 	._764cdd81a2bebd88-cards {
 		@include controls.cards-container;
@@ -220,7 +233,7 @@
 }
 
 .bf424dc3dc4c8775-section {
-	gap: var(--spacing-2x);
+	gap: 16px;
 
 	.bf424dc3dc4c8775-header [data-text-variant] {
 		@extend %title-3;
