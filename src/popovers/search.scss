@@ -3,118 +3,7 @@
 @use "typography";
 @use "util";
 
-._55c999adcf6db265-container:not(:empty) {
-	--search-popout-option-non-text-color: currentColor;
-
-	@include popover.container;
-
-	gap: calc(var(--menu_margin) * 2);
-	margin-top: calc(var(--headerbar-height) + var(--spacing));
-
-	display: flex;
-	flex-direction: column;
-}
-
-._56fec8e8b8048fe0-header {
-	@include popover.title;
-
-	letter-spacing: 0;
-
-	box-sizing: border-box;
-
-	pointer-events: none;
-}
-
-._56fec8e8b8048fe0-option {
-	@include popover.entry($hover: ":is(:hover, [aria-selected='true'])");
-
-	font-size: var(--document-font-size);
-	// focus border
-	box-shadow: none;
-	margin: 0;
-
-	&:is(._56fec8e8b8048fe0-user, :has(strong)) ._56fec8e8b8048fe0-filter {
-		display: none;
-	}
-
-	._56fec8e8b8048fe0-resultChannel {
-		width: 100%;
-	}
-
-	strong,
-	._56fec8e8b8048fe0-displayedNick {
-		width: 50%;
-	}
-
-	strong {
-		color: var(--popover_fg_color);
-		font-weight: normal;
-		margin-left: calc(popover.$icon-size + var(--spacing));
-	}
-
-	._56fec8e8b8048fe0-answer {
-		color: var(--popover_fg_color);
-		font-weight: normal;
-	}
-
-	._56fec8e8b8048fe0-displayedNick {
-		font-weight: normal;
-		margin: 0 var(--spacing);
-	}
-
-	._56fec8e8b8048fe0-displayUsername {
-		font-weight: normal;
-	}
-
-	._56fec8e8b8048fe0-filter {
-		font-weight: normal;
-	}
-
-	._56fec8e8b8048fe0-searchResultChannelCategory {
-		@extend %text-normal;
-
-		opacity: 1;
-		text-transform: unset;
-		margin-left: var(--spacing);
-
-		top: 0;
-	}
-
-	._56fec8e8b8048fe0-searchResultChannelIcon {
-		@include util.icon("lang-include");
-
-		opacity: 1;
-
-		position: absolute;
-		// Make it centered with avatars
-		left: calc(
-			var(--menu_padding) + (popover.$icon-size - var(--icon-size)) / 2
-		);
-
-		path {
-			display: none;
-		}
-	}
-}
-
-._56fec8e8b8048fe0-plusIcon,
-._55c999adcf6db265-queryContainer,
-._56fec8e8b8048fe0-searchLearnMore {
-	display: none;
-}
-
-._56fec8e8b8048fe0-resultsGroup {
-	padding: 0;
-	margin: 0;
-
-	&::before {
-		top: calc(var(--spacing) * -1);
-
-		margin: 0;
-	}
-}
-
-._56fec8e8b8048fe0-searchClearHistory {
+._1bb324526a52affb-clearSearchHistory {
 	@include controls.icon-button("user-trash", "32px");
 
 	border-radius: 999px;
@@ -122,4 +11,85 @@
 	position: absolute;
 	top: -4px;
 	right: 0;
+}
+
+.f1c5c9823fbd3ef8-container:not(:empty) {
+	@include popover.container;
+
+	margin-block-start: calc(var(--headerbar-height) + var(--spacing));
+
+	[data-text-variant] {
+		font-size: var(--document-font-size);
+	}
+
+	// "from: user", etc.
+	._1bb324526a52affb-filterSublabelTextContainer,
+	[data-text-variant="text-sm/medium"] + [data-text-variant="text-sm/medium"] {
+		display: none;
+	}
+}
+
+._1bb324526a52affb-divider {
+	margin: var(--menu_padding) 0;
+}
+
+._1bb324526a52affb-groupHeader {
+	padding: 0;
+
+	& > [data-text-variant] {
+		@include popover.title;
+	}
+}
+
+._1bb324526a52affb-groupWrapper {
+	gap: 0;
+
+	position: relative;
+}
+
+._1bb324526a52affb-item {
+	padding: 0;
+
+	flex-grow: 1;
+
+	& > div > [data-text-variant="text-sm/medium"]:first-child,
+	[data-text-variant="text-sm/semibold"] {
+		color: var(--popover_fg_color);
+	}
+}
+
+._1bb324526a52affb-itemContainer {
+	@include popover.entry($hover: ":is(:hover, [aria-selected='true'])");
+
+	display: flex;
+	align-items: center;
+}
+
+._1bb324526a52affb-itemIcon {
+	color: var(--popover_fg_color);
+	margin-inline-end: var(--spacing);
+
+	// avatars don't work
+	&:where(svg) {
+		width: var(--icon-size);
+		height: var(--icon-size);
+	}
+}
+
+._1bb324526a52affb-labelWithElements {
+	gap: var(--spacing);
+
+	flex-grow: 1;
+
+	& > * {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 50%;
+	}
+
+	// revert [data-text-variant^="text-sm"]
+	& > :first-child {
+		color: var(--popover_fg_color);
+	}
 }
