@@ -25,8 +25,8 @@
 		box-shadow: var(--elevation-low);
 	}
 
-	&:has(._974928fe84ca9647-search:focus-within),
-	&:has(._974928fe84ca9647-icon._974928fe84ca9647-pointer) {
+	&:has(.c322aadb96ff59c9-search:focus-within),
+	&:has(.c322aadb96ff59c9-icon._974928fe84ca9647-pointer) {
 		height: calc(var(--headerbar-height) * 2);
 	}
 
@@ -116,7 +116,7 @@
 	}
 }
 
-._974928fe84ca9647-icon {
+.c322aadb96ff59c9-icon {
 	@include controls.icon-button-with-tooltip(
 		$name: "loupe-large",
 		$direction: "bottom",
@@ -127,7 +127,7 @@
 
 	cursor: pointer;
 
-	._974928fe84ca9647-search._974928fe84ca9647-open & {
+	.c322aadb96ff59c9-search.c322aadb96ff59c9-open & {
 		@include controls.button-selected;
 	}
 
@@ -188,7 +188,7 @@
 	}
 }
 
-._974928fe84ca9647-searchBar {
+.c322aadb96ff59c9-searchBar {
 	background: transparent;
 	color: inherit;
 	padding: 0;
