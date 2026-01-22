@@ -1,12 +1,6 @@
 .theme-light,
 .theme-dark {
-	--background-primary: var(--window_bg_color);
-	--background-secondary: var(--secondary_sidebar_bg_color);
 	--background-secondary-alt: var(--secondary_sidebar_bg_color);
-	--background-tertiary: var(--sidebar_bg_color);
-	--background-floating: var(--popover_bg_color);
-
-	--bg-base-tertiary: var(--sidebar_bg_color);
 	--background-base-low: var(--window_bg_color);
 	--background-base-lower: var(--window_bg_color);
 	--background-base-lowest: var(--secondary_sidebar_bg_color);
@@ -14,70 +8,27 @@
 	--background-surface-higher: var(--popover_bg_color);
 	--background-surface-highest: var(--popover_bg_color);
 
-	--background-modifier-hover: var(--hover_color);
-	--background-modifier-active: var(--active_color);
-	--background-modifier-selected: var(--selected_color);
-	--background-modifier-accent: color-mix(
-		in srgb,
-		currentColor var(--border-opacity),
-		transparent
-	);
-
-	--background-message-hover: var(--sidebar_bg_color);
-	--background-mentioned: color-mix(
-		in srgb,
-		var(--warning-bg-color) 10%,
-		transparent
-	);
-	--background-mentioned-hover: color-mix(
-		in srgb,
-		var(--warning-bg-color) 20%,
-		transparent
-	);
-	--background-message-automod: color-mix(
-		in srgb,
-		var(--destructive-bg-color) 10%,
-		transparent
-	);
-	--background-message-automod-hover: color-mix(
-		in srgb,
-		var(--destructive-bg-color) 20%,
-		transparent
-	);
-	--background-message-highlight: color-mix(
-		in srgb,
-		var(--accent-bg-color) 10%,
-		transparent
-	);
-	--background-message-highlight-hover: color-mix(
-		in srgb,
-		var(--accent-bg-color) 20%,
-		transparent
-	);
-
 	--background-code-addition: color-mix(
 		in srgb,
 		var(--green-5) 20%,
 		transparent
 	);
 	--background-code-deletion: color-mix(in srgb, var(--red-2) 20%, transparent);
-	--modal-footer-background: transparent;
 
-	--text-danger: var(--destructive-color);
+	--text-default: var(--window_fg_color);
+	--text-feedback-critical: var(--destructive-color);
+	--text-feedback-positive: var(--success-color);
+	--text-feedback-primary: var(--window_fg_color);
+	--text-feedback-warning: var(--warning-color);
 	--text-link: var(--accent-color);
 	--text-muted: var(--window_fg_muted);
-	--text-normal: var(--window_fg_color);
-	--text-positive: var(--success-color);
-	--text-primary: var(--window_fg_color);
-	--text-secondary: var(--window_fg_muted);
-	--text-tertiary: var(--window_fg_muted);
-	--text-warning: var(--warning-color);
+	--text-strong: var(--window_fg_color);
+	--text-subtle: var(--window_fg_muted);
 
 	--text-code-addition: var(--green-5);
 	--text-code-builtin: var(--purple-2);
 	--text-code-bullet: var(--violet-2);
 	--text-code-comment: var(--window_fg_muted);
-	--text-code-default: var(--card_fg_color);
 	--text-code-deletion: var(--red-2);
 	--text-code-keyword: var(--orange-2);
 	--text-code-section: var(--blue-2);
@@ -86,18 +37,16 @@
 	--text-code-title: var(--green-5);
 	--text-code-variable: var(--blue-2);
 
-	--header-primary: var(--window_fg_color);
-	--header-secondary: var(--window_fg_color);
-	--header-muted: var(--window_fg_color);
-
-	--interactive-normal: var(--window_fg_color);
-	--interactive-active: var(--window_fg_color);
-	--interactive-hover: var(--window_fg_color);
 	--interactive-muted: var(--window_fg_muted);
+	--interactive-icon-active: var(--window_fg_color);
+	--interactive-icon-default: var(--window_fg_color);
+	--interactive-icon-hover: var(--window_fg_color);
+	--interactive-text-active: var(--window_fg_color);
+	--interactive-text-default: var(--window_fg_color);
+	--interactive-text-hover: var(--window_fg_color);
 
 	--channel-text-area-placeholder: var(--text-muted);
 	--channels-default: var(--window_fg_color);
-	--embed-title: var(--window_fg_color);
 
 	// Originally 50%, but nothing uses the secondary text color anyway
 	$border_color: color-mix(in srgb, currentColor 25%, transparent);
@@ -105,31 +54,46 @@
 	--border-strong: #{$border_color};
 	--border-subtle: #{$border_color};
 
-	--status-danger: var(--destructive-color);
-	--status-dnd: var(--destructive-color);
-	--status-idle: var(--warning-color);
-	--status-offline: var(--text-muted);
-	--status-online: var(--success-color);
 	--status-positive: var(--success-color);
 	--status-positive-background: var(--success-color);
 	--status-positive-text: var(--window_fg_color);
-	--status-speaking: var(--success-color);
 	--status-warning: var(--warning-color);
 	--status-warning-background: var(--warning-bg-color);
 	--status-warning-text: var(--warning_fg_color);
+
+	@each $k in icon text {
+		--#{$k}-status-dnd: var(--destructive-color);
+		--#{$k}-status-idle: var(--warning-color);
+		--#{$k}-status-offline: var(--text-muted);
+		--#{$k}-status-online: var(--success-color);
+	}
+
+	$-message-colors: (
+		automod: destructive,
+		highlight: accent,
+		mentioned: warning,
+	);
+	@each $k, $v in $-message-colors {
+		--message-#{$k}-background-default: color-mix(
+			in srgb,
+			var(--#{$v}-bg-color) 10%,
+			transparent
+		);
+		--message-#{$k}-background-hover: color-mix(
+			in srgb,
+			var(--#{$v}-bg-color) 20%,
+			transparent
+		);
+	}
+	--message-background-hover: var(--sidebar_bg_color);
 
 	--custom-app-top-bar-height: 0px;
 	--channels-spine-offset-left: calc(
 		var(--space-xs) * 2 + var(--icon-size) / 2
 	);
 	--chat-markup-line-height: 1.5rem;
+	// TODO: legacy modal
 	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
-
-	--custom-margin-margin-x-small: 16px;
-	--custom-margin-margin-small: 16px;
-	--custom-margin-margin-medium: 16px;
-	--custom-margin-margin-large: 16px;
-	--custom-margin-margin-x-large: 16px;
 
 	--elevation-stroke: 0 0 0 1px var(--window_outline_color);
 	// prettier-ignore
