@@ -2,7 +2,7 @@
 @use "util";
 
 // Emoji
-.d5cd2da5733d0b6e-popoutContent {
+._0f481cbbd7530492-popoutContainer {
 	--custom-message-helpers-popout-padding-width: 0px;
 
 	@include controls.tooltip;
@@ -11,21 +11,21 @@
 	[data-text-variant="text-xs/normal"],
 	// "This emoji is from"
 	._4bd5201c86a2042b-defaultColor,
-	.d5cd2da5733d0b6e-guildTitle {
+	._0f481cbbd7530492-guildTitle {
 		color: inherit;
 	}
 
-	.d5cd2da5733d0b6e-emojiSection {
+	._0f481cbbd7530492-emojiSection {
 		& > div {
 			align-items: center;
 		}
 	}
 
-	.d5cd2da5733d0b6e-guildSection {
+	._0f481cbbd7530492-guildSection {
 		background-color: transparent;
 	}
 
-	.d5cd2da5733d0b6e-primaryEmoji {
+	._0f481cbbd7530492-primaryEmoji {
 		margin: 0;
 	}
 }
