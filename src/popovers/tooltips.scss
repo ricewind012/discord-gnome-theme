@@ -1,4 +1,5 @@
 @use "controls";
+@use "util";
 
 // Emoji
 .d5cd2da5733d0b6e-popoutContent {
@@ -38,18 +39,16 @@
 	}
 }
 
-.c36707910f687430-tooltip {
+._4e35b986167c457d-tooltip {
 	@include controls.tooltip;
 
-	.c36707910f687430-tooltipContent {
-		padding: 0;
+	* {
+		@extend %text-normal;
 
-		* {
-			color: inherit;
-		}
+		color: inherit;
 	}
 
-	.c36707910f687430-tooltipPointer {
+	._5bc6a0adc149eda0-caret {
 		display: none;
 	}
 }

@@ -1,12 +1,12 @@
 @use "controls";
 
-._3f21e80f8677ec40-container {
+.a2827844fe91d55f-switchIndicator {
 	@include controls.switch(
-		$checked: "._3f21e80f8677ec40-checked",
-		$disabled: "._3f21e80f8677ec40-disabled"
+		$checked: "[style*='rgb(88, 101, 242);']",
+		$disabled: "[style*='opacity: 0.5;']"
 	);
 }
 
-._3f21e80f8677ec40-slider {
+.a2827844fe91d55f-thumb {
 	display: none;
 }
