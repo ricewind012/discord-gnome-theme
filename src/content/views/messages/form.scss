@@ -5,7 +5,7 @@
 	display: none;
 }
 
-.b77158512e0ab116-channelAttachmentArea {
+.channelAttachmentArea_b77158 {
 	@include controls.cards-container;
 
 	gap: 0;
@@ -13,16 +13,16 @@
 	// shadow - 6px radius + 2px offset
 	margin: 8px 0;
 
-	._299eb87491f4b6d1-attachmentContainer {
+	.attachmentContainer__299eb {
 		border-radius: calc(var(--base-unit) * 2 + 2px);
 	}
 
-	._41ea06378162693a-filename {
+	.filename__41ea0 {
 		font: inherit;
 		color: inherit;
 	}
 
-	.aa605f19898fe32e-upload {
+	.upload_aa605f {
 		@include controls.card-in-container(
 			$first-selector: ":first-child",
 			$last-selector: ":last-child"
@@ -36,17 +36,17 @@
 	}
 
 	// TODO: I've seen this somewhere
-	.f7ecaca5c80dbf3a-wrapper {
+	.wrapper_f7ecac {
 		@include controls.osd-like-button-group;
 
 		box-shadow: none;
 
 		height: unset;
 
-		.f7ecaca5c80dbf3a-button {
+		.button_f7ecac {
 			@include controls.osd-like-button;
 
-			&.f7ecaca5c80dbf3a-dangerous {
+			&.dangerous_f7ecac {
 				color: var(--destructive-color);
 			}
 		}
@@ -54,7 +54,7 @@
 }
 
 // Message form-specific channelTextArea stuff
-._740174f3d6a2c8fe-channelTextArea {
+.channelTextArea__74017 {
 	// prettier-ignore
 	--attach-button-left-offset: calc(
 		var(--custom-message-avatar-size)
@@ -63,7 +63,7 @@
 		- var(--spacing) * 2.5
 	);
 
-	._0923f156a0410684-attachButton {
+	.attachButton__0923f {
 		--icon: icon("plus-circle-outline");
 
 		// align with cozy mode avatars, à la discord
@@ -71,16 +71,16 @@
 		margin-right: var(--spacing);
 	}
 
-	._0923f156a0410684-attachWrapper {
+	.attachWrapper__0923f {
 		padding: 0;
 		margin-right: calc(var(--spacing) * 1.5);
 	}
 
-	._24af7f4d0326ba4f-button {
+	.button__24af7 {
 		@include controls.icon-button;
 	}
 
-	.aa63abf63dbd9cce-button {
+	.button_aa63ab {
 		@include controls.button-accent;
 
 		border-radius: 50%;
@@ -89,16 +89,16 @@
 
 	// Not included in channel-text-area.scss since I disable scrolling only for
 	// the attachments card.
-	._740174f3d6a2c8fe-scrollableContainer {
+	.scrollableContainer__74017 {
 		overflow: visible;
 	}
 
-	.aa63abf63dbd9cce-separator {
+	.separator_aa63ab {
 		display: none;
 	}
 }
 
-.f75fb00fb7356cbe-form {
+.form_f75fb0 {
 	padding-inline: var(--custom-message-margin-horizontal);
 	margin: 0;
 
@@ -108,25 +108,25 @@
 	}
 }
 
-._740174f3d6a2c8fe-stackedBars {
+.stackedBars__74017 {
 	background-color: transparent;
 	border: none;
 
-	._841c8f861f7b2704-actions {
+	.actions__841c8 {
 		gap: var(--spacing);
 		margin: 0;
 	}
 
-	._841c8f861f7b2704-clipContainer {
+	.clipContainer__841c8 {
 		padding: 0;
 		margin: 0;
 	}
 
-	.e876a81258d10c05-closeButton {
+	.closeButton_e876a8 {
 		@include controls.icon-button("window-close");
 	}
 
-	._841c8f861f7b2704-mentionButton {
+	.mentionButton__841c8 {
 		@include controls.button;
 
 		box-sizing: border-box;
@@ -136,14 +136,14 @@
 		}
 	}
 
-	._841c8f861f7b2704-replyBar {
+	.replyBar__841c8 {
 		background-color: inherit;
 		gap: var(--spacing);
 		margin: var(--spacing);
 		margin-right: 0;
 	}
 
-	._841c8f861f7b2704-replyLabel {
+	.replyLabel__841c8 {
 		@extend %text-normal;
 		@extend %link;
 
@@ -153,17 +153,17 @@
 		);
 	}
 
-	._841c8f861f7b2704-threadSuggestionBar,
-	._841c8f861f7b2704-separator {
+	.threadSuggestionBar__841c8,
+	.separator__841c8 {
 		display: none;
 	}
 }
 
-.b8880176888cc928-typing {
+.typing_b88801 {
 	padding-left: var(--custom-message-margin-horizontal);
 
 	// good enough
-	.b8880176888cc928-text {
+	.text_b88801 {
 		position: relative;
 		left: -1px;
 	}

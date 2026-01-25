@@ -3,7 +3,7 @@
 @use "typography";
 @use "util";
 
-.c1e9c47c23f12ca3-caret {
+.caret_c1e9c4 {
 	@include util.icon("right");
 
 	color: var(--window_fg_muted);
@@ -17,36 +17,36 @@
 	}
 }
 
-.c1e9c47c23f12ca3-customItem {
+.customItem_c1e9c4 {
 	padding: 0;
 }
 
-.c1e9c47c23f12ca3-groupLabel {
+.groupLabel_c1e9c4 {
 	@include popover.title;
 
 	margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
 }
 
-.c1e9c47c23f12ca3-hintContainer {
+.hintContainer_c1e9c4 {
 	color: var(--window_fg_muted);
 }
 
-.c1e9c47c23f12ca3-icon {
+.icon_c1e9c4 {
 	display: none;
 }
 
-.c1e9c47c23f12ca3-iconContainer {
+.iconContainer_c1e9c4 {
 	margin-inline: -2px var(--spacing);
 
 	position: unset;
 	order: -1;
 
-	._09aca73e6d4b214b-checkbox {
+	.checkbox__09aca {
 		background-color: transparent;
 		border: none;
 		margin: 2px;
 
-		&._09aca73e6d4b214b-checked {
+		&.checked__09aca {
 			@include util.icon("check-plain");
 		}
 
@@ -55,38 +55,38 @@
 		}
 	}
 
-	._88a69141dd70013a-radioIndicator {
+	.radioIndicator__88a69 {
 		display: block;
 	}
 }
 
-.c1e9c47c23f12ca3-item {
-	@include popover.entry($hover: ".c1e9c47c23f12ca3-focused");
+.item_c1e9c4 {
+	@include popover.entry($hover: ".focused_c1e9c4");
 
-	&:not(.c1e9c47c23f12ca3-colorDanger):active {
+	&:not(.colorDanger_c1e9c4):active {
 		color: var(--popover_fg_color);
 	}
 
 	// sliders
-	&.c1e9c47c23f12ca3-hideInteraction {
+	&.hideInteraction_c1e9c4 {
 		height: unset;
 		min-height: 32px;
 	}
 
-	.c1e9c47c23f12ca3-labelContainer {
+	.labelContainer_c1e9c4 {
 		padding: 0;
 	}
 
-	._650391965b2d6ee2-slider {
+	.slider__65039 {
 		top: 6px;
 	}
 
-	._650391965b2d6ee2-sliderContainer {
+	.sliderContainer__65039 {
 		padding: 0;
 	}
 }
 
-.c1e9c47c23f12ca3-label {
+.label_c1e9c4 {
 	color: inherit;
 	margin-inline-end: var(--spacing);
 
@@ -95,34 +95,34 @@
 	}
 }
 
-.c1e9c47c23f12ca3-menu {
+.menu_c1e9c4 {
 	@include popover.container;
 
 	padding: 0;
 }
 
-.c1e9c47c23f12ca3-scroller {
+.scroller_c1e9c4 {
 	padding: var(--menu_margin);
 
 	overflow: auto;
 }
 
-.c1e9c47c23f12ca3-separator {
+.separator_c1e9c4 {
 	margin: var(--menu_margin) 0;
 }
 
 // Always useless
-.c1e9c47c23f12ca3-subtext {
+.subtext_c1e9c4 {
 	display: none;
 }
 
 // Reactions
-.f563df886a7377be-wrapper {
+.wrapper_f563df {
 	gap: var(--spacing);
 	padding: 0;
 	margin-bottom: var(--menu_margin);
 
-	.f563df886a7377be-button {
+	.button_f563df {
 		@include controls.button;
 
 		width: 32px;
@@ -130,31 +130,31 @@
 }
 
 #set-status-submenu {
-	.ce832809562bf737-expiringStatusMenuItem {
-		.ce832809562bf737-description {
+	.expiringStatusMenuItem_ce8328 {
+		.description_ce8328 {
 			display: none;
 		}
 
-		.c1e9c47c23f12ca3-label {
+		.label_c1e9c4 {
 			margin: 0;
 		}
 
-		.c1e9c47c23f12ca3-separator {
+		.separator_c1e9c4 {
 			display: none;
 		}
 
-		.ce832809562bf737-status {
+		.status_ce8328 {
 			color: inherit;
 		}
 
-		.ce832809562bf737-statusItem {
+		.statusItem_ce8328 {
 			padding: 0;
 		}
 	}
 }
 
 #switch-accounts-submenu {
-	.d40c56f847687e8d-activeIcon {
+	.activeIcon_d40c56 {
 		@include util.icon("check-plain");
 
 		position: absolute;
@@ -165,13 +165,13 @@
 		}
 	}
 
-	.d40c56f847687e8d-userMenuText {
+	.userMenuText_d40c56 {
 		color: inherit;
 		font: inherit;
 	}
 
 	// Avatar
-	._44b0c28be7879b7b-wrapper {
+	.wrapper__44b0c {
 		position: absolute;
 		left: var(--menu_padding);
 	}

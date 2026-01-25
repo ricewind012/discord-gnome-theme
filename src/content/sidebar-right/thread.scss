@@ -1,17 +1,17 @@
 // shadow
-.a44415a3320e67de-chat::before {
+.chat_a44415::before {
 	display: none;
 }
 
-._01ae244280823725-chatTarget {
+.chatTarget__01ae2 {
 	display: none;
 }
 
-._01ae244280823725-container {
+.container__01ae2 {
 	border-top: none;
 	border-radius: 0;
 
-	&._01ae244280823725-floating {
+	&.floating__01ae2 {
 		--chat-header-right-padding: calc(
 			var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing)
 		);

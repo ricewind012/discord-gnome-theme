@@ -1,7 +1,7 @@
 @use "controls";
 @use "typography";
 
-.cf6da1923918f7e3-closeCircleButton {
+.closeCircleButton_cf6da1 {
 	--icon: icon("window-close");
 
 	@include controls.titlebar-button;
@@ -10,11 +10,11 @@
 	order: 1;
 }
 
-.cf6da1923918f7e3-editorFooter {
+.editorFooter_cf6da1 {
 	display: none;
 }
 
-.cf6da1923918f7e3-editorHeader {
+.editorHeader_cf6da1 {
 	box-shadow: var(--elevation-low);
 	padding-inline: 0 var(--titlebar-button-spacing);
 
@@ -32,7 +32,7 @@
 	}
 }
 
-.cf6da1923918f7e3-themeEditor {
+.themeEditor_cf6da1 {
 	border-left: 1px solid var(--secondary_sidebar_border_color);
 	padding: 0;
 

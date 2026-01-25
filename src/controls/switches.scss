@@ -1,12 +1,12 @@
 @use "controls";
 
-.a2827844fe91d55f-switchIndicator {
+.switchIndicator_a28278 {
 	@include controls.switch(
 		$checked: "[style*='rgb(88, 101, 242);']",
 		$disabled: "[style*='opacity: 0.5;']"
 	);
 }
 
-.a2827844fe91d55f-thumb {
+.thumb_a28278 {
 	display: none;
 }

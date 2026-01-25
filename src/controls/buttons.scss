@@ -25,26 +25,26 @@ $destructive_button_active_color: color-mix(
 	}
 }
 
-._201d5e8a3c09670a-button {
+.button__201d5 {
 	@include controls.button;
 
 	&:disabled {
 		opacity: var(--dim-level-opacity);
 	}
 
-	&:where(._201d5e8a3c09670a-colorBrand) {
+	&:where(.colorBrand__201d5) {
 		@include controls.button-accent;
 	}
 
-	&:where(._201d5e8a3c09670a-colorRed) {
+	&:where(.colorRed__201d5) {
 		@include -destructive;
 	}
 
-	&:where(._201d5e8a3c09670a-colorGreen) {
+	&:where(.colorGreen__201d5) {
 		color: var(--success-color);
 	}
 
-	&:where(._201d5e8a3c09670a-lookBlank) {
+	&:where(.lookBlank__201d5) {
 		background-color: transparent;
 		padding: 0;
 	}
@@ -55,28 +55,32 @@ $destructive_button_active_color: color-mix(
 }
 
 // new
-.a22cb0c66246f5d3-button {
+.button_a22cb0 {
 	@include controls.button;
 
 	max-height: unset;
 
-	&:where(.a22cb0c66246f5d3-primary) {
+	&:where(.primary_a22cb0) {
 		@include controls.button-accent;
 	}
 
-	&:where(.a22cb0c66246f5d3-critical-primary),
-	&:where(.a22cb0c66246f5d3-critical-secondary) {
+	&:where(.critical-primary_a22cb0),
+	&:where(.critical-secondary_a22cb0) {
+		@include -destructive;
+	}
+
+	&:where(.critical-primary_a22cb0, .critical-secondary_a22cb0) {
 		@include -destructive;
 	}
 
 	// TODO: lag?
-	&:where(:not(.a22cb0c66246f5d3-hasText):has(.a22cb0c66246f5d3-icon)),
-	&:where(.a22cb0c66246f5d3-icon-only) {
+	&:where(:not(.hasText_a22cb0):has(.icon_a22cb0)),
+	&:where(.icon-only_a22cb0) {
 		@include controls.icon-button;
 	}
 }
 
-.a22cb0c66246f5d3-buttonChildrenWrapper {
+.buttonChildrenWrapper_a22cb0 {
 	all: unset;
 
 	// undo %caption

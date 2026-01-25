@@ -9,59 +9,59 @@
 	border-radius: 999px;
 }
 
-._5be3ef42f92174b2-body {
+.body__5be3e {
 	gap: var(--dialog-spacing-x05);
 	padding: 0 var(--dialog-spacing);
 }
 
 // Activity
-._39ec2e3dfb4fd2f2-card {
+.card__39ec2 {
 	@include controls.card($activatable: true);
 
 	border: none;
 
-	._39ec2e3dfb4fd2f2-actions {
+	.actions__39ec2 {
 		gap: var(--spacing);
 		margin: 0;
 	}
 
-	._39ec2e3dfb4fd2f2-header {
+	.header__39ec2 {
 		display: none;
 	}
 }
 
-._5be3ef42f92174b2-footer {
+.footer__5be3e {
 	padding: var(--dialog-spacing);
 	padding-top: 0;
 }
 
-.c0bea05627c5dc35-inner {
+.inner_c0bea0 {
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
 
 	// revert %caption
-	._752971923a1e6683-markup [data-text-variant] {
+	.markup__75297 [data-text-variant] {
 		--window_fg_muted: currentColor;
 		@extend %text-normal;
 	}
 }
 
 // #region User panel
-.ce832809562bf737-expiringStatusMenuItem {
-	.c1e9c47c23f12ca3-iconContainer {
+.expiringStatusMenuItem_ce8328 {
+	.iconContainer_c1e9c4 {
 		display: none;
 	}
 }
 
-.ce832809562bf737-menuItem {
+.menuItem_ce8328 {
 	--icon: icon("right");
 
-	.ce832809562bf737-menuOverlay:first-child & {
+	.menuOverlay_ce8328:first-child & {
 		&:first-child {
 			--icon: icon("edit");
 		}
 
-		&:nth-child(2) > .ce832809562bf737-menuItemInner {
+		&:nth-child(2) > .menuItemInner_ce8328 {
 			// awful
 			$colors: (
 				online: "var(--success-color)",
@@ -82,7 +82,7 @@
 		}
 	}
 
-	.ce832809562bf737-menuOverlay:nth-child(2) &:nth-child(2) {
+	.menuOverlay_ce8328:nth-child(2) &:nth-child(2) {
 		--icon: icon("edit-copy");
 	}
 
@@ -91,17 +91,17 @@
 	}
 }
 
-.ce832809562bf737-menuItemContent {
+.menuItemContent_ce8328 {
 	flex-direction: row-reverse;
 }
 
-.ce832809562bf737-menuItemIcon {
+.menuItemIcon_ce8328 {
 	@include controls.icon-button;
 
 	pointer-events: all;
 }
 
-.ce832809562bf737-menuItemInner {
+.menuItemInner_ce8328 {
 	@include controls.card($activatable: true);
 
 	border-bottom: 1px solid var(--card_shade_color);
@@ -117,18 +117,18 @@
 	}
 }
 
-.ce832809562bf737-menuItemLabelText {
+.menuItemLabelText_ce8328 {
 	@extend %title-3;
 
 	color: inherit;
 }
 
-.ce832809562bf737-menuOverlay {
+.menuOverlay_ce8328 {
 	border: none;
 	padding: 0;
 }
 
-.ce832809562bf737-menus {
+.menus_ce8328 {
 	@include controls.cards-container;
 
 	gap: 0;
@@ -136,13 +136,13 @@
 	overflow: hidden;
 }
 
-.ce832809562bf737-submenuIconWrapper {
+.submenuIconWrapper_ce8328 {
 	display: none;
 }
 // #endregion
 
 // [role="dialog"] child, so vars go here
-.c0bea05627c5dc35-outer {
+.outer_c0bea0 {
 	--dialog-spacing: var(--space-xl);
 	--role-button-size: 24px;
 	--role-spacing: 2px;
@@ -151,7 +151,7 @@
 	border-radius: var(--window_radius);
 }
 
-.dfa8b6b94cddb191-role {
+.role_dfa8b6 {
 	background: transparent;
 	border: none;
 	border-radius: 999px;
@@ -172,7 +172,7 @@
 	}
 }
 
-.dfa8b6b94cddb191-roleCircle {
+.roleCircle_dfa8b6 {
 	--icon: icon("window-close");
 
 	border-radius: 999px;
@@ -183,7 +183,7 @@
 	width: var(--role-button-size);
 	height: var(--role-button-size);
 
-	.dfa8b6b94cddb191-roleRemoveButtonCanRemove &::before {
+	.roleRemoveButtonCanRemove_dfa8b6 &::before {
 		content: "";
 
 		position: absolute;
@@ -208,42 +208,42 @@
 	}
 }
 
-.dfa8b6b94cddb191-roleName {
+.roleName_dfa8b6 {
 	margin: 0;
 
 	z-index: 1;
 }
 
-.dfa8b6b94cddb191-roleRemoveIcon {
+.roleRemoveIcon_dfa8b6 {
 	display: none;
 }
 
 // Roles container
-.fccfdf3cfff21921-root {
+.root_fccfdf {
 	gap: var(--role-spacing);
 
 	// Add role button
-	.b469685f85391ca2-button {
+	.button_b46968 {
 		@include -role-button("plus");
 	}
 
-	.fccfdf3cfff21921-collapseButton {
+	.collapseButton_fccfdf {
 		@include -role-button("up");
 	}
 
-	.fccfdf3cfff21921-expandButton {
+	.expandButton_fccfdf {
 		@include -role-button("down");
 	}
 }
 
-._63ed30c16c7151f2-userTagUsername {
+.userTagUsername__63ed3 {
 	@extend %caption;
 
 	// Align with src/global/text.scss
 	line-height: 1.25;
 }
 
-.f5f93a5c4078d63c-viewFullBio {
+.viewFullBio_f5f93a {
 	@extend %link;
 
 	// partially revert %caption
@@ -253,10 +253,10 @@
 }
 
 // Banner buttons
-.da589062f0c96515-wrapper {
+.wrapper_da5890 {
 	gap: var(--spacing);
 
-	.fb7f9476ada049c8-bannerButton {
+	.bannerButton_fb7f94 {
 		@include controls.icon-button-circular;
 	}
 }

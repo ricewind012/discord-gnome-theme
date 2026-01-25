@@ -1,10 +1,10 @@
 @use "controls";
 
-.ac6cb02cd15b4b3b-input {
+.input_ac6cb0 {
 	@include controls.text-field;
 }
 
-.ac6cb02cd15b4b3b-quickswitcher {
+.quickswitcher_ac6cb0 {
 	background-color: var(--dialog_bg_color);
 	border-color: var(--window_outline_color);
 	border-radius: var(--window_radius);
@@ -13,7 +13,7 @@
 	padding-bottom: 0;
 }
 
-.ac6cb02cd15b4b3b-scroller {
+.scroller_ac6cb0 {
 	background-color: transparent;
 	margin-top: var(--dialog-spacing-x05);
 	margin-right: 0;

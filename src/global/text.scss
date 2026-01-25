@@ -23,12 +23,12 @@ html {
 	text-transform: none;
 }
 
-._2b1f52e43a8f1c02-eyebrow:not(._2b1f52e43a8f1c02-numberBadge),
-.b717a15017b82443-h1,
-.b717a15017b82443-h2,
-.b717a15017b82443-h3,
-.b717a15017b82443-h4,
-.b717a15017b82443-h5 {
+.eyebrow__2b1f5:not(.numberBadge__2b1f5),
+.h1_b717a1,
+.h2_b717a1,
+.h3_b717a1,
+.h4_b717a1,
+.h5_b717a1 {
 	@extend %title-3;
 
 	letter-spacing: 0;
@@ -49,7 +49,7 @@ html {
 	@extend %title-4;
 }
 
-.ddd1814f7cd3e6fd-description,
+.description_ddd181,
 [data-text-variant^="text-sm"],
 [data-text-variant^="text-xs"] {
 	@extend %caption;
@@ -59,7 +59,7 @@ html {
 	@extend %title-3;
 }
 
-.edefb8e22d63c542-anchor {
+.anchor_edefb8 {
 	@extend %link;
 
 	opacity: 1;

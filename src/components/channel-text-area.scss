@@ -1,14 +1,14 @@
 @use "controls";
 
-._740174f3d6a2c8fe-button {
+.button__74017 {
 	@include controls.icon-button;
 }
 
-._740174f3d6a2c8fe-buttonContainer > :where(button, div) {
+.buttonContainer__74017 > :where(button, div) {
 	margin-left: var(--spacing);
 }
 
-._740174f3d6a2c8fe-buttons {
+.buttons__74017 {
 	gap: 0;
 
 	// align to start for longer text
@@ -18,12 +18,12 @@
 	}
 }
 
-._740174f3d6a2c8fe-channelTextArea {
+.channelTextArea__74017 {
 	--custom-channel-textarea-text-area-height: 34px;
 	background: transparent;
 	border: none;
 
-	._1b31f471f0bb10ab-editor {
+	.editor__1b31f {
 		@include controls.text-field;
 
 		&[contenteditable="false"] {
@@ -31,7 +31,7 @@
 		}
 	}
 
-	._1b31f471f0bb10ab-placeholder {
+	.placeholder__1b31f {
 		line-height: 1.25;
 		padding: 0;
 		margin: 0;
@@ -41,16 +41,16 @@
 	}
 }
 
-._740174f3d6a2c8fe-inner {
+.inner__74017 {
 	padding: 0;
 }
 
-._740174f3d6a2c8fe-textArea:not(._740174f3d6a2c8fe-textAreaSlate) {
+.textArea__74017:not(.textAreaSlate__74017) {
 	@include controls.text-field;
 
 	line-height: 1.25;
 }
 
-._740174f3d6a2c8fe-themedBackground {
+.themedBackground__74017 {
 	background: transparent;
 }

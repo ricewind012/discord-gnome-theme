@@ -30,11 +30,11 @@
 		}
 	}
 
-	.c38106a3f0c3ca76-bar {
+	.bar_c38106 {
 		right: var(--titlebar-button-spacing);
 	}
 
-	._5e434347c823b592-base {
+	.base__5e434 {
 		padding: 0;
 	}
 }
@@ -44,7 +44,7 @@
 	color: var(--window_fg_color);
 }
 
-.c38106a3f0c3ca76-bar {
+.bar_c38106 {
 	background: none;
 	color: var(--headerbar_fg_color);
 	padding: 0;
@@ -55,7 +55,7 @@
 	z-index: 101;
 	height: unset;
 
-	&.c38106a3f0c3ca76-systemBar {
+	&.systemBar_c38106 {
 		display: none;
 	}
 
@@ -66,17 +66,17 @@
 }
 
 // An invisible element that increases the parent's width, amazing
-.c38106a3f0c3ca76-leading {
+.leading_c38106 {
 	& > div > span {
 		display: none;
 	}
 }
 
-.c38106a3f0c3ca76-title {
+.title_c38106 {
 	display: none;
 }
 
-.c38106a3f0c3ca76-trailing {
+.trailing_c38106 {
 	gap: var(--spacing);
 
 	[aria-label="Update Ready!"],
@@ -86,11 +86,11 @@
 	}
 }
 
-.c38106a3f0c3ca76-winButton {
+.winButton_c38106 {
 	@include controls.titlebar-button;
 }
 
-.c38106a3f0c3ca76-winButtons {
+.winButtons_c38106 {
 	color: inherit;
 	gap: var(--titlebar-button-spacing);
 
@@ -99,13 +99,13 @@
 	}
 }
 
-.c38106a3f0c3ca76-winButtonClose {
+.winButtonClose_c38106 {
 	color: inherit;
 
 	display: var(--titlebar-close-button);
 }
 
-.c38106a3f0c3ca76-winButtonMinMax {
+.winButtonMinMax_c38106 {
 	--icon: icon("window-maximize");
 	display: var(--titlebar-maximize-button);
 

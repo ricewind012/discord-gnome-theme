@@ -6,8 +6,8 @@ $-themes-container-sel: ".dbd2630aec71879b-stack:has(> ._36dee59b8fa89219-themeS
 // Nitro themes
 @include controls.radio(
 	$-themes-container-sel,
-	"._36dee59b8fa89219-themeSelection",
-	"._36dee59b8fa89219-themeSelection::before",
+	".themeSelection__36dee",
+	".themeSelection__36dee::before",
 	".hack"
 );
 
@@ -18,21 +18,21 @@ $-themes-container-sel: ".dbd2630aec71879b-stack:has(> ._36dee59b8fa89219-themeS
 	overflow: hidden;
 	flex-direction: column;
 
-	._36dee59b8fa89219-iconWrapper {
+	.iconWrapper__36dee {
 		display: none;
 	}
 
-	._36dee59b8fa89219-selectionCircle {
+	.selectionCircle__36dee {
 		display: none;
 	}
 
-	._36dee59b8fa89219-themeSelection {
+	.themeSelection__36dee {
 		// --card_fg_color
-		&._36dee59b8fa89219-darkOverlay {
+		&.darkOverlay__36dee {
 			color: #fff;
 		}
 
-		&._36dee59b8fa89219-lightOverlay {
+		&.lightOverlay__36dee {
 			color: rgba(0, 0, 6, 0.8);
 		}
 
@@ -44,7 +44,7 @@ $-themes-container-sel: ".dbd2630aec71879b-stack:has(> ._36dee59b8fa89219-themeS
 			display: flex;
 			align-items: center;
 
-			._36dee59b8fa89219-themeSelectionContainer:nth-last-child(2) > & {
+			.themeSelectionContainer__36dee:nth-last-child(2) > & {
 				border: none;
 			}
 		}
@@ -72,16 +72,16 @@ $-themes-container-sel: ".dbd2630aec71879b-stack:has(> ._36dee59b8fa89219-themeS
 		}
 	}
 
-	._36dee59b8fa89219-themeSelectionContainer {
+	.themeSelectionContainer__36dee {
 		width: unset;
 		height: unset;
 	}
 
-	._3e443c6b2569044a-themeTitleContainer {
+	.themeTitleContainer__3e443 {
 		@extend %title-3;
 	}
 
-	._3e443c6b2569044a-title {
+	.title__3e443 {
 		margin-bottom: 0;
 	}
 }

@@ -1,6 +1,6 @@
 @use "controls";
 
-._5bc7ed9d4097f6b5-circleIconButton {
+.circleIconButton__5bc7e {
 	@include controls.icon-button(
 		// There is only one like that anyway
 		$name: "plus",
@@ -11,32 +11,32 @@
 	border-radius: 50%;
 }
 
-._5e434347c823b592-guilds {
+.guilds__5e434 {
 	mask: none;
 	margin: 0;
 }
 
-._252b6afd49fda06f-guildSeparator {
+.guildSeparator__252b6 {
 	background-color: var(--sidebar_border_color);
 
 	width: calc(100% - var(--spacing) * 2);
 }
 
-._918165dab2b1e10b-listItemWrapper {
+.listItemWrapper__91816 {
 	transform: none;
 }
 
-.ef3116c2da186559-scroller {
+.scroller_ef3116 {
 	padding-top: var(--space-md);
 }
 
-.ef3116c2da186559-tree {
+.tree_ef3116 {
 	background: var(--bg-overlay-app-frame, var(--sidebar_bg_color));
 	border-right: 1px solid var(--sidebar_border_color);
 }
 
 // guild
-._6e9f8dce4cc18de3-wrapper {
+.wrapper__6e9f8 {
 	border-radius: 50%;
 
 	transition: var(--backdrop_transition);
@@ -45,7 +45,7 @@
 		border-radius: 25%;
 	}
 
-	._6e9f8dce4cc18de3-childWrapper {
+	.childWrapper__6e9f8 {
 		@include controls.button-basic-raised;
 
 		color: inherit;

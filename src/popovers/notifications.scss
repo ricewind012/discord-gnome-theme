@@ -2,35 +2,35 @@
 @use "typography";
 @use "util";
 
-.ea54707ab71d558e-caughtUpContainer {
+.caughtUpContainer_ea5470 {
 	display: none;
 }
 
-.fc71d3ecf7bbad57-container {
+.container_fc71d3 {
 	@include popover.container;
 
 	padding: 0;
 }
 
-.cb862ac868ac5c44-messageClickableContainer {
+.messageClickableContainer_cb862a {
 	@include popover.entry(
-		$hover: ":is(.cb862ac868ac5c44-actionMenuOpen, :focus-within, :hover)"
+		$hover: ":is(.actionMenuOpen_cb862a, :focus-within, :hover)"
 	);
 
 	padding: var(--spacing);
 
 	height: unset;
 
-	.cb862ac868ac5c44-channelName {
+	.channelName_cb862a {
 		display: none;
 	}
 
-	.cb862ac868ac5c44-message {
+	.message_cb862a {
 		color: var(--window_fg_color);
 		font: inherit;
 	}
 
-	.cb862ac868ac5c44-messageContainer {
+	.messageContainer_cb862a {
 		padding: 0;
 		margin: 0;
 
@@ -39,24 +39,24 @@
 		}
 	}
 
-	.cb862ac868ac5c44-timestamp {
+	.timestamp_cb862a {
 		line-height: 1.2;
 
 		height: unset;
 	}
 
-	.cb862ac868ac5c44-unreadDot {
+	.unreadDot_cb862a {
 		display: none;
 	}
 
-	.cb862ac868ac5c44-username {
+	.username_cb862a {
 		@extend %title-3;
 
 		line-height: 1.2;
 	}
 }
 
-._0aee3b5863670ec7-messagesGroupHeaderWrap {
+.messagesGroupHeaderWrap__0aee3 {
 	--icon: icon("pan-down");
 
 	padding: var(--spacing);
@@ -64,7 +64,7 @@
 
 	height: unset;
 
-	&._0aee3b5863670ec7-collapsed {
+	&.collapsed__0aee3 {
 		--icon: icon("pan-up");
 	}
 
@@ -72,14 +72,14 @@
 		color: var(--window_fg_muted);
 	}
 
-	& > .dbd2630aec71879b-stack {
+	& > .stack_dbd263 {
 		gap: var(--space-xs);
 
 		flex-direction: row-reverse;
 		justify-content: start;
 	}
 
-	._0aee3b5863670ec7-chevron {
+	.chevron__0aee3 {
 		@include util.icon;
 
 		transform: none;
@@ -89,7 +89,7 @@
 		}
 	}
 
-	._0aee3b5863670ec7-messagesGroupHeader {
+	.messagesGroupHeader__0aee3 {
 		@extend %title-4;
 
 		color: inherit;

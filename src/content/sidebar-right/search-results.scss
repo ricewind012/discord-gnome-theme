@@ -1,11 +1,11 @@
 @use "controls";
 @use "typography";
 
-.c1521037ef09de7e-pageButton {
+.pageButton_c15210 {
 	@include controls.button;
 }
 
-.ae7890a1b8e75804-searchHeader {
+.searchHeader_ae7890 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
 	padding: var(--spacing);
 
@@ -16,18 +16,18 @@
 	}
 }
 
-._80bf8435713f6adb-searchResult {
+.searchResult__80bf8 {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
 	margin: 0;
 }
 
-._16eb0bfd5c5a90d1-searchResultChannelCategory {
+.searchResultChannelCategory__16eb0 {
 	@extend %caption;
 }
 
-.a7e67f4ddd7c6bb2-searchResultGroup {
+.searchResultGroup_a7e67f {
 	--offset: calc(var(--document-font-size) * 1.25 + 16px);
 
 	@include controls.cards-container;
@@ -37,32 +37,32 @@
 	position: relative;
 	top: var(--offset);
 
-	.a7e67f4ddd7c6bb2-channelNameIcon,
-	.a7e67f4ddd7c6bb2-parentChannelName {
+	.channelNameIcon_a7e67f,
+	.parentChannelName_a7e67f {
 		display: none;
 	}
 
-	.a7e67f4ddd7c6bb2-channelNameContainer {
+	.channelNameContainer_a7e67f {
 		position: absolute;
 		top: calc(var(--offset) * -1);
 	}
 
-	.a7e67f4ddd7c6bb2-channelNameText {
+	.channelNameText_a7e67f {
 		@extend %title-2;
 	}
 }
 
-.a98f3b020416ad54-searchResultsWrap {
+.searchResultsWrap_a98f3b {
 	border-left: 1px solid var(--secondary_sidebar_border_color);
 
 	z-index: 0;
 
 	// Clicking on the message does the thing
-	._80bf8435713f6adb-button {
+	.button__80bf8 {
 		display: none;
 	}
 
-	._80bf8435713f6adb-container {
+	.container__80bf8 {
 		@include controls.card-in-container(
 			$activatable: true,
 			$first-selector: ":first-of-type",

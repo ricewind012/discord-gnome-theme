@@ -1,29 +1,29 @@
 @use "controls";
 @use "typography";
 
-.f37cb1984c371ee5-container {
-	&.f37cb1984c371ee5-bannerVisible {
-		.f37cb1984c371ee5-header {
+.container_f37cb1 {
+	&.bannerVisible_f37cb1 {
+		.header_f37cb1 {
 			background-image: linear-gradient(var(--backdrop), transparent);
 		}
 
-		.f37cb1984c371ee5-headerContent {
+		.headerContent_f37cb1 {
 			filter: var(--text-shadow);
 		}
 	}
 
-	&:not(.f37cb1984c371ee5-bannerVisible) {
-		.f37cb1984c371ee5-header {
+	&:not(.bannerVisible_f37cb1) {
+		.header_f37cb1 {
 			box-shadow: var(--elevation-low);
 		}
 
-		.f37cb1984c371ee5-headerContent {
+		.headerContent_f37cb1 {
 			color: var(--headerbar_fg_color);
 		}
 	}
 }
 
-.f37cb1984c371ee5-guildDropdown {
+.guildDropdown_f37cb1 {
 	// Move text to .headerChildren
 	--text: attr(aria-label);
 
@@ -33,7 +33,7 @@
 	width: 100%;
 }
 
-.f37cb1984c371ee5-header {
+.header_f37cb1 {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
@@ -42,15 +42,15 @@
 	app-region: drag;
 }
 
-._85d1663d6a9fc7f6-guildIconV2Container,
-.f37cb1984c371ee5-headerEllipseBackdrop,
-.f37cb1984c371ee5-headerEllipseForeground,
-.f37cb1984c371ee5-headerGlass,
-.f37cb1984c371ee5-inviteButton {
+.guildIconV2Container__85d16,
+.headerEllipseBackdrop_f37cb1,
+.headerEllipseForeground_f37cb1,
+.headerGlass_f37cb1,
+.inviteButton_f37cb1 {
 	display: none;
 }
 
-.f37cb1984c371ee5-headerChildren {
+.headerChildren_f37cb1 {
 	@include controls.icon-button-with-tooltip(
 		$name: "menu",
 		$direction: "bottom",
@@ -68,11 +68,11 @@
 	}
 }
 
-.f37cb1984c371ee5-headerContent {
+.headerContent_f37cb1 {
 	gap: 0;
 }
 
-.f37cb1984c371ee5-name {
+.name_f37cb1 {
 	@extend %title-2;
 
 	color: inherit;

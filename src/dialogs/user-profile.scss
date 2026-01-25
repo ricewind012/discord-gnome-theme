@@ -2,7 +2,7 @@
 @use "typography";
 @use "util";
 
-._9c3bea41fd465666-backgroundImage {
+.backgroundImage__9c3be {
 	--radius: var(--dialog-spacing);
 
 	filter: brightness(3) blur(var(--radius));
@@ -19,7 +19,7 @@
 }
 
 // right side
-._37bfcf3d457db7a9-container {
+.container__37bfc {
 	--custom-gutter-left: 0px;
 
 	padding: 0;
@@ -28,7 +28,7 @@
 	height: 100%;
 
 	// tabs
-	._37bfcf3d457db7a9-tabListScroller {
+	.tabListScroller__37bfc {
 		box-shadow: var(--elevation-low);
 		padding: var(--spacing);
 		margin: 0;
@@ -53,14 +53,14 @@
 }
 
 // connections
-._9bfb9a25604068f0-container {
+.container__9bfb9 {
 	@include controls.cards-container;
 
 	gap: 0;
 	margin: 0;
 
 	// HEEEEEEEEEELP WHAT IS THIS XD
-	._9bfb9a25604068f0-accountName {
+	.accountName__9bfb9 {
 		@include controls.button-basic-raised(
 			$hover: ":hover::before",
 			$active: ":active::before"
@@ -103,13 +103,13 @@
 		}
 	}
 
-	._9bfb9a25604068f0-accountNameText {
+	.accountNameText__9bfb9 {
 		@extend %title-3;
 
 		color: inherit;
 	}
 
-	._9bfb9a25604068f0-connection {
+	.connection__9bfb9 {
 		@include controls.card-in-container(
 			$first-selector: ":first-child",
 			$last-selector: ":last-child"
@@ -121,31 +121,31 @@
 		box-sizing: border-box;
 	}
 
-	._9bfb9a25604068f0-connectionInfo {
+	.connectionInfo__9bfb9 {
 		width: 100%;
 	}
 
-	._9bfb9a25604068f0-metadata {
+	.metadata__9bfb9 {
 		display: none;
 	}
 
-	._9bfb9a25604068f0-platformUrlAnchor {
+	.platformUrlAnchor__9bfb9 {
 		color: var(--card_fg_color);
 		text-decoration: none;
 
 		pointer-events: none;
 	}
 
-	._9bfb9a25604068f0-platformUrlIcon {
+	.platformUrlIcon__9bfb9 {
 		display: none;
 	}
 
-	._9bfb9a25604068f0-platformIcon {
+	.platformIcon__9bfb9 {
 		width: inherit;
 		height: inherit;
 	}
 
-	._9bfb9a25604068f0-platformIconContainer {
+	.platformIconContainer__9bfb9 {
 		--size: 32px;
 
 		background-color: transparent;
@@ -156,38 +156,38 @@
 	}
 }
 
-.c0bea05627c5dc35-outer.user-profile-modal-v2 {
+.outer_c0bea0.user-profile-modal-v2 {
 	border: none;
 
 	-webkit-app-region: no-drag;
 
-	.c0bea05627c5dc35-inner {
+	.inner_c0bea0 {
 		gap: 0;
 	}
 }
 
-.c0bea05627c5dc35-outer.user-profile-sidebar {
+.outer_c0bea0.user-profile-sidebar {
 	border-radius: 0;
 }
 
-._9c3bea41fd465666-profile {
+.profile__9c3be {
 	outline: 0;
 	border-radius: 0;
 
-	._68edb95846a37624-banner {
+	.banner__68edb {
 		border-radius: 0;
 	}
 
-	._9c3bea41fd465666-profileBody {
+	.profileBody__9c3be {
 		gap: var(--dialog-spacing);
 		padding: 0 var(--dialog-spacing);
 	}
 
-	._9c3bea41fd465666-profileButtons {
+	.profileButtons__9c3be {
 		gap: var(--spacing);
 	}
 
-	.eb110a19ea3d101d-note {
+	.note_eb110a {
 		margin: 0;
 
 		textarea {
@@ -205,12 +205,12 @@
 }
 
 // right side content
-._764cdd81a2bebd88-scroller {
+.scroller__764cd {
 	padding: var(--dialog-spacing);
 	// thin scrollbar size
 	padding-inline-end: calc(var(--dialog-spacing) - 8px);
 
-	._764cdd81a2bebd88-cards {
+	.cards__764cd {
 		@include controls.cards-container;
 
 		gap: 0;
@@ -226,16 +226,16 @@
 			}
 		}
 
-		._39ec2e3dfb4fd2f2-card {
+		.card__39ec2 {
 			all: unset;
 		}
 	}
 }
 
-.bf424dc3dc4c8775-section {
+.section_bf424d {
 	gap: 16px;
 
-	.bf424dc3dc4c8775-header [data-text-variant] {
+	.header_bf424d [data-text-variant] {
 		@extend %title-3;
 
 		color: inherit;

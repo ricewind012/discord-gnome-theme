@@ -1,7 +1,7 @@
 @use "controls";
 @use "dialog";
 
-.ab66419eae73260f-controls {
+.controls_ab6641 {
 	// for the ONLY mana icon button there
 	--icon: icon("funnel");
 
@@ -12,18 +12,18 @@
 	}
 }
 
-._523aa09e59621644-friendRequestsButton {
+.friendRequestsButton__523aa {
 	--icon: icon("person");
 }
 
-.ab66419eae73260f-header {
+.header_ab6641 {
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
 }
 
-.ab66419eae73260f-headerTabs {
+.headerTabs_ab6641 {
 	margin: 0;
 
 	[role="tablist"] {
@@ -31,9 +31,9 @@
 	}
 }
 
-._35a7ecf3aba351b2-channelHeader,
-.ab66419eae73260f-inboxIcon,
-.ab66419eae73260f-inboxTitle,
-._957962c2bd49881b-recentMentionsPopout .e8b59c4b335dd2fc-titleContainer {
+.channelHeader__35a7e,
+.inboxIcon_ab6641,
+.inboxTitle_ab6641,
+.recentMentionsPopout__95796 .titleContainer_e8b59c {
 	display: none;
 }

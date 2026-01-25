@@ -6,7 +6,7 @@
 	--dialog-spacing: 24px;
 }
 
-._8a031a135bfcb9ba-actionBar {
+.actionBar__8a031 {
 	box-shadow: none;
 	padding: 0;
 	margin: var(--dialog-spacing);
@@ -25,54 +25,54 @@
 	}
 }
 
-._8a031a135bfcb9ba-bodyInner {
+.bodyInner__8a031 {
 	text-align: center;
 	padding: var(--dialog-spacing);
 	padding-top: var(--dialog-spacing-x05);
 }
 
 // ???
-._8a031a135bfcb9ba-bodySpacerBottom,
-._8a031a135bfcb9ba-bodySpacerTop {
+.bodySpacerBottom__8a031,
+.bodySpacerTop__8a031 {
 	display: none;
 }
 
-._8a031a135bfcb9ba-container {
+.container__8a031 {
 	@include dialog.container;
 
 	border: none;
 	padding: 0;
 
-	&:has(._8a031a135bfcb9ba-headerTrailing > [aria-label="Close"]) {
+	&:has(.headerTrailing__8a031 > [aria-label="Close"]) {
 		background-color: var(--window_bg_color);
 	}
 }
 
-._8a031a135bfcb9ba-header {
+.header__8a031 {
 	padding: 0;
 	padding-top: var(--dialog-spacing);
 
-	& > .dbd2630aec71879b-stack {
+	& > .stack_dbd263 {
 		text-align: center;
 	}
 }
 
-._8a031a135bfcb9ba-headerTrailing {
+.headerTrailing__8a031 {
 	margin: 0;
 
 	position: absolute;
 	top: var(--titlebar-button-spacing);
 	right: var(--titlebar-button-spacing);
 
-	.a22cb0c66246f5d3-button.a22cb0c66246f5d3-icon-only {
+	.button_a22cb0.icon-only_a22cb0 {
 		@include controls.titlebar-button;
 	}
 }
 
-._40128e129e4f87de-scrim {
+.scrim__40128 {
 	background-color: var(--backdrop);
 
-	&._40128e129e4f87de-lightbox {
+	&.lightbox__40128 {
 		background-color: rgba(0, 0, 0, 0.75);
 	}
 }

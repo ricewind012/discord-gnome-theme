@@ -2,13 +2,13 @@
 @use "typography";
 
 // vc
-.e131a99484292a19-container {
+.container_e131a9 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
 	padding: var(--spacing);
 	margin: 0;
 }
 
-._5e434347c823b592-panels {
+.panels__5e434 {
 	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
@@ -22,13 +22,13 @@
 	--icon: icon("bullhorn");
 
 	// also vc
-	._5e434347c823b592-activityPanel {
+	.activityPanel__5e434 {
 		background-color: inherit;
 		border-bottom: var(--secondary_sidebar_border_color);
 		border-radius: 0;
 	}
 
-	._37e49614b9f110a9-avatarWrapper {
+	.avatarWrapper__37e49 {
 		@include controls.button-basic-raised;
 
 		background-color: transparent;
@@ -38,24 +38,24 @@
 
 		min-width: 0;
 
-		._37e49614b9f110a9-nameTag {
+		.nameTag__37e49 {
 			@container (max-width: 260px) {
 				display: none;
 			}
 		}
 	}
 
-	._201d5e8a3c09670a-button {
+	.button__201d5 {
 		@include controls.icon-button;
 
 		color: inherit;
 	}
 
-	._37e49614b9f110a9-buttons {
+	.buttons__37e49 {
 		gap: var(--spacing);
 	}
 
-	._37e49614b9f110a9-container {
+	.container__37e49 {
 		padding: 0;
 		padding-right: var(--spacing);
 		margin: 0;
@@ -64,35 +64,35 @@
 	}
 }
 
-._37e49614b9f110a9-micButtonParent {
+.micButtonParent__37e49 {
 	@include controls.split-button(
-		$lhs: "._37e49614b9f110a9-micButtonWithMenu",
-		$rhs: "._37e49614b9f110a9-buttonChevron"
+		$lhs: ".micButtonWithMenu__37e49",
+		$rhs: ".buttonChevron__37e49"
 	);
 
-	&._37e49614b9f110a9-hasColorGlow {
+	&.hasColorGlow__37e49 {
 		color: var(--destructive-color);
 
 		// aria-label stays the same, bug ?
-		&:nth-child(1) ._37e49614b9f110a9-micButtonWithMenu {
+		&:nth-child(1) .micButtonWithMenu__37e49 {
 			--icon: icon("mic-none");
 		}
 
-		&:nth-child(2) ._37e49614b9f110a9-micButtonWithMenu {
+		&:nth-child(2) .micButtonWithMenu__37e49 {
 			--icon: icon("headphones-muted");
 		}
 	}
 
-	._67645e1530f1195d-button {
+	.button__67645 {
 		color: inherit;
 	}
 
-	._37e49614b9f110a9-buttonChevron {
+	.buttonChevron__37e49 {
 		margin: 0;
 	}
 }
 
-._37e49614b9f110a9-panelTitleContainer {
+.panelTitleContainer__37e49 {
 	margin: 0;
 
 	& > div {
@@ -102,7 +102,7 @@
 	}
 }
 
-._06d6249a1f2584ac-rtcConnectionStatus ._201d5e8a3c09670a-button {
+.rtcConnectionStatus__06d62 .button__201d5 {
 	width: unset;
 	height: unset;
 
@@ -117,6 +117,6 @@
 
 // There are only 2 buttons and 1 of them has a constant aria-label, the other
 // doesn't
-.e131a99484292a19-voiceButtonsContainer {
+.voiceButtonsContainer_e131a9 {
 	--icon: icon("sound-wave");
 }
