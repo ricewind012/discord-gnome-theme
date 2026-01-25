@@ -69,6 +69,7 @@ $destructive_button_active_color: color-mix(
 		@include -destructive;
 	}
 
+	// TODO: lag?
 	&:where(:not(.a22cb0c66246f5d3-hasText):has(.a22cb0c66246f5d3-icon)),
 	&:where(.a22cb0c66246f5d3-icon-only) {
 		@include controls.icon-button;
