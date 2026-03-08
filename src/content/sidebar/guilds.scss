@@ -1,14 +1,18 @@
 @use "controls";
 
 .circleIconButton__5bc7e {
-	@include controls.icon-button(
-		// There is only one like that anyway
-		$name: "plus",
-		$size: var(--guildbar-avatar-size)
-	);
+	@include controls.icon-button($size: var(--guildbar-avatar-size));
 
 	color: inherit;
 	border-radius: 50%;
+
+	&[data-list-item-id="guildsnav___create-join-button"] {
+		--icon: icon("plus");
+	}
+
+	&[data-list-item-id="guildsnav___guild-discover-button"] {
+		--icon: icon("loupe-large");
+	}
 }
 
 .guilds__5e434 {

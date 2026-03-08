@@ -9,14 +9,20 @@
 .vc-ranb-button {
 	@include controls.icon-button-with-tooltip(
 		$name: "check-plain",
+		$selector: "&:hover::after",
 		$size: var(--guildbar-avatar-size),
 		$direction: "right"
 	);
 
+	font-size: 0;
 	border-radius: 50%;
 	margin: auto;
 
 	min-height: var(--guildbar-avatar-size);
+
+	&::after {
+		content: "Read all";
+	}
 }
 
 // VencordToolbox

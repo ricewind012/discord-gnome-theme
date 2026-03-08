@@ -31,10 +31,6 @@
 	color: var(--window_fg_muted);
 }
 
-.icon_c1e9c4 {
-	display: none;
-}
-
 .iconContainer_c1e9c4 {
 	margin-inline: -2px var(--spacing);
 
@@ -65,6 +61,12 @@
 
 	&:not(.colorDanger_c1e9c4):active {
 		color: var(--popover_fg_color);
+	}
+
+	&[aria-expanded] .iconContainerLeft_c1e9c4,
+	.vc-icon,
+	.icon_c1e9c4 {
+		display: none;
 	}
 
 	// sliders
