@@ -221,10 +221,13 @@
 
 // Poll
 .container__0be77 {
-	.answerInner__4c520 {
-		outline: none;
-
+	.answer__4c520 {
+		align-items: center;
 		min-height: unset;
+	}
+
+	.answerInner__4c520 {
+		display: contents;
 	}
 
 	.answersContainer__4c520 {

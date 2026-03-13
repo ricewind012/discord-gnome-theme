@@ -244,7 +244,7 @@ $toast_fg_color: white;
 	border-radius: 100%;
 }
 
-@mixin radio($radio-group, $item, $icon, $remove) {
+@mixin radio($radio-group, $item, $icon, $selected) {
 	#{$radio-group} {
 		gap: 0;
 		border-radius: var(--card_radius);
@@ -262,36 +262,25 @@ $toast_fg_color: white;
 		gap: 16px;
 		padding: 16px;
 		margin: 0;
-
-		&[aria-checked="true"] #{$icon} {
-			background-color: #fff;
-			border: 7px solid var(--accent-bg-color);
-		}
-
-		&[aria-checked="false"] #{$icon} {
-			border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
-		}
-
-		& > div {
-			all: unset;
-			gap: inherit;
-
-			display: flex;
-			align-items: center;
-		}
 	}
 
 	#{$icon} {
+		border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
 		border-radius: 50%;
 
 		// Needed for settings
 		flex-shrink: 0;
 		width: 22px;
 		height: 22px;
-	}
 
-	#{$remove} {
-		display: none;
+		#{$selected} & {
+			background-color: #fff;
+			border: 7px solid var(--accent-bg-color);
+		}
+
+		& > * {
+			display: none;
+		}
 	}
 }
 

@@ -2,16 +2,26 @@
 
 // Settings
 @include controls.radio(
-	".container__88a69",
-	".item__88a69",
-	".radioIndicatorGroup__88a69",
-	".radioIndicator__88a69"
+	".group__64e61",
+	".radioGroupOption__64e61",
+	".radioIndicator__64e61",
+	".radioGroupOption__64e61[data-selected='true']"
 );
+
+.group__64e61 {
+	padding: 0;
+}
+
+.radioGroupOption__64e61 {
+	& > .stack_dbd263 {
+		justify-content: center;
+	}
+}
 
 // Poll
 @include controls.radio(
 	".answersContainer__4c520",
 	".answer__4c520",
 	".answerSelectionIcon__4c520",
-	".answerSelectionIcon__4c520 > *"
+	".answer__4c520[aria-checked='true']"
 );

@@ -2,7 +2,8 @@
 
 .switchIndicator_a28278 {
 	@include controls.switch(
-		$checked: "[style*='rgb(88, 101, 242);']",
+		$checked:
+			":where([style*='rgb(88, 101, 242);'], [style*='rgb(68, 82, 187);'])",
 		$disabled: "[style*='opacity: 0.5;']"
 	);
 }
