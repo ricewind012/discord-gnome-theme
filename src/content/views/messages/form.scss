@@ -76,6 +76,16 @@
 		margin-right: calc(var(--spacing) * 1.5);
 	}
 
+	.button_e6e74f {
+		@include controls.icon-button($name: "grid-large");
+
+		margin-left: var(--spacing);
+	}
+
+	.buttonContainer_e6e74f {
+		background: none;
+	}
+
 	.button__24af7 {
 		@include controls.icon-button;
 	}
