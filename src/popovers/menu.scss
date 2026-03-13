@@ -37,17 +37,13 @@
 	position: unset;
 	order: -1;
 
-	.checkbox__09aca {
-		background-color: transparent;
-		border: none;
-		margin: 2px;
+	.checkboxIndicator__714a9 {
+		display: none;
+	}
 
-		&.checked__09aca {
+	.checkboxOption__714a9 {
+		&[data-selected="true"] {
 			@include util.icon("check-plain");
-		}
-
-		svg {
-			display: none;
 		}
 	}
 
