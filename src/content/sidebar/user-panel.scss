@@ -1,9 +1,38 @@
 @use "controls";
 @use "typography";
 
+.audioButtonParent__5e764 {
+	@include controls.split-button(
+		$lhs: ".audioButtonWithMenu__5e764",
+		$rhs: ".buttonChevron__5e764"
+	);
+
+	&.hasColorGlow__5e764 {
+		color: var(--destructive-color);
+
+		// aria-label stays the same, bug ?
+		&:nth-child(1) .audioButtonWithMenu__5e764 {
+			--icon: icon("mic-none");
+		}
+
+		&:nth-child(2) .audioButtonWithMenu__5e764 {
+			--icon: icon("headphones-muted");
+		}
+	}
+
+	.button__67645 {
+		color: inherit;
+	}
+
+	.buttonChevron__5e764 {
+		margin: 0;
+	}
+}
+
 // vc
 .container_e131a9 {
 	border-bottom: 1px solid var(--secondary_sidebar_border_color);
+	gap: var(--spacing);
 	padding: var(--spacing);
 	margin: 0;
 }
@@ -21,14 +50,7 @@
 	);
 	--icon: icon("bullhorn");
 
-	// also vc
-	.activityPanel__5e434 {
-		background-color: inherit;
-		border-bottom: var(--secondary_sidebar_border_color);
-		border-radius: 0;
-	}
-
-	.avatarWrapper__37e49 {
+	.accountPopoutButtonWrapper__37e49 {
 		@include controls.button-basic-raised;
 
 		background-color: transparent;
@@ -45,7 +67,14 @@
 		}
 	}
 
-	.button__201d5 {
+	// also vc
+	.activityPanel__37e49 {
+		background-color: inherit;
+		border-bottom: var(--secondary_sidebar_border_color);
+		border-radius: 0;
+	}
+
+	:where(.button__201d5) {
 		@include controls.icon-button;
 
 		color: inherit;
@@ -64,34 +93,6 @@
 	}
 }
 
-.micButtonParent__37e49 {
-	@include controls.split-button(
-		$lhs: ".micButtonWithMenu__37e49",
-		$rhs: ".buttonChevron__37e49"
-	);
-
-	&.hasColorGlow__37e49 {
-		color: var(--destructive-color);
-
-		// aria-label stays the same, bug ?
-		&:nth-child(1) .micButtonWithMenu__37e49 {
-			--icon: icon("mic-none");
-		}
-
-		&:nth-child(2) .micButtonWithMenu__37e49 {
-			--icon: icon("headphones-muted");
-		}
-	}
-
-	.button__67645 {
-		color: inherit;
-	}
-
-	.buttonChevron__37e49 {
-		margin: 0;
-	}
-}
-
 .panelTitleContainer__37e49 {
 	margin: 0;
 
@@ -102,17 +103,36 @@
 	}
 }
 
-.rtcConnectionStatus__06d62 .button__201d5 {
-	width: unset;
+.rtcConnectionStatus__06d62 {
 	height: unset;
 
-	&::before {
-		display: none;
+	&.rtcConnectionQualityFine__06d62 {
+		--icon: icon("radiowaves-1");
+		--text-color: var(--success-color);
 	}
 
-	& > * {
-		display: initial;
+	&.rtcConnectionQualityAverage__06d62 {
+		--icon: icon("radiowaves-2");
+		--text-color: var(--warning-color);
 	}
+
+	&.rtcConnectionQualityBad__06d62 {
+		--icon: icon("radiowaves-3");
+		--text-color: var(--destructive-color);
+	}
+
+	.clickablePing__06d62 {
+		@include controls.icon-button;
+
+		color: var(--text-color);
+		margin-inline-end: var(--spacing);
+	}
+}
+
+.rtcConnectionStatusLabel__06d62 {
+	margin: 0;
+
+	height: unset;
 }
 
 // There are only 2 buttons and 1 of them has a constant aria-label, the other
