@@ -77,7 +77,7 @@
 	}
 
 	// Group chat
-	._754bde0f294a39cb-hoverableContainer {
+	.hoverableContainer__754bd {
 		@include controls.button;
 		@include util.inactive-dim;
 
@@ -130,12 +130,12 @@
 		@include controls.button-selected;
 	}
 
-	&._974928fe84ca9647-pointer {
+	&.pointer__97492 {
 		--icon: icon("window-close");
 	}
 
 	// tooltip, the theme is english only anyway lol
-	&:not(._974928fe84ca9647-pointer):hover::after {
+	&:not(.pointer__97492):hover::after {
 		content: "Search Messages";
 	}
 }

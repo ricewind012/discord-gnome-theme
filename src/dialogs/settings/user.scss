@@ -1,7 +1,7 @@
 @use "controls";
 @use "typography";
 
-$-themes-container-sel: ".dbd2630aec71879b-stack:has(> ._36dee59b8fa89219-themeSelectionContainer)";
+$-themes-container-sel: ".stack_dbd263:has(> .themeSelectionContainer__36dee)";
 
 // Nitro themes
 @include controls.radio(

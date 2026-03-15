@@ -42,10 +42,10 @@
 		}
 	}
 
-	._37bfcf3d457db7a9-tabPanelScroller {
+	.tabPanelScroller__37bfc {
 		gap: 34px;
 
-		.theme-dark ._9c3bea41fd465666-backgroundImage ~ & {
+		.theme-dark .backgroundImage__9c3be ~ & {
 			// Double the alpha for visibility on really light banners
 			--card_bg_color: rgba(255, 255, 255, 0.16);
 		}
