@@ -3,15 +3,20 @@
 @use "util";
 
 .backgroundImage__9c3be {
+	--brightness: 1.5;
 	--radius: var(--dialog-spacing);
 
-	filter: brightness(3) blur(var(--radius));
-	mask: linear-gradient(black, transparent);
+	filter: brightness(var(--brightness)) blur(var(--radius));
 	opacity: 1;
 	background-repeat: no-repeat;
 
 	inset: calc(var(--radius) * -1);
-	//left: calc(400px - var(--radius));
+
+	.theme-light {
+		--brightness: 3;
+
+		mask: linear-gradient(black, transparent);
+	}
 
 	&::after {
 		display: none;
@@ -44,11 +49,37 @@
 
 	.tabPanelScroller__37bfc {
 		gap: 34px;
+		padding: var(--dialog-spacing);
+	}
+}
 
-		.theme-dark .backgroundImage__9c3be ~ & {
-			// Double the alpha for visibility on really light banners
-			--card_bg_color: rgba(255, 255, 255, 0.16);
-		}
+// widget
+.container__62dd3 {
+	@include controls.card;
+
+	.coverList__9a5c3 {
+		--custom-game-cover-width: 110px;
+		--custom-game-cover-height: 137px;
+
+		gap: var(--spacing-2x);
+	}
+
+	.menuButton_cf2d33 {
+		@include controls.icon-button($name: "menu");
+	}
+
+	.tag__25a50 {
+		background: color-mix(in srgb, currentColor 10%, transparent);
+		border: none;
+		gap: var(--spacing);
+		padding: 0 var(--spacing-2x);
+
+		height: 24px;
+	}
+
+	.tagListContainer__25a50 {
+		gap: var(--spacing);
+		margin: 0;
 	}
 }
 

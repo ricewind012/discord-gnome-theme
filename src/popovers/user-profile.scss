@@ -151,7 +151,7 @@
 	border-radius: var(--window_radius);
 }
 
-.role_dfa8b6 {
+.role_af3987 {
 	background: transparent;
 	border: none;
 	border-radius: 999px;
@@ -172,7 +172,7 @@
 	}
 }
 
-.roleCircle_dfa8b6 {
+.roleCircle__4f569 {
 	--icon: icon("window-close");
 
 	border-radius: 999px;
@@ -183,7 +183,7 @@
 	width: var(--role-button-size);
 	height: var(--role-button-size);
 
-	.roleRemoveButtonCanRemove_dfa8b6 &::before {
+	.roleRemoveButtonCanRemove__4f569 &::before {
 		content: "";
 
 		position: absolute;
@@ -202,19 +202,19 @@
 		height: 100px;
 
 		background-color: inherit;
-		opacity: 25%;
+		opacity: 10%;
 
 		pointer-events: none;
 	}
 }
 
-.roleName_dfa8b6 {
+.roleName_af3987 {
 	margin: 0;
 
 	z-index: 1;
 }
 
-.roleRemoveIcon_dfa8b6 {
+.roleRemoveIcon_af3987 {
 	display: none;
 }
 
