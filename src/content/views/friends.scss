@@ -5,6 +5,10 @@
 	border: none;
 }
 
+.divider_cc6179 {
+	display: none;
+}
+
 .nowPlayingColumn__133bf {
 	.container__7d20c {
 		background: var(--bg-overlay-2, var(--background-secondary));
@@ -28,6 +32,8 @@
 
 .peopleList__5ec2f {
 	@include controls.cards-container;
+
+	padding: 0;
 
 	overflow: auto;
 
@@ -56,7 +62,6 @@
 }
 
 .peopleListItem_cc6179 {
-	border-top: none;
 	margin: 0;
 
 	.actionButton_f8fa06 {

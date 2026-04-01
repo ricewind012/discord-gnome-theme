@@ -1,24 +1,13 @@
 #add_friend-tab {
-	flex-direction: column-reverse;
-	justify-content: center;
-
 	& > header {
-		border: none;
-
-		& > h2,
-		.description_ddd181 {
-			display: none;
-		}
-	}
-
-	& > div {
-		flex-grow: 0;
+		padding-inline: 0;
 	}
 }
 
 .addFriendInputWrapper__72ba7 {
 	background-color: transparent;
 	border: none;
+	padding: 0;
 	margin: 0;
 }
 
