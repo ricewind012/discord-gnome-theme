@@ -2,6 +2,11 @@
 @use "typography";
 @use "util";
 
+.contentBody_e9e3ed {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 .contentHeader_e9e3ed {
 	color: var(--headerbar_fg_color);
 	border: none;
