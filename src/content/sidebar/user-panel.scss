@@ -38,7 +38,7 @@
 }
 
 .panels__5e434 {
-	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
+	background: var(--background-secondary-alt);
 	border: none;
 	border-top: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
@@ -52,6 +52,10 @@
 		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 1px
 	);
 	--icon: icon("bullhorn");
+
+	.custom-theme-background & {
+		background: none;
+	}
 
 	.accountPopoutButtonWrapper__37e49 {
 		@include controls.button-basic-raised;

@@ -12,7 +12,10 @@
 }
 
 .sidebarList__5e434 {
-	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
+	background: var(
+		--background-gradient-app-frame,
+		var(--background-secondary-alt)
+	);
 	border: none;
 	border-inline-end: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;

@@ -26,6 +26,10 @@
 	.editor__1b31f {
 		@include controls.text-field;
 
+		.custom-theme-background & {
+			background: var(--background-gradient-highest);
+		}
+
 		&[contenteditable="false"] {
 			opacity: var(--dim-level-opacity);
 		}
