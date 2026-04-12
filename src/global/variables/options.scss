@@ -1,0 +1,41 @@
+.custom-theme-background {
+	--nitro-border: rgb(
+		var(--bg-overlay-color-inverse) / var(--bg-overlay-opacity-6)
+	);
+
+	--background-modifier-accent: var(--nitro-border);
+	--sidebar_border_color: var(--nitro-border);
+	--secondary_sidebar_border_color: var(--nitro-border);
+	--window_outline_color: var(--nitro-border);
+}
+
+@container style(--option-transparent-sidebar: true) {
+	body,
+	.appMount__51fd7,
+	.app__160d8,
+	.bg__960e4,
+	.scroller__99e7c {
+		background: none;
+	}
+
+	.panels__5e434 {
+		--background-secondary-alt: none;
+	}
+
+	.sidebar__5e434,
+	.theme-dark,
+	.theme-light {
+		--background-base-lowest: transparent;
+
+		--secondary_sidebar_bg_color: color-mix(
+			in srgb,
+			var(--window_bg_color) var(--option-transparent-sidebar-opacity),
+			transparent
+		);
+		--sidebar_bg_color: color-mix(
+			in srgb,
+			var(--window_bg_color) var(--option-transparent-sidebar-opacity-secondary),
+			transparent
+		);
+	}
+}

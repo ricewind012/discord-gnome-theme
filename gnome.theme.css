@@ -7,10 +7,16 @@
 @import "https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/dist/dist/index.css";
 
 :root {
+	/* Window controls */
 	/* on/off - flex/none */
 	--titlebar-close-button: flex;
 	--titlebar-maximize-button: none;
 	--titlebar-minimize-button: none;
 	/* also set this to how much buttons are visible */
 	--titlebar-buttons-count: 1;
+
+	/* Transparent sidebar */
+	--option-transparent-sidebar: false;
+	--option-transparent-sidebar-opacity: 75%;
+	--option-transparent-sidebar-opacity-secondary: 50%;
 }

@@ -1,3 +1,4 @@
+@use "controls";
 @use "typography";
 @use "util";
 
@@ -21,7 +22,15 @@
 }
 
 .interactive__972a0 {
+	@include controls.button-basic-raised;
+
+	transition: none;
+	background-color: transparent;
 	color: var(--window_fg_color);
+
+	&.interactiveSelected__972a0 {
+		@include controls.button-selected;
+	}
 }
 
 .scroller__99e7c {

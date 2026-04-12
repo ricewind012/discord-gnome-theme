@@ -71,6 +71,7 @@
 
 .scrim__40128 {
 	background-color: var(--backdrop);
+	border-radius: var(--window_radius);
 
 	&.lightbox__40128 {
 		background-color: rgba(0, 0, 0, 0.75);

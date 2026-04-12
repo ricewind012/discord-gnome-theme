@@ -48,12 +48,40 @@ Copy the following into the text box located in Settings > Themes > Online Theme
 https://raw.githubusercontent.com/ricewind012/discord-gnome-theme/master/gnome.theme.css
 ```
 
-### Including configuration
+### Including [configuration](#configuration)
 
-Put [gnome.theme.css](./gnome.theme.css) in ~/.config/vesktop/themes. It's still updated automatically.
+Put [gnome.theme.css][css-file] in ~/.config/vesktop/themes. It's still
+updated automatically.
+
+## Configuration
+
+### Transparent sidebar
+
+<picture>
+	<source srcset="assets/preview/transparent-sidebar-dark.png" media="(prefers-color-scheme: dark)">
+	<source srcset="assets/preview/transparent-sidebar-light.png" media="(prefers-color-scheme: light)">
+	<img align="right" src="assets/preview/transparent-sidebar-light.png" alt="Transparent sidebar preview">
+</picture>
+
+1. Get the [Blur my Shell][ext-blur-my-shell] extension
+2. In the extension's settings, go to Pipelines > Manage Effects > Add the "Corner" effect. Click on the effect, set "Radius" to 17.
+
+   The Adwaita window corner radius for windows is 15, but setting it to said number will not _fully_ round them. 17 looks good on all windows.
+
+   If the corners stick out, in [Rounded Window Corners Reborn][ext-rounded-window-corners] settings, turn up "Corner Smoothing".
+
+3. In theme's [CSS file][css-file] set `--option-transparent-sidebar` to `true`.
+
+Settings used for the screenshot were: radius - 100, brightness - 1.00.
+
+<br style="clear: right;" />
 
 ## Preview
 
 ![first](./assets/preview/Screenshot%20from%202024-04-27%2011-55-58.png)
 ![cozy second](./assets/preview/Screenshot%20from%202024-04-27%2012-31-42.png)
 ![third](./assets/preview/Screenshot%20from%202024-04-27%2012-24-16.png)
+
+[css-file]: ./gnome.theme.css
+[ext-blur-my-shell]: https://github.com/aunetx/blur-my-shell
+[ext-rounded-window-corners]: https://github.com/flexagoon/rounded-window-corners

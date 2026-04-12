@@ -1,9 +1,9 @@
+@use "controls";
 @use "typography";
 @use "util";
 
-div.sidebar__5e434 {
-	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
-	border-right: 1px solid var(--secondary_sidebar_border_color);
+.sidebar__5e434 {
+	background: none;
 	border-radius: 0;
 
 	&::after {
@@ -12,10 +12,13 @@ div.sidebar__5e434 {
 }
 
 .sidebarList__5e434 {
+	background: var(--bg-overlay-app-frame, var(--background-secondary-alt));
 	border: none;
+	border-inline-end: 1px solid var(--secondary_sidebar_border_color);
 	border-radius: 0;
 
 	.container__2637a {
+		padding-block-end: var(--custom-app-panels-height);
 		margin: 0;
 	}
 }
@@ -107,10 +110,18 @@ div.sidebar__5e434 {
 }
 
 .link__2ea32 {
+	@include controls.button-basic-raised;
+
+	transition: none;
+	background-color: transparent;
 	color: inherit;
 	// Originally --space-xxs, but it's at a constant 4px. This is put here in
 	// order to not fuck with the virtualized list, since --space-xxs is edited.
 	padding-block: var(--space-4);
+
+	.modeSelected__2ea32 & {
+		@include controls.button-selected;
+	}
 }
 
 .name__2ea32 {

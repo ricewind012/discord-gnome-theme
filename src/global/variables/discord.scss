@@ -37,6 +37,21 @@
 	--text-code-title: var(--green-5);
 	--text-code-variable: var(--blue-2);
 
+	--interactive-background-active: color-mix(
+		in srgb,
+		var(--window_fg_color) 10%,
+		transparent
+	);
+	--interactive-background-hover: color-mix(
+		in srgb,
+		var(--window_fg_color) 7%,
+		transparent
+	);
+	--interactive-background-selected: color-mix(
+		in srgb,
+		var(--window_fg_color) 16%,
+		transparent
+	);
 	--interactive-muted: var(--window_fg_muted);
 	--interactive-icon-active: var(--window_fg_color);
 	--interactive-icon-default: var(--window_fg_color);

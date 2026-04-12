@@ -143,6 +143,7 @@
 		inset: 0;
 
 		background-color: var(--backdrop);
+		border-radius: var(--window_radius);
 		z-index: 101;
 	}
 }
