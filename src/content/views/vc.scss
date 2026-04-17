@@ -1,4 +1,5 @@
 @use "controls";
+@use "typography";
 
 %-dark-headerbar {
 	--headerbar_fg_color: #ffffff;
@@ -51,6 +52,10 @@
 	}
 }
 
+.attachedCaret_f1ceac {
+	box-sizing: border-box;
+}
+
 .attachedCaretButtonContainer_f1ceac {
 	@include controls.split-button(
 		$lhs: ".attachedButton_f1ceac",
@@ -66,6 +71,12 @@
 
 .headerBar__49508 {
 	@extend %-dark-headerbar;
+
+	.container__49508 {
+		[data-text-variant] {
+			@extend %caption;
+		}
+	}
 
 	.headerBarChildren__49508 {
 		gap: 0;
@@ -135,6 +146,8 @@
 .wrapper__1405b {
 	gap: var(--spacing-2x);
 
+	.fullRegionButton_f1ceac,
+	.fullRegionDropdownButton_f1ceac,
 	.buttonSection__1405b {
 		background-color: transparent;
 		gap: var(--spacing);
