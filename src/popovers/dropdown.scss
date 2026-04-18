@@ -1,19 +1,34 @@
 @use "popover";
 @use "util";
 
-.option_a16aea {
-	@include popover.entry;
-
-	color: var(--popover_fg_color);
-	font-size: var(--document-font-size);
+.listBox__2e223 {
+	padding: 0;
 }
 
-.popout_a16aea {
+.listBoxItemContent__2e223 {
+	padding: 0;
+
+	min-height: unset;
+
+	&:not(.inInput__2e223) {
+		@include popover.entry;
+
+		// Don't change virtualized list items' height
+		height: 40px;
+	}
+}
+
+.selectDropdown__0edde {
 	@include popover.container;
 }
 
-.selectedIcon_a16aea {
+.selectedIcon__2e223 {
 	@include util.icon("check-plain");
+
+	// Align with the item height
+	margin: var(--space-12) var(--menu_padding);
+
+	min-width: unset;
 
 	* {
 		display: none;

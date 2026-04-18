@@ -1,27 +1,20 @@
 @use "controls";
 @use "util";
 
-.icons_a16aea {
+.chevronButton__0edde {
 	@include util.icon("pan-down");
 
-	// button horizontal spacing
-	margin-inline-end: 10px;
+	padding: 0;
+}
+
+.selectButton__0edde {
+	padding: 0;
 
 	min-height: unset;
 }
 
-.searchInput_a16aea {
-	all: unset;
-}
-
-.select_a16aea {
+.selectField__0edde {
 	@include controls.button;
 
-	min-height: inherit;
-}
-
-.wrapper_a16aea {
-	border: none;
-
-	min-height: 34px;
+	align-items: center;
 }
