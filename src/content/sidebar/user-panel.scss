@@ -35,6 +35,22 @@
 	gap: var(--spacing);
 	padding: var(--spacing);
 	margin: 0;
+
+	// TODO: remove when it gets aria-labels again (fucking never)
+	.button_e131a9 {
+		$-icons: (
+			1: "camera-disabled",
+			3: "record-screen",
+			5: "emoji-activities",
+			7: "bullhorn",
+		);
+
+		@each $k, $v in $-icons {
+			&:nth-child(#{$k}) {
+				--icon: icon(#{$v});
+			}
+		}
+	}
 }
 
 .panels__5e434 {
