@@ -1,0 +1,129 @@
+@use "controls";
+@use "typography";
+@use "util";
+
+.vcd-screen-picker-card:not(.vcd-screen-picker-preview) {
+	@include controls.cards-container;
+
+	background-color: transparent;
+	padding: 0;
+
+	:where(& > :not(:first-child)) {
+		@include controls.card-in-container(
+			$first-selector: ":first-child",
+			$last-selector: ":last-child"
+		);
+
+		margin: 0;
+	}
+
+	section {
+		display: grid;
+		grid-template-columns: 35% 65%;
+	}
+}
+
+.vcd-screen-picker-modal {
+	text-align: start;
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.vc-h4 {
+		margin-block-end: 16px;
+	}
+
+	.vc-h5 {
+		font-weight: normal;
+		margin-block: calc(var(--spacing) + 1px);
+	}
+}
+
+.vcd-screen-picker-option-radio {
+	@include controls.toggle-group-toggle($checked: "[data-checked='true']");
+
+	background-color: transparent;
+	border: none;
+
+	.vc-text-base {
+		color: inherit;
+	}
+}
+
+.vcd-screen-picker-option-radios {
+	@include controls.toggle-group;
+}
+
+.vcd-screen-picker-preview {
+	margin-block-end: 34px;
+}
+
+.vcd-screen-picker-quality {
+	gap: 0;
+	margin: 0;
+
+	flex-direction: column;
+
+	// Content type description
+	p {
+		display: none;
+	}
+}
+
+.vcd-screen-picker-screen-label {
+	@include controls.button;
+
+	outline: none;
+
+	height: unset;
+}
+
+.vcd-screen-picker-screen-name {
+	margin-block-start: 5px;
+}
+
+.vcd-screen-picker-quality-section {
+	&:not(.vcd-screen-picker-quality:nth-child(2) > &) {
+		@include controls.card-in-container(
+			$first-selector: ":first-child",
+			$last-selector: ".vcd-screen-picker-settings-buttons"
+		);
+	}
+}
+
+.vcd-screen-picker-settings-button {
+	@include controls.card-in-container(
+		$first-selector: ":first-child",
+		$last-selector: ":last-child"
+	);
+
+	font-weight: normal;
+
+	flex-direction: row-reverse;
+	justify-content: space-between;
+
+	&:first-child {
+		border-radius: 0;
+	}
+
+	.vc-icon {
+		display: block;
+		// Just align, don't give a shit about the rest
+		width: var(--icon-button-size);
+		height: var(--icon-button-size);
+	}
+}
+
+.vcd-screen-picker-settings-buttons {
+	all: unset;
+
+	gap: 0;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.vcd-screen-picker-venmic-settings {
+	gap: 0;
+}

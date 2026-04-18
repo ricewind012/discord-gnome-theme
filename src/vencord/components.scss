@@ -57,6 +57,8 @@
 }
 
 .vc-form-switch-text {
+	gap: var(--spacing);
+
 	justify-content: start;
 }
 
@@ -86,21 +88,25 @@
 .vc-h4,
 .vc-h5 {
 	@extend %title-3;
+
+	// h4
+	letter-spacing: 0;
 }
 
 .vc-icon {
 	@include util.icon;
 
 	$-icons: (
-		folder: "folder",
-		info: "info-outline",
-		log: "info-outline",
-		paintbrush: "edit",
-		restart: "update",
+		cog-wheel: "settings",
+		folder-icon: "folder",
+		info-icon: "info-outline",
+		log-icon: "info-outline",
+		paintbrush-icon: "edit",
+		restart-icon: "update",
 	);
 
 	@each $k, $v in $-icons {
-		&.vc-#{$k}-icon {
+		&.vc-#{$k} {
 			--icon: icon(#{$v});
 		}
 	}
