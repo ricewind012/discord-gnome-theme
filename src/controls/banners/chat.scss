@@ -23,13 +23,17 @@
 	width: 100%;
 	height: unset;
 	min-height: unset;
+
+	&.newMessagesBar__0f481 {
+		width: calc(100% - var(--spacing-2x));
+	}
 }
 
 .barButtonAlt__0f481 {
 	@include controls.button;
 }
 
-.barButtonBase__0f481 {
+.barButtonMain__0f481 {
 	text-align: center;
 	padding: 0 var(--spacing);
 

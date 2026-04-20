@@ -12,6 +12,8 @@
 #---new-messages-bar {
 	--separator-spacing: 0px;
 
+	border: none;
+	gap: var(--spacing-2x);
 	margin-inline: var(--custom-message-margin-horizontal) 0;
 	margin-block: calc(var(--spacing) + var(--separator-spacing));
 
@@ -33,17 +35,32 @@
 		--separator-spacing: var(--space-xxl);
 	}
 
-	&::before {
-		content: "NEW MESSAGES";
+	&::before,
+	&::after {
+		content: "";
 
-		background-color: var(--background-primary);
-		color: var(--status-danger);
-		font-weight: bold;
-		padding: 0 var(--spacing);
+		flex-grow: 1;
+		height: 1px;
+
+		background: color-mix(
+			in srgb,
+			var(--destructive-bg-color) 50%,
+			transparent
+		);
 	}
 
 	& > span {
-		display: none;
+		all: unset;
+
+		color: var(--destructive-color);
+		font-size: var(--document-font-size);
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-block-start: 1px;
+
+		& > svg {
+			display: none;
+		}
 	}
 }
 
