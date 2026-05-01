@@ -6,11 +6,11 @@
 	@include controls.button;
 
 	background-color: transparent;
+	padding-block: 10px;
 	margin: 0;
 
 	box-sizing: border-box;
-	display: flex;
-	align-items: center;
+	display: block;
 
 	&[aria-selected="true"] {
 		background-color: color-mix(in srgb, currentColor 10%, transparent);

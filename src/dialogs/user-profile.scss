@@ -32,15 +32,21 @@
 
 	height: 100%;
 
-	// tabs
 	.tabListScroller__37bfc {
 		box-shadow: var(--elevation-low);
 		padding: var(--spacing);
+		padding-inline-end: calc(
+			var(--titlebar-button-size) + var(--titlebar-button-spacing) * 2
+		);
 		margin: 0;
 
-		overflow: auto;
+		overflow: hidden;
 		min-height: var(--headerbar-height);
 		z-index: 1;
+
+		[role="tab"] {
+			flex: 0 1 auto;
+		}
 
 		& > [role="tablist"] {
 			justify-content: center;
