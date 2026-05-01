@@ -9,8 +9,7 @@
 	--titlebar-maximize-button: none;
 	--titlebar-minimize-button: none;
 	/* also set this to how much buttons are visible */
-	// TODO: remove when checkpoint is gone
-	--titlebar-buttons-count: 2;
+	--titlebar-buttons-count: 1;
 
 	&.platform-win {
 		--app-border-size: 1px;

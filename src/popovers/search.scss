@@ -13,7 +13,7 @@
 	right: 0;
 }
 
-.container_b6544f:not(:empty) {
+.container__16eb0:not(:empty) {
 	@include popover.container;
 
 	margin-block-start: calc(var(--headerbar-height) + var(--spacing));
