@@ -128,11 +128,9 @@
 .container__040f0 {
 	padding: 0;
 
-	&.isHeader__040f0:not(.isReply__040f0) {
-		top: calc(
-			(var(--icon-button-size) + #{controls.$osd-like-padding} * 2) * -0.5
-		);
-	}
+	inset-block-start: calc(
+		var(--icon-button-size) * -1 - #{controls.$osd-like-padding} * 2
+	);
 }
 
 // Code with other fancy shit

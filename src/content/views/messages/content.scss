@@ -128,6 +128,14 @@
 			@extend %title-1;
 		}
 	}
+
+	.repliedMessage_c19a55 {
+		@extend %caption;
+	}
+
+	.repliedTextContent_c19a55 {
+		-webkit-line-clamp: unset;
+	}
 }
 
 .messagesWrapper__36d07 {
@@ -156,6 +164,15 @@
 			height: 100%;
 
 			background: var(--gradient-image);
+		}
+	}
+
+	.scroller__36d07 {
+		&::-webkit-scrollbar-thumb,
+		&::-webkit-scrollbar-track {
+			background-clip: padding-box;
+			border: 4px solid transparent;
+			margin: 0;
 		}
 	}
 
