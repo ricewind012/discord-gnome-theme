@@ -5,7 +5,7 @@
 	".group__64e61",
 	".radioGroupOption__64e61",
 	".radioIndicator__64e61",
-	".radioGroupOption__64e61[data-selected='true']"
+	":where(.radioGroupOption__64e61, .standaloneRadioIndicator__64e61)[data-selected='true']"
 );
 
 .group__64e61 {
