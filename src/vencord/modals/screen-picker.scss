@@ -83,45 +83,18 @@
 	margin-block-start: 5px;
 }
 
-.vcd-screen-picker-quality-section {
-	&:not(.vcd-screen-picker-quality:nth-child(2) > &) {
-		@include controls.card-in-container(
-			$first-selector: ":first-child",
-			$last-selector: ".vcd-screen-picker-settings-buttons"
-		);
+.vcd-screen-picker-quality {
+	&:nth-child(2) {
+		border: none;
+		padding: 0;
 	}
 }
 
-.vcd-screen-picker-settings-button {
+.vcd-screen-picker-quality-section {
 	@include controls.card-in-container(
 		$first-selector: ":first-child",
-		$last-selector: ":last-child"
+		$last-selector: "#hack"
 	);
-
-	font-weight: normal;
-
-	flex-direction: row-reverse;
-	justify-content: space-between;
-
-	&:first-child {
-		border-radius: 0;
-	}
-
-	.vc-icon {
-		display: block;
-		// Just align, don't give a shit about the rest
-		width: var(--icon-button-size);
-		height: var(--icon-button-size);
-	}
-}
-
-.vcd-screen-picker-settings-buttons {
-	all: unset;
-
-	gap: 0;
-
-	display: flex;
-	flex-direction: column;
 }
 
 .vcd-screen-picker-venmic-settings {
