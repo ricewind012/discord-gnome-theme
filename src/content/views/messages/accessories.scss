@@ -64,12 +64,16 @@
 
 		flex-shrink: 0;
 
+		&.button__201d5 {
+			--icon: icon("view-fullscreen");
+		}
+
 		&[aria-label="Pause"] {
 			--icon: icon("pause");
 		}
 	}
 
-	.volumeButton__2d263.button__201d5 {
+	.volumeButton__2d263 {
 		@include -media-button($osd, $name: "speaker-3");
 
 		color: inherit;
@@ -133,8 +137,9 @@
 	);
 }
 
-// Code with other fancy shit
-.container__4d95d {
+// Fancy codeblock (modal included, since it's one component)
+.container__4d95d,
+.modalContent__4d95d {
 	@include controls.card;
 
 	padding: 0;
@@ -144,7 +149,26 @@
 		margin: 0;
 	}
 
-	.footer__4d95d {
+	.expandCollapseSection__4d95d {
+		margin: 0;
+
+		button {
+			--icon: icon("down");
+
+			&[aria-label^="Collapse"] {
+				--icon: icon("up");
+			}
+		}
+	}
+
+	.fileName__4d95d {
+		@extend %title-3;
+
+		color: inherit;
+	}
+
+	.footer__4d95d,
+	.modalFooter__4d95d {
 		background-color: transparent;
 		color: var(--card_fg_color);
 		border: none;
@@ -153,55 +177,15 @@
 		padding: 0;
 		margin: var(--spacing) 16px;
 
-		& > [role="button"] {
+		[role="button"] {
 			@include controls.icon-button;
-		}
 
-		.attachmentName__4d95d {
-			@extend %title-3;
-		}
+			margin: 0;
 
-		// This is an svg, so no custom icon here... but looks pretty fitting
-		.codeIcon__4d95d {
-			@include controls.button-basic-raised;
-
-			background-color: transparent;
-			color: var(--card_fg_color);
-			border-radius: var(--button_radius);
-			padding: var(--spacing);
-
-			box-sizing: border-box;
-			width: var(--icon-button-size);
-			height: var(--icon-button-size);
-			order: 1;
-		}
-
-		.downloadSection__4d95d {
-			--icon: icon("folder-download");
-
-			order: -1;
-		}
-
-		.formattedSize__4d95d {
-			margin-right: auto;
-
-			flex-grow: 0;
-		}
-
-		.openFullPreviewSection__4d95d {
-			--icon: icon("view-fullscreen");
-		}
-
-		.toggleExpandSection__4d95d {
-			--icon: icon("down");
-
-			// It includes a tooltip with it for some reason anyway
-			font-size: 0;
-
-			order: 1;
-
-			&[aria-label^="Collapse"] {
-				--icon: icon("up");
+			// Used as a popover anchor
+			svg {
+				visibility: hidden;
+				display: block;
 			}
 		}
 	}
@@ -210,10 +194,26 @@
 		display: none;
 	}
 
+	.languageIcon__4d95d {
+		--icon: icon("lang-include");
+	}
+
+	.nameSection__4d95d {
+		margin-inline-end: auto;
+
+		order: -1;
+	}
+
+	.openFullPreviewSection__4d95d {
+		--icon: icon("view-fullscreen");
+	}
+
+	.modalTextContainer__4d95d,
 	.textContainer__4d95d {
 		background-color: color-mix(in srgb, currentColor 3%, transparent);
 		border: none;
 		border-bottom: 1px solid var(--card_shade_color);
+		border-radius: var(--card_radius) var(--card_radius) 0 0;
 	}
 }
 
@@ -362,6 +362,33 @@
 	@extend %text-normal;
 }
 
+// Server invite
+.guildInviteContainer__083ae {
+	@include controls.card;
+
+	padding: 0;
+}
+
+// Expired server invite
+.wrapper_d5f3cd {
+	@include controls.card;
+
+	.guildIcon_d5f3cd {
+		border-radius: 999px;
+	}
+
+	.inviteDestination_d5f3cd {
+		margin: 0;
+	}
+
+	.inviteSplash_d5f3cd {
+		border-top-right-radius: inherit;
+		border-top-left-radius: inherit;
+		margin: -10px -16px;
+		margin-bottom: 10px;
+	}
+}
+
 .hoverButtonGroup__06ab4 {
 	background-color: transparent;
 	outline: none;
@@ -488,37 +515,15 @@
 	@include -media-controls($osd: true);
 	@include controls.osd-like-button-group;
 
-	margin: var(--spacing);
-	margin-bottom: calc(var(--spacing) + 10px);
+	margin-block: calc(var(--spacing) + 10px);
+	margin-inline: var(--spacing);
 
 	width: calc(100% - var(--spacing) * 3);
 	height: unset;
 
-	// No other way to identify that
-	.videoButton_cf09d8.button__201d5 {
-		--icon: icon("view-fullscreen");
-
-		color: inherit;
-	}
-}
-
-// Server invite
-.wrapper_d5f3cd {
-	@include controls.card;
-
-	.guildIcon_d5f3cd {
-		border-radius: 999px;
-	}
-
-	.inviteDestination_d5f3cd {
-		margin: 0;
-	}
-
-	.inviteSplash_d5f3cd {
-		border-top-right-radius: inherit;
-		border-top-left-radius: inherit;
-		margin: -10px -16px;
-		margin-bottom: 10px;
+	// bruh d*scord
+	&:not([style="transform: translateY(0%);"]) {
+		margin-block: calc(var(--spacing) + 4px);
 	}
 }
 
@@ -529,12 +534,7 @@
 		@include -media-controls($osd: false);
 
 		background-color: transparent;
-		color: rgba(0, 0, 6, 0.8); // var(--card_fg_color);
 		margin-top: var(--spacing-2x);
-
-		.videoButton_cf09d8 {
-			color: inherit;
-		}
 	}
 
 	.audioMetadata_cf09d8 {
