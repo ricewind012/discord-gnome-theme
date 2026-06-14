@@ -75,8 +75,10 @@
 @include -gen-icons(
 	"aria-label",
 	(
+		"Add Friends": "contact-new",
 		"Add Friends to DM": "contact-new",
 		"Add Friends to Group DM": "contact-new",
+		"Add to DM": "contact-new",
 		// TODO(experiment): remove later ? nitro only
 		"Bookmarks": "user-bookmarks",
 		"DevTools": "build-alt",

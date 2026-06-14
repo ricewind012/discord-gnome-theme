@@ -4,7 +4,7 @@
 
 :root {
 	--chat-header-right-padding: calc(
-		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing)
+		var(--titlebar-right-spacing) + var(--spacing)
 	);
 }
 
@@ -26,8 +26,11 @@
 		box-shadow: var(--elevation-low);
 	}
 
-	&:has(.search_c322aa:focus-within, .icon_c322aa.pointer_fea832) {
-		height: calc(var(--headerbar-height) * 2);
+	&:has(.search_c322aa:focus-within) {
+		.children__9293f {
+			opacity: 0;
+			pointer-events: none;
+		}
 	}
 
 	// home
@@ -38,6 +41,20 @@
 	.avatar_f75fb0 {
 		margin-left: 0;
 		margin-right: var(--spacing);
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+
+		svg,
+		foreignObject,
+		img {
+			width: 100% !important;
+			height: 100% !important;
+			mask: none !important;
+			border-radius: 50%;
+			x: 0 !important;
+			y: 0 !important;
+		}
 	}
 
 	// Experiments vencord plugin
@@ -51,9 +68,11 @@
 
 	min-height: var(--headerbar-height);
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 
 	app-region: drag;
+
+	transition: opacity 200ms ease;
 
 	&:not(:has(.avatar_f75fb0)) {
 		flex-direction: column;
@@ -152,30 +171,59 @@
 
 .search__49676 {
 	margin: 0 var(--spacing);
+	width: var(--icon-button-size);
+	max-width: var(--icon-button-size);
+	min-width: unset;
 
 	position: absolute;
 	left: 0;
+	top: calc((var(--headerbar-height) - var(--icon-button-size)) / 2) !important;
+	z-index: 10;
+	overflow: hidden;
+
+	-webkit-app-region: no-drag !important;
+	app-region: no-drag !important;
+
+	transition: width 200ms ease, max-width 200ms ease;
+
+	&:focus-within {
+		width: 240px;
+		max-width: 240px;
+	}
+
+	&:not(:focus-within) {
+		.DraftEditor-root {
+			opacity: 0 !important;
+			pointer-events: none !important;
+		}
+	}
 
 	.DraftEditor-editorContainer {
 		height: unset;
 	}
 
 	.DraftEditor-root {
-		@include controls.text-field;
-
 		font-weight: normal;
-
-		position: absolute;
-		top: var(--headerbar-height);
-		left: 0;
-		width: 250px;
+		width: 100%;
+		display: flex !important;
+		align-items: center !important;
+		height: 100% !important;
+		opacity: 1 !important;
+		pointer-events: auto !important;
 	}
 
-	.public-DraftEditor-content,
+	.public-DraftEditor-content {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
 	.public-DraftEditorPlaceholder-root {
-		padding: 0;
-		padding-left: 2px;
-		margin-block: 1px -1px;
+		position: absolute !important;
+		top: 50% !important;
+		transform: translateY(-50%) !important;
+		left: 2px !important;
+		padding: 0 !important;
+		margin: 0 !important;
 	}
 
 	.searchAnswer_bd8186,
@@ -198,11 +246,32 @@
 	border: none;
 	border-radius: var(--button_radius);
 
-	width: var(--icon-button-size);
+	width: 100%;
 	height: var(--icon-button-size);
 	flex-direction: row-reverse;
 
 	transition: var(--backdrop_transition);
+
+	&:focus-within {
+		@include controls.text-field;
+		background-color: var(--view_bg_color) !important;
+		height: var(--icon-button-size) !important;
+		padding-inline: var(--spacing) !important;
+		padding-block: 0 !important;
+		box-sizing: border-box !important;
+		display: flex !important;
+		align-items: center !important;
+
+		.icon_c322aa {
+			background: none !important;
+			pointer-events: none !important;
+			box-shadow: none !important;
+
+			&::after {
+				display: none !important;
+			}
+		}
+	}
 }
 
 .title__9293f {
