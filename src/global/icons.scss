@@ -75,8 +75,7 @@
 @include -gen-icons(
 	"aria-label",
 	(
-		"Add Friends to DM": "contact-new",
-		"Add Friends to Group DM": "contact-new",
+		"Add to DM": "contact-new",
 		// TODO(experiment): remove later ? nitro only
 		"Bookmarks": "user-bookmarks",
 		"DevTools": "build-alt",
@@ -87,6 +86,7 @@
 		"Hide User Profile": "user-info",
 		// TODO(experiment): remove in the future in favor of notifications
 		"Inbox": "mail-unread",
+		"Invite to Group DM": "contact-new",
 		// Group chat
 		"Join Voice Call": "phone-right-facing",
 		"New Group DM": "contact-new",
