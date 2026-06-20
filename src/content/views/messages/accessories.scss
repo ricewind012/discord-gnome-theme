@@ -95,7 +95,6 @@
 	.hoverBarButton_f84418 {
 		@include controls.osd-like-button;
 
-		// TODO: lag?
 		// :has is for reactions
 		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
 			&::before {

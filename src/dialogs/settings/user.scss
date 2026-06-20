@@ -1,97 +1,17 @@
-@use "controls";
-@use "typography";
+.themeSelection__36dee {
+	border-radius: 50%;
 
-$-themes-container-sel: ".stack_dbd263:has(> .themeSelectionContainer__36dee)";
-
-// Nitro themes
-@include controls.radio(
-	$-themes-container-sel,
-	".themeSelection__36dee",
-	".themeSelection__36dee::before",
-	".hack"
-);
-
-#{$-themes-container-sel} {
-	background-color: transparent;
-	gap: 0;
-	padding: 0;
-
-	overflow: hidden;
-	flex-direction: column;
-
-	.iconWrapper__36dee {
-		display: none;
+	&.defaultThemeSelection__36dee {
+		box-shadow: none;
 	}
 
+	&.selected__36dee {
+		box-shadow: 0 0 0 3px var(--accent-bg-color);
+	}
+}
+
+.themeSelectionContainer__36dee {
 	.selectionCircle__36dee {
 		display: none;
-	}
-
-	.themeSelection__36dee {
-		// --card_fg_color
-		&.darkOverlay__36dee {
-			color: #fff;
-		}
-
-		&.lightOverlay__36dee {
-			color: rgba(0, 0, 6, 0.8);
-		}
-
-		// radios.scss override
-		&:first-of-type {
-			border-bottom: 1px solid var(--card_shade_color);
-			border-radius: 0;
-
-			display: flex;
-			align-items: center;
-
-			.themeSelectionContainer__36dee:nth-last-child(2) > & {
-				border: none;
-			}
-		}
-
-		// Custom theme
-		&.container__8fea4 {
-			justify-content: start;
-
-			& > * {
-				display: none;
-			}
-		}
-
-		&::before {
-			content: "";
-
-			box-sizing: border-box;
-			display: block;
-			width: 22px;
-			height: 22px;
-		}
-
-		&[aria-checked="true"]::before {
-			background-color: #fff;
-			border: 7px solid var(--accent-bg-color);
-		}
-
-		&[aria-checked="false"]::before {
-			border: 2px solid color-mix(in srgb, currentColor 25%, transparent);
-		}
-
-		&::after {
-			content: attr(aria-label);
-		}
-	}
-
-	.themeSelectionContainer__36dee {
-		width: 100%;
-		height: unset;
-	}
-
-	.themeTitleContainer__3e443 {
-		@extend %title-3;
-	}
-
-	.title__3e443 {
-		margin-bottom: 0;
 	}
 }
