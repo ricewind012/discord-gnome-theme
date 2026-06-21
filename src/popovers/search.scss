@@ -16,8 +16,6 @@
 .container__16eb0:not(:empty) {
 	@include popover.container;
 
-	margin-block-start: calc(var(--headerbar-height) + var(--spacing));
-
 	[data-text-variant] {
 		font-size: var(--document-font-size);
 	}

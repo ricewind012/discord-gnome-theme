@@ -14,7 +14,7 @@
 	outline: 0 solid transparent;
 	outline-offset: 2px;
 
-	transition: var(--focus_transition);
+	transition: outline var(--focus_transition);
 
 	&:is(:focus, :focus-within) {
 		outline: 2px solid

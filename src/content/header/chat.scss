@@ -25,10 +25,6 @@
 		box-shadow: var(--elevation-low);
 	}
 
-	&:has(.search_c322aa:focus-within, .icon_c322aa.pointer_fea832) {
-		height: calc(var(--headerbar-height) * 2);
-	}
-
 	// home
 	&:not([role="navigation"], [aria-label="Thread header"]) > div {
 		margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
@@ -133,12 +129,12 @@
 		@include controls.button-selected;
 	}
 
-	&.pointer__97492 {
+	&.pointer__0c4c4 {
 		--icon: icon("window-close");
 	}
 
 	// tooltip, the theme is english only anyway lol
-	&:not(.pointer__97492):hover::after {
+	&:not(.pointer__0c4c4):hover::after {
 		content: "Search Messages";
 	}
 }
@@ -154,6 +150,15 @@
 
 	position: absolute;
 	left: 0;
+}
+
+.search_c322aa {
+	&:not(.open_c322aa) {
+		.DraftEditor-root {
+			padding: 0;
+			width: 0;
+		}
+	}
 
 	.DraftEditor-editorContainer {
 		height: unset;
@@ -165,26 +170,31 @@
 		font-weight: normal;
 
 		position: absolute;
-		top: var(--headerbar-height);
-		left: 0;
+		inset-inline-start: calc(var(--icon-button-size) + var(--spacing));
 		width: 250px;
 	}
 
-	.public-DraftEditor-content,
-	.public-DraftEditorPlaceholder-root {
-		padding: 0;
-		padding-left: 2px;
-		margin-block: 1px -1px;
+	.public-DraftEditor-content {
+		// genius d*scord is using this to hide the scrollbar
+		padding-block: 0;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
 	}
 
-	.searchAnswer_bd8186,
-	.searchFilter_bd8186 {
+	.public-DraftEditorPlaceholder-root {
+		margin-block: 1px -1px;
+		padding: 0;
+	}
+
+	.searchToken_bd8186 {
 		@extend %text-normal;
 
 		background-color: color-mix(in srgb, currentColor 20%, transparent);
 		border: none;
 		border-radius: 0;
-		margin-block: calc(var(--space-4) * -1);
+		padding-block: 0;
 
 		height: unset;
 	}
@@ -192,16 +202,11 @@
 
 .searchBar_c322aa {
 	background: transparent;
-	color: inherit;
 	padding: 0;
 	border: none;
-	border-radius: var(--button_radius);
 
 	width: var(--icon-button-size);
-	height: var(--icon-button-size);
-	flex-direction: row-reverse;
-
-	transition: var(--backdrop_transition);
+	height: unset;
 }
 
 .title__9293f {
