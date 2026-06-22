@@ -31,8 +31,17 @@
 	}
 
 	.avatar_f75fb0 {
+		--size: 24px;
+
+		height: var(--size);
 		margin-left: 0;
 		margin-right: var(--spacing);
+		width: var(--size);
+
+		& > svg {
+			height: calc(var(--size) * 1.25);
+			width: calc(var(--size) * 1.25);
+		}
 	}
 
 	// Experiments vencord plugin
@@ -65,6 +74,7 @@
 	.dot__9293f,
 	.nicknames__488b1,
 	& > :empty,
+	& > .dmHeaderActivityStatus_f75fb0,
 	& > .followButton_f75fb0,
 	.iconWrapper__9293f,
 	&:has(> .caret__9293f) [role="button"] {
@@ -81,13 +91,18 @@
 		-webkit-app-region: no-drag;
 
 		.gdmIcon__754bd {
+			--size: 24px;
+
+			height: var(--size);
 			margin: 0;
+			width: var(--size);
 		}
 
-		// TODO: ? in controls.button
 		.svg__44b0c {
+			// TODO: ? in controls.button
 			display: initial;
-			position: relative;
+			height: inherit;
+			width: inherit;
 		}
 	}
 }
@@ -120,6 +135,7 @@
 		$direction: "bottom",
 		$selector: "&:hover::after"
 	);
+	@include util.inactive-dim;
 
 	margin: 0;
 
@@ -210,7 +226,10 @@
 }
 
 .title__9293f {
+	@extend %title-2;
+
 	color: inherit;
+	line-height: 18px;
 }
 
 .titleWrapper__9293f {
@@ -220,12 +239,6 @@
 	// Home title
 	.container__9293f[role="navigation"] & {
 		display: none;
-	}
-
-	& > h1 > div {
-		@extend %title-2;
-
-		line-height: 18px;
 	}
 }
 
