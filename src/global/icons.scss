@@ -49,6 +49,15 @@
 	)
 );
 
+// Popovers
+@include -gen-icons(
+	"aria-label",
+	(
+		// Inbox
+		"Mark As Read": "check-plain"
+	)
+);
+
 // Vencord
 @include -gen-icons(
 	"aria-label",
@@ -84,7 +93,6 @@
 		"Hide Chat": "chat",
 		"Hide Member List": "org.gnome.Settings-users",
 		"Hide User Profile": "user-info",
-		// TODO(experiment): remove in the future in favor of notifications
 		"Inbox": "mail-unread",
 		"Invite to Group DM": "contact-new",
 		// Group chat

@@ -1,13 +1,41 @@
 @use "controls";
 @use "dialog";
 
+.box_a86e6c {
+	@include controls.card;
+
+	padding: 0;
+
+	.singleMessage_a86e6c {
+		// Probably enough to align it, didn't check lol
+		margin: 0 4px;
+		padding-block: calc(
+			var(--custom-message-spacing-vertical-container-cozy) + 10px
+		);
+	}
+}
+
+.buttonGroup__996b5 {
+	gap: var(--spacing);
+}
+
+.channelHeader__996b5 {
+	border-block-end: 1px solid var(--card_shade_color);
+	gap: var(--spacing);
+	padding: 10px 16px;
+}
+
+.container__9497c {
+	@include dialog.container;
+}
+
 .controls_ab6641 {
 	// for the ONLY mana icon button there
 	--icon: icon("funnel");
 
 	gap: var(--spacing);
 
-	[role="button"] {
+	[role="button"]:not(.focusTarget__54e4b) {
 		@include controls.icon-button;
 	}
 }
@@ -17,6 +45,8 @@
 }
 
 .header_ab6641 {
+	@include dialog.header;
+
 	display: flex;
 	flex-direction: row-reverse;
 	align-items: center;
@@ -25,15 +55,23 @@
 
 .headerTabs_ab6641 {
 	margin: 0;
+	width: 100%;
+
+	[role="tab"] {
+		flex: unset;
+	}
 
 	[role="tablist"] {
 		margin: 0;
 	}
 }
 
-.channelHeader__35a7e,
+.icon__996b5 {
+	border-radius: 50%;
+}
+
+.chevron__996b5,
 .inboxIcon_ab6641,
-.inboxTitle_ab6641,
-.recentMentionsPopout__95796 .titleContainer_e8b59c {
+.inboxTitle_ab6641 {
 	display: none;
 }
