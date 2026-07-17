@@ -33,12 +33,13 @@
 	.avatar_f75fb0 {
 		--size: 24px;
 
+		app-region: no-drag;
 		height: var(--size);
 		margin-left: 0;
 		margin-right: var(--spacing);
 		width: var(--size);
 
-		& > svg {
+		.svg__44b0c {
 			height: calc(var(--size) * 1.25);
 			width: calc(var(--size) * 1.25);
 		}
