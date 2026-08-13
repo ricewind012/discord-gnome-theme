@@ -1,5 +1,9 @@
 @use "controls";
 
+* {
+	box-sizing: border-box;
+}
+
 .custom-theme-background {
 	body {
 		background: var(--background-gradient-app-frame);

@@ -119,9 +119,6 @@
 	border-bottom: 1px solid var(--card_shade_color);
 	border-radius: 0;
 	box-shadow: none;
-
-	box-sizing: border-box;
-
 	pointer-events: none;
 
 	&:is(:hover, :active) {

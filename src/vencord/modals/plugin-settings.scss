@@ -40,10 +40,6 @@
 .vc-settings-modal-content {
 	text-align: start;
 
-	* {
-		box-sizing: border-box;
-	}
-
 	.vc-text-lg.vc-margin-top-16 {
 		@extend %title-3;
 

@@ -231,10 +231,6 @@
 		margin-block: var(--spacing-2x);
 	}
 
-	.answerSelectionIcon__4c520 {
-		box-sizing: border-box;
-	}
-
 	.bottomBar__0be77 {
 		min-height: unset;
 	}
@@ -269,8 +265,6 @@
 
 	.playbackRate_a8e786 {
 		@include controls.button;
-
-		box-sizing: border-box;
 	}
 
 	.rippleContainer_a8e786 {
