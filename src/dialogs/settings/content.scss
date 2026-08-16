@@ -4,8 +4,6 @@
 
 .baseSettingWrapper__32428 {
 	@include controls.card-in-container(
-		$activatable: true,
-		// todo lol
 		$first-selector:
 			".stack_dbd263[data-direction='vertical'] > .container__75920:first-child > &",
 		$last-selector:
@@ -13,6 +11,110 @@
 	);
 
 	margin: 0;
+
+	// todo lol
+	.container__75920
+		> .stack_dbd263[data-direction="vertical"]:not(
+			[style="gap: var(--space-8); padding: var(--space-0);"]
+		)
+		> .container__75920:first-child
+		> & {
+		border-radius: var(--card_radius) var(--card_radius) 0 0;
+	}
+
+	.container__75920
+		> .stack_dbd263[data-direction="vertical"]:not(
+			[style="gap: var(--space-8); padding: var(--space-0);"]
+		)
+		> .container__75920:last-child
+		> & {
+		border-radius: 0 0 var(--card_radius) var(--card_radius);
+		border: none;
+	}
+
+	// todo also
+	&.clickable__32428 {
+		transition: var(--backdrop_transition);
+
+		&:hover {
+			background-color: color-mix(
+				in srgb,
+				currentColor 3%,
+				var(--card_bg_color)
+			);
+		}
+
+		&:active {
+			background-color: color-mix(
+				in srgb,
+				currentColor 8%,
+				var(--card_bg_color)
+			);
+		}
+	}
+}
+
+.baseControlItem_dbfbe0 {
+	@include controls.card-in-container(
+		$first-selector:
+			".stack_dbd263[data-direction='vertical'] > .container__75920:first-child > &",
+		$last-selector:
+			".stack_dbd263[data-direction='vertical'] > .container__75920:last-child > &"
+	);
+
+	margin: 0;
+
+	// todo lol
+	.container__75920
+		> .stack_dbd263[data-direction="vertical"]:not(
+			[style="gap: var(--space-8); padding: var(--space-0);"]
+		)
+		> .container__75920:first-child
+		& {
+		border-radius: var(--card_radius) var(--card_radius) 0 0;
+	}
+
+	.container__75920
+		> .stack_dbd263[data-direction="vertical"]:not(
+			[style="gap: var(--space-8); padding: var(--space-0);"]
+		)
+		> .container__75920:last-child
+		& {
+		border-radius: 0 0 var(--card_radius) var(--card_radius);
+		border: none;
+	}
+
+	&.clickable_dbfbe0 {
+		gap: calc(var(--icon-button-size) + 16px);
+		pointer-events: none;
+		// todo also
+		transition: var(--backdrop_transition);
+	}
+}
+
+.baseControlItemLeadingElement_dbfbe0 {
+	display: none;
+}
+
+.baseControlItemTrailingElement_dbfbe0 {
+	--icon: icon("right");
+
+	@include controls.card-button-pseudo;
+
+	.react-aria-Disclosure & {
+		--icon: icon("down");
+	}
+
+	&::before,
+	&::after {
+		// todo also
+		inset-inline-end: 0;
+		pointer-events: all;
+	}
+
+	& > * {
+		display: none;
+	}
 }
 
 .container__75920 {
