@@ -28,7 +28,7 @@
 .bodyInner__8a031 {
 	text-align: center;
 	padding: var(--dialog-spacing);
-	padding-top: var(--dialog-spacing-x05);
+	padding-inline-end: calc(var(--dialog-spacing) - 16px);
 }
 
 // ???
@@ -38,6 +38,8 @@
 }
 
 .container__8a031 {
+	--custom-modal-padding-top: var(--dialog-spacing);
+
 	@include dialog.container;
 
 	border: none;
@@ -49,17 +51,23 @@
 }
 
 .header__8a031 {
-	padding: 0;
-	padding-top: var(--dialog-spacing);
+	padding: var(--dialog-spacing);
+	padding-block-end: 0;
 
 	& > .stack_dbd263 {
+		gap: var(--dialog-spacing-x05);
 		text-align: center;
 	}
 }
 
+.headerGradient__8a031 {
+	&::before {
+		inset-block-start: 0;
+	}
+}
+
 .headerSubtitleWrapper__8a031 {
-	margin-block-start: var(--dialog-spacing-x05);
-	margin-inline: var(--dialog-spacing);
+	justify-content: center;
 }
 
 .headerTrailing__8a031 {
@@ -68,6 +76,7 @@
 	position: absolute;
 	top: var(--titlebar-button-spacing);
 	right: var(--titlebar-button-spacing);
+	z-index: 0;
 
 	.button_a22cb0.icon-only_a22cb0 {
 		@include controls.titlebar-button;
