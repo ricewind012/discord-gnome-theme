@@ -1,6 +1,7 @@
 @use "controls";
 @use "dialog";
 
+[role="alertdialog"],
 [role="dialog"] {
 	--dialog-spacing-x05: calc(var(--dialog-spacing) / 2);
 	--dialog-spacing: 24px;
