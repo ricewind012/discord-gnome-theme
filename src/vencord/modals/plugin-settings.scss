@@ -57,15 +57,17 @@
 
 .vc-plugin-modal-header {
 	align-items: center;
+	block-size: var(--headerbar-height);
 	box-shadow: var(--elevation-low);
-	height: var(--headerbar-height);
+	inline-size: calc(100% + var(--dialog-spacing) * 2);
 	justify-content: center;
 	margin-block-start: calc(var(--dialog-spacing) * -1);
+	margin-inline-start: calc(var(--dialog-spacing) * -1);
 	padding: 0;
-	padding-inline-start: calc(var(--icon-button-size) * 3 + var(--spacing) * 4);
+	padding-inline-start: var(--spacing);
 	padding-inline-end: calc(
-		var(--spacing) + var(--titlebar-button-spacing) +
-			var(--titlebar-button-size)
+		var(--spacing) * 5 + var(--icon-button-size) * 3 +
+			var(--titlebar-button-spacing) + var(--titlebar-button-size)
 	);
 
 	.vc-text-base {
@@ -101,7 +103,10 @@
 .vc-settings-modal-links {
 	gap: var(--spacing);
 	inset-block-start: var(--spacing);
-	inset-inline-start: var(--spacing);
+	inset-inline-end: calc(
+		var(--titlebar-button-spacing) + var(--titlebar-button-size) +
+			var(--spacing)
+	);
 	position: absolute;
 
 	& > * {
