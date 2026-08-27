@@ -2,6 +2,21 @@
 @use "typography";
 @use "util";
 
+[aria-label="Audio Settings"],
+[aria-label="Screen Share Picker"] {
+	.bodyInner__8a031 {
+		text-align: start;
+	}
+
+	.vc-h4 {
+		margin-block-end: 16px;
+	}
+
+	.vc-h5 {
+		margin-block: auto;
+	}
+}
+
 .vcd-screen-picker-card:not(.vcd-screen-picker-preview) {
 	@include controls.cards-container;
 
@@ -20,19 +35,6 @@
 	section {
 		display: grid;
 		grid-template-columns: 35% 65%;
-	}
-}
-
-.vcd-screen-picker-modal {
-	text-align: start;
-
-	.vc-h4 {
-		margin-block-end: 16px;
-	}
-
-	.vc-h5 {
-		font-weight: normal;
-		margin-block: calc(var(--spacing) + 1px);
 	}
 }
 
