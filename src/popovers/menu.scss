@@ -166,7 +166,7 @@
 		position: absolute;
 		right: var(--menu_padding);
 
-		* {
+		& > * {
 			display: none;
 		}
 	}

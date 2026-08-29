@@ -2,6 +2,11 @@
 
 @include controls.slider(".bar_a562c8", ".barFill_a562c8", ".grabber_a562c8");
 
+%-mark-text {
+	color: var(--text-muted);
+	font-size: var(--document-font-size);
+}
+
 .barFill_a562c8 {
 	border: none;
 }
@@ -9,14 +14,11 @@
 .mark_a562c8 {
 	flex-direction: column-reverse;
 	height: unset;
-
-	& > * {
-		color: var(--text-muted);
-		font-size: var(--document-font-size);
-	}
 }
 
 .markDash_a562c8 {
+	@extend %-mark-text;
+
 	background-color: currentColor;
 
 	width: 1px;
@@ -24,6 +26,8 @@
 }
 
 .markValue_a562c8 {
+	@extend %-mark-text;
+
 	margin-top: 2px;
 	margin-bottom: 0;
 }

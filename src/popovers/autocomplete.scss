@@ -8,6 +8,10 @@
 	inset-inline: 0;
 }
 
+.autocompleteRowIcon__13533 {
+	margin: 0;
+}
+
 .contentTitle__13533 {
 	@include popover.title;
 }
@@ -43,12 +47,6 @@
 		gap: var(--spacing);
 
 		flex-grow: 1;
-
-		& > * {
-			margin: 0;
-
-			text-align: start;
-		}
 	}
 
 	.autocompleteRowContentPrimary__13533 {
@@ -65,7 +63,8 @@
 
 	.autocompleteRowContentSecondary__13533 {
 		font: inherit;
-
+		margin: 0;
+		text-align: start;
 		width: 50%;
 	}
 

@@ -124,8 +124,16 @@
 	.markup__75297 {
 		font-weight: normal;
 
-		:is(h1, h2, h3) * {
+		h1 {
 			@extend %title-1;
+		}
+
+		h2 {
+			@extend %title-2;
+		}
+
+		h3 {
+			@extend %title-3;
 		}
 	}
 

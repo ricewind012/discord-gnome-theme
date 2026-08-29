@@ -69,10 +69,6 @@ $destructive_button_active_color: color-mix(
 		@include -destructive;
 	}
 
-	&:where(.critical-primary_a22cb0, .critical-secondary_a22cb0) {
-		@include -destructive;
-	}
-
 	&:where(:not(.hasText_a22cb0)),
 	&:where(.icon-only_a22cb0) {
 		@include controls.icon-button;
@@ -81,9 +77,4 @@ $destructive_button_active_color: color-mix(
 
 .buttonChildrenWrapper_a22cb0 {
 	all: unset;
-
-	// undo %caption
-	[data-text-variant] {
-		all: inherit;
-	}
 }

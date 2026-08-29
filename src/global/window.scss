@@ -1,6 +1,6 @@
 @use "controls";
 
-* {
+:where(*) {
 	box-sizing: border-box;
 }
 
