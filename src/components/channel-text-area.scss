@@ -31,7 +31,7 @@
 		}
 
 		&[contenteditable="false"] {
-			opacity: var(--dim-level-opacity);
+			@include controls.text-field-disabled;
 		}
 	}
 

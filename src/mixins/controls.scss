@@ -24,15 +24,6 @@ $toast_fg_color: white;
 	);
 	color: var(--window_fg_color);
 	padding: var(--spacing);
-
-	* {
-		font-size: inherit;
-		font-weight: inherit;
-	}
-
-	svg {
-		display: none;
-	}
 }
 
 @mixin tooltip {
@@ -104,6 +95,10 @@ $toast_fg_color: white;
 	}
 }
 
+@mixin button-disabled {
+	opacity: var(--dim-level-opacity);
+}
+
 @mixin button-selected {
 	background-color: var(--selected_color);
 
@@ -134,11 +129,6 @@ $toast_fg_color: white;
 	position: relative;
 	width: var(--icon-button-size);
 	height: var(--icon-button-size);
-
-	&:disabled {
-		opacity: var(--dim-level-opacity);
-		background-color: transparent;
-	}
 
 	&::before {
 		content: "";
@@ -436,17 +426,10 @@ $toast_fg_color: white;
 	margin: 0;
 
 	height: unset;
+}
 
-	&:disabled {
-		opacity: var(--dim-level-opacity);
-	}
-
-	// TODO: maybe remove and --input-placeholder-text: var(--text-muted)
-	&::placeholder {
-		color: var(--text-muted);
-		font-size: inherit;
-		font-weight: inherit;
-	}
+@mixin text-field-disabled {
+	opacity: var(--dim-level-opacity);
 }
 
 @mixin toast {

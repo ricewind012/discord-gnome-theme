@@ -28,8 +28,8 @@ $destructive_button_active_color: color-mix(
 .button__201d5 {
 	@include controls.button;
 
-	&:disabled {
-		opacity: var(--dim-level-opacity);
+	&:where(:disabled) {
+		@include controls.button-disabled;
 	}
 
 	&:where(.colorBrand__201d5) {
@@ -59,6 +59,10 @@ $destructive_button_active_color: color-mix(
 	@include controls.button;
 
 	max-height: unset;
+
+	&:where(:disabled) {
+		@include controls.button-disabled;
+	}
 
 	&:where(.primary_a22cb0) {
 		@include controls.button-accent;

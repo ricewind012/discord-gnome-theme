@@ -62,6 +62,7 @@
 
 	--channel-text-area-placeholder: var(--text-muted);
 	--channels-default: var(--window_fg_color);
+	--input-placeholder-text-default: var(--text-muted);
 
 	// Originally 50%, but nothing uses the secondary text color anyway
 	$border_color: color-mix(in srgb, currentColor 25%, transparent);

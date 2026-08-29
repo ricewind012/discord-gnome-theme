@@ -6,6 +6,11 @@ html {
 	font-size: var(--document-font-size);
 }
 
+::placeholder {
+	color: var(--text-muted);
+	font: inherit;
+}
+
 ::selection {
 	background-color: color-mix(in srgb, var(--view_fg_color) 10%, transparent);
 
