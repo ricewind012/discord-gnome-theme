@@ -18,7 +18,7 @@ A GNOME theme for Discord, following the Adwaita style & GNOME Human Interface G
 
 2. Install [Discord Adblock][adblock]
 
-   Removes Nitro elements, as they will look out of place.
+   Removes Nitro elements, as they will look out of place. Optional, if all you wanted to hide was the "Send a gift" button in chat.
 
 3. Settings > Language > Choose "English (US)"
 

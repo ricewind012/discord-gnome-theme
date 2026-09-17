@@ -17,6 +17,13 @@
 	}
 }
 
+// Hide this one - this is mostly the reason why the adblocker userstyle is
+// used, but it's laggy and I don't care enough to make a codeberg account to
+// fix it.
+[aria-label="Send a gift"] {
+	display: none;
+}
+
 // Dynamic attributes
 [aria-label^="Remove answer"] {
 	--icon: icon("window-close");
