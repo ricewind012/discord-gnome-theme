@@ -2,6 +2,16 @@
 @use "typography";
 @use "util";
 
+$-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]';
+
+%-header {
+	border-block-end: 1px solid var(--card_shade_color);
+	color: var(--window_fg_muted);
+	margin: 0;
+	padding-block: var(--space-8) var(--space-6);
+	padding-inline: 16px;
+}
+
 .baseSettingWrapper__32428 {
 	@include controls.card-in-container(
 		$first-selector:
@@ -11,26 +21,6 @@
 	);
 
 	margin: 0;
-
-	// todo lol
-	.container__75920
-		> .stack_dbd263[data-direction="vertical"]:not(
-			[style="gap: var(--space-8); padding: var(--space-0);"]
-		)
-		> .container__75920:first-child
-		> & {
-		border-radius: var(--card_radius) var(--card_radius) 0 0;
-	}
-
-	.container__75920
-		> .stack_dbd263[data-direction="vertical"]:not(
-			[style="gap: var(--space-8); padding: var(--space-0);"]
-		)
-		> .container__75920:last-child
-		> & {
-		border-radius: 0 0 var(--card_radius) var(--card_radius);
-		border: none;
-	}
 
 	// todo also
 	&.clickable__32428 {
@@ -64,26 +54,6 @@
 
 	margin: 0;
 
-	// todo lol
-	.container__75920
-		> .stack_dbd263[data-direction="vertical"]:not(
-			[style="gap: var(--space-8); padding: var(--space-0);"]
-		)
-		> .container__75920:first-child
-		& {
-		border-radius: var(--card_radius) var(--card_radius) 0 0;
-	}
-
-	.container__75920
-		> .stack_dbd263[data-direction="vertical"]:not(
-			[style="gap: var(--space-8); padding: var(--space-0);"]
-		)
-		> .container__75920:last-child
-		& {
-		border-radius: 0 0 var(--card_radius) var(--card_radius);
-		border: none;
-	}
-
 	&.clickable_dbfbe0 {
 		gap: calc(var(--icon-button-size) + 16px);
 		pointer-events: none;
@@ -96,7 +66,8 @@
 	display: none;
 }
 
-.baseControlItemTrailingElement_dbfbe0 {
+.baseControlItem_dbfbe0.clickable_dbfbe0
+	.baseControlItemTrailingElement_dbfbe0 {
 	--icon: icon("right");
 
 	@include controls.card-button-pseudo;
@@ -121,14 +92,75 @@
 	margin: 0;
 	padding: 0;
 
+	// This could also be :not(:has(> [data-align="center"])) but yk
+	.divider__1de9c + & {
+		margin-block-start: 16px;
+	}
+
+	// todo lol
+	&
+		> .stack_dbd263[data-direction="vertical"]:not(
+			[style="gap: var(--space-8); padding: var(--space-0);"]
+		)
+		> & {
+		&:first-child :where(.baseControlItem_dbfbe0, .baseSettingWrapper__32428) {
+			border-radius: var(--card_radius) var(--card_radius) 0 0;
+		}
+
+		&:last-child :where(.baseControlItem_dbfbe0, .baseSettingWrapper__32428) {
+			border-radius: 0 0 var(--card_radius) var(--card_radius);
+			border: none;
+		}
+
+		&:only-child :where(.baseControlItem_dbfbe0, .baseSettingWrapper__32428) {
+			border: none;
+			border-radius: var(--card_radius);
+		}
+	}
+
 	:where(& > .stack_dbd263[data-align="center"]) {
-		padding-block: 34px 16px;
+		// see above why the calc
+		padding-block: calc(34px - 16px) 16px;
 	}
 
 	:where(& > .stack_dbd263[data-direction="vertical"]) {
-		@include controls.cards-container;
-
 		gap: 0;
+
+		&:empty {
+			display: none;
+		}
+
+		&:where(:not(#{$-including-title})) {
+			@include controls.cards-container;
+		}
+	}
+
+	:where(& > .stack_dbd263[data-direction="vertical"]#{$-including-title}) {
+		padding: 0;
+
+		.title__28f6b {
+			@extend %-header;
+		}
+	}
+
+	&[data-nav-anchor-key^="vencord"] > div,
+	&[data-nav-anchor-key^="vesktop"] > div {
+		all: unset;
+	}
+
+	// TODO: IDK if this or the ones above are old or both are intended to be in
+	// use, remove later ?
+	& > fieldset {
+		& > legend {
+			@extend %-header;
+
+			width: 100%;
+		}
+
+		& > .stack_dbd263 {
+			gap: 0;
+			padding: 0;
+		}
 	}
 
 	h2 {
