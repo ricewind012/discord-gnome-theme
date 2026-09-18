@@ -104,6 +104,7 @@
 	--message-background-hover: var(--sidebar_bg_color);
 
 	--custom-app-top-bar-height: 0px;
+	--custom-channel-header-height: var(--headerbar-height);
 	--channels-spine-offset-left: calc(
 		var(--space-xs) * 2 + var(--icon-size) / 2
 	);
