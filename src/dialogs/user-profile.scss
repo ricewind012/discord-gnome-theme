@@ -8,11 +8,10 @@
 
 	filter: brightness(var(--brightness)) blur(var(--radius));
 	opacity: 1;
+	background-position: var(--radius) calc(var(--radius) * -1);
 	background-repeat: no-repeat;
 
-	inset: calc(var(--radius) * -1);
-
-	.theme-light {
+	.theme-light & {
 		--brightness: 3;
 
 		mask: linear-gradient(black, transparent);
@@ -63,10 +62,7 @@
 .container__62dd3 {
 	@include controls.card;
 
-	.coverList__9a5c3 {
-		--custom-game-cover-width: 110px;
-		--custom-game-cover-height: 137px;
-
+	.gameWidgetGrid__7f3a7 {
 		gap: var(--spacing-2x);
 	}
 
@@ -74,9 +70,11 @@
 		@include controls.icon-button($name: "menu");
 	}
 
-	.tag__25a50 {
+	.tag_f7b6a0 {
+		// TODO: unify with tags
 		background: color-mix(in srgb, currentColor 10%, transparent);
 		border: none;
+		border-radius: 999px;
 		gap: var(--spacing);
 		padding: 0 var(--spacing-2x);
 
@@ -86,6 +84,10 @@
 	.tagListContainer__25a50 {
 		gap: var(--spacing);
 		margin: 0;
+	}
+
+	.title_cf2d33 [data-text-variant] {
+		@extend %title-3;
 	}
 }
 
@@ -161,6 +163,10 @@
 		width: 100%;
 	}
 
+	.connectionList__9bfb9 {
+		gap: 0;
+	}
+
 	.metadata__9bfb9 {
 		display: none;
 	}
@@ -202,8 +208,8 @@
 }
 
 .outer_c0bea0 {
-	// For banner & left side in modal
-	overflow: hidden;
+	//--custom-user-profile-banner-radius: var(--window_radius) var(--window_radius)
+	//	0 0;
 
 	&:where(.user-profile-modal-v2) {
 		border: none;
@@ -215,14 +221,18 @@
 		}
 	}
 
-	&:where(.user-profile-sidebar) {
+	&.user-profile-sidebar {
+		border-inline-start: 1px solid var(--window_outline_color);
 		border-radius: 0;
+		box-shadow: none;
+		margin: -8px;
+		padding: 0;
 	}
 }
 
 .profile__9c3be {
 	outline: 0;
-	border-radius: 0;
+	border-radius: var(--window_radius) 0 0 var(--window_radius);
 
 	.banner__68edb {
 		border-radius: 0;
@@ -237,20 +247,12 @@
 		gap: var(--spacing);
 	}
 
+	.profileHeaderBannerContainer__9c3be {
+		border-radius: 0;
+	}
+
 	.note_eb110a {
 		margin: 0;
-
-		textarea {
-			@include controls.text-field;
-
-			// Increase the opacity (10% -> 20%) a little bit, otherwise they're the
-			// same color
-			background-color: color-mix(
-				in srgb,
-				currentColor 20%,
-				var(--window_bg_color)
-			);
-		}
 	}
 }
 
@@ -283,7 +285,8 @@
 }
 
 .section_bf424d {
-	gap: 16px;
+	// Originally 16px, but --dialog-spacing-05x
+	gap: var(--spacing-2x);
 
 	.header_bf424d [data-text-variant] {
 		@extend %title-3;

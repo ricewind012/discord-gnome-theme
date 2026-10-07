@@ -11,7 +11,8 @@
 
 .body__5be3e {
 	gap: var(--dialog-spacing-x05);
-	padding: 0 var(--dialog-spacing);
+	mask: none;
+	padding-block: 0;
 }
 
 // Activity
@@ -33,16 +34,21 @@
 .footer__5be3e {
 	padding: var(--dialog-spacing);
 	padding-top: 0;
+
+	&:empty {
+		padding-block-end: var(--dialog-spacing-x05);
+	}
 }
 
 .inner_c0bea0 {
+	// sidebar
+	border-radius: 0;
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
 
-	// revert %caption
 	.markup__75297 [data-text-variant] {
-		--window_fg_muted: currentColor;
-		@extend %text-normal;
+		// %caption
+		color: inherit;
 	}
 }
 
@@ -95,6 +101,10 @@
 
 	.menuOverlay_ce8328:nth-child(2) &:nth-child(2) {
 		--icon: icon("edit-copy");
+
+		& > .menuItemInner_ce8328 {
+			border: none;
+		}
 	}
 
 	&::after {
@@ -133,7 +143,7 @@
 }
 
 .menuOverlay_ce8328 {
-	border: none;
+	border-radius: 0;
 	padding: 0;
 }
 
@@ -154,10 +164,22 @@
 .outer_c0bea0 {
 	--dialog-spacing: var(--space-xl);
 	--role-button-size: 24px;
-	--role-spacing: 2px;
+	--role-spacing: var(--spacing-05x);
 	--role-height: calc(var(--role-button-size) + var(--role-spacing) * 2);
 
+	// D*scord
+	--custom-user-profile-popout-body-padding-inline: var(--dialog-spacing);
+
 	border-radius: var(--window_radius);
+}
+
+.removeButton_af3987 {
+	@include -role-button($icon: "window-close");
+
+	inset-inline-end: 0;
+	margin: 0;
+	position: absolute;
+	z-index: 1;
 }
 
 .role_af3987 {
@@ -166,6 +188,7 @@
 	border-radius: 999px;
 	padding: 0;
 	padding-left: var(--spacing-2x);
+	position: relative;
 
 	overflow: hidden;
 	height: var(--role-height);
@@ -182,24 +205,13 @@
 }
 
 .roleCircle__4f569 {
-	--icon: icon("window-close");
-
 	border-radius: 999px;
 	margin: 0;
 	margin-left: var(--spacing-2x);
 
 	position: relative;
-	width: var(--role-button-size);
-	height: var(--role-button-size);
-
-	.roleRemoveButtonCanRemove__4f569 &::before {
-		content: "";
-
-		position: absolute;
-		inset: 0;
-
-		@include util.icon;
-	}
+	width: var(--role-height);
+	height: var(--role-height);
 
 	&::after {
 		content: "";
@@ -210,11 +222,15 @@
 		min-width: 500px;
 		height: 100px;
 
-		background-color: inherit;
-		opacity: 10%;
+		background: inherit;
+		opacity: 20%;
 
 		pointer-events: none;
 	}
+}
+
+.roleListContainer_af3987 {
+	margin: 0;
 }
 
 .roleName_af3987 {
@@ -227,43 +243,34 @@
 	display: none;
 }
 
-// Roles container
-.root_fccfdf {
+.listContentsInteractive_af3987 {
 	gap: var(--role-spacing);
 
-	// Add role button
-	.button_b46968 {
+	.addButton_af3987 {
 		@include -role-button("plus");
 	}
 
-	.collapseButton_fccfdf {
-		@include -role-button("up");
+	.pillButton_af3987.expandButton_af3987 {
+		@include -role-button("down");
 	}
 
-	.expandButton_fccfdf {
-		@include -role-button("down");
+	.pillButton_af3987:not(.expandButton_af3987) {
+		@include -role-button("up");
 	}
 }
 
-.userTagUsername__63ed3 {
+.userTagUsername__26b1f {
 	@extend %caption;
 
 	// Align with src/global/text.scss
 	line-height: 1.25;
 }
 
-.viewFullBio_f5f93a {
-	@extend %link;
-
-	// partially revert %caption
-	--window_fg_muted: currentColor;
-
-	margin-top: var(--spacing);
-}
-
 // Banner buttons
-.wrapper__0c74f {
+.wrapper_da5890 {
 	gap: var(--spacing);
+	inset-block-start: var(--spacing);
+	inset-inline-end: var(--spacing);
 
 	.bannerButton_fb7f94 {
 		@include controls.icon-button-circular;
