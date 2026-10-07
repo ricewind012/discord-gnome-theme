@@ -140,6 +140,8 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 
 		.title__28f6b {
 			@extend %-header;
+
+			background: var(--card_bg_color);
 		}
 	}
 
@@ -154,6 +156,8 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 		& > legend {
 			@extend %-header;
 
+			background: var(--card_bg_color);
+			border-radius: var(--card_radius) var(--card_radius) 0 0;
 			width: 100%;
 		}
 

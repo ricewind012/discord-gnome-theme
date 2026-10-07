@@ -90,9 +90,12 @@
 
 .vcd-screen-picker-quality-section {
 	@include controls.card-in-container(
-		$first-selector: ":first-child",
+		$first-selector: "#hack",
 		$last-selector: "#hack"
 	);
+
+	// fix bg in dark theme
+	background: none;
 }
 
 .vcd-screen-picker-venmic-settings {
