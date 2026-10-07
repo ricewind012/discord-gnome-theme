@@ -17,10 +17,10 @@
 	}
 }
 
-// Hide this one - this is mostly the reason why the adblocker userstyle is
-// used, but it's laggy and I don't care enough to make a codeberg account to
-// fix it.
-[aria-label="Give a Gift"] {
+// Hide the "Send a gift" button - this is mostly the reason why the adblocker
+// userstyle is used, but it's laggy and I don't care enough to make a codeberg
+// account to fix it.
+.container__5287f {
 	display: none;
 }
 
