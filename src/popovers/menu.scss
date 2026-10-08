@@ -51,7 +51,7 @@
 }
 
 .item_c1e9c4 {
-	@include popover.entry($hover: ".focused_c1e9c4");
+	@include popover.entry($hover: "&.focused_c1e9c4");
 
 	position: relative;
 

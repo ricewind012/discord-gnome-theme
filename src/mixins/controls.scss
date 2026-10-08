@@ -81,16 +81,16 @@ $toast_fg_color: white;
 	}
 }
 
-@mixin button-basic-raised($hover: ":hover", $active: ":active") {
+@mixin button-basic-raised($hover: "&:hover", $active: "&:active") {
 	background-color: color-mix(in srgb, currentColor 10%, transparent);
 
 	transition: var(--button_transition);
 
-	&#{$hover} {
+	#{$hover} {
 		background-color: color-mix(in srgb, currentColor 15%, transparent);
 	}
 
-	&#{$active} {
+	#{$active} {
 		background-color: color-mix(in srgb, currentColor 30%, transparent);
 	}
 }
@@ -245,8 +245,8 @@ $toast_fg_color: white;
 	#{$item} {
 		@include card-in-container(
 			$activatable: true,
-			$first-selector: ":first-child",
-			$last-selector: ":last-child"
+			$first-selector: "&:first-child",
+			$last-selector: "&:last-child"
 		);
 
 		box-shadow: none;
@@ -388,7 +388,7 @@ $toast_fg_color: white;
 		--percentage: 8%;
 	}
 
-	&#{$checked} {
+	#{$checked} {
 		background-color: var(--accent-bg-color);
 
 		&::before {
@@ -405,7 +405,7 @@ $toast_fg_color: white;
 		}
 	}
 
-	&#{$disabled} {
+	#{$disabled} {
 		opacity: var(--disabled-opacity);
 	}
 }
@@ -478,6 +478,7 @@ $toast_fg_color: white;
 	padding: var(---group-padding);
 }
 
+/// The $checked param is relative to `&` because of the last selector.
 @mixin toggle-group-toggle($checked) {
 	transition: var(--toggle_transition);
 	border-radius: calc(var(--button_radius) - var(---group-padding));
@@ -638,23 +639,26 @@ $toast_fg_color: white;
 	border-radius: 0;
 	box-shadow: none;
 
-	&#{$first-selector} {
+	#{$first-selector} {
 		border-radius: var(--card_radius) var(--card_radius) 0 0;
 	}
 
-	&#{$last-selector} {
+	#{$last-selector} {
 		border-radius: 0 0 var(--card_radius) var(--card_radius);
 		border: none;
 	}
 
-	@if $first-selector == ":first-of-type" and $last-selector == ":last-of-type"
+	@if $first-selector ==
+		"&:first-of-type" and
+		$last-selector ==
+		"&:last-of-type"
 	{
 		&:only-of-type {
 			border-radius: var(--card_radius);
 		}
 	}
 
-	@if $first-selector == ":first-child" and $last-selector == ":last-child" {
+	@if $first-selector == "&:first-child" and $last-selector == "&:last-child" {
 		&:only-child {
 			border-radius: var(--card_radius);
 		}

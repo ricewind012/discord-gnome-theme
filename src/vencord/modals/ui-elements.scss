@@ -24,8 +24,8 @@
 
 .vc-plugin-ui-elements-switches-row {
 	@include controls.card-in-container(
-		$first-selector: ":first-child",
-		$last-selector: ":last-child"
+		$first-selector: "&:first-child",
+		$last-selector: "&:last-child"
 	);
 	@extend %title-3;
 }

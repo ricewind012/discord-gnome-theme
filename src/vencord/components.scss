@@ -118,8 +118,8 @@
 
 .vc-switch-container {
 	@include controls.switch(
-		$checked: ".vc-switch-checked",
-		$disabled: ".vc-switch-disabled"
+		$checked: "&.vc-switch-checked",
+		$disabled: "&.vc-switch-disabled"
 	);
 }
 

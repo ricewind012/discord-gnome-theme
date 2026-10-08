@@ -19,8 +19,8 @@
 .card_f369db {
 	@include controls.card-in-container(
 		$activatable: true,
-		$first-selector: ":first-of-type",
-		$last-selector: ":last-of-type"
+		$first-selector: "&:first-of-type",
+		$last-selector: "&:last-of-type"
 	);
 
 	// for now

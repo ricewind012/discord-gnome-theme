@@ -57,7 +57,7 @@
 }
 
 .itemContainer__971b5 {
-	@include popover.entry($hover: ":is(:hover, [aria-selected='true'])");
+	@include popover.entry($hover: "&:is(:hover, [aria-selected='true'])");
 
 	display: flex;
 	align-items: center;

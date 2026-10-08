@@ -97,8 +97,8 @@
 	// HEEEEEEEEEELP WHAT IS THIS XD
 	.accountName__9bfb9 {
 		@include controls.button-basic-raised(
-			$hover: ":hover::before",
-			$active: ":active::before"
+			$hover: "&:hover::before",
+			$active: "&:active::before"
 		);
 
 		background-color: transparent;
@@ -146,8 +146,8 @@
 
 	.connection__9bfb9 {
 		@include controls.card-in-container(
-			$first-selector: ":first-child",
-			$last-selector: ":last-child"
+			$first-selector: "&:first-child",
+			$last-selector: "&:last-child"
 		);
 
 		gap: var(--dialog-spacing-x05);
@@ -265,13 +265,9 @@
 
 		li {
 			@include controls.card-in-container(
-				$first-selector: ":first-child",
-				$last-selector: ":last-child"
+				$first-selector: "&:first-child",
+				$last-selector: "&:last-child"
 			);
-
-			&:only-child {
-				border-radius: var(--card_radius);
-			}
 		}
 
 		.card__39ec2 {

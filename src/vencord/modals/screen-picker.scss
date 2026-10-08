@@ -25,8 +25,8 @@
 
 	:where(& > :not(:first-child)) {
 		@include controls.card-in-container(
-			$first-selector: ":first-child",
-			$last-selector: ":last-child"
+			$first-selector: "&:first-child",
+			$last-selector: "&:last-child"
 		);
 
 		margin: 0;

@@ -24,23 +24,13 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 
 	// todo also
 	&.clickable__32428 {
-		transition: var(--backdrop_transition);
-
-		&:hover {
-			background-color: color-mix(
-				in srgb,
-				currentColor 3%,
-				var(--card_bg_color)
-			);
-		}
-
-		&:active {
-			background-color: color-mix(
-				in srgb,
-				currentColor 8%,
-				var(--card_bg_color)
-			);
-		}
+		@include controls.card-in-container(
+			$activatable: true,
+			$first-selector:
+				".stack_dbd263[data-direction='vertical'] > .container__75920:first-child > &",
+			$last-selector:
+				".stack_dbd263[data-direction='vertical'] > .container__75920:last-child > &"
+		);
 	}
 }
 

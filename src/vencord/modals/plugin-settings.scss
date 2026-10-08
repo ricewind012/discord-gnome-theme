@@ -12,8 +12,8 @@
 
 .vc-plugins-setting-section {
 	@include controls.card-in-container(
-		$first-selector: ":first-child",
-		$last-selector: ":last-child"
+		$first-selector: "&:first-child",
+		$last-selector: "&:last-child"
 	);
 }
 

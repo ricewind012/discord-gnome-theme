@@ -65,8 +65,8 @@
 	.container__80bf8 {
 		@include controls.card-in-container(
 			$activatable: true,
-			$first-selector: ":first-of-type",
-			$last-selector: ":last-of-type"
+			$first-selector: "&:first-of-type",
+			$last-selector: "&:last-of-type"
 		);
 
 		padding: 0;

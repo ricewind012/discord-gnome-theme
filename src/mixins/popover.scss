@@ -13,7 +13,7 @@ $icon-size: 20px;
 	padding: 8px;
 }
 
-@mixin entry($hover: ":hover") {
+@mixin entry($hover: "&:hover") {
 	@include controls.button-basic-raised($hover);
 
 	background-color: transparent;
