@@ -2,35 +2,10 @@
 @use "typography";
 @use "util";
 
-%-search-answer {
-	@include controls.tag;
-
-	border-start-start-radius: 0;
-	border-end-start-radius: 0;
-	padding-inline-start: var(--spacing-05x);
-}
-
-%-search-filter {
-	@include controls.tag;
-
-	border-start-end-radius: 0;
-	border-end-end-radius: 0;
-	padding-inline-end: var(--spacing-05x);
-}
-
 :root {
 	--chat-header-right-padding: calc(
 		var(--titlebar-right-spacing) + var(--icon-button-size) + var(--spacing)
 	);
-}
-
-// these 2 are in the popover
-.answerPill__971b5 {
-	@extend %-search-answer;
-}
-
-.filterPill__971b5 {
-	@extend %-search-filter;
 }
 
 .appAsidePanelWrapper_a3002d:has(> [data-app-right-panel="true"]) {
@@ -213,18 +188,6 @@
 			margin-block: 1px -1px;
 			padding: 0;
 		}
-	}
-
-	.searchAnswer_bd8186 {
-		@extend %-search-answer;
-
-		margin-inline: 0 var(--spacing-05x);
-	}
-
-	.searchFilter_bd8186 {
-		@extend %-search-filter;
-
-		margin-inline: var(--spacing-05x) 0;
 	}
 
 	.searchToken_bd8186 {

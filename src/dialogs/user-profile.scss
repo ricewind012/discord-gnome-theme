@@ -203,36 +203,9 @@
 	}
 }
 
-.outer_c0bea0 {
-	//--custom-user-profile-banner-radius: var(--window_radius) var(--window_radius)
-	//	0 0;
-
-	&:where(.user-profile-modal-v2) {
-		border: none;
-
-		-webkit-app-region: no-drag;
-
-		.inner_c0bea0 {
-			gap: 0;
-		}
-	}
-
-	&.user-profile-sidebar {
-		border-inline-start: 1px solid var(--window_outline_color);
-		border-radius: 0;
-		box-shadow: none;
-		margin: -8px;
-		padding: 0;
-	}
-}
-
 .profile__9c3be {
 	outline: 0;
 	border-radius: var(--window_radius) 0 0 var(--window_radius);
-
-	.banner__68edb {
-		border-radius: 0;
-	}
 
 	.profileBody__9c3be {
 		gap: var(--dialog-spacing);

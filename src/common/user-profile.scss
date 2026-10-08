@@ -1,0 +1,152 @@
+@use "controls";
+@use "typography";
+
+@mixin -role-button($icon) {
+	@include controls.icon-button($icon, var(--role-height));
+
+	border: none;
+	border-radius: 999px;
+}
+
+:where(.banner__68edb) {
+	border-radius: 0;
+}
+
+.inner_c0bea0 {
+	// sidebar
+	border-radius: 0;
+	gap: var(--dialog-spacing-x05);
+	padding: 0;
+
+	.markup__75297 [data-text-variant] {
+		// %caption
+		color: inherit;
+	}
+}
+
+.outer_c0bea0 {
+	--dialog-spacing: var(--space-xl);
+	--role-button-size: 24px;
+	--role-spacing: var(--spacing-05x);
+	--role-height: calc(var(--role-button-size) + var(--role-spacing) * 2);
+
+	// D*scord
+	--custom-user-profile-popout-body-padding-inline: var(--dialog-spacing);
+
+	border-radius: var(--window_radius);
+
+	&.user-profile-modal-v2 {
+		border: none;
+		-webkit-app-region: no-drag;
+
+		.inner_c0bea0 {
+			gap: 0;
+		}
+	}
+
+	&.user-profile-sidebar {
+		border-inline-start: 1px solid var(--window_outline_color);
+		border-radius: 0;
+		box-shadow: none;
+		margin: -8px;
+		padding: 0;
+	}
+}
+
+.removeButton_af3987 {
+	@include -role-button($icon: "window-close");
+
+	inset-inline-end: 0;
+	margin: 0;
+	position: absolute;
+	z-index: 1;
+}
+
+.role_af3987 {
+	background: transparent;
+	border: none;
+	border-radius: 999px;
+	height: var(--role-height);
+	overflow: hidden;
+	padding: 0;
+	padding-inline-start: var(--spacing-2x);
+	position: relative;
+
+	[data-text-variant] {
+		@extend %text-normal;
+
+		color: inherit;
+	}
+
+	& > :first-child {
+		order: 1;
+	}
+}
+
+.roleCircle__4f569 {
+	border-radius: 999px;
+	height: var(--role-height);
+	margin: 0;
+	margin-inline-start: var(--spacing-2x);
+	position: relative;
+	width: var(--role-height);
+
+	&::after {
+		background: inherit;
+		content: "";
+		display: block;
+		height: 100px;
+		inset-inline-end: 200%;
+		min-width: 500px;
+		opacity: 20%;
+		pointer-events: none;
+		position: relative;
+	}
+}
+
+.roleListContainer_af3987 {
+	margin: 0;
+}
+
+.roleName_af3987 {
+	margin: 0;
+	z-index: 1;
+}
+
+.roleRemoveIcon_af3987 {
+	display: none;
+}
+
+.listContentsInteractive_af3987 {
+	gap: var(--role-spacing);
+
+	.addButton_af3987 {
+		@include -role-button($icon: "plus");
+	}
+
+	.pillButton_af3987.expandButton_af3987 {
+		@include -role-button($icon: "down");
+	}
+
+	.pillButton_af3987:not(.expandButton_af3987) {
+		@include -role-button($icon: "up");
+	}
+}
+
+.userTagUsername__26b1f {
+	@extend %caption;
+
+	// Align with src/global/text.scss
+	line-height: 1.25;
+}
+
+// Banner buttons
+.wrapper_da5890 {
+	gap: var(--spacing);
+	inset-block-start: var(--spacing);
+	inset-inline-end: var(--spacing);
+
+	.bannerButton_fb7f94 {
+		@include controls.icon-button-circular;
+	}
+}

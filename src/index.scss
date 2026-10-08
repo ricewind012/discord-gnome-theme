@@ -1,5 +1,10 @@
 // scss is horrible
 
+@use "common/channel-text-area";
+@use "common/popover-messages";
+@use "common/search";
+@use "common/user-profile";
+
 @use "global/icons" as *;
 @use "global/scrollbar" as *;
 @use "global/text" as *;
@@ -10,8 +15,6 @@
 @use "global/variables/libadwaita-other" as *;
 @use "global/variables/options" as *;
 @use "global/variables/window-decorations" as *;
-
-@use "components/channel-text-area" as *;
 
 @use "controls/banners/app" as *;
 @use "controls/banners/chat" as *;
@@ -47,7 +50,6 @@
 @use "dialogs/generic-new" as *;
 @use "dialogs/image-carousel" as *;
 @use "dialogs/quick-switcher" as *;
-@use "dialogs/shared-messages" as *;
 @use "dialogs/user-profile" as *;
 @use "dialogs/settings/content" as *;
 @use "dialogs/settings/server" as *;
@@ -63,6 +65,7 @@
 @use "popovers/search" as *;
 @use "popovers/threads" as *;
 @use "popovers/tooltips" as *;
+@use "popovers/user-panel" as *;
 @use "popovers/user-profile" as *;
 @use "popovers/vc-stream" as *;
 
