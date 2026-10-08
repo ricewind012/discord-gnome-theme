@@ -410,6 +410,12 @@ $toast_fg_color: white;
 	}
 }
 
+@mixin tag {
+	background: color-mix(in srgb, currentColor 10%, transparent);
+	border-radius: 999px;
+	padding: var(--spacing) var(--spacing-2x);
+}
+
 @mixin text-field {
 	@include util.focus-ring;
 

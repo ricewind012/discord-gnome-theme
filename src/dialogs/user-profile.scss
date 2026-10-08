@@ -71,18 +71,14 @@
 	}
 
 	.tag_f7b6a0 {
-		// TODO: unify with tags
-		background: color-mix(in srgb, currentColor 10%, transparent);
-		border: none;
-		border-radius: 999px;
-		gap: var(--spacing);
-		padding: 0 var(--spacing-2x);
+		@include controls.tag;
 
-		height: 24px;
+		border: none;
+		gap: var(--spacing);
 	}
 
 	.tagListContainer__25a50 {
-		gap: var(--spacing);
+		gap: var(--spacing-05x);
 		margin: 0;
 	}
 

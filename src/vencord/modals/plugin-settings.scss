@@ -1,12 +1,6 @@
 @use "controls";
 @use "typography";
 
-@mixin -tag {
-	background: color-mix(in srgb, currentColor 10%, transparent);
-	border-radius: 999px;
-	padding-inline: var(--spacing-2x);
-}
-
 .vc-plugins-setting-content {
 	display: grid;
 	grid-template-columns: 60% 40%;
@@ -76,7 +70,7 @@
 }
 
 .vc-plugin-modal-tag {
-	@include -tag;
+	@include controls.tag;
 
 	border: none;
 }
