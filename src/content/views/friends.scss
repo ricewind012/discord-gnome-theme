@@ -33,7 +33,7 @@
 
 	& > div > div {
 		@include controls.card-in-container(
-			$activatable: true,
+			$activatable-selector: "&",
 			$first-selector: "&:first-child",
 			$last-selector: "&:last-child"
 		);

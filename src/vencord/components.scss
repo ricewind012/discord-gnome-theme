@@ -63,26 +63,14 @@
 }
 
 .vc-form-switch-wrapper {
-	@include controls.card;
+	@include controls.card-in-container(
+		$first-selector: "&:first-child",
+		$last-selector: "&:last-child"
+	);
 
-	border-bottom: 1px solid var(--card_shade_color);
-	border-radius: 0;
 	margin: 0;
 
 	display: flex;
-
-	&:where(:nth-child(-n + 1 of &)) {
-		border-radius: var(--card_radius) var(--card_radius) 0 0;
-	}
-
-	&:where(:nth-last-child(-n + 1 of &)) {
-		border-radius: 0 0 var(--card_radius) var(--card_radius);
-		border: none;
-	}
-
-	&:only-child {
-		border-radius: var(--card_radius);
-	}
 }
 
 .vc-h4,

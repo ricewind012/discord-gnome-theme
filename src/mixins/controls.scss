@@ -244,7 +244,7 @@ $toast_fg_color: white;
 
 	#{$item} {
 		@include card-in-container(
-			$activatable: true,
+			$activatable-selector: "&",
 			$first-selector: "&:first-child",
 			$last-selector: "&:last-child"
 		);
@@ -557,7 +557,8 @@ $toast_fg_color: white;
 	box-shadow: var(--elevation-medium);
 }
 
-@mixin card($activatable: false) {
+/// @param {string} $activatable-selector
+@mixin card($activatable-selector: "") {
 	background-color: var(--card_bg_color);
 	color: var(--card_fg_color);
 	border: none;
@@ -567,10 +568,10 @@ $toast_fg_color: white;
 
 	min-height: calc(var(--icon-button-size) + 10px * 2);
 
-	@if $activatable {
+	@if $activatable-selector != "" {
 		transition: var(--backdrop_transition);
 
-		&:hover {
+		#{$activatable-selector}:hover {
 			background-color: color-mix(
 				in srgb,
 				currentColor 3%,
@@ -578,7 +579,7 @@ $toast_fg_color: white;
 			);
 		}
 
-		&:active {
+		#{$activatable-selector}:active {
 			background-color: color-mix(
 				in srgb,
 				currentColor 8%,
@@ -629,11 +630,15 @@ $toast_fg_color: white;
 
 /// Children of a `cards-container`.
 ///
-/// @param {boolean} $activatable
+/// @param {string} $activatable-selector
 /// @param {string} $first-selector
 /// @param {string} $last-selector
-@mixin card-in-container($activatable: false, $first-selector, $last-selector) {
-	@include card($activatable);
+@mixin card-in-container(
+	$activatable-selector: false,
+	$first-selector,
+	$last-selector
+) {
+	@include card($activatable-selector);
 
 	border-bottom: 1px solid var(--card_shade_color);
 	border-radius: 0;

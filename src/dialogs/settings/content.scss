@@ -14,6 +14,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 
 .baseSettingWrapper__32428 {
 	@include controls.card-in-container(
+		$activatable-selector: "&.clickable__32428 ",
 		$first-selector:
 			".stack_dbd263[data-direction='vertical'] > .container__75920:first-child > &",
 		$last-selector:
@@ -21,21 +22,11 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 	);
 
 	margin: 0;
-
-	// todo also
-	&.clickable__32428 {
-		@include controls.card-in-container(
-			$activatable: true,
-			$first-selector:
-				".stack_dbd263[data-direction='vertical'] > .container__75920:first-child > &",
-			$last-selector:
-				".stack_dbd263[data-direction='vertical'] > .container__75920:last-child > &"
-		);
-	}
 }
 
 .baseControlItem_dbfbe0 {
 	@include controls.card-in-container(
+		$activatable-selector: "&.clickable_dbfbe0",
 		$first-selector:
 			".stack_dbd263[data-direction='vertical'] > .container__75920:first-child > &",
 		$last-selector:
@@ -47,8 +38,6 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 	&.clickable_dbfbe0 {
 		gap: calc(var(--icon-button-size) + 16px);
 		pointer-events: none;
-		// todo also
-		transition: var(--backdrop_transition);
 	}
 }
 
@@ -68,8 +57,6 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 
 	&::before,
 	&::after {
-		// todo also
-		inset-inline-end: 0;
 		pointer-events: all;
 	}
 

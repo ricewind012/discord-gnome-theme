@@ -64,7 +64,7 @@
 
 	.container__80bf8 {
 		@include controls.card-in-container(
-			$activatable: true,
+			$activatable-selector: "&",
 			$first-selector: "&:first-of-type",
 			$last-selector: "&:last-of-type"
 		);

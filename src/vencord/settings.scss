@@ -133,6 +133,8 @@
 }
 
 .vc-settings-switches {
+	@include controls.cards-container;
+
 	gap: 0;
 }
 
@@ -151,6 +153,8 @@
 }
 
 .vcd-settings-category-content {
+	@include controls.cards-container;
+
 	gap: 0;
 }
 

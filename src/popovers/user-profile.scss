@@ -17,7 +17,7 @@
 
 // Activity
 .card__39ec2 {
-	@include controls.card($activatable: true);
+	@include controls.card($activatable-selector: "&");
 
 	border: none;
 
@@ -124,16 +124,12 @@
 }
 
 .menuItemInner_ce8328 {
-	@include controls.card($activatable: true);
+	@include controls.card;
 
 	border-bottom: 1px solid var(--card_shade_color);
 	border-radius: 0;
 	box-shadow: none;
 	pointer-events: none;
-
-	&:is(:hover, :active) {
-		background-color: var(--card_bg_color);
-	}
 }
 
 .menuItemLabelText_ce8328 {
