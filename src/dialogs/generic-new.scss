@@ -8,16 +8,33 @@
 }
 
 .actionBar__8a031 {
-	box-shadow: none;
 	padding: 0;
 	margin: var(--dialog-spacing);
 	margin-top: 0;
-	gap: var(--spacing-2x);
 
 	button {
 		border-radius: 12px;
 		flex-grow: 1;
 		height: 44px;
+	}
+}
+
+.actionBarTrailing__8a031 {
+	& > div {
+		gap: var(--spacing-2x);
+	}
+}
+
+.bodyControls__8a031 {
+	padding: var(--dialog-spacing-x05) var(--dialog-spacing);
+
+	&::after {
+		background: none;
+		box-shadow: var(--elevation-low);
+		height: 1px;
+		inset-inline: 0;
+		margin-block-start: -1px;
+		transition: none;
 	}
 }
 
@@ -31,6 +48,26 @@
 .bodySpacerBottom__8a031,
 .bodySpacerTop__8a031 {
 	display: none;
+}
+
+.bodySpacerBottom__8a031.bodyScrollingSpacerBottom__8a031 {
+	border: none;
+	display: block;
+	height: 1px;
+	margin-block-end: -1px;
+	padding-block-end: var(--dialog-spacing);
+	position: relative;
+
+	&.showFade__8a031::before {
+		// --elevation-low
+		box-shadow:
+			0 -1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
+			0 -2px 4px
+				color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent);
+		content: "";
+		inset: 0;
+		position: absolute;
+	}
 }
 
 .container__8a031 {
