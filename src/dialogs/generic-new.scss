@@ -85,10 +85,10 @@
 }
 
 .scrim__40128 {
-	background-color: var(--backdrop);
+	background-color: rgb(from var(--shade-color) r g b / calc(alpha * 2));
 	border-radius: var(--window_radius);
 
 	&.lightbox__40128 {
-		background-color: rgba(0, 0, 0, 0.75);
+		background-color: rgb(from var(--shade-color) r g b / calc(alpha * 3));
 	}
 }

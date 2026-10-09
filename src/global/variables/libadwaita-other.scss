@@ -27,7 +27,6 @@
 	--popover_radius: calc(var(--menu_radius) + 6px);
 
 	--switch-transition: 100ms;
-	--backdrop: color-mix(in srgb, black 25%, transparent);
 
 	--border-opacity: 15%;
 	--dim-level-opacity: 50%;
@@ -41,9 +40,10 @@
 	--content-width: 575px;
 
 	// my
+	--banner-backdrop: rgb(from var(--shade-color) r g b / 0.28);
 	--base-unit: 6px;
 	--icon-size: 16px;
-	--text-shadow: drop-shadow(0 1px 1px var(--backdrop));
+	--text-shadow: drop-shadow(0 1px 1px var(--banner-backdrop));
 
 	@media (prefers-reduced-motion) {
 		--backdrop_transition: none;

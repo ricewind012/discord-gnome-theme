@@ -142,7 +142,7 @@
 		position: fixed;
 		inset: 0;
 
-		background-color: var(--backdrop);
+		background-color: rgb(from var(--shade-color) r g b / calc(alpha * 2));
 		border-radius: var(--window_radius);
 		z-index: 101;
 	}
