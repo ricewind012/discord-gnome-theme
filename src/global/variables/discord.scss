@@ -15,6 +15,11 @@
 	);
 	--background-code-deletion: color-mix(in srgb, var(--red-2) 20%, transparent);
 
+	--background-scrim: rgb(from var(--shade-color) r g b / calc(alpha * 2));
+	--background-scrim-lightbox: rgb(
+		from var(--shade-color) r g b / calc(alpha * 3)
+	);
+
 	--text-default: var(--window_fg_color);
 	--text-feedback-critical: var(--destructive-color);
 	--text-feedback-positive: var(--success-color);
