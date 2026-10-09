@@ -1,11 +1,6 @@
 @use "controls";
 @use "dialog";
 
-[role="dialog"] {
-	--dialog-spacing-x05: calc(var(--dialog-spacing) / 2);
-	--dialog-spacing: 24px;
-}
-
 .close__49fc1 {
 	@include controls.titlebar-button;
 
@@ -48,12 +43,7 @@
 		gap: var(--spacing-2x);
 
 		button {
-			// Hardcoded (maybe):
-			// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123
 			border-radius: 12px;
-			// Seen in "Change password" dialog
-			margin: 0;
-
 			flex-grow: 1;
 			height: 44px;
 		}

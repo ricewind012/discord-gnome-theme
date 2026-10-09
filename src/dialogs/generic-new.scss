@@ -15,12 +15,7 @@
 	gap: var(--spacing-2x);
 
 	button {
-		// Hardcoded (maybe):
-		// https://gitlab.gnome.org/GNOME/libadwaita/-/blob/main/src/stylesheet/widgets/_message-dialog.scss#L123
 		border-radius: 12px;
-		// Seen in "Change password" dialog
-		margin: 0;
-
 		flex-grow: 1;
 		height: 44px;
 	}
@@ -82,8 +77,4 @@
 	.button_a22cb0.icon-only_a22cb0 {
 		@include controls.titlebar-button;
 	}
-}
-
-.scrim__40128 {
-	border-radius: var(--window_radius);
 }
