@@ -3,9 +3,12 @@
 @use "util";
 
 [href="/channels/@me"] .avatar__20a53 {
+	--spacing: calc((32px - var(--icon-size)) / 2);
+
 	@include util.icon("org.gnome.Settings-users");
 
-	padding: 8px;
+	margin: var(--spacing);
+	margin-inline-end: calc(var(--spacing) + 12px);
 
 	svg {
 		display: none;
