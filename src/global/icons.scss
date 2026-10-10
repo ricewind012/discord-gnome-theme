@@ -46,13 +46,7 @@
 		"Forward": "mail-forward",
 		"Open in Browser": "external-link",
 		"Zoom In": "loupe-plus-large",
-		"Zoom Out": "loupe-minus-large",
-
-		// User profile popout
-		"Add Friend": "plus",
-		"Add Role": "plus",
-		"Friend": "person",
-		"Open in Mod View": "key5"
+		"Zoom Out": "loupe-minus-large"
 	)
 );
 
@@ -61,7 +55,16 @@
 	"aria-label",
 	(
 		// Inbox
-		"Mark As Read": "check-plain"
+		"Edit Reminder": "edit",
+		"Mark As Read": "check-plain",
+		"Remove Bookmark": "window-close",
+		"Remove Reminder": "window-close",
+
+		// User profile popout
+		"Add Friend": "plus",
+		"Friend": "person",
+		"Message": "chat",
+		"Open in Mod View": "key5"
 	)
 );
 
@@ -80,6 +83,7 @@
 		"Open Translate Modal": "translate",
 
 		// Message actions
+		"Clear history": "history-undo",
 		"Translate": "translate",
 
 		// User profile popout
@@ -92,8 +96,6 @@
 	"aria-label",
 	(
 		"Add to DM": "contact-new",
-		// TODO(experiment): remove later ? nitro only
-		"Bookmarks": "user-bookmarks",
 		"DevTools": "build-alt",
 		// VC (not a mistake, actually D*scord; "Show Chat" is the same)
 		"Hide chat": "chat",
@@ -151,21 +153,25 @@
 );
 
 // Home page
-@include -gen-icons(
-	"aria-label",
-	(
-		"Accept": "check-plain",
-		"Cancel": "window-close",
-		"Ignore": "window-close",
-		"Message": "chat-bubbles-empty-inverted",
-	)
-);
+.peopleColumn__133bf {
+	@include -gen-icons(
+		"aria-label^",
+		(
+			"Accept": "check-plain",
+			"Cancel": "window-close",
+			"Ignore": "window-close",
+			"Message": "chat-bubbles-empty-inverted",
+			"More options": "menu",
+		)
+	);
+}
 
 // Message actions
 @include -gen-icons(
 	"aria-label",
 	(
 		"Add Reaction": "reaction-add2",
+		"Bookmark Message": "user-bookmarks",
 		"Copy Link": "edit-copy",
 		"Create Thread": "chat",
 		"Delete": "user-trash",
@@ -249,6 +255,7 @@
 		"settings-sidebar___connected_apps_panel": "grid-large",
 
 		"settings-sidebar___developer_panel": "build-alt",
+		"settings-sidebar___developer_options_panel": "build-alt",
 		"settings-sidebar___experiments_panel": "test",
 		"settings-sidebar___logout_sidebar_item": "system-log-out",
 	)
