@@ -6,7 +6,7 @@ $border_color: color-mix(in srgb, currentColor 50%, transparent);
 $icon-size: 20px;
 
 @mixin container {
-	background-color: var(--popover_bg_color);
+	background-color: var(--popover-bg-color);
 	border: 1px solid rgb(0 0 0 / 14%);
 	border-radius: var(--popover_radius);
 	box-shadow: var(--popover_shadow);
@@ -26,7 +26,7 @@ $icon-size: 20px;
 }
 
 @mixin title {
-	color: var(--window_fg_muted);
+	color: var(--window-fg-muted);
 	font-size: var(--document-font-size);
 	font-weight: bold;
 	padding: 4px var(--menu_padding);

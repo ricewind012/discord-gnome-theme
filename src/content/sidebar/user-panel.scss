@@ -30,8 +30,8 @@
 
 // vc
 .container_e131a9 {
-	border-bottom: 1px solid var(--secondary_sidebar_border_color);
-	color: var(--secondary_sidebar_fg_color);
+	border-bottom: 1px solid var(--secondary-sidebar-border-color);
+	color: var(--secondary-sidebar-fg-color);
 	gap: var(--spacing);
 	padding: var(--spacing);
 	margin: 0;
@@ -54,13 +54,13 @@
 }
 
 .panels__5e434 {
-	background: var(--secondary_sidebar_bg_color);
+	background: var(--secondary-sidebar-bg-color);
 	border: none;
 	border-radius: 0;
 	// --elevation-low
 	box-shadow:
-		0 -1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
-		0 -2px 4px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent);
+		0 -1px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent),
+		0 -2px 4px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent);
 
 	bottom: 0;
 	left: var(--custom-guild-list-width);
@@ -93,7 +93,7 @@
 	// also vc
 	.activityPanel__37e49 {
 		background-color: inherit;
-		border-bottom: var(--secondary_sidebar_border_color);
+		border-bottom: var(--secondary-sidebar-border-color);
 		border-radius: 0;
 	}
 

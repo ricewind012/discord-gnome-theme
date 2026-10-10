@@ -13,7 +13,7 @@
 }
 
 .container__9293f {
-	color: var(--headerbar_fg_color);
+	color: var(--headerbar-fg-color);
 	border: none;
 	padding: 0;
 
@@ -21,7 +21,7 @@
 	height: unset;
 
 	&.themed__9293f {
-		background-color: var(--window_bg_color);
+		background-color: var(--window-bg-color);
 		box-shadow: var(--elevation-low);
 	}
 
@@ -255,7 +255,7 @@
 		$selector: "&:hover::after"
 	);
 
-	color: var(--headerbar_fg_color);
+	color: var(--headerbar-fg-color);
 
 	position: fixed;
 	position-anchor: --chat-topic;
@@ -308,10 +308,10 @@
 }
 
 .upperContainer__9293f {
-	--window_fg_color: var(--headerbar_fg_color);
-	--window_fg_muted: color-mix(
+	--window-fg-color: var(--headerbar-fg-color);
+	--window-fg-muted: color-mix(
 		in srgb,
-		var(--window_fg_color) var(--dim-level-opacity),
+		var(--window-fg-color) var(--dim-level-opacity),
 		transparent
 	);
 

@@ -13,7 +13,7 @@ html[style*="font-size: 100%"] {
 }
 
 ::selection {
-	background-color: color-mix(in srgb, var(--view_fg_color) 10%, transparent);
+	background-color: color-mix(in srgb, var(--view-fg-color) 10%, transparent);
 
 	.app-focused & {
 		background-color: color-mix(

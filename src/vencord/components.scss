@@ -20,13 +20,13 @@
 	border: none;
 
 	&.vc-card-warning {
-		--card_bg_color: color-mix(
+		--card-bg-color: color-mix(
 			in srgb,
 			var(--warning-bg-color) 10%,
 			transparent
 		);
-		--card_fg_color: var(--warning-color);
-		--card_shade_color: color-mix(
+		--card-fg-color: var(--warning-color);
+		--card-shade-color: color-mix(
 			in srgb,
 			var(--warning-bg-color) 36%,
 			transparent

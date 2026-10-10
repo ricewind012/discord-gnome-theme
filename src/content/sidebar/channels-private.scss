@@ -29,7 +29,7 @@
 
 	transition: none;
 	background-color: transparent;
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 
 	&.interactiveSelected__972a0 {
 		@include controls.button-selected;

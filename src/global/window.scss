@@ -29,7 +29,7 @@
 
 			pointer-events: none;
 
-			outline: var(--app-border-size) solid var(--window_outline_color);
+			outline: var(--app-border-size) solid var(--window-outline-color);
 			border-radius: var(--window_radius);
 		}
 	}
@@ -45,7 +45,7 @@
 
 #app-mount {
 	// wtf discord
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 }
 
 .backForwardButtons__63abb {
@@ -54,7 +54,7 @@
 
 .bar_c38106 {
 	background: none;
-	color: var(--headerbar_fg_color);
+	color: var(--headerbar-fg-color);
 	padding: 0;
 
 	position: fixed;

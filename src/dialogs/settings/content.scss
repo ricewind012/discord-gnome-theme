@@ -5,8 +5,8 @@
 $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]';
 
 %-card-subheading {
-	border-block-end: 1px solid var(--card_shade_color);
-	color: var(--window_fg_muted);
+	border-block-end: 1px solid var(--card-shade-color);
+	color: var(--window-fg-muted);
 	margin: 0;
 	padding-block: var(--space-8) var(--space-6);
 	padding-inline: 16px;
@@ -120,7 +120,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 			@extend %-card-subheading;
 			@extend %heading;
 
-			background: var(--card_bg_color);
+			background: var(--card-bg-color);
 		}
 	}
 
@@ -135,7 +135,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 		& > legend {
 			@extend %-card-subheading;
 
-			background: var(--card_bg_color);
+			background: var(--card-bg-color);
 			border-radius: var(--card_radius) var(--card_radius) 0 0;
 			width: 100%;
 		}
@@ -163,7 +163,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 }
 
 .contentRegion__23e6b {
-	border-left: 1px solid var(--sidebar_border_color);
+	border-left: 1px solid var(--sidebar-border-color);
 
 	// for banner
 	flex-direction: column-reverse;
@@ -191,7 +191,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 	}
 
 	.separator_aa8da2 {
-		color: var(--window_fg_muted);
+		color: var(--window-fg-muted);
 		margin: var(--menu_margin);
 	}
 
@@ -220,7 +220,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 }
 
 .sidebarRegionScroller__23e6b {
-	background-color: var(--sidebar_bg_color);
+	background-color: var(--sidebar-bg-color);
 }
 
 // Status page
@@ -228,14 +228,14 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 	.text__33d12 {
 		@extend %text-normal;
 
-		color: var(--window_fg_color);
+		color: var(--window-fg-color);
 		margin-top: var(--spacing-2x);
 	}
 
 	.title__33d12 {
 		@extend %title-1;
 
-		color: var(--window_fg_color);
+		color: var(--window-fg-color);
 		text-transform: unset;
 	}
 }

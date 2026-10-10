@@ -6,7 +6,7 @@
 .caret_c1e9c4 {
 	@include util.icon("right");
 
-	color: var(--window_fg_muted);
+	color: var(--window-fg-muted);
 	inset-inline-start: unset;
 	inset-inline-end: var(--menu_padding);
 
@@ -26,7 +26,7 @@
 }
 
 .hintContainer_c1e9c4 {
-	color: var(--window_fg_muted);
+	color: var(--window-fg-muted);
 }
 
 .iconContainer_c1e9c4 {
@@ -56,7 +56,7 @@
 	position: relative;
 
 	&:not(.colorDanger_c1e9c4):active {
-		color: var(--popover_fg_color);
+		color: var(--popover-fg-color);
 	}
 
 	.vc-icon,

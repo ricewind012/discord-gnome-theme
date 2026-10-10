@@ -8,7 +8,7 @@
 }
 
 .contentHeader_e9e3ed {
-	color: var(--headerbar_fg_color);
+	color: var(--headerbar-fg-color);
 	border: none;
 	box-shadow: var(--elevation-low);
 	padding: var(--titlebar-button-spacing);
@@ -21,7 +21,7 @@
 		margin: auto;
 
 		[aria-hidden] {
-			color: var(--window_fg_muted);
+			color: var(--window-fg-muted);
 		}
 	}
 
@@ -64,14 +64,14 @@
 }
 
 .sidebar__409aa {
-	background-color: var(--sidebar_bg_color);
-	border-inline-end: 1px solid var(--sidebar_border_color);
+	background-color: var(--sidebar-bg-color);
+	border-inline-end: 1px solid var(--sidebar-border-color);
 	flex-basis: 250px;
 	padding: 0;
 
 	.fixedContent__409aa {
 		// for search bar
-		--window_bg_color: var(--sidebar_bg_color);
+		--window-bg-color: var(--sidebar-bg-color);
 
 		box-shadow: var(--elevation-low);
 		gap: var(--spacing);

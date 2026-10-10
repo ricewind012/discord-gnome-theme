@@ -10,7 +10,7 @@
 .button_aec7ab {
 	@include controls.icon-button;
 
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 
 	&.closeButton__6088c {
 		--icon: icon("window-close");

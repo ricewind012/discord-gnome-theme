@@ -22,7 +22,7 @@
 			margin: 0;
 
 			&:not(:last-child) {
-				border-bottom: 1px solid var(--card_shade_color);
+				border-bottom: 1px solid var(--card-shade-color);
 				border-radius: 0;
 			}
 		}

@@ -20,9 +20,9 @@ $toast_fg_color: white;
 	background-color: color-mix(
 		in srgb,
 		var(--banner-color) 30%,
-		var(--window_bg_color)
+		var(--window-bg-color)
 	);
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 	padding: var(--spacing);
 }
 
@@ -41,7 +41,7 @@ $toast_fg_color: white;
 	@include -bold-font;
 	@include button-basic-raised;
 
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 	padding: 5px 10px;
 	border: none;
 	border-radius: var(--button_radius);
@@ -62,7 +62,7 @@ $toast_fg_color: white;
 
 @mixin button-accent {
 	background-color: var(--accent-bg-color);
-	color: var(--accent_fg_color);
+	color: var(--accent-fg-color);
 
 	&:hover {
 		background-color: color-mix(
@@ -100,14 +100,14 @@ $toast_fg_color: white;
 }
 
 @mixin button-selected {
-	background-color: var(--selected_color);
+	background-color: var(--selected-color);
 
 	&:hover {
-		background-color: var(--selected_hover_color);
+		background-color: var(--selected-hover-color);
 	}
 
 	&:active {
-		background-color: var(--selected_active_color);
+		background-color: var(--selected-active-color);
 	}
 }
 
@@ -310,7 +310,7 @@ $toast_fg_color: white;
 
 	&:hover,
 	&:active {
-		background-color: var(--hover_color);
+		background-color: var(--hover-color);
 
 		#{$lhs}::after {
 			background-color: transparent;
@@ -357,7 +357,7 @@ $toast_fg_color: white;
 
 	background-color: color-mix(
 		in srgb,
-		var(--window_fg_color) var(--percentage),
+		var(--window-fg-color) var(--percentage),
 		transparent
 	);
 	border: none;
@@ -448,7 +448,7 @@ $toast_fg_color: white;
 	background-color: color-mix(
 		in srgb,
 		currentColor 10%,
-		var(--window_bg_color)
+		var(--window-bg-color)
 	);
 	font-size: var(--document-font-size);
 	line-height: 1.2;
@@ -520,11 +520,11 @@ $toast_fg_color: white;
 	min-height: calc(34px - var(---group-padding) * 2);
 
 	&:hover {
-		background-color: var(--hover_color);
+		background-color: var(--hover-color);
 	}
 
 	&:active {
-		background-color: var(--active_color);
+		background-color: var(--active-color);
 	}
 
 	&#{$checked} {
@@ -585,8 +585,8 @@ $toast_fg_color: white;
 
 /// @param {string} $activatable-selector
 @mixin card($activatable-selector: "") {
-	background-color: var(--card_bg_color);
-	color: var(--card_fg_color);
+	background-color: var(--card-bg-color);
+	color: var(--card-fg-color);
 	border: none;
 	border-radius: var(--card_radius);
 	box-shadow: var(--elevation-medium);
@@ -601,7 +601,7 @@ $toast_fg_color: white;
 			background-color: color-mix(
 				in srgb,
 				currentColor 3%,
-				var(--card_bg_color)
+				var(--card-bg-color)
 			);
 		}
 
@@ -609,7 +609,7 @@ $toast_fg_color: white;
 			background-color: color-mix(
 				in srgb,
 				currentColor 8%,
-				var(--card_bg_color)
+				var(--card-bg-color)
 			);
 		}
 	}
@@ -638,11 +638,11 @@ $toast_fg_color: white;
 	}
 
 	&:hover::before {
-		background-color: var(--selected_hover_color);
+		background-color: var(--selected-hover-color);
 	}
 
 	&:active::before {
-		background-color: var(--selected_active_color);
+		background-color: var(--selected-active-color);
 	}
 
 	&::after {
@@ -666,7 +666,7 @@ $toast_fg_color: white;
 ) {
 	@include card($activatable-selector);
 
-	border-bottom: 1px solid var(--card_shade_color);
+	border-bottom: 1px solid var(--card-shade-color);
 	border-radius: 0;
 	box-shadow: none;
 

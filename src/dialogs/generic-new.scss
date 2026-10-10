@@ -62,9 +62,9 @@
 	&.showFade__8a031::before {
 		// --elevation-low
 		box-shadow:
-			0 -1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
+			0 -1px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent),
 			0 -2px 4px
-				color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent);
+				color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent);
 		content: "";
 		inset: 0;
 		position: absolute;
@@ -80,7 +80,7 @@
 	padding: 0;
 
 	&:has(.headerTrailing__8a031 > [aria-label="Close"]) {
-		background-color: var(--window_bg_color);
+		background-color: var(--window-bg-color);
 	}
 }
 

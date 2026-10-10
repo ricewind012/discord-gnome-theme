@@ -52,7 +52,7 @@
 
 	& > div > [data-text-variant="text-sm/medium"]:first-child,
 	[data-text-variant="text-sm/semibold"] {
-		color: var(--popover_fg_color);
+		color: var(--popover-fg-color);
 	}
 }
 
@@ -64,7 +64,7 @@
 }
 
 .itemIcon__971b5 {
-	color: var(--popover_fg_color);
+	color: var(--popover-fg-color);
 	margin-inline-end: var(--spacing);
 
 	// avatars don't work
@@ -88,6 +88,6 @@
 
 	// revert [data-text-variant^="text-sm"]
 	& > :first-child {
-		color: var(--popover_fg_color);
+		color: var(--popover-fg-color);
 	}
 }

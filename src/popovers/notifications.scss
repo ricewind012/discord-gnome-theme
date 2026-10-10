@@ -26,7 +26,7 @@
 	}
 
 	.message_cb862a {
-		color: var(--window_fg_color);
+		color: var(--window-fg-color);
 		font: inherit;
 	}
 
@@ -69,7 +69,7 @@
 	}
 
 	&:not(:hover) {
-		color: var(--window_fg_muted);
+		color: var(--window-fg-muted);
 	}
 
 	& > .stack_dbd263 {

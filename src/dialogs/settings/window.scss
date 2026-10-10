@@ -8,7 +8,7 @@
 }
 
 %-tab-header {
-	color: var(--headerbar_fg_color);
+	color: var(--headerbar-fg-color);
 
 	position: fixed;
 	top: calc(var(--p) + 1px);
@@ -45,7 +45,7 @@
 		);
 		z-index: -1;
 
-		background-color: var(--window_bg_color);
+		background-color: var(--window-bg-color);
 		border-top-right-radius: var(--window_radius);
 		box-shadow: var(--elevation-low);
 	}
@@ -55,7 +55,7 @@
 	@include controls.titlebar-button;
 
 	opacity: 1;
-	color: var(--headerbar_fg_color);
+	color: var(--headerbar-fg-color);
 
 	flex: 0 0 var(--titlebar-button-size);
 }
@@ -193,10 +193,10 @@
 		height: var(--headerbar-height);
 		@extend %-center-text;
 
-		background-color: var(--sidebar_bg_color);
+		background-color: var(--sidebar-bg-color);
 		@extend %heading;
-		color: var(--headerbar_fg_color);
-		border-right: 1px solid var(--sidebar_border_color);
+		color: var(--headerbar-fg-color);
+		border-right: 1px solid var(--sidebar-border-color);
 		border-top-left-radius: var(--window_radius);
 		box-shadow: var(--elevation-low);
 
@@ -206,7 +206,7 @@
 
 .standardSidebarView__23e6b {
 	box-shadow: var(--elevation-high);
-	border: 1px solid var(--window_outline_color);
+	border: 1px solid var(--window-outline-color);
 	border-radius: var(--window_radius);
 	padding-top: var(--headerbar-height);
 

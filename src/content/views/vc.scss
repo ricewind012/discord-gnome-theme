@@ -2,10 +2,10 @@
 @use "typography";
 
 %-dark-headerbar {
-	--headerbar_fg_color: #ffffff;
+	--headerbar-fg-color: #ffffff;
 
 	:root:not(.app-focused) & {
-		--headerbar_fg_color: color-mix(
+		--headerbar-fg-color: color-mix(
 			in srgb,
 			#ffffff var(--dim-level-opacity),
 			transparent
@@ -37,7 +37,7 @@
 .colorable_f1ceac {
 	@include controls.icon-button;
 
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 
 	&.disconnect_f1ceac,
 	&.redGlow_f1ceac {
@@ -58,7 +58,7 @@
 		$rhs: ".attachedCaret_f1ceac"
 	);
 
-	background-color: var(--hover_color);
+	background-color: var(--hover-color);
 }
 
 .edgeControls_bfe55a {
@@ -81,7 +81,7 @@
 	}
 
 	.playingText__49508 {
-		color: var(--window_fg_muted);
+		color: var(--window-fg-muted);
 	}
 
 	// avatar
@@ -109,7 +109,7 @@
 
 .overlayContainer__2f4f7 {
 	.experimentOverlayTitle__2f4f7 {
-		color: var(--window_fg_color);
+		color: var(--window-fg-color);
 	}
 
 	.overlayButton__2f4f7 {
@@ -120,7 +120,7 @@
 .rightTrayIcon_cb9592:not(.container__2d263) {
 	@include controls.icon-button-circular;
 
-	--accent-color: var(--window_fg_color);
+	--accent-color: var(--window-fg-color);
 }
 
 // is it really useful ?

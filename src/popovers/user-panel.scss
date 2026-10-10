@@ -32,7 +32,7 @@
 				online: "var(--success-color)",
 				idle: "var(--warning-color)",
 				dnd: "var(--destructive-color)",
-				offline: "var(--window_fg_muted)",
+				offline: "var(--window-fg-muted)",
 			);
 
 			@each $status, $color in $colors {
@@ -74,7 +74,7 @@
 .menuItemInner_ce8328 {
 	@include controls.card;
 
-	border-block-end: 1px solid var(--card_shade_color);
+	border-block-end: 1px solid var(--card-shade-color);
 	border-radius: 0;
 	box-shadow: none;
 	pointer-events: none;

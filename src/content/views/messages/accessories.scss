@@ -4,7 +4,7 @@
 @mixin -file-name {
 	@extend %heading;
 
-	color: var(--card_fg_color);
+	color: var(--card-fg-color);
 	text-decoration: none;
 
 	// Use the download icon instead
@@ -169,7 +169,7 @@
 	.footer__4d95d,
 	.modalFooter__4d95d {
 		background-color: transparent;
-		color: var(--card_fg_color);
+		color: var(--card-fg-color);
 		border: none;
 		border-radius: var(--card_radius);
 		gap: var(--spacing);
@@ -211,7 +211,7 @@
 	.textContainer__4d95d {
 		background-color: color-mix(in srgb, currentColor 3%, transparent);
 		border: none;
-		border-bottom: 1px solid var(--card_shade_color);
+		border-bottom: 1px solid var(--card-shade-color);
 		border-radius: var(--card_radius) var(--card_radius) 0 0;
 	}
 }

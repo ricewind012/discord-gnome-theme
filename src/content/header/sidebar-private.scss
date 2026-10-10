@@ -13,7 +13,7 @@
 		justify-content: center;
 
 		@extend %heading;
-		color: var(--headerbar_fg_color);
+		color: var(--headerbar-fg-color);
 	}
 
 	[role="listitem"] {
@@ -42,7 +42,7 @@
 			$overflow-workaround-direction: "left"
 		);
 
-		color: var(--headerbar_fg_color);
+		color: var(--headerbar-fg-color);
 
 		// undo fullWidth for mana button
 		flex: unset;

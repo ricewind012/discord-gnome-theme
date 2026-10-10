@@ -1,11 +1,11 @@
 .theme-light,
 .theme-dark {
-	--background-base-low: var(--window_bg_color);
-	--background-base-lower: var(--window_bg_color);
-	--background-base-lowest: var(--secondary_sidebar_bg_color);
-	--background-surface-high: var(--popover_bg_color);
-	--background-surface-higher: var(--popover_bg_color);
-	--background-surface-highest: var(--popover_bg_color);
+	--background-base-low: var(--window-bg-color);
+	--background-base-lower: var(--window-bg-color);
+	--background-base-lowest: var(--secondary-sidebar-bg-color);
+	--background-surface-high: var(--popover-bg-color);
+	--background-surface-higher: var(--popover-bg-color);
+	--background-surface-highest: var(--popover-bg-color);
 
 	--background-code-addition: color-mix(
 		in srgb,
@@ -19,20 +19,20 @@
 		from var(--shade-color) r g b / calc(alpha * 3)
 	);
 
-	--text-default: var(--window_fg_color);
+	--text-default: var(--window-fg-color);
 	--text-feedback-critical: var(--destructive-color);
 	--text-feedback-positive: var(--success-color);
-	--text-feedback-primary: var(--window_fg_color);
+	--text-feedback-primary: var(--window-fg-color);
 	--text-feedback-warning: var(--warning-color);
 	--text-link: var(--accent-color);
-	--text-muted: var(--window_fg_muted);
-	--text-strong: var(--window_fg_color);
-	--text-subtle: var(--window_fg_muted);
+	--text-muted: var(--window-fg-muted);
+	--text-strong: var(--window-fg-color);
+	--text-subtle: var(--window-fg-muted);
 
 	--text-code-addition: var(--green-5);
 	--text-code-builtin: var(--purple-2);
 	--text-code-bullet: var(--violet-2);
-	--text-code-comment: var(--window_fg_muted);
+	--text-code-comment: var(--window-fg-muted);
 	--text-code-deletion: var(--red-2);
 	--text-code-keyword: var(--orange-2);
 	--text-code-section: var(--blue-2);
@@ -43,29 +43,29 @@
 
 	--interactive-background-active: color-mix(
 		in srgb,
-		var(--window_fg_color) 10%,
+		var(--window-fg-color) 10%,
 		transparent
 	);
 	--interactive-background-hover: color-mix(
 		in srgb,
-		var(--window_fg_color) 7%,
+		var(--window-fg-color) 7%,
 		transparent
 	);
 	--interactive-background-selected: color-mix(
 		in srgb,
-		var(--window_fg_color) 16%,
+		var(--window-fg-color) 16%,
 		transparent
 	);
-	--interactive-muted: var(--window_fg_muted);
-	--interactive-icon-active: var(--window_fg_color);
-	--interactive-icon-default: var(--window_fg_color);
-	--interactive-icon-hover: var(--window_fg_color);
-	--interactive-text-active: var(--window_fg_color);
-	--interactive-text-default: var(--window_fg_color);
-	--interactive-text-hover: var(--window_fg_color);
+	--interactive-muted: var(--window-fg-muted);
+	--interactive-icon-active: var(--window-fg-color);
+	--interactive-icon-default: var(--window-fg-color);
+	--interactive-icon-hover: var(--window-fg-color);
+	--interactive-text-active: var(--window-fg-color);
+	--interactive-text-default: var(--window-fg-color);
+	--interactive-text-hover: var(--window-fg-color);
 
 	--channel-text-area-placeholder: var(--text-muted);
-	--channels-default: var(--window_fg_color);
+	--channels-default: var(--window-fg-color);
 	--input-placeholder-text-default: var(--text-muted);
 
 	// Originally 50%, but nothing uses the secondary text color anyway
@@ -76,10 +76,10 @@
 
 	--status-positive: var(--success-color);
 	--status-positive-background: var(--success-color);
-	--status-positive-text: var(--window_fg_color);
+	--status-positive-text: var(--window-fg-color);
 	--status-warning: var(--warning-color);
 	--status-warning-background: var(--warning-bg-color);
-	--status-warning-text: var(--warning_fg_color);
+	--status-warning-text: var(--warning-fg-color);
 
 	@each $k in icon text {
 		--#{$k}-status-dnd: var(--destructive-color);
@@ -105,7 +105,7 @@
 			transparent
 		);
 	}
-	--message-background-hover: var(--sidebar_bg_color);
+	--message-background-hover: var(--sidebar-bg-color);
 
 	--custom-app-top-bar-height: 0px;
 	--custom-channel-header-height: var(--headerbar-height);
@@ -116,11 +116,11 @@
 	// TODO: legacy modal
 	--custom-standard-sidebar-view-sidebar-total-width: var(--sidebar-width);
 
-	--elevation-stroke: 0 0 0 1px var(--window_outline_color);
+	--elevation-stroke: 0 0 0 1px var(--window-outline-color);
 	// prettier-ignore
 	--elevation-low:
-		0 1px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent),
-		0 2px 4px color-mix(in srgb, var(--headerbar_shade_color) 50%, transparent);
+		0 1px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent),
+		0 2px 4px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent);
 	// prettier-ignore
 	--elevation-medium:
 		0 0 0 1px rgb(0 0 6 / 3%),

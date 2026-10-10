@@ -103,6 +103,6 @@
 	& > * {
 		@include controls.icon-button;
 
-		color: var(--dialog_fg_color);
+		color: var(--dialog-fg-color);
 	}
 }

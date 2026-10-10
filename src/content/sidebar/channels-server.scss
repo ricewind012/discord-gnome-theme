@@ -14,10 +14,10 @@
 .sidebarList__5e434 {
 	background: var(
 		--background-gradient-app-frame,
-		var(--secondary_sidebar_bg_color)
+		var(--secondary-sidebar-bg-color)
 	);
 	border: none;
-	border-inline-end: 1px solid var(--secondary_sidebar_border_color);
+	border-inline-end: 1px solid var(--secondary-sidebar-border-color);
 	border-radius: 0;
 
 	.container__2637a {
@@ -31,10 +31,10 @@
 }
 
 .wrapper__2ea32 {
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 
 	&.modeMuted__2ea32 {
-		color: var(--window_fg_muted);
+		color: var(--window-fg-muted);
 	}
 
 	&.typeThread__2ea32 {
@@ -58,7 +58,7 @@
 	}
 
 	&:not(:hover) {
-		color: var(--window_fg_muted);
+		color: var(--window-fg-muted);
 	}
 
 	.icon__29444 {
@@ -128,7 +128,7 @@
 }
 
 .spine__5b40b {
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 }
 
 .unread__2ea32 {

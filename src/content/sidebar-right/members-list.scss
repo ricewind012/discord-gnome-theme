@@ -1,11 +1,11 @@
 @use "typography";
 
 .container_c8ffbb {
-	--custom-channel-members-bg: var(--sidebar_bg_color);
+	--custom-channel-members-bg: var(--sidebar-bg-color);
 }
 
 .membersGroup_c8ffbb {
 	@extend %heading;
 
-	color: var(--window_fg_color);
+	color: var(--window-fg-color);
 }

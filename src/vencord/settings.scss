@@ -71,14 +71,14 @@
 // Merge with the bottom card. Inconsistent, but ehhhh
 .vc-plugins-info-card {
 	border-radius: var(--card_radius) var(--card_radius) 0 0;
-	border-bottom: 1px solid var(--card_shade_color);
+	border-bottom: 1px solid var(--card-shade-color);
 	gap: 0;
 
 	height: unset;
 }
 
 .vc-plugins-info-icon {
-	color: var(--card_fg_color);
+	color: var(--card-fg-color);
 
 	&.vc-cog-wheel {
 		--icon: icon("settings");
