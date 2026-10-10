@@ -68,8 +68,10 @@
 .headerBar__49508 {
 	@extend %-dark-headerbar;
 
+	filter: var(--text-shadow);
+
 	.container__49508 {
-		[data-text-variant] {
+		[data-text-variant="text-md/medium"] {
 			@extend %caption;
 		}
 	}
@@ -102,10 +104,6 @@
 
 		color: inherit;
 		margin: 0;
-	}
-
-	[data-text-variant] {
-		filter: var(--text-shadow);
 	}
 }
 

@@ -1,5 +1,4 @@
 @use "controls";
-@use "typography";
 
 .vc-plugins-setting-content {
 	display: grid;
@@ -10,6 +9,10 @@
 	}
 }
 
+.vc-plugins-setting-label {
+	gap: 0;
+}
+
 .vc-plugins-setting-section {
 	@include controls.card-in-container(
 		$first-selector: "&:first-child",
@@ -17,12 +20,8 @@
 	);
 }
 
-.vc-plugins-setting-title {
-	@extend %title-3;
-}
-
 .vc-plugins-setting-description {
-	@extend %caption;
+	margin-block: 2px -2px;
 }
 
 .vc-plugins-settings {
@@ -35,8 +34,6 @@
 	text-align: start;
 
 	.vc-text-lg.vc-margin-top-16 {
-		@extend %title-3;
-
 		margin-block: 34px 16px;
 	}
 }

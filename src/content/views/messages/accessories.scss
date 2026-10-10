@@ -2,7 +2,7 @@
 @use "typography";
 
 @mixin -file-name {
-	@extend %title-3;
+	@extend %heading;
 
 	color: var(--card_fg_color);
 	text-decoration: none;
@@ -161,7 +161,7 @@
 	}
 
 	.fileName__4d95d {
-		@extend %title-3;
+		@extend %heading;
 
 		color: inherit;
 	}
@@ -238,8 +238,6 @@
 	.label__4c520 {
 		@extend %text-normal;
 
-		color: inherit;
-
 		order: 1;
 	}
 
@@ -293,10 +291,11 @@
 		margin: 0;
 
 		.embedAuthorName__623de[href] {
-			@extend %caption;
+			@extend %text-normal;
 		}
 	}
 
+	// this has a text-xs/medium class name, but from another component? what
 	.embedFooterText__623de {
 		@extend %caption;
 	}
@@ -348,7 +347,7 @@
 }
 
 .embedProvider__623de {
-	@extend %title-1;
+	@extend %title-4;
 }
 
 .embedTitle__623de {
@@ -392,11 +391,6 @@
 
 	.hoverButton__06ab4 {
 		@include controls.icon-button-circular("folder-download");
-
-		// %link
-		&:hover {
-			color: white;
-		}
 
 		&.removeMosaicItemHoverButton__6c706 {
 			--icon: icon("window-close");
@@ -552,6 +546,7 @@
 		@include -file-name;
 	}
 
+	// this has a text-xs/medium class name, but from another component? what
 	.metadataSize_cf09d8 {
 		@extend %caption;
 

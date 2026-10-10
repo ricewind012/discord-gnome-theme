@@ -65,7 +65,7 @@
 	.settingsPage_f131e9 > h3 {
 		@extend %-center-text;
 		@extend %-tab-header;
-		@extend %title-3;
+		@extend %heading;
 	}
 
 	& > div > .sectionTitle__7bffb {
@@ -73,7 +73,7 @@
 
 		& > * {
 			@extend %-center-text;
-			@extend %title-3;
+			@extend %heading;
 
 			margin: 0;
 		}
@@ -110,7 +110,7 @@
 	.formTitle__5906b {
 		@extend %-center-text;
 		@extend %-tab-header;
-		@extend %title-3;
+		@extend %heading;
 	}
 
 	// "Invites" tab
@@ -194,7 +194,7 @@
 		@extend %-center-text;
 
 		background-color: var(--sidebar_bg_color);
-		@extend %title-3;
+		@extend %heading;
 		color: var(--headerbar_fg_color);
 		border-right: 1px solid var(--sidebar_border_color);
 		border-top-left-radius: var(--window_radius);

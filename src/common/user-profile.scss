@@ -18,9 +18,8 @@
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
 
-	.markup__75297 [data-text-variant] {
-		// %caption
-		color: inherit;
+	.bioText_b40b46 {
+		@extend %text-normal;
 	}
 }
 
@@ -72,12 +71,6 @@
 	padding-inline-start: var(--spacing-2x);
 	position: relative;
 
-	[data-text-variant] {
-		@extend %text-normal;
-
-		color: inherit;
-	}
-
 	& > :first-child {
 		order: 1;
 	}
@@ -109,6 +102,8 @@
 }
 
 .roleName_af3987 {
+	@extend %text-normal;
+
 	margin: 0;
 	z-index: 1;
 }

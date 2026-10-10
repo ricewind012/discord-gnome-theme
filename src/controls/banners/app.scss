@@ -1,4 +1,5 @@
 @use "controls";
+@use "typography";
 @use "util";
 
 %-banner {
@@ -24,10 +25,9 @@
 	@extend %-banner-button;
 }
 
-// revert %caption
 .header_c5cd6a {
-	color: inherit;
-	font: inherit;
+	@extend %heading;
+
 	margin: auto;
 
 	order: -1;

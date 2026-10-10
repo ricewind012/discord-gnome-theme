@@ -82,8 +82,8 @@
 		margin: 0;
 	}
 
-	.title_cf2d33 [data-text-variant] {
-		@extend %title-3;
+	.title_cf2d33 [data-text-variant="heading-sm/medium"] {
+		@extend %heading;
 	}
 }
 
@@ -139,9 +139,7 @@
 	}
 
 	.accountNameText__9bfb9 {
-		@extend %title-3;
-
-		color: inherit;
+		@extend %text-normal;
 	}
 
 	.connection__9bfb9 {
@@ -253,8 +251,8 @@
 	// Originally 16px, but --dialog-spacing-05x
 	gap: var(--spacing-2x);
 
-	.header_bf424d [data-text-variant] {
-		@extend %title-3;
+	.header_bf424d [data-text-variant="text-xs/medium"] {
+		@extend %heading;
 
 		color: inherit;
 	}

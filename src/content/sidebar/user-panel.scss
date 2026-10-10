@@ -1,5 +1,4 @@
 @use "controls";
-@use "typography";
 
 .audioButtonParent__5e764 {
 	@include controls.split-button(
@@ -119,12 +118,6 @@
 
 .panelTitleContainer__37e49 {
 	margin: 0;
-
-	& > div {
-		@extend %title-3;
-
-		color: var(--window_fg_color);
-	}
 }
 
 .rtcConnectionStatus__06d62 {

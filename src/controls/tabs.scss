@@ -1,35 +1,15 @@
 @use "controls";
 @use "typography";
-@use "util";
 
 [role="tab"] {
-	@include controls.button;
+	@include controls.tab($selected-sel: "&[aria-selected='true']");
 
-	background-color: transparent;
-	line-height: 1;
-	padding-block: 10px;
 	margin: 0;
 
 	display: block;
 
-	&[aria-selected="true"] {
-		background-color: color-mix(in srgb, currentColor 10%, transparent);
-
-		&:hover {
-			background-color: color-mix(in srgb, currentColor 13%, transparent);
-		}
-
-		&:active {
-			background-color: color-mix(in srgb, currentColor 19%, transparent);
-		}
-	}
-
 	&::after {
 		display: none;
-	}
-
-	& > [data-text-variant] {
-		color: inherit;
 	}
 }
 
@@ -43,11 +23,6 @@
 	padding: var(--menu_margin) 0;
 
 	[role="tab"] {
-		@extend %text-normal;
-
-		line-height: 44px;
-		min-height: 36px;
-		padding: 0 14px;
-		margin: 0 var(--menu_margin) 2px;
+		@include controls.tab-vertical($selected-sel: "&[aria-selected='true']");
 	}
 }

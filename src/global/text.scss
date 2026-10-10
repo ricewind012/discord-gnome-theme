@@ -2,8 +2,9 @@
 
 // Reference: _labels.scss
 
-html {
-	font-size: var(--document-font-size);
+html[style*="font-size: 100%"] {
+	// 16px -> 15px
+	font-size: 93.75%;
 }
 
 ::placeholder {
@@ -25,43 +26,35 @@ html {
 
 [data-text-variant] {
 	line-height: 1.2;
-	text-transform: none;
 }
 
-.eyebrow__463b7:not(.numberBadge__463b7),
-.h1_b717a1,
-.h2_b717a1,
-.h3_b717a1,
-.h4_b717a1,
-.h5_b717a1 {
-	@extend %title-3;
+.eyebrow__463b7:not(.numberBadge__463b7) {
+	@extend %heading;
 
 	letter-spacing: 0;
 	margin-bottom: 16px;
 }
 
-[data-text-variant^="heading-lg"],
-[data-text-variant^="heading-x"] {
-	@extend %title-1;
-}
-
-[data-text-variant^="heading-md"] {
+:where([data-text-variant^="heading-lg"]),
+:where([data-text-variant^="heading-x"]) {
 	@extend %title-2;
 }
 
-[data-text-variant^="heading-deprecated-12"],
-[data-text-variant^="heading-sm"] {
+:where([data-text-variant^="heading-md"]) {
+	@extend %title-3;
+}
+
+:where([data-text-variant^="heading-sm"]) {
 	@extend %title-4;
 }
 
-.description_ddd181,
-[data-text-variant^="text-sm"],
-[data-text-variant^="text-xs"] {
+:where([data-text-variant^="text-sm"]),
+:where([data-text-variant^="text-xs"]) {
 	@extend %caption;
 }
 
-[data-text-variant^="text-md"] {
-	@extend %title-3;
+:where([data-text-variant^="text-md"]) {
+	@extend %heading;
 }
 
 :where(.anchor_edefb8) {

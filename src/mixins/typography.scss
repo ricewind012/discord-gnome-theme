@@ -5,7 +5,12 @@
 %caption {
 	color: var(--window_fg_muted);
 	font-weight: 400;
-	font-size: calc(15px * 0.82);
+	font-size: 0.82rem;
+}
+
+%heading {
+	font-size: 1rem;
+	font-weight: 700;
 }
 
 %link {
@@ -23,20 +28,20 @@
 
 %title-1 {
 	font-weight: 800;
-	font-size: calc(11px * 1.81);
+	font-size: 1.81rem;
 }
 
 %title-2 {
 	font-weight: 800;
-	font-size: calc(11px * 1.36);
+	font-size: 1.36rem;
 }
 
 %title-3 {
 	font-weight: 700;
-	font-size: calc(11px * 1.36);
+	font-size: 1.36rem;
 }
 
 %title-4 {
 	font-weight: 700;
-	font-size: calc(11px * 1.18);
+	font-size: 1.18rem;
 }

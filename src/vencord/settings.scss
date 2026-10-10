@@ -19,6 +19,7 @@
 
 .vc-addon-header {
 	gap: var(--spacing);
+	margin: 0;
 }
 
 .vc-addon-note {
@@ -33,10 +34,6 @@
 
 	border-radius: 0 0 var(--card_radius) var(--card_radius);
 	margin: 0;
-
-	.vc-text-md {
-		@extend %title-3;
-	}
 }
 
 .vc-plugin-ui-elements-button-arrow {
@@ -75,7 +72,7 @@
 .vc-plugins-info-card {
 	border-radius: var(--card_radius) var(--card_radius) 0 0;
 	border-bottom: 1px solid var(--card_shade_color);
-	gap: var(--spacing);
+	gap: 0;
 
 	height: unset;
 }
@@ -159,7 +156,7 @@
 }
 
 .vcd-settings-category-title {
-	@extend %title-3;
+	@extend %heading;
 }
 
 .vc-special-card {

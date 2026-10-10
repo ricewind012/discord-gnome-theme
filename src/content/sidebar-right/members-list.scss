@@ -5,9 +5,7 @@
 }
 
 .membersGroup_c8ffbb {
-	color: var(--window_fg_color);
+	@extend %heading;
 
-	& > span {
-		@extend %title-3;
-	}
+	color: var(--window_fg_color);
 }

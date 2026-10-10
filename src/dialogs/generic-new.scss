@@ -1,5 +1,6 @@
 @use "controls";
 @use "dialog";
+@use "typography";
 
 [role="alertdialog"],
 [role="dialog"] {
@@ -101,6 +102,10 @@
 
 .headerSubtitleWrapper__8a031 {
 	justify-content: center;
+}
+
+.headerTitle__8a031 {
+	@extend %title-2;
 }
 
 .headerTrailing__8a031 {

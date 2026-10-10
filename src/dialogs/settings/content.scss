@@ -4,7 +4,7 @@
 
 $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]';
 
-%-header {
+%-card-subheading {
 	border-block-end: 1px solid var(--card_shade_color);
 	color: var(--window_fg_muted);
 	margin: 0;
@@ -21,6 +21,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 			".stack_dbd263[data-direction='vertical'] > .container__75920:last-child > &"
 	);
 
+	justify-content: center;
 	margin: 0;
 }
 
@@ -116,7 +117,8 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 		padding: 0;
 
 		.title__28f6b {
-			@extend %-header;
+			@extend %-card-subheading;
+			@extend %heading;
 
 			background: var(--card_bg_color);
 		}
@@ -131,7 +133,7 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 	// use, remove later ?
 	& > fieldset {
 		& > legend {
-			@extend %-header;
+			@extend %-card-subheading;
 
 			background: var(--card_bg_color);
 			border-radius: var(--card_radius) var(--card_radius) 0 0;
@@ -144,8 +146,12 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 		}
 	}
 
-	h2 {
-		@extend %title-3;
+	[data-text-variant="heading-md/medium"] {
+		@extend %text-normal;
+	}
+
+	[data-text-variant="heading-xl/normal"] {
+		@extend %heading;
 	}
 }
 

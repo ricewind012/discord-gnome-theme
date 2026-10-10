@@ -32,6 +32,16 @@
 			transparent
 		);
 	}
+
+	& > :is(h1, h2, h3, h4, h5) {
+		@extend %text-normal;
+
+		margin: 0;
+	}
+
+	& > .vc-text-sm {
+		margin-block: 2px -2px;
+	}
 }
 
 .vc-divider {
@@ -39,25 +49,22 @@
 }
 
 .vc-form-switch {
-	margin-block: auto;
-
 	&.vc-form-switch-disabled {
 		opacity: 1;
 	}
 
-	.vc-text-md {
-		@extend %title-3;
-
-		margin-block: 4px;
-	}
-
-	.vc-text-sm {
-		@extend %caption;
+	& > :last-child {
+		align-items: center;
+		display: flex;
 	}
 }
 
+.vc-form-switch-description {
+	margin-block: 2px -2px;
+}
+
 .vc-form-switch-text {
-	gap: var(--spacing);
+	gap: 0;
 
 	justify-content: start;
 }
@@ -75,7 +82,7 @@
 
 .vc-h4,
 .vc-h5 {
-	@extend %title-3;
+	@extend %heading;
 
 	// h4
 	letter-spacing: 0;
@@ -115,12 +122,19 @@
 	display: none;
 }
 
-.vc-text-sm,
-.vc-text-xs {
-	color: var(--window_fg_muted);
-	font-size: var(--document-font-size);
+:where(.vc-text-base) {
+	line-height: 1.2;
 }
 
-.vc-text-lg {
-	@extend %title-3;
+:where(.vc-text-md) {
+	@extend %text-normal;
+}
+
+:where(.vc-text-sm),
+:where(.vc-text-xs) {
+	@extend %caption;
+}
+
+:where(.vc-text-lg) {
+	@extend %heading;
 }

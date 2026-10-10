@@ -60,7 +60,7 @@
 	height: var(--headerbar-height);
 
 	[data-text-variant="text-lg/semibold"] {
-		@extend %title-3;
+		@extend %heading;
 	}
 
 	svg {

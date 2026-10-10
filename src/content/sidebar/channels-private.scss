@@ -18,7 +18,7 @@
 }
 
 .name__20a53 {
-	@extend %title-3;
+	@extend %heading;
 }
 
 .interactive__972a0 {
@@ -35,4 +35,8 @@
 
 .scroller__99e7c {
 	margin-bottom: var(--custom-app-panels-height);
+}
+
+.subText__20a53 {
+	margin: 0;
 }

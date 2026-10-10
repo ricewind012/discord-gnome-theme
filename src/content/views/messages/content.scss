@@ -125,15 +125,15 @@
 		font-weight: normal;
 
 		h1 {
-			@extend %title-1;
-		}
-
-		h2 {
 			@extend %title-2;
 		}
 
-		h3 {
+		h2 {
 			@extend %title-3;
+		}
+
+		h3 {
+			@extend %heading;
 		}
 	}
 
@@ -194,5 +194,5 @@
 }
 
 .username_c19a55 {
-	@extend %title-3;
+	@extend %heading;
 }

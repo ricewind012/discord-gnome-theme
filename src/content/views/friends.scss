@@ -18,7 +18,7 @@
 	}
 
 	h2 {
-		@extend %title-3;
+		@extend %heading;
 
 		margin: 0;
 	}
@@ -67,10 +67,9 @@
 	}
 
 	.username__0a06e {
-		@extend %title-3;
+		@extend %heading;
 	}
 
-	.subtext__0a06e,
 	.text__19b6d {
 		@extend %caption;
 	}

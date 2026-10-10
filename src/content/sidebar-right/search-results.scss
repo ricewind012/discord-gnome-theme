@@ -10,10 +10,6 @@
 	padding: var(--spacing);
 
 	height: unset;
-
-	[data-text-variant] {
-		@extend %text-normal;
-	}
 }
 
 .searchResult__80bf8 {
@@ -45,10 +41,6 @@
 	.channelNameContainer_a7e67f {
 		position: absolute;
 		top: calc(var(--offset) * -1);
-	}
-
-	.channelNameText_a7e67f {
-		@extend %title-2;
 	}
 }
 

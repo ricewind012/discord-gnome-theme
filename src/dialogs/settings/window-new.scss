@@ -25,6 +25,11 @@
 		}
 	}
 
+	.breadcrumbText__6989f {
+		// For whatever reason this makes it centered
+		line-height: 1;
+	}
+
 	.contentHeaderLeft_e9e3ed {
 		flex-grow: 1;
 
@@ -33,13 +38,6 @@
 
 			@include controls.icon-button;
 		}
-	}
-
-	[data-text-variant] {
-		@extend %title-3;
-
-		// For whatever reason this makes it centered
-		line-height: 1;
 	}
 
 	& > button {
@@ -147,26 +145,7 @@
 		margin-inline: var(--menu_margin) 0;
 
 		.item_caf372 {
-			// TODO(controls): maybe remove vertical tabs and make them a mixin
-			@include controls.button;
-
-			background-color: transparent;
-			line-height: 44px;
-			padding: 0 14px;
-
-			min-height: 36px;
-
-			&.active_caf372 {
-				background-color: color-mix(in srgb, currentColor 10%, transparent);
-
-				&:hover {
-					background-color: color-mix(in srgb, currentColor 13%, transparent);
-				}
-
-				&:active {
-					background-color: color-mix(in srgb, currentColor 19%, transparent);
-				}
-			}
+			@include controls.tab-vertical($selected-sel: "&.active_caf372");
 
 			svg {
 				@include util.icon;

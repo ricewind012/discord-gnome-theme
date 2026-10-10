@@ -47,10 +47,6 @@
 	.channelInfo_c69b6d {
 		margin: 0;
 	}
-
-	[data-text-variant="text-xs/semibold"] {
-		@extend %text-normal;
-	}
 }
 
 // Header
@@ -83,9 +79,7 @@
 	}
 
 	.name__29444 {
-		@extend %title-4;
-
-		color: inherit;
+		@extend %heading;
 	}
 }
 
@@ -128,7 +122,9 @@
 }
 
 .name__2ea32 {
-	@extend %text-normal;
+	[data-text-variant="text-md/medium"] {
+		@extend %text-normal;
+	}
 }
 
 .spine__5b40b {

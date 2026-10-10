@@ -1,0 +1,18 @@
+@use "util";
+
+.container__5a838 {
+	align-items: center;
+	column-gap: var(--spacing-2x);
+}
+
+.description__5a838 {
+	margin-block: 2px -2px;
+}
+
+.label__5a838 {
+	@extend %text-normal;
+}
+
+.labelContainer__5a838 {
+	gap: 0;
+}
