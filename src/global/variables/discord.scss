@@ -105,7 +105,9 @@
 			transparent
 		);
 	}
-	--message-background-hover: var(--sidebar-bg-color);
+	--message-background-hover: rgb(
+		from var(--shade-color) r g b / calc(alpha * 2)
+	);
 
 	--custom-app-top-bar-height: 0px;
 	--custom-channel-header-height: var(--headerbar-height);

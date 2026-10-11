@@ -2,9 +2,8 @@
 @use "typography";
 
 @mixin -file-name {
-	@extend %heading;
-
 	color: var(--card-fg-color);
+	font-weight: normal;
 	text-decoration: none;
 
 	// Use the download icon instead
@@ -144,6 +143,7 @@
 	padding: 0;
 
 	.codeView__4d95d {
+		background: none;
 		padding: 10px 16px;
 		margin: 0;
 	}
@@ -161,9 +161,7 @@
 	}
 
 	.fileName__4d95d {
-		@extend %heading;
-
-		color: inherit;
+		@extend %text-normal;
 	}
 
 	.footer__4d95d,
@@ -213,11 +211,14 @@
 		border: none;
 		border-bottom: 1px solid var(--card-shade-color);
 		border-radius: var(--card_radius) var(--card_radius) 0 0;
+		min-height: unset;
 	}
 }
 
 // Poll
 .container__0be77 {
+	@include controls.card;
+
 	.answer__4c520 {
 		align-items: center;
 		min-height: unset;
@@ -359,6 +360,10 @@
 	@include controls.card;
 
 	padding: 0;
+
+	.footer__083ae:not(.floatingFooter__083ae) .footerContent__083ae {
+		background: none;
+	}
 }
 
 // Expired server invite
@@ -369,7 +374,7 @@
 		border-radius: 999px;
 	}
 
-	.inviteDestination_d5f3cd {
+	.inviteDestinationExpired_d5f3cd {
 		margin: 0;
 	}
 
@@ -421,9 +426,17 @@
 .container__9271d {
 	@include controls.button;
 
+	line-height: 1.2;
 	margin-top: var(--spacing);
 
 	height: unset;
+
+	.bottomLine__9271d {
+		// already text-sm, have to think of a way to exclude * from buttons
+		@extend %caption;
+
+		margin-block-start: 4px;
+	}
 
 	.cta__9271d {
 		text-decoration: none;
