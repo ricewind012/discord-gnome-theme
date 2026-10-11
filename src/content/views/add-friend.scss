@@ -1,7 +1,18 @@
+@use "controls";
+@use "util";
+
 #add_friend-tab {
 	& > header {
 		padding-inline: 0;
 	}
+
+	[data-text-variant="heading-md/normal"] {
+		@extend %text-normal;
+	}
+}
+
+.addFriendInput__72ba7 {
+	padding-block: var(--spacing);
 }
 
 .addFriendInputWrapper__72ba7 {
@@ -11,10 +22,21 @@
 	margin: 0;
 }
 
-.addFriendInput__72ba7 > input {
-	letter-spacing: 0;
+.addFriendUsernameRow__72ba7 {
+	padding: 0;
 }
 
 .addFriendWumpusWrapper__72ba7 img {
-	bottom: calc(var(--space-4) * -1);
+	bottom: calc(var(--space-8) * -1);
+}
+
+.friendNoteTextArea__72ba7 {
+	@include controls.text-field;
+
+	letter-spacing: 0;
+}
+
+.friendNoteTextContainer__72ba7 {
+	border: none;
+	padding: 0;
 }

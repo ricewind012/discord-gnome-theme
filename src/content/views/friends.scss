@@ -16,12 +16,6 @@
 	& > * {
 		margin: 0;
 	}
-
-	h2 {
-		@extend %heading;
-
-		margin: 0;
-	}
 }
 
 .peopleList__5ec2f {
@@ -33,20 +27,13 @@
 
 	& > div > div {
 		@include controls.card-in-container(
-			$activatable-selector: "&",
+			$activatable-selector: "&:not(.sectionTitle__5ec2f)",
 			$first-selector: "&:first-child",
 			$last-selector: "&:last-child"
 		);
 
 		// Title
 		min-height: unset;
-
-		&.sectionTitle__5ec2f {
-			&:hover,
-			&:active {
-				background-color: var(--card-bg-color);
-			}
-		}
 	}
 
 	// WTF is this shit
@@ -73,4 +60,10 @@
 	.text__19b6d {
 		@extend %caption;
 	}
+}
+
+.sectionTitle__5ec2f > h2 {
+	@extend %heading;
+
+	margin: 0;
 }
