@@ -1,10 +1,38 @@
 @use "controls";
+@use "util";
+
+.card_f369db {
+	padding: 0;
+}
+
+.container_d9be46 {
+	background: none;
+
+	button {
+		--icon: icon("user-bookmarks");
+	}
+
+	.formContainer_d9be46 {
+		padding: 0;
+	}
+
+	.title_d9be46 {
+		@include controls.text-field;
+	}
+}
+
+.header_f369db {
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+}
 
 .headerRow_f369db {
 	background-color: transparent;
 	box-shadow: none;
 	padding: 0;
-	margin-bottom: var(--spacing-2x);
+	margin-block-end: 24px;
 
 	&:hover {
 		background-color: transparent;
@@ -16,26 +44,54 @@
 	padding: 0;
 }
 
-.card_f369db {
+.mainCard_f369db:not(.header_f369db) {
 	@include controls.card-in-container(
 		$activatable-selector: "&",
-		$first-selector: "&:first-of-type",
-		$last-selector: "&:last-of-type"
+		$first-selector: ".card_f369db:first-of-type > &",
+		$last-selector: ".card_f369db:last-of-type > &"
 	);
 
-	// for now
+	// nitro theme
+	background-image: none;
 	box-shadow: var(--elevation-medium);
+}
 
-	.mainCard_f369db {
-		background-color: transparent;
-		border: none;
-		padding: 0;
+.pill_a2c9e8 {
+	@include controls.tag;
+
+	border: none;
+	height: unset;
+
+	&.clickable_a2c9e8:hover {
+		background-color: color-mix(in srgb, currentColor 15%, transparent);
+	}
+
+	&.clickable_a2c9e8:active {
+		background-color: color-mix(in srgb, currentColor 30%, transparent);
+	}
+
+	&.selected_a2c9e8 {
+		color: var(--accent-color);
+	}
+
+	& > div {
+		@extend %text-normal;
 	}
 }
 
-.header_f369db {
-	background: none;
-	border: none;
+.tagList_d9be46 {
+	height: 30px;
+}
+
+.tagListInner_f369db {
+	gap: var(--spacing);
+}
+
+// legacy button content
+.sortDropdownText_f369db,
+.tagsButtonInner_f369db {
+	padding: 0;
+	margin: 0;
 }
 
 .tagsContainer_f369db {
