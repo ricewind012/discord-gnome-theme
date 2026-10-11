@@ -1,40 +1,4 @@
 @use "controls";
-@use "typography";
-
-// D*scord put an !important here, el mao
-.visual-refresh .buttonsInner__5126c {
-	@include controls.osd-like-button-group;
-
-	border: none;
-	box-shadow: none;
-
-	.hoverBarButton_f84418 {
-		@include controls.osd-like-button;
-
-		// :has is for reactions
-		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
-			&::before {
-				display: none;
-			}
-
-			.icon_f84418 {
-				display: initial;
-				transform: none;
-			}
-		}
-
-		&[aria-label="Delete"] {
-			color: var(--destructive-color);
-		}
-	}
-
-	.separator_f84418 {
-		// 65% (from $osd_bg_color) / 2
-		background-color: color-mix(in srgb, currentColor 32.5%, transparent);
-		height: calc(100% - var(--spacing-2x) + #{controls.$osd-like-padding} * 2);
-		margin: 0 var(--spacing);
-	}
-}
 
 .chat_f75fb0 {
 	border: none;
@@ -108,105 +72,6 @@
 	}
 }
 
-.markup__75297 {
-	font-weight: normal;
-
-	h1 {
-		@extend %title-2;
-	}
-
-	h2 {
-		@extend %title-3;
-	}
-
-	h3 {
-		@extend %heading;
-	}
-
-	.codeActions__75297 {
-		display: block;
-		inset-block-start: 10px;
-		inset-inline-end: 10px;
-
-		& > div {
-			@include controls.icon-button("edit-copy");
-		}
-	}
-
-	.hljs {
-		@include controls.card;
-
-		// 6px shadow spread + 2px Y offset
-		margin-block-end: 8px;
-	}
-}
-
-.message__5126c {
-	.headerText_c19a55 {
-		margin-right: 0rem;
-	}
-
-	&.cozy_c19a55 {
-		.header_c19a55 {
-			line-height: var(--chat-markup-line-height);
-		}
-	}
-
-	&.compact_c19a55 {
-		--custom-message-margin-compact-indent: calc(
-			7.6rem + var(--custom-message-meta-space)
-		);
-		--custom-message-reply-indent: 1.375rem;
-
-		i {
-			opacity: 1;
-
-			position: unset;
-			display: unset;
-		}
-
-		.repliedMessage_c19a55 {
-			--custom-message-reply-indent: 0rem;
-			--timestamp-width: 11ch;
-
-			margin-left: 0;
-
-			& > span {
-				opacity: 1;
-			}
-		}
-
-		.replyBadge_c19a55 {
-			margin-bottom: 0.25em;
-
-			width: 1em;
-			height: 1em;
-		}
-
-		.avatar_c19a55 {
-			margin-left: 0;
-
-			top: 0.15em;
-		}
-
-		.timestamp_c19a55 {
-			font-family: var(--font-code);
-			font-size: var(--monospace-font-size);
-			line-height: var(--chat-markup-line-height);
-
-			width: 11ch;
-		}
-	}
-
-	.repliedMessage_c19a55 {
-		@extend %caption;
-	}
-
-	.repliedTextContent_c19a55 {
-		-webkit-line-clamp: unset;
-	}
-}
-
 .messagesWrapper__36d07 {
 	--fade-out-gradient-size: calc(var(--spacing) * 4);
 	--gradient-bg: var(--background-base-lower);
@@ -250,10 +115,26 @@
 	}
 }
 
-.timestamp_c19a55 {
-	@extend %caption;
-}
+// D*scord put an !important here, el mao
+.popover_f84418.popover_f84418 {
+	border: none;
+	box-shadow: none;
 
-.username_c19a55 {
-	@extend %heading;
+	.hoverBarButton_f84418 {
+		// :has is for reactions
+		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
+			&::before {
+				display: none;
+			}
+
+			.icon_f84418 {
+				display: initial;
+				transform: none;
+			}
+		}
+	}
+
+	.separator_f84418 {
+		@include controls.osd-like-separator;
+	}
 }

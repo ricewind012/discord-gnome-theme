@@ -1,0 +1,20 @@
+@use "controls";
+
+.button_f7ecac {
+	@include controls.osd-like-button;
+
+	&.dangerous_f7ecac {
+		color: var(--destructive-color);
+	}
+}
+
+.separator_f7ecac {
+	@include controls.osd-like-separator;
+}
+
+.wrapper_f7ecac {
+	@include controls.osd-like-button-group;
+
+	box-shadow: none;
+	height: unset;
+}

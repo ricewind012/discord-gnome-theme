@@ -34,23 +34,6 @@
 			border-right: 1px solid var(--card-shade-color);
 		}
 	}
-
-	// TODO: put in src/common, but only seen in user profile popout, so no yet
-	.wrapper_f7ecac {
-		@include controls.osd-like-button-group;
-
-		box-shadow: none;
-
-		height: unset;
-
-		.button_f7ecac {
-			@include controls.osd-like-button;
-
-			&.dangerous_f7ecac {
-				color: var(--destructive-color);
-			}
-		}
-	}
 }
 
 // Message form-specific channelTextArea stuff

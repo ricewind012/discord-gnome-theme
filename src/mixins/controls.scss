@@ -1,3 +1,5 @@
+@use "sass:color";
+@use "sass:math";
 @use "sass:string";
 @use "util";
 
@@ -226,6 +228,14 @@ $toast_fg_color: white;
 	color: $osd_fg_color;
 	border-radius: 999px;
 	padding: $osd-like-padding;
+}
+
+@mixin osd-like-separator {
+	$-alpha: math.div(color.channel($osd_bg_color, "alpha"), 2) * 100%;
+
+	background-color: color-mix(in srgb, currentColor #{$-alpha}, transparent);
+	height: calc(100% - var(--spacing-2x) + #{$osd-like-padding} * 2);
+	margin: 0 var(--spacing);
 }
 
 @mixin titlebar-button {
