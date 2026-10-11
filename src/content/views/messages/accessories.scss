@@ -84,55 +84,9 @@
 	}
 }
 
-// D*scord put an !important here, el mao
-.visual-refresh .buttonsInner__5126c {
-	@include controls.osd-like-button-group;
-
-	border: none;
-	box-shadow: none;
-
-	.hoverBarButton_f84418 {
-		@include controls.osd-like-button;
-
-		// :has is for reactions
-		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
-			&::before {
-				display: none;
-			}
-
-			.icon_f84418 {
-				transform: none;
-
-				display: initial;
-			}
-		}
-
-		&[aria-label="Delete"] {
-			color: var(--destructive-color);
-		}
-	}
-
-	.separator_f84418 {
-		// 65% (from $osd_bg_color) / 2
-		background-color: color-mix(in srgb, currentColor 32.5%, transparent);
-		margin: 0 var(--spacing);
-
-		height: calc(100% - var(--spacing-2x) + #{controls.$osd-like-padding} * 2);
-	}
-}
-
 // Accessories container
 .container_b7e1cb {
 	gap: var(--spacing);
-}
-
-// Message actions
-.container__040f0 {
-	padding: 0;
-
-	inset-block-start: calc(
-		var(--icon-button-size) * -1 - #{controls.$osd-like-padding} * 2
-	);
 }
 
 // Fancy codeblock (modal included, since it's one component)
@@ -400,25 +354,6 @@
 		&.removeMosaicItemHoverButton__6c706 {
 			--icon: icon("window-close");
 		}
-	}
-}
-
-.markup__75297 {
-	.codeActions__75297 {
-		display: block;
-		top: 10px;
-		right: 10px;
-
-		& > div {
-			@include controls.icon-button("edit-copy");
-		}
-	}
-
-	.hljs {
-		@include controls.card;
-
-		// 6px shadow spread + 2px Y offset
-		margin-bottom: 8px;
 	}
 }
 

@@ -1,4 +1,40 @@
+@use "controls";
 @use "typography";
+
+// D*scord put an !important here, el mao
+.visual-refresh .buttonsInner__5126c {
+	@include controls.osd-like-button-group;
+
+	border: none;
+	box-shadow: none;
+
+	.hoverBarButton_f84418 {
+		@include controls.osd-like-button;
+
+		// :has is for reactions
+		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
+			&::before {
+				display: none;
+			}
+
+			.icon_f84418 {
+				display: initial;
+				transform: none;
+			}
+		}
+
+		&[aria-label="Delete"] {
+			color: var(--destructive-color);
+		}
+	}
+
+	.separator_f84418 {
+		// 65% (from $osd_bg_color) / 2
+		background-color: color-mix(in srgb, currentColor 32.5%, transparent);
+		height: calc(100% - var(--spacing-2x) + #{controls.$osd-like-padding} * 2);
+		margin: 0 var(--spacing);
+	}
+}
 
 .chat_f75fb0 {
 	border: none;
@@ -7,6 +43,14 @@
 	&.threadSidebarOpen_f75fb0 {
 		--chat-header-right-padding: 0px;
 	}
+}
+
+// Message actions
+.container__040f0 {
+	inset-block-start: calc(
+		var(--icon-button-size) * -1 - #{controls.$osd-like-padding} * 2
+	);
+	padding: 0;
 }
 
 #---new-messages-bar {
@@ -64,6 +108,39 @@
 	}
 }
 
+.markup__75297 {
+	font-weight: normal;
+
+	h1 {
+		@extend %title-2;
+	}
+
+	h2 {
+		@extend %title-3;
+	}
+
+	h3 {
+		@extend %heading;
+	}
+
+	.codeActions__75297 {
+		display: block;
+		inset-block-start: 10px;
+		inset-inline-end: 10px;
+
+		& > div {
+			@include controls.icon-button("edit-copy");
+		}
+	}
+
+	.hljs {
+		@include controls.card;
+
+		// 6px shadow spread + 2px Y offset
+		margin-block-end: 8px;
+	}
+}
+
 .message__5126c {
 	.headerText_c19a55 {
 		margin-right: 0rem;
@@ -118,22 +195,6 @@
 			line-height: var(--chat-markup-line-height);
 
 			width: 11ch;
-		}
-	}
-
-	.markup__75297 {
-		font-weight: normal;
-
-		h1 {
-			@extend %title-2;
-		}
-
-		h2 {
-			@extend %title-3;
-		}
-
-		h3 {
-			@extend %heading;
 		}
 	}
 
