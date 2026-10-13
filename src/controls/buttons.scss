@@ -74,7 +74,7 @@ $destructive_button_active_color: color-mix(
 		@include controls.icon-button;
 	}
 
-	&:where([aria-expanded]) {
+	&:where(.hasText_a22cb0[aria-expanded]) {
 		&::after {
 			@include util.icon("pan-down");
 
