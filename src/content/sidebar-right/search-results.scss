@@ -1,15 +1,44 @@
 @use "controls";
 @use "typography";
+@use "util";
 
-.pageButton_c15210 {
-	@include controls.button;
+// Message
+.container__80bf8 {
+	@include controls.card-in-container(
+		$activatable-selector: "&",
+		$first-selector: "&:first-of-type",
+		$last-selector: "&:last-of-type"
+	);
+
+	padding: 0;
+
+	// Clicking on the message does the thing
+	.button__80bf8 {
+		display: none;
+	}
+}
+
+.paginationDock_a98f3b {
+	border: none;
+	// --elevation-low
+	box-shadow:
+		0 -1px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent),
+		0 -2px 4px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent);
 }
 
 .searchHeader_ae7890 {
-	border-bottom: 1px solid var(--secondary-sidebar-border-color);
+	border: none;
+	box-shadow: var(--elevation-low);
 	padding: var(--spacing);
+	padding-inline-start: var(--spacing-2x);
 
-	height: unset;
+	[data-text-variant="text-md/medium"] {
+		@extend %text-normal;
+	}
+}
+
+.searchModeAndFiltersContainer_ae7890 {
+	gap: var(--spacing);
 }
 
 .searchResult__80bf8 {
@@ -24,7 +53,7 @@
 }
 
 .searchResultGroup_a7e67f {
-	--offset: calc(var(--document-font-size) * 1.25 + 16px);
+	--offset: calc(1rem + 16px);
 
 	@include controls.cards-container;
 
@@ -45,22 +74,10 @@
 }
 
 .searchResultsWrap_a98f3b {
-	border-left: 1px solid var(--secondary-sidebar-border-color);
+	// This looks awesome actually
+	z-index: 999;
 
-	z-index: 0;
-
-	// Clicking on the message does the thing
-	.button__80bf8 {
-		display: none;
-	}
-
-	.container__80bf8 {
-		@include controls.card-in-container(
-			$activatable-selector: "&",
-			$first-selector: "&:first-of-type",
-			$last-selector: "&:last-of-type"
-		);
-
-		padding: 0;
+	.scroller_a98f3b {
+		padding-inline: 24px;
 	}
 }
