@@ -9,7 +9,7 @@
 }
 
 :where(.banner__68edb) {
-	border-radius: 0;
+	border-radius: var(--banner-radius);
 }
 
 .inner_c0bea0 {
@@ -24,6 +24,7 @@
 }
 
 .outer_c0bea0 {
+	--banner-radius: var(--window_radius) var(--window_radius) 0 0;
 	--dialog-spacing: var(--space-xl);
 	--role-button-size: 24px;
 	--role-spacing: var(--spacing-05x);
@@ -33,8 +34,12 @@
 	--custom-user-profile-popout-body-padding-inline: var(--dialog-spacing);
 
 	border-radius: var(--window_radius);
+	// Remove the border for a better banner look
+	box-shadow: var(--elevation-high);
 
 	&.user-profile-modal-v2 {
+		--banner-radius: var(--window_radius) 0 0 0;
+
 		border: none;
 		-webkit-app-region: no-drag;
 
@@ -44,6 +49,8 @@
 	}
 
 	&.user-profile-sidebar {
+		--banner-radius: 0;
+
 		border-inline-start: 1px solid var(--window-outline-color);
 		border-radius: 0;
 		box-shadow: none;
