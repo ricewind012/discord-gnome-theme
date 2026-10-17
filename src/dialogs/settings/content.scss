@@ -146,11 +146,11 @@ $-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]'
 		}
 	}
 
-	[data-text-variant="heading-md/medium"] {
+	[data-text-variant="experimental/heading-sm/medium"] {
 		@extend %text-normal;
 	}
 
-	[data-text-variant="heading-xl/normal"] {
+	[data-text-variant="experimental/heading-xl/medium"] {
 		@extend %heading;
 	}
 }
