@@ -82,7 +82,7 @@
 		margin: 0;
 	}
 
-	.title_cf2d33 [data-text-variant="heading-sm/medium"] {
+	.title_cf2d33 [data-text-variant="experimental/heading-sm/medium"] {
 		@extend %heading;
 	}
 }
@@ -251,7 +251,7 @@
 	// Originally 16px, but --dialog-spacing-05x
 	gap: var(--spacing-2x);
 
-	.header_bf424d [data-text-variant="text-xs/medium"] {
+	.header_bf424d [data-text-variant="experimental/text-xs/medium"] {
 		@extend %heading;
 
 		color: inherit;

@@ -35,16 +35,16 @@ html[style*="font-size: 100%"] {
 	margin-bottom: 16px;
 }
 
-:where([data-text-variant^="heading-lg"]),
-:where([data-text-variant^="heading-x"]) {
+:where([data-text-variant^="experimental/heading-lg"]),
+:where([data-text-variant^="experimental/heading-x"]) {
 	@extend %title-2;
 }
 
-:where([data-text-variant^="heading-md"]) {
+:where([data-text-variant^="experimental/heading-md"]) {
 	@extend %title-3;
 }
 
-:where([data-text-variant^="heading-sm"]) {
+:where([data-text-variant^="experimental/heading-sm"]) {
 	@extend %title-4;
 }
 
