@@ -48,6 +48,8 @@ html[style*="font-size: 100%"] {
 	@extend %title-4;
 }
 
+:where([data-text-variant^="body-sm"]),
+:where([data-text-variant^="body-xs"]),
 :where([data-text-variant^="text-sm"]),
 :where([data-text-variant^="text-xs"]) {
 	@extend %caption;

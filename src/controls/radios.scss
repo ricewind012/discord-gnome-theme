@@ -18,7 +18,7 @@
 		justify-content: center;
 	}
 
-	[data-text-variant="experimental/text-md/medium"] {
+	[data-text-variant="text-md/normal"] {
 		@extend %text-normal;
 	}
 }
