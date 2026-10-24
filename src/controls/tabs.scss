@@ -4,9 +4,8 @@
 [role="tab"] {
 	@include controls.tab($selected-sel: "&[aria-selected='true']");
 
-	margin: 0;
-
 	display: block;
+	margin: 0;
 
 	&::after {
 		display: none;
@@ -14,8 +13,8 @@
 }
 
 [role="tablist"][aria-orientation="horizontal"] {
-	gap: 5px;
 	border: none;
+	gap: 5px;
 }
 
 // .navigation-sidebar > row

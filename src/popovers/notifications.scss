@@ -17,9 +17,8 @@
 		$hover: ":is(.actionMenuOpen_cb862a, :focus-within, :hover)"
 	);
 
-	padding: var(--spacing);
-
 	height: unset;
+	padding: var(--spacing);
 
 	.channelName_cb862a {
 		display: none;
@@ -31,18 +30,17 @@
 	}
 
 	.messageContainer_cb862a {
-		padding: 0;
 		margin: 0;
+		padding: 0;
 
-		& > [style*="margin-top: 4px"] {
+		& > [style*="margin-block-start: 4px"] {
 			margin: 0;
 		}
 	}
 
 	.timestamp_cb862a {
-		line-height: 1.2;
-
 		height: unset;
+		line-height: 1.2;
 	}
 
 	.unreadDot_cb862a {
@@ -59,10 +57,9 @@
 .messagesGroupHeaderWrap__0aee3 {
 	--icon: icon("pan-down");
 
-	padding: var(--spacing);
-	margin-top: var(--spacing);
-
 	height: unset;
+	margin-block-start: var(--spacing);
+	padding: var(--spacing);
 
 	&.collapsed__0aee3 {
 		--icon: icon("pan-up");
@@ -73,9 +70,8 @@
 	}
 
 	& > .stack_dbd263 {
-		gap: var(--space-xs);
-
 		flex-direction: row-reverse;
+		gap: var(--space-xs);
 		justify-content: start;
 	}
 

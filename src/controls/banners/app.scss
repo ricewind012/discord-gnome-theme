@@ -17,7 +17,6 @@
 // #region Server preview
 .back_c5cd6a {
 	margin: 0;
-
 	position: unset;
 }
 
@@ -29,7 +28,6 @@
 	@extend %heading;
 
 	margin: auto;
-
 	order: -1;
 }
 
@@ -45,20 +43,18 @@
 .button__6e2b9 {
 	@extend %-banner-button;
 
-	margin-left: auto;
-
-	top: 0;
+	inset-block-start: 0;
+	margin-inline-start: auto;
 }
 
 .closeButton__6e2b9 {
 	@extend %-banner-button;
 
+	height: unset;
 	// Probably the only way to center the text
-	margin-right: auto;
-
+	margin-inline-end: auto;
 	position: unset;
 	width: unset;
-	height: unset;
 
 	&::before {
 		content: attr(aria-label);
@@ -74,11 +70,10 @@
 
 	@extend %-banner;
 
-	text-align: center;
-	line-height: unset;
-	gap: var(--spacing);
-
-	display: flex;
 	align-items: center;
+	display: flex;
+	gap: var(--spacing);
+	line-height: unset;
+	text-align: center;
 }
 // #endregion

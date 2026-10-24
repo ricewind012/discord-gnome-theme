@@ -20,16 +20,14 @@
 	@extend %-mark-text;
 
 	background-color: currentColor;
-
-	width: 1px;
 	height: 6px;
+	width: 1px;
 }
 
 .markValue_a562c8 {
 	@extend %-mark-text;
 
-	margin-top: 2px;
-	margin-bottom: 0;
+	margin-block: 2px 0;
 }
 
 .slider_a562c8 {

@@ -19,12 +19,11 @@
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
+	height: unset;
 	margin: 0;
-
+	min-height: unset;
 	position: unset;
 	width: 100%;
-	height: unset;
-	min-height: unset;
 
 	&.newMessagesBar__0f481 {
 		width: calc(100% - var(--spacing-2x));
@@ -37,8 +36,7 @@
 
 .barButtonMain__0f481 {
 	font: inherit;
-	text-align: center;
-	padding: 0 var(--spacing);
-
 	height: unset;
+	padding: 0 var(--spacing);
+	text-align: center;
 }

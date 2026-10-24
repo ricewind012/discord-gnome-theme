@@ -18,8 +18,8 @@
 .addFriendInputWrapper__72ba7 {
 	background-color: transparent;
 	border: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .addFriendUsernameRow__72ba7 {
@@ -27,7 +27,7 @@
 }
 
 .addFriendWumpusWrapper__72ba7 img {
-	bottom: calc(var(--space-8) * -1);
+	inset-block-end: calc(var(--space-8) * -1);
 }
 
 .friendNoteTextArea__72ba7 {

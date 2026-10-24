@@ -75,7 +75,7 @@
 	}
 
 	.slider__65039 {
-		top: 6px;
+		inset-block-start: 6px;
 	}
 
 	.sliderContainer__65039 {
@@ -104,9 +104,8 @@
 }
 
 .scroller_c1e9c4 {
-	padding: var(--menu_margin);
-
 	overflow: auto;
+	padding: var(--menu_margin);
 }
 
 .scrollerWithScrollbar_c1e9c4 {
@@ -125,8 +124,8 @@
 // Reactions
 .wrapper_f563df {
 	gap: var(--spacing);
+	margin-block-end: var(--menu_margin);
 	padding: 0;
-	margin-bottom: var(--menu_margin);
 
 	.button_f563df {
 		@include controls.button;
@@ -163,8 +162,8 @@
 	.activeIcon_d40c56 {
 		@include util.icon("check-plain");
 
+		inset-inline-end: var(--menu_padding);
 		position: absolute;
-		right: var(--menu_padding);
 
 		& > * {
 			display: none;
@@ -178,7 +177,7 @@
 
 	// Avatar
 	.wrapper__44b0c {
+		inset-inline-start: var(--menu_padding);
 		position: absolute;
-		left: var(--menu_padding);
 	}
 }

@@ -2,18 +2,17 @@
 @use "typography";
 
 %-center-text {
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: center;
 }
 
 %-tab-header {
 	color: var(--headerbar-fg-color);
-
-	position: fixed;
-	top: calc(var(--p) + 1px);
+	height: var(--headerbar-height);
+	inset-block-start: calc(var(--p) + 1px);
 	// prettier-ignore
-	left: calc(
+	inset-inline-start: calc(
 		var(--p)
 		+ var(--sidebar-width)
 		+ var(--scrollbar-width)
@@ -27,15 +26,15 @@
 		- var(--titlebar-button-size) - var(--titlebar-button-spacing) * 2
 		- var(--scrollbar-width)
 	);
-	height: var(--headerbar-height);
+	position: fixed;
 	z-index: 999;
-
-	app-region: drag;
+	-webkit-app-region: drag;
 
 	&::before {
+		background-color: var(--window-bg-color);
+		border-start-end-radius: var(--window_radius);
+		box-shadow: var(--elevation-low);
 		content: "";
-
-		position: absolute;
 		inset: 0;
 		// prettier-ignore
 		width: calc(
@@ -43,21 +42,17 @@
 			+ var(--titlebar-button-size) + var(--titlebar-button-spacing) * 2
 			- var(--weird-offset) - 2px
 		);
+		position: absolute;
 		z-index: -1;
-
-		background-color: var(--window-bg-color);
-		border-top-right-radius: var(--window_radius);
-		box-shadow: var(--elevation-low);
 	}
 }
 
 .closeButton_c2b141 {
 	@include controls.titlebar-button;
 
-	opacity: 1;
 	color: var(--headerbar-fg-color);
-
 	flex: 0 0 var(--titlebar-button-size);
+	opacity: 1;
 }
 
 .contentColumn__23e6b {
@@ -124,8 +119,8 @@
 }
 
 .layer__960e4 {
-	opacity: 1;
 	background-color: transparent;
+	opacity: 1;
 }
 
 .layers__960e4 {
@@ -137,13 +132,11 @@
 	}
 
 	.systemBar_c38106.show_c38106 + div &::before {
-		content: "";
-
-		position: fixed;
-		inset: 0;
-
 		background-color: rgb(from var(--shade-color) r g b / calc(alpha * 2));
 		border-radius: var(--window_radius);
+		content: "";
+		inset: 0;
+		position: fixed;
 		z-index: 101;
 	}
 }
@@ -159,15 +152,14 @@
 
 		box-shadow: none;
 		gap: var(--spacing);
-		padding: var(--spacing);
-		margin: 0;
-
 		justify-content: start;
+		margin: 0;
+		padding: var(--spacing);
 
 		.addRole_e29cd7 {
 			@include controls.icon-button("plus");
 
-			app-region: no-drag;
+			-webkit-app-region: no-drag;
 		}
 
 		.title_e29cd7 {
@@ -177,48 +169,45 @@
 				$selector: "&:hover > .titleText_e29cd7"
 			);
 
-			app-region: no-drag;
+			-webkit-app-region: no-drag;
 		}
 	}
 }
 
 .sidebarRegion__23e6b {
 	[role="tablist"][aria-orientation="vertical"]::before {
-		content: attr(aria-label);
-
-		position: fixed;
-		top: calc(var(--p) + 1px);
-		left: calc(var(--p) + var(--weird-offset));
-		width: calc(var(--sidebar-width) + var(--scrollbar-width));
-		height: var(--headerbar-height);
 		@extend %-center-text;
+		@extend %heading;
 
 		background-color: var(--sidebar-bg-color);
-		@extend %heading;
-		color: var(--headerbar-fg-color);
-		border-right: 1px solid var(--sidebar-border-color);
-		border-top-left-radius: var(--window_radius);
+		border-inline-end: 1px solid var(--sidebar-border-color);
+		border-start-start-radius: var(--window_radius);
 		box-shadow: var(--elevation-low);
-
-		app-region: drag;
+		color: var(--headerbar-fg-color);
+		content: attr(aria-label);
+		height: var(--headerbar-height);
+		inset-block-start: calc(var(--p) + 1px);
+		inset-inline-start: calc(var(--p) + var(--weird-offset));
+		position: fixed;
+		-webkit-app-region: drag;
+		width: calc(var(--sidebar-width) + var(--scrollbar-width));
 	}
 }
 
 .standardSidebarView__23e6b {
-	box-shadow: var(--elevation-high);
 	border: 1px solid var(--window-outline-color);
 	border-radius: var(--window_radius);
-	padding-top: var(--headerbar-height);
-
-	overflow: hidden;
-	position: fixed;
+	box-shadow: var(--elevation-high);
 	inset: var(--p);
+	overflow: hidden;
+	padding-block-start: var(--headerbar-height);
+	position: fixed;
 }
 
 .tools__23e6b {
+	inset-block-start: calc(var(--p) + var(--titlebar-button-spacing));
+	inset-inline-end: calc(var(--p) + var(--titlebar-button-spacing));
 	position: fixed;
-	top: calc(var(--p) + var(--titlebar-button-spacing));
-	right: calc(var(--p) + var(--titlebar-button-spacing));
 }
 
 .toolsContainer__23e6b {

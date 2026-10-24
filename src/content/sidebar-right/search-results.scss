@@ -57,10 +57,9 @@
 
 	@include controls.cards-container;
 
-	margin-bottom: calc(var(--offset) + 34px);
-
+	inset-block-start: var(--offset);
+	margin-block-end: calc(var(--offset) + 34px);
 	position: relative;
-	top: var(--offset);
 
 	.channelNameIcon_a7e67f,
 	.parentChannelName_a7e67f {
@@ -68,8 +67,8 @@
 	}
 
 	.channelNameContainer_a7e67f {
+		inset-block-start: calc(var(--offset) * -1);
 		position: absolute;
-		top: calc(var(--offset) * -1);
 	}
 }
 

@@ -11,9 +11,8 @@
 	box-shadow: var(--elevation-low);
 	border: none;
 	gap: var(--spacing);
-	padding: var(--spacing);
-
 	height: unset;
 	min-height: unset;
+	padding: var(--spacing);
 	z-index: 1;
 }

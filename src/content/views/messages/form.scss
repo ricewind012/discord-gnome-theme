@@ -9,9 +9,9 @@
 	@include controls.cards-container;
 
 	gap: 0;
-	padding: 0;
 	// shadow - 6px radius + 2px offset
 	margin: 8px 0;
+	padding: 0;
 
 	.attachmentContainer__299eb {
 		border-radius: calc(var(--base-unit) * 2 + 2px);
@@ -28,10 +28,10 @@
 			$last-selector: "&:last-child"
 		);
 
-		border-bottom: none;
+		border-block-end: none;
 
 		&:not(:last-child) {
-			border-right: 1px solid var(--card-shade-color);
+			border-inline-end: 1px solid var(--card-shade-color);
 		}
 	}
 }
@@ -50,19 +50,19 @@
 		--icon: icon("plus-circle-outline");
 
 		// align with cozy mode avatars, à la discord
-		margin-left: var(--attach-button-left-offset);
-		margin-right: var(--spacing);
+		margin-inline-start: var(--attach-button-left-offset);
+		margin-inline-end: var(--spacing);
 	}
 
 	.attachWrapper__0923f {
+		margin-inline-end: calc(var(--spacing) * 1.5);
 		padding: 0;
-		margin-right: calc(var(--spacing) * 1.5);
 	}
 
 	.button_e6e74f {
 		@include controls.icon-button($name: "grid-large");
 
-		margin-left: var(--spacing);
+		margin-inline-start: var(--spacing);
 	}
 
 	.buttonContainer_e6e74f {
@@ -77,7 +77,7 @@
 		@include controls.button-accent;
 
 		border-radius: 50%;
-		margin-left: var(--spacing);
+		margin-inline-start: var(--spacing);
 	}
 
 	// Not included in channel-text-area.scss since I disable scrolling only for
@@ -92,8 +92,8 @@
 }
 
 .form_f75fb0 {
-	padding-inline: var(--custom-message-margin-horizontal);
 	margin: 0;
+	padding-inline: var(--custom-message-margin-horizontal);
 
 	&::before,
 	&::after {
@@ -111,8 +111,8 @@
 	}
 
 	.clipContainer__841c8 {
-		padding: 0;
 		margin: 0;
+		padding: 0;
 	}
 
 	.closeButton_e876a8 {
@@ -131,7 +131,7 @@
 		background-color: inherit;
 		gap: var(--spacing);
 		margin: var(--spacing);
-		margin-right: 0;
+		margin-inline-end: 0;
 	}
 
 	.replyLabel__841c8 {
@@ -139,7 +139,7 @@
 		@extend %link;
 
 		// 8px = text field padding
-		margin-left: calc(
+		margin-inline-start: calc(
 			var(--attach-button-left-offset) + var(--icon-button-size) + 8px
 		);
 	}
@@ -151,11 +151,11 @@
 }
 
 .typing_b88801 {
-	padding-left: var(--custom-message-margin-horizontal);
+	padding-inline-start: var(--custom-message-margin-horizontal);
 
 	// good enough
 	.text_b88801 {
+		inset-inline-start: -1px;
 		position: relative;
-		left: -1px;
 	}
 }

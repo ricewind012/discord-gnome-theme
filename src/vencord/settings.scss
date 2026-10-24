@@ -43,21 +43,19 @@
 .vc-plugins-grid {
 	@include controls.cards-container;
 
-	gap: 0;
 	border: none;
-
+	gap: 0;
 	grid-template-columns: 1fr;
 }
 
 .vc-plugins-info-button {
 	@include controls.icon-button;
 
-	margin: 0;
-
-	display: flex;
 	align-items: center;
-	justify-content: center;
+	display: flex;
 	flex-shrink: 0;
+	justify-content: center;
+	margin: 0;
 
 	&::before {
 		display: none;
@@ -70,10 +68,9 @@
 
 // Merge with the bottom card. Inconsistent, but ehhhh
 .vc-plugins-info-card {
+	border-block-end: 1px solid var(--card-shade-color);
 	border-radius: var(--card_radius) var(--card_radius) 0 0;
-	border-bottom: 1px solid var(--card-shade-color);
 	gap: 0;
-
 	height: unset;
 }
 
@@ -90,16 +87,15 @@
 }
 
 .vc-settings-card {
-	margin-bottom: 34px;
+	margin-block-end: 34px;
 }
 
 .vc-settings-quickActions-card {
 	background-color: transparent;
-	gap: 0;
-	padding: 0;
-
 	display: flex;
 	flex-direction: column;
+	gap: 0;
+	padding: 0;
 	position: relative;
 }
 
@@ -107,8 +103,8 @@
 	// The GitHub link doesn't have a distinguishing class name
 	--icon: icon("external-link");
 
-	margin-left: auto;
-	margin-right: calc((var(--icon-button-size) - var(--icon-size)) / 2);
+	margin-inline-start: auto;
+	margin-inline-end: calc((var(--icon-button-size) - var(--icon-size)) / 2);
 	order: 1;
 }
 
@@ -146,7 +142,7 @@
 }
 
 .vcd-settings-category {
-	margin-bottom: 34px;
+	margin-block-end: 34px;
 }
 
 .vcd-settings-category-content {

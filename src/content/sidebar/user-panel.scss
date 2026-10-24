@@ -30,11 +30,11 @@
 
 // vc
 .container_e131a9 {
-	border-bottom: 1px solid var(--secondary-sidebar-border-color);
+	border-block-end: 1px solid var(--secondary-sidebar-border-color);
 	color: var(--secondary-sidebar-fg-color);
 	gap: var(--spacing);
-	padding: var(--spacing);
 	margin: 0;
+	padding: var(--spacing);
 
 	// TODO: remove when it gets aria-labels again (fucking never)
 	.button_e131a9 {
@@ -54,6 +54,8 @@
 }
 
 .panels__5e434 {
+	--icon: icon("bullhorn");
+
 	background: var(--secondary-sidebar-bg-color);
 	border: none;
 	border-radius: 0;
@@ -61,13 +63,11 @@
 	box-shadow:
 		0 -1px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent),
 		0 -2px 4px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent);
-
-	bottom: 0;
-	left: var(--custom-guild-list-width);
+	inset-block-end: 0;
+	inset-inline-start: var(--custom-guild-list-width);
 	width: calc(
 		var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 2px
 	);
-	--icon: icon("bullhorn");
 
 	.custom-theme-background & {
 		background: none;
@@ -78,10 +78,9 @@
 
 		background-color: transparent;
 		border-radius: 0;
-		padding: var(--spacing);
 		margin: 0;
-
 		min-width: 0;
+		padding: var(--spacing);
 
 		.nameTag__37e49 {
 			@container (max-width: 260px) {
@@ -93,7 +92,7 @@
 	// also vc
 	.activityPanel__37e49 {
 		background-color: inherit;
-		border-bottom: var(--secondary-sidebar-border-color);
+		border-block-end: var(--secondary-sidebar-border-color);
 		border-radius: 0;
 	}
 
@@ -108,11 +107,10 @@
 	}
 
 	.container__37e49 {
-		padding: 0;
-		padding-right: var(--spacing);
-		margin: 0;
-
 		height: unset;
+		margin: 0;
+		padding: 0;
+		padding-inline-end: var(--spacing);
 	}
 }
 
@@ -147,9 +145,8 @@
 }
 
 .rtcConnectionStatusLabel__06d62 {
-	margin: 0;
-
 	height: unset;
+	margin: 0;
 }
 
 // There are only 2 buttons and 1 of them has a constant aria-label, the other

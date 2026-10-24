@@ -60,10 +60,9 @@
 }
 
 .vcd-screen-picker-quality {
+	flex-direction: column;
 	gap: 0;
 	margin: 0;
-
-	flex-direction: column;
 
 	// Content type description
 	p {
@@ -74,9 +73,8 @@
 .vcd-screen-picker-screen-label {
 	@include controls.button;
 
-	outline: none;
-
 	height: unset;
+	outline: none;
 }
 
 .vcd-screen-picker-screen-name {

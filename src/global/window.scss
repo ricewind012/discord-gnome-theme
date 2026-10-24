@@ -11,8 +11,8 @@
 
 	#app-mount {
 		inset: var(--app-border-size);
-		width: calc(100% - var(--app-border-size) * 2);
 		height: calc(100% - var(--app-border-size) * 2);
+		width: calc(100% - var(--app-border-size) * 2);
 	}
 }
 
@@ -21,21 +21,18 @@
 		border-radius: var(--window_radius);
 
 		&::before {
-			content: "";
-
-			position: absolute;
-			inset: var(--app-border-size);
-			z-index: 9999;
-
-			pointer-events: none;
-
-			outline: var(--app-border-size) solid var(--window-outline-color);
 			border-radius: var(--window_radius);
+			content: "";
+			inset: var(--app-border-size);
+			outline: var(--app-border-size) solid var(--window-outline-color);
+			pointer-events: none;
+			position: absolute;
+			z-index: 9999;
 		}
 	}
 
 	.bar_c38106 {
-		right: var(--titlebar-button-spacing);
+		inset-inline-end: var(--titlebar-button-spacing);
 	}
 
 	.base__5e434 {
@@ -55,13 +52,12 @@
 .bar_c38106 {
 	background: none;
 	color: var(--headerbar-fg-color);
-	padding: 0;
-
-	position: fixed;
-	top: var(--spacing);
-	right: var(--spacing);
-	z-index: 101;
 	height: unset;
+	inset-block-start: var(--spacing);
+	inset-inline-end: var(--spacing);
+	padding: 0;
+	position: fixed;
+	z-index: 101;
 
 	&.systemBar_c38106 {
 		display: none;
@@ -69,7 +65,7 @@
 
 	// Visible app banner
 	&:nth-last-child(3) {
-		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
+		margin-block-start: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
 }
 
@@ -109,7 +105,6 @@
 
 .winButtonClose_c38106 {
 	color: inherit;
-
 	display: var(--titlebar-close-button);
 }
 

@@ -7,10 +7,9 @@
 	@include controls.icon-button("user-trash", "32px");
 
 	border-radius: 999px;
-
+	inset-block-start: -4px;
+	inset-inline-end: 0;
 	position: absolute;
-	top: -4px;
-	right: 0;
 }
 
 .container__16eb0:not(:empty) {
@@ -41,14 +40,12 @@
 
 .groupWrapper__971b5 {
 	gap: 0;
-
 	position: relative;
 }
 
 .item__971b5 {
-	padding: 0;
-
 	flex-grow: 1;
+	padding: 0;
 
 	& > div > [data-text-variant="text-sm/medium"]:first-child,
 	[data-text-variant="text-sm/semibold"] {
@@ -59,8 +56,8 @@
 .itemContainer__971b5 {
 	@include popover.entry($hover: "&:is(:hover, [aria-selected='true'])");
 
-	display: flex;
 	align-items: center;
+	display: flex;
 }
 
 .itemIcon__971b5 {
@@ -69,20 +66,19 @@
 
 	// avatars don't work
 	&:where(svg) {
-		width: var(--icon-size);
 		height: var(--icon-size);
+		width: var(--icon-size);
 	}
 }
 
 .labelWithElements__971b5 {
-	gap: var(--spacing);
-
 	flex-grow: 1;
+	gap: var(--spacing);
 
 	& > * {
 		overflow: hidden;
-		white-space: nowrap;
 		text-overflow: ellipsis;
+		white-space: nowrap;
 		width: 50%;
 	}
 

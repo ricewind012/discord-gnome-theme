@@ -21,9 +21,8 @@
 .peopleList__5ec2f {
 	@include controls.cards-container;
 
-	padding: 0;
-
 	overflow: auto;
+	padding: 0;
 
 	& > div > div {
 		@include controls.card-in-container(

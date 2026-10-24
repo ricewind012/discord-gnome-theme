@@ -3,8 +3,8 @@
 .circleIconButton__5bc7e {
 	@include controls.icon-button($size: var(--guildbar-avatar-size));
 
-	color: inherit;
 	border-radius: 50%;
+	color: inherit;
 
 	&[data-list-item-id="guildsnav___create-join-button"] {
 		--icon: icon("plus");
@@ -16,15 +16,14 @@
 }
 
 .guilds__5e434 {
-	mask: none;
 	margin: 0;
+	mask: none;
 	// user panel shadow
 	z-index: 11;
 }
 
 .guildSeparator__252b6 {
 	background-color: var(--sidebar-border-color);
-
 	width: calc(100% - var(--spacing) * 2);
 }
 
@@ -33,18 +32,17 @@
 }
 
 .scroller_ef3116 {
-	padding-top: var(--space-md);
+	padding-block-start: var(--space-md);
 }
 
 .tree_ef3116 {
 	background: var(--background-gradient-app-frame, var(--sidebar-bg-color));
-	border-right: 1px solid var(--sidebar-border-color);
+	border-inline-end: 1px solid var(--sidebar-border-color);
 }
 
 // guild
 .wrapper__6e9f8 {
 	border-radius: 50%;
-
 	transition: var(--backdrop_transition);
 
 	&[aria-selected="true"] {
@@ -54,8 +52,8 @@
 	.childWrapper__6e9f8 {
 		@include controls.button-basic-raised;
 
-		color: inherit;
 		border-radius: inherit;
+		color: inherit;
 	}
 
 	img {

@@ -32,7 +32,7 @@ html[style*="font-size: 100%"] {
 	@extend %heading;
 
 	letter-spacing: 0;
-	margin-bottom: 16px;
+	margin-block-end: 16px;
 }
 
 :where([data-text-variant^="heading-lg"]),

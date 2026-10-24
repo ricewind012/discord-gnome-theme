@@ -27,9 +27,9 @@
 .interactive__972a0 {
 	@include controls.button-basic-raised;
 
-	transition: none;
 	background-color: transparent;
 	color: var(--window-fg-color);
+	transition: none;
 
 	&.interactiveSelected__972a0 {
 		@include controls.button-selected;
@@ -37,7 +37,7 @@
 }
 
 .scroller__99e7c {
-	margin-bottom: var(--custom-app-panels-height);
+	margin-block-end: var(--custom-app-panels-height);
 }
 
 .subText__20a53 {

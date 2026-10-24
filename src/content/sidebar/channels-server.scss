@@ -21,8 +21,8 @@
 	border-radius: 0;
 
 	.container__2637a {
-		padding-block-end: var(--custom-app-panels-height);
 		margin: 0;
+		padding-block-end: var(--custom-app-panels-height);
 	}
 }
 
@@ -39,7 +39,8 @@
 
 	&.typeThread__2ea32 {
 		--spine-width: 10px;
-		margin-left: calc(
+
+		margin-inline-start: calc(
 			var(--channels-spine-offset-left) + var(--spine-width) + var(--space-xs)
 		);
 	}
@@ -72,9 +73,8 @@
 	}
 
 	.mainContent__29444 {
-		gap: var(--space-xs);
-
 		flex-direction: row-reverse;
+		gap: var(--space-xs);
 		justify-content: start;
 	}
 
@@ -109,12 +109,12 @@
 .link__2ea32 {
 	@include controls.button-basic-raised;
 
-	transition: none;
 	background-color: transparent;
 	color: inherit;
 	// Originally --space-xxs, but it's at a constant 4px. This is put here in
 	// order to not fuck with the virtualized list, since --space-xxs is edited.
 	padding-block: var(--space-4);
+	transition: none;
 
 	.modeSelected__2ea32 & {
 		@include controls.button-selected;
@@ -132,9 +132,8 @@
 }
 
 .unread__2ea32 {
-	margin: 0;
-
-	top: var(--space-4);
-	left: calc(var(--space-xs) * -1);
 	height: calc(100% - var(--space-4) * 2);
+	inset-block-start: var(--space-4);
+	inset-inline-start: calc(var(--space-xs) * -1);
+	margin: 0;
 }

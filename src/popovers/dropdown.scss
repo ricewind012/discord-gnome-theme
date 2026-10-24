@@ -6,9 +6,8 @@
 }
 
 .listBoxItemContent__2e223 {
-	padding: 0;
-
 	min-height: unset;
+	padding: 0;
 
 	&:not(.inInput__2e223) {
 		@include popover.entry;
@@ -27,7 +26,6 @@
 
 	// Align with the item height
 	margin: var(--space-12) var(--menu_padding);
-
 	min-width: unset;
 
 	& > * {

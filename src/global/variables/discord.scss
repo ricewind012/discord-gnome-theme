@@ -111,7 +111,7 @@
 
 	--custom-app-top-bar-height: 0px;
 	--custom-channel-header-height: var(--headerbar-height);
-	--channels-spine-offset-left: calc(
+	--channels-spine-offset-inline-start: calc(
 		var(--space-xs) * 2 + var(--icon-size) / 2
 	);
 	--chat-markup-line-height: 1.5rem;

@@ -22,10 +22,9 @@
 
 	border: none;
 	gap: var(--spacing-2x);
-	margin-inline: var(--custom-message-margin-horizontal) 0;
+	inset-block-start: 0;
 	margin-block: calc(var(--spacing) + var(--separator-spacing));
-
-	top: 0;
+	margin-inline: var(--custom-message-margin-horizontal) 0;
 
 	.group-spacing-4 & {
 		--separator-spacing: var(--space-sm);
@@ -45,16 +44,14 @@
 
 	&::before,
 	&::after {
-		content: "";
-
-		flex-grow: 1;
-		height: 1px;
-
 		background: color-mix(
 			in srgb,
 			var(--destructive-bg-color) 50%,
 			transparent
 		);
+		content: "";
+		flex-grow: 1;
+		height: 1px;
 	}
 
 	& > span {
@@ -63,8 +60,8 @@
 		color: var(--destructive-color);
 		font-size: var(--document-font-size);
 		font-weight: bold;
-		text-transform: uppercase;
 		margin-block-start: 1px;
+		text-transform: uppercase;
 
 		& > svg {
 			display: none;
@@ -80,24 +77,21 @@
 	flex-direction: column;
 
 	.chatGradientBase__36d07 {
-		transition: none;
 		background: var(--gradient-image);
-
 		height: var(--fade-out-gradient-size);
+		transition: none;
 	}
 
 	.chatTypingGradientNotAtBottom__36d07 {
 		background: var(--gradient-bg);
 
 		&::before {
-			content: "";
-
-			position: absolute;
-			bottom: 100%;
-			width: 100%;
-			height: 100%;
-
 			background: var(--gradient-image);
+			content: "";
+			height: 100%;
+			inset-block-end: 100%;
+			position: absolute;
+			width: 100%;
 		}
 	}
 

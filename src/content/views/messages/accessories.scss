@@ -4,10 +4,9 @@
 @mixin -file-name {
 	color: var(--card-fg-color);
 	font-weight: normal;
-	text-decoration: none;
-
 	// Use the download icon instead
 	pointer-events: none;
+	text-decoration: none;
 }
 
 @mixin -media-button($osd, $name) {
@@ -43,9 +42,8 @@
 	}
 
 	.mediaBarGrabber_b26b79 {
-		margin-top: 0;
-
-		left: 0;
+		inset-inline-start: 0;
+		margin-block-start: 0;
 	}
 
 	.mediaBarWrapper_b26b79 {
@@ -59,9 +57,8 @@
 	.videoButton_cf09d8 {
 		@include -media-button($osd, $name: "play");
 
-		margin: 0;
-
 		flex-shrink: 0;
+		margin: 0;
 
 		&.button__201d5 {
 			--icon: icon("view-fullscreen");
@@ -98,8 +95,8 @@
 
 	.codeView__4d95d {
 		background: none;
-		padding: 10px 16px;
 		margin: 0;
+		padding: 10px 16px;
 	}
 
 	.expandCollapseSection__4d95d {
@@ -121,12 +118,12 @@
 	.footer__4d95d,
 	.modalFooter__4d95d {
 		background-color: transparent;
-		color: var(--card-fg-color);
 		border: none;
 		border-radius: var(--card_radius);
+		color: var(--card-fg-color);
 		gap: var(--spacing);
-		padding: 0;
 		margin: var(--spacing) 16px;
+		padding: 0;
 
 		[role="button"] {
 			@include controls.icon-button;
@@ -135,8 +132,8 @@
 
 			// Used as a popover anchor
 			svg {
-				visibility: hidden;
 				display: block;
+				visibility: hidden;
 			}
 		}
 	}
@@ -151,7 +148,6 @@
 
 	.nameSection__4d95d {
 		margin-inline-end: auto;
-
 		order: -1;
 	}
 
@@ -163,7 +159,7 @@
 	.textContainer__4d95d {
 		background-color: color-mix(in srgb, currentColor 3%, transparent);
 		border: none;
-		border-bottom: 1px solid var(--card-shade-color);
+		border-block-end: 1px solid var(--card-shade-color);
 		border-radius: var(--card_radius) var(--card_radius) 0 0;
 		min-height: unset;
 	}
@@ -227,10 +223,9 @@
 
 .embedFull__623de {
 	background-color: color-mix(in srgb, currentColor 3%, transparent);
-	border-top: none;
-	border-right: none;
-	border-bottom: none;
-	border-left-width: var(--radius-xs);
+	border-block: none;
+	border-inline-end: none;
+	border-inline-start-width: var(--radius-xs);
 	border-radius: var(--radius-xs);
 
 	.grid__623de {
@@ -256,15 +251,15 @@
 	}
 
 	:where(.embedMargin__623de) {
-		margin-top: var(--spacing);
+		margin-block-start: var(--spacing);
 	}
 
 	.embedSuppressButton__623de {
 		@include controls.icon-button("window-close");
 
+		inset-block-start: 0;
+		inset-inline-end: calc(var(--icon-button-size) * -1 - var(--spacing));
 		position: absolute;
-		top: 0;
-		right: calc(var(--icon-button-size) * -1 - var(--spacing));
 	}
 
 	// Video actions
@@ -274,9 +269,8 @@
 
 		background-color: transparent;
 		gap: var(--spacing);
-		padding: 0;
-
 		height: unset;
+		padding: 0;
 
 		.iconWrapper__926d7 {
 			@include controls.icon-button-circular("play");
@@ -333,20 +327,19 @@
 	}
 
 	.inviteSplash_d5f3cd {
-		border-top-right-radius: inherit;
-		border-top-left-radius: inherit;
+		border-start-start-radius: inherit;
+		border-start-end-radius: inherit;
 		margin: -10px -16px;
-		margin-bottom: 10px;
+		margin-block-end: 10px;
 	}
 }
 
 .hoverButtonGroup__06ab4 {
 	background-color: transparent;
-	outline: none;
 	gap: var(--spacing);
-
-	top: var(--spacing);
-	right: var(--spacing);
+	inset-block-start: var(--spacing);
+	inset-inline-end: var(--spacing);
+	outline: none;
 
 	.hoverButton__06ab4 {
 		@include controls.icon-button-circular("folder-download");
@@ -361,10 +354,9 @@
 .container__9271d {
 	@include controls.button;
 
-	line-height: 1.2;
-	margin-top: var(--spacing);
-
 	height: unset;
+	line-height: 1.2;
+	margin-block-start: var(--spacing);
 
 	.bottomLine__9271d {
 		// already text-sm, have to think of a way to exclude * from buttons
@@ -412,9 +404,9 @@
 
 .reaction__23977 {
 	border: none;
+	margin-block-end: var(--spacing);
+	margin-inline-end: var(--spacing);
 	padding: 0;
-	margin-right: var(--spacing);
-	margin-bottom: var(--spacing);
 
 	&.reactionMe__23977 {
 		color: var(--accent-color);
@@ -433,7 +425,6 @@
 		@include controls.button;
 
 		background-color: inherit;
-
 		height: unset;
 	}
 }
@@ -442,19 +433,18 @@
 	@include controls.icon-button("reaction-add2");
 
 	border: none;
-	margin-right: var(--spacing);
-	margin-bottom: var(--spacing);
+	margin-inline-end: var(--spacing);
+	margin-block-end: var(--spacing);
 }
 
 .videoControls_cf09d8 {
 	@include -media-controls($osd: true);
 	@include controls.osd-like-button-group;
 
+	height: unset;
 	margin-block: calc(var(--spacing) + 10px);
 	margin-inline: var(--spacing);
-
 	width: calc(100% - var(--spacing) * 3);
-	height: unset;
 
 	// bruh d*scord
 	&:not([style="transform: translateY(0%);"]) {
@@ -469,7 +459,7 @@
 		@include -media-controls($osd: false);
 
 		background-color: transparent;
-		margin-top: var(--spacing-2x);
+		margin-block-start: var(--spacing-2x);
 	}
 
 	.audioMetadata_cf09d8 {
@@ -480,9 +470,8 @@
 		&::before {
 			background-image: icon("audio-x-generic", "other");
 			filter: var(--text-shadow);
-
-			width: var(--icon-size);
 			height: var(--icon-size);
+			width: var(--icon-size);
 		}
 	}
 

@@ -9,9 +9,9 @@
 }
 
 .actionBar__8a031 {
-	padding: 0;
 	margin: var(--dialog-spacing);
-	margin-top: 0;
+	margin-block-start: 0;
+	padding: 0;
 
 	button {
 		border-radius: 12px;
@@ -40,9 +40,9 @@
 }
 
 .bodyInner__8a031 {
-	text-align: center;
 	padding: var(--dialog-spacing);
 	padding-inline-end: calc(var(--dialog-spacing) - 16px);
+	text-align: center;
 }
 
 // ???
@@ -72,7 +72,7 @@
 }
 
 .container__8a031 {
-	--custom-modal-padding-top: var(--dialog-spacing);
+	--custom-modal-padding-block-start: var(--dialog-spacing);
 
 	@include dialog.container;
 
@@ -109,11 +109,10 @@
 }
 
 .headerTrailing__8a031 {
+	inset-block-start: var(--titlebar-button-spacing);
+	inset-inline-end: var(--titlebar-button-spacing);
 	margin: 0;
-
 	position: absolute;
-	top: var(--titlebar-button-spacing);
-	right: var(--titlebar-button-spacing);
 	z-index: 0;
 
 	.button_a22cb0.icon-only_a22cb0 {

@@ -8,13 +8,12 @@
 }
 
 .contentHeader_e9e3ed {
-	color: var(--headerbar-fg-color);
 	border: none;
 	box-shadow: var(--elevation-low);
+	color: var(--headerbar-fg-color);
+	height: var(--headerbar-height);
 	padding: var(--titlebar-button-spacing);
 	padding-inline-start: var(--spacing);
-
-	height: var(--headerbar-height);
 	z-index: 1;
 
 	.breadcrumbsNav__6989f {
@@ -51,10 +50,9 @@
 }
 
 .panel__6131a {
-	padding: 22px 28px;
 	margin: auto;
-
 	max-width: var(--content-width);
+	padding: 22px 28px;
 }
 
 .sidebar__409aa {
@@ -68,23 +66,21 @@
 		--window-bg-color: var(--sidebar-bg-color);
 
 		box-shadow: var(--elevation-low);
+		display: flex;
 		gap: var(--spacing);
 		padding: var(--spacing);
-
-		display: flex;
 		z-index: 1;
 
 		.item_caf372 {
 			@include controls.icon-button-with-tooltip(
 				$name: "person",
-				$direction: "bottom",
+				$direction: "block-end",
 				$selector: "&:hover .textContainer__3cfcf"
 			);
 
-			margin: 0;
-
-			min-height: unset;
 			justify-content: center;
+			margin: 0;
+			min-height: unset;
 
 			&.active_caf372 {
 				@include controls.button-selected;
@@ -100,15 +96,15 @@
 			max-width: unset;
 
 			.textContainer__3cfcf {
-				left: var(--spacing);
+				inset-inline-start: var(--spacing);
 			}
 
 			.wrapper__44b0c,
 			.wrapper__44b0c > svg > foreignObject {
 				--icon-size: 24px;
 
-				width: var(--icon-size);
 				height: var(--icon-size);
+				width: var(--icon-size);
 			}
 
 			[data-text-variant] {
@@ -135,8 +131,8 @@
 	}
 
 	.navScroller__409aa {
-		padding: var(--menu_margin) 0;
 		margin-inline: var(--menu_margin) 0;
+		padding: var(--menu_margin) 0;
 
 		.item_caf372 {
 			@include controls.tab-vertical($selected-sel: "&.active_caf372");
@@ -161,9 +157,9 @@
 	.section__409aa {
 		// TODO: dedi file
 		$border_color: color-mix(in srgb, currentColor 25%, transparent);
-		border-bottom: 1px solid #{$border_color};
+		border-block-end: 1px solid #{$border_color};
 		gap: 2px;
-		padding-bottom: var(--menu_margin);
+		padding-block-end: var(--menu_margin);
 	}
 
 	.sectionLabel__409aa {

@@ -22,15 +22,13 @@
 // TODO: remove when server settings uses new modal
 .noticeRegion__23e6b,
 .notice__6131a {
-	padding: 0;
-
-	position: relative;
-	width: 100%;
 	max-width: unset;
-
 	// Remove animation
 	opacity: 1;
+	padding: 0;
+	position: relative;
 	transform: translateY(0%) translateZ(0px);
+	width: 100%;
 }
 
 .shrinkingContainer__9a9f9 {

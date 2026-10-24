@@ -3,9 +3,8 @@
 .autocomplete__13533 {
 	@include popover.container;
 
-	padding: 0;
-
 	inset-inline: 0;
+	padding: 0;
 }
 
 .autocompleteRowIcon__13533 {
@@ -38,15 +37,14 @@
 		& > .base__13533 {
 			@include popover.entry;
 
-			display: flex;
 			align-items: center;
+			display: flex;
 		}
 	}
 
 	.autocompleteRowContent__13533 {
-		gap: var(--spacing);
-
 		flex-grow: 1;
+		gap: var(--spacing);
 	}
 
 	.autocompleteRowContentPrimary__13533 {
@@ -55,8 +53,7 @@
 		&:first-child {
 			--margin: calc(24px + var(--spacing));
 
-			margin-left: var(--margin);
-
+			margin-inline-start: var(--margin);
 			width: calc(50% - var(--margin));
 		}
 	}

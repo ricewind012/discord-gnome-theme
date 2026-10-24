@@ -86,8 +86,8 @@
 
 	// avatar
 	.wrapper__44b0c {
-		width: var(--icon-size);
 		height: var(--icon-size);
+		width: var(--icon-size);
 
 		// HELP
 		& > svg {
@@ -144,8 +144,8 @@
 	.fullRegionDropdownButton_f1ceac,
 	.buttonSection__1405b {
 		background-color: transparent;
+		border: none;
 		gap: var(--spacing);
 		padding: 0;
-		border: none;
 	}
 }

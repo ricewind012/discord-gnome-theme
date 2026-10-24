@@ -65,7 +65,6 @@
 
 .vc-form-switch-text {
 	gap: 0;
-
 	justify-content: start;
 }
 
@@ -75,9 +74,8 @@
 		$last-selector: "&:last-child"
 	);
 
-	margin: 0;
-
 	display: flex;
+	margin: 0;
 }
 
 .vc-h4,

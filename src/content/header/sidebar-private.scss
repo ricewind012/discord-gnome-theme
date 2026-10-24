@@ -3,17 +3,16 @@
 
 .privateChannels_e6b769 {
 	&::before {
-		content: attr(aria-label);
-
-		position: absolute;
-		inset-inline: 0;
-		height: var(--headerbar-height);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-
 		@extend %heading;
+
+		align-items: center;
 		color: var(--headerbar-fg-color);
+		content: attr(aria-label);
+		display: flex;
+		height: var(--headerbar-height);
+		inset-inline: 0;
+		justify-content: center;
+		position: absolute;
 	}
 
 	[role="listitem"] {
@@ -29,24 +28,20 @@
 .searchBar_e6b769 {
 	border: none;
 	box-shadow: var(--elevation-low);
-	padding: var(--spacing);
-
 	height: var(--headerbar-height);
-
-	app-region: drag;
+	padding: var(--spacing);
+	-webkit-app-region: drag;
 
 	& > button {
 		@include controls.icon-button-with-tooltip(
 			$name: "loupe-large",
-			$direction: bottom,
+			$direction: "block-end",
 			$overflow-workaround-direction: "left"
 		);
 
 		color: var(--headerbar-fg-color);
-
 		// undo fullWidth for mana button
 		flex: unset;
-
-		app-region: no-drag;
+		-webkit-app-region: no-drag;
 	}
 }

@@ -13,12 +13,11 @@
 }
 
 .container__9293f {
-	color: var(--headerbar-fg-color);
 	border: none;
-	padding: 0;
-
-	overflow: hidden;
+	color: var(--headerbar-fg-color);
 	height: unset;
+	overflow: hidden;
+	padding: 0;
 
 	&.themed__9293f {
 		background-color: var(--window-bg-color);
@@ -27,16 +26,15 @@
 
 	// home
 	&:not([role="navigation"], [aria-label="Thread header"]) > div {
-		margin-left: calc(var(--icon-button-size) + var(--spacing-2x));
+		margin-inline-start: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
 
 	.avatar_f75fb0 {
 		--size: 24px;
 
-		app-region: no-drag;
 		height: var(--size);
-		margin-left: 0;
-		margin-right: var(--spacing);
+		margin-inline: 0var (--spacing);
+		-webkit-app-region: no-drag;
 		width: var(--size);
 
 		.svg__44b0c {
@@ -52,20 +50,18 @@
 }
 
 .children__9293f {
-	padding: var(--spacing);
-
-	min-height: var(--headerbar-height);
 	display: flex;
 	justify-content: center;
-
-	app-region: drag;
+	min-height: var(--headerbar-height);
+	padding: var(--spacing);
+	-webkit-app-region: drag;
 
 	&:not(:has(.avatar_f75fb0)) {
 		flex-direction: column;
 	}
 
 	&:has(> .topic__6ec1a) {
-		margin-right: var(--icon-button-size);
+		margin-inline-end: var(--icon-button-size);
 	}
 
 	// 6. Channel news
@@ -88,7 +84,6 @@
 		@include util.inactive-dim;
 
 		background-color: transparent;
-
 		-webkit-app-region: no-drag;
 
 		.gdmIcon__754bd {
@@ -121,19 +116,19 @@
 
 		display: flex;
 		position: absolute;
-		top: var(--spacing);
-		right: var(--spacing);
-		width: var(--size);
+		inset-block-start: var(--spacing);
+		inset-inline-end: var(--spacing);
 		height: var(--size);
-		min-width: var(--size);
 		min-height: var(--size);
+		min-width: var(--size);
+		width: var(--size);
 	}
 }
 
 .icon_c322aa {
 	@include controls.icon-button-with-tooltip(
 		$name: "loupe-large",
-		$direction: "bottom",
+		$direction: "block-end",
 		$selector: "&:hover::after"
 	);
 	@include util.inactive-dim;
@@ -163,10 +158,9 @@
 }
 
 .search__49676 {
+	inset-inline-start: 0;
 	margin: 0 var(--spacing);
-
 	position: absolute;
-	left: 0;
 }
 
 .search_c322aa {
@@ -180,8 +174,8 @@
 	.editor__25bec {
 		@include controls.text-field;
 
-		position: absolute;
 		inset-inline-start: calc(var(--icon-button-size) + var(--spacing));
+		position: absolute;
 		width: 250px;
 
 		[data-slate-placeholder] {
@@ -200,11 +194,10 @@
 
 .searchBar_c322aa {
 	background: transparent;
-	padding: 0;
 	border: none;
-
-	width: var(--icon-button-size);
 	height: unset;
+	padding: 0;
+	width: var(--icon-button-size);
 }
 
 .title__9293f {
@@ -215,8 +208,8 @@
 }
 
 .titleWrapper__9293f {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	// Home title
 	.container__9293f[role="navigation"] & {
@@ -227,23 +220,22 @@
 .topic__6ec1a {
 	@extend %caption;
 
-	line-height: 16px;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-
 	anchor-name: --chat-topic;
+	line-height: 16px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
 	// wtf ?
 	width: -webkit-fill-available;
 
 	a,
 	.channelMention {
-		app-region: no-drag;
+		-webkit-app-region: no-drag;
 	}
 
 	// channel icon, needed to not expand by 1px
 	.icon_b75563 {
-		margin-bottom: 0.1rem;
+		margin-block-end: 0.1rem;
 	}
 }
 
@@ -251,23 +243,23 @@
 .topicClickTarget__6ec1a {
 	@include controls.icon-button-with-tooltip(
 		$name: "info-outline",
-		$direction: "bottom",
+		$direction: "block-end",
 		$selector: "&:hover::after"
 	);
 
 	color: var(--headerbar-fg-color);
-
+	inset-block-start: var(--spacing);
+	inset-inline-start: unset;
+	inset-inline-end: calc(
+		anchor(end) - var(--icon-button-size) - var(--spacing)
+	);
+	pointer-events: all;
 	position: fixed;
 	position-anchor: --chat-topic;
-	top: var(--spacing);
-	right: calc(anchor(right) - var(--icon-button-size) - var(--spacing));
-	left: unset;
-
-	pointer-events: all;
 
 	// Visible banner
 	.content__5e434:nth-child(3) & {
-		margin-top: calc(var(--icon-button-size) + var(--spacing-2x));
+		margin-block-start: calc(var(--icon-button-size) + var(--spacing-2x));
 	}
 }
 
@@ -281,13 +273,13 @@
 
 	// vc
 	.liveQualityIndicator__30845 {
-		margin-bottom: 0;
+		margin-block-end: 0;
 	}
 
 	// vc
 	.qualityIndicator__30845 {
-		width: unset;
 		height: unset;
+		width: unset;
 
 		&::before {
 			display: none;
@@ -315,6 +307,6 @@
 		transparent
 	);
 
-	padding-right: var(--chat-header-right-padding);
 	align-items: start;
+	padding-inline-end: var(--chat-header-right-padding);
 }

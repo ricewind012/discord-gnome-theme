@@ -38,8 +38,7 @@
 	border: none;
 	border-radius: 0;
 	padding: var(--spacing);
-
-	app-region: drag;
+	-webkit-app-region: drag;
 }
 
 .guildIconV2Container__85d16,
@@ -53,15 +52,14 @@
 .headerChildren_f37cb1 {
 	@include controls.icon-button-with-tooltip(
 		$name: "menu",
-		$direction: "bottom",
+		$direction: "block-end",
 		$selector: "&:hover::after",
 		$overflow-workaround-direction: "right"
 	);
 
 	flex-shrink: 0;
-
-	app-region: no-drag;
 	pointer-events: all;
+	-webkit-app-region: no-drag;
 
 	&:hover::after {
 		content: var(--text);
@@ -77,6 +75,6 @@
 
 	color: inherit;
 	line-height: 1;
-	padding-inline: var(--spacing);
 	margin: auto;
+	padding-inline: var(--spacing);
 }

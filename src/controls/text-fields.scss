@@ -4,12 +4,11 @@
 .container__75098 {
 	@include controls.text-field;
 
+	flex-wrap: nowrap;
 	gap: 0;
+	min-height: unset;
 	// Move padding to the <input> element because the wrapper can't get focused
 	padding: 0;
-
-	flex-wrap: nowrap;
-	min-height: unset;
 
 	input {
 		padding: 8px 9px;
