@@ -1,4 +1,13 @@
+@use "sass:math";
+@use "sass:string";
+
+@function ends-with($value, $suffix) {
+	@return string.slice($value, math.div(string.length($suffix), -1)) == $suffix;
+}
+
 @function get-opposite-dir($direction) {
+	@return $direction == "start" and "end" or "start";
+
 	@if $direction == "block-start" {
 		@return "block-end";
 	} @else if $direction == "inline-end" {

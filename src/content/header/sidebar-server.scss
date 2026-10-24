@@ -54,7 +54,7 @@
 		$name: "menu",
 		$direction: "block-end",
 		$selector: "&:hover::after",
-		$overflow-workaround-direction: "right"
+		$overflow-workaround-direction: "inline-end"
 	);
 
 	flex-shrink: 0;
@@ -63,6 +63,12 @@
 
 	&:hover::after {
 		content: var(--text);
+		// prettier-ignore
+		inline-size: calc(
+			var(--custom-guild-sidebar-width)
+			- var(--custom-guild-list-width)
+			- var(--spacing) * 6
+		);
 	}
 }
 

@@ -11,7 +11,7 @@
 		$name: "check-plain",
 		$selector: "&:hover::after",
 		$size: var(--guildbar-avatar-size),
-		$direction: "right"
+		$direction: "inline-end"
 	);
 
 	border-radius: 50%;

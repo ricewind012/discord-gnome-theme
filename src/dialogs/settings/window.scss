@@ -165,7 +165,7 @@
 		.title_e29cd7 {
 			@include controls.icon-button-with-tooltip(
 				$name: "left",
-				$direction: "top",
+				$direction: "block-start",
 				$selector: "&:hover > .titleText_e29cd7"
 			);
 

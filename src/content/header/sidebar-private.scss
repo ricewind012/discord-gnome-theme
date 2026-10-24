@@ -36,7 +36,7 @@
 		@include controls.icon-button-with-tooltip(
 			$name: "loupe-large",
 			$direction: "block-end",
-			$overflow-workaround-direction: "left"
+			$overflow-workaround-direction: "inline-start"
 		);
 
 		color: var(--headerbar-fg-color);

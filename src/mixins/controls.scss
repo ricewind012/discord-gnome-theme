@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:list";
 @use "sass:math";
 @use "sass:string";
 @use "util";
@@ -179,9 +180,12 @@ $toast_fg_color: white;
 
 	$id: --tooltip-#{string.unique-id()};
 	$tooltip-h: 30px;
-	$is-pseudo: $selector == "::after";
-	$is-horizontal: $direction == "inline-start" or $direction == "inline-end";
-	$direction-opposite: util.get-opposite-dir($direction);
+	$is-pseudo: util.ends-with($selector, "::after");
+
+	$split: string.split($direction, "-");
+	$split-lhs: list.nth($split, 1);
+	$split-rhs: list.nth($split, 2);
+	$direction-opposite: $split-lhs == "start" and "end" or "start";
 
 	anchor-name: $id;
 
@@ -189,24 +193,29 @@ $toast_fg_color: white;
 		@include tooltip;
 		@extend %text-normal;
 
+		display: block;
+		inset-#{$split-lhs}-#{$direction-opposite}: calc(
+			anchor(#{$split-rhs}) + var(--spacing)
+		);
+		pointer-events: none;
+		position: fixed;
+		position-anchor: $id;
+		z-index: 999;
+
 		@if $is-pseudo {
 			content: attr(aria-label);
 		}
 
-		display: block;
-		pointer-events: none;
-		position: fixed;
-		position-anchor: $id;
-		#{$direction-opposite}: calc(anchor(#{$direction}) + var(--spacing));
-		z-index: 999;
-
 		// Make the tooltip appear not centered, since it's prevented by various
 		// "overflow: hidden" rules, and it's too risky reverting all of them
-		#{$overflow-workaround-direction}: anchor(
-			#{$overflow-workaround-direction}
-		);
+		@if $overflow-workaround-direction {
+			$owd-split: string.split($overflow-workaround-direction, "-");
+			$owd-split-rhs: list.nth($owd-split, 2);
 
-		@if $is-horizontal {
+			inset-#{$overflow-workaround-direction}: anchor(#{$owd-split-rhs});
+		}
+
+		@if $split-rhs == "inline" {
 			inset-block-start: calc(
 				anchor(start) + (var(--icon-button-size) - #{$tooltip-h}) / 2
 			);
