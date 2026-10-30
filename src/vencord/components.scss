@@ -109,6 +109,10 @@
 	}
 }
 
+.vc-margin-top-16 {
+	margin-block-start: 34px;
+}
+
 .vc-switch-container {
 	@include controls.switch(
 		$checked: "&.vc-switch-checked",

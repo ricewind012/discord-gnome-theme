@@ -157,11 +157,16 @@
 
 .vc-special-card {
 	// $purple_1
-	background-color: color-mix(in srgb, #dc8add 50%, transparent);
+	background-color: color-mix(in srgb, #dc8add 50%, var(--shade-color));
+	margin-block-end: 34px;
 }
 
 .vc-special-card-flex {
 	align-items: center;
+
+	.theme-dark & {
+		filter: var(--text-shadow);
+	}
 
 	.vc-donate-button {
 		@include controls.button-accent;
