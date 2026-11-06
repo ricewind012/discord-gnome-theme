@@ -35,27 +35,27 @@ html[style*="font-size: 100%"] {
 	margin-bottom: 16px;
 }
 
-:where([data-text-variant^="experimental/heading-lg"]),
-:where([data-text-variant^="experimental/heading-x"]) {
+:where([data-text-variant^="heading-lg"]),
+:where([data-text-variant^="heading-x"]) {
 	@extend %title-2;
 }
 
-:where([data-text-variant^="experimental/heading-md"]) {
+:where([data-text-variant^="heading-md"]) {
 	@extend %title-3;
 }
 
-:where([data-text-variant^="experimental/heading-sm"]) {
+:where([data-text-variant^="heading-sm"]) {
 	@extend %title-4;
 }
 
 :where([data-text-variant^="body-sm"]),
 :where([data-text-variant^="body-xs"]),
-:where([data-text-variant^="text-sm"]),
-:where([data-text-variant^="text-xs"]) {
+:where([data-text-variant^="body-sm"]),
+:where([data-text-variant^="body-xs"]) {
 	@extend %caption;
 }
 
-:where([data-text-variant^="text-md"]) {
+:where([data-text-variant^="body-md"]) {
 	@extend %heading;
 }
 
