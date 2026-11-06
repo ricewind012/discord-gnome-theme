@@ -21,7 +21,7 @@
 
 	// "from: user", etc.
 	.filterSublabelTextContainer__971b5,
-	[data-text-variant="text-sm/medium"] + [data-text-variant="text-sm/medium"] {
+	[data-text-variant="body-sm/medium"] + [data-text-variant="body-sm/medium"] {
 		display: none;
 	}
 }
@@ -47,8 +47,8 @@
 	flex-grow: 1;
 	padding: 0;
 
-	& > div > [data-text-variant="text-sm/medium"]:first-child,
-	[data-text-variant="text-sm/semibold"] {
+	& > div > [data-text-variant="body-sm/medium"]:first-child,
+	[data-text-variant="body-sm/semibold"] {
 		color: var(--popover-fg-color);
 	}
 }
@@ -82,7 +82,7 @@
 		width: 50%;
 	}
 
-	// revert [data-text-variant^="text-sm"]
+	// revert [data-text-variant^="body-sm"]
 	& > :first-child {
 		color: var(--popover-fg-color);
 	}

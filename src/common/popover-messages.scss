@@ -57,7 +57,7 @@
 	height: var(--headerbar-height);
 	justify-content: center;
 
-	[data-text-variant="text-lg/semibold"] {
+	[data-text-variant="body-lg/semibold"] {
 		@extend %heading;
 	}
 
