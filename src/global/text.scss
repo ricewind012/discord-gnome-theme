@@ -49,8 +49,6 @@ html[style*="font-size: 100%"] {
 }
 
 :where([data-text-variant^="body-sm"]),
-:where([data-text-variant^="body-xs"]),
-:where([data-text-variant^="body-sm"]),
 :where([data-text-variant^="body-xs"]) {
 	@extend %caption;
 }
