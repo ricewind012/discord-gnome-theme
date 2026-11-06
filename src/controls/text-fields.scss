@@ -1,7 +1,7 @@
 @use "controls";
 @use "util";
 
-.container__75098 {
+.container_0PLWhS {
 	@include controls.text-field;
 
 	flex-wrap: nowrap;
@@ -16,22 +16,22 @@
 }
 
 // legacy
-.input__0ed4f {
+.input_b-mzk1 {
 	@include controls.text-field;
 
 	// + 1px
 	line-height: 1.25;
 }
 
-.icon__75098 {
-	&:not(.button__75098) {
+.icon_0PLWhS {
+	&:not(.button_0PLWhS) {
 		@include util.icon("loupe-large");
 
 		border: none;
 		margin-inline-start: 9px;
 	}
 
-	&.button__75098 {
+	&.button_0PLWhS {
 		@include controls.icon-button("window-close");
 	}
 }

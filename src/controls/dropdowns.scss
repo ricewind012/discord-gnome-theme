@@ -1,22 +1,22 @@
 @use "controls";
 @use "util";
 
-.chevronButton__0edde {
+.chevronButton_vWC4bk {
 	@include util.icon("pan-down");
 
 	padding: 0;
 }
 
-.comboBoxInput__0edde {
+.comboBoxInput_vWC4bk {
 	padding: 0;
 }
 
-.selectButton__0edde {
+.selectButton_vWC4bk {
 	min-height: unset;
 	padding: 0;
 }
 
-.selectField__0edde {
+.selectField_vWC4bk {
 	@include controls.button;
 
 	align-items: center;

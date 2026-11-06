@@ -15,23 +15,23 @@
 }
 
 // #region Server preview
-.back_c5cd6a {
+.back_ZTKX02 {
 	margin: 0;
 	position: unset;
 }
 
-.button_c5cd6a {
+.button_ZTKX02 {
 	@extend %-banner-button;
 }
 
-.header_c5cd6a {
+.header_ZTKX02 {
 	@extend %heading;
 
 	margin: auto;
 	order: -1;
 }
 
-.notice_c5cd6a {
+.notice_ZTKX02 {
 	@extend %-banner;
 
 	height: unset;
@@ -40,14 +40,14 @@
 // #endregion
 
 // #region Previous VC
-.button__6e2b9 {
+.button_Q02kKo {
 	@extend %-banner-button;
 
 	inset-block-start: 0;
 	margin-inline-start: auto;
 }
 
-.closeButton__6e2b9 {
+.closeButton_Q02kKo {
 	@extend %-banner-button;
 
 	height: unset;
@@ -61,11 +61,11 @@
 	}
 }
 
-.closeIcon__6e2b9 {
+.closeIcon_Q02kKo {
 	display: none;
 }
 
-.notice__6e2b9 {
+.notice_Q02kKo {
 	--custom-notice-text: var(--window-fg-color);
 
 	@extend %-banner;

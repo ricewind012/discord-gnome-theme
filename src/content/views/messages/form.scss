@@ -5,7 +5,7 @@
 	display: none;
 }
 
-.channelAttachmentArea_b77158 {
+.channelAttachmentArea_iH8bsl {
 	@include controls.cards-container;
 
 	gap: 0;
@@ -13,16 +13,16 @@
 	margin: 8px 0;
 	padding: 0;
 
-	.attachmentContainer__299eb {
+	.attachmentContainer_0_7_Rr {
 		border-radius: calc(var(--base-unit) * 2 + 2px);
 	}
 
-	.filename__41ea0 {
+	.filename_sBdlOA {
 		font: inherit;
 		color: inherit;
 	}
 
-	.upload_aa605f {
+	.upload_JyxBSo {
 		@include controls.card-in-container(
 			$first-selector: "&:first-child",
 			$last-selector: "&:last-child"
@@ -37,7 +37,7 @@
 }
 
 // Message form-specific channelTextArea stuff
-.channelTextArea__74017 {
+.channelTextArea_2x8-Qn {
 	// prettier-ignore
 	--attach-button-left-offset: calc(
 		var(--custom-message-avatar-size)
@@ -46,7 +46,7 @@
 		- var(--spacing) * 2.5
 	);
 
-	.attachButton__0923f {
+	.attachButton_7TM4SO {
 		--icon: icon("plus-circle-outline");
 
 		// align with cozy mode avatars, à la discord
@@ -54,26 +54,26 @@
 		margin-inline-end: var(--spacing);
 	}
 
-	.attachWrapper__0923f {
+	.attachWrapper_7TM4SO {
 		margin-inline-end: calc(var(--spacing) * 1.5);
 		padding: 0;
 	}
 
-	.button_e6e74f {
+	.button_s8hOwn {
 		@include controls.icon-button($name: "grid-large");
 
 		margin-inline-start: var(--spacing);
 	}
 
-	.buttonContainer_e6e74f {
+	.buttonContainer_s8hOwn {
 		background: none;
 	}
 
-	.button__24af7 {
+	.button_hfM7yP {
 		@include controls.icon-button;
 	}
 
-	.button_aa63ab {
+	.button_plpOf8 {
 		@include controls.button-accent;
 
 		border-radius: 50%;
@@ -82,16 +82,16 @@
 
 	// Not included in channel-text-area.scss since I disable scrolling only for
 	// the attachments card.
-	.scrollableContainer__74017 {
+	.scrollableContainer_2x8-Qn {
 		overflow: visible;
 	}
 
-	.separator_aa63ab {
+	.separator_plpOf8 {
 		display: none;
 	}
 }
 
-.form_f75fb0 {
+.form_z_gUBg {
 	margin: 0;
 	padding-inline: var(--custom-message-margin-horizontal);
 
@@ -101,25 +101,25 @@
 	}
 }
 
-.stackedBars__74017 {
+.stackedBars_2x8-Qn {
 	background-color: transparent;
 	border: none;
 
-	.actions__841c8 {
+	.actions_rE8-46 {
 		gap: var(--spacing);
 		margin: 0;
 	}
 
-	.clipContainer__841c8 {
+	.clipContainer_rE8-46 {
 		margin: 0;
 		padding: 0;
 	}
 
-	.closeButton_e876a8 {
+	.closeButton_Jldl6o {
 		@include controls.icon-button("window-close");
 	}
 
-	.mentionButton__841c8 {
+	.mentionButton_rE8-46 {
 		@include controls.button;
 
 		svg {
@@ -127,14 +127,14 @@
 		}
 	}
 
-	.replyBar__841c8 {
+	.replyBar_rE8-46 {
 		background-color: inherit;
 		gap: var(--spacing);
 		margin: var(--spacing);
 		margin-inline-end: 0;
 	}
 
-	.replyLabel__841c8 {
+	.replyLabel_rE8-46 {
 		@extend %text-normal;
 		@extend %link;
 
@@ -144,17 +144,17 @@
 		);
 	}
 
-	.threadSuggestionBar__841c8,
-	.separator__841c8 {
+	.threadSuggestionBar_rE8-46,
+	.separator_rE8-46 {
 		display: none;
 	}
 }
 
-.typing_b88801 {
+.typing_U9Tvvz {
 	padding-inline-start: var(--custom-message-margin-horizontal);
 
 	// good enough
-	.text_b88801 {
+	.text_U9Tvvz {
 		inset-inline-start: -1px;
 		position: relative;
 	}

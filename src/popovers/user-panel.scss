@@ -2,31 +2,31 @@
 @use "typography";
 
 .expiringStatusMenuItem_ce8328 {
-	.iconContainer_c1e9c4 {
+	.iconContainer_M3qk4j {
 		display: none;
 	}
 }
 
-.statusPickerModalMenu_ce8328 {
-	.label_c1e9c4 {
+.statusPickerModalMenu_nitlyF {
+	.label_M3qk4j {
 		margin: 0;
 	}
 
 	// why the fuck is this in the same component as menu
-	.statusAccessory_c1e9c4 {
+	.statusAccessory_M3qk4j {
 		margin-inline-start: -2px;
 	}
 }
 
-.menuItem_ce8328 {
+.menuItem_nitlyF {
 	--icon: icon("right");
 
-	.menuOverlay_ce8328:first-child & {
+	.menuOverlay_nitlyF:first-child & {
 		&:first-child {
 			--icon: icon("edit");
 		}
 
-		&:nth-child(2) > .menuItemInner_ce8328 {
+		&:nth-child(2) > .menuItemInner_nitlyF {
 			// awful
 			$colors: (
 				online: "var(--success-color)",
@@ -47,10 +47,10 @@
 		}
 	}
 
-	.menuOverlay_ce8328:nth-child(2) &:nth-child(2) {
+	.menuOverlay_nitlyF:nth-child(2) &:nth-child(2) {
 		--icon: icon("edit-copy");
 
-		& > .menuItemInner_ce8328 {
+		& > .menuItemInner_nitlyF {
 			border: none;
 		}
 	}
@@ -60,18 +60,18 @@
 	}
 }
 
-.menuItemContent_ce8328 {
+.menuItemContent_nitlyF {
 	flex-direction: row-reverse;
 	padding: 0;
 }
 
-.menuItemIcon_ce8328 {
+.menuItemIcon_nitlyF {
 	@include controls.icon-button;
 
 	pointer-events: all;
 }
 
-.menuItemInner_ce8328 {
+.menuItemInner_nitlyF {
 	@include controls.card;
 
 	border-block-end: 1px solid var(--card-shade-color);
@@ -80,24 +80,24 @@
 	pointer-events: none;
 }
 
-.menuItemLabelText_ce8328 {
+.menuItemLabelText_nitlyF {
 	@extend %heading;
 
 	color: inherit;
 }
 
-.menuOverlay_ce8328 {
+.menuOverlay_nitlyF {
 	border-radius: 0;
 	padding: 0;
 }
 
-.menus_ce8328 {
+.menus_nitlyF {
 	@include controls.cards-container;
 
 	gap: 0;
 	overflow: hidden;
 }
 
-.submenuIconWrapper_ce8328 {
+.submenuIconWrapper_nitlyF {
 	display: none;
 }

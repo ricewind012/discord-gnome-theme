@@ -2,34 +2,34 @@
 @use "typography";
 @use "util";
 
-.caughtUpContainer_ea5470 {
+.caughtUpContainer_dndGAS {
 	display: none;
 }
 
-.container_fc71d3 {
+.container_6BZE6x {
 	@include popover.container;
 
 	padding: 0;
 }
 
-.messageClickableContainer_cb862a {
+.messageClickableContainer_TsSh-L {
 	@include popover.entry(
-		$hover: ":is(.actionMenuOpen_cb862a, :focus-within, :hover)"
+		$hover: ":is(.actionMenuOpen_TsSh-L, :focus-within, :hover)"
 	);
 
 	height: unset;
 	padding: var(--spacing);
 
-	.channelName_cb862a {
+	.channelName_TsSh-L {
 		display: none;
 	}
 
-	.message_cb862a {
+	.message_TsSh-L {
 		color: var(--window-fg-color);
 		font: inherit;
 	}
 
-	.messageContainer_cb862a {
+	.messageContainer_TsSh-L {
 		margin: 0;
 		padding: 0;
 
@@ -38,30 +38,30 @@
 		}
 	}
 
-	.timestamp_cb862a {
+	.timestamp_TsSh-L {
 		height: unset;
 		line-height: 1.2;
 	}
 
-	.unreadDot_cb862a {
+	.unreadDot_TsSh-L {
 		display: none;
 	}
 
-	.username_cb862a {
+	.username_TsSh-L {
 		@extend %heading;
 
 		line-height: 1.2;
 	}
 }
 
-.messagesGroupHeaderWrap__0aee3 {
+.messagesGroupHeaderWrap_qLB9Un {
 	--icon: icon("pan-down");
 
 	height: unset;
 	margin-block-start: var(--spacing);
 	padding: var(--spacing);
 
-	&.collapsed__0aee3 {
+	&.collapsed_qLB9Un {
 		--icon: icon("pan-up");
 	}
 
@@ -69,13 +69,13 @@
 		color: var(--window-fg-muted);
 	}
 
-	& > .stack_dbd263 {
+	& > .stack_TWWX0S {
 		flex-direction: row-reverse;
 		gap: var(--space-xs);
 		justify-content: start;
 	}
 
-	.chevron__0aee3 {
+	.chevron_qLB9Un {
 		@include util.icon;
 
 		transform: none;
@@ -85,7 +85,7 @@
 		}
 	}
 
-	.messagesGroupHeader__0aee3 {
+	.messagesGroupHeader_qLB9Un {
 		@extend %heading;
 
 		color: inherit;

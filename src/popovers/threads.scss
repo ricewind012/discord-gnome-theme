@@ -1,17 +1,17 @@
 @use "dialog";
 
-.closeIcon_d9c882,
-.divider_d9c882,
-.spacer_d9c882,
-.threadIcon_d9c882,
-.title_d9c882 {
+.closeIcon_c0tu5x,
+.divider_c0tu5x,
+.spacer_c0tu5x,
+.threadIcon_c0tu5x,
+.title_c0tu5x {
 	display: none;
 }
 
-.createButton_d9c882 {
+.createButton_c0tu5x {
 	margin: 0;
 }
 
-.header_d9c882 {
+.header_c0tu5x {
 	@include dialog.header;
 }

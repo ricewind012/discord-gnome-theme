@@ -1,34 +1,34 @@
 @use "controls";
 @use "util";
 
-.card_f369db {
+.card_BkGrJJ {
 	padding: 0;
 }
 
-.container_d9be46 {
+.container_owUmX8 {
 	background: none;
 
 	button {
 		--icon: icon("user-bookmarks");
 	}
 
-	.formContainer_d9be46 {
+	.formContainer_owUmX8 {
 		padding: 0;
 	}
 
-	.title_d9be46 {
+	.title_owUmX8 {
 		@include controls.text-field;
 	}
 }
 
-.header_f369db {
+.header_BkGrJJ {
 	background: none;
 	border: none;
 	box-shadow: none;
 	padding: 0;
 }
 
-.headerRow_f369db {
+.headerRow_BkGrJJ {
 	background-color: transparent;
 	box-shadow: none;
 	margin-block-end: 24px;
@@ -39,17 +39,17 @@
 	}
 }
 
-.list_f369db > .content__99f8c {
+.list_BkGrJJ > .content_JFqgFB {
 	--custom-forum-post-form-horizontal-padding: 0px;
 
 	padding: 0;
 }
 
-.mainCard_f369db:not(.header_f369db) {
+.mainCard_BkGrJJ:not(.header_BkGrJJ) {
 	@include controls.card-in-container(
 		$activatable-selector: "&",
-		$first-selector: ".card_f369db:first-of-type > &",
-		$last-selector: ".card_f369db:last-of-type > &"
+		$first-selector: ".card_BkGrJJ:first-of-type > &",
+		$last-selector: ".card_BkGrJJ:last-of-type > &"
 	);
 
 	// nitro theme
@@ -57,21 +57,21 @@
 	box-shadow: var(--elevation-medium);
 }
 
-.pill_a2c9e8 {
+.pill_snX-u4 {
 	@include controls.tag;
 
 	border: none;
 	height: unset;
 
-	&.clickable_a2c9e8:hover {
+	&.clickable_snX-u4:hover {
 		background-color: color-mix(in srgb, currentColor 15%, transparent);
 	}
 
-	&.clickable_a2c9e8:active {
+	&.clickable_snX-u4:active {
 		background-color: color-mix(in srgb, currentColor 30%, transparent);
 	}
 
-	&.selected_a2c9e8 {
+	&.selected_snX-u4 {
 		color: var(--accent-color);
 	}
 
@@ -80,29 +80,29 @@
 	}
 }
 
-.tagList_d9be46 {
+.tagList_owUmX8 {
 	height: 30px;
 }
 
-.tagListInner_f369db {
+.tagListInner_BkGrJJ {
 	gap: var(--spacing);
 }
 
 // legacy button content
-.sortDropdownText_f369db,
-.tagsButtonInner_f369db {
+.sortDropdownText_BkGrJJ,
+.tagsButtonInner_BkGrJJ {
 	margin: 0;
 	padding: 0;
 }
 
-.tagsContainer_f369db {
+.tagsContainer_BkGrJJ {
 	padding: 0;
 }
 
-.titleContainer_d9be46 {
+.titleContainer_owUmX8 {
 	gap: var(--spacing-2x);
 }
 
-.prefixElement_d9be46 {
+.prefixElement_owUmX8 {
 	display: none;
 }

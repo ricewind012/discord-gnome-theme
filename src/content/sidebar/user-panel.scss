@@ -1,35 +1,35 @@
 @use "controls";
 
-.audioButtonParent__5e764 {
+.audioButtonParent_gKpIZP {
 	@include controls.split-button(
-		$lhs: ".audioButtonWithMenu__5e764",
-		$rhs: ".buttonChevron__5e764"
+		$lhs: ".audioButtonWithMenu_gKpIZP",
+		$rhs: ".buttonChevron_gKpIZP"
 	);
 
-	&.hasColorGlow__5e764 {
+	&.hasColorGlow_gKpIZP {
 		color: var(--destructive-color);
 
 		// aria-label stays the same, bug ?
-		&:nth-child(1) .audioButtonWithMenu__5e764 {
+		&:nth-child(1) .audioButtonWithMenu_gKpIZP {
 			--icon: icon("mic-none");
 		}
 
-		&:nth-child(2) .audioButtonWithMenu__5e764 {
+		&:nth-child(2) .audioButtonWithMenu_gKpIZP {
 			--icon: icon("headphones-muted");
 		}
 	}
 
-	.button__67645 {
+	.button_Y-8oZW {
 		color: inherit;
 	}
 
-	.buttonChevron__5e764 {
+	.buttonChevron_gKpIZP {
 		margin: 0;
 	}
 }
 
 // vc
-.container_e131a9 {
+.container_9U6LUN {
 	border-block-end: 1px solid var(--secondary-sidebar-border-color);
 	color: var(--secondary-sidebar-fg-color);
 	gap: var(--spacing);
@@ -37,7 +37,7 @@
 	padding: var(--spacing);
 
 	// TODO: remove when it gets aria-labels again (fucking never)
-	.button_e131a9 {
+	.button_9U6LUN {
 		$-icons: (
 			1: "camera-disabled",
 			3: "record-screen",
@@ -53,7 +53,7 @@
 	}
 }
 
-.panels__5e434 {
+.panels_pog62O {
 	--icon: icon("bullhorn");
 
 	background: var(--secondary-sidebar-bg-color);
@@ -73,7 +73,7 @@
 		background: none;
 	}
 
-	.accountPopoutButtonWrapper__37e49 {
+	.accountPopoutButtonWrapper_g6VwXp {
 		@include controls.button-basic-raised;
 
 		background-color: transparent;
@@ -82,7 +82,7 @@
 		min-width: 0;
 		padding: var(--spacing);
 
-		.nameTag__37e49 {
+		.nameTag_g6VwXp {
 			@container (max-width: 260px) {
 				display: none;
 			}
@@ -96,17 +96,17 @@
 		border-radius: 0;
 	}
 
-	:where(.button__201d5) {
+	:where(.button_9OQtot) {
 		@include controls.icon-button;
 
 		color: inherit;
 	}
 
-	.buttons__37e49 {
+	.buttons_g6VwXp {
 		gap: var(--spacing);
 	}
 
-	.container__37e49 {
+	.container_g6VwXp {
 		height: unset;
 		margin: 0;
 		padding: 0;
@@ -114,29 +114,29 @@
 	}
 }
 
-.panelTitleContainer__37e49 {
+.panelTitleContainer_g6VwXp {
 	margin: 0;
 }
 
-.rtcConnectionStatus__06d62 {
+.rtcConnectionStatus_4LJE6I {
 	height: unset;
 
-	&.rtcConnectionQualityFine__06d62 {
+	&.rtcConnectionQualityFine_4LJE6I {
 		--icon: icon("radiowaves-1");
 		--text-color: var(--success-color);
 	}
 
-	&.rtcConnectionQualityAverage__06d62 {
+	&.rtcConnectionQualityAverage_4LJE6I {
 		--icon: icon("radiowaves-2");
 		--text-color: var(--warning-color);
 	}
 
-	&.rtcConnectionQualityBad__06d62 {
+	&.rtcConnectionQualityBad_4LJE6I {
 		--icon: icon("radiowaves-3");
 		--text-color: var(--destructive-color);
 	}
 
-	.clickablePing__06d62 {
+	.clickablePing_4LJE6I {
 		@include controls.icon-button;
 
 		color: var(--text-color);
@@ -144,13 +144,13 @@
 	}
 }
 
-.rtcConnectionStatusLabel__06d62 {
+.rtcConnectionStatusLabel_4LJE6I {
 	height: unset;
 	margin: 0;
 }
 
 // There are only 2 buttons and 1 of them has a constant aria-label, the other
 // doesn't
-.voiceButtonsContainer_e131a9 {
+.voiceButtonsContainer_9U6LUN {
 	--icon: icon("sound-wave");
 }

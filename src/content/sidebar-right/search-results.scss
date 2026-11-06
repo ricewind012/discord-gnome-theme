@@ -3,7 +3,7 @@
 @use "util";
 
 // Message
-.container__80bf8 {
+.container_N3Anbl {
 	@include controls.card-in-container(
 		$activatable-selector: "&",
 		$first-selector: "&:first-of-type",
@@ -13,12 +13,12 @@
 	padding: 0;
 
 	// Clicking on the message does the thing
-	.button__80bf8 {
+	.button_N3Anbl {
 		display: none;
 	}
 }
 
-.paginationDock_a98f3b {
+.paginationDock_QHVbp3 {
 	border: none;
 	// --elevation-low
 	box-shadow:
@@ -26,7 +26,7 @@
 		0 -2px 4px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent);
 }
 
-.searchHeader_ae7890 {
+.searchHeader_DAJqRF {
 	border: none;
 	box-shadow: var(--elevation-low);
 	padding: var(--spacing);
@@ -37,11 +37,11 @@
 	}
 }
 
-.searchModeAndFiltersContainer_ae7890 {
+.searchModeAndFiltersContainer_DAJqRF {
 	gap: var(--spacing);
 }
 
-.searchResult__80bf8 {
+.searchResult_N3Anbl {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
@@ -52,7 +52,7 @@
 	@extend %caption;
 }
 
-.searchResultGroup_a7e67f {
+.searchResultGroup_3Zk3yP {
 	--offset: calc(1rem + 16px);
 
 	@include controls.cards-container;
@@ -61,22 +61,22 @@
 	margin-block-end: calc(var(--offset) + 34px);
 	position: relative;
 
-	.channelNameIcon_a7e67f,
-	.parentChannelName_a7e67f {
+	.channelNameIcon_3Zk3yP,
+	.parentChannelName_3Zk3yP {
 		display: none;
 	}
 
-	.channelNameContainer_a7e67f {
+	.channelNameContainer_3Zk3yP {
 		inset-block-start: calc(var(--offset) * -1);
 		position: absolute;
 	}
 }
 
-.searchResultsWrap_a98f3b {
+.searchResultsWrap_QHVbp3 {
 	// This looks awesome actually
 	z-index: 999;
 
-	.scroller_a98f3b {
+	.scroller_QHVbp3 {
 		padding-inline: 24px;
 	}
 }

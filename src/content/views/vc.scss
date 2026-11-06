@@ -16,31 +16,31 @@
 // VC is permanently dark themed, so do the same for titlebar.
 //
 // prettier-ignore
-.base__5e434:has(
-	> .content__5e434
-	> .page__5e434
+.base_pog62O:has(
+	> .content_pog62O
+	> .page_pog62O
 	> div
-	> .chat_f75fb0
-	> .wrapper_cb9592
+	> .chat_z_gUBg
+	> .wrapper_hbKzX7
 ) {
-	& > .bar_c38106,
-	.container__9293f{
+	& > .bar_3zSH5d,
+	.container_ybUK7Z{
 		@extend %-dark-headerbar;
 	}
 }
 
 // popout
-.container__9fa5a .button__201d5 {
+.container_5kshUk .button_9OQtot {
 	height: unset;
 }
 
-.colorable_f1ceac {
+.colorable_K9Xq13 {
 	@include controls.icon-button;
 
 	color: var(--window-fg-color);
 
-	&.disconnect_f1ceac,
-	&.redGlow_f1ceac {
+	&.disconnect_K9Xq13,
+	&.redGlow_K9Xq13 {
 		color: var(--destructive-color);
 	}
 
@@ -52,40 +52,40 @@
 	}
 }
 
-.attachedCaretButtonContainer_f1ceac {
+.attachedCaretButtonContainer_K9Xq13 {
 	@include controls.split-button(
-		$lhs: ".attachedButton_f1ceac",
-		$rhs: ".attachedCaret_f1ceac"
+		$lhs: ".attachedButton_K9Xq13",
+		$rhs: ".attachedCaret_K9Xq13"
 	);
 
 	background-color: var(--hover-color);
 }
 
-.edgeControls_bfe55a {
+.edgeControls_rTsZa_ {
 	gap: var(--spacing);
 }
 
-.headerBar__49508 {
+.headerBar_neq5ug {
 	@extend %-dark-headerbar;
 
 	filter: var(--text-shadow);
 
-	.container__49508 {
+	.container_neq5ug {
 		[data-text-variant="body-md/normal"] {
 			@extend %caption;
 		}
 	}
 
-	.headerBarChildren__49508 {
+	.headerBarChildren_neq5ug {
 		gap: 0;
 	}
 
-	.playingText__49508 {
+	.playingText_neq5ug {
 		color: var(--window-fg-muted);
 	}
 
 	// avatar
-	.wrapper__44b0c {
+	.wrapper_XpIUHy {
 		height: var(--icon-size);
 		width: var(--icon-size);
 
@@ -96,10 +96,10 @@
 	}
 }
 
-.headerWrapper_cb9592 {
+.headerWrapper_hbKzX7 {
 	margin-inline: -12px;
 
-	.button__9db96 {
+	.button_wIG9Rr {
 		@include controls.icon-button;
 
 		color: inherit;
@@ -107,42 +107,42 @@
 	}
 }
 
-.overlayContainer__2f4f7 {
-	.experimentOverlayTitle__2f4f7 {
+.overlayContainer_7NOr2f {
+	.experimentOverlayTitle_7NOr2f {
 		color: var(--window-fg-color);
 	}
 
-	.overlayButton__2f4f7 {
+	.overlayButton_7NOr2f {
 		@include controls.icon-button-circular("settings");
 	}
 }
-.leftTrayIcon_cb9592,
-.rightTrayIcon_cb9592:not(.container__2d263) {
+.leftTrayIcon_hbKzX7,
+.rightTrayIcon_hbKzX7:not(.container_QlL4f-) {
 	@include controls.icon-button-circular;
 
 	--accent-color: var(--window-fg-color);
 }
 
 // is it really useful ?
-.streamQualityIndicator__30845 {
+.streamQualityIndicator__be5Bx {
 	display: none;
 }
 
 // the *actual* volume button
-.volumeButton__2d263 {
+.volumeButton_QlL4f- {
 	@include controls.icon-button-circular($name: "speaker-3");
 
-	&:has(.controlIcon_f1ceac > :only-child) {
+	&:has(.controlIcon_K9Xq13 > :only-child) {
 		--icon: icon("speaker-0");
 	}
 }
 
-.wrapper__1405b {
+.wrapper_9bvEB0 {
 	gap: var(--spacing-2x);
 
-	.fullRegionButton_f1ceac,
-	.fullRegionDropdownButton_f1ceac,
-	.buttonSection__1405b {
+	.fullRegionButton_K9Xq13,
+	.fullRegionDropdownButton_K9Xq13,
+	.buttonSection_9bvEB0 {
 		background-color: transparent;
 		border: none;
 		gap: var(--spacing);

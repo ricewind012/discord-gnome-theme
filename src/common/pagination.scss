@@ -1,13 +1,13 @@
 @use "controls";
 
-.pageButton_c15210 {
+.pageButton_0MrDiE {
 	@include controls.button;
 
 	margin: 0;
 	min-width: 34px;
 }
 
-.pageControl_c15210 {
+.pageControl_0MrDiE {
 	gap: var(--spacing);
 	padding: var(--spacing) 0;
 }

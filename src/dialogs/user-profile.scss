@@ -2,7 +2,7 @@
 @use "typography";
 @use "util";
 
-.backgroundImage__9c3be {
+.backgroundImage_s3DB6Y {
 	--brightness: 1.5;
 	--radius: var(--dialog-spacing);
 
@@ -23,14 +23,14 @@
 }
 
 // right side
-.container__37bfc {
+.container_y4ZEM5 {
 	--custom-modal-v2-gutter: 0px;
 
 	height: 100%;
 	margin: 0;
 	padding: 0;
 
-	.tabListScroller__37bfc {
+	.tabListScroller_y4ZEM5 {
 		box-shadow: var(--elevation-low);
 		margin: 0;
 		min-height: var(--headerbar-height);
@@ -50,32 +50,32 @@
 		}
 	}
 
-	.tabPanelScroller__37bfc {
+	.tabPanelScroller_y4ZEM5 {
 		gap: 34px;
 		padding: var(--dialog-spacing);
 	}
 }
 
 // widget
-.container__62dd3 {
+.container_FNEkcu {
 	@include controls.card;
 
-	.gameWidgetGrid__7f3a7 {
+	.gameWidgetGrid_--V09L {
 		gap: var(--spacing-2x);
 	}
 
-	.menuButton_cf2d33 {
+	.menuButton_ltNcM4 {
 		@include controls.icon-button($name: "menu");
 	}
 
-	.tag_f7b6a0 {
+	.tag_E5LDT0 {
 		@include controls.tag;
 
 		border: none;
 		gap: var(--spacing);
 	}
 
-	.tagListContainer__25a50 {
+	.tagListContainer_tqx5FD {
 		gap: var(--spacing-05x);
 		margin: 0;
 	}
@@ -86,14 +86,14 @@
 }
 
 // connections
-.container__9bfb9 {
+.container_O2KI4e {
 	@include controls.cards-container;
 
 	gap: 0;
 	margin: 0;
 
 	// HEEEEEEEEEELP WHAT IS THIS XD
-	.accountName__9bfb9 {
+	.accountName_O2KI4e {
 		@include controls.button-basic-raised(
 			$hover: "&:hover::before",
 			$active: "&:active::before"
@@ -132,11 +132,11 @@
 		}
 	}
 
-	.accountNameText__9bfb9 {
+	.accountNameText_O2KI4e {
 		@extend %text-normal;
 	}
 
-	.connection__9bfb9 {
+	.connection_O2KI4e {
 		@include controls.card-in-container(
 			$first-selector: "&:first-child",
 			$last-selector: "&:last-child"
@@ -146,19 +146,19 @@
 		position: relative;
 	}
 
-	.connectionInfo__9bfb9 {
+	.connectionInfo_O2KI4e {
 		width: 100%;
 	}
 
-	.connectionList__9bfb9 {
+	.connectionList_O2KI4e {
 		gap: 0;
 	}
 
-	.metadata__9bfb9 {
+	.metadata_O2KI4e {
 		display: none;
 	}
 
-	.platformUrlAnchor__9bfb9 {
+	.platformUrlAnchor_O2KI4e {
 		color: var(--card-fg-color);
 		pointer-events: none;
 		text-decoration: none;
@@ -168,12 +168,12 @@
 		display: none;
 	}
 
-	.platformIcon__9bfb9 {
+	.platformIcon_O2KI4e {
 		width: inherit;
 		height: inherit;
 	}
 
-	.platformIconContainer__9bfb9 {
+	.platformIconContainer_O2KI4e {
 		--size: 32px;
 
 		background-color: transparent;
@@ -183,7 +183,7 @@
 	}
 }
 
-.modalHeaderButtons_b92f52 {
+.modalHeaderButtons_ZhNJfE {
 	inset-block-start: var(--titlebar-button-spacing);
 	inset-inline-end: var(--titlebar-button-spacing);
 
@@ -192,35 +192,35 @@
 	}
 }
 
-.profile__9c3be {
+.profile_s3DB6Y {
 	border-radius: var(--window_radius) 0 0 var(--window_radius);
 	outline: 0;
 
-	.profileBody__9c3be {
+	.profileBody_s3DB6Y {
 		gap: var(--dialog-spacing);
 		padding: 0 var(--dialog-spacing);
 	}
 
-	.profileButtons__9c3be {
+	.profileButtons_s3DB6Y {
 		gap: var(--spacing);
 	}
 
-	.profileHeaderBannerContainer__9c3be {
+	.profileHeaderBannerContainer_s3DB6Y {
 		border-radius: 0;
 	}
 
-	.note_eb110a {
+	.note_nr7Zul {
 		margin: 0;
 	}
 }
 
 // right side content
-.scroller__764cd {
+.scroller_5rJzHy {
 	padding: var(--dialog-spacing);
 	// thin scrollbar size
 	padding-inline-end: calc(var(--dialog-spacing) - 8px);
 
-	.cards__764cd {
+	.cards_5rJzHy {
 		@include controls.cards-container;
 
 		gap: 0;
@@ -232,17 +232,17 @@
 			);
 		}
 
-		.card__39ec2 {
+		.card_Bu4Al8 {
 			all: unset;
 		}
 	}
 }
 
-.section_bf424d {
+.section_NcvRRg {
 	// Originally 16px, but --dialog-spacing-05x
 	gap: var(--spacing-2x);
 
-	.header_bf424d [data-text-variant="experimental/text-xs/medium"] {
+	.header_NcvRRg [data-text-variant="experimental/text-xs/medium"] {
 		@extend %heading;
 
 		color: inherit;

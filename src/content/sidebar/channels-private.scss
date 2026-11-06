@@ -2,7 +2,7 @@
 @use "typography";
 @use "util";
 
-[href="/channels/@me"] .avatar__20a53 {
+[href="/channels/@me"] .avatar_TBNqol {
 	--spacing: calc((32px - var(--icon-size)) / 2);
 
 	@include util.icon("org.gnome.Settings-users");
@@ -16,30 +16,30 @@
 }
 
 // "Friends" entry
-.channel__972a0:not(.dm__972a0) .link__972a0 {
+.channel_zln_tS:not(.dm_zln_tS) .link_zln_tS {
 	padding-block: var(--space-xxs);
 }
 
-.name__20a53 {
+.name_TBNqol {
 	@extend %text-normal;
 }
 
-.interactive__972a0 {
+.interactive_zln_tS {
 	@include controls.button-basic-raised;
 
 	background-color: transparent;
 	color: var(--window-fg-color);
 	transition: none;
 
-	&.interactiveSelected__972a0 {
+	&.interactiveSelected_zln_tS {
 		@include controls.button-selected;
 	}
 }
 
-.scroller__99e7c {
+.scroller_Bce46W {
 	margin-block-end: var(--custom-app-panels-height);
 }
 
-.subText__20a53 {
+.subText_TBNqol {
 	margin: 0;
 }

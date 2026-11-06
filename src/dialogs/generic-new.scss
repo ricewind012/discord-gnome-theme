@@ -8,7 +8,7 @@
 	--dialog-spacing: 24px;
 }
 
-.actionBar__8a031 {
+.actionBar_dvN-MP {
 	margin: var(--dialog-spacing);
 	margin-block-start: 0;
 	padding: 0;
@@ -20,13 +20,13 @@
 	}
 }
 
-.actionBarTrailing__8a031 {
+.actionBarTrailing_dvN-MP {
 	& > div {
 		gap: var(--spacing-2x);
 	}
 }
 
-.bodyControls__8a031 {
+.bodyControls_dvN-MP {
 	padding: var(--dialog-spacing-x05) var(--dialog-spacing);
 
 	&::after {
@@ -39,19 +39,19 @@
 	}
 }
 
-.bodyInner__8a031 {
+.bodyInner_dvN-MP {
 	padding: var(--dialog-spacing);
 	padding-inline-end: calc(var(--dialog-spacing) - 16px);
 	text-align: center;
 }
 
 // ???
-.bodySpacerBottom__8a031,
-.bodySpacerTop__8a031 {
+.bodySpacerBottom_dvN-MP,
+.bodySpacerTop_dvN-MP {
 	display: none;
 }
 
-.bodySpacerBottom__8a031.bodyScrollingSpacerBottom__8a031 {
+.bodySpacerBottom_dvN-MP.bodyScrollingSpacerBottom_dvN-MP {
 	border: none;
 	display: block;
 	height: 1px;
@@ -59,7 +59,7 @@
 	padding-block-end: var(--dialog-spacing);
 	position: relative;
 
-	&.showFade__8a031::before {
+	&.showFade_dvN-MP::before {
 		// --elevation-low
 		box-shadow:
 			0 -1px color-mix(in srgb, var(--headerbar-shade-color) 50%, transparent),
@@ -71,7 +71,7 @@
 	}
 }
 
-.container__8a031 {
+.container_dvN-MP {
 	--custom-modal-padding-block-start: var(--dialog-spacing);
 
 	@include dialog.container;
@@ -79,43 +79,43 @@
 	border: none;
 	padding: 0;
 
-	&:has(.headerTrailing__8a031 > [aria-label="Close"]) {
+	&:has(.headerTrailing_dvN-MP > [aria-label="Close"]) {
 		background-color: var(--window-bg-color);
 	}
 }
 
-.header__8a031 {
+.header_dvN-MP {
 	padding: var(--dialog-spacing);
 	padding-block-end: 0;
 
-	& > .stack_dbd263 {
+	& > .stack_TWWX0S {
 		gap: var(--dialog-spacing-x05);
 		text-align: center;
 	}
 }
 
-.headerGradient__8a031 {
+.headerGradient_dvN-MP {
 	&::before {
 		inset-block-start: 0;
 	}
 }
 
-.headerSubtitleWrapper__8a031 {
+.headerSubtitleWrapper_dvN-MP {
 	justify-content: center;
 }
 
-.headerTitle__8a031 {
+.headerTitle_dvN-MP {
 	@extend %title-2;
 }
 
-.headerTrailing__8a031 {
+.headerTrailing_dvN-MP {
 	inset-block-start: var(--titlebar-button-spacing);
 	inset-inline-end: var(--titlebar-button-spacing);
 	margin: 0;
 	position: absolute;
 	z-index: 0;
 
-	.button_a22cb0.icon-only_a22cb0 {
+	.button_F7qvhY.icon-only_F7qvhY {
 		@include controls.titlebar-button;
 	}
 }

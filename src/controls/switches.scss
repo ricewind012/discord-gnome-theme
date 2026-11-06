@@ -1,6 +1,6 @@
 @use "controls";
 
-.switchIndicator_a28278 {
+.switchIndicator_9AraPt {
 	@include controls.switch(
 		$checked:
 			"&:where([style*='rgb(88, 101, 242);'], [style*='rgb(68, 82, 187);'])",
@@ -8,6 +8,6 @@
 	);
 }
 
-.thumb_a28278 {
+.thumb_9AraPt {
 	display: none;
 }

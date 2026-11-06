@@ -47,7 +47,7 @@
 	}
 }
 
-.closeButton_c2b141 {
+.closeButton_e76OBR {
 	@include controls.titlebar-button;
 
 	color: var(--headerbar-fg-color);
@@ -55,8 +55,8 @@
 	opacity: 1;
 }
 
-.contentColumn__23e6b {
-	& > .defaultColor__4bd52:first-child,
+.contentColumn_jnk11m {
+	& > .defaultColor_MMUIw6:first-child,
 	.settingsPage_f131e9 > h3 {
 		@extend %-center-text;
 		@extend %-tab-header;
@@ -77,26 +77,26 @@
 
 // Server settings
 // #2 is for "Invites" tab
-.standardSidebarView__23e6b :where(.scrollerBase_d125d2, .scrollerBase__99f8c) {
+.standardSidebarView_jnk11m :where(.scrollerBase_tqapBM, .scrollerBase_JFqgFB) {
 	// Vencord
-	& > .contentColumn__23e6b > section > h2:first-child,
+	& > .contentColumn_jnk11m > section > h2:first-child,
 	.vcd-settings-title,
 	// Most tabs
 	div:not([class]) > h2[data-text-variant="heading-lg/semibold"],
 	// Boost Perks
 	#boost_perks-tab > main > h2,
 	// Emoji/Bans
-	:is(.emojiSettings_e7d73e, .container__4b8d8) .sectionTitle__7bffb > h2,
+	:is(.emojiSettings_XTvD56, .container_zS9TPG) .sectionTitle__7bffb > h2,
 	// Members
-	.header_fa2640 > h2,
+	.header_mg3aTC > h2,
 	// Roles
 	[aria-hidden="true"][style="height: 60px;"] + div > h2,
 	// Invites
-	.header__1de14,
+	.header_k0kUi1,
 	// Access
 	#access-tab > div > h2,
 	// Integrations
-	.breadcrumbs_befe67 > h2,
+	.breadcrumbs_DOXz-7 > h2,
 	// Server Boost Status
 	#guild_premium-tab > h2,
 	// Server Templates
@@ -109,21 +109,21 @@
 	}
 
 	// "Invites" tab
-	.header__1de14 {
+	.header_k0kUi1 {
 		padding: 0;
 	}
 }
 
-.keybind_c2b141 {
+.keybind_e76OBR {
 	display: none;
 }
 
-.layer__960e4 {
+.layer_Fd0FEH {
 	background-color: transparent;
 	opacity: 1;
 }
 
-.layers__960e4 {
+.layers_Fd0FEH {
 	--p: calc((100% - var(--settings-dialog-size)) / 2);
 	--weird-offset: 1px;
 
@@ -131,7 +131,7 @@
 		--weird-offset: 2px;
 	}
 
-	.systemBar_c38106.show_c38106 + div &::before {
+	.systemBar_3zSH5d.show_3zSH5d + div &::before {
 		background-color: rgb(from var(--shade-color) r g b / calc(alpha * 2));
 		border-radius: var(--window_radius);
 		content: "";
@@ -143,11 +143,11 @@
 
 // Server settings "Roles" tab sidebar
 // No idea how this got broken, 0 behavior change, GENIUS layout, D*scord
-.page__91dc3 {
+.page_cKeB2a {
 	position: absolute;
 
 	// Single role view headerbar
-	.titleContainer_e29cd7 {
+	.titleContainer_7NrAL2 {
 		@extend %-tab-header;
 
 		box-shadow: none;
@@ -156,17 +156,17 @@
 		margin: 0;
 		padding: var(--spacing);
 
-		.addRole_e29cd7 {
+		.addRole_7NrAL2 {
 			@include controls.icon-button("plus");
 
 			-webkit-app-region: no-drag;
 		}
 
-		.title_e29cd7 {
+		.title_7NrAL2 {
 			@include controls.icon-button-with-tooltip(
 				$name: "left",
 				$direction: "block-start",
-				$selector: "&:hover > .titleText_e29cd7"
+				$selector: "&:hover > .titleText_7NrAL2"
 			);
 
 			-webkit-app-region: no-drag;
@@ -174,7 +174,7 @@
 	}
 }
 
-.sidebarRegion__23e6b {
+.sidebarRegion_jnk11m {
 	[role="tablist"][aria-orientation="vertical"]::before {
 		@extend %-center-text;
 		@extend %heading;
@@ -194,7 +194,7 @@
 	}
 }
 
-.standardSidebarView__23e6b {
+.standardSidebarView_jnk11m {
 	border: 1px solid var(--window-outline-color);
 	border-radius: var(--window_radius);
 	box-shadow: var(--elevation-high);
@@ -204,13 +204,13 @@
 	position: fixed;
 }
 
-.tools__23e6b {
+.tools_jnk11m {
 	inset-block-start: calc(var(--p) + var(--titlebar-button-spacing));
 	inset-inline-end: calc(var(--p) + var(--titlebar-button-spacing));
 	position: fixed;
 }
 
-.toolsContainer__23e6b {
+.toolsContainer_jnk11m {
 	position: absolute;
 	z-index: 999;
 }

@@ -1,18 +1,18 @@
 @use "controls";
 
-.button_f7ecac {
+.button_Z0MHyc {
 	@include controls.osd-like-button;
 
-	&.dangerous_f7ecac {
+	&.dangerous_Z0MHyc {
 		color: var(--destructive-color);
 	}
 }
 
-.separator_f7ecac {
+.separator_Z0MHyc {
 	@include controls.osd-like-separator;
 }
 
-.wrapper_f7ecac {
+.wrapper_Z0MHyc {
 	@include controls.osd-like-button-group;
 
 	box-shadow: none;

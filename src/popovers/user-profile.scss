@@ -1,28 +1,28 @@
 @use "controls";
 
-.body__5be3e {
+.body_NOlkhE {
 	gap: var(--dialog-spacing-x05);
 	mask: none;
 	padding-block: 0;
 }
 
 // Activity
-.card__39ec2 {
+.card_Bu4Al8 {
 	@include controls.card($activatable-selector: "&");
 
 	border: none;
 
-	.actions__39ec2 {
+	.actions_Bu4Al8 {
 		gap: var(--spacing);
 		margin: 0;
 	}
 
-	.header__39ec2 {
+	.header_Bu4Al8 {
 		display: none;
 	}
 }
 
-.footer__5be3e {
+.footer_NOlkhE {
 	padding: var(--dialog-spacing);
 	padding-block-start: 0;
 

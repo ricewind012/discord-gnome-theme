@@ -1,15 +1,15 @@
 @use "popover";
 @use "util";
 
-.listBox__2e223 {
+.listBox_b5PEJH {
 	padding: 0;
 }
 
-.listBoxItemContent__2e223 {
+.listBoxItemContent_b5PEJH {
 	min-height: unset;
 	padding: 0;
 
-	&:not(.inInput__2e223) {
+	&:not(.inInput_b5PEJH) {
 		@include popover.entry;
 
 		// Don't change virtualized list items' height
@@ -17,11 +17,11 @@
 	}
 }
 
-.selectDropdown__0edde {
+.selectDropdown_vWC4bk {
 	@include popover.container;
 }
 
-.selectedIcon__2e223 {
+.selectedIcon_b5PEJH {
 	@include util.icon("check-plain");
 
 	// Align with the item height

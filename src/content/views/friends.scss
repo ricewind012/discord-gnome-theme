@@ -1,15 +1,15 @@
 @use "controls";
 @use "typography";
 
-.container__133bf {
+.container_zrUwGA {
 	border: none;
 }
 
-.divider_cc6179 {
+.divider_y75PxA {
 	display: none;
 }
 
-.peopleColumn__133bf {
+.peopleColumn_zrUwGA {
 	gap: 16px;
 	padding: 16px;
 
@@ -18,7 +18,7 @@
 	}
 }
 
-.peopleList__5ec2f {
+.peopleList_wVFOQW {
 	@include controls.cards-container;
 
 	overflow: auto;
@@ -26,7 +26,7 @@
 
 	& > div > div {
 		@include controls.card-in-container(
-			$activatable-selector: "&:not(.sectionTitle__5ec2f)",
+			$activatable-selector: "&:not(.sectionTitle_wVFOQW)",
 			$first-selector: "&:first-child",
 			$last-selector: "&:last-child"
 		);
@@ -41,27 +41,27 @@
 	}
 }
 
-.peopleListItem_cc6179 {
+.peopleListItem_y75PxA {
 	margin: 0;
 
-	.actionButton_f8fa06 {
+	.actionButton_5GqXgh {
 		@include controls.icon-button;
 	}
 
-	.userInfo__0a06e {
+	.userInfo_jPuNMC {
 		align-items: center;
 	}
 
-	.username__0a06e {
+	.username_jPuNMC {
 		@extend %heading;
 	}
 
-	.text__19b6d {
+	.text_CXmngM {
 		@extend %caption;
 	}
 }
 
-.sectionTitle__5ec2f > h2 {
+.sectionTitle_wVFOQW > h2 {
 	@extend %heading;
 
 	margin: 0;

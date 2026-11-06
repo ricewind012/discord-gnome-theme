@@ -1,6 +1,6 @@
 @use "controls";
 
-.circleIconButton__5bc7e {
+.circleIconButton_g8YUxD {
 	@include controls.icon-button($size: var(--guildbar-avatar-size));
 
 	border-radius: 50%;
@@ -15,33 +15,33 @@
 	}
 }
 
-.guilds__5e434 {
+.guilds_pog62O {
 	margin: 0;
 	mask: none;
 	// user panel shadow
 	z-index: 11;
 }
 
-.guildSeparator__252b6 {
+.guildSeparator_3WHVfy {
 	background-color: var(--sidebar-border-color);
 	width: calc(100% - var(--spacing) * 2);
 }
 
-.listItemWrapper__91816 {
+.listItemWrapper_tQErD4 {
 	transform: none;
 }
 
-.scroller_ef3116 {
+.scroller_5dqHTG {
 	padding-block-start: var(--space-md);
 }
 
-.tree_ef3116 {
+.tree_5dqHTG {
 	background: var(--background-gradient-app-frame, var(--sidebar-bg-color));
 	border-inline-end: 1px solid var(--sidebar-border-color);
 }
 
 // guild
-.wrapper__6e9f8 {
+.wrapper_JJ-hgR {
 	border-radius: 50%;
 	transition: var(--backdrop_transition);
 
@@ -49,7 +49,7 @@
 		border-radius: 25%;
 	}
 
-	.childWrapper__6e9f8 {
+	.childWrapper_JJ-hgR {
 		@include controls.button-basic-raised;
 
 		border-radius: inherit;

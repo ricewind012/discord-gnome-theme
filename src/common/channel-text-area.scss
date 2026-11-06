@@ -1,14 +1,14 @@
 @use "controls";
 
-.button__74017 {
+.button_2x8-Qn {
 	@include controls.icon-button;
 }
 
-.buttonContainer__74017 > :where(button, div) {
+.buttonContainer_2x8-Qn > :where(button, div) {
 	margin-inline-start: var(--spacing);
 }
 
-.buttons__74017 {
+.buttons_2x8-Qn {
 	gap: 0;
 
 	// align to start for longer text
@@ -18,13 +18,13 @@
 	}
 }
 
-.channelTextArea__74017 {
+.channelTextArea_2x8-Qn {
 	--custom-channel-textarea-text-area-height: 34px;
 
 	background: transparent;
 	border: none;
 
-	.editor__1b31f {
+	.editor_SHcSVi {
 		@include controls.text-field;
 
 		.custom-theme-background & {
@@ -36,7 +36,7 @@
 		}
 	}
 
-	.placeholder__1b31f {
+	.placeholder_SHcSVi {
 		inset: 8px 9px;
 		line-height: 1.25;
 		margin: 0;
@@ -45,16 +45,16 @@
 	}
 }
 
-.inner__74017 {
+.inner_2x8-Qn {
 	padding: 0;
 }
 
-.textArea__74017:not(.textAreaSlate__74017) {
+.textArea_2x8-Qn:not(.textAreaSlate_2x8-Qn) {
 	@include controls.text-field;
 
 	line-height: 1.25;
 }
 
-.themedBackground__74017 {
+.themedBackground_2x8-Qn {
 	background: transparent;
 }

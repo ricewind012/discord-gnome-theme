@@ -1,57 +1,57 @@
 @use "controls";
 
-.actionButtons_cc1819 {
+.actionButtons_Q2cxvN {
 	background-color: transparent;
 	border: none;
 	gap: var(--spacing);
 	padding: 0;
 }
 
-.button_aec7ab {
+.button_zpnerZ {
 	@include controls.icon-button;
 
 	color: var(--window-fg-color);
 
-	&.closeButton__6088c {
+	&.closeButton_QGyCSa {
 		--icon: icon("window-close");
 	}
 
-	&.navNext_b2eddf {
+	&.navNext_ELGJ1P {
 		--icon: icon("go-next");
 	}
 
-	&.navPrev_b2eddf {
+	&.navPrev_ELGJ1P {
 		--icon: icon("go-previous");
 	}
 }
 
-.carouselModal_d3a6f0 {
+.carouselModal_7QK1F9 {
 	background-color: transparent;
 	box-shadow: none;
 	margin: var(--space-xxl);
 	outline: none;
 }
 
-.gallery_d75751 {
+.gallery_wS56g1 {
 	gap: var(--spacing-05x);
 }
 
-.galleryItem_d75751 {
+.galleryItem_wS56g1 {
 	border-radius: 0;
 
-	&.first_d75751 {
+	&.first_wS56g1 {
 		border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 	}
 
-	&.last_d75751 {
+	&.last_wS56g1 {
 		border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 	}
 }
 
-.mediaArea_e03578 {
+.mediaArea_RtjmOP {
 	box-shadow: var(--elevation-high);
 }
 
-.topBar__6088c {
+.topBar_QGyCSa {
 	gap: var(--spacing);
 }

@@ -3,7 +3,7 @@
 @use "typography";
 @use "util";
 
-.clearSearchHistory__971b5 {
+.clearSearchHistory_lm2_KW {
 	@include controls.icon-button("user-trash", "32px");
 
 	border-radius: 999px;
@@ -12,7 +12,7 @@
 	position: absolute;
 }
 
-.container__16eb0:not(:empty) {
+.container_cbVzxY:not(:empty) {
 	@include popover.container;
 
 	[data-text-variant] {
@@ -20,17 +20,17 @@
 	}
 
 	// "from: user", etc.
-	.filterSublabelTextContainer__971b5,
+	.filterSublabelTextContainer_lm2_KW,
 	[data-text-variant="body-sm/medium"] + [data-text-variant="body-sm/medium"] {
 		display: none;
 	}
 }
 
-.divider__971b5 {
+.divider_lm2_KW {
 	margin: var(--menu_padding) 0;
 }
 
-.groupHeader__971b5 {
+.groupHeader_lm2_KW {
 	padding: 0;
 
 	& > [data-text-variant] {
@@ -38,12 +38,12 @@
 	}
 }
 
-.groupWrapper__971b5 {
+.groupWrapper_lm2_KW {
 	gap: 0;
 	position: relative;
 }
 
-.item__971b5 {
+.item_lm2_KW {
 	flex-grow: 1;
 	padding: 0;
 
@@ -53,14 +53,14 @@
 	}
 }
 
-.itemContainer__971b5 {
+.itemContainer_lm2_KW {
 	@include popover.entry($hover: "&:is(:hover, [aria-selected='true'])");
 
 	align-items: center;
 	display: flex;
 }
 
-.itemIcon__971b5 {
+.itemIcon_lm2_KW {
 	color: var(--popover-fg-color);
 	margin-inline-end: var(--spacing);
 
@@ -71,7 +71,7 @@
 	}
 }
 
-.labelWithElements__971b5 {
+.labelWithElements_lm2_KW {
 	flex-grow: 1;
 	gap: var(--spacing);
 

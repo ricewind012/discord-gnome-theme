@@ -8,22 +8,22 @@
 	border-radius: 999px;
 }
 
-:where(.banner__68edb) {
+:where(.banner_s9bWOi) {
 	border-radius: var(--banner-radius);
 }
 
-.inner_c0bea0 {
+.inner_P1YEjQ {
 	// sidebar
 	border-radius: 0;
 	gap: var(--dialog-spacing-x05);
 	padding: 0;
 
-	.bioText_b40b46 {
+	.bioText_qjJ3Wv {
 		@extend %text-normal;
 	}
 }
 
-.outer_c0bea0 {
+.outer_P1YEjQ {
 	--banner-radius: var(--window_radius) var(--window_radius) 0 0;
 	--dialog-spacing: var(--space-xl);
 	--role-button-size: 24px;
@@ -43,7 +43,7 @@
 		border: none;
 		-webkit-app-region: no-drag;
 
-		.inner_c0bea0 {
+		.inner_P1YEjQ {
 			gap: 0;
 		}
 	}
@@ -59,7 +59,7 @@
 	}
 }
 
-.removeButton_af3987 {
+.removeButton_xL50-d {
 	@include -role-button($icon: "window-close");
 
 	inset-inline-end: 0;
@@ -68,7 +68,7 @@
 	z-index: 1;
 }
 
-.role_af3987 {
+.role_xL50-d {
 	background: transparent;
 	border: none;
 	border-radius: 999px;
@@ -83,7 +83,7 @@
 	}
 }
 
-.roleCircle__4f569 {
+.roleCircle_7RsUnm {
 	border-radius: 999px;
 	height: var(--role-height);
 	margin: 0;
@@ -104,11 +104,11 @@
 	}
 }
 
-.roleListContainer_af3987 {
+.roleListContainer_xL50-d {
 	margin: 0;
 }
 
-.roleName_af3987 {
+.roleName_xL50-d {
 	@extend %text-normal;
 
 	margin: 0;
@@ -119,23 +119,23 @@
 	display: none;
 }
 
-.listContentsInteractive_af3987 {
+.listContentsInteractive_xL50-d {
 	gap: var(--role-spacing);
 
-	.addButton_af3987 {
+	.addButton_xL50-d {
 		@include -role-button($icon: "plus");
 	}
 
-	.pillButton_af3987.expandButton_af3987 {
+	.pillButton_xL50-d.expandButton_xL50-d {
 		@include -role-button($icon: "down");
 	}
 
-	.pillButton_af3987:not(.expandButton_af3987) {
+	.pillButton_xL50-d:not(.expandButton_xL50-d) {
 		@include -role-button($icon: "up");
 	}
 }
 
-.userTagUsername__26b1f {
+.userTagUsername_C2XpHA {
 	@extend %caption;
 
 	// Align with src/global/text.scss
@@ -143,12 +143,12 @@
 }
 
 // Banner buttons
-.wrapper_da5890 {
+.wrapper_1lPPox {
 	gap: var(--spacing);
 	inset-block-start: var(--spacing);
 	inset-inline-end: var(--spacing);
 
-	.bannerButton_fb7f94 {
+	.bannerButton_C4gRrZ {
 		@include controls.icon-button-circular;
 	}
 }

@@ -1,7 +1,7 @@
 @use "controls";
 @use "typography";
 
-.closeCircleButton_cf6da1 {
+.closeCircleButton_sLUoDH {
 	--icon: icon("window-close");
 
 	@include controls.titlebar-button;
@@ -10,11 +10,11 @@
 	order: 1;
 }
 
-.editorFooter_cf6da1 {
+.editorFooter_sLUoDH {
 	display: none;
 }
 
-.editorHeader_cf6da1 {
+.editorHeader_sLUoDH {
 	align-items: center;
 	box-shadow: var(--elevation-low);
 	display: flex;
@@ -31,7 +31,7 @@
 	}
 }
 
-.themeEditor_cf6da1 {
+.themeEditor_sLUoDH {
 	border-inline-start: 1px solid var(--secondary-sidebar-border-color);
 	padding: 0;
 	z-index: 999;

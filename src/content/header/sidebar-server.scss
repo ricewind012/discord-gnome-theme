@@ -1,29 +1,29 @@
 @use "controls";
 @use "typography";
 
-.container_f37cb1 {
-	&.bannerVisible_f37cb1 {
-		.header_f37cb1 {
+.container_XH4OpX {
+	&.bannerVisible_XH4OpX {
+		.header_XH4OpX {
 			background-image: linear-gradient(var(--banner-backdrop), transparent);
 		}
 
-		.headerContent_f37cb1 {
+		.headerContent_XH4OpX {
 			filter: var(--text-shadow);
 		}
 	}
 
-	&:not(.bannerVisible_f37cb1) {
-		.header_f37cb1 {
+	&:not(.bannerVisible_XH4OpX) {
+		.header_XH4OpX {
 			box-shadow: var(--elevation-low);
 		}
 
-		.headerContent_f37cb1 {
+		.headerContent_XH4OpX {
 			color: var(--headerbar-fg-color);
 		}
 	}
 }
 
-.guildDropdown_f37cb1 {
+.guildDropdown_XH4OpX {
 	// Move text to .headerChildren
 	--text: attr(aria-label);
 
@@ -33,7 +33,7 @@
 	width: 100%;
 }
 
-.header_f37cb1 {
+.header_XH4OpX {
 	background-color: transparent;
 	border: none;
 	border-radius: 0;
@@ -41,15 +41,15 @@
 	-webkit-app-region: drag;
 }
 
-.guildIconV2Container__85d16,
-.headerEllipseBackdrop_f37cb1,
-.headerEllipseForeground_f37cb1,
-.headerGlass_f37cb1,
-.inviteButton_f37cb1 {
+.guildIconV2Container_DV_ZH5,
+.headerEllipseBackdrop_XH4OpX,
+.headerEllipseForeground_XH4OpX,
+.headerGlass_XH4OpX,
+.inviteButton_XH4OpX {
 	display: none;
 }
 
-.headerChildren_f37cb1 {
+.headerChildren_XH4OpX {
 	@include controls.icon-button-with-tooltip(
 		$name: "menu",
 		$direction: "block-end",
@@ -72,11 +72,11 @@
 	}
 }
 
-.headerContent_f37cb1 {
+.headerContent_XH4OpX {
 	gap: 0;
 }
 
-.name_f37cb1 {
+.name_XH4OpX {
 	@extend %heading;
 
 	color: inherit;

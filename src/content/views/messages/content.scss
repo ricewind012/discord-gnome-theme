@@ -1,16 +1,16 @@
 @use "controls";
 
-.chat_f75fb0 {
+.chat_z_gUBg {
 	border: none;
 	border-radius: 0;
 
-	&.threadSidebarOpen_f75fb0 {
+	&.threadSidebarOpen_z_gUBg {
 		--chat-header-right-padding: 0px;
 	}
 }
 
 // Message actions
-.container__040f0 {
+.container_V_VY9Q {
 	inset-block-start: calc(
 		var(--icon-button-size) * -1 - #{controls.$osd-like-padding} * 2
 	);
@@ -69,20 +69,20 @@
 	}
 }
 
-.messagesWrapper__36d07 {
+.messagesWrapper_8AE1Qq {
 	--fade-out-gradient-size: calc(var(--spacing) * 4);
 	--gradient-bg: var(--background-base-lower);
 	--gradient-image: linear-gradient(to bottom, transparent, var(--gradient-bg));
 
 	flex-direction: column;
 
-	.chatGradientBase__36d07 {
+	.chatGradientBase_8AE1Qq {
 		background: var(--gradient-image);
 		height: var(--fade-out-gradient-size);
 		transition: none;
 	}
 
-	.chatTypingGradientNotAtBottom__36d07 {
+	.chatTypingGradientNotAtBottom_8AE1Qq {
 		background: var(--gradient-bg);
 
 		&::before {
@@ -95,7 +95,7 @@
 		}
 	}
 
-	.scroller__36d07 {
+	.scroller_8AE1Qq {
 		&::-webkit-scrollbar-thumb,
 		&::-webkit-scrollbar-track {
 			background-clip: padding-box;
@@ -104,31 +104,31 @@
 		}
 	}
 
-	.scrollerSpacer__36d07 {
+	.scrollerSpacer_8AE1Qq {
 		height: var(--fade-out-gradient-size);
 	}
 }
 
 // D*scord put an !important here, el mao
-.popover_f84418.popover_f84418 {
+.popover_DpHsW6.popover_DpHsW6 {
 	border: none;
 	box-shadow: none;
 
-	.hoverBarButton_f84418 {
+	.hoverBarButton_DpHsW6 {
 		// :has is for reactions
-		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_f84418)) {
+		&:is([aria-label="Copy Message ID"], :has(> .buttonContent_DpHsW6)) {
 			&::before {
 				display: none;
 			}
 
-			.icon_f84418 {
+			.icon_DpHsW6 {
 				display: initial;
 				transform: none;
 			}
 		}
 	}
 
-	.separator_f84418 {
+	.separator_DpHsW6 {
 		@include controls.osd-like-separator;
 	}
 }

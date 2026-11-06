@@ -3,18 +3,18 @@
 
 // Settings
 @include controls.radio(
-	".group__64e61",
-	".radioGroupOption__64e61",
-	".radioIndicator__64e61",
-	":where(.radioGroupOption__64e61, .standaloneRadioIndicator__64e61)[data-selected='true']"
+	".group_oJuRbG",
+	".radioGroupOption_oJuRbG",
+	".radioIndicator_oJuRbG",
+	":where(.radioGroupOption_oJuRbG, .standaloneRadioIndicator_oJuRbG)[data-selected='true']"
 );
 
-.group__64e61 {
+.group_oJuRbG {
 	padding: 0;
 }
 
-.radioGroupOption__64e61 {
-	& > .stack_dbd263 {
+.radioGroupOption_oJuRbG {
+	& > .stack_TWWX0S {
 		justify-content: center;
 	}
 
@@ -25,8 +25,8 @@
 
 // Poll
 @include controls.radio(
-	".answersContainer__4c520",
-	".answer__4c520",
-	".answerSelectionIcon__4c520",
-	".answer__4c520[aria-checked='true']"
+	".answersContainer_D4-WfD",
+	".answer_D4-WfD",
+	".answerSelectionIcon_D4-WfD",
+	".answer_D4-WfD[aria-checked='true']"
 );
