@@ -25,10 +25,6 @@
 	margin-inline-start: calc(var(--spacing) + popover.$icon-size - 2px);
 }
 
-.hintContainer_c1e9c4 {
-	color: var(--window-fg-muted);
-}
-
 .iconContainer_M3qk4j {
 	:where(& > *) {
 		inset-inline-start: var(--menu_padding);
@@ -131,30 +127,6 @@
 		@include controls.button;
 
 		width: 32px;
-	}
-}
-
-#set-status-submenu {
-	.expiringStatusMenuItem_ce8328 {
-		.description_ce8328 {
-			display: none;
-		}
-
-		.label_M3qk4j {
-			margin: 0;
-		}
-
-		.separator_M3qk4j {
-			display: none;
-		}
-
-		.status_ce8328 {
-			color: inherit;
-		}
-
-		.statusItem_ce8328 {
-			padding: 0;
-		}
 	}
 }
 

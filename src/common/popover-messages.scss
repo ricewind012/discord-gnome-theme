@@ -27,25 +27,16 @@
 		}
 	}
 
+	.actionButtons_6bgemo {
+		inset-block-start: 8px;
+		inset-inline-end: 8px;
+	}
+
 	.messageContainer__95796 {
 		background-color: transparent;
 		border: none;
 		margin: 0;
 		padding: 8px 0;
-	}
-
-	.jumpButton_ed0c8c {
-		@include controls.button;
-
-		box-shadow: none;
-		height: unset;
-		inset-block-start: 8px;
-		inset-inline-end: 8px;
-
-		& > div {
-			color: inherit;
-			font-size: inherit;
-		}
 	}
 }
 

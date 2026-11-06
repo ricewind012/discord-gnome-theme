@@ -56,8 +56,7 @@
 }
 
 .contentColumn_jnk11m {
-	& > .defaultColor_MMUIw6:first-child,
-	.settingsPage_f131e9 > h3 {
+	& > .defaultColor_MMUIw6:first-child {
 		@extend %-center-text;
 		@extend %-tab-header;
 		@extend %heading;
