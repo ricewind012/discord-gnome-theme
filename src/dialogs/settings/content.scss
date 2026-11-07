@@ -2,7 +2,7 @@
 @use "typography";
 @use "util";
 
-$-including-title: '[style="gap: var(--space-8); padding-block-start: var(--space-8);"]';
+$-including-title: '[style="gap: var(--space-8); padding-top: var(--space-8);"]';
 
 %-card-subheading {
 	border-block-end: 1px solid var(--card-shade-color);

@@ -14,13 +14,16 @@
 }
 
 .radioGroupOption_oJuRbG {
-	& > .stack_TWWX0S {
-		justify-content: center;
-	}
+	display: flex;
+	align-items: center;
 
 	[data-text-variant="body-md/normal"] {
 		@extend %text-normal;
 	}
+}
+
+.radioIndicator_oJuRbG {
+	position: unset;
 }
 
 // Poll
