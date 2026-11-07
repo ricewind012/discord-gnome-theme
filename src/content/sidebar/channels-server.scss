@@ -122,8 +122,10 @@
 }
 
 .name_TNyK-N {
+	@extend %text-normal;
+
 	[data-text-variant="body-md/medium"] {
-		@extend %text-normal;
+		font: inherit;
 	}
 }
 
